@@ -3,11 +3,11 @@
   <title>Frunoob</title>
   
   
-  <link href="https://github.com/frunoob/atom.xml" rel="self"/>
+  <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
-  <link href="https://github.com/frunoob/"/>
+  <link href="https://frunoob.github.io/"/>
   <updated>2020-10-23T12:02:34.355Z</updated>
-  <id>https://github.com/frunoob/</id>
+  <id>https://frunoob.github.io/</id>
   
   <author>
     <name>Frunoob</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hexo的一些指令</title>
-    <link href="https://github.com/frunoob/2020/10/23/createBlog/hexo_commands/"/>
-    <id>https://github.com/frunoob/2020/10/23/createBlog/hexo_commands/</id>
+    <link href="https://frunoob.github.io/2020/10/23/createBlog/hexo_commands/"/>
+    <id>https://frunoob.github.io/2020/10/23/createBlog/hexo_commands/</id>
     <published>2020-10-23T06:49:38.000Z</published>
     <updated>2020-10-23T12:02:34.355Z</updated>
     
@@ -34,14 +34,14 @@
     
     
     
-    <category term="hexo" scheme="https://github.com/frunoob/tags/hexo/"/>
+    <category term="hexo" scheme="https://frunoob.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>createBlog</title>
-    <link href="https://github.com/frunoob/2020/10/23/index/"/>
-    <id>https://github.com/frunoob/2020/10/23/index/</id>
+    <link href="https://frunoob.github.io/2020/10/23/index/"/>
+    <id>https://frunoob.github.io/2020/10/23/index/</id>
     <published>2020-10-22T20:46:49.000Z</published>
     <updated>2020-10-22T21:40:13.482Z</updated>
     
@@ -52,10 +52,10 @@
     
     
     
-    <category term="Web开发" scheme="https://github.com/frunoob/categories/Web%E5%BC%80%E5%8F%91/"/>
+    <category term="Web开发" scheme="https://frunoob.github.io/categories/Web%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="创建我的第一个博客" scheme="https://github.com/frunoob/tags/%E5%88%9B%E5%BB%BA%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
+    <category term="创建我的第一个博客" scheme="https://frunoob.github.io/tags/%E5%88%9B%E5%BB%BA%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   

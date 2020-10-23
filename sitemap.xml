@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://github.com/frunoob/2020/10/23/createBlog/hexo_commands/</loc>
+    <loc>https://frunoob.github.io/2020/10/23/createBlog/hexo_commands/</loc>
     
     <lastmod>2020-10-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://github.com/frunoob/about/me.html</loc>
+    <loc>https://frunoob.github.io/about/me.html</loc>
     
     <lastmod>2020-10-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://github.com/frunoob/2020/10/23/index/</loc>
+    <loc>https://frunoob.github.io/2020/10/23/index/</loc>
     
     <lastmod>2020-10-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://github.com/frunoob/talk/index.html</loc>
+    <loc>https://frunoob.github.io/talk/index.html</loc>
     
     <lastmod>2020-10-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://github.com/frunoob/categories/index.html</loc>
+    <loc>https://frunoob.github.io/categories/index.html</loc>
     
     <lastmod>2020-10-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://github.com/frunoob/tags/index.html</loc>
+    <loc>https://frunoob.github.io/tags/index.html</loc>
     
     <lastmod>2020-10-22</lastmod>
     
@@ -45,7 +45,7 @@
   
 
   <url>
-    <loc>https://github.com/frunoob</loc>
+    <loc>https://frunoob.github.io/</loc>
     <lastmod>2020-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -53,14 +53,14 @@
 
   
   <url>
-    <loc>https://github.com/frunoob/tags/%E5%88%9B%E5%BB%BA%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://frunoob.github.io/tags/%E5%88%9B%E5%BB%BA%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2020-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://github.com/frunoob/tags/hexo/</loc>
+    <loc>https://frunoob.github.io/tags/hexo/</loc>
     <lastmod>2020-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -69,7 +69,7 @@
 
   
   <url>
-    <loc>https://github.com/frunoob/categories/Web%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://frunoob.github.io/categories/Web%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2020-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
