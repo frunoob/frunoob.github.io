@@ -6,7 +6,7 @@
   <link href="https://github.com/frunoob/atom.xml" rel="self"/>
   
   <link href="https://github.com/frunoob/"/>
-  <updated>2020-10-22T21:40:13.482Z</updated>
+  <updated>2020-10-23T07:04:44.844Z</updated>
   <id>https://github.com/frunoob/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如和使用hexo来发布文章到博客上</title>
+    <link href="https://github.com/frunoob/2020/10/23/createBlog/%E5%A6%82%E5%92%8C%E4%BD%BF%E7%94%A8hexo%E6%9D%A5%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E5%88%B0%E5%8D%9A%E5%AE%A2%E4%B8%8A/"/>
+    <id>https://github.com/frunoob/2020/10/23/createBlog/%E5%A6%82%E5%92%8C%E4%BD%BF%E7%94%A8hexo%E6%9D%A5%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E5%88%B0%E5%8D%9A%E5%AE%A2%E4%B8%8A/</id>
+    <published>2020-10-23T06:49:38.000Z</published>
+    <updated>2020-10-23T07:04:44.844Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="init"><a href="#init" class="headerlink" title="init"></a>init</h2><p><code>$ hexo init [folder]</code></p><p>新建一个网站。如果没有设置 <code>folder</code>，Hexo默认在目前的文件夹建立网站。  </p><h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><p><code>hexo new [layout] &lt;title&gt;</code></p><p>新建一篇文章。如果没有设置<code>layout</code>，默认使用_config.yml中的<code>default_layout</code>  </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;init&quot;&gt;&lt;a href=&quot;#init&quot; class=&quot;headerlink&quot; title=&quot;init&quot;&gt;&lt;/a&gt;init&lt;/h2&gt;&lt;p&gt;&lt;code&gt;$ hexo init [folder]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;新建一个网站。如果没有设置 &lt;code&gt;f</summary>
+      
+    
+    
+    
+    
+    <category term="博客创建" scheme="https://github.com/frunoob/tags/%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>createBlog</title>
