@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://frunoob.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-10-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/about/me.html</loc>
+    
+    <lastmod>2020-10-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://frunoob.github.io/artitalk/index.html</loc>
     
     <lastmod>2020-10-24</lastmod>
@@ -79,21 +93,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/about/me.html</loc>
-    
-    <lastmod>2020-10-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/talk/index.html</loc>
-    
-    <lastmod>2020-10-22</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/categories/index.html</loc>
     
     <lastmod>2020-10-22</lastmod>
     
