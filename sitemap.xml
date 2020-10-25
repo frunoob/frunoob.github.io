@@ -109,7 +109,7 @@
 
   <url>
     <loc>https://frunoob.github.io/</loc>
-    <lastmod>2020-10-24</lastmod>
+    <lastmod>2020-10-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -117,14 +117,14 @@
   
   <url>
     <loc>https://frunoob.github.io/tags/hexo/</loc>
-    <lastmod>2020-10-24</lastmod>
+    <lastmod>2020-10-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://frunoob.github.io/tags/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2020-10-24</lastmod>
+    <lastmod>2020-10-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -133,7 +133,7 @@
   
   <url>
     <loc>https://frunoob.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2020-10-24</lastmod>
+    <lastmod>2020-10-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
