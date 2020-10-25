@@ -244,7 +244,7 @@ var saveToLocal = {
       appKey: 'uYYPYEbPfEbUKUym6Bf3Qco4',
       placeholder: '愣着干嘛，评论一下又不会怀孕。。。',
       avatar: 'mp',
-      meta: 'nick,mail,link'.split(','),
+      meta: 'nick,mail'.split(','),
       pageSize: '10',
       lang: 'zh-CN',
       recordIP: true,
@@ -256,7 +256,7 @@ var saveToLocal = {
     }
 
     if (true) { 
-      initData.requiredFields= ('nick mail'.split(','))
+      initData.requiredFields= ('mail'.split(','))
     }
 
     const valine = new Valine(initData)
