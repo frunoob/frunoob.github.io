@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>自学成菜</title>
   
-  
+  <subtitle>菜鸟自学</subtitle>
   <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
   <link href="https://frunoob.github.io/"/>
