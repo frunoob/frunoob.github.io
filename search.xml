@@ -1,1278 +1,295 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Front-matter</title>
-    <url>/2020/10/24/createBlog/Front-matter/</url>
-    <content><![CDATA[<h1 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h1><iframe src="https://www.youtube.com/embed/Rl48Yk4A_V8" frameborder="0" loading="lazy" allowfullscreen="" style="box-sizing: inherit; margin: 1em 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 15px; vertical-align: baseline;"></iframe>
-
-<p>Front-matter 是文件最上方以 <code>---</code> 分隔的区域，用于指定个别文件的变量，举例来说：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2013&#x2F;7&#x2F;13 20:46:25</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-<th align="left">默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>layout</code></td>
-<td align="left">布局</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>title</code></td>
-<td align="left">标题</td>
-<td align="left">文章的文件名</td>
-</tr>
-<tr>
-<td align="left"><code>date</code></td>
-<td align="left">建立日期</td>
-<td align="left">文件建立日期</td>
-</tr>
-<tr>
-<td align="left"><code>updated</code></td>
-<td align="left">更新日期</td>
-<td align="left">文件更新日期</td>
-</tr>
-<tr>
-<td align="left"><code>comments</code></td>
-<td align="left">开启文章的评论功能</td>
-<td align="left">true</td>
-</tr>
-<tr>
-<td align="left"><code>tags</code></td>
-<td align="left">标签（不适用于分页）</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>categories</code></td>
-<td align="left">分类（不适用于分页）</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>permalink</code></td>
-<td align="left">覆盖文章网址</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>disableNunjucks</code></td>
-<td align="left">Disable rendering of Nunjucks tag <code>&#123;&#123; &#125;&#125;</code>/<code>&#123;% %&#125;</code> and <a href="https://hexo.io/docs/tag-plugins">tag plugins</a> when enabled</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<h2 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h2><p>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">- Diary</span><br><span class="line">tags:</span><br><span class="line">- PS3</span><br><span class="line">- Games</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>分类方法的分歧</p>
-<p>如果您有过使用 WordPress 的经验，就很容易误解 Hexo 的分类方式。WordPress 支持对一篇文章设置多个分类，而且这些分类可以是同级的，也可以是父子分类。但是 Hexo 不支持指定多个同级分类。下面的指定方法：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">  - Diary</span><br><span class="line">  - Life</span><br></pre></td></tr></table></figure>
-
-<p>会使分类<code>Life</code>成为<code>Diary</code>的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。</p>
-<p>如果你需要为文章添加多个分类，可以尝试以下 list 中的方法。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">- [Diary, PlayStation]</span><br><span class="line">- [Diary, Games]</span><br><span class="line">- [Life]</span><br></pre></td></tr></table></figure>
-
-<p>此时这篇文章同时包括三个分类： <code>PlayStation</code> 和 <code>Games</code> 分别都是父分类 <code>Diary</code> 的子分类，同时 <code>Life</code> 是一个没有子分类的分类。</p>
-</blockquote>
-<h2 id="JSON-Front-matter"><a href="#JSON-Front-matter" class="headerlink" title="JSON Front-matter"></a>JSON Front-matter</h2><p>除了 YAML 外，你也可以使用 JSON 来编写 Front-matter，只要将 <code>---</code> 代换成 <code>;;;</code> 即可。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;title&quot;: &quot;Hello World&quot;,</span><br><span class="line">&quot;date&quot;: &quot;2013&#x2F;7&#x2F;13 20:46:25&quot;</span><br><span class="line">;;;</span><br></pre></td></tr></table></figure>]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>在ubuntu下安装hadoop插件</title>
+      <link href="2020/10/26/study/hadoop/001/"/>
+      <url>2020/10/26/study/hadoop/001/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Valine-Admin评论功能加强</title>
+      <link href="2020/10/25/LeanEngine/Valine/"/>
+      <url>2020/10/25/LeanEngine/Valine/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Valine-Admin"><a href="#Valine-Admin" class="headerlink" title="Valine Admin"></a>Valine Admin</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Valine Admin 项目是一个对 <a href="https://valine.js.org/">Valine</a> 评论系统的拓展应用，可增强 Valine 的邮件通知功能。基于 Leancloud 的云引擎与云函数，主要实现评论邮件通知、评论管理、自定义邮件通知模板等功能，而且还可以提供邮件 <code>通知站长</code> 和 <code>@ 通知</code> 的功能。</p><p><a href="https://github.com/hongweifuture/Valine-Admin/blob/master/%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE.md#%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5%E5%B1%95%E7%A4%BA">点击查看演示</a></p><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ol><li>需要确保 Valine 的基础功能是正常的，参考 <a href="https://valine.js.org/">Valine Docs</a>。</li><li>进入 <a href="https://leancloud.cn/dashboard/applist.html#/apps">Leancloud</a> 对应的 Valine 应用中。</li><li>点击 <code>云引擎 -&gt; 设置</code> 填写代码库：<code>https://github.com/hongweifuture/Valine-Admin</code>，保存 <a href="https://camo.githubusercontent.com/e3d6acd43e97d2e42453075aabcec0e3dba1e1f0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134323630382e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/e3d6acd43e97d2e42453075aabcec0e3dba1e1f0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134323630382e706e67" alt="代码库"></a></li><li>设置<code>自定义环境变量</code>，需要设置云引擎的环境变量以提供必要的信息，变量参数参考下面的<code>配置项</code> <a href="https://camo.githubusercontent.com/f9755cd442fd8ba4fd428d073e47bc91d5d786e2/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135353430392e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/f9755cd442fd8ba4fd428d073e47bc91d5d786e2/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135353430392e706e67" alt="自定义环境变量"></a> <strong>配置项</strong></li></ol><table><thead><tr><th>变量</th><th>示例</th><th>说明</th></tr></thead><tbody><tr><td>SITE_NAME</td><td>HONGWEI’S Blog</td><td>[必填] 网站名称</td></tr><tr><td>SITE_URL</td><td><a href="https://www.zhwei.cn/">https://www.zhwei.cn</a></td><td>[必填] 网站地址，<strong>最后不要加 <code>/</code></strong></td></tr><tr><td>SMTP_SERVICE</td><td>QQ</td><td>[必填] 邮件服务提供商，支持 QQ、163、126、Gmail 以及 <a href="https://nodemailer.com/smtp/well-known/#supported-services">更多</a>。 — <em>如这里没有你使用的邮件提供商，请查看<a href="https://github.com/hongweifuture/Valine-Admin/blob/master/%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE.md#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8">自定义邮件服务器</a></em></td></tr><tr><td>SMTP_USER</td><td><a href="mailto:xxxx@qq.com">xxxx@qq.com</a></td><td>[必填] SMTP登录用户，一般为邮箱地址</td></tr><tr><td>SMTP_PASS</td><td>xxxx</td><td>[必填] SMTP登录密码，一般为授权码，而不是邮箱的登陆密码，请自行查询对应邮件服务商的获取方式</td></tr><tr><td>SENDER_NAME</td><td>HONGWEI’S Blog Valine 评论提醒</td><td>[可选] 发件人</td></tr><tr><td>ADMIN_URL</td><td><a href="https://xxx.leanapp.cn/">https://xxx.leanapp.cn/</a></td><td>[建议] Web主机二级域名，用于自动唤醒</td></tr><tr><td>TO_EMAIL</td><td><a href="mailto:xxxxx@gmail.com">xxxxx@gmail.com</a></td><td>[可选] 指定站长收信邮箱，默认值为<code>SITE_USER</code>。用于 SMTP 发件人与站长收件人不一致的情况下使用。</td></tr><tr><td>TEMPLATE_NAME</td><td>rainbow</td><td>[可选] 通知邮件的模板（default和rainbow），参考高级功能</td></tr></tbody></table><ol><li>点击 <code>云引擎 -&gt; 部署</code>，选择<code>Git源码部署</code>，分支或版本号输入<code>master</code>，下载最新依赖（可选），部署 <a href="https://camo.githubusercontent.com/0a4a4b33c7d95f072e5d96130003ed4e7b6cfe7c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333033352e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/0a4a4b33c7d95f072e5d96130003ed4e7b6cfe7c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333033352e706e67" alt="Git"></a> <a href="https://camo.githubusercontent.com/cc8ec687bfce8f2c6d34fbfb8f0557261a9fe840/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333230352e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/cc8ec687bfce8f2c6d34fbfb8f0557261a9fe840/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333230352e706e67" alt="master"></a></li></ol><h2 id="后台管理"><a href="#后台管理" class="headerlink" title="后台管理"></a>后台管理</h2><ol><li>点击 <code>云引擎 -&gt; 设置</code>，在<code>Web主机域名</code>位置点击<code>申请</code>，获取二级域名，现在的二级域名不支持自定义，如果想好记请参考高级功能 <a href="https://camo.githubusercontent.com/3f495170e97459ae13172b0f09cf34c398b12737/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333331352e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/3f495170e97459ae13172b0f09cf34c398b12737/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333331352e706e67" alt="Web主机域名"></a></li><li>设置后台管理登录信息，点击 <code>存储 -&gt; 结构化数据</code>，选择<code>_User -&gt; 添加行</code>，只需要填写<code>password</code>、<code>username</code>、<code>email</code>这三个字段即可, 使用 email 作为账号登陆、password 作为账号密码、username 任意即可。（为了安全考虑，此 email 必须为配置中的 SMTP_USER 或 TO_EMAIL， 否则不允许登录） <a href="https://camo.githubusercontent.com/cd459da8cf3386a974912a21087925b1961909dc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135313333392e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/cd459da8cf3386a974912a21087925b1961909dc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135313333392e706e67" alt="后台管理"></a></li><li>此后，可以通过<code>https://二级域名.leanapp.cn/</code>管理评论</li></ol><h2 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h2><p>免费版的 LeanCloud 容器，是有强制性休眠策略的，不能 24 小时运行：</p><ul><li>每天必须休眠 6 个小时</li><li>30 分钟内没有外部请求，则休眠</li><li>休眠后如果有新的外部请求实例则马上启动（但激活时此次发送邮件会失败）。</li></ul><p>分析了一下上方的策略，如果不想付费的话，最佳使用方案就设置定时器，目前基于 LeanCloud 自带定时器实现了两种云函数定时任务：</p><ul><li>自动唤醒，定时访问Web APP二级域名防止云引擎休眠（推荐）</li><li>定时检查，每天定时检查24小时内漏发的邮件通知</li></ul><p><strong>配置</strong></p><ol><li>首先需要添加环境变量，点击 <code>云引擎 -&gt; 设置</code>，配置<code>自定义环境变量</code>，变量名<code>ADMIN_URL</code>，变量值<code>Web 主机域名，即二级域名地址</code>，添加后重启容器环境变量才会生效</li><li>配置定时任务，击 <code>云引擎 -&gt; 定时任务</code></li></ol><ul><li>配置自动唤醒（推荐），创建定时任务，名称任意，生产环境选择<code>self-wake</code>云函数，Cron表达式填入<code>0 */20 7-23 * * ?</code>，表示每天 7 - 23 点每 20 分钟访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</li><li>配置定时检查，创建定时任务，名称任意，生产环境选择<code>resend-mails</code>云函数，Cron表达式填入<code>0 0 8 * * ?</code>，表示每天早8点检查过去24小时内漏发的通知邮件并补发 <a href="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67" alt="img"></a></li></ul>]]></content>
+      
+      
       <categories>
-        <category>博客搭建</category>
+          
+          <category> 博客评论功能 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标签插件</title>
-    <url>/2020/10/24/createBlog/Tag-Plugins/</url>
-    <content><![CDATA[<h1 id="标签插件（Tag-Plugins）"><a href="#标签插件（Tag-Plugins）" class="headerlink" title="标签插件（Tag Plugins）"></a>标签插件（Tag Plugins）</h1><p>标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。</p>
-<p>虽然你可以使用任何格式书写你的文章，但是标签插件永远可用，且语法也都是一致的。</p>
-<p><em>Tag plugins should not be wrapped inside Markdown syntax, e.g. <code>[](&#123;% post_path lorem-ipsum %&#125;)</code> is not supported.</em></p>
-<h2 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h2><p>在文章中插入引言，可包含作者、来源和标题。</p>
-<p><strong>别号：</strong> quote</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><p><strong>没有提供参数，则只输出普通的 blockquote</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote %&#125;</span><br><span class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
-</blockquote>
-<p><strong>引用书上的句子</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote David Levithan, Wide Awake %&#125;</span><br><span class="line">Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
-<p><strong>David Levithan</strong>Wide Awake</p>
-</blockquote>
-<p><strong>引用 Twitter</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote @DevDocs https:&#x2F;&#x2F;twitter.com&#x2F;devdocs&#x2F;status&#x2F;356095192085962752 %&#125;</span><br><span class="line">NEW: DevDocs now comes with syntax highlighting. http:&#x2F;&#x2F;devdocs.io</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io/">http://devdocs.io</a></p>
-<p><strong>@DevDocs</strong><a href="https://twitter.com/devdocs/status/356095192085962752">twitter.com/devdocs/status/356095192085962752</a></p>
-</blockquote>
-<p><strong>引用网络上的文章</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote Seth Godin http:&#x2F;&#x2F;sethgodin.typepad.com&#x2F;seths_blog&#x2F;2009&#x2F;07&#x2F;welcome-to-island-marketing.html Welcome to Island Marketing %&#125;</span><br><span class="line">Every interaction is both precious and an opportunity to delight.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>Every interaction is both precious and an opportunity to delight.</p>
-<p><strong>Seth Godin</strong><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html">Welcome to Island Marketing</a></p>
-</blockquote>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>在文章中插入代码。</p>
-<p><strong>别名：</strong> code</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;</span><br><span class="line">code snippet</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Specify additional options in <code>option:value</code> format, e.g. <code>line_number:false first_line:5</code>.</p>
-<table>
-<thead>
-<tr>
-<th align="left">Extra Options</th>
-<th align="left">Description</th>
-<th align="left">Default</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>line_number</code></td>
-<td align="left">Show line number</td>
-<td align="left"><code>true</code></td>
-</tr>
-<tr>
-<td align="left"><code>highlight</code></td>
-<td align="left">Enable code highlighting</td>
-<td align="left"><code>true</code></td>
-</tr>
-<tr>
-<td align="left"><code>first_line</code></td>
-<td align="left">Specify the first line number</td>
-<td align="left"><code>1</code></td>
-</tr>
-<tr>
-<td align="left"><code>mark</code></td>
-<td align="left">Line highlight specific line(s), each value separated by a comma. Specify number range using a dash Example: <code>mark:1,4-7,10</code> will mark line 1, 4 to 7 and 10.</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>wrap</code></td>
-<td align="left">Wrap the code block in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">``</a></td>
-<td align="left"><code>true</code></td>
-</tr>
-</tbody></table>
-<h3 id="样例-1"><a href="#样例-1" class="headerlink" title="样例"></a>样例</h3><p><strong>普通的代码块</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock %&#125;</span><br><span class="line">alert(&#39;Hello World!&#39;);</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line">alert(&#39;Hello World!&#39;);</span><br></pre></td></tr></table></figure>
-
-<p><strong>指定语言</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock lang:objc %&#125;</span><br><span class="line">[rectangle setX: 10 y: 10 width: 20 height: 20];</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line">[rectangle setX: 10 y: 10 width: 20 height: 20];</span><br></pre></td></tr></table></figure>
-
-<p><strong>附加说明</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock Array.map %&#125;</span><br><span class="line">array.map(callback[, thisArg])</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line">Array.maparray.map(callback[, thisArg])</span><br></pre></td></tr></table></figure>
-
-<p><strong>附加说明和网址</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock _.compact http:&#x2F;&#x2F;underscorejs.org&#x2F;#compact Underscore.js %&#125;</span><br><span class="line">_.compact([0, 1, false, 2, &#39;&#39;, 3]);</span><br><span class="line">&#x3D;&gt; [1, 2, 3]</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line">_.compactUnderscore.js_.compact([0, 1, false, 2, &#39;&#39;, 3]);</span><br><span class="line">&#x3D;&gt; [1, 2, 3]</span><br></pre></td></tr></table></figure>
-
-<h2 id="反引号代码块"><a href="#反引号代码块" class="headerlink" title="反引号代码块"></a>反引号代码块</h2><p>另一种形式的代码块，不同的是它使用三个反引号来包裹。</p>
-<p>``` [language] [title] [url] [link text] code snippet ```</p>
-<h2 id="Pull-Quote"><a href="#Pull-Quote" class="headerlink" title="Pull Quote"></a>Pull Quote</h2><p>在文章中插入 Pull quote。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% pullquote [class] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endpullquote %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h2><p>在文章中嵌入 jsFiddle。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h2><p>在文章中嵌入 Gist。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% gist gist_id [filename] %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="iframe"><a href="#iframe" class="headerlink" title="iframe"></a>iframe</h2><p>在文章中插入 iframe。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% iframe url [width] [height] %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><p>在文章中插入指定大小的图片。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% img [class names] &#x2F;path&#x2F;to&#x2F;image [width] [height] &#39;&quot;title text&quot; &quot;alt text&quot;&#39; %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h2><p>在文章中插入链接，并自动给外部链接添加 <code>target=&quot;_blank&quot;</code> 属性。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% link text url [external] [title] %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Include-Code"><a href="#Include-Code" class="headerlink" title="Include Code"></a>Include Code</h2><p>插入 <code>source/downloads/code</code> 文件夹内的代码文件。<code>source/downloads/code</code> 不是固定的，取决于你在配置文件中 <code>code_dir</code> 的配置。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% include_code [title] [lang:language] [from:line] [to:line] path&#x2F;to&#x2F;file %&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="样例-2"><a href="#样例-2" class="headerlink" title="样例"></a>样例</h3><p><strong>嵌入 test.js 文件全文</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% include_code lang:javascript test.js %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>只嵌入第 3 行</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% include_code lang:javascript from:3 to:3 test.js %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>嵌入第 5 行至第 8 行</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% include_code lang:javascript from:5 to:8 test.js %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>嵌入第 5 行至文件结束</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% include_code lang:javascript from:5 test.js %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>嵌入第 1 行至第 8 行</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% include_code lang:javascript to:8 test.js %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Youtube"><a href="#Youtube" class="headerlink" title="Youtube"></a>Youtube</h2><p>在文章中插入 Youtube 视频。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% youtube video_id [type] [cookie] %&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p><strong>视频</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% youtube lJIrF4YjHfQ %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>播放列表</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo &#39;playlist&#39; %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>隐私模式</strong></p>
-<p>禁止 YouTube cookie</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% youtube lJIrF4YjHfQ false %&#125;</span><br><span class="line">&#123;% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo &#39;playlist&#39; false %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Vimeo"><a href="#Vimeo" class="headerlink" title="Vimeo"></a>Vimeo</h2><p>在文章中插入 Vimeo 视频。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% vimeo video_id %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="引用文章"><a href="#引用文章" class="headerlink" title="引用文章"></a>引用文章</h2><p>引用其他文章的链接。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% post_path filename %&#125;</span><br><span class="line">&#123;% post_link filename [title] [escape] %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在使用此标签时可以忽略文章文件所在的路径或者文章的永久链接信息、如语言、日期。</p>
-<p>例如，在文章中使用 <code>&#123;% post_link how-to-bake-a-cake %&#125;</code> 时，只需有一个名为 <code>how-to-bake-a-cake.md</code> 的文章文件即可。即使这个文件位于站点文件夹的 <code>source/posts/2015-02-my-family-holiday</code> 目录下、或者文章的永久链接是 <code>2018/en/how-to-bake-a-cake</code>，都没有影响。</p>
-<p>默认链接文字是文章的标题，你也可以自定义要显示的文本。</p>
-<p>默认对文章的标题和自定义标题里的特殊字符进行转义。可以使用<code>escape</code>选项，禁止对特殊字符进行转义。</p>
-<p><strong>链接使用文章的标题</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% post_link hexo-3-8-released %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://hexo.io/news/2018/10/19/hexo-3-8-released/">Hexo 3.8.0 Released</a></p>
-<p><strong>链接使用自定义文字</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% post_link hexo-3-8-released &#39;通往文章的链接&#39; %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://hexo.io/news/2018/10/19/hexo-3-8-released/">通往文章的链接</a></p>
-<p><strong>对标题的特殊字符进行转义</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% post_link hexo-4-released &#39;How to use &lt;b&gt; tag in title&#39; %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://hexo.io/news/2019/10/14/hexo-4-released/">How to use  tag in title</a></p>
-<p><strong>禁止对标题的特殊字符进行转义</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% post_link hexo-4-released &#39;&lt;b&gt;bold&lt;&#x2F;b&gt; custom title&#39; false %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://hexo.io/news/2019/10/14/hexo-4-released/"><strong>bold</strong> custom title</a></p>
-<h2 id="引用资源"><a href="#引用资源" class="headerlink" title="引用资源"></a>引用资源</h2><p>引用文章的资源。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_path filename %&#125;</span><br><span class="line">&#123;% asset_img [class names] slug [width] [height] [title text [alt text]] %&#125;</span><br><span class="line">&#123;% asset_link filename [title] [escape] %&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Embed-image"><a href="#Embed-image" class="headerlink" title="Embed image"></a>Embed image</h3><p><em>hexo-renderer-marked 3.1.0+ can (optionally) resolves the post’s path of an image automatically, refer to <a href="https://hexo.io/docs/asset-folders#Embedding-an-image-using-markdown">this section</a> on how to enable it.</em></p>
-<p>“foo.jpg” is located at <code>http://example.com/2020/01/02/hello/foo.jpg</code>.</p>
-<p><strong>Default (no option)</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_img foo.jpg %&#125;</span><br><span class="line">&lt;img src&#x3D;&quot;&#x2F;2020&#x2F;01&#x2F;02&#x2F;hello&#x2F;foo.jpg&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Custom class</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_img post-image foo.jpg %&#125;</span><br><span class="line">&lt;img src&#x3D;&quot;&#x2F;2020&#x2F;01&#x2F;02&#x2F;hello&#x2F;foo.jpg&quot; class&#x3D;&quot;post-image&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Display size</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_img foo.jpg 500 400 %&#125;</span><br><span class="line">&lt;img src&#x3D;&quot;&#x2F;2020&#x2F;01&#x2F;02&#x2F;hello&#x2F;foo.jpg&quot; width&#x3D;&quot;500&quot; height&#x3D;&quot;400&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-<p><strong>Title &amp; Alt</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_img logo.svg &quot;lorem ipsum&#39;dolor&#39;&quot; %&#125;</span><br><span class="line">&lt;img src&#x3D;&quot;&#x2F;2020&#x2F;01&#x2F;02&#x2F;hello&#x2F;foo.jpg&quot; title&#x3D;&quot;lorem ipsum&quot; alt&#x3D;&quot;dolor&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Raw"><a href="#Raw" class="headerlink" title="Raw"></a>Raw</h2><p>如果您想在文章中插入 Swig 标签，可以尝试使用 Raw 标签，以免发生解析异常。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="文章摘要和截断"><a href="#文章摘要和截断" class="headerlink" title="文章摘要和截断"></a>文章摘要和截断</h2><p>在文章中使用 <code>&lt;!-- more --&gt;</code>，那么 <code>&lt;!-- more --&gt;</code> 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。</p>
-<p>例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br></pre></td></tr></table></figure>
-
-<p>首页中将只会出现</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br></pre></td></tr></table></figure>
-
-<p>正文中则会出现</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br><span class="line"></span><br><span class="line">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br></pre></td></tr></table></figure>
-
-<p>注意，摘要可能会被 Front Matter 中的 <code>excerpt</code> 覆盖。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> valine </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LeanCloud流控问题</title>
+      <link href="2020/10/25/LeanEngine/leanCloud-problem001/"/>
+      <url>2020/10/25/LeanEngine/leanCloud-problem001/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><em> leancloud </em> 无法正常使用定时唤醒功能，为有更好的网站评论体验，故另寻它法。</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>LeanCloud 的<a href="https://leancloud.cn/docs/leanengine_plan.html#hash633315134">休眠策略</a> 。</p><blockquote><ul><li>如果应用最近一段时间（半小时）没有任何外部请求，则休眠。</li><li>休眠后如果有新的外部请求实例则马上启动。访问者的体验是第一个请求响应时间是 5 ~ 30 秒（视实例启动时间而定），后续访问响应速度恢复正常。</li><li>强制休眠：如果最近 24 小时内累计运行超过 18 小时，则强制休眠。此时新的请求会收到 503 的错误响应码，该错误可在 <strong>云引擎 &gt; 统计</strong> 中查看。</li></ul></blockquote><p>以下是解决方案</p><h3 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a><a href="https://www.antmoe.com/posts/ff6aef7b/index.html#%E5%BC%80%E5%A7%8B%E5%B0%9D%E8%AF%95">解决方案</a></h3>]]></content>
+      
+      
       <categories>
-        <category>博客搭建</category>
+          
+          <category> 博客云服务器 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>配置</title>
-    <url>/2020/10/24/createBlog/configuration/</url>
-    <content><![CDATA[<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>您可以在 <code>_config.yml</code> 中修改大部分的配置。</p>
-<iframe src="https://www.youtube.com/embed/A0Enyn70jKU" frameborder="0" loading="lazy" allowfullscreen="" style="box-sizing: inherit; margin: 1em 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 15px; vertical-align: baseline;"></iframe>
-
-<h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>title</code></td>
-<td align="left">网站标题</td>
-</tr>
-<tr>
-<td align="left"><code>subtitle</code></td>
-<td align="left">网站副标题</td>
-</tr>
-<tr>
-<td align="left"><code>description</code></td>
-<td align="left">网站描述</td>
-</tr>
-<tr>
-<td align="left"><code>keywords</code></td>
-<td align="left">网站的关键词。支援多个关键词。</td>
-</tr>
-<tr>
-<td align="left"><code>author</code></td>
-<td align="left">您的名字</td>
-</tr>
-<tr>
-<td align="left"><code>language</code></td>
-<td align="left">网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 <code>zh-Hans</code>和 <code>zh-CN</code>。</td>
-</tr>
-<tr>
-<td align="left"><code>timezone</code></td>
-<td align="left">网站时区。Hexo 默认使用您电脑的时区。请参考 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">时区列表</a> 进行设置，如 <code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code>。</td>
-</tr>
-</tbody></table>
-<p>其中，<code>description</code>主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。<code>author</code>参数用于主题显示文章的作者。</p>
-<h2 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h2><table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-<th align="left">默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>url</code></td>
-<td align="left">网址, must starts with <code>http://</code> or <code>https://</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>root</code></td>
-<td align="left">网站根目录</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>permalink</code></td>
-<td align="left">文章的 <a href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a> 格式</td>
-<td align="left"><code>:year/:month/:day/:title/</code></td>
-</tr>
-<tr>
-<td align="left"><code>permalink_defaults</code></td>
-<td align="left">永久链接中各部分的默认值</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>pretty_urls</code></td>
-<td align="left">改写 <a href="https://hexo.io/zh-cn/docs/variables"><code>permalink</code></a> 的值来美化 URL</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>pretty_urls.trailing_index</code></td>
-<td align="left">是否在永久链接中保留尾部的 <code>index.html</code>，设置为 <code>false</code> 时去除</td>
-<td align="left"><code>true</code></td>
-</tr>
-<tr>
-<td align="left"><code>pretty_urls.trailing_html</code></td>
-<td align="left">是否在永久链接中保留尾部的 <code>.html</code>, 设置为 <code>false</code> 时去除 (<em>对尾部的 <code>index.html</code>无效</em>)</td>
-<td align="left"><code>true</code></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>网站存放在子目录</p>
-<p>如果您的网站存放在子目录中，例如 <code>http://example.com/blog</code>，则请将您的 <code>url</code> 设为 <code>http://example.com/blog</code> 并把 <code>root</code> 设为 <code>/blog/</code>。</p>
-</blockquote>
-<p>例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 比如，一个页面的永久链接是 http:&#x2F;&#x2F;example.com&#x2F;foo&#x2F;bar&#x2F;index.html</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: false</span><br><span class="line"># 此时页面的永久链接会变为 http:&#x2F;&#x2F;example.com&#x2F;foo&#x2F;bar&#x2F;</span><br></pre></td></tr></table></figure>
-
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-<th align="left">默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>source_dir</code></td>
-<td align="left">资源文件夹，这个文件夹用来存放内容。</td>
-<td align="left"><code>source</code></td>
-</tr>
-<tr>
-<td align="left"><code>public_dir</code></td>
-<td align="left">公共文件夹，这个文件夹用于存放生成的站点文件。</td>
-<td align="left"><code>public</code></td>
-</tr>
-<tr>
-<td align="left"><code>tag_dir</code></td>
-<td align="left">标签文件夹</td>
-<td align="left"><code>tags</code></td>
-</tr>
-<tr>
-<td align="left"><code>archive_dir</code></td>
-<td align="left">归档文件夹</td>
-<td align="left"><code>archives</code></td>
-</tr>
-<tr>
-<td align="left"><code>category_dir</code></td>
-<td align="left">分类文件夹</td>
-<td align="left"><code>categories</code></td>
-</tr>
-<tr>
-<td align="left"><code>code_dir</code></td>
-<td align="left">Include code 文件夹，<code>source_dir</code> 下的子目录</td>
-<td align="left"><code>downloads/code</code></td>
-</tr>
-<tr>
-<td align="left"><code>i18n_dir</code></td>
-<td align="left">国际化（i18n）文件夹</td>
-<td align="left"><code>:lang</code></td>
-</tr>
-<tr>
-<td align="left"><code>skip_render</code></td>
-<td align="left">跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 <code>public</code> 目录中。您可使用 <a href="https://github.com/micromatch/micromatch#extended-globbing">glob 表达式</a>来匹配路径。</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<p>例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">skip_render: &quot;mypage&#x2F;**&#x2F;*&quot;</span><br><span class="line"># 将会直接将 &#96;source&#x2F;mypage&#x2F;index.html&#96; 和 &#96;source&#x2F;mypage&#x2F;code.js&#96; 不做改动地输出到 &#39;public&#39; 目录</span><br><span class="line"># 你也可以用这种方法来跳过对指定文章文件的渲染</span><br><span class="line">skip_render: &quot;_posts&#x2F;test-post.md&quot;</span><br><span class="line"># 这将会忽略对 &#39;test-post.md&#39; 的渲染</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>提示</p>
-<p>如果您刚刚开始接触 Hexo，通常没有必要修改这一部分的值。</p>
-</blockquote>
-<h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-<th align="left">默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>new_post_name</code></td>
-<td align="left">新文章的文件名称</td>
-<td align="left">:title.md</td>
-</tr>
-<tr>
-<td align="left"><code>default_layout</code></td>
-<td align="left">预设布局</td>
-<td align="left">post</td>
-</tr>
-<tr>
-<td align="left"><code>auto_spacing</code></td>
-<td align="left">在中文和英文之间加入空格</td>
-<td align="left">false</td>
-</tr>
-<tr>
-<td align="left"><code>titlecase</code></td>
-<td align="left">把标题转换为 title case</td>
-<td align="left">false</td>
-</tr>
-<tr>
-<td align="left"><code>external_link</code></td>
-<td align="left">在新标签中打开链接</td>
-<td align="left">true</td>
-</tr>
-<tr>
-<td align="left"><code>external_link.enable</code></td>
-<td align="left">在新标签中打开链接</td>
-<td align="left"><code>true</code></td>
-</tr>
-<tr>
-<td align="left"><code>external_link.field</code></td>
-<td align="left">对整个网站（<code>site</code>）生效或仅对文章（<code>post</code>）生效</td>
-<td align="left"><code>site</code></td>
-</tr>
-<tr>
-<td align="left"><code>external_link.exclude</code></td>
-<td align="left">需要排除的域名。主域名和子域名如 <code>www</code> 需分别配置</td>
-<td align="left"><code>[]</code></td>
-</tr>
-<tr>
-<td align="left"><code>filename_case</code></td>
-<td align="left">把文件名称转换为 (1) 小写或 (2) 大写</td>
-<td align="left">0</td>
-</tr>
-<tr>
-<td align="left"><code>render_drafts</code></td>
-<td align="left">显示草稿</td>
-<td align="left">false</td>
-</tr>
-<tr>
-<td align="left"><code>post_asset_folder</code></td>
-<td align="left">启动 <a href="https://hexo.io/zh-cn/docs/asset-folders">Asset 文件夹</a></td>
-<td align="left">false</td>
-</tr>
-<tr>
-<td align="left"><code>relative_link</code></td>
-<td align="left">把链接改为与根目录的相对位址</td>
-<td align="left">false</td>
-</tr>
-<tr>
-<td align="left"><code>future</code></td>
-<td align="left">显示未来的文章</td>
-<td align="left">true</td>
-</tr>
-<tr>
-<td align="left"><code>highlight</code></td>
-<td align="left">代码块的设置, see <a href="https://hexo.io/docs/syntax-highlight#Highlight-js">Highlight.js</a> section for usage guide</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>prismjs</code></td>
-<td align="left">代码块的设置, see <a href="https://hexo.io/docs/syntax-highlight#PrismJS">PrismJS</a> section for usage guide</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>相对地址</p>
-<p>默认情况下，Hexo 生成的超链接都是绝对地址。例如，如果您的网站域名为 <code>example.com</code>,您有一篇文章名为 <code>hello</code>，那么绝对链接可能像这样：<code>http://example.com/hello.html</code>，它是<strong>绝对</strong>于域名的。相对链接像这样：<code>/hello.html</code>，也就是说，无论用什么域名访问该站点，都没有关系，这在进行反向代理时可能用到。通常情况下，建议使用绝对地址。</p>
-</blockquote>
-<h2 id="分类-amp-标签"><a href="#分类-amp-标签" class="headerlink" title="分类 &amp; 标签"></a>分类 &amp; 标签</h2><table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-<th align="left">默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>default_category</code></td>
-<td align="left">默认分类</td>
-<td align="left"><code>uncategorized</code></td>
-</tr>
-<tr>
-<td align="left"><code>category_map</code></td>
-<td align="left">分类别名</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>tag_map</code></td>
-<td align="left">标签别名</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<h2 id="日期-时间格式"><a href="#日期-时间格式" class="headerlink" title="日期 / 时间格式"></a>日期 / 时间格式</h2><p>Hexo 使用 <a href="http://momentjs.com/">Moment.js</a> 来解析和显示时间。</p>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-<th align="left">默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>date_format</code></td>
-<td align="left">日期格式</td>
-<td align="left"><code>YYYY-MM-DD</code></td>
-</tr>
-<tr>
-<td align="left"><code>time_format</code></td>
-<td align="left">时间格式</td>
-<td align="left"><code>HH:mm:ss</code></td>
-</tr>
-<tr>
-<td align="left"><code>updated_option</code></td>
-<td align="left">当 Front Matter 中没有指定 <a href="https://hexo.io/zh-cn/docs/variables#%E9%A1%B5%E9%9D%A2%E5%8F%98%E9%87%8F"><code>updated</code></a> 时 <code>updated</code> 的取值</td>
-<td align="left"><code>mtime</code></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>updated_option</p>
-<p><code>updated_option</code> 控制了当 Front Matter 中没有指定 <code>updated</code> 时，<code>updated</code> 如何取值：</p>
-<ul>
-<li><code>mtime</code>: 使用文件的最后修改时间。这是从 Hexo 3.0.0 开始的默认行为。</li>
-<li><code>date</code>: 使用 <code>date</code> 作为 <code>updated</code> 的值。可被用于 Git 工作流之中，因为使用 Git 管理站点时，文件的最后修改日期常常会发生改变</li>
-<li><code>empty</code>: 直接删除 <code>updated</code>。使用这一选项可能会导致大部分主题和插件无法正常工作。</li>
-</ul>
-<p><code>use_date_for_updated</code> 选项已经被废弃，将会在下个重大版本发布时去除。请改为使用 <code>updated_option: &#39;date&#39;</code>。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">use_date_for_updated&#96; | 启用以后，如果 Front Matter 中没有指定 &#96;updated&#96;， [&#96;post.updated&#96;](https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;configuration.html) 将会使用 &#96;date&#96; 的值而不是文件的创建时间。在 Git 工作流中这个选项会很有用 | &#96;true</span><br></pre></td></tr></table></figure>
-
-<h2 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h2><table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-<th align="left">默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>per_page</code></td>
-<td align="left">每页显示的文章量 (0 = 关闭分页功能)</td>
-<td align="left"><code>10</code></td>
-</tr>
-<tr>
-<td align="left"><code>pagination_dir</code></td>
-<td align="left">分页目录</td>
-<td align="left"><code>page</code></td>
-</tr>
-</tbody></table>
-<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>theme</code></td>
-<td align="left">当前主题名称。值为<code>false</code>时禁用主题</td>
-</tr>
-<tr>
-<td align="left"><code>theme_config</code></td>
-<td align="left">主题的配置文件。在这里放置的配置会覆盖主题目录下的 <code>_config.yml</code> 中的配置</td>
-</tr>
-<tr>
-<td align="left"><code>deploy</code></td>
-<td align="left">部署部分的设置</td>
-</tr>
-<tr>
-<td align="left"><code>meta_generator</code></td>
-<td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta#%E5%B1%9E%E6%80%A7">Meta generator</a> 标签。 值为 <code>false</code> 时 Hexo 不会在头部插入该标签</td>
-</tr>
-</tbody></table>
-<h3 id="包括或不包括目录和文件"><a href="#包括或不包括目录和文件" class="headerlink" title="包括或不包括目录和文件"></a>包括或不包括目录和文件</h3><p>在 Hexo 配置文件中，通过设置 include/exclude 可以让 Hexo 进行处理或忽略某些目录和文件夹。你可以使用 <a href="https://github.com/isaacs/minimatch">glob 表达式</a> 对目录和文件进行匹配。</p>
-<p><code>include</code> and <code>exclude</code> options only apply to the <code>source/</code> folder, whereas <code>ignore</code> option applies to all folders.</p>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>include</code></td>
-<td align="left">Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 <code>.</code> 开头的文件和文件夹，Hexo 的 <code>_posts</code> 和 <code>_data</code> 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 <code>source</code> 目录下。</td>
-</tr>
-<tr>
-<td align="left"><code>exclude</code></td>
-<td align="left">Hexo 会忽略这些文件和目录</td>
-</tr>
-<tr>
-<td align="left"><code>ignore</code></td>
-<td align="left">Ignore files/folders</td>
-</tr>
-</tbody></table>
-<p>举例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Include&#x2F;Exclude Files&#x2F;Folders</span><br><span class="line">include:</span><br><span class="line">  - &quot;.nojekyll&quot;</span><br><span class="line">  # 包括 &#39;source&#x2F;css&#x2F;_typing.css&#39;</span><br><span class="line">  - &quot;css&#x2F;_typing.css&quot;</span><br><span class="line">  # 包括 &#39;source&#x2F;_css&#x2F;&#39; 中的任何文件，但不包括子目录及其其中的文件。</span><br><span class="line">  - &quot;_css&#x2F;*&quot;</span><br><span class="line">  # 包含 &#39;source&#x2F;_css&#x2F;&#39; 中的任何文件和子目录下的任何文件</span><br><span class="line">  - &quot;_css&#x2F;**&#x2F;*&quot;</span><br><span class="line"></span><br><span class="line">exclude:</span><br><span class="line">  # 不包括 &#39;source&#x2F;js&#x2F;test.js&#39;</span><br><span class="line">  - &quot;js&#x2F;test.js&quot;</span><br><span class="line">  # 不包括 &#39;source&#x2F;js&#x2F;&#39; 中的文件、但包括子目录下的所有目录和文件</span><br><span class="line">  - &quot;js&#x2F;*&quot;</span><br><span class="line">  # 不包括 &#39;source&#x2F;js&#x2F;&#39; 中的文件和子目录下的任何文件</span><br><span class="line">  - &quot;js&#x2F;**&#x2F;*&quot;</span><br><span class="line">  # 不包括 &#39;source&#x2F;js&#x2F;&#39; 目录下的所有文件名以 &#39;test&#39; 开头的文件，但包括其它文件和子目录下的单文件</span><br><span class="line">  - &quot;js&#x2F;test*&quot;</span><br><span class="line">  # 不包括 &#39;source&#x2F;js&#x2F;&#39; 及其子目录中任何以 &#39;test&#39; 开头的文件</span><br><span class="line">  - &quot;js&#x2F;**&#x2F;test*&quot;</span><br><span class="line">  # 不要用 exclude 来忽略 &#39;source&#x2F;_posts&#x2F;&#39; 中的文件。你应该使用 &#39;skip_render&#39;，或者在要忽略的文件的文件名之前加一个下划线 &#39;_&#39;</span><br><span class="line">  # 在这里配置一个 - &quot;_posts&#x2F;hello-world.md&quot; 是没有用的。</span><br><span class="line"></span><br><span class="line">ignore:</span><br><span class="line">  # Ignore any folder named &#39;foo&#39;.</span><br><span class="line">  - &quot;**&#x2F;foo&quot;</span><br><span class="line">  # Ignore &#39;foo&#39; folder in &#39;themes&#x2F;&#39; only.</span><br><span class="line">  - &quot;**&#x2F;themes&#x2F;*&#x2F;foo&quot;</span><br><span class="line">  # Same as above, but applies to every subfolders of &#39;themes&#x2F;&#39;.</span><br><span class="line">  - &quot;**&#x2F;themes&#x2F;**&#x2F;foo&quot;</span><br></pre></td></tr></table></figure>
-
-<p>列表中的每一项都必须用单引号或双引号包裹起来。</p>
-<p><code>include</code> 和 <code>exclude</code> 并不适用于 <code>themes/</code> 目录下的文件。如果需要忽略 <code>themes/</code> 目录下的部分文件或文件夹，可以使用 <code>ignore</code> 或在文件名之前添加下划线 <code>_</code>。</p>
-<h3 id="使用代替配置文件"><a href="#使用代替配置文件" class="headerlink" title="使用代替配置文件"></a>使用代替配置文件</h3><p>可以在 hexo-cli 中使用 <code>--config</code> 参数来指定自定义配置文件的路径。你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># use &#39;custom.yml&#39; in place of &#39;_config.yml&#39;</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># use &#39;custom.yml&#39; &amp; &#39;custom2.json&#39;, prioritizing &#39;custom3.yml&#39;, then &#39;custom2.json&#39;</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
-
-<p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 <code>_multiconfig.yml</code>。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p>
-<p>例如，使用 <code>--options</code> 指定了两个自定义配置文件：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo generate --config custom.yml,custom2.json</span><br></pre></td></tr></table></figure>
-
-<p>如果 <code>custom.yml</code> 中指定了 <code>foo: bar</code>，在 custom2.json 中指定了 <code>&quot;foo&quot;: &quot;dinosaur&quot;</code>，那么在 <code>_multiconfig.yml</code> 中你会得到 <code>foo: dinosaur</code>。</p>
-<h3 id="使用代替主题配置文件"><a href="#使用代替主题配置文件" class="headerlink" title="使用代替主题配置文件"></a>使用代替主题配置文件</h3><p>通常情况下，Hexo 主题是一个独立的项目，并拥有一个独立的 <code>_config.yml</code> 配置文件。</p>
-<p>除了自行维护独立的主题配置文件，你也可以在其它地方对主题进行配置。</p>
-<p><strong>配置文件中的 <code>theme_config</code></strong></p>
-<blockquote>
-<p>该特性自 Hexo 2.8.2 起提供</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># _config.yml</span><br><span class="line">theme: &quot;my-theme&quot;</span><br><span class="line">theme_config:</span><br><span class="line">  bio: &quot;My awesome bio&quot;</span><br><span class="line">  foo:</span><br><span class="line">    bar: &#39;a&#39;</span><br><span class="line"># themes&#x2F;my-theme&#x2F;_config.yml</span><br><span class="line">bio: &quot;Some generic bio&quot;</span><br><span class="line">logo: &quot;a-cool-image.png&quot;</span><br><span class="line">  foo:</span><br><span class="line">    baz: &#39;b&#39;</span><br></pre></td></tr></table></figure>
-
-<p>最终主题配置的输出是：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  bio: &quot;My awesome bio&quot;,</span><br><span class="line">  logo: &quot;a-cool-image.png&quot;,</span><br><span class="line">  foo: &#123;</span><br><span class="line">    bar: &quot;a&quot;,</span><br><span class="line">    baz: &quot;b&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>独立的 <code>_config.[theme].yml</code> 文件</strong></p>
-<blockquote>
-<p>该特性自 Hexo 5.0.0 起提供</p>
-</blockquote>
-<p>独立的主题配置文件应放置于站点根目录下，支持 <code>yml</code> 或 <code>json</code> 格式。需要配置站点 <code>_config.yml</code> 文件中的 <code>theme</code> 以供 Hexo 寻找 <code>_config.[theme].yml</code> 文件。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># _config.yml</span><br><span class="line">theme: &quot;my-theme&quot;</span><br><span class="line"># _config.my-theme.yml</span><br><span class="line">bio: &quot;My awesome bio&quot;</span><br><span class="line">foo:</span><br><span class="line">  bar: &#39;a&#39;</span><br><span class="line"># themes&#x2F;my-theme&#x2F;_config.yml</span><br><span class="line">bio: &quot;Some generic bio&quot;</span><br><span class="line">logo: &quot;a-cool-image.png&quot;</span><br><span class="line">  foo:</span><br><span class="line">    baz: &#39;b&#39;</span><br></pre></td></tr></table></figure>
-
-<p>最终主题配置的输出是：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  bio: &quot;My awesome bio&quot;,</span><br><span class="line">  logo: &quot;a-cool-image.png&quot;,</span><br><span class="line">  foo: &#123;</span><br><span class="line">    bar: &quot;a&quot;,</span><br><span class="line">    baz: &quot;b&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>我们强烈建议你将所有的主题配置集中在一处。如果你不得不在多处配置你的主题，那么这些信息对你将会非常有用：Hexo 在合并主题配置时，Hexo 配置文件中的 <code>theme_config</code> 的优先级最高，其次是 <code>_config.[theme].yml</code> 文件，最后是位于主题目录下的 <code>_config.yml</code> 文件。</p>
-</blockquote>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> LeanCloud问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CRON表达式</title>
+      <link href="2020/10/25/LeanEngine/CRON-expression/"/>
+      <url>2020/10/25/LeanEngine/CRON-expression/</url>
+      
+        <content type="html"><![CDATA[<h2 id="CRON-表达式"><a href="#CRON-表达式" class="headerlink" title="CRON 表达式"></a><a href="https://zh-docs.leancloud.app/leanengine_cloudqueue.html#hash-2143744582">CRON 表达式</a></h2><p>CRON 表达式的基本语法为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;秒&gt; &lt;分钟&gt; &lt;小时&gt; &lt;日期 day-of-month&gt; &lt;月份&gt; &lt;星期 day-of-week&gt;</span><br></pre></td></tr></table></figure><table><thead><tr><th align="left">位置</th><th align="left">字段</th><th align="left">约束</th><th align="left">取值</th><th align="left">可使用的特殊符号</th></tr></thead><tbody><tr><td align="left">1</td><td align="left">秒</td><td align="left">必须</td><td align="left">0-59</td><td align="left"><code>, - * /</code></td></tr><tr><td align="left">2</td><td align="left">分钟</td><td align="left">必须</td><td align="left">0-59</td><td align="left"><code>, - * /</code></td></tr><tr><td align="left">3</td><td align="left">小时</td><td align="left">必须</td><td align="left">0-23（0 为午夜）</td><td align="left"><code>, - * /</code></td></tr><tr><td align="left">4</td><td align="left">日期</td><td align="left">必须</td><td align="left">1-31</td><td align="left"><code>, - * ? /</code></td></tr><tr><td align="left">5</td><td align="left">月份</td><td align="left">必须</td><td align="left">1-12、JAN-DEC</td><td align="left"><code>, - * /</code></td></tr><tr><td align="left">6</td><td align="left">星期</td><td align="left">必须</td><td align="left">1-7、SUN-SAT</td><td align="left"><code>, - ? /</code></td></tr></tbody></table><p>特殊符号的用法：</p><table><thead><tr><th align="left">符号</th><th align="left">含义</th><th align="left">用法</th></tr></thead><tbody><tr><td align="left"><code>*</code></td><td align="left">所有值</td><td align="left">代表一个字段的所有可能取值。如将 <code>&lt;分钟&gt;</code> 设为 *****，表示每一分钟。</td></tr><tr><td align="left"><code>?</code></td><td align="left">不指定值</td><td align="left">用于可以使用该符号的两个字段中的一个，在一个表达式中只能出现一次。如任务执行时间为每月 10 号，星期几无所谓，那么表达式中 <code>&lt;日期&gt;</code> 设为 <strong>10</strong>，<code>&lt;星期&gt;</code> 设为 **?**。</td></tr><tr><td align="left"><code>-</code></td><td align="left">范围</td><td align="left">如 <code>&lt;小时&gt;</code> 为 <strong>10-12</strong>，即10 点、11 点、12 点。</td></tr><tr><td align="left"><code>,</code></td><td align="left">分隔多个值</td><td align="left">如 <code>&lt;星期&gt;</code> 为 <strong>MON,WED,FRI</strong>，即周一、周三、周五。</td></tr><tr><td align="left"><code>/</code></td><td align="left">增量</td><td align="left">如 <code>&lt;秒&gt;</code> 设为 <strong>0/15</strong>，即从 0 秒开始，以 15 秒为增量，包括 0、15、30、45 秒；<strong>5/15</strong> 即 5、20、35、50 秒。*<strong>/</strong> 与 <strong>0/</strong> 等效，如 <code>&lt;日期&gt;</code> 设为 <strong>1/3</strong>，即从每个月的第一天开始，每 3 天（即每隔 2 天）执行一次任务。</td></tr></tbody></table><p>各字段以空格或空白隔开。<code>JAN-DEC</code>、<code>SUN-SAT</code> 这些值不区分大小写，比如 <code>MON</code> 和 <code>mon</code> 效果一样。</p><p>举例如下：</p><table><thead><tr><th align="left">表达式</th><th align="left">说明</th></tr></thead><tbody><tr><td align="left"><code>0 0/5 * * * ?</code></td><td align="left">每隔 5 分钟执行一次</td></tr><tr><td align="left"><code>10 0/5 * * * ?</code></td><td align="left">每隔 5 分钟执行一次，每次执行都在分钟开始的 10 秒，例如 10:00:10、10:05:10 等等。</td></tr><tr><td align="left"><code>0 30 10-13 ? * WED,FRI</code></td><td align="left">每周三和每周五的 10:30、11:30、12:30、13:30 执行。</td></tr><tr><td align="left"><code>0 0/30 8-9 5,20 * ?</code></td><td align="left">每个月的 5 号和 20 号的 8 点和 10 点之间每隔 30 分钟执行一次，也就是 8:00、8:30、9:00 和 9:30。</td></tr></tbody></table><p>Cron 表达式的时区为东八区（国内版）、UTC 零时区（国际版）。</p>]]></content>
+      
+      
       <categories>
-        <category>博客搭建</category>
+          
+          <category> 语言语法 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo的一些指令</title>
-    <url>/2020/10/23/createBlog/hexo_commands/</url>
-    <content><![CDATA[<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo init [folder] </span><br></pre></td></tr></table></figure>
-
-<p>新建一个网站。如果没有设置 <code>folder</code>，Hexo默认在目前的文件夹建立网站。 </p>
-<h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt; </span><br></pre></td></tr></table></figure>
-
-<p>新建一篇文章。如果没有设置<code>layout</code>，默认使用_config.yml中的<code>default_layout</code>参数代替。如果标题包含空格的话，请使用引号括起来。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new &quot;Post title with whitespace&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>生成静态文件。</p>
-<table>
-<thead>
-<tr>
-<th align="left">选项</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>-d</code>,<code>--deploy</code></td>
-<td align="left">文件生成后立即部署网站</td>
-</tr>
-<tr>
-<td align="left"><code>-w</code>,<code>--watch</code></td>
-<td align="left">监视文件变动</td>
-</tr>
-<tr>
-<td align="left"><code>-b</code>,<code>--bail</code></td>
-<td align="left">生成过程中如果发生任何未处理的异常则抛出异常</td>
-</tr>
-<tr>
-<td align="left"><code>-f</code>,<code>force</code></td>
-<td align="left">强制重新生成文件<br/>Hexo 引入了差分机制，如果 <code>public</code> 目录存在，那么 <code>hexo g</code> 只会重新生成改动的文件。<br/>使用该参数的效果接近 <code>hexo clean &amp;&amp; hexo generate</code></td>
-</tr>
-<tr>
-<td align="left"><code>-c</code>,<code>--concurrency</code></td>
-<td align="left">最大同时生成文件的数量，默认无限制</td>
-</tr>
-</tbody></table>
-<p>该命令可以简写为</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo publish [<span class="type">layout</span>] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-
-<p>发表草稿。</p>
-<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo server	</span><br></pre></td></tr></table></figure>
-
-<p>启动服务器。默认情况下，访问网址为：<code> http://localhost:4000/</code>。</p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>-p</code>,<code>--port</code></td>
-<td>重设端口</td>
-</tr>
-<tr>
-<td><code>-s</code>,<code>--static</code></td>
-<td>只用静态文件</td>
-</tr>
-<tr>
-<td><code>-l</code>,<code>--log</code></td>
-<td>启动日记记录，使用覆盖记录格式</td>
-</tr>
-</tbody></table>
-<h3 id="deplo"><a href="#deplo" class="headerlink" title="deplo"></a>deplo</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>部署网站。</p>
-<h3 id="render"><a href="#render" class="headerlink" title="render"></a>render</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo render &lt;file1&gt; [<span class="type">file2</span>]</span><br></pre></td></tr></table></figure>
-
-<p>渲染文件。</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>-o</code>,<code>--output</code></td>
-<td>设置输出路径</td>
-</tr>
-</tbody></table>
-<h3 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo migrate &lt;<span class="built_in">type</span>&gt;	</span><br></pre></td></tr></table></figure>
-
-<p>从其他博客系统 <a href="https://hexo.io/zh-cn/docs/migration">迁移内容</a></p>
-<h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo clean</span><br></pre></td></tr></table></figure>
-
-<p>清除缓存文件(<code>db.json</code>)和已生成的静态文件(<code>public</code>)。</p>
-<p>在某些 情况(尤其是更换主题后)，如果你发现您对站点的更改无论如何也不生效，您可能需要</p>
-<p>运行该命令。</p>
-<h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo list &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<p>列出网站资料。</p>
-<h3 id="version"><a href="#version" class="headerlink" title="version"></a>version</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo version</span><br></pre></td></tr></table></figure>
-
-<p>显示Hexo版本。</p>
-<h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo -<span class="literal">-safe</span></span><br></pre></td></tr></table></figure>
-
-<p>在安全模式下，不会载入插件和脚本。当你在安装新插件草鱼问题时，可以尝试以安全模式重新执行。</p>
-<h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --debug</span><br></pre></td></tr></table></figure>
-
-<p>在终端中显示调试信息并记录到 <code>debug.log</code>。当您碰到问题时，可以尝试用调试模式重新执行一次，并 <a href="https://github.com/hexojs/hexo/issues/new">提交调试信息到 GitHub</a>。</p>
-<h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --silent</span><br></pre></td></tr></table></figure>
-
-<p>隐藏终端信息。</p>
-<h3 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 使用 custom.yml 代替默认的 _config.yml</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># 使用 custom.yml 和 custom2.json，其中 custom2.json 优先级更高</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
-
-<p>自定义配置文件的路径，指定这个参数后将不再使用默认的 <code>_config.yml</code>。<br>你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 使用 custom.yml 代替默认的 _config.yml</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># 使用 custom.yml, custom2.json 和 custom3.yml，其中 custom3.yml 优先级最高，其次是 custom2.json</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
-
-<p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 <code>_multiconfig.yml</code>。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p>
-<h3 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --draft</span><br></pre></td></tr></table></figure>
-
-<p>显示 <code>source/_drafts</code> 文件夹中的草稿文章。</p>
-<h3 id="自定义-CWD"><a href="#自定义-CWD" class="headerlink" title="自定义 CWD"></a>自定义 CWD</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --cwd &#x2F;path&#x2F;to&#x2F;cwd</span><br></pre></td></tr></table></figure>
-
-<p>自定义当前工作目录（Current working directory）的路径。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> CRON </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>阅读量显示错误</title>
+      <link href="2020/10/24/createBlog/problems002/"/>
+      <url>2020/10/24/createBlog/problems002/</url>
+      
+        <content type="html"><![CDATA[<p>这个是由于Google Chrome和一些浏览器最近更新了referrer策略，导致文章阅读数referrer全部变成博客首页（也就是站点的PV数），对于Butterfly主题：在Butterfly的Inject插入以下内容即可解决</p><p><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/9707a4396346869ce460227e2f5f9402760ab1fb/68747470733a2f2f692e6c6f6c692e6e65742f323032302f31302f31352f424c376a6b5a4458746f78634e32712e706e67"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;referrer&quot; content&#x3D;&quot;no-referrer-when-downgrade&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>博客搭建</category>
+          
+          <category> 博客搭建 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo简介</title>
-    <url>/2020/10/23/createBlog/introduction/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Hexo 是一个基于nodejs 的静态博客网站生成器，作者是来自台湾的 Tommy Chen  </p>
-<p>特点：  </p>
-<p>不可思议的快速 ─ 只要一眨眼静态文件即生成完成  </p>
-<p>支持 Markdown  </p>
-<p>仅需一道指令即可部署到 GitHub Pages 和 Heroku  </p>
-<p>已移植 Octopress 插件  </p>
-<p>高扩展性、自订性  </p>
-<p>兼容于 Windows, Mac &amp; Linux  </p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
-<li><h3 id="系统版本-Microsoft-Windows-Version-10-0-19041-572"><a href="#系统版本-Microsoft-Windows-Version-10-0-19041-572" class="headerlink" title="系统版本 ### :Microsoft Windows [Version 10.0.19041.572]"></a>系统版本 ### :Microsoft Windows [Version 10.0.19041.572]</h3></li>
-<li>安装了git for windows (或者其他的git客户端) [下载]: <a href="https://git-scm.com/download/">https://git-scm.com/download/</a></li>
-<li>安装了node.js、npm，并了解基础命令 [下载]: <a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></li>
-<li>有github账号并且配置到好了ssh，实现免密推送。</li>
-</ul>
-<h2 id="安装hexo基本框架"><a href="#安装hexo基本框架" class="headerlink" title="安装hexo基本框架"></a>安装hexo基本框架</h2><blockquote>
-<p>第一步：新建文件夹</p>
-</blockquote>
-<p>这一步是为博客新建一个文件夹来存放文件</p>
-<blockquote>
-<p>第二步：安装hexo基础框架</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 安装hexo框架  </span><br><span class="line">npm install -g hexo  </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 初始化hexo框架  </span><br><span class="line">npm init</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 安装所需的组件</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 编译生成今天网页</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 启动本地服务</span><br><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>命令完成后 在浏览器中  输入   <a href="http://localhost:4000/">http://localhost:4000/</a>  即可访问。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签插件</title>
+      <link href="2020/10/24/createBlog/Tag-Plugins/"/>
+      <url>2020/10/24/createBlog/Tag-Plugins/</url>
+      
+        <content type="html"><![CDATA[<h1 id="标签插件（Tag-Plugins）"><a href="#标签插件（Tag-Plugins）" class="headerlink" title="标签插件（Tag Plugins）"></a>标签插件（Tag Plugins）</h1><p>标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。</p><p>虽然你可以使用任何格式书写你的文章，但是标签插件永远可用，且语法也都是一致的。</p><p><em>Tag plugins should not be wrapped inside Markdown syntax, e.g. <code>[](&#123;% post_path lorem-ipsum %&#125;)</code> is not supported.</em></p><h2 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h2><p>在文章中插入引言，可包含作者、来源和标题。</p><p><strong>别号：</strong> quote</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure><h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><p><strong>没有提供参数，则只输出普通的 blockquote</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote %&#125;</span><br><span class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p></blockquote><p><strong>引用书上的句子</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote David Levithan, Wide Awake %&#125;</span><br><span class="line">Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p><p><strong>David Levithan</strong>Wide Awake</p></blockquote><p><strong>引用 Twitter</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote @DevDocs https:&#x2F;&#x2F;twitter.com&#x2F;devdocs&#x2F;status&#x2F;356095192085962752 %&#125;</span><br><span class="line">NEW: DevDocs now comes with syntax highlighting. http:&#x2F;&#x2F;devdocs.io</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure><blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io/">http://devdocs.io</a></p><p><strong>@DevDocs</strong><a href="https://twitter.com/devdocs/status/356095192085962752">twitter.com/devdocs/status/356095192085962752</a></p></blockquote><p><strong>引用网络上的文章</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote Seth Godin http:&#x2F;&#x2F;sethgodin.typepad.com&#x2F;seths_blog&#x2F;2009&#x2F;07&#x2F;welcome-to-island-marketing.html Welcome to Island Marketing %&#125;</span><br><span class="line">Every interaction is both precious and an opportunity to delight.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure><blockquote><p>Every interaction is both precious and an opportunity to delight.</p><p><strong>Seth Godin</strong><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html">Welcome to Island Marketing</a></p></blockquote><h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>在文章中插入代码。</p><p><strong>别名：</strong> code</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;</span><br><span class="line">code snippet</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure><p>Specify additional options in <code>option:value</code> format, e.g. <code>line_number:false first_line:5</code>.</p><table><thead><tr><th align="left">Extra Options</th><th align="left">Description</th><th align="left">Default</th></tr></thead><tbody><tr><td align="left"><code>line_number</code></td><td align="left">Show line number</td><td align="left"><code>true</code></td></tr><tr><td align="left"><code>highlight</code></td><td align="left">Enable code highlighting</td><td align="left"><code>true</code></td></tr><tr><td align="left"><code>first_line</code></td><td align="left">Specify the first line number</td><td align="left"><code>1</code></td></tr><tr><td align="left"><code>mark</code></td><td align="left">Line highlight specific line(s), each value separated by a comma. Specify number range using a dash Example: <code>mark:1,4-7,10</code> will mark line 1, 4 to 7 and 10.</td><td align="left"></td></tr><tr><td align="left"><code>wrap</code></td><td align="left">Wrap the code block in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">``</a></td><td align="left"><code>true</code></td></tr></tbody></table><h3 id="样例-1"><a href="#样例-1" class="headerlink" title="样例"></a>样例</h3><p><strong>普通的代码块</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock %&#125;</span><br><span class="line">alert(&#39;Hello World!&#39;);</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line">alert(&#39;Hello World!&#39;);</span><br></pre></td></tr></table></figure><p><strong>指定语言</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock lang:objc %&#125;</span><br><span class="line">[rectangle setX: 10 y: 10 width: 20 height: 20];</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line">[rectangle setX: 10 y: 10 width: 20 height: 20];</span><br></pre></td></tr></table></figure><p><strong>附加说明</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock Array.map %&#125;</span><br><span class="line">array.map(callback[, thisArg])</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line">Array.maparray.map(callback[, thisArg])</span><br></pre></td></tr></table></figure><p><strong>附加说明和网址</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock _.compact http:&#x2F;&#x2F;underscorejs.org&#x2F;#compact Underscore.js %&#125;</span><br><span class="line">_.compact([0, 1, false, 2, &#39;&#39;, 3]);</span><br><span class="line">&#x3D;&gt; [1, 2, 3]</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line">_.compactUnderscore.js_.compact([0, 1, false, 2, &#39;&#39;, 3]);</span><br><span class="line">&#x3D;&gt; [1, 2, 3]</span><br></pre></td></tr></table></figure><h2 id="反引号代码块"><a href="#反引号代码块" class="headerlink" title="反引号代码块"></a>反引号代码块</h2><p>另一种形式的代码块，不同的是它使用三个反引号来包裹。</p><p>``` [language] [title] [url] [link text] code snippet ```</p><h2 id="Pull-Quote"><a href="#Pull-Quote" class="headerlink" title="Pull Quote"></a>Pull Quote</h2><p>在文章中插入 Pull quote。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pullquote [class] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endpullquote %&#125;</span><br></pre></td></tr></table></figure><h2 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h2><p>在文章中嵌入 jsFiddle。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125;</span><br></pre></td></tr></table></figure><h2 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h2><p>在文章中嵌入 Gist。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gist gist_id [filename] %&#125;</span><br></pre></td></tr></table></figure><h2 id="iframe"><a href="#iframe" class="headerlink" title="iframe"></a>iframe</h2><p>在文章中插入 iframe。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% iframe url [width] [height] %&#125;</span><br></pre></td></tr></table></figure><h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><p>在文章中插入指定大小的图片。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% img [class names] &#x2F;path&#x2F;to&#x2F;image [width] [height] &#39;&quot;title text&quot; &quot;alt text&quot;&#39; %&#125;</span><br></pre></td></tr></table></figure><h2 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h2><p>在文章中插入链接，并自动给外部链接添加 <code>target=&quot;_blank&quot;</code> 属性。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% link text url [external] [title] %&#125;</span><br></pre></td></tr></table></figure><h2 id="Include-Code"><a href="#Include-Code" class="headerlink" title="Include Code"></a>Include Code</h2><p>插入 <code>source/downloads/code</code> 文件夹内的代码文件。<code>source/downloads/code</code> 不是固定的，取决于你在配置文件中 <code>code_dir</code> 的配置。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include_code [title] [lang:language] [from:line] [to:line] path&#x2F;to&#x2F;file %&#125;</span><br></pre></td></tr></table></figure><h3 id="样例-2"><a href="#样例-2" class="headerlink" title="样例"></a>样例</h3><p><strong>嵌入 test.js 文件全文</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include_code lang:javascript test.js %&#125;</span><br></pre></td></tr></table></figure><p><strong>只嵌入第 3 行</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include_code lang:javascript from:3 to:3 test.js %&#125;</span><br></pre></td></tr></table></figure><p><strong>嵌入第 5 行至第 8 行</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include_code lang:javascript from:5 to:8 test.js %&#125;</span><br></pre></td></tr></table></figure><p><strong>嵌入第 5 行至文件结束</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include_code lang:javascript from:5 test.js %&#125;</span><br></pre></td></tr></table></figure><p><strong>嵌入第 1 行至第 8 行</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include_code lang:javascript to:8 test.js %&#125;</span><br></pre></td></tr></table></figure><h2 id="Youtube"><a href="#Youtube" class="headerlink" title="Youtube"></a>Youtube</h2><p>在文章中插入 Youtube 视频。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube video_id [type] [cookie] %&#125;</span><br></pre></td></tr></table></figure><h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p><strong>视频</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube lJIrF4YjHfQ %&#125;</span><br></pre></td></tr></table></figure><p><strong>播放列表</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo &#39;playlist&#39; %&#125;</span><br></pre></td></tr></table></figure><p><strong>隐私模式</strong></p><p>禁止 YouTube cookie</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube lJIrF4YjHfQ false %&#125;</span><br><span class="line">&#123;% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo &#39;playlist&#39; false %&#125;</span><br></pre></td></tr></table></figure><h2 id="Vimeo"><a href="#Vimeo" class="headerlink" title="Vimeo"></a>Vimeo</h2><p>在文章中插入 Vimeo 视频。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% vimeo video_id %&#125;</span><br></pre></td></tr></table></figure><h2 id="引用文章"><a href="#引用文章" class="headerlink" title="引用文章"></a>引用文章</h2><p>引用其他文章的链接。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_path filename %&#125;</span><br><span class="line">&#123;% post_link filename [title] [escape] %&#125;</span><br></pre></td></tr></table></figure><p>在使用此标签时可以忽略文章文件所在的路径或者文章的永久链接信息、如语言、日期。</p><p>例如，在文章中使用 <code>&#123;% post_link how-to-bake-a-cake %&#125;</code> 时，只需有一个名为 <code>how-to-bake-a-cake.md</code> 的文章文件即可。即使这个文件位于站点文件夹的 <code>source/posts/2015-02-my-family-holiday</code> 目录下、或者文章的永久链接是 <code>2018/en/how-to-bake-a-cake</code>，都没有影响。</p><p>默认链接文字是文章的标题，你也可以自定义要显示的文本。</p><p>默认对文章的标题和自定义标题里的特殊字符进行转义。可以使用<code>escape</code>选项，禁止对特殊字符进行转义。</p><p><strong>链接使用文章的标题</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link hexo-3-8-released %&#125;</span><br></pre></td></tr></table></figure><p><a href="https://hexo.io/news/2018/10/19/hexo-3-8-released/">Hexo 3.8.0 Released</a></p><p><strong>链接使用自定义文字</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link hexo-3-8-released &#39;通往文章的链接&#39; %&#125;</span><br></pre></td></tr></table></figure><p><a href="https://hexo.io/news/2018/10/19/hexo-3-8-released/">通往文章的链接</a></p><p><strong>对标题的特殊字符进行转义</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link hexo-4-released &#39;How to use &lt;b&gt; tag in title&#39; %&#125;</span><br></pre></td></tr></table></figure><p><a href="https://hexo.io/news/2019/10/14/hexo-4-released/">How to use  tag in title</a></p><p><strong>禁止对标题的特殊字符进行转义</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link hexo-4-released &#39;&lt;b&gt;bold&lt;&#x2F;b&gt; custom title&#39; false %&#125;</span><br></pre></td></tr></table></figure><p><a href="https://hexo.io/news/2019/10/14/hexo-4-released/"><strong>bold</strong> custom title</a></p><h2 id="引用资源"><a href="#引用资源" class="headerlink" title="引用资源"></a>引用资源</h2><p>引用文章的资源。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path filename %&#125;</span><br><span class="line">&#123;% asset_img [class names] slug [width] [height] [title text [alt text]] %&#125;</span><br><span class="line">&#123;% asset_link filename [title] [escape] %&#125;</span><br></pre></td></tr></table></figure><h3 id="Embed-image"><a href="#Embed-image" class="headerlink" title="Embed image"></a>Embed image</h3><p><em>hexo-renderer-marked 3.1.0+ can (optionally) resolves the post’s path of an image automatically, refer to <a href="https://hexo.io/docs/asset-folders#Embedding-an-image-using-markdown">this section</a> on how to enable it.</em></p><p>“foo.jpg” is located at <code>http://example.com/2020/01/02/hello/foo.jpg</code>.</p><p><strong>Default (no option)</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img foo.jpg %&#125;</span><br><span class="line">&lt;img src&#x3D;&quot;&#x2F;2020&#x2F;01&#x2F;02&#x2F;hello&#x2F;foo.jpg&quot;&gt;</span><br></pre></td></tr></table></figure><p><strong>Custom class</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img post-image foo.jpg %&#125;</span><br><span class="line">&lt;img src&#x3D;&quot;&#x2F;2020&#x2F;01&#x2F;02&#x2F;hello&#x2F;foo.jpg&quot; class&#x3D;&quot;post-image&quot;&gt;</span><br></pre></td></tr></table></figure><p><strong>Display size</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img foo.jpg 500 400 %&#125;</span><br><span class="line">&lt;img src&#x3D;&quot;&#x2F;2020&#x2F;01&#x2F;02&#x2F;hello&#x2F;foo.jpg&quot; width&#x3D;&quot;500&quot; height&#x3D;&quot;400&quot;&gt;</span><br></pre></td></tr></table></figure><p><strong>Title &amp; Alt</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img logo.svg &quot;lorem ipsum&#39;dolor&#39;&quot; %&#125;</span><br><span class="line">&lt;img src&#x3D;&quot;&#x2F;2020&#x2F;01&#x2F;02&#x2F;hello&#x2F;foo.jpg&quot; title&#x3D;&quot;lorem ipsum&quot; alt&#x3D;&quot;dolor&quot;&gt;</span><br></pre></td></tr></table></figure><h2 id="Raw"><a href="#Raw" class="headerlink" title="Raw"></a>Raw</h2><p>如果您想在文章中插入 Swig 标签，可以尝试使用 Raw 标签，以免发生解析异常。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure><h2 id="文章摘要和截断"><a href="#文章摘要和截断" class="headerlink" title="文章摘要和截断"></a>文章摘要和截断</h2><p>在文章中使用 <code>&lt;!-- more --&gt;</code>，那么 <code>&lt;!-- more --&gt;</code> 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。</p><p>例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br></pre></td></tr></table></figure><p>首页中将只会出现</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br></pre></td></tr></table></figure><p>正文中则会出现</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br><span class="line"></span><br><span class="line">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br></pre></td></tr></table></figure><p>注意，摘要可能会被 Front Matter 中的 <code>excerpt</code> 覆盖。</p>]]></content>
+      
+      
       <categories>
-        <category>博客搭建</category>
+          
+          <category> 博客搭建 </category>
+          
       </categories>
-      <tags>
-        <tag>我的第一篇文章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>迁移博客</title>
-    <url>/2020/10/24/createBlog/migrate/</url>
-    <content><![CDATA[<h1 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h1><h2 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h2><p>首先，安装 <code>hexo-migrator-rss</code> 插件。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-rss --save</span><br></pre></td></tr></table></figure>
-
-<p>插件安装完成后，执行下列命令，从 RSS 迁移所有文章。<code>source</code> 可以是文件路径或网址。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo migrate rss &lt;source&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h2><p>把 <code>_posts</code> 文件夹内的所有文件复制到 <code>source/_posts</code> 文件夹，并在 <code>_config.yml</code> 中修改 <code>new_post_name</code> 参数。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
-
-<h2 id="Octopress"><a href="#Octopress" class="headerlink" title="Octopress"></a>Octopress</h2><p>把 Octopress <code>source/_posts</code> 文件夹内的所有文件转移到 Hexo 的 <code>source/_posts</code> 文件夹，并修改 <code>_config.yml</code> 中的 <code>new_post_name</code> 参数。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
-
-<h2 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h2><p>首先，安装 <code>hexo-migrator-wordpress</code> 插件。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure>
-
-<p>在 WordPress 仪表盘中导出数据(“Tools” → “Export” → “WordPress”)（详情参考<a href="http://en.support.wordpress.com/export/">WP支持页面</a>）。</p>
-<p>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 WordPress 导出的文件路径或网址。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo migrate wordpress &lt;source&gt;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>注意</p>
-<p>这个插件并不能完美地实现WordPress-&gt;Hexo的数据转换，尤其是在处理WordPress的分类方面存在问题（见<a href="https://hexo.io/zh-cn/docs/front-matter">Front-matter中的分类与标签</a>）。因此，建议您在迁移完成后，手工审阅所有生成的markdown文件，检查其中是否有错误。对于文章数量较大的WordPress站点，这项工作可能要花很长的时间。</p>
-</blockquote>
-<h2 id="Joomla"><a href="#Joomla" class="headerlink" title="Joomla"></a>Joomla</h2><p>首先，安装 <code>hexo-migrator-joomla</code> 插件。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-joomla --save</span><br></pre></td></tr></table></figure>
-
-<p>使用 <a href="http://extensions.joomla.org/extensions/migration-a-conversion/data-import-a-export/12816?qh=YToxOntpOjA7czo1OiJqMnhtbCI7fQ==">J2XML</a> 组件导出 Joomla 文章。<br>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 Joomla 导出的文件路径或网址。</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo migrate joomla &lt;source&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Front-matter</title>
+      <link href="2020/10/24/createBlog/Front-matter/"/>
+      <url>2020/10/24/createBlog/Front-matter/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h1><iframe src="https://www.youtube.com/embed/Rl48Yk4A_V8" frameborder="0" loading="lazy" allowfullscreen="" style="box-sizing: inherit; margin: 1em 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 15px; vertical-align: baseline;"></iframe><p>Front-matter 是文件最上方以 <code>---</code> 分隔的区域，用于指定个别文件的变量，举例来说：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2013&#x2F;7&#x2F;13 20:46:25</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>layout</code></td><td align="left">布局</td><td align="left"></td></tr><tr><td align="left"><code>title</code></td><td align="left">标题</td><td align="left">文章的文件名</td></tr><tr><td align="left"><code>date</code></td><td align="left">建立日期</td><td align="left">文件建立日期</td></tr><tr><td align="left"><code>updated</code></td><td align="left">更新日期</td><td align="left">文件更新日期</td></tr><tr><td align="left"><code>comments</code></td><td align="left">开启文章的评论功能</td><td align="left">true</td></tr><tr><td align="left"><code>tags</code></td><td align="left">标签（不适用于分页）</td><td align="left"></td></tr><tr><td align="left"><code>categories</code></td><td align="left">分类（不适用于分页）</td><td align="left"></td></tr><tr><td align="left"><code>permalink</code></td><td align="left">覆盖文章网址</td><td align="left"></td></tr><tr><td align="left"><code>disableNunjucks</code></td><td align="left">Disable rendering of Nunjucks tag <code>&#123;&#123; &#125;&#125;</code>/<code>&#123;% %&#125;</code> and <a href="https://hexo.io/docs/tag-plugins">tag plugins</a> when enabled</td><td align="left"></td></tr></tbody></table><h2 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h2><p>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">- Diary</span><br><span class="line">tags:</span><br><span class="line">- PS3</span><br><span class="line">- Games</span><br></pre></td></tr></table></figure><blockquote><p>分类方法的分歧</p><p>如果您有过使用 WordPress 的经验，就很容易误解 Hexo 的分类方式。WordPress 支持对一篇文章设置多个分类，而且这些分类可以是同级的，也可以是父子分类。但是 Hexo 不支持指定多个同级分类。下面的指定方法：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">  - Diary</span><br><span class="line">  - Life</span><br></pre></td></tr></table></figure><p>会使分类<code>Life</code>成为<code>Diary</code>的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。</p><p>如果你需要为文章添加多个分类，可以尝试以下 list 中的方法。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">- [Diary, PlayStation]</span><br><span class="line">- [Diary, Games]</span><br><span class="line">- [Life]</span><br></pre></td></tr></table></figure><p>此时这篇文章同时包括三个分类： <code>PlayStation</code> 和 <code>Games</code> 分别都是父分类 <code>Diary</code> 的子分类，同时 <code>Life</code> 是一个没有子分类的分类。</p></blockquote><h2 id="JSON-Front-matter"><a href="#JSON-Front-matter" class="headerlink" title="JSON Front-matter"></a>JSON Front-matter</h2><p>除了 YAML 外，你也可以使用 JSON 来编写 Front-matter，只要将 <code>---</code> 代换成 <code>;;;</code> 即可。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;title&quot;: &quot;Hello World&quot;,</span><br><span class="line">&quot;date&quot;: &quot;2013&#x2F;7&#x2F;13 20:46:25&quot;</span><br><span class="line">;;;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>博客搭建</category>
+          
+          <category> 博客搭建 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>写作</title>
-    <url>/2020/10/24/createBlog/writing/</url>
-    <content><![CDATA[<h1 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h1><iframe src="https://www.youtube.com/embed/HLJ9jJy7CMg" frameborder="0" loading="lazy" allowfullscreen="" style="box-sizing: inherit; margin: 1em 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 15px; vertical-align: baseline;"></iframe>
-
-<p>你可以执行下列命令来创建一篇新文章或者新的页面。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-
-<p>您可以在命令中指定文章的布局（layout），默认为 <code>post</code>，可以通过修改 <code>_config.yml</code> 中的 <code>default_layout</code> 参数来指定默认布局。</p>
-<h3 id="布局（Layout）"><a href="#布局（Layout）" class="headerlink" title="布局（Layout）"></a>布局（Layout）</h3><p>Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code>。在创建者三种不同类型的文件时，它们将会被保存到不同的路径；而您自定义的其他布局和 <code>post</code> 相同，都将储存到 <code>source/_posts</code> 文件夹。</p>
-<table>
-<thead>
-<tr>
-<th align="left">布局</th>
-<th align="left">路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>post</code></td>
-<td align="left"><code>source/_posts</code></td>
-</tr>
-<tr>
-<td align="left"><code>page</code></td>
-<td align="left"><code>source</code></td>
-</tr>
-<tr>
-<td align="left"><code>draft</code></td>
-<td align="left"><code>source/_drafts</code></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>不要处理我的文章</p>
-<p>如果你不想你的文章被处理，你可以将 Front-Matter 中的<code>layout:</code> 设为 <code>false</code> 。</p>
-</blockquote>
-<h3 id="文件名称"><a href="#文件名称" class="headerlink" title="文件名称"></a>文件名称</h3><p>Hexo 默认以标题做为文件名称，但您可编辑 <code>new_post_name</code> 参数来改变默认的文件名称，举例来说，设为 <code>:year-:month-:day-:title.md</code> 可让您更方便的通过日期来管理文章。</p>
-<table>
-<thead>
-<tr>
-<th align="left">变量</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>:title</code></td>
-<td align="left">标题（小写，空格将会被替换为短杠）</td>
-</tr>
-<tr>
-<td align="left"><code>:year</code></td>
-<td align="left">建立的年份，比如， <code>2015</code></td>
-</tr>
-<tr>
-<td align="left"><code>:month</code></td>
-<td align="left">建立的月份（有前导零），比如， <code>04</code></td>
-</tr>
-<tr>
-<td align="left"><code>:i_month</code></td>
-<td align="left">建立的月份（无前导零），比如， <code>4</code></td>
-</tr>
-<tr>
-<td align="left"><code>:day</code></td>
-<td align="left">建立的日期（有前导零），比如， <code>07</code></td>
-</tr>
-<tr>
-<td align="left"><code>:i_day</code></td>
-<td align="left">建立的日期（无前导零），比如， <code>7</code></td>
-</tr>
-</tbody></table>
-<h3 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h3><p>刚刚提到了 Hexo 的一种特殊布局：<code>draft</code>，这种布局在建立时会被保存到 <code>source/_drafts</code> 文件夹，您可通过 <code>publish</code> 命令将草稿移动到 <code>source/_posts</code> 文件夹，该命令的使用方式与 <code>new</code> 十分类似，您也可在命令中指定 <code>layout</code> 来指定布局。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-
-<p>草稿默认不会显示在页面中，您可在执行时加上 <code>--draft</code> 参数，或是把 <code>render_drafts</code> 参数设为 <code>true</code> 来预览草稿。</p>
-<h2 id="模版（Scaffold）"><a href="#模版（Scaffold）" class="headerlink" title="模版（Scaffold）"></a>模版（Scaffold）</h2><p>在新建文章时，Hexo 会根据 <code>scaffolds</code> 文件夹内相对应的文件来建立文件，例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new photo &quot;My Gallery&quot;</span><br></pre></td></tr></table></figure>
-
-<p>在执行这行指令时，Hexo 会尝试在 <code>scaffolds</code> 文件夹中寻找 <code>photo.md</code>，并根据其内容建立文章，以下是您可以在模版中使用的变量：</p>
-<table>
-<thead>
-<tr>
-<th align="left">变量</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>layout</code></td>
-<td align="left">布局</td>
-</tr>
-<tr>
-<td align="left"><code>title</code></td>
-<td align="left">标题</td>
-</tr>
-<tr>
-<td align="left"><code>date</code></td>
-<td align="left">文件建立日期</td>
-</tr>
-</tbody></table>
-<h3 id="支持的格式"><a href="#支持的格式" class="headerlink" title="支持的格式"></a>支持的格式</h3><p>Hexo 支持以任何格式书写文章，只要安装了相应的渲染插件。</p>
-<p>例如，Hexo 默认安装了 <code>hexo-renderer-marked</code> 和 <code>hexo-renderer-ejs</code>，因此你不仅可以用 Markdown 写作，你还可以用 EJS 写作。如果你安装了 <code>hexo-renderer-pug</code>，你甚至可以用 Pug 模板语言书写文章。</p>
-<p>只需要将文章的扩展名从 <code>md</code> 改成 <code>ejs</code>，Hexo 就会使用 <code>hexo-renderer-ejs</code> 渲染这个文件，其他格式同理。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>写作</title>
+      <link href="2020/10/24/createBlog/writing/"/>
+      <url>2020/10/24/createBlog/writing/</url>
+      
+        <content type="html"><![CDATA[<h1 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h1><iframe src="https://www.youtube.com/embed/HLJ9jJy7CMg" frameborder="0" loading="lazy" allowfullscreen="" style="box-sizing: inherit; margin: 1em 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 15px; vertical-align: baseline;"></iframe><p>你可以执行下列命令来创建一篇新文章或者新的页面。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>您可以在命令中指定文章的布局（layout），默认为 <code>post</code>，可以通过修改 <code>_config.yml</code> 中的 <code>default_layout</code> 参数来指定默认布局。</p><h3 id="布局（Layout）"><a href="#布局（Layout）" class="headerlink" title="布局（Layout）"></a>布局（Layout）</h3><p>Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code>。在创建者三种不同类型的文件时，它们将会被保存到不同的路径；而您自定义的其他布局和 <code>post</code> 相同，都将储存到 <code>source/_posts</code> 文件夹。</p><table><thead><tr><th align="left">布局</th><th align="left">路径</th></tr></thead><tbody><tr><td align="left"><code>post</code></td><td align="left"><code>source/_posts</code></td></tr><tr><td align="left"><code>page</code></td><td align="left"><code>source</code></td></tr><tr><td align="left"><code>draft</code></td><td align="left"><code>source/_drafts</code></td></tr></tbody></table><blockquote><p>不要处理我的文章</p><p>如果你不想你的文章被处理，你可以将 Front-Matter 中的<code>layout:</code> 设为 <code>false</code> 。</p></blockquote><h3 id="文件名称"><a href="#文件名称" class="headerlink" title="文件名称"></a>文件名称</h3><p>Hexo 默认以标题做为文件名称，但您可编辑 <code>new_post_name</code> 参数来改变默认的文件名称，举例来说，设为 <code>:year-:month-:day-:title.md</code> 可让您更方便的通过日期来管理文章。</p><table><thead><tr><th align="left">变量</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>:title</code></td><td align="left">标题（小写，空格将会被替换为短杠）</td></tr><tr><td align="left"><code>:year</code></td><td align="left">建立的年份，比如， <code>2015</code></td></tr><tr><td align="left"><code>:month</code></td><td align="left">建立的月份（有前导零），比如， <code>04</code></td></tr><tr><td align="left"><code>:i_month</code></td><td align="left">建立的月份（无前导零），比如， <code>4</code></td></tr><tr><td align="left"><code>:day</code></td><td align="left">建立的日期（有前导零），比如， <code>07</code></td></tr><tr><td align="left"><code>:i_day</code></td><td align="left">建立的日期（无前导零），比如， <code>7</code></td></tr></tbody></table><h3 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h3><p>刚刚提到了 Hexo 的一种特殊布局：<code>draft</code>，这种布局在建立时会被保存到 <code>source/_drafts</code> 文件夹，您可通过 <code>publish</code> 命令将草稿移动到 <code>source/_posts</code> 文件夹，该命令的使用方式与 <code>new</code> 十分类似，您也可在命令中指定 <code>layout</code> 来指定布局。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>草稿默认不会显示在页面中，您可在执行时加上 <code>--draft</code> 参数，或是把 <code>render_drafts</code> 参数设为 <code>true</code> 来预览草稿。</p><h2 id="模版（Scaffold）"><a href="#模版（Scaffold）" class="headerlink" title="模版（Scaffold）"></a>模版（Scaffold）</h2><p>在新建文章时，Hexo 会根据 <code>scaffolds</code> 文件夹内相对应的文件来建立文件，例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new photo &quot;My Gallery&quot;</span><br></pre></td></tr></table></figure><p>在执行这行指令时，Hexo 会尝试在 <code>scaffolds</code> 文件夹中寻找 <code>photo.md</code>，并根据其内容建立文章，以下是您可以在模版中使用的变量：</p><table><thead><tr><th align="left">变量</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>layout</code></td><td align="left">布局</td></tr><tr><td align="left"><code>title</code></td><td align="left">标题</td></tr><tr><td align="left"><code>date</code></td><td align="left">文件建立日期</td></tr></tbody></table><h3 id="支持的格式"><a href="#支持的格式" class="headerlink" title="支持的格式"></a>支持的格式</h3><p>Hexo 支持以任何格式书写文章，只要安装了相应的渲染插件。</p><p>例如，Hexo 默认安装了 <code>hexo-renderer-marked</code> 和 <code>hexo-renderer-ejs</code>，因此你不仅可以用 Markdown 写作，你还可以用 EJS 写作。如果你安装了 <code>hexo-renderer-pug</code>，你甚至可以用 Pug 模板语言书写文章。</p><p>只需要将文章的扩展名从 <code>md</code> 改成 <code>ejs</code>，Hexo 就会使用 <code>hexo-renderer-ejs</code> 渲染这个文件，其他格式同理。</p>]]></content>
+      
+      
       <categories>
-        <category>博客搭建</category>
+          
+          <category> 博客搭建 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阅读量显示错误</title>
-    <url>/2020/10/24/createBlog/problems002/</url>
-    <content><![CDATA[<p>这个是由于Google Chrome和一些浏览器最近更新了referrer策略，导致文章阅读数referrer全部变成博客首页（也就是站点的PV数），对于Butterfly主题：在Butterfly的Inject插入以下内容即可解决</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/9707a4396346869ce460227e2f5f9402760ab1fb/68747470733a2f2f692e6c6f6c692e6e65742f323032302f31302f31352f424c376a6b5a4458746f78634e32712e706e67"></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;referrer&quot; content&#x3D;&quot;no-referrer-when-downgrade&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>配置</title>
+      <link href="2020/10/24/createBlog/configuration/"/>
+      <url>2020/10/24/createBlog/configuration/</url>
+      
+        <content type="html"><![CDATA[<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>您可以在 <code>_config.yml</code> 中修改大部分的配置。</p><iframe src="https://www.youtube.com/embed/A0Enyn70jKU" frameborder="0" loading="lazy" allowfullscreen="" style="box-sizing: inherit; margin: 1em 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 15px; vertical-align: baseline;"></iframe><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>title</code></td><td align="left">网站标题</td></tr><tr><td align="left"><code>subtitle</code></td><td align="left">网站副标题</td></tr><tr><td align="left"><code>description</code></td><td align="left">网站描述</td></tr><tr><td align="left"><code>keywords</code></td><td align="left">网站的关键词。支援多个关键词。</td></tr><tr><td align="left"><code>author</code></td><td align="left">您的名字</td></tr><tr><td align="left"><code>language</code></td><td align="left">网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 <code>zh-Hans</code>和 <code>zh-CN</code>。</td></tr><tr><td align="left"><code>timezone</code></td><td align="left">网站时区。Hexo 默认使用您电脑的时区。请参考 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">时区列表</a> 进行设置，如 <code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code>。</td></tr></tbody></table><p>其中，<code>description</code>主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。<code>author</code>参数用于主题显示文章的作者。</p><h2 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>url</code></td><td align="left">网址, must starts with <code>http://</code> or <code>https://</code></td><td align="left"></td></tr><tr><td align="left"><code>root</code></td><td align="left">网站根目录</td><td align="left"></td></tr><tr><td align="left"><code>permalink</code></td><td align="left">文章的 <a href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a> 格式</td><td align="left"><code>:year/:month/:day/:title/</code></td></tr><tr><td align="left"><code>permalink_defaults</code></td><td align="left">永久链接中各部分的默认值</td><td align="left"></td></tr><tr><td align="left"><code>pretty_urls</code></td><td align="left">改写 <a href="https://hexo.io/zh-cn/docs/variables"><code>permalink</code></a> 的值来美化 URL</td><td align="left"></td></tr><tr><td align="left"><code>pretty_urls.trailing_index</code></td><td align="left">是否在永久链接中保留尾部的 <code>index.html</code>，设置为 <code>false</code> 时去除</td><td align="left"><code>true</code></td></tr><tr><td align="left"><code>pretty_urls.trailing_html</code></td><td align="left">是否在永久链接中保留尾部的 <code>.html</code>, 设置为 <code>false</code> 时去除 (<em>对尾部的 <code>index.html</code>无效</em>)</td><td align="left"><code>true</code></td></tr></tbody></table><blockquote><p>网站存放在子目录</p><p>如果您的网站存放在子目录中，例如 <code>http://example.com/blog</code>，则请将您的 <code>url</code> 设为 <code>http://example.com/blog</code> 并把 <code>root</code> 设为 <code>/blog/</code>。</p></blockquote><p>例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 比如，一个页面的永久链接是 http:&#x2F;&#x2F;example.com&#x2F;foo&#x2F;bar&#x2F;index.html</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: false</span><br><span class="line"># 此时页面的永久链接会变为 http:&#x2F;&#x2F;example.com&#x2F;foo&#x2F;bar&#x2F;</span><br></pre></td></tr></table></figure><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>source_dir</code></td><td align="left">资源文件夹，这个文件夹用来存放内容。</td><td align="left"><code>source</code></td></tr><tr><td align="left"><code>public_dir</code></td><td align="left">公共文件夹，这个文件夹用于存放生成的站点文件。</td><td align="left"><code>public</code></td></tr><tr><td align="left"><code>tag_dir</code></td><td align="left">标签文件夹</td><td align="left"><code>tags</code></td></tr><tr><td align="left"><code>archive_dir</code></td><td align="left">归档文件夹</td><td align="left"><code>archives</code></td></tr><tr><td align="left"><code>category_dir</code></td><td align="left">分类文件夹</td><td align="left"><code>categories</code></td></tr><tr><td align="left"><code>code_dir</code></td><td align="left">Include code 文件夹，<code>source_dir</code> 下的子目录</td><td align="left"><code>downloads/code</code></td></tr><tr><td align="left"><code>i18n_dir</code></td><td align="left">国际化（i18n）文件夹</td><td align="left"><code>:lang</code></td></tr><tr><td align="left"><code>skip_render</code></td><td align="left">跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 <code>public</code> 目录中。您可使用 <a href="https://github.com/micromatch/micromatch#extended-globbing">glob 表达式</a>来匹配路径。</td><td align="left"></td></tr></tbody></table><p>例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">skip_render: &quot;mypage&#x2F;**&#x2F;*&quot;</span><br><span class="line"># 将会直接将 &#96;source&#x2F;mypage&#x2F;index.html&#96; 和 &#96;source&#x2F;mypage&#x2F;code.js&#96; 不做改动地输出到 &#39;public&#39; 目录</span><br><span class="line"># 你也可以用这种方法来跳过对指定文章文件的渲染</span><br><span class="line">skip_render: &quot;_posts&#x2F;test-post.md&quot;</span><br><span class="line"># 这将会忽略对 &#39;test-post.md&#39; 的渲染</span><br></pre></td></tr></table></figure><blockquote><p>提示</p><p>如果您刚刚开始接触 Hexo，通常没有必要修改这一部分的值。</p></blockquote><h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>new_post_name</code></td><td align="left">新文章的文件名称</td><td align="left">:title.md</td></tr><tr><td align="left"><code>default_layout</code></td><td align="left">预设布局</td><td align="left">post</td></tr><tr><td align="left"><code>auto_spacing</code></td><td align="left">在中文和英文之间加入空格</td><td align="left">false</td></tr><tr><td align="left"><code>titlecase</code></td><td align="left">把标题转换为 title case</td><td align="left">false</td></tr><tr><td align="left"><code>external_link</code></td><td align="left">在新标签中打开链接</td><td align="left">true</td></tr><tr><td align="left"><code>external_link.enable</code></td><td align="left">在新标签中打开链接</td><td align="left"><code>true</code></td></tr><tr><td align="left"><code>external_link.field</code></td><td align="left">对整个网站（<code>site</code>）生效或仅对文章（<code>post</code>）生效</td><td align="left"><code>site</code></td></tr><tr><td align="left"><code>external_link.exclude</code></td><td align="left">需要排除的域名。主域名和子域名如 <code>www</code> 需分别配置</td><td align="left"><code>[]</code></td></tr><tr><td align="left"><code>filename_case</code></td><td align="left">把文件名称转换为 (1) 小写或 (2) 大写</td><td align="left">0</td></tr><tr><td align="left"><code>render_drafts</code></td><td align="left">显示草稿</td><td align="left">false</td></tr><tr><td align="left"><code>post_asset_folder</code></td><td align="left">启动 <a href="https://hexo.io/zh-cn/docs/asset-folders">Asset 文件夹</a></td><td align="left">false</td></tr><tr><td align="left"><code>relative_link</code></td><td align="left">把链接改为与根目录的相对位址</td><td align="left">false</td></tr><tr><td align="left"><code>future</code></td><td align="left">显示未来的文章</td><td align="left">true</td></tr><tr><td align="left"><code>highlight</code></td><td align="left">代码块的设置, see <a href="https://hexo.io/docs/syntax-highlight#Highlight-js">Highlight.js</a> section for usage guide</td><td align="left"></td></tr><tr><td align="left"><code>prismjs</code></td><td align="left">代码块的设置, see <a href="https://hexo.io/docs/syntax-highlight#PrismJS">PrismJS</a> section for usage guide</td><td align="left"></td></tr></tbody></table><blockquote><p>相对地址</p><p>默认情况下，Hexo 生成的超链接都是绝对地址。例如，如果您的网站域名为 <code>example.com</code>,您有一篇文章名为 <code>hello</code>，那么绝对链接可能像这样：<code>http://example.com/hello.html</code>，它是<strong>绝对</strong>于域名的。相对链接像这样：<code>/hello.html</code>，也就是说，无论用什么域名访问该站点，都没有关系，这在进行反向代理时可能用到。通常情况下，建议使用绝对地址。</p></blockquote><h2 id="分类-amp-标签"><a href="#分类-amp-标签" class="headerlink" title="分类 &amp; 标签"></a>分类 &amp; 标签</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>default_category</code></td><td align="left">默认分类</td><td align="left"><code>uncategorized</code></td></tr><tr><td align="left"><code>category_map</code></td><td align="left">分类别名</td><td align="left"></td></tr><tr><td align="left"><code>tag_map</code></td><td align="left">标签别名</td><td align="left"></td></tr></tbody></table><h2 id="日期-时间格式"><a href="#日期-时间格式" class="headerlink" title="日期 / 时间格式"></a>日期 / 时间格式</h2><p>Hexo 使用 <a href="http://momentjs.com/">Moment.js</a> 来解析和显示时间。</p><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>date_format</code></td><td align="left">日期格式</td><td align="left"><code>YYYY-MM-DD</code></td></tr><tr><td align="left"><code>time_format</code></td><td align="left">时间格式</td><td align="left"><code>HH:mm:ss</code></td></tr><tr><td align="left"><code>updated_option</code></td><td align="left">当 Front Matter 中没有指定 <a href="https://hexo.io/zh-cn/docs/variables#%E9%A1%B5%E9%9D%A2%E5%8F%98%E9%87%8F"><code>updated</code></a> 时 <code>updated</code> 的取值</td><td align="left"><code>mtime</code></td></tr></tbody></table><blockquote><p>updated_option</p><p><code>updated_option</code> 控制了当 Front Matter 中没有指定 <code>updated</code> 时，<code>updated</code> 如何取值：</p><ul><li><code>mtime</code>: 使用文件的最后修改时间。这是从 Hexo 3.0.0 开始的默认行为。</li><li><code>date</code>: 使用 <code>date</code> 作为 <code>updated</code> 的值。可被用于 Git 工作流之中，因为使用 Git 管理站点时，文件的最后修改日期常常会发生改变</li><li><code>empty</code>: 直接删除 <code>updated</code>。使用这一选项可能会导致大部分主题和插件无法正常工作。</li></ul><p><code>use_date_for_updated</code> 选项已经被废弃，将会在下个重大版本发布时去除。请改为使用 <code>updated_option: &#39;date&#39;</code>。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use_date_for_updated&#96; | 启用以后，如果 Front Matter 中没有指定 &#96;updated&#96;， [&#96;post.updated&#96;](https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;configuration.html) 将会使用 &#96;date&#96; 的值而不是文件的创建时间。在 Git 工作流中这个选项会很有用 | &#96;true</span><br></pre></td></tr></table></figure><h2 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th><th align="left">默认值</th></tr></thead><tbody><tr><td align="left"><code>per_page</code></td><td align="left">每页显示的文章量 (0 = 关闭分页功能)</td><td align="left"><code>10</code></td></tr><tr><td align="left"><code>pagination_dir</code></td><td align="left">分页目录</td><td align="left"><code>page</code></td></tr></tbody></table><h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>theme</code></td><td align="left">当前主题名称。值为<code>false</code>时禁用主题</td></tr><tr><td align="left"><code>theme_config</code></td><td align="left">主题的配置文件。在这里放置的配置会覆盖主题目录下的 <code>_config.yml</code> 中的配置</td></tr><tr><td align="left"><code>deploy</code></td><td align="left">部署部分的设置</td></tr><tr><td align="left"><code>meta_generator</code></td><td align="left"><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta#%E5%B1%9E%E6%80%A7">Meta generator</a> 标签。 值为 <code>false</code> 时 Hexo 不会在头部插入该标签</td></tr></tbody></table><h3 id="包括或不包括目录和文件"><a href="#包括或不包括目录和文件" class="headerlink" title="包括或不包括目录和文件"></a>包括或不包括目录和文件</h3><p>在 Hexo 配置文件中，通过设置 include/exclude 可以让 Hexo 进行处理或忽略某些目录和文件夹。你可以使用 <a href="https://github.com/isaacs/minimatch">glob 表达式</a> 对目录和文件进行匹配。</p><p><code>include</code> and <code>exclude</code> options only apply to the <code>source/</code> folder, whereas <code>ignore</code> option applies to all folders.</p><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>include</code></td><td align="left">Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 <code>.</code> 开头的文件和文件夹，Hexo 的 <code>_posts</code> 和 <code>_data</code> 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 <code>source</code> 目录下。</td></tr><tr><td align="left"><code>exclude</code></td><td align="left">Hexo 会忽略这些文件和目录</td></tr><tr><td align="left"><code>ignore</code></td><td align="left">Ignore files/folders</td></tr></tbody></table><p>举例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"># Include&#x2F;Exclude Files&#x2F;Folders</span><br><span class="line">include:</span><br><span class="line">  - &quot;.nojekyll&quot;</span><br><span class="line">  # 包括 &#39;source&#x2F;css&#x2F;_typing.css&#39;</span><br><span class="line">  - &quot;css&#x2F;_typing.css&quot;</span><br><span class="line">  # 包括 &#39;source&#x2F;_css&#x2F;&#39; 中的任何文件，但不包括子目录及其其中的文件。</span><br><span class="line">  - &quot;_css&#x2F;*&quot;</span><br><span class="line">  # 包含 &#39;source&#x2F;_css&#x2F;&#39; 中的任何文件和子目录下的任何文件</span><br><span class="line">  - &quot;_css&#x2F;**&#x2F;*&quot;</span><br><span class="line"></span><br><span class="line">exclude:</span><br><span class="line">  # 不包括 &#39;source&#x2F;js&#x2F;test.js&#39;</span><br><span class="line">  - &quot;js&#x2F;test.js&quot;</span><br><span class="line">  # 不包括 &#39;source&#x2F;js&#x2F;&#39; 中的文件、但包括子目录下的所有目录和文件</span><br><span class="line">  - &quot;js&#x2F;*&quot;</span><br><span class="line">  # 不包括 &#39;source&#x2F;js&#x2F;&#39; 中的文件和子目录下的任何文件</span><br><span class="line">  - &quot;js&#x2F;**&#x2F;*&quot;</span><br><span class="line">  # 不包括 &#39;source&#x2F;js&#x2F;&#39; 目录下的所有文件名以 &#39;test&#39; 开头的文件，但包括其它文件和子目录下的单文件</span><br><span class="line">  - &quot;js&#x2F;test*&quot;</span><br><span class="line">  # 不包括 &#39;source&#x2F;js&#x2F;&#39; 及其子目录中任何以 &#39;test&#39; 开头的文件</span><br><span class="line">  - &quot;js&#x2F;**&#x2F;test*&quot;</span><br><span class="line">  # 不要用 exclude 来忽略 &#39;source&#x2F;_posts&#x2F;&#39; 中的文件。你应该使用 &#39;skip_render&#39;，或者在要忽略的文件的文件名之前加一个下划线 &#39;_&#39;</span><br><span class="line">  # 在这里配置一个 - &quot;_posts&#x2F;hello-world.md&quot; 是没有用的。</span><br><span class="line"></span><br><span class="line">ignore:</span><br><span class="line">  # Ignore any folder named &#39;foo&#39;.</span><br><span class="line">  - &quot;**&#x2F;foo&quot;</span><br><span class="line">  # Ignore &#39;foo&#39; folder in &#39;themes&#x2F;&#39; only.</span><br><span class="line">  - &quot;**&#x2F;themes&#x2F;*&#x2F;foo&quot;</span><br><span class="line">  # Same as above, but applies to every subfolders of &#39;themes&#x2F;&#39;.</span><br><span class="line">  - &quot;**&#x2F;themes&#x2F;**&#x2F;foo&quot;</span><br></pre></td></tr></table></figure><p>列表中的每一项都必须用单引号或双引号包裹起来。</p><p><code>include</code> 和 <code>exclude</code> 并不适用于 <code>themes/</code> 目录下的文件。如果需要忽略 <code>themes/</code> 目录下的部分文件或文件夹，可以使用 <code>ignore</code> 或在文件名之前添加下划线 <code>_</code>。</p><h3 id="使用代替配置文件"><a href="#使用代替配置文件" class="headerlink" title="使用代替配置文件"></a>使用代替配置文件</h3><p>可以在 hexo-cli 中使用 <code>--config</code> 参数来指定自定义配置文件的路径。你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># use &#39;custom.yml&#39; in place of &#39;_config.yml&#39;</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># use &#39;custom.yml&#39; &amp; &#39;custom2.json&#39;, prioritizing &#39;custom3.yml&#39;, then &#39;custom2.json&#39;</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure><p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 <code>_multiconfig.yml</code>。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p><p>例如，使用 <code>--options</code> 指定了两个自定义配置文件：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --config custom.yml,custom2.json</span><br></pre></td></tr></table></figure><p>如果 <code>custom.yml</code> 中指定了 <code>foo: bar</code>，在 custom2.json 中指定了 <code>&quot;foo&quot;: &quot;dinosaur&quot;</code>，那么在 <code>_multiconfig.yml</code> 中你会得到 <code>foo: dinosaur</code>。</p><h3 id="使用代替主题配置文件"><a href="#使用代替主题配置文件" class="headerlink" title="使用代替主题配置文件"></a>使用代替主题配置文件</h3><p>通常情况下，Hexo 主题是一个独立的项目，并拥有一个独立的 <code>_config.yml</code> 配置文件。</p><p>除了自行维护独立的主题配置文件，你也可以在其它地方对主题进行配置。</p><p><strong>配置文件中的 <code>theme_config</code></strong></p><blockquote><p>该特性自 Hexo 2.8.2 起提供</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># _config.yml</span><br><span class="line">theme: &quot;my-theme&quot;</span><br><span class="line">theme_config:</span><br><span class="line">  bio: &quot;My awesome bio&quot;</span><br><span class="line">  foo:</span><br><span class="line">    bar: &#39;a&#39;</span><br><span class="line"># themes&#x2F;my-theme&#x2F;_config.yml</span><br><span class="line">bio: &quot;Some generic bio&quot;</span><br><span class="line">logo: &quot;a-cool-image.png&quot;</span><br><span class="line">  foo:</span><br><span class="line">    baz: &#39;b&#39;</span><br></pre></td></tr></table></figure><p>最终主题配置的输出是：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  bio: &quot;My awesome bio&quot;,</span><br><span class="line">  logo: &quot;a-cool-image.png&quot;,</span><br><span class="line">  foo: &#123;</span><br><span class="line">    bar: &quot;a&quot;,</span><br><span class="line">    baz: &quot;b&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>独立的 <code>_config.[theme].yml</code> 文件</strong></p><blockquote><p>该特性自 Hexo 5.0.0 起提供</p></blockquote><p>独立的主题配置文件应放置于站点根目录下，支持 <code>yml</code> 或 <code>json</code> 格式。需要配置站点 <code>_config.yml</code> 文件中的 <code>theme</code> 以供 Hexo 寻找 <code>_config.[theme].yml</code> 文件。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># _config.yml</span><br><span class="line">theme: &quot;my-theme&quot;</span><br><span class="line"># _config.my-theme.yml</span><br><span class="line">bio: &quot;My awesome bio&quot;</span><br><span class="line">foo:</span><br><span class="line">  bar: &#39;a&#39;</span><br><span class="line"># themes&#x2F;my-theme&#x2F;_config.yml</span><br><span class="line">bio: &quot;Some generic bio&quot;</span><br><span class="line">logo: &quot;a-cool-image.png&quot;</span><br><span class="line">  foo:</span><br><span class="line">    baz: &#39;b&#39;</span><br></pre></td></tr></table></figure><p>最终主题配置的输出是：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  bio: &quot;My awesome bio&quot;,</span><br><span class="line">  logo: &quot;a-cool-image.png&quot;,</span><br><span class="line">  foo: &#123;</span><br><span class="line">    bar: &quot;a&quot;,</span><br><span class="line">    baz: &quot;b&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>我们强烈建议你将所有的主题配置集中在一处。如果你不得不在多处配置你的主题，那么这些信息对你将会非常有用：Hexo 在合并主题配置时，Hexo 配置文件中的 <code>theme_config</code> 的优先级最高，其次是 <code>_config.[theme].yml</code> 文件，最后是位于主题目录下的 <code>_config.yml</code> 文件。</p></blockquote>]]></content>
+      
+      
       <categories>
-        <category>博客搭建</category>
+          
+          <category> 博客搭建 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CRON表达式</title>
-    <url>/2020/10/25/LeanEngine/CRON-expression/</url>
-    <content><![CDATA[<h2 id="CRON-表达式"><a href="#CRON-表达式" class="headerlink" title="CRON 表达式"></a><a href="https://zh-docs.leancloud.app/leanengine_cloudqueue.html#hash-2143744582">CRON 表达式</a></h2><p>CRON 表达式的基本语法为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;秒&gt; &lt;分钟&gt; &lt;小时&gt; &lt;日期 day-of-month&gt; &lt;月份&gt; &lt;星期 day-of-week&gt;</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">位置</th>
-<th align="left">字段</th>
-<th align="left">约束</th>
-<th align="left">取值</th>
-<th align="left">可使用的特殊符号</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">秒</td>
-<td align="left">必须</td>
-<td align="left">0-59</td>
-<td align="left"><code>, - * /</code></td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">分钟</td>
-<td align="left">必须</td>
-<td align="left">0-59</td>
-<td align="left"><code>, - * /</code></td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">小时</td>
-<td align="left">必须</td>
-<td align="left">0-23（0 为午夜）</td>
-<td align="left"><code>, - * /</code></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">日期</td>
-<td align="left">必须</td>
-<td align="left">1-31</td>
-<td align="left"><code>, - * ? /</code></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">月份</td>
-<td align="left">必须</td>
-<td align="left">1-12、JAN-DEC</td>
-<td align="left"><code>, - * /</code></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">星期</td>
-<td align="left">必须</td>
-<td align="left">1-7、SUN-SAT</td>
-<td align="left"><code>, - ? /</code></td>
-</tr>
-</tbody></table>
-<p>特殊符号的用法：</p>
-<table>
-<thead>
-<tr>
-<th align="left">符号</th>
-<th align="left">含义</th>
-<th align="left">用法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>*</code></td>
-<td align="left">所有值</td>
-<td align="left">代表一个字段的所有可能取值。如将 <code>&lt;分钟&gt;</code> 设为 *****，表示每一分钟。</td>
-</tr>
-<tr>
-<td align="left"><code>?</code></td>
-<td align="left">不指定值</td>
-<td align="left">用于可以使用该符号的两个字段中的一个，在一个表达式中只能出现一次。如任务执行时间为每月 10 号，星期几无所谓，那么表达式中 <code>&lt;日期&gt;</code> 设为 <strong>10</strong>，<code>&lt;星期&gt;</code> 设为 **?**。</td>
-</tr>
-<tr>
-<td align="left"><code>-</code></td>
-<td align="left">范围</td>
-<td align="left">如 <code>&lt;小时&gt;</code> 为 <strong>10-12</strong>，即10 点、11 点、12 点。</td>
-</tr>
-<tr>
-<td align="left"><code>,</code></td>
-<td align="left">分隔多个值</td>
-<td align="left">如 <code>&lt;星期&gt;</code> 为 <strong>MON,WED,FRI</strong>，即周一、周三、周五。</td>
-</tr>
-<tr>
-<td align="left"><code>/</code></td>
-<td align="left">增量</td>
-<td align="left">如 <code>&lt;秒&gt;</code> 设为 <strong>0/15</strong>，即从 0 秒开始，以 15 秒为增量，包括 0、15、30、45 秒；<strong>5/15</strong> 即 5、20、35、50 秒。*<strong>/</strong> 与 <strong>0/</strong> 等效，如 <code>&lt;日期&gt;</code> 设为 <strong>1/3</strong>，即从每个月的第一天开始，每 3 天（即每隔 2 天）执行一次任务。</td>
-</tr>
-</tbody></table>
-<p>各字段以空格或空白隔开。<code>JAN-DEC</code>、<code>SUN-SAT</code> 这些值不区分大小写，比如 <code>MON</code> 和 <code>mon</code> 效果一样。</p>
-<p>举例如下：</p>
-<table>
-<thead>
-<tr>
-<th align="left">表达式</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>0 0/5 * * * ?</code></td>
-<td align="left">每隔 5 分钟执行一次</td>
-</tr>
-<tr>
-<td align="left"><code>10 0/5 * * * ?</code></td>
-<td align="left">每隔 5 分钟执行一次，每次执行都在分钟开始的 10 秒，例如 10:00:10、10:05:10 等等。</td>
-</tr>
-<tr>
-<td align="left"><code>0 30 10-13 ? * WED,FRI</code></td>
-<td align="left">每周三和每周五的 10:30、11:30、12:30、13:30 执行。</td>
-</tr>
-<tr>
-<td align="left"><code>0 0/30 8-9 5,20 * ?</code></td>
-<td align="left">每个月的 5 号和 20 号的 8 点和 10 点之间每隔 30 分钟执行一次，也就是 8:00、8:30、9:00 和 9:30。</td>
-</tr>
-</tbody></table>
-<p>Cron 表达式的时区为东八区（国内版）、UTC 零时区（国际版）。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>迁移博客</title>
+      <link href="2020/10/24/createBlog/migrate/"/>
+      <url>2020/10/24/createBlog/migrate/</url>
+      
+        <content type="html"><![CDATA[<h1 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h1><h2 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h2><p>首先，安装 <code>hexo-migrator-rss</code> 插件。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-migrator-rss --save</span><br></pre></td></tr></table></figure><p>插件安装完成后，执行下列命令，从 RSS 迁移所有文章。<code>source</code> 可以是文件路径或网址。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo migrate rss &lt;source&gt;</span><br></pre></td></tr></table></figure><h2 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h2><p>把 <code>_posts</code> 文件夹内的所有文件复制到 <code>source/_posts</code> 文件夹，并在 <code>_config.yml</code> 中修改 <code>new_post_name</code> 参数。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure><h2 id="Octopress"><a href="#Octopress" class="headerlink" title="Octopress"></a>Octopress</h2><p>把 Octopress <code>source/_posts</code> 文件夹内的所有文件转移到 Hexo 的 <code>source/_posts</code> 文件夹，并修改 <code>_config.yml</code> 中的 <code>new_post_name</code> 参数。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure><h2 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h2><p>首先，安装 <code>hexo-migrator-wordpress</code> 插件。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure><p>在 WordPress 仪表盘中导出数据(“Tools” → “Export” → “WordPress”)（详情参考<a href="http://en.support.wordpress.com/export/">WP支持页面</a>）。</p><p>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 WordPress 导出的文件路径或网址。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo migrate wordpress &lt;source&gt;</span><br></pre></td></tr></table></figure><blockquote><p>注意</p><p>这个插件并不能完美地实现WordPress-&gt;Hexo的数据转换，尤其是在处理WordPress的分类方面存在问题（见<a href="https://hexo.io/zh-cn/docs/front-matter">Front-matter中的分类与标签</a>）。因此，建议您在迁移完成后，手工审阅所有生成的markdown文件，检查其中是否有错误。对于文章数量较大的WordPress站点，这项工作可能要花很长的时间。</p></blockquote><h2 id="Joomla"><a href="#Joomla" class="headerlink" title="Joomla"></a>Joomla</h2><p>首先，安装 <code>hexo-migrator-joomla</code> 插件。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-migrator-joomla --save</span><br></pre></td></tr></table></figure><p>使用 <a href="http://extensions.joomla.org/extensions/migration-a-conversion/data-import-a-export/12816?qh=YToxOntpOjA7czo1OiJqMnhtbCI7fQ==">J2XML</a> 组件导出 Joomla 文章。<br>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 Joomla 导出的文件路径或网址。</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo migrate joomla &lt;source&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>语言语法</category>
+          
+          <category> 博客搭建 </category>
+          
       </categories>
-      <tags>
-        <tag>CRON</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeanCloud流控问题</title>
-    <url>/2020/10/25/LeanEngine/leanCloud-problem001/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><em> leancloud </em> 无法正常使用定时唤醒功能，为有更好的网站评论体验，故另寻它法。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>LeanCloud 的<a href="https://leancloud.cn/docs/leanengine_plan.html#hash633315134">休眠策略</a> 。</p>
-<blockquote>
-<ul>
-<li>如果应用最近一段时间（半小时）没有任何外部请求，则休眠。</li>
-<li>休眠后如果有新的外部请求实例则马上启动。访问者的体验是第一个请求响应时间是 5 ~ 30 秒（视实例启动时间而定），后续访问响应速度恢复正常。</li>
-<li>强制休眠：如果最近 24 小时内累计运行超过 18 小时，则强制休眠。此时新的请求会收到 503 的错误响应码，该错误可在 <strong>云引擎 &gt; 统计</strong> 中查看。</li>
-</ul>
-</blockquote>
-<p>以下是解决方案</p>
-<h3 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a><a href="https://www.antmoe.com/posts/ff6aef7b/index.html#%E5%BC%80%E5%A7%8B%E5%B0%9D%E8%AF%95">解决方案</a></h3>]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo的一些指令</title>
+      <link href="2020/10/23/createBlog/hexo_commands/"/>
+      <url>2020/10/23/createBlog/hexo_commands/</url>
+      
+        <content type="html"><![CDATA[<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init [folder] </span><br></pre></td></tr></table></figure><p>新建一个网站。如果没有设置 <code>folder</code>，Hexo默认在目前的文件夹建立网站。 </p><h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt; </span><br></pre></td></tr></table></figure><p>新建一篇文章。如果没有设置<code>layout</code>，默认使用_config.yml中的<code>default_layout</code>参数代替。如果标题包含空格的话，请使用引号括起来。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;Post title with whitespace&quot;</span><br></pre></td></tr></table></figure><h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>生成静态文件。</p><table><thead><tr><th align="left">选项</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>-d</code>,<code>--deploy</code></td><td align="left">文件生成后立即部署网站</td></tr><tr><td align="left"><code>-w</code>,<code>--watch</code></td><td align="left">监视文件变动</td></tr><tr><td align="left"><code>-b</code>,<code>--bail</code></td><td align="left">生成过程中如果发生任何未处理的异常则抛出异常</td></tr><tr><td align="left"><code>-f</code>,<code>force</code></td><td align="left">强制重新生成文件<br/>Hexo 引入了差分机制，如果 <code>public</code> 目录存在，那么 <code>hexo g</code> 只会重新生成改动的文件。<br/>使用该参数的效果接近 <code>hexo clean &amp;&amp; hexo generate</code></td></tr><tr><td align="left"><code>-c</code>,<code>--concurrency</code></td><td align="left">最大同时生成文件的数量，默认无限制</td></tr></tbody></table><p>该命令可以简写为</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo publish [<span class="type">layout</span>] &lt;filename&gt;</span><br></pre></td></tr></table></figure><p>发表草稿。</p><h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo server</span><br></pre></td></tr></table></figure><p>启动服务器。默认情况下，访问网址为：<code> http://localhost:4000/</code>。</p><table><thead><tr><th>选项</th><th>描述</th></tr></thead><tbody><tr><td><code>-p</code>,<code>--port</code></td><td>重设端口</td></tr><tr><td><code>-s</code>,<code>--static</code></td><td>只用静态文件</td></tr><tr><td><code>-l</code>,<code>--log</code></td><td>启动日记记录，使用覆盖记录格式</td></tr></tbody></table><h3 id="deplo"><a href="#deplo" class="headerlink" title="deplo"></a>deplo</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo deploy</span><br></pre></td></tr></table></figure><p>部署网站。</p><h3 id="render"><a href="#render" class="headerlink" title="render"></a>render</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo render &lt;file1&gt; [<span class="type">file2</span>]</span><br></pre></td></tr></table></figure><p>渲染文件。</p><table><thead><tr><th>参数</th><th>描述</th></tr></thead><tbody><tr><td><code>-o</code>,<code>--output</code></td><td>设置输出路径</td></tr></tbody></table><h3 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo migrate &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure><p>从其他博客系统 <a href="https://hexo.io/zh-cn/docs/migration">迁移内容</a></p><h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo clean</span><br></pre></td></tr></table></figure><p>清除缓存文件(<code>db.json</code>)和已生成的静态文件(<code>public</code>)。</p><p>在某些 情况(尤其是更换主题后)，如果你发现您对站点的更改无论如何也不生效，您可能需要</p><p>运行该命令。</p><h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo list &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure><p>列出网站资料。</p><h3 id="version"><a href="#version" class="headerlink" title="version"></a>version</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo version</span><br></pre></td></tr></table></figure><p>显示Hexo版本。</p><h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo -<span class="literal">-safe</span></span><br></pre></td></tr></table></figure><p>在安全模式下，不会载入插件和脚本。当你在安装新插件草鱼问题时，可以尝试以安全模式重新执行。</p><h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --debug</span><br></pre></td></tr></table></figure><p>在终端中显示调试信息并记录到 <code>debug.log</code>。当您碰到问题时，可以尝试用调试模式重新执行一次，并 <a href="https://github.com/hexojs/hexo/issues/new">提交调试信息到 GitHub</a>。</p><h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --silent</span><br></pre></td></tr></table></figure><p>隐藏终端信息。</p><h3 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 使用 custom.yml 代替默认的 _config.yml</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># 使用 custom.yml 和 custom2.json，其中 custom2.json 优先级更高</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure><p>自定义配置文件的路径，指定这个参数后将不再使用默认的 <code>_config.yml</code>。<br>你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 使用 custom.yml 代替默认的 _config.yml</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># 使用 custom.yml, custom2.json 和 custom3.yml，其中 custom3.yml 优先级最高，其次是 custom2.json</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure><p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 <code>_multiconfig.yml</code>。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p><h3 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --draft</span><br></pre></td></tr></table></figure><p>显示 <code>source/_drafts</code> 文件夹中的草稿文章。</p><h3 id="自定义-CWD"><a href="#自定义-CWD" class="headerlink" title="自定义 CWD"></a>自定义 CWD</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo --cwd &#x2F;path&#x2F;to&#x2F;cwd</span><br></pre></td></tr></table></figure><p>自定义当前工作目录（Current working directory）的路径。</p>]]></content>
+      
+      
       <categories>
-        <category>博客云服务器</category>
+          
+          <category> 博客搭建 </category>
+          
       </categories>
-      <tags>
-        <tag>LeanCloud问题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Valine-Admin评论功能加强</title>
-    <url>/2020/10/25/LeanEngine/Valine/</url>
-    <content><![CDATA[<h1 id="Valine-Admin"><a href="#Valine-Admin" class="headerlink" title="Valine Admin"></a>Valine Admin</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Valine Admin 项目是一个对 <a href="https://valine.js.org/">Valine</a> 评论系统的拓展应用，可增强 Valine 的邮件通知功能。基于 Leancloud 的云引擎与云函数，主要实现评论邮件通知、评论管理、自定义邮件通知模板等功能，而且还可以提供邮件 <code>通知站长</code> 和 <code>@ 通知</code> 的功能。</p>
-<p><a href="https://github.com/hongweifuture/Valine-Admin/blob/master/%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE.md#%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5%E5%B1%95%E7%A4%BA">点击查看演示</a></p>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ol>
-<li>需要确保 Valine 的基础功能是正常的，参考 <a href="https://valine.js.org/">Valine Docs</a>。</li>
-<li>进入 <a href="https://leancloud.cn/dashboard/applist.html#/apps">Leancloud</a> 对应的 Valine 应用中。</li>
-<li>点击 <code>云引擎 -&gt; 设置</code> 填写代码库：<code>https://github.com/hongweifuture/Valine-Admin</code>，保存 <a href="https://camo.githubusercontent.com/e3d6acd43e97d2e42453075aabcec0e3dba1e1f0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134323630382e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/e3d6acd43e97d2e42453075aabcec0e3dba1e1f0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134323630382e706e67" alt="代码库"></a></li>
-<li>设置<code>自定义环境变量</code>，需要设置云引擎的环境变量以提供必要的信息，变量参数参考下面的<code>配置项</code> <a href="https://camo.githubusercontent.com/f9755cd442fd8ba4fd428d073e47bc91d5d786e2/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135353430392e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/f9755cd442fd8ba4fd428d073e47bc91d5d786e2/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135353430392e706e67" alt="自定义环境变量"></a> <strong>配置项</strong></li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>变量</th>
-<th>示例</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>SITE_NAME</td>
-<td>HONGWEI’S Blog</td>
-<td>[必填] 网站名称</td>
-</tr>
-<tr>
-<td>SITE_URL</td>
-<td><a href="https://www.zhwei.cn/">https://www.zhwei.cn</a></td>
-<td>[必填] 网站地址，<strong>最后不要加 <code>/</code></strong></td>
-</tr>
-<tr>
-<td>SMTP_SERVICE</td>
-<td>QQ</td>
-<td>[必填] 邮件服务提供商，支持 QQ、163、126、Gmail 以及 <a href="https://nodemailer.com/smtp/well-known/#supported-services">更多</a>。 — <em>如这里没有你使用的邮件提供商，请查看<a href="https://github.com/hongweifuture/Valine-Admin/blob/master/%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE.md#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8">自定义邮件服务器</a></em></td>
-</tr>
-<tr>
-<td>SMTP_USER</td>
-<td><a href="mailto:xxxx@qq.com">xxxx@qq.com</a></td>
-<td>[必填] SMTP登录用户，一般为邮箱地址</td>
-</tr>
-<tr>
-<td>SMTP_PASS</td>
-<td>xxxx</td>
-<td>[必填] SMTP登录密码，一般为授权码，而不是邮箱的登陆密码，请自行查询对应邮件服务商的获取方式</td>
-</tr>
-<tr>
-<td>SENDER_NAME</td>
-<td>HONGWEI’S Blog Valine 评论提醒</td>
-<td>[可选] 发件人</td>
-</tr>
-<tr>
-<td>ADMIN_URL</td>
-<td><a href="https://xxx.leanapp.cn/">https://xxx.leanapp.cn/</a></td>
-<td>[建议] Web主机二级域名，用于自动唤醒</td>
-</tr>
-<tr>
-<td>TO_EMAIL</td>
-<td><a href="mailto:xxxxx@gmail.com">xxxxx@gmail.com</a></td>
-<td>[可选] 指定站长收信邮箱，默认值为<code>SITE_USER</code>。用于 SMTP 发件人与站长收件人不一致的情况下使用。</td>
-</tr>
-<tr>
-<td>TEMPLATE_NAME</td>
-<td>rainbow</td>
-<td>[可选] 通知邮件的模板（default和rainbow），参考高级功能</td>
-</tr>
-</tbody></table>
-<ol>
-<li>点击 <code>云引擎 -&gt; 部署</code>，选择<code>Git源码部署</code>，分支或版本号输入<code>master</code>，下载最新依赖（可选），部署 <a href="https://camo.githubusercontent.com/0a4a4b33c7d95f072e5d96130003ed4e7b6cfe7c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333033352e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/0a4a4b33c7d95f072e5d96130003ed4e7b6cfe7c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333033352e706e67" alt="Git"></a> <a href="https://camo.githubusercontent.com/cc8ec687bfce8f2c6d34fbfb8f0557261a9fe840/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333230352e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/cc8ec687bfce8f2c6d34fbfb8f0557261a9fe840/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333230352e706e67" alt="master"></a></li>
-</ol>
-<h2 id="后台管理"><a href="#后台管理" class="headerlink" title="后台管理"></a>后台管理</h2><ol>
-<li>点击 <code>云引擎 -&gt; 设置</code>，在<code>Web主机域名</code>位置点击<code>申请</code>，获取二级域名，现在的二级域名不支持自定义，如果想好记请参考高级功能 <a href="https://camo.githubusercontent.com/3f495170e97459ae13172b0f09cf34c398b12737/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333331352e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/3f495170e97459ae13172b0f09cf34c398b12737/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333331352e706e67" alt="Web主机域名"></a></li>
-<li>设置后台管理登录信息，点击 <code>存储 -&gt; 结构化数据</code>，选择<code>_User -&gt; 添加行</code>，只需要填写<code>password</code>、<code>username</code>、<code>email</code>这三个字段即可, 使用 email 作为账号登陆、password 作为账号密码、username 任意即可。（为了安全考虑，此 email 必须为配置中的 SMTP_USER 或 TO_EMAIL， 否则不允许登录） <a href="https://camo.githubusercontent.com/cd459da8cf3386a974912a21087925b1961909dc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135313333392e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/cd459da8cf3386a974912a21087925b1961909dc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135313333392e706e67" alt="后台管理"></a></li>
-<li>此后，可以通过<code>https://二级域名.leanapp.cn/</code>管理评论</li>
-</ol>
-<h2 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h2><p>免费版的 LeanCloud 容器，是有强制性休眠策略的，不能 24 小时运行：</p>
-<ul>
-<li>每天必须休眠 6 个小时</li>
-<li>30 分钟内没有外部请求，则休眠</li>
-<li>休眠后如果有新的外部请求实例则马上启动（但激活时此次发送邮件会失败）。</li>
-</ul>
-<p>分析了一下上方的策略，如果不想付费的话，最佳使用方案就设置定时器，目前基于 LeanCloud 自带定时器实现了两种云函数定时任务：</p>
-<ul>
-<li>自动唤醒，定时访问Web APP二级域名防止云引擎休眠（推荐）</li>
-<li>定时检查，每天定时检查24小时内漏发的邮件通知</li>
-</ul>
-<p><strong>配置</strong></p>
-<ol>
-<li>首先需要添加环境变量，点击 <code>云引擎 -&gt; 设置</code>，配置<code>自定义环境变量</code>，变量名<code>ADMIN_URL</code>，变量值<code>Web 主机域名，即二级域名地址</code>，添加后重启容器环境变量才会生效</li>
-<li>配置定时任务，击 <code>云引擎 -&gt; 定时任务</code></li>
-</ol>
-<ul>
-<li>配置自动唤醒（推荐），创建定时任务，名称任意，生产环境选择<code>self-wake</code>云函数，Cron表达式填入<code>0 */20 7-23 * * ?</code>，表示每天 7 - 23 点每 20 分钟访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</li>
-<li>配置定时检查，创建定时任务，名称任意，生产环境选择<code>resend-mails</code>云函数，Cron表达式填入<code>0 0 8 * * ?</code>，表示每天早8点检查过去24小时内漏发的通知邮件并补发 <a href="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67" alt="img"></a></li>
-</ul>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo简介</title>
+      <link href="2020/10/23/createBlog/introduction/"/>
+      <url>2020/10/23/createBlog/introduction/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Hexo 是一个基于nodejs 的静态博客网站生成器，作者是来自台湾的 Tommy Chen  </p><p>特点：  </p><p>不可思议的快速 ─ 只要一眨眼静态文件即生成完成  </p><p>支持 Markdown  </p><p>仅需一道指令即可部署到 GitHub Pages 和 Heroku  </p><p>已移植 Octopress 插件  </p><p>高扩展性、自订性  </p><p>兼容于 Windows, Mac &amp; Linux  </p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li><h3 id="系统版本-Microsoft-Windows-Version-10-0-19041-572"><a href="#系统版本-Microsoft-Windows-Version-10-0-19041-572" class="headerlink" title="系统版本 ### :Microsoft Windows [Version 10.0.19041.572]"></a>系统版本 ### :Microsoft Windows [Version 10.0.19041.572]</h3></li><li>安装了git for windows (或者其他的git客户端) [下载]: <a href="https://git-scm.com/download/">https://git-scm.com/download/</a></li><li>安装了node.js、npm，并了解基础命令 [下载]: <a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></li><li>有github账号并且配置到好了ssh，实现免密推送。</li></ul><h2 id="安装hexo基本框架"><a href="#安装hexo基本框架" class="headerlink" title="安装hexo基本框架"></a>安装hexo基本框架</h2><blockquote><p>第一步：新建文件夹</p></blockquote><p>这一步是为博客新建一个文件夹来存放文件</p><blockquote><p>第二步：安装hexo基础框架</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 安装hexo框架  </span><br><span class="line">npm install -g hexo  </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 初始化hexo框架  </span><br><span class="line">npm init</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 安装所需的组件</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 编译生成今天网页</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 启动本地服务</span><br><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>命令完成后 在浏览器中  输入   <a href="http://localhost:4000/">http://localhost:4000/</a>  即可访问。</p>]]></content>
+      
+      
       <categories>
-        <category>博客评论功能</category>
+          
+          <category> 博客搭建 </category>
+          
       </categories>
-      <tags>
-        <tag>valine</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 我的第一篇文章 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
