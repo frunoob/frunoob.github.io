@@ -6,7 +6,7 @@
   <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
   <link href="https://frunoob.github.io/"/>
-  <updated>2020-10-26T09:17:51.616Z</updated>
+  <updated>2020-10-28T03:46:15.802Z</updated>
   <id>https://frunoob.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HEXO-ADMIN安装使用</title>
+    <link href="https://frunoob.github.io/2020/10/28/HEXO-ADMIN%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/"/>
+    <id>https://frunoob.github.io/2020/10/28/HEXO-ADMIN%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-10-28T03:45:59.000Z</published>
+    <updated>2020-10-28T03:46:15.802Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装-HEXO-ADMIN"><a href="#安装-HEXO-ADMIN" class="headerlink" title="安装 HEXO-ADMIN"></a>安装 HEXO-ADMIN</h2><p>切换到hexo目录<br><code>npm install --save hexo-admin</code>  </p><p>启动 hexo<br><code>hexo s</code>  </p><p>然后打开 <a href="http://localhost:4000/admin/">管理页面</a> 。  </p><p>Pages -新加 Page;<br>Posts -新加或删除post;双击一个post，你可以编辑，预览，新增修改tags、categories、选择发布或不发布；  <br>settings - 一些配置;<br>Deploy - 可以直接部署到github。  </p><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>点击 deploy 按钮出现<br><code>Config value “admin.deployCommand” not found</code>   </p><h3 id="windows下"><a href="#windows下" class="headerlink" title="windows下"></a>windows下</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;安装-HEXO-ADMIN&quot;&gt;&lt;a href=&quot;#安装-HEXO-ADMIN&quot; class=&quot;headerlink&quot; title=&quot;安装 HEXO-ADMIN&quot;&gt;&lt;/a&gt;安装 HEXO-ADMIN&lt;/h2&gt;&lt;p&gt;切换到hexo目录&lt;br&gt;&lt;code&gt;npm ins</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>在ubuntu下安装hadoop插件</title>
