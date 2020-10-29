@@ -6,7 +6,7 @@
   <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
   <link href="https://frunoob.github.io/"/>
-  <updated>2020-10-28T03:46:15.802Z</updated>
+  <updated>2020-10-29T08:09:13.777Z</updated>
   <id>https://frunoob.github.io/</id>
   
   <author>
@@ -15,6 +15,79 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用批处理命令切换盘符</title>
+    <link href="https://frunoob.github.io/2020/10/29/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E7%9B%98%E7%AC%A6/"/>
+    <id>https://frunoob.github.io/2020/10/29/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E7%9B%98%E7%AC%A6/</id>
+    <published>2020-10-29T08:07:22.000Z</published>
+    <updated>2020-10-29T08:09:13.777Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="直接使用盘符名称即可-切换盘符"><a href="#直接使用盘符名称即可-切换盘符" class="headerlink" title="直接使用盘符名称即可 切换盘符"></a>直接使用盘符名称即可 切换盘符</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">echo off</span><br><span class="line">color 0B</span><br><span class="line">G:</span><br><span class="line">cd \VSCODE\hexo\</span><br><span class="line">echo 已经切换到了hexo目录</span><br><span class="line">pwd</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>以上是启动hexo本地服务器的批处理命令写法。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;直接使用盘符名称即可-切换盘符&quot;&gt;&lt;a href=&quot;#直接使用盘符名称即可-切换盘符&quot; class=&quot;headerlink&quot; title=&quot;直接使用盘符名称即可 切换盘符&quot;&gt;&lt;/a&gt;直接使用盘符名称即可 切换盘符&lt;/h3&gt;&lt;figure class=&quot;highli</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>讨论一下大数据、云计算与hadoop之间的关系关联</title>
+    <link href="https://frunoob.github.io/2020/10/28/%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A4%A7%E6%95%B0%E6%8D%AE%E3%80%81%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8Ehadoop%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%85%B3%E8%81%94/"/>
+    <id>https://frunoob.github.io/2020/10/28/%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A4%A7%E6%95%B0%E6%8D%AE%E3%80%81%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8Ehadoop%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%85%B3%E8%81%94/</id>
+    <published>2020-10-28T06:11:00.000Z</published>
+    <updated>2020-10-28T07:39:26.720Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h1><ul><li>大数据，指的是所涉及的资料量规模巨大到 无法通过目前主流的软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业经营决策更积极目的的咨询。  </li><li>大数据的三个特点—— 3Vs：  <br>- <strong>Volume</strong> （大量）数据量大，从TB级别跃升到PB级别<br>- <strong>Variety</strong>（多样）数据类型繁多  <ul><li>非结构化：文本、图形、声音等<br>    * 半结构化：日志<br>    * 结构化数据： 行列规整的表单数据<br>    * 多结构数据： 以上三种类型混合的数据  <br>- <strong>Velocity</strong>（高速）数据的时效性，数据仅在一个短暂的时间有价值</li></ul></li></ul><h1 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h1><h1 id="HADOOP"><a href="#HADOOP" class="headerlink" title="HADOOP"></a>HADOOP</h1><ul><li>hadoop的核心是在廉价硬件组成的集群上进行海量的数据运算，来获得有价值的信息</li></ul><h6 id="hadoop的优点"><a href="#hadoop的优点" class="headerlink" title="hadoop的优点"></a>hadoop的优点</h6><blockquote><ul><li>高扩展性  </li><li>高可靠性</li><li>高效性</li><li>高容错性</li><li>低成本</li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;大数据&quot;&gt;&lt;a href=&quot;#大数据&quot; class=&quot;headerlink&quot; title=&quot;大数据&quot;&gt;&lt;/a&gt;大数据&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;大数据，指的是所涉及的资料量规模巨大到 无法通过目前主流的软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业</summary>
+      
+    
+    
+    
+    <category term="作业" scheme="https://frunoob.github.io/categories/%E4%BD%9C%E4%B8%9A/"/>
+    
+    <category term="大数据" scheme="https://frunoob.github.io/categories/%E4%BD%9C%E4%B8%9A/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    
+    <category term="hadoop课堂作业" scheme="https://frunoob.github.io/tags/hadoop%E8%AF%BE%E5%A0%82%E4%BD%9C%E4%B8%9A/"/>
+    
+    <category term="云计算" scheme="https://frunoob.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+    
+    <category term="hadoop" scheme="https://frunoob.github.io/tags/hadoop/"/>
+    
+    <category term="大数据" scheme="https://frunoob.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu下的eclipse安装hadoop插件</title>
+    <link href="https://frunoob.github.io/2020/10/28/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/"/>
+    <id>https://frunoob.github.io/2020/10/28/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/</id>
+    <published>2020-10-28T06:09:52.000Z</published>
+    <updated>2020-10-28T06:10:38.207Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前提"><a href="#前提" class="headerlink" title="前提  "></a>前提  </h2><h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境  "></a>系统环境  </h3><ul><li>已经安装了JDK，并配置好了系统变量 </li><li>安装了Eclipse</li></ul><h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>未完待续。。。。。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提  &quot;&gt;&lt;/a&gt;前提  &lt;/h2&gt;&lt;h3 id=&quot;系统环境&quot;&gt;&lt;a href=&quot;#系统环境&quot; class=&quot;headerlink&quot; title=&quot;系统环境  &quot;&gt;&lt;/a&gt;系</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>HEXO-ADMIN安装使用</title>
