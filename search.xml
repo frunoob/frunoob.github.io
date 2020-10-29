@@ -1388,4 +1388,15 @@
         <tag>C语言</tag>
       </tags>
   </entry>
+  <entry>
+    <title>【java】如何输入位置长度的数组</title>
+    <url>/2020/10/29/%E3%80%90java%E3%80%91%E5%A6%82%E4%BD%95%E8%BE%93%E5%85%A5%E4%BD%8D%E7%BD%AE%E9%95%BF%E5%BA%A6%E7%9A%84%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">String s&#x3D;sc.nextLine();&#x2F;&#x2F;读入一行string</span><br><span class="line">String[] c&#x3D;s.split(&quot;\\s+&quot;);&#x2F;&#x2F;根据空格进行分割</span><br><span class="line">int[] arr&#x3D;new int[c.length];</span><br><span class="line">for(int i&#x3D;0;i&lt;c.length;i++) &#123;</span><br><span class="line">   arr[i]&#x3D;Integer.parseInt(c[i]);</span><br><span class="line">   &#x2F;&#x2F;将string转为int型</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
 </search>
