@@ -6,7 +6,7 @@
   <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
   <link href="https://frunoob.github.io/"/>
-  <updated>2020-10-29T11:35:57.107Z</updated>
+  <updated>2020-10-29T14:46:10.036Z</updated>
   <id>https://frunoob.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>程序设计题-求所有K区间中的最大SUM[k]值</title>
+    <link href="https://frunoob.github.io/2020/10/29/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/"/>
+    <id>https://frunoob.github.io/2020/10/29/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/</id>
+    <published>2020-10-29T11:37:00.000Z</published>
+    <updated>2020-10-29T14:46:10.036Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="java程序设计19题"><a href="#java程序设计19题" class="headerlink" title="java程序设计19题"></a>java程序设计19题</h2><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/29/JlOYvkoL8c61nZI.png" alt="图片"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;java程序设计19题&quot;&gt;&lt;a href=&quot;#java程序设计19题&quot; class=&quot;headerlink&quot; title=&quot;java程序设计19题&quot;&gt;&lt;/a&gt;java程序设计19题&lt;/h2&gt;&lt;p&gt;&lt;img src= &quot;/img/loading.gif&quot; data-</summary>
+      
+    
+    
+    
+    <category term="编程语言" scheme="https://frunoob.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="java程序设计题" scheme="https://frunoob.github.io/tags/java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>【java】如何输入位置长度的数组</title>
@@ -45,9 +69,9 @@
     <link href="https://frunoob.github.io/2020/10/29/C%E8%AF%AD%E8%A8%80-%E9%94%99%E8%AF%AF%EF%BC%9Ald-return-1-exist-status/"/>
     <id>https://frunoob.github.io/2020/10/29/C%E8%AF%AD%E8%A8%80-%E9%94%99%E8%AF%AF%EF%BC%9Ald-return-1-exist-status/</id>
     <published>2020-10-29T09:55:00.000Z</published>
-    <updated>2020-10-29T10:30:49.883Z</updated>
+    <updated>2020-10-29T11:52:50.097Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h3><ul><li>dev c++</li></ul><h3 id="问题叙述"><a href="#问题叙述" class="headerlink" title="问题叙述"></a>问题叙述</h3><blockquote><p>ld return 1 exist status</p></blockquote><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>下载 MinGW 并安装其中的 Basic Stup，安装结果如下：</p><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/29/FKqOdBvjfGJEHQC.png" alt="upload successful"><br>打开CMD 输入命令<br><code>gcc 源文件 -o 目标文件</code><br>此时显示了错误代码的行数</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.c:(.text+0x4b7): undefined reference to &#96;printfI&#39;</span><br><span class="line">collect2: ld returned 1 exit status </span><br></pre></td></tr></table></figure><p><code>print</code>函数错写为<code>printfI</code>   </p><h4 id="end"><a href="#end" class="headerlink" title="end"></a>end</h4>]]></content>
+    <content type="html"><![CDATA[<h3 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h3><ul><li>dev c++</li></ul><h3 id="问题叙述"><a href="#问题叙述" class="headerlink" title="问题叙述"></a>问题叙述</h3><blockquote><p>ld return 1 exist status</p></blockquote><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>下载 MinGW 并安装其中的 Basic Stup，安装结果如下：</p><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/29/kmhnstPWGixZ9ql.png" alt="upload successful"><br>打开CMD 输入命令<br><code>gcc 源文件 -o 目标文件</code><br>此时显示了错误代码的行数</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.c:(.text+0x4b7): undefined reference to &#96;printfI&#39;</span><br><span class="line">collect2: ld returned 1 exit status </span><br></pre></td></tr></table></figure><p><code>print</code>函数错写为<code>printfI</code>   </p><h4 id="end"><a href="#end" class="headerlink" title="end"></a>end</h4>]]></content>
     
     
       
