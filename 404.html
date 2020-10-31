@@ -83,7 +83,7 @@ var saveToLocal = {
   isHome: false,
   isHighlightShrink: false,
   isSidebar: false,
-  postUpdate: '2020-10-31 22:13:55'
+  postUpdate: '2020-10-31 22:49:24'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -259,16 +259,26 @@ POWERMODE.shake = false;
 POWERMODE.mobile = false;
 document.body.addEventListener('input', POWERMODE);
 </script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" async="async" mobile="false"></script><script>((window.gitter = {}).chat = {}).options = {
-  room: 'frunoob-blog/blog',
+  disableDefaultChat: true,
 };
+document.addEventListener('gitter-sidecar-ready', (e) => {
+  const GitterChat = e.detail.Chat
+  let chat
 
-if (false) {
-  function chatBtnHide () {
-    document.getElementsByClassName('gitter-open-chat-button')[0].style.display= 'none'
+  function initGitter () {
+    chat = new GitterChat({
+      room: 'frunoob-blog/blog',
+      activationElement: '#chat_btn'
+    });
   }
 
-  function chatBtnShow () {
-    document.getElementsByClassName('gitter-open-chat-button')[0].style.display= 'block'
+  initGitter()
+
+  if (false) {
+    document.addEventListener('pjax:complete', () => {
+      chat.destroy()
+      initGitter()
+    })
   }
-}
-</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="async" defer="defer"></script></div></body></html>
+
+})</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="async" defer="defer"></script></div></body></html>
