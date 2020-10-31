@@ -6,7 +6,7 @@
   <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
   <link href="https://frunoob.github.io/"/>
-  <updated>2020-10-30T11:58:39.891Z</updated>
+  <updated>2020-10-31T14:00:46.386Z</updated>
   <id>https://frunoob.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://frunoob.github.io/2020/10/29/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/"/>
     <id>https://frunoob.github.io/2020/10/29/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/</id>
     <published>2020-10-29T11:37:00.000Z</published>
-    <updated>2020-10-30T11:58:39.891Z</updated>
+    <updated>2020-10-31T14:00:46.386Z</updated>
     
     <content type="html"><![CDATA[<h2 id="java程序设计19题"><a href="#java程序设计19题" class="headerlink" title="java程序设计19题"></a>java程序设计19题</h2><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/29/JlOYvkoL8c61nZI.png" alt="图片"></p>]]></content>
     
@@ -34,6 +34,8 @@
     
     
     <category term="编程语言" scheme="https://frunoob.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="JAVA" scheme="https://frunoob.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JAVA/"/>
     
     
     <category term="java程序设计题" scheme="https://frunoob.github.io/tags/java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98/"/>
