@@ -1281,141 +1281,9 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>HEXO-ADMIN安装使用</title>
-    <url>/2020/10/28/HEXO-ADMIN%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="安装-HEXO-ADMIN"><a href="#安装-HEXO-ADMIN" class="headerlink" title="安装 HEXO-ADMIN"></a>安装 HEXO-ADMIN</h2><p>切换到hexo目录<br><code>npm install --save hexo-admin</code>  </p>
-<p>启动 hexo<br><code>hexo s</code>  </p>
-<p>然后打开 <a href="http://localhost:4000/admin/">管理页面</a> 。  </p>
-<p>Pages -新加 Page;<br>Posts -新加或删除post;双击一个post，你可以编辑，预览，新增修改tags、categories、选择发布或不发布；<br>settings - 一些配置;<br>Deploy - 可以直接部署到github。  </p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>点击 deploy 按钮出现<br><code>Config value “admin.deployCommand” not found</code>   </p>
-<h3 id="windows下"><a href="#windows下" class="headerlink" title="windows下"></a>windows下</h3><p>修改主配置文件”_config.yml”(而非主题配置文件)<br>在文件末尾添加如下内容</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># deploy</span><br><span class="line">admin:</span><br><span class="line">  deployCommand: &#39;hexo-deploy.bat&#39;</span><br></pre></td></tr></table></figure>
-
-<p>保存文件并退出。<br>在<a href="%E4%B8%BB%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%60_config.yml%60%E6%89%80%E5%9C%A8%E7%9B%AE%E5%BD%95">^当前目录</a>下新建一个文件名为<code>hexo-deploy.bat</code>,并在其中添加一下内容</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>博客搭建</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>hexo-admin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ubuntu下的eclipse安装hadoop插件</title>
-    <url>/2020/10/28/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="前提"><a href="#前提" class="headerlink" title="前提  "></a>前提  </h2><h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境  "></a>系统环境  </h3><ul>
-<li>已经安装了JDK，并配置好了系统变量 </li>
-<li>安装了Eclipse</li>
-</ul>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>未完待续。。。。。</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>hadoop插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>讨论一下大数据、云计算与hadoop之间的关系关联</title>
-    <url>/2020/10/28/%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A4%A7%E6%95%B0%E6%8D%AE%E3%80%81%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8Ehadoop%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%85%B3%E8%81%94/</url>
-    <content><![CDATA[<h1 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h1><ul>
-<li>大数据，指的是所涉及的资料量规模巨大到 无法通过目前主流的软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业经营决策更积极目的的咨询。  </li>
-<li>大数据的三个特点—— 3Vs：  <br>- <strong>Volume</strong> （大量）数据量大，从TB级别跃升到PB级别<br>- <strong>Variety</strong>（多样）数据类型繁多  <ul>
-<li>非结构化：文本、图形、声音等<br>    * 半结构化：日志<br>    * 结构化数据： 行列规整的表单数据<br>    * 多结构数据： 以上三种类型混合的数据  <br>- <strong>Velocity</strong>（高速）数据的时效性，数据仅在一个短暂的时间有价值</li>
-</ul>
-</li>
-</ul>
-<h1 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h1><h1 id="HADOOP"><a href="#HADOOP" class="headerlink" title="HADOOP"></a>HADOOP</h1><ul>
-<li>hadoop的核心是在廉价硬件组成的集群上进行海量的数据运算，来获得有价值的信息</li>
-</ul>
-<h6 id="hadoop的优点"><a href="#hadoop的优点" class="headerlink" title="hadoop的优点"></a>hadoop的优点</h6><blockquote>
-<ul>
-<li>高扩展性  </li>
-<li>高可靠性</li>
-<li>高效性</li>
-<li>高容错性</li>
-<li>低成本</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>作业</category>
-        <category>大数据</category>
-      </categories>
-      <tags>
-        <tag>hadoop课堂作业</tag>
-        <tag>云计算</tag>
-        <tag>hadoop</tag>
-        <tag>大数据</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用批处理命令切换盘符</title>
-    <url>/2020/10/29/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E7%9B%98%E7%AC%A6/</url>
-    <content><![CDATA[<h3 id="直接使用盘符名称即可-切换盘符"><a href="#直接使用盘符名称即可-切换盘符" class="headerlink" title="直接使用盘符名称即可 切换盘符"></a>直接使用盘符名称即可 切换盘符</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo off</span><br><span class="line">color 0B</span><br><span class="line">G:</span><br><span class="line">cd \VSCODE\hexo\</span><br><span class="line">echo 已经切换到了hexo目录</span><br><span class="line">pwd</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>以上是启动hexo本地服务器的批处理命令写法。</p>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-      </categories>
-      <tags>
-        <tag>cmd</tag>
-        <tag>批处理命令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C语言 错误：ld return 1 exist status</title>
-    <url>/2020/10/29/C%E8%AF%AD%E8%A8%80-%E9%94%99%E8%AF%AF%EF%BC%9Ald-return-1-exist-status/</url>
-    <content><![CDATA[<h3 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h3><ul>
-<li>dev c++</li>
-</ul>
-<h3 id="问题叙述"><a href="#问题叙述" class="headerlink" title="问题叙述"></a>问题叙述</h3><blockquote>
-<p>ld return 1 exist status</p>
-</blockquote>
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>下载 MinGW 并安装其中的 Basic Stup，安装结果如下：</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/29/kmhnstPWGixZ9ql.png" alt="upload successful"><br>打开CMD 输入命令<br><code>gcc 源文件 -o 目标文件</code><br>此时显示了错误代码的行数</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.c:(.text+0x4b7): undefined reference to &#96;printfI&#39;</span><br><span class="line">collect2: ld returned 1 exit status </span><br></pre></td></tr></table></figure>
-<p><code>print</code>函数错写为<code>printfI</code>   </p>
-<h4 id="end"><a href="#end" class="headerlink" title="end"></a>end</h4>]]></content>
-      <categories>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【java】如何输入位置长度的数组</title>
-    <url>/2020/10/29/%E3%80%90java%E3%80%91%E5%A6%82%E4%BD%95%E8%BE%93%E5%85%A5%E4%BD%8D%E7%BD%AE%E9%95%BF%E5%BA%A6%E7%9A%84%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">String s&#x3D;sc.nextLine();&#x2F;&#x2F;读入一行string</span><br><span class="line">String[] c&#x3D;s.split(&quot;\\s+&quot;);&#x2F;&#x2F;根据空格进行分割</span><br><span class="line">int[] arr&#x3D;new int[c.length];</span><br><span class="line">for(int i&#x3D;0;i&lt;c.length;i++) &#123;</span><br><span class="line">   arr[i]&#x3D;Integer.parseInt(c[i]);</span><br><span class="line">   &#x2F;&#x2F;将string转为int型</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>编程语言</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>程序设计题-求所有K区间中的最大SUM[k]值</title>
-    <url>/2020/10/29/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/</url>
-    <content><![CDATA[<h2 id="java程序设计19题"><a href="#java程序设计19题" class="headerlink" title="java程序设计19题"></a>java程序设计19题</h2><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/29/JlOYvkoL8c61nZI.png" alt="图片"></p>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>JAVA</category>
-      </categories>
-      <tags>
-        <tag>java程序设计题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>罕见的蓝月亮 -_-</title>
-    <url>/2020/10/31/%E8%93%9D%E6%9C%88%E4%BA%AE/</url>
-    <content><![CDATA[<p>10月初，“<em>双节</em>”之夜的皎皎明月，想必给不少人留下了美好回忆。而在月末之时，另一轮圆月又将升上夜空。这次，它还有个浪漫的名字——“**<em>蓝月亮**</em>”。</p>
+    <url>/2020/10/31/news/%E8%93%9D%E6%9C%88%E4%BA%AE/</url>
+    <content><![CDATA[<p>10月初，“<em>双节</em>”之夜的皎皎明月，想必给不少人留下了美好回忆。而在月末之时，另一轮圆月又将升上夜空。这次，它还有个浪漫的名字——“ <strong><em>蓝月亮</em></strong>”。</p>
 <p>“蓝月亮”遇上万圣节，错过要等19年！</p>
 <p>“蓝月亮，你看我独自徜徉，心中没有梦想，也没有爱人在身旁；蓝月亮，你知道我就在那里，你可听见我为心中在乎的人，浅吟低唱。”这段歌词源自美国经典流行歌曲《蓝月亮》。</p>
 <p>提起“蓝月亮”，人们想到的场景可能和这首歌一样，浪漫中带有一丝忧伤。</p>
@@ -1459,6 +1327,127 @@
       </categories>
       <tags>
         <tag>罕见蓝月亮</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C语言 错误：ld return 1 exist status</title>
+    <url>/2020/10/29/study/C%E8%AF%AD%E8%A8%80-%E9%94%99%E8%AF%AF%EF%BC%9Ald-return-1-exist-status/</url>
+    <content><![CDATA[<h3 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h3><ul>
+<li>dev c++</li>
+</ul>
+<h3 id="问题叙述"><a href="#问题叙述" class="headerlink" title="问题叙述"></a>问题叙述</h3><blockquote>
+<p>ld return 1 exist status</p>
+</blockquote>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>下载 MinGW 并安装其中的 Basic Stup，安装结果如下：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/29/kmhnstPWGixZ9ql.png" alt="upload successful"><br>打开CMD 输入命令<br><code>gcc 源文件 -o 目标文件</code><br>此时显示了错误代码的行数</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.c:(.text+0x4b7): undefined reference to &#96;printfI&#39;</span><br><span class="line">collect2: ld returned 1 exit status </span><br></pre></td></tr></table></figure>
+<p><code>print</code>函数错写为<code>printfI</code>   </p>
+<h4 id="end"><a href="#end" class="headerlink" title="end"></a>end</h4>]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HEXO-ADMIN安装使用</title>
+    <url>/2020/10/28/study/HEXO-ADMIN%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="安装-HEXO-ADMIN"><a href="#安装-HEXO-ADMIN" class="headerlink" title="安装 HEXO-ADMIN"></a>安装 HEXO-ADMIN</h2><p>切换到hexo目录<br><code>npm install --save hexo-admin</code>  </p>
+<p>启动 hexo<br><code>hexo s</code>  </p>
+<p>然后打开 <a href="http://localhost:4000/admin/">管理页面</a> 。  </p>
+<p>Pages -新加 Page;<br>Posts -新加或删除post;双击一个post，你可以编辑，预览，新增修改tags、categories、选择发布或不发布；<br>settings - 一些配置;<br>Deploy - 可以直接部署到github。  </p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>点击 deploy 按钮出现<br><code>Config value “admin.deployCommand” not found</code>   </p>
+<h3 id="windows下"><a href="#windows下" class="headerlink" title="windows下"></a>windows下</h3><p>修改主配置文件”_config.yml”(而非主题配置文件)<br>在文件末尾添加如下内容</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># deploy</span><br><span class="line">admin:</span><br><span class="line">  deployCommand: &#39;hexo-deploy.bat&#39;</span><br></pre></td></tr></table></figure>
+
+<p>保存文件并退出。<br>在<a href="%E4%B8%BB%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%60_config.yml%60%E6%89%80%E5%9C%A8%E7%9B%AE%E5%BD%95">^当前目录</a>下新建一个文件名为<code>hexo-deploy.bat</code>,并在其中添加一下内容</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>hexo-admin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ubuntu下的eclipse安装hadoop插件</title>
+    <url>/2020/10/28/study/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="前提"><a href="#前提" class="headerlink" title="前提  "></a>前提  </h2><h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境  "></a>系统环境  </h3><ul>
+<li>已经安装了JDK，并配置好了系统变量 </li>
+<li>安装了Eclipse</li>
+</ul>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>未完待续。。。。。</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>hadoop插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用批处理命令切换盘符</title>
+    <url>/2020/10/29/study/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E7%9B%98%E7%AC%A6/</url>
+    <content><![CDATA[<h3 id="直接使用盘符名称即可-切换盘符"><a href="#直接使用盘符名称即可-切换盘符" class="headerlink" title="直接使用盘符名称即可 切换盘符"></a>直接使用盘符名称即可 切换盘符</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo off</span><br><span class="line">color 0B</span><br><span class="line">G:</span><br><span class="line">cd \VSCODE\hexo\</span><br><span class="line">echo 已经切换到了hexo目录</span><br><span class="line">pwd</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>以上是启动hexo本地服务器的批处理命令写法。</p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>cmd</tag>
+        <tag>批处理命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序设计题-求所有K区间中的最大SUM[k]值</title>
+    <url>/2020/10/29/study/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/</url>
+    <content><![CDATA[<h2 id="java程序设计19题"><a href="#java程序设计19题" class="headerlink" title="java程序设计19题"></a>java程序设计19题</h2><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/29/JlOYvkoL8c61nZI.png" alt="图片"></p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>java程序设计题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>讨论一下大数据、云计算与hadoop之间的关系关联</title>
+    <url>/2020/10/28/study/hadoop/%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A4%A7%E6%95%B0%E6%8D%AE%E3%80%81%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8Ehadoop%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%85%B3%E8%81%94/</url>
+    <content><![CDATA[<h1 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h1><ul>
+<li>大数据，指的是所涉及的资料量规模巨大到 无法通过目前主流的软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业经营决策更积极目的的咨询。  </li>
+<li>大数据的三个特点—— 3Vs：  <br>- <strong>Volume</strong> （大量）数据量大，从TB级别跃升到PB级别<br>- <strong>Variety</strong>（多样）数据类型繁多  <ul>
+<li>非结构化：文本、图形、声音等<br>    * 半结构化：日志<br>    * 结构化数据： 行列规整的表单数据<br>    * 多结构数据： 以上三种类型混合的数据  <br>- <strong>Velocity</strong>（高速）数据的时效性，数据仅在一个短暂的时间有价值</li>
+</ul>
+</li>
+</ul>
+<h1 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h1><h1 id="HADOOP"><a href="#HADOOP" class="headerlink" title="HADOOP"></a>HADOOP</h1><ul>
+<li>hadoop的核心是在廉价硬件组成的集群上进行海量的数据运算，来获得有价值的信息</li>
+</ul>
+<h6 id="hadoop的优点"><a href="#hadoop的优点" class="headerlink" title="hadoop的优点"></a>hadoop的优点</h6><blockquote>
+<ul>
+<li>高扩展性  </li>
+<li>高可靠性</li>
+<li>高效性</li>
+<li>高容错性</li>
+<li>低成本</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>作业</category>
+        <category>大数据</category>
+      </categories>
+      <tags>
+        <tag>hadoop课堂作业</tag>
+        <tag>云计算</tag>
+        <tag>hadoop</tag>
+        <tag>大数据</tag>
       </tags>
   </entry>
 </search>
