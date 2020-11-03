@@ -1461,4 +1461,53 @@
         <tag>java</tag>
       </tags>
   </entry>
+  <entry>
+    <title>JAVA基础知识重要概念</title>
+    <url>/2020/11/01/study/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<h2 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h2><p><strong>复制运算符</strong>：Java的赋值运算符用于改变变量的值。赋值运算符包括：=， +=，-=，*=，%=，/=。  </p>
+<p><strong>自动递增（+ +）</strong>和<strong>自动递减（- -）运算符：</strong>次元算符分别进行加1减1运算。其中两种的格式的递增和递减，分别为前缀递增或递减以及后缀递增或递减。  </p>
+<p><strong>二元算数运算符：</strong>它用于执行基本的算数运算。Java提供的二元运算符包括+、-、*、/和%。  </p>
+<p><strong>块：</strong>在括号内的语句序列。  </p>
+<p><strong>break语句：</strong>此语句退出最内循环或switch语句。  </p>
+<p><strong>字节码：</strong>字节码是有Java编译器生成的可移植的中间代码。  </p>
+<p><strong>按值传递：</strong>此项Java参数传递机制是将实际参数复制给形式参数。  </p>
+<p><strong>注释：</strong>增加代码的<strong>可读性</strong>但没有语义。  </p>
+<p><strong>条件运算符（？：）：</strong>是<code>if-else</code>语句的缩写。  </p>
+<p><strong>continue：</strong>继续最内层循环的下一次迭代。  </p>
+<p><strong>do语句：</strong>此语句的循环结构保证循环至少执行一次。  </p>
+<p><strong>相等运算符：</strong>Java使用==和!=进行两个值的比较，如果类型匹配，比较后会返回true或false。  </p>
+<p>**转义序列： **泳衣表示某些字符常量。  </p>
+<p><strong>for循环：</strong>简单的迭代。   </p>
+<p><strong>标识符：</strong>他用来命名变量或方法。  </p>
+<p><strong>if语句：</strong>他是基本的决策策者。  </p>
+<p><strong>整型：</strong>整型包括byte、char、short、int和long。  </p>
+<p><strong>java：</strong>java是java解释器，它是处理字节码。  </p>
+<p><strong>javac：</strong>javac是java的编译器，它生成字节码。    </p>
+<p><strong>短路计算：</strong>通过分析第一个表达式就能确定逻辑运算符的结果，那么就不需要计算第二个表达式的值。  </p>
+<p><strong>签名：</strong>签名是方法名和参数列表类型的组合。返回类型不是签名的一部分。  </p>
+<p><strong>标准输入：</strong>除非重定向，终端为标准输入。系统还是标准输出流和标准错误。  </p>
+<p><strong>static final 实体：</strong>此实体是全局常量。  </p>
+<p><strong>类型转换运算符：</strong>用于生成新类型的未命名临时变量。  </p>
+<p><strong>Unicode：</strong>国际字符集，包含了3万多个涵盖了主要书面语言的不用字符。  </p>
+<p><strong>虚拟机：</strong>是字节码的解释器。  </p>
+<p><strong>public static</strong>方法等价于C风格的全局函数  </p>
+<blockquote>
+<p>方法类似于其他语言的函数。方法头由名称、返回类型和参数列表组成。方法声明包括方法体。</p>
+<p>在按值传递中，将实际参数复制到形式参数。使用按值传递来传递变量值。</p>
+<p>return语句将值返回给调用程序  </p>
+</blockquote>
+<p><strong>&amp;：</strong>取地址</p>
+<p>*<strong>：</strong>解引用（dereferencing）</p>
+<h2 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h2><ol>
+<li>添加不必要的分号产生逻辑错误，因为分号本身就是空语句。这意味着for、while或if语句之后立即跟有分号，用户不用容易察觉这个分号，其将破坏用户的程序。  </li>
+<li>在源码中看到以0开始的数，这个数就是八进制整数常量，开头的0是八进制整数常量的标记。  </li>
+<li>使用逻辑运算符&amp;&amp;和||，&amp;和|不使用短路计算。  </li>
+<li>else与悬挂最近的if匹配。  </li>
+<li>当使用switch语句时，人们通常忘记逻辑情况之间的break语句。如果忘记了break语句，通常控制会传到下一种情况。  </li>
+<li>转义字符是用  <strong>\</strong> 开始的，而不是 <strong>/</strong> 。  </li>
+<li>java 的源文件必须与被编译的类名相匹配。</li>
+<li>两个Point类型的对象相乘在JAVA里面没有任何意义，但是在C++中却是有意义的，因为C++允许对存储地址进行算术运算。所以程序员一定要区分算术运算和被引用对象的算术运算。</li>
+</ol>
+]]></content>
+  </entry>
 </search>
