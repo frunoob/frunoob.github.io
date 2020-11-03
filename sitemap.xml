@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://frunoob.github.io/2020/11/03/hugo%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/</loc>
+    
+    <lastmod>2020-11-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://frunoob.github.io/2020/11/01/study/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</loc>
     
     <lastmod>2020-11-02</lastmod>
@@ -355,6 +362,13 @@
   
   <url>
     <loc>https://frunoob.github.io/tags/%E7%BD%95%E8%A7%81%E8%93%9D%E6%9C%88%E4%BA%AE/</loc>
+    <lastmod>2020-11-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/tags/hugo/</loc>
     <lastmod>2020-11-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
