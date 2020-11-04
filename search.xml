@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>butterfly主题页面设置</title>
+    <url>/2020/11/05/butterfly%E4%B8%BB%E9%A2%98%E9%A1%B5%E9%9D%A2%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Page-Front-matter"><a href="#Page-Front-matter" class="headerlink" title="Page Front-matter"></a>Page Front-matter</h2><p>寫法    解釋<br>title    【必需】頁面標題<br>date    【必需】頁面創建日期<br>type    【必需】標籤、分類和友情鏈接三個頁面需要配置<br>updated    【可選】頁面更新日期<br>description    【可選】頁面描述<br>keywords    【可選】頁面關鍵字<br>comments    【可選】顯示頁面評論模塊(默認 true)<br>top_img    【可選】頁面頂部圖片<br>mathjax    【可選】顯示mathjax(當設置mathjax的per_page: false時，才需要配置，默認 false)<br>katex    【可選】顯示katex(當設置katex的per_page: false時，才需要配置，默認 false)<br>aside    【可選】顯示側邊欄 (默認 true)<br>aplayer    【可選】在需要的頁面加載aplayer的js和css,請參考文章下面的音樂 配置<br>highlight_shrink    【可選】配置代碼框是否展開(true/false)(默認為設置中highlight_shrink的配置)</p>
+<h2 id="Post-Front-matter"><a href="#Post-Front-matter" class="headerlink" title="Post Front-matter"></a>Post Front-matter</h2><p>寫法    解釋<br>title    【必需】文章標題<br>date    【必需】文章創建日期<br>updated    【可選】文章更新日期<br>tags    【可選】文章標籤<br>categories    【可選】文章分類<br>keywords    【可選】文章關鍵字<br>description    【可選】文章描述<br>top_img    【可選】文章頂部圖片<br>cover    【可選】文章縮略圖(如果沒有設置top_img,文章頁頂部將顯示縮略圖，可設為false/圖片地址/留空)<br>comments    【可選】顯示文章評論模塊(默認 true)<br>toc    【可選】顯示文章TOC(默認為設置中toc的enable配置)<br>toc_number    【可選】顯示toc_number(默認為設置中toc的number配置)<br>copyright    【可選】顯示文章版權模塊(默認為設置中post_copyright的enable配置)<br>copyright_author    【可選】文章版權模塊的文章作者<br>copyright_author_href    【可選】文章版權模塊的文章作者鏈接<br>copyright_url    【可選】文章版權模塊的文章連結鏈接<br>copyright_info    【可選】文章版權模塊的版權聲明文字<br>mathjax    【可選】顯示mathjax(當設置mathjax的per_page: false時，才需要配置，默認 false)<br>katex    【可選】顯示katex(當設置katex的per_page: false時，才需要配置，默認 false)<br>aplayer    【可選】在需要的頁面加載aplayer的js和css,請參考文章下面的音樂 配置<br>highlight_shrink    【可選】配置代碼框是否展開(true/false)(默認為設置中highlight_shrink的配置)<br>aside    【可選】顯示側邊欄 (默認 true）</p>
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+        <category>hexo</category>
+        <category>butterfly</category>
+      </categories>
+      <tags>
+        <tag>butterfly</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>github快速将本地库和远程库连接</title>
     <url>/2020/11/04/github%E5%BF%AB%E9%80%9F%E5%B0%86%E6%9C%AC%E5%9C%B0%E5%BA%93%E5%92%8C%E8%BF%9C%E7%A8%8B%E5%BA%93%E8%BF%9E%E6%8E%A5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
