@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hugo快速开始</title>
+    <url>/2020/11/03/hugo%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/</url>
+    <content><![CDATA[<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="安装Hugo"><a href="#安装Hugo" class="headerlink" title="安装Hugo"></a>安装Hugo</h3><ol>
+<li><p>二进制安装（推荐：简单、快速）<br>到<a href="https://github.com/spf13/hugo/releases">Hugo Releases</a>下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe）</p>
+</li>
+<li><p>源码安装<br>源码编译安装，首先安装好依赖的工具：</p>
+<ul>
+<li><a href="http://git-scm.com/">Git</a></li>
+<li><a href="http://mercurial.selenic.com/">Mercurial</a></li>
+<li><a href="http://golang.org/">Go</a> 1.3+ (Go 1.4+ on Windows)</li>
+</ul>
+<p>设置好 <code>GOPATH</code> 环境变量，获取源码并编译：</p>
+</li>
+</ol>
+<blockquote>
+<p>（以下是linux环境的命令）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;$ <span class="built_in">export</span> GOPATH=<span class="variable">$HOME</span>/go</span><br><span class="line">&gt;$ go get -v github.com/spf13/hugo</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>(windows下操作)</p>
+<p>自行百度</p>
+</blockquote>
+<p>源码会下载到 <code>$GOPATH/src</code> 目录，二进制在 <code>$GOPATH/bin/</code></p>
+<p>如果需要更新所有Hugo的依赖库，增加 <code>-u</code> 参数：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ go get -u -v github.com/spf13/hugo</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成站点"><a href="#生成站点" class="headerlink" title="生成站点"></a>生成站点</h3><p>使用Hugo快速生成站点，比如希望生成到 <code>/path/to/site</code> 路径：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hugo new site /path/to/site</span><br></pre></td></tr></table></figure>
+
+<p>这样就在 <code>/path/to/site</code> 目录里生成了初始站点，进去目录：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /path/to/site</span><br></pre></td></tr></table></figure>
+
+<p>站点目录结构：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">▸ archetypes&#x2F;</span><br><span class="line">▸ content&#x2F;</span><br><span class="line">▸ layouts&#x2F;</span><br><span class="line">▸ static&#x2F;</span><br><span class="line">  config.toml</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h3><p>创建一个 <code>about</code> 页面：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hugo new about.md</span><br></pre></td></tr></table></figure>
+
+<p><code>about.md</code> 自动生成到了 <code>content/about.md</code> ，打开 <code>about.md</code> 看下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">+++</span><br><span class="line">date &#x3D; &quot;2015-10-25T08:36:54-07:00&quot;</span><br><span class="line">draft &#x3D; true</span><br><span class="line">title &#x3D; &quot;about&quot;</span><br><span class="line"></span><br><span class="line">+++</span><br><span class="line"></span><br><span class="line">正文内容</span><br></pre></td></tr></table></figure>
+
+<p>内容是 <code>Markdown</code> 格式的，<code>+++</code> 之间的内容是 <a href="https://github.com/toml-lang/toml">TOML</a> 格式的，根据你的喜好，你可以换成 <a href="http://www.yaml.org/">YAML</a> 格式（使用 <code>---</code> 标记）或者 <a href="http://www.json.org/">JSON</a> 格式。</p>
+<p>创建第一篇文章，放到 <code>post</code> 目录，方便之后生成聚合页面。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hugo new post/first.md</span><br></pre></td></tr></table></figure>
+
+<p>打开编辑 <code>post/first.md</code> ：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">date: &quot;2015-10-25T08:36:54-07:00&quot;</span><br><span class="line">title: &quot;first&quot;</span><br><span class="line"> </span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">### Hello Hugo</span><br><span class="line"></span><br><span class="line"> 1. aaa</span><br><span class="line"> 1. bbb</span><br><span class="line"> 1. ccc</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装皮肤"><a href="#安装皮肤" class="headerlink" title="安装皮肤"></a>安装皮肤</h3><p>到 <a href="https://www.gohugo.org/theme/">皮肤列表</a> 挑选一个心仪的皮肤，比如你觉得 <code>Hyde</code> 皮肤不错，找到相关的 <code>GitHub</code> 地址，创建目录 <code>themes</code>，在 <code>themes</code> 目录里把皮肤 <code>git clone</code> 下来：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建 themes 目录</span></span><br><span class="line">$ <span class="built_in">cd</span> themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/spf13/hyde.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="运行Hugo"><a href="#运行Hugo" class="headerlink" title="运行Hugo"></a>运行Hugo</h3><p>在你的站点根目录执行 <code>Hugo</code> 命令进行调试：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hugo server --theme=hyde --buildDrafts</span><br></pre></td></tr></table></figure>
+
+<p>（注明：v0.15 版本之后，不再需要使用 <code>--watch</code> 参数了）</p>
+<p>浏览器里打开： <code>http://localhost:1313</code></p>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>假设你需要部署在 <code>GitHub Pages</code> 上，首先在GitHub上创建一个Repository，命名为：<code>coderzh.github.io</code> （coderzh替换为你的github用户名）。</p>
+<p>在站点根目录执行 <code>Hugo</code> 命令生成最终页面：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hugo --theme=hyde --baseUrl=<span class="string">&quot;http://coderzh.github.io/&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>（注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 <code>draft=true</code> 再重新生成。）</p>
+<p>如果一切顺利，所有静态页面都会生成到 <code>public</code> 目录，将pubilc目录里所有文件 <code>push</code> 到刚创建的Repository的 <code>master</code> 分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> public</span><br><span class="line">$ git init</span><br><span class="line">$ git remote add origin https://github.com/coderzh/coderzh.github.io.git</span><br><span class="line">$ git add -A</span><br><span class="line">$ git commit -m <span class="string">&quot;first commit&quot;</span></span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p>浏览器里访问：<code>http://coderzh.github.io/</code></p>
+]]></content>
+      <tags>
+        <tag>hugo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Front-matter</title>
     <url>/2020/10/24/createBlog/Front-matter/</url>
     <content><![CDATA[<h1 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h1><iframe src="https://www.youtube.com/embed/Rl48Yk4A_V8" frameborder="0" loading="lazy" allowfullscreen="" style="box-sizing: inherit; margin: 1em 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 15px; vertical-align: baseline;"></iframe>
@@ -283,6 +354,208 @@
 
 <p>注意，摘要可能会被 Front Matter 中的 <code>excerpt</code> 覆盖。</p>
 ]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo简介</title>
+    <url>/2020/10/23/createBlog/introduction/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Hexo 是一个基于nodejs 的静态博客网站生成器，作者是来自台湾的 Tommy Chen  </p>
+<p>特点：  </p>
+<p>不可思议的快速 ─ 只要一眨眼静态文件即生成完成  </p>
+<p>支持 Markdown  </p>
+<p>仅需一道指令即可部署到 GitHub Pages 和 Heroku  </p>
+<p>已移植 Octopress 插件  </p>
+<p>高扩展性、自订性  </p>
+<p>兼容于 Windows, Mac &amp; Linux  </p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li><h3 id="系统版本-Microsoft-Windows-Version-10-0-19041-572"><a href="#系统版本-Microsoft-Windows-Version-10-0-19041-572" class="headerlink" title="系统版本 ### :Microsoft Windows [Version 10.0.19041.572]"></a>系统版本 ### :Microsoft Windows [Version 10.0.19041.572]</h3></li>
+<li>安装了git for windows (或者其他的git客户端) [下载]: <a href="https://git-scm.com/download/">https://git-scm.com/download/</a></li>
+<li>安装了node.js、npm，并了解基础命令 [下载]: <a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></li>
+<li>有github账号并且配置到好了ssh，实现免密推送。</li>
+</ul>
+<h2 id="安装hexo基本框架"><a href="#安装hexo基本框架" class="headerlink" title="安装hexo基本框架"></a>安装hexo基本框架</h2><blockquote>
+<p>第一步：新建文件夹</p>
+</blockquote>
+<p>这一步是为博客新建一个文件夹来存放文件</p>
+<blockquote>
+<p>第二步：安装hexo基础框架</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 安装hexo框架  </span><br><span class="line">npm install -g hexo  </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 初始化hexo框架  </span><br><span class="line">npm init</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 安装所需的组件</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 编译生成今天网页</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 启动本地服务</span><br><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>命令完成后 在浏览器中  输入   <a href="http://localhost:4000/">http://localhost:4000/</a>  即可访问。</p>
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>我的第一篇文章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的一些指令</title>
+    <url>/2020/10/23/createBlog/hexo_commands/</url>
+    <content><![CDATA[<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo init [folder] </span><br></pre></td></tr></table></figure>
+
+<p>新建一个网站。如果没有设置 <code>folder</code>，Hexo默认在目前的文件夹建立网站。 </p>
+<h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt; </span><br></pre></td></tr></table></figure>
+
+<p>新建一篇文章。如果没有设置<code>layout</code>，默认使用_config.yml中的<code>default_layout</code>参数代替。如果标题包含空格的话，请使用引号括起来。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new &quot;Post title with whitespace&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>生成静态文件。</p>
+<table>
+<thead>
+<tr>
+<th align="left">选项</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>-d</code>,<code>--deploy</code></td>
+<td align="left">文件生成后立即部署网站</td>
+</tr>
+<tr>
+<td align="left"><code>-w</code>,<code>--watch</code></td>
+<td align="left">监视文件变动</td>
+</tr>
+<tr>
+<td align="left"><code>-b</code>,<code>--bail</code></td>
+<td align="left">生成过程中如果发生任何未处理的异常则抛出异常</td>
+</tr>
+<tr>
+<td align="left"><code>-f</code>,<code>force</code></td>
+<td align="left">强制重新生成文件<br/>Hexo 引入了差分机制，如果 <code>public</code> 目录存在，那么 <code>hexo g</code> 只会重新生成改动的文件。<br/>使用该参数的效果接近 <code>hexo clean &amp;&amp; hexo generate</code></td>
+</tr>
+<tr>
+<td align="left"><code>-c</code>,<code>--concurrency</code></td>
+<td align="left">最大同时生成文件的数量，默认无限制</td>
+</tr>
+</tbody></table>
+<p>该命令可以简写为</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo publish [<span class="type">layout</span>] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<p>发表草稿。</p>
+<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo server	</span><br></pre></td></tr></table></figure>
+
+<p>启动服务器。默认情况下，访问网址为：<code> http://localhost:4000/</code>。</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>-p</code>,<code>--port</code></td>
+<td>重设端口</td>
+</tr>
+<tr>
+<td><code>-s</code>,<code>--static</code></td>
+<td>只用静态文件</td>
+</tr>
+<tr>
+<td><code>-l</code>,<code>--log</code></td>
+<td>启动日记记录，使用覆盖记录格式</td>
+</tr>
+</tbody></table>
+<h3 id="deplo"><a href="#deplo" class="headerlink" title="deplo"></a>deplo</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>部署网站。</p>
+<h3 id="render"><a href="#render" class="headerlink" title="render"></a>render</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo render &lt;file1&gt; [<span class="type">file2</span>]</span><br></pre></td></tr></table></figure>
+
+<p>渲染文件。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>-o</code>,<code>--output</code></td>
+<td>设置输出路径</td>
+</tr>
+</tbody></table>
+<h3 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo migrate &lt;<span class="built_in">type</span>&gt;	</span><br></pre></td></tr></table></figure>
+
+<p>从其他博客系统 <a href="https://hexo.io/zh-cn/docs/migration">迁移内容</a></p>
+<h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>清除缓存文件(<code>db.json</code>)和已生成的静态文件(<code>public</code>)。</p>
+<p>在某些 情况(尤其是更换主题后)，如果你发现您对站点的更改无论如何也不生效，您可能需要</p>
+<p>运行该命令。</p>
+<h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo list &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>列出网站资料。</p>
+<h3 id="version"><a href="#version" class="headerlink" title="version"></a>version</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo version</span><br></pre></td></tr></table></figure>
+
+<p>显示Hexo版本。</p>
+<h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo -<span class="literal">-safe</span></span><br></pre></td></tr></table></figure>
+
+<p>在安全模式下，不会载入插件和脚本。当你在安装新插件草鱼问题时，可以尝试以安全模式重新执行。</p>
+<h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --debug</span><br></pre></td></tr></table></figure>
+
+<p>在终端中显示调试信息并记录到 <code>debug.log</code>。当您碰到问题时，可以尝试用调试模式重新执行一次，并 <a href="https://github.com/hexojs/hexo/issues/new">提交调试信息到 GitHub</a>。</p>
+<h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --silent</span><br></pre></td></tr></table></figure>
+
+<p>隐藏终端信息。</p>
+<h3 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 使用 custom.yml 代替默认的 _config.yml</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># 使用 custom.yml 和 custom2.json，其中 custom2.json 优先级更高</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
+
+<p>自定义配置文件的路径，指定这个参数后将不再使用默认的 <code>_config.yml</code>。<br>你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 使用 custom.yml 代替默认的 _config.yml</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># 使用 custom.yml, custom2.json 和 custom3.yml，其中 custom3.yml 优先级最高，其次是 custom2.json</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
+
+<p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 <code>_multiconfig.yml</code>。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p>
+<h3 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --draft</span><br></pre></td></tr></table></figure>
+
+<p>显示 <code>source/_drafts</code> 文件夹中的草稿文章。</p>
+<h3 id="自定义-CWD"><a href="#自定义-CWD" class="headerlink" title="自定义 CWD"></a>自定义 CWD</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --cwd &#x2F;path&#x2F;to&#x2F;cwd</span><br></pre></td></tr></table></figure>
+
+<p>自定义当前工作目录（Current working directory）的路径。</p>
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>迁移博客</title>
+    <url>/2020/10/24/createBlog/migrate/</url>
+    <content><![CDATA[<h1 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h1><h2 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h2><p>首先，安装 <code>hexo-migrator-rss</code> 插件。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-rss --save</span><br></pre></td></tr></table></figure>
+
+<p>插件安装完成后，执行下列命令，从 RSS 迁移所有文章。<code>source</code> 可以是文件路径或网址。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo migrate rss &lt;source&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h2><p>把 <code>_posts</code> 文件夹内的所有文件复制到 <code>source/_posts</code> 文件夹，并在 <code>_config.yml</code> 中修改 <code>new_post_name</code> 参数。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
+
+<h2 id="Octopress"><a href="#Octopress" class="headerlink" title="Octopress"></a>Octopress</h2><p>把 Octopress <code>source/_posts</code> 文件夹内的所有文件转移到 Hexo 的 <code>source/_posts</code> 文件夹，并修改 <code>_config.yml</code> 中的 <code>new_post_name</code> 参数。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
+
+<h2 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h2><p>首先，安装 <code>hexo-migrator-wordpress</code> 插件。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure>
+
+<p>在 WordPress 仪表盘中导出数据(“Tools” → “Export” → “WordPress”)（详情参考<a href="http://en.support.wordpress.com/export/">WP支持页面</a>）。</p>
+<p>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 WordPress 导出的文件路径或网址。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo migrate wordpress &lt;source&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意</p>
+<p>这个插件并不能完美地实现WordPress-&gt;Hexo的数据转换，尤其是在处理WordPress的分类方面存在问题（见<a href="https://hexo.io/zh-cn/docs/front-matter">Front-matter中的分类与标签</a>）。因此，建议您在迁移完成后，手工审阅所有生成的markdown文件，检查其中是否有错误。对于文章数量较大的WordPress站点，这项工作可能要花很长的时间。</p>
+</blockquote>
+<h2 id="Joomla"><a href="#Joomla" class="headerlink" title="Joomla"></a>Joomla</h2><p>首先，安装 <code>hexo-migrator-joomla</code> 插件。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-joomla --save</span><br></pre></td></tr></table></figure>
+
+<p>使用 <a href="http://extensions.joomla.org/extensions/migration-a-conversion/data-import-a-export/12816?qh=YToxOntpOjA7czo1OiJqMnhtbCI7fQ==">J2XML</a> 组件导出 Joomla 文章。<br>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 Joomla 导出的文件路径或网址。</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo migrate joomla &lt;source&gt;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客搭建</category>
       </categories>
@@ -700,200 +973,15 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo的一些指令</title>
-    <url>/2020/10/23/createBlog/hexo_commands/</url>
-    <content><![CDATA[<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo init [folder] </span><br></pre></td></tr></table></figure>
+    <title>阅读量显示错误</title>
+    <url>/2020/10/24/createBlog/problems002/</url>
+    <content><![CDATA[<p>这个是由于Google Chrome和一些浏览器最近更新了referrer策略，导致文章阅读数referrer全部变成博客首页（也就是站点的PV数），对于Butterfly主题：在Butterfly的Inject插入以下内容即可解决</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/9707a4396346869ce460227e2f5f9402760ab1fb/68747470733a2f2f692e6c6f6c692e6e65742f323032302f31302f31352f424c376a6b5a4458746f78634e32712e706e67"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;referrer&quot; content&#x3D;&quot;no-referrer-when-downgrade&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
 
-<p>新建一个网站。如果没有设置 <code>folder</code>，Hexo默认在目前的文件夹建立网站。 </p>
-<h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt; </span><br></pre></td></tr></table></figure>
 
-<p>新建一篇文章。如果没有设置<code>layout</code>，默认使用_config.yml中的<code>default_layout</code>参数代替。如果标题包含空格的话，请使用引号括起来。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new &quot;Post title with whitespace&quot;</span><br></pre></td></tr></table></figure>
 
-<h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>生成静态文件。</p>
-<table>
-<thead>
-<tr>
-<th align="left">选项</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>-d</code>,<code>--deploy</code></td>
-<td align="left">文件生成后立即部署网站</td>
-</tr>
-<tr>
-<td align="left"><code>-w</code>,<code>--watch</code></td>
-<td align="left">监视文件变动</td>
-</tr>
-<tr>
-<td align="left"><code>-b</code>,<code>--bail</code></td>
-<td align="left">生成过程中如果发生任何未处理的异常则抛出异常</td>
-</tr>
-<tr>
-<td align="left"><code>-f</code>,<code>force</code></td>
-<td align="left">强制重新生成文件<br/>Hexo 引入了差分机制，如果 <code>public</code> 目录存在，那么 <code>hexo g</code> 只会重新生成改动的文件。<br/>使用该参数的效果接近 <code>hexo clean &amp;&amp; hexo generate</code></td>
-</tr>
-<tr>
-<td align="left"><code>-c</code>,<code>--concurrency</code></td>
-<td align="left">最大同时生成文件的数量，默认无限制</td>
-</tr>
-</tbody></table>
-<p>该命令可以简写为</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo publish [<span class="type">layout</span>] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-
-<p>发表草稿。</p>
-<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo server	</span><br></pre></td></tr></table></figure>
-
-<p>启动服务器。默认情况下，访问网址为：<code> http://localhost:4000/</code>。</p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>-p</code>,<code>--port</code></td>
-<td>重设端口</td>
-</tr>
-<tr>
-<td><code>-s</code>,<code>--static</code></td>
-<td>只用静态文件</td>
-</tr>
-<tr>
-<td><code>-l</code>,<code>--log</code></td>
-<td>启动日记记录，使用覆盖记录格式</td>
-</tr>
-</tbody></table>
-<h3 id="deplo"><a href="#deplo" class="headerlink" title="deplo"></a>deplo</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>部署网站。</p>
-<h3 id="render"><a href="#render" class="headerlink" title="render"></a>render</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo render &lt;file1&gt; [<span class="type">file2</span>]</span><br></pre></td></tr></table></figure>
-
-<p>渲染文件。</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>-o</code>,<code>--output</code></td>
-<td>设置输出路径</td>
-</tr>
-</tbody></table>
-<h3 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo migrate &lt;<span class="built_in">type</span>&gt;	</span><br></pre></td></tr></table></figure>
-
-<p>从其他博客系统 <a href="https://hexo.io/zh-cn/docs/migration">迁移内容</a></p>
-<h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo clean</span><br></pre></td></tr></table></figure>
-
-<p>清除缓存文件(<code>db.json</code>)和已生成的静态文件(<code>public</code>)。</p>
-<p>在某些 情况(尤其是更换主题后)，如果你发现您对站点的更改无论如何也不生效，您可能需要</p>
-<p>运行该命令。</p>
-<h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo list &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<p>列出网站资料。</p>
-<h3 id="version"><a href="#version" class="headerlink" title="version"></a>version</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo version</span><br></pre></td></tr></table></figure>
-
-<p>显示Hexo版本。</p>
-<h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo -<span class="literal">-safe</span></span><br></pre></td></tr></table></figure>
-
-<p>在安全模式下，不会载入插件和脚本。当你在安装新插件草鱼问题时，可以尝试以安全模式重新执行。</p>
-<h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --debug</span><br></pre></td></tr></table></figure>
-
-<p>在终端中显示调试信息并记录到 <code>debug.log</code>。当您碰到问题时，可以尝试用调试模式重新执行一次，并 <a href="https://github.com/hexojs/hexo/issues/new">提交调试信息到 GitHub</a>。</p>
-<h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --silent</span><br></pre></td></tr></table></figure>
-
-<p>隐藏终端信息。</p>
-<h3 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 使用 custom.yml 代替默认的 _config.yml</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># 使用 custom.yml 和 custom2.json，其中 custom2.json 优先级更高</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
-
-<p>自定义配置文件的路径，指定这个参数后将不再使用默认的 <code>_config.yml</code>。<br>你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 使用 custom.yml 代替默认的 _config.yml</span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"># 使用 custom.yml, custom2.json 和 custom3.yml，其中 custom3.yml 优先级最高，其次是 custom2.json</span><br><span class="line">$ hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
-
-<p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 <code>_multiconfig.yml</code>。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p>
-<h3 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --draft</span><br></pre></td></tr></table></figure>
-
-<p>显示 <code>source/_drafts</code> 文件夹中的草稿文章。</p>
-<h3 id="自定义-CWD"><a href="#自定义-CWD" class="headerlink" title="自定义 CWD"></a>自定义 CWD</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --cwd &#x2F;path&#x2F;to&#x2F;cwd</span><br></pre></td></tr></table></figure>
-
-<p>自定义当前工作目录（Current working directory）的路径。</p>
 ]]></content>
-      <categories>
-        <category>博客搭建</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo简介</title>
-    <url>/2020/10/23/createBlog/introduction/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Hexo 是一个基于nodejs 的静态博客网站生成器，作者是来自台湾的 Tommy Chen  </p>
-<p>特点：  </p>
-<p>不可思议的快速 ─ 只要一眨眼静态文件即生成完成  </p>
-<p>支持 Markdown  </p>
-<p>仅需一道指令即可部署到 GitHub Pages 和 Heroku  </p>
-<p>已移植 Octopress 插件  </p>
-<p>高扩展性、自订性  </p>
-<p>兼容于 Windows, Mac &amp; Linux  </p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
-<li><h3 id="系统版本-Microsoft-Windows-Version-10-0-19041-572"><a href="#系统版本-Microsoft-Windows-Version-10-0-19041-572" class="headerlink" title="系统版本 ### :Microsoft Windows [Version 10.0.19041.572]"></a>系统版本 ### :Microsoft Windows [Version 10.0.19041.572]</h3></li>
-<li>安装了git for windows (或者其他的git客户端) [下载]: <a href="https://git-scm.com/download/">https://git-scm.com/download/</a></li>
-<li>安装了node.js、npm，并了解基础命令 [下载]: <a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></li>
-<li>有github账号并且配置到好了ssh，实现免密推送。</li>
-</ul>
-<h2 id="安装hexo基本框架"><a href="#安装hexo基本框架" class="headerlink" title="安装hexo基本框架"></a>安装hexo基本框架</h2><blockquote>
-<p>第一步：新建文件夹</p>
-</blockquote>
-<p>这一步是为博客新建一个文件夹来存放文件</p>
-<blockquote>
-<p>第二步：安装hexo基础框架</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 安装hexo框架  </span><br><span class="line">npm install -g hexo  </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 初始化hexo框架  </span><br><span class="line">npm init</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 安装所需的组件</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 编译生成今天网页</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 启动本地服务</span><br><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>命令完成后 在浏览器中  输入   <a href="http://localhost:4000/">http://localhost:4000/</a>  即可访问。</p>
-]]></content>
-      <categories>
-        <category>博客搭建</category>
-      </categories>
-      <tags>
-        <tag>我的第一篇文章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>迁移博客</title>
-    <url>/2020/10/24/createBlog/migrate/</url>
-    <content><![CDATA[<h1 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h1><h2 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h2><p>首先，安装 <code>hexo-migrator-rss</code> 插件。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-rss --save</span><br></pre></td></tr></table></figure>
-
-<p>插件安装完成后，执行下列命令，从 RSS 迁移所有文章。<code>source</code> 可以是文件路径或网址。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo migrate rss &lt;source&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h2><p>把 <code>_posts</code> 文件夹内的所有文件复制到 <code>source/_posts</code> 文件夹，并在 <code>_config.yml</code> 中修改 <code>new_post_name</code> 参数。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
-
-<h2 id="Octopress"><a href="#Octopress" class="headerlink" title="Octopress"></a>Octopress</h2><p>把 Octopress <code>source/_posts</code> 文件夹内的所有文件转移到 Hexo 的 <code>source/_posts</code> 文件夹，并修改 <code>_config.yml</code> 中的 <code>new_post_name</code> 参数。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
-
-<h2 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h2><p>首先，安装 <code>hexo-migrator-wordpress</code> 插件。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure>
-
-<p>在 WordPress 仪表盘中导出数据(“Tools” → “Export” → “WordPress”)（详情参考<a href="http://en.support.wordpress.com/export/">WP支持页面</a>）。</p>
-<p>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 WordPress 导出的文件路径或网址。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo migrate wordpress &lt;source&gt;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>注意</p>
-<p>这个插件并不能完美地实现WordPress-&gt;Hexo的数据转换，尤其是在处理WordPress的分类方面存在问题（见<a href="https://hexo.io/zh-cn/docs/front-matter">Front-matter中的分类与标签</a>）。因此，建议您在迁移完成后，手工审阅所有生成的markdown文件，检查其中是否有错误。对于文章数量较大的WordPress站点，这项工作可能要花很长的时间。</p>
-</blockquote>
-<h2 id="Joomla"><a href="#Joomla" class="headerlink" title="Joomla"></a>Joomla</h2><p>首先，安装 <code>hexo-migrator-joomla</code> 插件。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-joomla --save</span><br></pre></td></tr></table></figure>
-
-<p>使用 <a href="http://extensions.joomla.org/extensions/migration-a-conversion/data-import-a-export/12816?qh=YToxOntpOjA7czo1OiJqMnhtbCI7fQ==">J2XML</a> 组件导出 Joomla 文章。<br>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 Joomla 导出的文件路径或网址。</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$</span> hexo migrate joomla &lt;source&gt;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客搭建</category>
       </categories>
@@ -999,23 +1087,6 @@
 <h3 id="支持的格式"><a href="#支持的格式" class="headerlink" title="支持的格式"></a>支持的格式</h3><p>Hexo 支持以任何格式书写文章，只要安装了相应的渲染插件。</p>
 <p>例如，Hexo 默认安装了 <code>hexo-renderer-marked</code> 和 <code>hexo-renderer-ejs</code>，因此你不仅可以用 Markdown 写作，你还可以用 EJS 写作。如果你安装了 <code>hexo-renderer-pug</code>，你甚至可以用 Pug 模板语言书写文章。</p>
 <p>只需要将文章的扩展名从 <code>md</code> 改成 <code>ejs</code>，Hexo 就会使用 <code>hexo-renderer-ejs</code> 渲染这个文件，其他格式同理。</p>
-]]></content>
-      <categories>
-        <category>博客搭建</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阅读量显示错误</title>
-    <url>/2020/10/24/createBlog/problems002/</url>
-    <content><![CDATA[<p>这个是由于Google Chrome和一些浏览器最近更新了referrer策略，导致文章阅读数referrer全部变成博客首页（也就是站点的PV数），对于Butterfly主题：在Butterfly的Inject插入以下内容即可解决</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/9707a4396346869ce460227e2f5f9402760ab1fb/68747470733a2f2f692e6c6f6c692e6e65742f323032302f31302f31352f424c376a6b5a4458746f78634e32712e706e67"></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;referrer&quot; content&#x3D;&quot;no-referrer-when-downgrade&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
-
-
-
 ]]></content>
       <categories>
         <category>博客搭建</category>
@@ -1154,27 +1225,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LeanCloud流控问题</title>
-    <url>/2020/10/25/LeanEngine/leanCloud-problem001/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><em> leancloud </em> 无法正常使用定时唤醒功能，为有更好的网站评论体验，故另寻它法。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>LeanCloud 的<a href="https://leancloud.cn/docs/leanengine_plan.html#hash633315134">休眠策略</a> 。</p>
-<blockquote>
-<ul>
-<li>如果应用最近一段时间（半小时）没有任何外部请求，则休眠。</li>
-<li>休眠后如果有新的外部请求实例则马上启动。访问者的体验是第一个请求响应时间是 5 ~ 30 秒（视实例启动时间而定），后续访问响应速度恢复正常。</li>
-<li>强制休眠：如果最近 24 小时内累计运行超过 18 小时，则强制休眠。此时新的请求会收到 503 的错误响应码，该错误可在 <strong>云引擎 &gt; 统计</strong> 中查看。</li>
-</ul>
-</blockquote>
-<p>以下是解决方案</p>
-<h3 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a><a href="https://www.antmoe.com/posts/ff6aef7b/index.html#%E5%BC%80%E5%A7%8B%E5%B0%9D%E8%AF%95">解决方案</a></h3>]]></content>
-      <categories>
-        <category>博客云服务器</category>
-      </categories>
-      <tags>
-        <tag>LeanCloud问题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Valine-Admin评论功能加强</title>
     <url>/2020/10/25/LeanEngine/Valine/</url>
     <content><![CDATA[<h1 id="Valine-Admin"><a href="#Valine-Admin" class="headerlink" title="Valine Admin"></a>Valine Admin</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Valine Admin 项目是一个对 <a href="https://valine.js.org/">Valine</a> 评论系统的拓展应用，可增强 Valine 的邮件通知功能。基于 Leancloud 的云引擎与云函数，主要实现评论邮件通知、评论管理、自定义邮件通知模板等功能，而且还可以提供邮件 <code>通知站长</code> 和 <code>@ 通知</code> 的功能。</p>
@@ -1182,8 +1232,8 @@
 <h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ol>
 <li>需要确保 Valine 的基础功能是正常的，参考 <a href="https://valine.js.org/">Valine Docs</a>。</li>
 <li>进入 <a href="https://leancloud.cn/dashboard/applist.html#/apps">Leancloud</a> 对应的 Valine 应用中。</li>
-<li>点击 <code>云引擎 -&gt; 设置</code> 填写代码库：<code>https://github.com/hongweifuture/Valine-Admin</code>，保存 <a href="https://camo.githubusercontent.com/e3d6acd43e97d2e42453075aabcec0e3dba1e1f0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134323630382e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/e3d6acd43e97d2e42453075aabcec0e3dba1e1f0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134323630382e706e67" alt="代码库"></a></li>
-<li>设置<code>自定义环境变量</code>，需要设置云引擎的环境变量以提供必要的信息，变量参数参考下面的<code>配置项</code> <a href="https://camo.githubusercontent.com/f9755cd442fd8ba4fd428d073e47bc91d5d786e2/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135353430392e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/f9755cd442fd8ba4fd428d073e47bc91d5d786e2/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135353430392e706e67" alt="自定义环境变量"></a> <strong>配置项</strong></li>
+<li>点击 <code>云引擎 -&gt; 设置</code> 填写代码库：<code>https://github.com/hongweifuture/Valine-Admin</code>，保存 <a href="https://camo.githubusercontent.com/e3d6acd43e97d2e42453075aabcec0e3dba1e1f0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134323630382e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/e3d6acd43e97d2e42453075aabcec0e3dba1e1f0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134323630382e706e67" alt="代码库"></a></li>
+<li>设置<code>自定义环境变量</code>，需要设置云引擎的环境变量以提供必要的信息，变量参数参考下面的<code>配置项</code> <a href="https://camo.githubusercontent.com/f9755cd442fd8ba4fd428d073e47bc91d5d786e2/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135353430392e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/f9755cd442fd8ba4fd428d073e47bc91d5d786e2/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135353430392e706e67" alt="自定义环境变量"></a> <strong>配置项</strong></li>
 </ol>
 <table>
 <thead>
@@ -1240,11 +1290,11 @@
 </tr>
 </tbody></table>
 <ol>
-<li>点击 <code>云引擎 -&gt; 部署</code>，选择<code>Git源码部署</code>，分支或版本号输入<code>master</code>，下载最新依赖（可选），部署 <a href="https://camo.githubusercontent.com/0a4a4b33c7d95f072e5d96130003ed4e7b6cfe7c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333033352e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/0a4a4b33c7d95f072e5d96130003ed4e7b6cfe7c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333033352e706e67" alt="Git"></a> <a href="https://camo.githubusercontent.com/cc8ec687bfce8f2c6d34fbfb8f0557261a9fe840/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333230352e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/cc8ec687bfce8f2c6d34fbfb8f0557261a9fe840/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333230352e706e67" alt="master"></a></li>
+<li>点击 <code>云引擎 -&gt; 部署</code>，选择<code>Git源码部署</code>，分支或版本号输入<code>master</code>，下载最新依赖（可选），部署 <a href="https://camo.githubusercontent.com/0a4a4b33c7d95f072e5d96130003ed4e7b6cfe7c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333033352e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/0a4a4b33c7d95f072e5d96130003ed4e7b6cfe7c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333033352e706e67" alt="Git"></a> <a href="https://camo.githubusercontent.com/cc8ec687bfce8f2c6d34fbfb8f0557261a9fe840/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333230352e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/cc8ec687bfce8f2c6d34fbfb8f0557261a9fe840/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333230352e706e67" alt="master"></a></li>
 </ol>
 <h2 id="后台管理"><a href="#后台管理" class="headerlink" title="后台管理"></a>后台管理</h2><ol>
-<li>点击 <code>云引擎 -&gt; 设置</code>，在<code>Web主机域名</code>位置点击<code>申请</code>，获取二级域名，现在的二级域名不支持自定义，如果想好记请参考高级功能 <a href="https://camo.githubusercontent.com/3f495170e97459ae13172b0f09cf34c398b12737/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333331352e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/3f495170e97459ae13172b0f09cf34c398b12737/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333331352e706e67" alt="Web主机域名"></a></li>
-<li>设置后台管理登录信息，点击 <code>存储 -&gt; 结构化数据</code>，选择<code>_User -&gt; 添加行</code>，只需要填写<code>password</code>、<code>username</code>、<code>email</code>这三个字段即可, 使用 email 作为账号登陆、password 作为账号密码、username 任意即可。（为了安全考虑，此 email 必须为配置中的 SMTP_USER 或 TO_EMAIL， 否则不允许登录） <a href="https://camo.githubusercontent.com/cd459da8cf3386a974912a21087925b1961909dc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135313333392e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/cd459da8cf3386a974912a21087925b1961909dc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135313333392e706e67" alt="后台管理"></a></li>
+<li>点击 <code>云引擎 -&gt; 设置</code>，在<code>Web主机域名</code>位置点击<code>申请</code>，获取二级域名，现在的二级域名不支持自定义，如果想好记请参考高级功能 <a href="https://camo.githubusercontent.com/3f495170e97459ae13172b0f09cf34c398b12737/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333331352e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/3f495170e97459ae13172b0f09cf34c398b12737/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333331352e706e67" alt="Web主机域名"></a></li>
+<li>设置后台管理登录信息，点击 <code>存储 -&gt; 结构化数据</code>，选择<code>_User -&gt; 添加行</code>，只需要填写<code>password</code>、<code>username</code>、<code>email</code>这三个字段即可, 使用 email 作为账号登陆、password 作为账号密码、username 任意即可。（为了安全考虑，此 email 必须为配置中的 SMTP_USER 或 TO_EMAIL， 否则不允许登录） <a href="https://camo.githubusercontent.com/cd459da8cf3386a974912a21087925b1961909dc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135313333392e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/cd459da8cf3386a974912a21087925b1961909dc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135313333392e706e67" alt="后台管理"></a></li>
 <li>此后，可以通过<code>https://二级域名.leanapp.cn/</code>管理评论</li>
 </ol>
 <h2 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h2><p>免费版的 LeanCloud 容器，是有强制性休眠策略的，不能 24 小时运行：</p>
@@ -1265,7 +1315,7 @@
 </ol>
 <ul>
 <li>配置自动唤醒（推荐），创建定时任务，名称任意，生产环境选择<code>self-wake</code>云函数，Cron表达式填入<code>0 */20 7-23 * * ?</code>，表示每天 7 - 23 点每 20 分钟访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</li>
-<li>配置定时检查，创建定时任务，名称任意，生产环境选择<code>resend-mails</code>云函数，Cron表达式填入<code>0 0 8 * * ?</code>，表示每天早8点检查过去24小时内漏发的通知邮件并补发 <a href="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67"><img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67" alt="img"></a></li>
+<li>配置定时检查，创建定时任务，名称任意，生产环境选择<code>resend-mails</code>云函数，Cron表达式填入<code>0 0 8 * * ?</code>，表示每天早8点检查过去24小时内漏发的通知邮件并补发 <a href="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67" alt="img"></a></li>
 </ul>
 ]]></content>
       <categories>
@@ -1276,9 +1326,25 @@
       </tags>
   </entry>
   <entry>
-    <title>在ubuntu下安装hadoop插件</title>
-    <url>/2020/10/26/study/hadoop/001/</url>
-    <content><![CDATA[]]></content>
+    <title>LeanCloud流控问题</title>
+    <url>/2020/10/25/LeanEngine/leanCloud-problem001/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><em> leancloud </em> 无法正常使用定时唤醒功能，为有更好的网站评论体验，故另寻它法。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>LeanCloud 的<a href="https://leancloud.cn/docs/leanengine_plan.html#hash633315134">休眠策略</a> 。</p>
+<blockquote>
+<ul>
+<li>如果应用最近一段时间（半小时）没有任何外部请求，则休眠。</li>
+<li>休眠后如果有新的外部请求实例则马上启动。访问者的体验是第一个请求响应时间是 5 ~ 30 秒（视实例启动时间而定），后续访问响应速度恢复正常。</li>
+<li>强制休眠：如果最近 24 小时内累计运行超过 18 小时，则强制休眠。此时新的请求会收到 503 的错误响应码，该错误可在 <strong>云引擎 &gt; 统计</strong> 中查看。</li>
+</ul>
+</blockquote>
+<p>以下是解决方案</p>
+<h3 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a><a href="https://www.antmoe.com/posts/ff6aef7b/index.html#%E5%BC%80%E5%A7%8B%E5%B0%9D%E8%AF%95">解决方案</a></h3>]]></content>
+      <categories>
+        <category>博客云服务器</category>
+      </categories>
+      <tags>
+        <tag>LeanCloud问题</tag>
+      </tags>
   </entry>
   <entry>
     <title>罕见的蓝月亮 -_-</title>
@@ -1339,7 +1405,7 @@
 <p>ld return 1 exist status</p>
 </blockquote>
 <h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>下载 MinGW 并安装其中的 Basic Stup，安装结果如下：</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/29/kmhnstPWGixZ9ql.png" alt="upload successful"><br>打开CMD 输入命令<br><code>gcc 源文件 -o 目标文件</code><br>此时显示了错误代码的行数</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://i.loli.net/2020/10/29/kmhnstPWGixZ9ql.png" alt="upload successful"><br>打开CMD 输入命令<br><code>gcc 源文件 -o 目标文件</code><br>此时显示了错误代码的行数</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.c:(.text+0x4b7): undefined reference to &#96;printfI&#39;</span><br><span class="line">collect2: ld returned 1 exit status </span><br></pre></td></tr></table></figure>
 <p><code>print</code>函数错写为<code>printfI</code>   </p>
 <h4 id="end"><a href="#end" class="headerlink" title="end"></a>end</h4>]]></content>
@@ -1348,117 +1414,6 @@
       </categories>
       <tags>
         <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HEXO-ADMIN安装使用</title>
-    <url>/2020/10/28/study/HEXO-ADMIN%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="安装-HEXO-ADMIN"><a href="#安装-HEXO-ADMIN" class="headerlink" title="安装 HEXO-ADMIN"></a>安装 HEXO-ADMIN</h2><p>切换到hexo目录<br><code>npm install --save hexo-admin</code>  </p>
-<p>启动 hexo<br><code>hexo s</code>  </p>
-<p>然后打开 <a href="http://localhost:4000/admin/">管理页面</a> 。  </p>
-<p>Pages -新加 Page;<br>Posts -新加或删除post;双击一个post，你可以编辑，预览，新增修改tags、categories、选择发布或不发布；<br>settings - 一些配置;<br>Deploy - 可以直接部署到github。  </p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>点击 deploy 按钮出现<br><code>Config value “admin.deployCommand” not found</code>   </p>
-<h3 id="windows下"><a href="#windows下" class="headerlink" title="windows下"></a>windows下</h3><p>修改主配置文件”_config.yml”(而非主题配置文件)<br>在文件末尾添加如下内容</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># deploy</span><br><span class="line">admin:</span><br><span class="line">  deployCommand: &#39;hexo-deploy.bat&#39;</span><br></pre></td></tr></table></figure>
-
-<p>保存文件并退出。<br>在<a href="%E4%B8%BB%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%60_config.yml%60%E6%89%80%E5%9C%A8%E7%9B%AE%E5%BD%95">^当前目录</a>下新建一个文件名为<code>hexo-deploy.bat</code>,并在其中添加一下内容</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>博客搭建</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>hexo-admin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ubuntu下的eclipse安装hadoop插件</title>
-    <url>/2020/10/28/study/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="前提"><a href="#前提" class="headerlink" title="前提  "></a>前提  </h2><h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境  "></a>系统环境  </h3><ul>
-<li>已经安装了JDK，并配置好了系统变量 </li>
-<li>安装了Eclipse</li>
-</ul>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>未完待续。。。。。</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>hadoop插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用批处理命令切换盘符</title>
-    <url>/2020/10/29/study/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E7%9B%98%E7%AC%A6/</url>
-    <content><![CDATA[<h3 id="直接使用盘符名称即可-切换盘符"><a href="#直接使用盘符名称即可-切换盘符" class="headerlink" title="直接使用盘符名称即可 切换盘符"></a>直接使用盘符名称即可 切换盘符</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo off</span><br><span class="line">color 0B</span><br><span class="line">G:</span><br><span class="line">cd \VSCODE\hexo\</span><br><span class="line">echo 已经切换到了hexo目录</span><br><span class="line">pwd</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>以上是启动hexo本地服务器的批处理命令写法。</p>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-      </categories>
-      <tags>
-        <tag>cmd</tag>
-        <tag>批处理命令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>程序设计题-求所有K区间中的最大SUM[k]值</title>
-    <url>/2020/10/29/study/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/</url>
-    <content><![CDATA[<h2 id="java程序设计19题"><a href="#java程序设计19题" class="headerlink" title="java程序设计19题"></a>java程序设计19题</h2><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/29/JlOYvkoL8c61nZI.png" alt="图片"></p>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>JAVA</category>
-      </categories>
-      <tags>
-        <tag>java程序设计题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>讨论一下大数据、云计算与hadoop之间的关系关联</title>
-    <url>/2020/10/28/study/hadoop/%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A4%A7%E6%95%B0%E6%8D%AE%E3%80%81%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8Ehadoop%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%85%B3%E8%81%94/</url>
-    <content><![CDATA[<h1 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h1><ul>
-<li>大数据，指的是所涉及的资料量规模巨大到 无法通过目前主流的软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业经营决策更积极目的的咨询。  </li>
-<li>大数据的三个特点—— 3Vs：  <br>- <strong>Volume</strong> （大量）数据量大，从TB级别跃升到PB级别<br>- <strong>Variety</strong>（多样）数据类型繁多  <ul>
-<li>非结构化：文本、图形、声音等<br>    * 半结构化：日志<br>    * 结构化数据： 行列规整的表单数据<br>    * 多结构数据： 以上三种类型混合的数据  <br>- <strong>Velocity</strong>（高速）数据的时效性，数据仅在一个短暂的时间有价值</li>
-</ul>
-</li>
-</ul>
-<h1 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h1><h1 id="HADOOP"><a href="#HADOOP" class="headerlink" title="HADOOP"></a>HADOOP</h1><ul>
-<li>hadoop的核心是在廉价硬件组成的集群上进行海量的数据运算，来获得有价值的信息</li>
-</ul>
-<h6 id="hadoop的优点"><a href="#hadoop的优点" class="headerlink" title="hadoop的优点"></a>hadoop的优点</h6><blockquote>
-<ul>
-<li>高扩展性  </li>
-<li>高可靠性</li>
-<li>高效性</li>
-<li>高容错性</li>
-<li>低成本</li>
-</ul>
-</blockquote>
-]]></content>
-      <categories>
-        <category>作业</category>
-        <category>大数据</category>
-      </categories>
-      <tags>
-        <tag>hadoop课堂作业</tag>
-        <tag>云计算</tag>
-        <tag>hadoop</tag>
-        <tag>大数据</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【java】如何输入位置长度的数组</title>
-    <url>/2020/10/29/study/%E3%80%90java%E3%80%91%E5%A6%82%E4%BD%95%E8%BE%93%E5%85%A5%E4%BD%8D%E7%BD%AE%E9%95%BF%E5%BA%A6%E7%9A%84%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">String s&#x3D;sc.nextLine();&#x2F;&#x2F;读入一行string</span><br><span class="line">String[] c&#x3D;s.split(&quot;\\s+&quot;);&#x2F;&#x2F;根据空格进行分割</span><br><span class="line">int[] arr&#x3D;new int[c.length];</span><br><span class="line">for(int i&#x3D;0;i&lt;c.length;i++) &#123;</span><br><span class="line">   arr[i]&#x3D;Integer.parseInt(c[i]);</span><br><span class="line">   &#x2F;&#x2F;将string转为int型</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>编程语言</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -1511,74 +1466,119 @@
 ]]></content>
   </entry>
   <entry>
-    <title>hugo快速开始</title>
-    <url>/2020/11/03/hugo%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/</url>
-    <content><![CDATA[<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="安装Hugo"><a href="#安装Hugo" class="headerlink" title="安装Hugo"></a>安装Hugo</h3><ol>
-<li><p>二进制安装（推荐：简单、快速）<br>到<a href="https://github.com/spf13/hugo/releases">Hugo Releases</a>下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe）</p>
-</li>
-<li><p>源码安装<br>源码编译安装，首先安装好依赖的工具：</p>
-<ul>
-<li><a href="http://git-scm.com/">Git</a></li>
-<li><a href="http://mercurial.selenic.com/">Mercurial</a></li>
-<li><a href="http://golang.org/">Go</a> 1.3+ (Go 1.4+ on Windows)</li>
-</ul>
-<p>设置好 <code>GOPATH</code> 环境变量，获取源码并编译：</p>
-</li>
-</ol>
-<blockquote>
-<p>（以下是linux环境的命令）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;$ <span class="built_in">export</span> GOPATH=<span class="variable">$HOME</span>/go</span><br><span class="line">&gt;$ go get -v github.com/spf13/hugo</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>(windows下操作)</p>
-<p>自行百度</p>
-</blockquote>
-<p>源码会下载到 <code>$GOPATH/src</code> 目录，二进制在 <code>$GOPATH/bin/</code></p>
-<p>如果需要更新所有Hugo的依赖库，增加 <code>-u</code> 参数：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ go get -u -v github.com/spf13/hugo</span><br></pre></td></tr></table></figure>
+    <title>HEXO-ADMIN安装使用</title>
+    <url>/2020/10/28/study/HEXO-ADMIN%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="安装-HEXO-ADMIN"><a href="#安装-HEXO-ADMIN" class="headerlink" title="安装 HEXO-ADMIN"></a>安装 HEXO-ADMIN</h2><p>切换到hexo目录<br><code>npm install --save hexo-admin</code>  </p>
+<p>启动 hexo<br><code>hexo s</code>  </p>
+<p>然后打开 <a href="http://localhost:4000/admin/">管理页面</a> 。  </p>
+<p>Pages -新加 Page;<br>Posts -新加或删除post;双击一个post，你可以编辑，预览，新增修改tags、categories、选择发布或不发布；<br>settings - 一些配置;<br>Deploy - 可以直接部署到github。  </p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>点击 deploy 按钮出现<br><code>Config value “admin.deployCommand” not found</code>   </p>
+<h3 id="windows下"><a href="#windows下" class="headerlink" title="windows下"></a>windows下</h3><p>修改主配置文件”_config.yml”(而非主题配置文件)<br>在文件末尾添加如下内容</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># deploy</span><br><span class="line">admin:</span><br><span class="line">  deployCommand: &#39;hexo-deploy.bat&#39;</span><br></pre></td></tr></table></figure>
 
-<h3 id="生成站点"><a href="#生成站点" class="headerlink" title="生成站点"></a>生成站点</h3><p>使用Hugo快速生成站点，比如希望生成到 <code>/path/to/site</code> 路径：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hugo new site /path/to/site</span><br></pre></td></tr></table></figure>
+<p>保存文件并退出。<br>在<a href="%E4%B8%BB%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%60_config.yml%60%E6%89%80%E5%9C%A8%E7%9B%AE%E5%BD%95">^当前目录</a>下新建一个文件名为<code>hexo-deploy.bat</code>,并在其中添加一下内容</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>这样就在 <code>/path/to/site</code> 目录里生成了初始站点，进去目录：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /path/to/site</span><br></pre></td></tr></table></figure>
-
-<p>站点目录结构：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">▸ archetypes&#x2F;</span><br><span class="line">▸ content&#x2F;</span><br><span class="line">▸ layouts&#x2F;</span><br><span class="line">▸ static&#x2F;</span><br><span class="line">  config.toml</span><br></pre></td></tr></table></figure>
-
-<h3 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h3><p>创建一个 <code>about</code> 页面：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hugo new about.md</span><br></pre></td></tr></table></figure>
-
-<p><code>about.md</code> 自动生成到了 <code>content/about.md</code> ，打开 <code>about.md</code> 看下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">+++</span><br><span class="line">date &#x3D; &quot;2015-10-25T08:36:54-07:00&quot;</span><br><span class="line">draft &#x3D; true</span><br><span class="line">title &#x3D; &quot;about&quot;</span><br><span class="line"></span><br><span class="line">+++</span><br><span class="line"></span><br><span class="line">正文内容</span><br></pre></td></tr></table></figure>
-
-<p>内容是 <code>Markdown</code> 格式的，<code>+++</code> 之间的内容是 <a href="https://github.com/toml-lang/toml">TOML</a> 格式的，根据你的喜好，你可以换成 <a href="http://www.yaml.org/">YAML</a> 格式（使用 <code>---</code> 标记）或者 <a href="http://www.json.org/">JSON</a> 格式。</p>
-<p>创建第一篇文章，放到 <code>post</code> 目录，方便之后生成聚合页面。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hugo new post/first.md</span><br></pre></td></tr></table></figure>
-
-<p>打开编辑 <code>post/first.md</code> ：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">date: &quot;2015-10-25T08:36:54-07:00&quot;</span><br><span class="line">title: &quot;first&quot;</span><br><span class="line"> </span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">### Hello Hugo</span><br><span class="line"></span><br><span class="line"> 1. aaa</span><br><span class="line"> 1. bbb</span><br><span class="line"> 1. ccc</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装皮肤"><a href="#安装皮肤" class="headerlink" title="安装皮肤"></a>安装皮肤</h3><p>到 <a href="https://www.gohugo.org/theme/">皮肤列表</a> 挑选一个心仪的皮肤，比如你觉得 <code>Hyde</code> 皮肤不错，找到相关的 <code>GitHub</code> 地址，创建目录 <code>themes</code>，在 <code>themes</code> 目录里把皮肤 <code>git clone</code> 下来：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建 themes 目录</span></span><br><span class="line">$ <span class="built_in">cd</span> themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/spf13/hyde.git</span><br></pre></td></tr></table></figure>
-
-<h3 id="运行Hugo"><a href="#运行Hugo" class="headerlink" title="运行Hugo"></a>运行Hugo</h3><p>在你的站点根目录执行 <code>Hugo</code> 命令进行调试：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hugo server --theme=hyde --buildDrafts</span><br></pre></td></tr></table></figure>
-
-<p>（注明：v0.15 版本之后，不再需要使用 <code>--watch</code> 参数了）</p>
-<p>浏览器里打开： <code>http://localhost:1313</code></p>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>假设你需要部署在 <code>GitHub Pages</code> 上，首先在GitHub上创建一个Repository，命名为：<code>coderzh.github.io</code> （coderzh替换为你的github用户名）。</p>
-<p>在站点根目录执行 <code>Hugo</code> 命令生成最终页面：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hugo --theme=hyde --baseUrl=<span class="string">&quot;http://coderzh.github.io/&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>（注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 <code>draft=true</code> 再重新生成。）</p>
-<p>如果一切顺利，所有静态页面都会生成到 <code>public</code> 目录，将pubilc目录里所有文件 <code>push</code> 到刚创建的Repository的 <code>master</code> 分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> public</span><br><span class="line">$ git init</span><br><span class="line">$ git remote add origin https://github.com/coderzh/coderzh.github.io.git</span><br><span class="line">$ git add -A</span><br><span class="line">$ git commit -m <span class="string">&quot;first commit&quot;</span></span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
-
-<p>浏览器里访问：<code>http://coderzh.github.io/</code></p>
 ]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
       <tags>
-        <tag>hugo</tag>
+        <tag>hexo</tag>
+        <tag>hexo-admin</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>ubuntu下的eclipse安装hadoop插件</title>
+    <url>/2020/10/28/study/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="前提"><a href="#前提" class="headerlink" title="前提  "></a>前提  </h2><h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境  "></a>系统环境  </h3><ul>
+<li>已经安装了JDK，并配置好了系统变量 </li>
+<li>安装了Eclipse</li>
+</ul>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>未完待续。。。。。</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>hadoop插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【java】如何输入位置长度的数组</title>
+    <url>/2020/10/29/study/%E3%80%90java%E3%80%91%E5%A6%82%E4%BD%95%E8%BE%93%E5%85%A5%E4%BD%8D%E7%BD%AE%E9%95%BF%E5%BA%A6%E7%9A%84%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">String s&#x3D;sc.nextLine();&#x2F;&#x2F;读入一行string</span><br><span class="line">String[] c&#x3D;s.split(&quot;\\s+&quot;);&#x2F;&#x2F;根据空格进行分割</span><br><span class="line">int[] arr&#x3D;new int[c.length];</span><br><span class="line">for(int i&#x3D;0;i&lt;c.length;i++) &#123;</span><br><span class="line">   arr[i]&#x3D;Integer.parseInt(c[i]);</span><br><span class="line">   &#x2F;&#x2F;将string转为int型</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用批处理命令切换盘符</title>
+    <url>/2020/10/29/study/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E7%9B%98%E7%AC%A6/</url>
+    <content><![CDATA[<h3 id="直接使用盘符名称即可-切换盘符"><a href="#直接使用盘符名称即可-切换盘符" class="headerlink" title="直接使用盘符名称即可 切换盘符"></a>直接使用盘符名称即可 切换盘符</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo off</span><br><span class="line">color 0B</span><br><span class="line">G:</span><br><span class="line">cd \VSCODE\hexo\</span><br><span class="line">echo 已经切换到了hexo目录</span><br><span class="line">pwd</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>以上是启动hexo本地服务器的批处理命令写法。</p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>cmd</tag>
+        <tag>批处理命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序设计题-求所有K区间中的最大SUM[k]值</title>
+    <url>/2020/10/29/study/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/</url>
+    <content><![CDATA[<h2 id="java程序设计19题"><a href="#java程序设计19题" class="headerlink" title="java程序设计19题"></a>java程序设计19题</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://i.loli.net/2020/10/29/JlOYvkoL8c61nZI.png" alt="图片"></p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>java程序设计题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>讨论一下大数据、云计算与hadoop之间的关系关联</title>
+    <url>/2020/10/28/study/hadoop/%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A4%A7%E6%95%B0%E6%8D%AE%E3%80%81%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8Ehadoop%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%85%B3%E8%81%94/</url>
+    <content><![CDATA[<h1 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h1><ul>
+<li>大数据，指的是所涉及的资料量规模巨大到 无法通过目前主流的软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业经营决策更积极目的的咨询。  </li>
+<li>大数据的三个特点—— 3Vs：  <br>- <strong>Volume</strong> （大量）数据量大，从TB级别跃升到PB级别<br>- <strong>Variety</strong>（多样）数据类型繁多  <ul>
+<li>非结构化：文本、图形、声音等<br>    * 半结构化：日志<br>    * 结构化数据： 行列规整的表单数据<br>    * 多结构数据： 以上三种类型混合的数据  <br>- <strong>Velocity</strong>（高速）数据的时效性，数据仅在一个短暂的时间有价值</li>
+</ul>
+</li>
+</ul>
+<h1 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h1><h1 id="HADOOP"><a href="#HADOOP" class="headerlink" title="HADOOP"></a>HADOOP</h1><ul>
+<li>hadoop的核心是在廉价硬件组成的集群上进行海量的数据运算，来获得有价值的信息</li>
+</ul>
+<h6 id="hadoop的优点"><a href="#hadoop的优点" class="headerlink" title="hadoop的优点"></a>hadoop的优点</h6><blockquote>
+<ul>
+<li>高扩展性  </li>
+<li>高可靠性</li>
+<li>高效性</li>
+<li>高容错性</li>
+<li>低成本</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>作业</category>
+        <category>大数据</category>
+      </categories>
+      <tags>
+        <tag>hadoop课堂作业</tag>
+        <tag>云计算</tag>
+        <tag>hadoop</tag>
+        <tag>大数据</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在ubuntu下安装hadoop插件</title>
+    <url>/2020/10/26/study/hadoop/001/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
