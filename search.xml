@@ -1,149 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>cyc-note</title>
-    <url>/2020/11/09/cyc-note/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div align="center">
-    <a href="https://gitstar-ranking.com/repositories"> <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://badgen.net/badge/Rank/13?icon=github&color=4ab8a1"></a>
-    <a href="https://cyc2018.github.io/CS-Notes"> <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://badgen.net/badge/CyC/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=sourcegraph&color=4ab8a1"></a>
-    <a href="assets/download.md"> <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://badgen.net/badge/OvO/%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD?icon=telegram&color=4ab8a1"></a>
-    <a href="assets/download.md"> <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://badgen.net/badge/%e5%85%ac%e4%bc%97%e5%8f%b7/CyC2018?icon=rss&color=4ab8a1"></a>
-</div>
+    <title>二维数组中查找</title>
+    <url>/2020/11/09/study/Java/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+  </entry>
+  <entry>
+    <title>数组中重复的数字</title>
+    <url>/2020/11/09/study/Java/%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><p><a href="https://www.nowcoder.com/practice/623a5ac0ea5b4e5f95552655361ae0a8?tpId=13&tqId=11203&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking&from=cyc_github">牛客网</a></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>在一个长度为 n 的数组里的所有数字都在 0 到 n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字是重复的，也不知道每个数字重复几次。请找出数组中任意一个重复的数字。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input:</span><br><span class="line">&#123;2, 3, 1, 0, 2, 5&#125;</span><br><span class="line"></span><br><span class="line">Output:</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
 
-<br>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>要求时间复杂度 O(N)，空间复杂度 O(1)。因此不能使用排序的方法，也不能使用额外的标记数组。</p>
+<p>对于这种数组元素在 [0, n-1] 范围内的问题，可以将值为 i 的元素调整到第 i 个位置上进行求解。在调整过程中，如果第 i 位置上已经有一个值为 i 的元素，就可以知道 i 值重复。</p>
+<p>以 (2, 3, 1, 0, 2, 5) 为例，遍历到位置 4 时，该位置上的数为 2，但是第 2 个位置上已经有一个 2 的值了，因此可以知道 2 重复：</p>
+<p><a href="https://camo.githubusercontent.com/77142c99e11d0abb12732318adcb4cc2aa2a98350c33526db8a5b9b8e7e69f9b/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f36343362366631382d663933332d346163352d616137612d6533303464626437666534392e676966"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/77142c99e11d0abb12732318adcb4cc2aa2a98350c33526db8a5b9b8e7e69f9b/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f36343362366631382d663933332d346163352d616137612d6533303464626437666534392e676966" alt="img"></a></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">duplicate</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> length, <span class="keyword">int</span>[] duplication)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (nums == <span class="keyword">null</span> || length &lt;= <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">        <span class="keyword">while</span> (nums[i] != i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] == nums[nums[i]]) &#123;</span><br><span class="line">                duplication[<span class="number">0</span>] = nums[i];</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            swap(nums, i, nums[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t = nums[i];</span><br><span class="line">    nums[i] = nums[j];</span><br><span class="line">    nums[j] = t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<table>
-<thead>
-<tr>
-<th align="center">算法&nbsp;</th>
-<th align="center">操作系统</th>
-<th align="center">网络&nbsp;</th>
-<th align="center">面向对象</th>
-<th align="center">&nbsp;数据库&nbsp;&nbsp;</th>
-<th align="center">&nbsp;Java&nbsp;&nbsp;</th>
-<th align="center">系统设计</th>
-<th align="center">&nbsp;&nbsp;工具&nbsp;&nbsp;</th>
-<th align="center">编码实践</th>
-<th align="center">&nbsp;&nbsp;后记&nbsp;&nbsp;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="#pencil2-%E7%AE%97%E6%B3%95">:pencil2:</a></td>
-<td align="center"><a href="#computer-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">:computer:</a></td>
-<td align="center"><a href="#cloud-%E7%BD%91%E7%BB%9C">:cloud:</a></td>
-<td align="center"><a href="#art-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1">:art:</a></td>
-<td align="center"><a href="#floppy_disk-%E6%95%B0%E6%8D%AE%E5%BA%93">:floppy_disk:</a></td>
-<td align="center"><a href="#coffee-java">:coffee:</a></td>
-<td align="center"><a href="#bulb-%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1">:bulb:</a></td>
-<td align="center"><a href="#wrench-%E5%B7%A5%E5%85%B7">:wrench:</a></td>
-<td align="center"><a href="#watermelon-%E7%BC%96%E7%A0%81%E5%AE%9E%E8%B7%B5">:watermelon:</a></td>
-<td align="center"><a href="#memo-%E5%90%8E%E8%AE%B0">:memo:</a></td>
-</tr>
-</tbody></table>
-<br>
-
-<div align="center">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/githubio/LogoMakr_0zpEzN.png" width="200px">
-</div>
-
-
-<br>
-
-<h2 id="pencil2-算法"><a href="#pencil2-算法" class="headerlink" title=":pencil2: 算法"></a>:pencil2: 算法</h2><ul>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E5%89%91%E6%8C%87%20Offer%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md">剑指 Offer 题解</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md">Leetcode 题解</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E7%AE%97%E6%B3%95%20-%20%E7%9B%AE%E5%BD%95.md">算法</a></li>
-<li><a href="assets/%E5%86%85%E6%8E%A8.md">字节跳动内推</a></li>
-</ul>
-<h2 id="computer-操作系统"><a href="#computer-操作系统" class="headerlink" title=":computer: 操作系统"></a>:computer: 操作系统</h2><ul>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%20-%20%E7%9B%AE%E5%BD%95.md">计算机操作系统</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Linux.md">Linux</a></li>
-</ul>
-<h2 id="cloud-网络"><a href="#cloud-网络" class="headerlink" title=":cloud: 网络"></a>:cloud: 网络</h2><ul>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%20-%20%E7%9B%AE%E5%BD%95.md">计算机网络</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/HTTP.md">HTTP</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Socket.md">Socket</a></li>
-</ul>
-<h2 id="floppy-disk-数据库"><a href="#floppy-disk-数据库" class="headerlink" title=":floppy_disk: 数据库"></a>:floppy_disk: 数据库</h2><ul>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86.md">数据库系统原理</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/SQL%20%E8%AF%AD%E6%B3%95.md">SQL 语法</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/SQL%20%E7%BB%83%E4%B9%A0.md">SQL 练习</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/MySQL.md">MySQL</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Redis.md">Redis</a></li>
-</ul>
-<h2 id="coffee-Java"><a href="#coffee-Java" class="headerlink" title=":coffee: Java"></a>:coffee: Java</h2><ul>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20%E5%9F%BA%E7%A1%80.md">Java 基础</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20%E5%AE%B9%E5%99%A8.md">Java 容器</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20%E5%B9%B6%E5%8F%91.md">Java 并发</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20%E8%99%9A%E6%8B%9F%E6%9C%BA.md">Java 虚拟机</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20IO.md">Java I/O</a></li>
-</ul>
-<h2 id="bulb-系统设计"><a href="#bulb-系统设计" class="headerlink" title=":bulb: 系统设计"></a>:bulb: 系统设计</h2><ul>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80.md">系统设计基础</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E5%88%86%E5%B8%83%E5%BC%8F.md">分布式</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E9%9B%86%E7%BE%A4.md">集群</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%94%BB%E5%87%BB%E6%8A%80%E6%9C%AF.md">攻击技术</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E7%BC%93%E5%AD%98.md">缓存</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97.md">消息队列</a></li>
-</ul>
-<h2 id="art-面向对象"><a href="#art-面向对象" class="headerlink" title=":art: 面向对象"></a>:art: 面向对象</h2><ul>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3.md">面向对象思想</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20%E7%9B%AE%E5%BD%95.md">设计模式</a></li>
-</ul>
-<h2 id="wrench-工具"><a href="#wrench-工具" class="headerlink" title=":wrench: 工具"></a>:wrench: 工具</h2><ul>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Git.md">Git</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Docker.md">Docker</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7.md">构建工具</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md">正则表达式</a></li>
-</ul>
-<h2 id="watermelon-编码实践"><a href="#watermelon-编码实践" class="headerlink" title=":watermelon: 编码实践"></a>:watermelon: 编码实践</h2><ul>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7.md">代码可读性</a></li>
-<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC%E8%A7%84%E8%8C%83.md">代码风格规范</a></li>
-</ul>
-<h2 id="memo-后记"><a href="#memo-后记" class="headerlink" title=":memo: 后记"></a>:memo: 后记</h2><h3 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h3><p>笔记内容按照 <a href="https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md">中文文案排版指北</a> 进行排版，以保证内容的可读性。</p>
-<p>不使用 <code>![]()</code> 这种方式来引用图片，而是用 <code>&lt;img&gt;</code> 标签。一方面是为了能够控制图片以合适的大小显示，另一方面是因为 <a href="https://github.github.com/gfm/">GFM</a> 不支持 <code>&lt;center&gt; ![]() &lt;/center&gt;</code> 这种方法让图片居中显示，只能使用 <code>&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;&quot;/&gt; &lt;/div&gt;</code> 达到居中的效果。</p>
-<p>在线排版工具：<a href="https://github.com/CyC2018/Text-Typesetting">Text-Typesetting</a>。</p>
-<h3 id="License"><a href="#License" class="headerlink" title="License"></a>License</h3><p>本仓库的内容不是将网上的资料随意拼凑而来，除了少部分引用书上和技术文档的原文（这部分内容都在末尾的参考链接中加了出处），其余都是我的原创。在您引用本仓库内容或者对内容进行修改演绎时，请署名并以相同方式共享，谢谢。</p>
-<p>转载文章请在开头明显处标明该页面地址，公众号等其它转载请联系 <a href="mailto:&#x7a;&#104;&#x65;&#110;&#x67;&#x79;&#x63;&#x31;&#48;&#49;&#64;&#49;&#x36;&#x33;&#46;&#x63;&#111;&#109;">&#x7a;&#104;&#x65;&#110;&#x67;&#x79;&#x63;&#x31;&#48;&#49;&#64;&#49;&#x36;&#x33;&#46;&#x63;&#111;&#109;</a>。</p>
-<p>Logo：<a href="https://logomakr.com/">logomakr</a></p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></p>
-<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><p>感谢以下人员对本仓库做出的贡献，当然不仅仅只有这些贡献者，这里就不一一列举了。如果你希望被添加到这个名单中，并且提交过 Issue 或者 PR，请与我联系。</p>
-<a href="https://github.com/linw7">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars3.githubusercontent.com/u/21679154?s=400&v=4" width="50px">
-</a> 
-<a href="https://github.com/g10guang">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars1.githubusercontent.com/u/18458140?s=400&v=4" width="50px">
-</a>
-<a href="https://github.com/Sctwang">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars3.githubusercontent.com/u/33345444?s=400&v=4" width="50px">
-</a> 
-<a href="https://github.com/ResolveWang">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars1.githubusercontent.com/u/8018776?s=400&v=4" width="50px">
-</a>
-<a href="https://github.com/crossoverJie">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars1.githubusercontent.com/u/15684156?s=400&v=4" width="50px">
-</a> 
-<a href="https://github.com/jy03078584">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars2.githubusercontent.com/u/7719370?s=400&v=4" width="50px">
-</a>
-<a href="https://github.com/kwongtailau">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars0.githubusercontent.com/u/22954582?s=400&v=4" width="50px">
-</a>
-<a href="https://github.com/xiangflight">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars2.githubusercontent.com/u/10072416?s=400&v=4" width="50px">
-</a>
-<a href="https://github.com/mafulong">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars1.githubusercontent.com/u/24795000?s=400&v=4" width="50px">
-</a>
-<a href="https://github.com/yanglbme">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars1.githubusercontent.com/u/21008209?s=400&v=4" width="50px">
-</a>
-<a href="https://github.com/OOCZC">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars1.githubusercontent.com/u/11623828?s=400&v=4" width="50px">
-</a>
-<a href="https://github.com/5renyuebing">
-    <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://avatars1.githubusercontent.com/u/32872430?s=400&v=4" width="50px">
-</a>]]></content>
+<p><strong>——转载自<a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/3.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97.md">CyC2018</a></strong></p>
+]]></content>
   </entry>
   <entry>
     <title>数据可视化</title>
@@ -791,7 +667,7 @@
   </entry>
   <entry>
     <title>JAVA基础知识重要概念</title>
-    <url>/2020/11/01/study/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</url>
+    <url>/2020/11/01/study/Java/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h2><p><strong>复制运算符</strong>：Java的赋值运算符用于改变变量的值。赋值运算符包括：=， +=，-=，*=，%=，/=。  </p>
 <p><strong>自动递增（+ +）</strong>和<strong>自动递减（- -）运算符：</strong>次元算符分别进行加1减1运算。其中两种的格式的递增和递减，分别为前缀递增或递减以及后缀递增或递减。  </p>
 <p><strong>二元算数运算符：</strong>它用于执行基本的算数运算。Java提供的二元运算符包括+、-、*、/和%。  </p>
@@ -891,6 +767,8 @@
     <title>程序设计题-求所有K区间中的最大SUM[k]值</title>
     <url>/2020/10/29/study/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="java程序设计19题"><a href="#java程序设计19题" class="headerlink" title="java程序设计19题"></a>java程序设计19题</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://i.loli.net/2020/10/29/JlOYvkoL8c61nZI.png" alt="图片"></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">primeNum</span><span class="params">(<span class="keyword">int</span> num)</span></span>&#123;</span><br><span class="line">        <span class="comment">/* 判断素数*/</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;num; i++ )&#123;</span><br><span class="line">            <span class="keyword">if</span>(num%i==<span class="number">0</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">itervalComparison</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入（N&lt;=10000,K&lt;=200）:&quot;</span>);</span><br><span class="line">        <span class="comment">// 从终端接收两个整数</span></span><br><span class="line">        <span class="keyword">int</span> N = input.nextInt(); <span class="comment">//</span></span><br><span class="line">        <span class="keyword">int</span> K = input.nextInt(); <span class="comment">//</span></span><br><span class="line">        <span class="keyword">int</span> arr[] = <span class="keyword">new</span> <span class="keyword">int</span>[N];</span><br><span class="line">        <span class="comment">// 如果输入的数值 第一个N大于10000或K大于200就提示输入错误</span></span><br><span class="line">        <span class="keyword">if</span> (N &gt; <span class="number">10000</span> || K &gt; <span class="number">200</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;输入错误（N&lt;=10000,K&lt;=200）&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// 输入的数值N,K符合要求则接收对应长度的数组</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; i++) &#123;</span><br><span class="line">                arr[i] = input.nextInt();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> before = <span class="number">0</span>,after = <span class="number">0</span>,max = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 开始比较第n个 K区间内的素数之和 和 第n+1个 K区间的素数之和 的大小</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length-K; i++) &#123;</span><br><span class="line">            before=after=<span class="number">0</span>;</span><br><span class="line">            <span class="comment">// 求K区间内的所有素数之和</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; i+K; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (primeNum(arr[j])) before += arr[j];</span><br><span class="line">                <span class="keyword">if</span> (primeNum(arr[j+<span class="number">1</span>])) after += arr[j+<span class="number">1</span>];</span><br><span class="line">                System.out.println(before+<span class="string">&quot;|||&quot;</span>+after);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 比较第n个k区间总和和第n+1个k区间的总和并将值大的k区间总和赋值给max</span></span><br><span class="line">            max=max&gt;(before&gt;after?before:after)?max:(before&gt;after?before:after);</span><br><span class="line">            System.out.println(<span class="string">&quot;max;&quot;</span>+max);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(max);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> Solution().itervalComparison();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>编程语言</category>
@@ -902,7 +780,7 @@
   </entry>
   <entry>
     <title>【java】如何输入位置长度的数组</title>
-    <url>/2020/10/29/study/%E3%80%90java%E3%80%91%E5%A6%82%E4%BD%95%E8%BE%93%E5%85%A5%E4%BD%8D%E7%BD%AE%E9%95%BF%E5%BA%A6%E7%9A%84%E6%95%B0%E7%BB%84/</url>
+    <url>/2020/10/29/study/Java/%E3%80%90java%E3%80%91%E5%A6%82%E4%BD%95%E8%BE%93%E5%85%A5%E4%BD%8D%E7%BD%AE%E9%95%BF%E5%BA%A6%E7%9A%84%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">String s&#x3D;sc.nextLine();&#x2F;&#x2F;读入一行string</span><br><span class="line">String[] c&#x3D;s.split(&quot;\\s+&quot;);&#x2F;&#x2F;根据空格进行分割</span><br><span class="line">int[] arr&#x3D;new int[c.length];</span><br><span class="line">for(int i&#x3D;0;i&lt;c.length;i++) &#123;</span><br><span class="line">   arr[i]&#x3D;Integer.parseInt(c[i]);</span><br><span class="line">   &#x2F;&#x2F;将string转为int型</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>编程语言</category>
