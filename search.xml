@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【java模拟1】选择题</title>
+    <url>/2020/11/17/%E3%80%90java%E6%A8%A1%E6%8B%9F1%E3%80%91%E9%80%89%E6%8B%A9%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="以下哪个是java的垃圾回收算法（）"><a href="#以下哪个是java的垃圾回收算法（）" class="headerlink" title="以下哪个是java的垃圾回收算法（）"></a>以下哪个是java的垃圾回收算法（）</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-16/23/27/image-20201117001008409.png" alt="image-20201117001008409"></p>
+<span class="hide-inline"><button type="button" class="hide-button button--animated" style="background-color: #FF7242;color: #fff">查看答案
+  </button><span class="hide-content">D</span></span>
+
+]]></content>
+      <categories>
+        <category>计算机编程</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java选择题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【java编程题】按物资价值降序输出排序结果</title>
+    <url>/2020/11/17/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E6%8C%89%E7%89%A9%E8%B5%84%E4%BB%B7%E5%80%BC%E9%99%8D%E5%BA%8F%E8%BE%93%E5%87%BA%E6%8E%92%E5%BA%8F%E7%BB%93%E6%9E%9C/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-16/23/27/image-20201117000627752.png" alt="image-20201117000627752"></p>
+]]></content>
+      <categories>
+        <category>计算机编程</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java编程题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【java编程题】非偶数的合数个数</title>
-    <url>/2020/11/16/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E9%9D%9E%E5%81%B6%E6%95%B0%E7%9A%84%E5%90%88%E6%95%B0%E4%B8%AA%E6%95%B0/</url>
+    <url>/2020/11/16/study/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E9%9D%9E%E5%81%B6%E6%95%B0%E7%9A%84%E5%90%88%E6%95%B0%E4%B8%AA%E6%95%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-16/23/27/image-20201116234841599.png" alt="image-20201116234841599"></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        Scanner input &#x3D; new Scanner(System.in);</span><br><span class="line">        while (true) &#123;</span><br><span class="line">            System.out.print(&quot;请输入N,M （例：2 16）：&quot;);</span><br><span class="line">            int num &#x3D; input.nextInt();</span><br><span class="line">            int num2 &#x3D; input.nextInt();</span><br><span class="line">            int count &#x3D; 0;</span><br><span class="line">            if (num &lt; 100000 &amp;&amp; num2 &lt; 100000) &#123;</span><br><span class="line">                for (int i &#x3D; num; i &lt;&#x3D; num2; i++) &#123;</span><br><span class="line"></span><br><span class="line">                    if (i&gt;&#x3D;4 &amp;&amp; i%2 !&#x3D; 0  )&#123;</span><br><span class="line"></span><br><span class="line">                        for (int m &#x3D; 2; m&lt;i;m++)&#123;</span><br><span class="line">                            if (i%m&#x3D;&#x3D;0) &#123;</span><br><span class="line">                                count++;</span><br><span class="line">                                break;</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line">                System.out.println(count);</span><br><span class="line">                break;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                System.out.println(&quot;请输入2个整数N,M(N,M&lt;100000)！！！&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -335,7 +364,7 @@
   </entry>
   <entry>
     <title>【java编程题】立方数的个数</title>
-    <url>/2020/11/16/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E7%AB%8B%E6%96%B9%E6%95%B0%E7%9A%84%E4%B8%AA%E6%95%B0/</url>
+    <url>/2020/11/16/study/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E7%AB%8B%E6%96%B9%E6%95%B0%E7%9A%84%E4%B8%AA%E6%95%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/image-20201116231343854.png" alt="image-20201116231343854"></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            System.out.print(<span class="string">&quot;请输入N（N&lt;100000）：&quot;</span>);</span><br><span class="line">            <span class="keyword">int</span> num = input.nextInt();</span><br><span class="line">            <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">if</span> (num &lt; <span class="number">100000</span>) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i * i * i &lt;= num; i++) &#123;</span><br><span class="line">                    count++;</span><br><span class="line">                &#125;</span><br><span class="line">                System.out.println(count);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;请输入一个整数N(N&lt;100000)！！！&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -345,8 +374,8 @@
         <category>java</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>java编程题</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>

@@ -6,7 +6,7 @@
   <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
   <link href="https://frunoob.github.io/"/>
-  <updated>2020-11-16T15:50:41.491Z</updated>
+  <updated>2020-11-16T16:16:39.600Z</updated>
   <id>https://frunoob.github.io/</id>
   
   <author>
@@ -17,9 +17,58 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【java模拟1】选择题</title>
+    <link href="https://frunoob.github.io/2020/11/17/%E3%80%90java%E6%A8%A1%E6%8B%9F1%E3%80%91%E9%80%89%E6%8B%A9%E9%A2%98/"/>
+    <id>https://frunoob.github.io/2020/11/17/%E3%80%90java%E6%A8%A1%E6%8B%9F1%E3%80%91%E9%80%89%E6%8B%A9%E9%A2%98/</id>
+    <published>2020-11-16T16:07:00.000Z</published>
+    <updated>2020-11-16T16:16:39.600Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="以下哪个是java的垃圾回收算法（）"><a href="#以下哪个是java的垃圾回收算法（）" class="headerlink" title="以下哪个是java的垃圾回收算法（）"></a>以下哪个是java的垃圾回收算法（）</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-16/23/27/image-20201117001008409.png" alt="image-20201117001008409"></p><span class="hide-inline"><button type="button" class="hide-button button--animated" style="background-color: #FF7242;color: #fff">查看答案  </button><span class="hide-content">D</span></span>]]></content>
+    
+    
+    <summary type="html">java</summary>
+    
+    
+    
+    <category term="计算机编程" scheme="https://frunoob.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="java" scheme="https://frunoob.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B/java/"/>
+    
+    
+    <category term="java选择题" scheme="https://frunoob.github.io/tags/java%E9%80%89%E6%8B%A9%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【java编程题】按物资价值降序输出排序结果</title>
+    <link href="https://frunoob.github.io/2020/11/17/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E6%8C%89%E7%89%A9%E8%B5%84%E4%BB%B7%E5%80%BC%E9%99%8D%E5%BA%8F%E8%BE%93%E5%87%BA%E6%8E%92%E5%BA%8F%E7%BB%93%E6%9E%9C/"/>
+    <id>https://frunoob.github.io/2020/11/17/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E6%8C%89%E7%89%A9%E8%B5%84%E4%BB%B7%E5%80%BC%E9%99%8D%E5%BA%8F%E8%BE%93%E5%87%BA%E6%8E%92%E5%BA%8F%E7%BB%93%E6%9E%9C/</id>
+    <published>2020-11-16T16:05:00.000Z</published>
+    <updated>2020-11-16T16:06:35.103Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-16/23/27/image-20201117000627752.png" alt="image-20201117000627752"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="计算机编程" scheme="https://frunoob.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="java" scheme="https://frunoob.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B/java/"/>
+    
+    
+    <category term="java编程题" scheme="https://frunoob.github.io/tags/java%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【java编程题】非偶数的合数个数</title>
-    <link href="https://frunoob.github.io/2020/11/16/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E9%9D%9E%E5%81%B6%E6%95%B0%E7%9A%84%E5%90%88%E6%95%B0%E4%B8%AA%E6%95%B0/"/>
-    <id>https://frunoob.github.io/2020/11/16/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E9%9D%9E%E5%81%B6%E6%95%B0%E7%9A%84%E5%90%88%E6%95%B0%E4%B8%AA%E6%95%B0/</id>
+    <link href="https://frunoob.github.io/2020/11/16/study/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E9%9D%9E%E5%81%B6%E6%95%B0%E7%9A%84%E5%90%88%E6%95%B0%E4%B8%AA%E6%95%B0/"/>
+    <id>https://frunoob.github.io/2020/11/16/study/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E9%9D%9E%E5%81%B6%E6%95%B0%E7%9A%84%E5%90%88%E6%95%B0%E4%B8%AA%E6%95%B0/</id>
     <published>2020-11-16T15:48:30.000Z</published>
     <updated>2020-11-16T15:50:41.491Z</updated>
     
@@ -93,8 +142,8 @@
   
   <entry>
     <title>【java编程题】立方数的个数</title>
-    <link href="https://frunoob.github.io/2020/11/16/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E7%AB%8B%E6%96%B9%E6%95%B0%E7%9A%84%E4%B8%AA%E6%95%B0/"/>
-    <id>https://frunoob.github.io/2020/11/16/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E7%AB%8B%E6%96%B9%E6%95%B0%E7%9A%84%E4%B8%AA%E6%95%B0/</id>
+    <link href="https://frunoob.github.io/2020/11/16/study/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E7%AB%8B%E6%96%B9%E6%95%B0%E7%9A%84%E4%B8%AA%E6%95%B0/"/>
+    <id>https://frunoob.github.io/2020/11/16/study/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E7%AB%8B%E6%96%B9%E6%95%B0%E7%9A%84%E4%B8%AA%E6%95%B0/</id>
     <published>2020-11-16T06:37:11.000Z</published>
     <updated>2020-11-16T15:45:51.192Z</updated>
     
@@ -113,9 +162,9 @@
     <category term="java" scheme="https://frunoob.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B/java/"/>
     
     
-    <category term="java" scheme="https://frunoob.github.io/tags/java/"/>
-    
     <category term="java编程题" scheme="https://frunoob.github.io/tags/java%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
+    
+    <category term="java" scheme="https://frunoob.github.io/tags/java/"/>
     
   </entry>
   
@@ -434,64 +483,6 @@
     
     
     <category term="C语言" scheme="https://frunoob.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用批处理命令切换盘符</title>
-    <link href="https://frunoob.github.io/2020/10/29/study/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E7%9B%98%E7%AC%A6/"/>
-    <id>https://frunoob.github.io/2020/10/29/study/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E7%9B%98%E7%AC%A6/</id>
-    <published>2020-10-29T08:07:00.000Z</published>
-    <updated>2020-10-29T10:25:34.507Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="直接使用盘符名称即可-切换盘符"><a href="#直接使用盘符名称即可-切换盘符" class="headerlink" title="直接使用盘符名称即可 切换盘符"></a>直接使用盘符名称即可 切换盘符</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">echo off</span><br><span class="line">color 0B</span><br><span class="line">G:</span><br><span class="line">cd \VSCODE\hexo\</span><br><span class="line">echo 已经切换到了hexo目录</span><br><span class="line">pwd</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>以上是启动hexo本地服务器的批处理命令写法。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="编程语言" scheme="https://frunoob.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-    
-    <category term="cmd" scheme="https://frunoob.github.io/tags/cmd/"/>
-    
-    <category term="批处理命令" scheme="https://frunoob.github.io/tags/%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>讨论一下大数据、云计算与hadoop之间的关系关联</title>
-    <link href="https://frunoob.github.io/2020/10/28/study/hadoop/%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A4%A7%E6%95%B0%E6%8D%AE%E3%80%81%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8Ehadoop%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%85%B3%E8%81%94/"/>
-    <id>https://frunoob.github.io/2020/10/28/study/hadoop/%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A4%A7%E6%95%B0%E6%8D%AE%E3%80%81%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8Ehadoop%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%85%B3%E8%81%94/</id>
-    <published>2020-10-28T06:11:00.000Z</published>
-    <updated>2020-10-28T07:39:26.720Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h1><ul><li>大数据，指的是所涉及的资料量规模巨大到 无法通过目前主流的软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业经营决策更积极目的的咨询。  </li><li>大数据的三个特点—— 3Vs：  <br>- <strong>Volume</strong> （大量）数据量大，从TB级别跃升到PB级别<br>- <strong>Variety</strong>（多样）数据类型繁多  <ul><li>非结构化：文本、图形、声音等<br>    * 半结构化：日志<br>    * 结构化数据： 行列规整的表单数据<br>    * 多结构数据： 以上三种类型混合的数据  <br>- <strong>Velocity</strong>（高速）数据的时效性，数据仅在一个短暂的时间有价值</li></ul></li></ul><h1 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h1><h1 id="HADOOP"><a href="#HADOOP" class="headerlink" title="HADOOP"></a>HADOOP</h1><ul><li>hadoop的核心是在廉价硬件组成的集群上进行海量的数据运算，来获得有价值的信息</li></ul><h6 id="hadoop的优点"><a href="#hadoop的优点" class="headerlink" title="hadoop的优点"></a>hadoop的优点</h6><blockquote><ul><li>高扩展性  </li><li>高可靠性</li><li>高效性</li><li>高容错性</li><li>低成本</li></ul></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="作业" scheme="https://frunoob.github.io/categories/%E4%BD%9C%E4%B8%9A/"/>
-    
-    <category term="大数据" scheme="https://frunoob.github.io/categories/%E4%BD%9C%E4%B8%9A/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-    
-    
-    <category term="hadoop课堂作业" scheme="https://frunoob.github.io/tags/hadoop%E8%AF%BE%E5%A0%82%E4%BD%9C%E4%B8%9A/"/>
-    
-    <category term="云计算" scheme="https://frunoob.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
-    
-    <category term="hadoop" scheme="https://frunoob.github.io/tags/hadoop/"/>
-    
-    <category term="大数据" scheme="https://frunoob.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
