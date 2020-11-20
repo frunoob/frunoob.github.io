@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>blog-Gallery相册图像库写法</title>
+    <url>/2020/11/20/createBlog/blog-Gallery%E7%9B%B8%E5%86%8C%E5%9B%BE%E5%83%8F%E5%BA%93%E5%86%99%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="一个图库集合"><a href="#一个图库集合" class="headerlink" title="一个图库集合"></a>一个图库集合</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-group-main&quot;</span>&gt;</span></span> </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>name : 图库名字</li>
+<li>description：图库描述</li>
+<li>link：连接到对应的相册的地址</li>
+<li>img-url：图库封面的地址</li>
+</ul>
+<h2 id="Gallery相册"><a href="#Gallery相册" class="headerlink" title="Gallery相册"></a>Gallery相册</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% gallery %&#125; </span><br><span class="line">markdown图片格式</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>博客创作</category>
+      </categories>
+      <tags>
+        <tag>Gallery写法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何制作apng（高质量动图）</title>
+    <url>/2020/11/20/%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%AE%E8%82%A4%E5%88%B6%E4%BD%9C/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9Capng%EF%BC%88%E9%AB%98%E8%B4%A8%E9%87%8F%E5%8A%A8%E5%9B%BE%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201120203248.jpg" alt="child_logo_header"></p>
+<h2 id="使用工具即可"><a href="#使用工具即可" class="headerlink" title="使用工具即可"></a>使用工具即可</h2><p><a href="http://gamani.fileburst.com/MovieGear4.exe">GIF MOVIE GEAR</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Echart数据可视化项目</title>
-    <url>/2020/11/17/Echart%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E9%A1%B9%E7%9B%AE/</url>
+    <url>/2020/11/17/study/web/Echart%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E9%A1%B9%E7%9B%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="建立项目"><a href="#建立项目" class="headerlink" title="建立项目"></a>建立项目</h2><ul>
 <li><p>建立<code>css</code> <code>scripts</code> <code>index.css</code> <code>readme.md</code> <code>index.html</code>文件夹或文件。 </p>
 <div class="hide-block"><button type="button" class="hide-button button--animated" style="">查看建好的文件结构截图
@@ -18,7 +46,7 @@
 <h3 id="安装lessc以供全局使用"><a href="#安装lessc以供全局使用" class="headerlink" title="安装lessc以供全局使用"></a>安装lessc以供全局使用</h3><p>以下命令用于使用npm(node package manager)安装lessc，以使less在全局可用。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;npm install less -g</span><br></pre></td></tr></table></figure>
 
-<p>您还可以在包名称后面添加特定版本。 例如: <strong>npm install <a href="mailto:&#108;&#x65;&#x73;&#115;&#x40;&#x31;&#46;&#54;&#x2e;&#50;">&#108;&#x65;&#x73;&#115;&#x40;&#x31;&#46;&#54;&#x2e;&#50;</a> -g</strong></p>
+<p>您还可以在包名称后面添加特定版本。 例如: <strong>npm install <a href="mailto:&#x6c;&#101;&#x73;&#115;&#x40;&#x31;&#46;&#x36;&#46;&#50;">&#x6c;&#101;&#x73;&#115;&#x40;&#x31;&#46;&#x36;&#46;&#50;</a> -g</strong></p>
 <h3 id="安装Lessc用于节点开发"><a href="#安装Lessc用于节点开发" class="headerlink" title="安装Lessc用于节点开发"></a>安装Lessc用于节点开发</h3><p>以下命令用于在项目文件夹中安装 <em>lessc</em> 最新版本。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;npm i less -save-dev</span><br></pre></td></tr></table></figure>
 
@@ -113,7 +141,7 @@
   </entry>
   <entry>
     <title>gitee+PicGo+typora本地图片自动上传到图床</title>
-    <url>/2020/11/17/gitee-PicGo-typora%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0%E5%9B%BE%E5%BA%8A/</url>
+    <url>/2020/11/17/createBlog/gitee-PicGo-typora%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0%E5%9B%BE%E5%BA%8A/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="获取gitee-token"><a href="#获取gitee-token" class="headerlink" title="获取gitee token"></a>获取gitee token</h2><p>1.<a href="https://gitee.com/">打开gitee官网</a></p>
 <p>2.注册</p>
 <p>点击注册按钮<img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/image-20201117150610821.png" alt="image-20201117150610821"></p>
@@ -158,7 +186,7 @@
   </entry>
   <entry>
     <title>【java模拟1】选择题</title>
-    <url>/2020/11/17/%E3%80%90java%E6%A8%A1%E6%8B%9F1%E3%80%91%E9%80%89%E6%8B%A9%E9%A2%98/</url>
+    <url>/2020/11/17/%E7%BC%96%E7%A8%8B/Java/%E3%80%90java%E6%A8%A1%E6%8B%9F1%E3%80%91%E9%80%89%E6%8B%A9%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="以下哪个是java的垃圾回收算法（）"><a href="#以下哪个是java的垃圾回收算法（）" class="headerlink" title="以下哪个是java的垃圾回收算法（）"></a>以下哪个是java的垃圾回收算法（）</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-16/23/27/image-20201117001008409.png" alt="image-20201117001008409"></p>
 <span class="hide-inline"><button type="button" class="hide-button button--animated" style="background-color: #FF7242;color: #fff">查看答案
   </button><span class="hide-content">D</span></span>
@@ -174,7 +202,7 @@
   </entry>
   <entry>
     <title>【java编程题】按物资价值降序输出排序结果</title>
-    <url>/2020/11/17/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E6%8C%89%E7%89%A9%E8%B5%84%E4%BB%B7%E5%80%BC%E9%99%8D%E5%BA%8F%E8%BE%93%E5%87%BA%E6%8E%92%E5%BA%8F%E7%BB%93%E6%9E%9C/</url>
+    <url>/2020/11/17/%E7%BC%96%E7%A8%8B/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E6%8C%89%E7%89%A9%E8%B5%84%E4%BB%B7%E5%80%BC%E9%99%8D%E5%BA%8F%E8%BE%93%E5%87%BA%E6%8E%92%E5%BA%8F%E7%BB%93%E6%9E%9C/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-16/23/27/image-20201117000627752.png" alt="image-20201117000627752"></p>
 ]]></content>
       <categories>
@@ -187,7 +215,7 @@
   </entry>
   <entry>
     <title>【java编程题】非偶数的合数个数</title>
-    <url>/2020/11/16/study/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E9%9D%9E%E5%81%B6%E6%95%B0%E7%9A%84%E5%90%88%E6%95%B0%E4%B8%AA%E6%95%B0/</url>
+    <url>/2020/11/16/%E7%BC%96%E7%A8%8B/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E9%9D%9E%E5%81%B6%E6%95%B0%E7%9A%84%E5%90%88%E6%95%B0%E4%B8%AA%E6%95%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-16/23/27/image-20201116234841599.png" alt="image-20201116234841599"></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        Scanner input &#x3D; new Scanner(System.in);</span><br><span class="line">        while (true) &#123;</span><br><span class="line">            System.out.print(&quot;请输入N,M （例：2 16）：&quot;);</span><br><span class="line">            int num &#x3D; input.nextInt();</span><br><span class="line">            int num2 &#x3D; input.nextInt();</span><br><span class="line">            int count &#x3D; 0;</span><br><span class="line">            if (num &lt; 100000 &amp;&amp; num2 &lt; 100000) &#123;</span><br><span class="line">                for (int i &#x3D; num; i &lt;&#x3D; num2; i++) &#123;</span><br><span class="line"></span><br><span class="line">                    if (i&gt;&#x3D;4 &amp;&amp; i%2 !&#x3D; 0  )&#123;</span><br><span class="line"></span><br><span class="line">                        for (int m &#x3D; 2; m&lt;i;m++)&#123;</span><br><span class="line">                            if (i%m&#x3D;&#x3D;0) &#123;</span><br><span class="line">                                count++;</span><br><span class="line">                                break;</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line">                System.out.println(count);</span><br><span class="line">                break;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                System.out.println(&quot;请输入2个整数N,M(N,M&lt;100000)！！！&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -202,7 +230,7 @@
   </entry>
   <entry>
     <title>QTP笔记02</title>
-    <url>/2020/11/16/%E4%B8%AD%E5%85%AC%E6%95%99%E8%82%B2/QTP%E7%AC%94%E8%AE%B002/</url>
+    <url>/2020/11/16/study/%E4%B8%AD%E5%85%AC%E6%95%99%E8%82%B2/QTP%E7%AC%94%E8%AE%B002/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>一、**</strong>Qtp**<strong>对象仓库</strong></p>
 <p><strong>1.**</strong>定义：用来存储**<strong>qtp**</strong>测试过程中所识别的对象**</p>
 <p><strong>在**</strong>qtp**<strong>的对象仓库中的属性必须和被测程序中的属性一致，否则运行的测试结果就会失败</strong></p>
@@ -382,7 +410,7 @@
   </entry>
   <entry>
     <title>QTP笔记01</title>
-    <url>/2020/11/16/%E4%B8%AD%E5%85%AC%E6%95%99%E8%82%B2/QTP%E7%AC%94%E8%AE%B001/</url>
+    <url>/2020/11/16/study/%E4%B8%AD%E5%85%AC%E6%95%99%E8%82%B2/QTP%E7%AC%94%E8%AE%B001/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>一.前言</p>
 <p><strong>1.**</strong>为什么功能测试要使用自动化测试工具**</p>
 <p>（1）存在大量回归测试</p>
@@ -520,7 +548,7 @@
   </entry>
   <entry>
     <title>【java编程题】立方数的个数</title>
-    <url>/2020/11/16/study/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E7%AB%8B%E6%96%B9%E6%95%B0%E7%9A%84%E4%B8%AA%E6%95%B0/</url>
+    <url>/2020/11/16/%E7%BC%96%E7%A8%8B/Java/%E3%80%90java%E7%BC%96%E7%A8%8B%E9%A2%98%E3%80%91%E7%AB%8B%E6%96%B9%E6%95%B0%E7%9A%84%E4%B8%AA%E6%95%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/image-20201116231343854.png" alt="image-20201116231343854"></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            System.out.print(<span class="string">&quot;请输入N（N&lt;100000）：&quot;</span>);</span><br><span class="line">            <span class="keyword">int</span> num = input.nextInt();</span><br><span class="line">            <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">if</span> (num &lt; <span class="number">100000</span>) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i * i * i &lt;= num; i++) &#123;</span><br><span class="line">                    count++;</span><br><span class="line">                &#125;</span><br><span class="line">                System.out.println(count);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;请输入一个整数N(N&lt;100000)！！！&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -530,13 +558,13 @@
         <category>java</category>
       </categories>
       <tags>
-        <tag>java编程题</tag>
         <tag>java</tag>
+        <tag>java编程题</tag>
       </tags>
   </entry>
   <entry>
     <title>QTP使用</title>
-    <url>/2020/11/14/%E4%B8%AD%E5%85%AC%E6%95%99%E8%82%B2/QTP%E4%BD%BF%E7%94%A8/</url>
+    <url>/2020/11/14/study/%E4%B8%AD%E5%85%AC%E6%95%99%E8%82%B2/QTP%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="QTP使用指南"><a href="#QTP使用指南" class="headerlink" title="QTP使用指南"></a>QTP使用指南</h1><p><a href="https://pan.baidu.com/s/13uXSGJ_DbUmjibNtHb1_MA">点此</a>下载QTP安装包（提取码：ip5q）</p>
 <blockquote>
 <p><strong>如果遇到问题：</strong></p>
@@ -561,12 +589,12 @@
   </entry>
   <entry>
     <title>Pages+hexo制作的静态博客如何收录到百度搜索引擎</title>
-    <url>/2020/11/09/Pages-hexo%E5%88%B6%E4%BD%9C%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E6%94%B6%E5%BD%95%E5%88%B0%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</url>
+    <url>/2020/11/09/createBlog/Pages-hexo%E5%88%B6%E4%BD%9C%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E6%94%B6%E5%BD%95%E5%88%B0%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
   </entry>
   <entry>
     <title>二维数组中查找</title>
-    <url>/2020/11/09/study/Java/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE/</url>
+    <url>/2020/11/09/%E7%BC%96%E7%A8%8B/Java/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个二维数组，其每一行从左到右递增排序，从上到下也是递增排序。给定一个数，判断这个数是否在该二维数组中。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Consider the following matrix:</span><br><span class="line">[</span><br><span class="line">  [<span class="number">1</span>,   <span class="number">4</span>,  <span class="number">7</span>, <span class="number">11</span>, <span class="number">15</span>],</span><br><span class="line">  [<span class="number">2</span>,   <span class="number">5</span>,  <span class="number">8</span>, <span class="number">12</span>, <span class="number">19</span>],</span><br><span class="line">  [<span class="number">3</span>,   <span class="number">6</span>,  <span class="number">9</span>, <span class="number">16</span>, <span class="number">22</span>],</span><br><span class="line">  [<span class="number">10</span>, <span class="number">13</span>, <span class="number">14</span>, <span class="number">17</span>, <span class="number">24</span>],</span><br><span class="line">  [<span class="number">18</span>, <span class="number">21</span>, <span class="number">23</span>, <span class="number">26</span>, <span class="number">30</span>]</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">Given target = <span class="number">5</span>, <span class="keyword">return</span> <span class="keyword">true</span>.</span><br><span class="line">Given target = <span class="number">20</span>, <span class="keyword">return</span> <span class="keyword">false</span>.</span><br></pre></td></tr></table></figure>
 
@@ -574,7 +602,7 @@
   </entry>
   <entry>
     <title>数组中重复的数字</title>
-    <url>/2020/11/09/study/Java/%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/</url>
+    <url>/2020/11/09/%E7%BC%96%E7%A8%8B/Java/%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h2><p><a href="https://www.nowcoder.com/practice/623a5ac0ea5b4e5f95552655361ae0a8?tpId=13&tqId=11203&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking&from=cyc_github">牛客网</a></p>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>在一个长度为 n 的数组里的所有数字都在 0 到 n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字是重复的，也不知道每个数字重复几次。请找出数组中任意一个重复的数字。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input:</span><br><span class="line">&#123;2, 3, 1, 0, 2, 5&#125;</span><br><span class="line"></span><br><span class="line">Output:</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
@@ -590,7 +618,7 @@
   </entry>
   <entry>
     <title>数据可视化</title>
-    <url>/2020/11/07/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
+    <url>/2020/11/07/study/web/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="可视化面板介绍"><a href="#可视化面板介绍" class="headerlink" title="可视化面板介绍"></a>可视化面板介绍</h2><p>​    应对现在数据可视化的趋势，越来越多企业需要在很多场景(营销数据，生产数据，用户数据)下使用，可视化图表来展示体现数据，让数据更加直观，数据特点更加突出。</p>
 <h3 id="01-使用技术"><a href="#01-使用技术" class="headerlink" title="01-使用技术"></a>01-使用技术</h3><p>完成该项目需要具备以下知识：</p>
 <ul>
@@ -1063,7 +1091,7 @@
   </entry>
   <entry>
     <title>butterfly主题页面设置</title>
-    <url>/2020/11/05/butterfly%E4%B8%BB%E9%A2%98%E9%A1%B5%E9%9D%A2%E8%AE%BE%E7%BD%AE/</url>
+    <url>/2020/11/05/createBlog/butterfly%E4%B8%BB%E9%A2%98%E9%A1%B5%E9%9D%A2%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Page-Front-matter"><a href="#Page-Front-matter" class="headerlink" title="Page Front-matter"></a>Page Front-matter</h2><p>寫法    解釋<br>title    【必需】頁面標題<br>date    【必需】頁面創建日期<br>type    【必需】標籤、分類和友情鏈接三個頁面需要配置<br>updated    【可選】頁面更新日期<br>description    【可選】頁面描述<br>keywords    【可選】頁面關鍵字<br>comments    【可選】顯示頁面評論模塊(默認 true)<br>top_img    【可選】頁面頂部圖片<br>mathjax    【可選】顯示mathjax(當設置mathjax的per_page: false時，才需要配置，默認 false)<br>katex    【可選】顯示katex(當設置katex的per_page: false時，才需要配置，默認 false)<br>aside    【可選】顯示側邊欄 (默認 true)<br>aplayer    【可選】在需要的頁面加載aplayer的js和css,請參考文章下面的音樂 配置<br>highlight_shrink    【可選】配置代碼框是否展開(true/false)(默認為設置中highlight_shrink的配置)</p>
 <h2 id="Post-Front-matter"><a href="#Post-Front-matter" class="headerlink" title="Post Front-matter"></a>Post Front-matter</h2><p>寫法    解釋<br>title    【必需】文章標題<br>date    【必需】文章創建日期<br>updated    【可選】文章更新日期<br>tags    【可選】文章標籤<br>categories    【可選】文章分類<br>keywords    【可選】文章關鍵字<br>description    【可選】文章描述<br>top_img    【可選】文章頂部圖片<br>cover    【可選】文章縮略圖(如果沒有設置top_img,文章頁頂部將顯示縮略圖，可設為false/圖片地址/留空)<br>comments    【可選】顯示文章評論模塊(默認 true)<br>toc    【可選】顯示文章TOC(默認為設置中toc的enable配置)<br>toc_number    【可選】顯示toc_number(默認為設置中toc的number配置)<br>copyright    【可選】顯示文章版權模塊(默認為設置中post_copyright的enable配置)<br>copyright_author    【可選】文章版權模塊的文章作者<br>copyright_author_href    【可選】文章版權模塊的文章作者鏈接<br>copyright_url    【可選】文章版權模塊的文章連結鏈接<br>copyright_info    【可選】文章版權模塊的版權聲明文字<br>mathjax    【可選】顯示mathjax(當設置mathjax的per_page: false時，才需要配置，默認 false)<br>katex    【可選】顯示katex(當設置katex的per_page: false時，才需要配置，默認 false)<br>aplayer    【可選】在需要的頁面加載aplayer的js和css,請參考文章下面的音樂 配置<br>highlight_shrink    【可選】配置代碼框是否展開(true/false)(默認為設置中highlight_shrink的配置)<br>aside    【可選】顯示側邊欄 (默認 true）</p>
 ]]></content>
@@ -1078,7 +1106,7 @@
   </entry>
   <entry>
     <title>二叉树C语言</title>
-    <url>/2020/11/05/%E4%BA%8C%E5%8F%89%E6%A0%91C%E8%AF%AD%E8%A8%80/</url>
+    <url>/2020/11/05/study/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BA%8C%E5%8F%89%E6%A0%91C%E8%AF%AD%E8%A8%80/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>1、树的相关定义<br>（1）树：包含n（n&gt;0）个节点的有穷集合，其中每个元素称为节点（node）；有一个特定的节点被称为根节点或树根（root）；除根节点之外的其余数据元素被分为m（m≥0）个互不相交的结合T1，T2，……Tm-1，而其中每一个集合Ti（1&lt;=i&lt;=m）本身也是一棵树，被称作原树的子树（subtree）。</p>
 <p>（2）节点的度：一个节点含有的子树的个数称为该节点的度；</p>
 <p>（3）树的度：一棵树中，最大的节点的度称为树的度；</p>
@@ -1125,7 +1153,7 @@
   </entry>
   <entry>
     <title>github快速将本地库和远程库连接</title>
-    <url>/2020/11/04/github%E5%BF%AB%E9%80%9F%E5%B0%86%E6%9C%AC%E5%9C%B0%E5%BA%93%E5%92%8C%E8%BF%9C%E7%A8%8B%E5%BA%93%E8%BF%9E%E6%8E%A5/</url>
+    <url>/2020/11/04/github-learn/github%E5%BF%AB%E9%80%9F%E5%B0%86%E6%9C%AC%E5%9C%B0%E5%BA%93%E5%92%8C%E8%BF%9C%E7%A8%8B%E5%BA%93%E8%BF%9E%E6%8E%A5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
 <p>HTTPS:<code>https://github.com/frunoob/Library.git</code></p>
 <p>SSH:<code>git@github.com:frunoob/Library.git</code></p>
@@ -1154,7 +1182,7 @@
   </entry>
   <entry>
     <title>hugo快速开始</title>
-    <url>/2020/11/03/hugo%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/</url>
+    <url>/2020/11/03/createBlog/hugo%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="安装Hugo"><a href="#安装Hugo" class="headerlink" title="安装Hugo"></a>安装Hugo</h3><ol>
 <li><p>二进制安装（推荐：简单、快速）<br>到<a href="https://github.com/spf13/hugo/releases">Hugo Releases</a>下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe）</p>
 </li>
@@ -1226,7 +1254,7 @@
   </entry>
   <entry>
     <title>JAVA基础知识重要概念</title>
-    <url>/2020/11/01/study/Java/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</url>
+    <url>/2020/11/01/%E7%BC%96%E7%A8%8B/Java/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h2><p><strong>复制运算符</strong>：Java的赋值运算符用于改变变量的值。赋值运算符包括：=， +=，-=，*=，%=，/=。  </p>
 <p><strong>自动递增（+ +）</strong>和<strong>自动递减（- -）运算符：</strong>次元算符分别进行加1减1运算。其中两种的格式的递增和递减，分别为前缀递增或递减以及后缀递增或递减。  </p>
 <p><strong>二元算数运算符：</strong>它用于执行基本的算数运算。Java提供的二元运算符包括+、-、*、/和%。  </p>
@@ -1324,7 +1352,7 @@
   </entry>
   <entry>
     <title>程序设计题-求所有K区间中的最大SUM[k]值</title>
-    <url>/2020/10/29/study/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/</url>
+    <url>/2020/10/29/%E7%BC%96%E7%A8%8B/Java/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98-%E6%B1%82%E6%89%80%E6%9C%89K%E5%8C%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7SUM-k-%E5%80%BC/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="java程序设计19题"><a href="#java程序设计19题" class="headerlink" title="java程序设计19题"></a>java程序设计19题</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://i.loli.net/2020/10/29/JlOYvkoL8c61nZI.png" alt="图片"></p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">primeNum</span><span class="params">(<span class="keyword">int</span> num)</span></span>&#123;</span><br><span class="line">        <span class="comment">/* 判断素数*/</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;num; i++ )&#123;</span><br><span class="line">            <span class="keyword">if</span>(num%i==<span class="number">0</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">itervalComparison</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入（N&lt;=10000,K&lt;=200）:&quot;</span>);</span><br><span class="line">        <span class="comment">// 从终端接收两个整数</span></span><br><span class="line">        <span class="keyword">int</span> N = input.nextInt(); <span class="comment">//</span></span><br><span class="line">        <span class="keyword">int</span> K = input.nextInt(); <span class="comment">//</span></span><br><span class="line">        <span class="keyword">int</span> arr[] = <span class="keyword">new</span> <span class="keyword">int</span>[N];</span><br><span class="line">        <span class="comment">// 如果输入的数值 第一个N大于10000或K大于200就提示输入错误</span></span><br><span class="line">        <span class="keyword">if</span> (N &gt; <span class="number">10000</span> || K &gt; <span class="number">200</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;输入错误（N&lt;=10000,K&lt;=200）&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// 输入的数值N,K符合要求则接收对应长度的数组</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; i++) &#123;</span><br><span class="line">                arr[i] = input.nextInt();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> before = <span class="number">0</span>,after = <span class="number">0</span>,max = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 开始比较第n个 K区间内的素数之和 和 第n+1个 K区间的素数之和 的大小</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length-K; i++) &#123;</span><br><span class="line">            before=after=<span class="number">0</span>;</span><br><span class="line">            <span class="comment">// 求K区间内的所有素数之和</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; i+K; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (primeNum(arr[j])) before += arr[j];</span><br><span class="line">                <span class="keyword">if</span> (primeNum(arr[j+<span class="number">1</span>])) after += arr[j+<span class="number">1</span>];</span><br><span class="line">                System.out.println(before+<span class="string">&quot;|||&quot;</span>+after);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 比较第n个k区间总和和第n+1个k区间的总和并将值大的k区间总和赋值给max</span></span><br><span class="line">            max=max&gt;(before&gt;after?before:after)?max:(before&gt;after?before:after);</span><br><span class="line">            System.out.println(<span class="string">&quot;max;&quot;</span>+max);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(max);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> Solution().itervalComparison();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -1339,7 +1367,7 @@
   </entry>
   <entry>
     <title>【java】如何输入位置长度的数组</title>
-    <url>/2020/10/29/study/Java/%E3%80%90java%E3%80%91%E5%A6%82%E4%BD%95%E8%BE%93%E5%85%A5%E4%BD%8D%E7%BD%AE%E9%95%BF%E5%BA%A6%E7%9A%84%E6%95%B0%E7%BB%84/</url>
+    <url>/2020/10/29/%E7%BC%96%E7%A8%8B/Java/%E3%80%90java%E3%80%91%E5%A6%82%E4%BD%95%E8%BE%93%E5%85%A5%E4%BD%8D%E7%BD%AE%E9%95%BF%E5%BA%A6%E7%9A%84%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">String s&#x3D;sc.nextLine();&#x2F;&#x2F;读入一行string</span><br><span class="line">String[] c&#x3D;s.split(&quot;\\s+&quot;);&#x2F;&#x2F;根据空格进行分割</span><br><span class="line">int[] arr&#x3D;new int[c.length];</span><br><span class="line">for(int i&#x3D;0;i&lt;c.length;i++) &#123;</span><br><span class="line">   arr[i]&#x3D;Integer.parseInt(c[i]);</span><br><span class="line">   &#x2F;&#x2F;将string转为int型</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>编程语言</category>
@@ -1350,7 +1378,7 @@
   </entry>
   <entry>
     <title>C语言 错误：ld return 1 exist status</title>
-    <url>/2020/10/29/study/C%E8%AF%AD%E8%A8%80-%E9%94%99%E8%AF%AF%EF%BC%9Ald-return-1-exist-status/</url>
+    <url>/2020/10/29/%E7%BC%96%E7%A8%8B/C/C%E8%AF%AD%E8%A8%80-%E9%94%99%E8%AF%AF%EF%BC%9Ald-return-1-exist-status/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h3><ul>
 <li>dev c++</li>
 </ul>
@@ -1371,7 +1399,7 @@
   </entry>
   <entry>
     <title>使用批处理命令切换盘符</title>
-    <url>/2020/10/29/study/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E7%9B%98%E7%AC%A6/</url>
+    <url>/2020/10/29/%E7%BC%96%E7%A8%8B/powershell/%E4%BD%BF%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E5%88%87%E6%8D%A2%E7%9B%98%E7%AC%A6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="直接使用盘符名称即可-切换盘符"><a href="#直接使用盘符名称即可-切换盘符" class="headerlink" title="直接使用盘符名称即可 切换盘符"></a>直接使用盘符名称即可 切换盘符</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo off</span><br><span class="line">color 0B</span><br><span class="line">G:</span><br><span class="line">cd \VSCODE\hexo\</span><br><span class="line">echo 已经切换到了hexo目录</span><br><span class="line">pwd</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p>以上是启动hexo本地服务器的批处理命令写法。</p>
 ]]></content>
@@ -1419,7 +1447,7 @@
   </entry>
   <entry>
     <title>ubuntu下的eclipse安装hadoop插件</title>
-    <url>/2020/10/28/study/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/</url>
+    <url>/2020/10/28/study/hadoop/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前提"><a href="#前提" class="headerlink" title="前提  "></a>前提  </h2><h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境  "></a>系统环境  </h3><ul>
 <li>已经安装了JDK，并配置好了系统变量 </li>
 <li>安装了Eclipse</li>
@@ -1435,7 +1463,7 @@
   </entry>
   <entry>
     <title>HEXO-ADMIN安装使用</title>
-    <url>/2020/10/28/study/HEXO-ADMIN%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
+    <url>/2020/10/28/createBlog/HEXO-ADMIN%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装-HEXO-ADMIN"><a href="#安装-HEXO-ADMIN" class="headerlink" title="安装 HEXO-ADMIN"></a>安装 HEXO-ADMIN</h2><p>切换到hexo目录<br><code>npm install --save hexo-admin</code>  </p>
 <p>启动 hexo<br><code>hexo s</code>  </p>
 <p>然后打开 <a href="http://localhost:4000/admin/">管理页面</a> 。  </p>
@@ -2696,7 +2724,7 @@
 <p>自定义当前工作目录（Current working directory）的路径。</p>
 ]]></content>
       <categories>
-        <category>博客搭建</category>
+        <category>博客创作</category>
       </categories>
       <tags>
         <tag>hexo</tag>
