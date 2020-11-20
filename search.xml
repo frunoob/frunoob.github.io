@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客美化</title>
+    <url>/2020/11/20/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><h3 id="添加跳动的❤"><a href="#添加跳动的❤" class="headerlink" title="添加跳动的❤"></a>添加跳动的❤</h3><p>在对应页脚HTML代码中添加上一下代码即可</p>
+<p><code>&lt;i style=&quot;color:#FF6A6A;animation: announ_animation 0.8s linear infinite;&quot; class=&quot;fa fa-heartbeat&quot;&gt;&lt;/i&gt;</code></p>
+<h3 id="页脚全透明"><a href="#页脚全透明" class="headerlink" title="页脚全透明"></a>页脚全透明</h3><p>在js文件中添加一下代码即可</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 页脚内边距设为0</span><br><span class="line">footer&#x3D;document.getElementById(&quot;footer-wrap&quot;);</span><br><span class="line">footer.style.padding &#x3D; 0;</span><br><span class="line">&#x2F;&#x2F; 移除页脚样式</span><br><span class="line">var app &#x3D; document.getElementsByTagName(&quot;footer&quot;)[0];</span><br><span class="line">app.removeAttribute(&#39;id&#39;);</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>博客创作</category>
+      </categories>
+      <tags>
+        <tag>博客主题魔改</tag>
+        <tag>美化博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>blog-Gallery相册图像库写法</title>
     <url>/2020/11/20/createBlog/blog-Gallery%E7%9B%B8%E5%86%8C%E5%9B%BE%E5%83%8F%E5%BA%93%E5%86%99%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="一个图库集合"><a href="#一个图库集合" class="headerlink" title="一个图库集合"></a>一个图库集合</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-group-main&quot;</span>&gt;</span></span> </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
@@ -46,7 +63,7 @@
 <h3 id="安装lessc以供全局使用"><a href="#安装lessc以供全局使用" class="headerlink" title="安装lessc以供全局使用"></a>安装lessc以供全局使用</h3><p>以下命令用于使用npm(node package manager)安装lessc，以使less在全局可用。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;npm install less -g</span><br></pre></td></tr></table></figure>
 
-<p>您还可以在包名称后面添加特定版本。 例如: <strong>npm install <a href="mailto:&#x6c;&#101;&#x73;&#115;&#x40;&#x31;&#46;&#x36;&#46;&#50;">&#x6c;&#101;&#x73;&#115;&#x40;&#x31;&#46;&#x36;&#46;&#50;</a> -g</strong></p>
+<p>您还可以在包名称后面添加特定版本。 例如: <strong>npm install <a href="mailto:&#108;&#101;&#115;&#x73;&#64;&#49;&#x2e;&#x36;&#x2e;&#50;">&#108;&#101;&#115;&#x73;&#64;&#49;&#x2e;&#x36;&#x2e;&#50;</a> -g</strong></p>
 <h3 id="安装Lessc用于节点开发"><a href="#安装Lessc用于节点开发" class="headerlink" title="安装Lessc用于节点开发"></a>安装Lessc用于节点开发</h3><p>以下命令用于在项目文件夹中安装 <em>lessc</em> 最新版本。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;npm i less -save-dev</span><br></pre></td></tr></table></figure>
 
