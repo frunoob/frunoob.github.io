@@ -1,6 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>标签外挂</title>
+    <url>/2020/11/22/createBlog/%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Note-Bootstrap-Callout"><a href="#Note-Bootstrap-Callout" class="headerlink" title="Note (Bootstrap Callout)"></a>Note (Bootstrap Callout)</h2><div class="tabs" id="t1"><ul class="nav-tabs"><li class="tab"><button type="button" data-href="#t1-1"><i class="fas fa-angle-right"></i>用法1</button></li><li class="tab"><button type="button" data-href="#t1-2"><i class="fas fa-angle-right"></i>用法二</button></li></ul><div class="tab-contents"><div class="tab-item-content" id="t1-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] [style] %&#125; </span><br><span class="line">Any content (support inline tags too.io). </span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="center">用法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">class</td>
+<td align="center">【可选】标识，不同的标识有不同的配色<br />（default / primary / success / info / warning / danger）</td>
+</tr>
+<tr>
+<td align="center">no-icon</td>
+<td align="center">【可选】不显示icon</td>
+</tr>
+<tr>
+<td align="center">style</td>
+<td align="center">【可选】可覆盖配置中的style<br />（simple/modern/flat/disabled）</td>
+</tr>
+</tbody></table><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="t1-2"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note [color] [icon] [style] %&#125; </span><br><span class="line">Any content (support inline tags too.io). </span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="center">用法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">color</td>
+<td align="center">【可选】颜色<br />（default/blue/pink/red/purple/orange/green）</td>
+</tr>
+<tr>
+<td align="center">icon</td>
+<td align="center">【可选】可配置自定义icon（只支持fontawesome图标，也可配置no-icon）</td>
+</tr>
+<tr>
+<td align="center">style</td>
+<td align="center">【可选】可以覆盖配置中的style<br />（simple/modern/flat/disabled）</td>
+</tr>
+</tbody></table><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+
+
+<h2 id="Gallery相册图库"><a href="#Gallery相册图库" class="headerlink" title="Gallery相册图库"></a>Gallery相册图库</h2><ul>
+<li><p>相册集合</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;gallery-group-main&quot;&gt; </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>name：图库名字</li>
+<li>description：图库描述</li>
+<li>link：连接到对应相册的地址</li>
+<li>img-url：图库封面的地址</li>
+</ul>
+</li>
+<li><p>Gallery相册 </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% gallery %&#125; </span><br><span class="line">![](url)</span><br><span class="line">![](url)</span><br><span class="line">![](url)</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="mermaid"><a href="#mermaid" class="headerlink" title="mermaid"></a>mermaid</h2>  <div class="note fas icon modern"><i class="note-icon fa-exclamation"></i><p>mermaid标签不允许嵌套于一些隐藏属性的标签外挂，例如: tag-hide内的标签外挂和tabs标签外挂，这会导致mermaid图示无法正常显示 </p>
+</div>
+
+<p>  使用mermaid标签可以绘制Flowchart（流程图）、Sequence diagram（时序图）、Class Diagram（类别图）、State Diagram（状态图）、Gantt（甘特图）和Pie Chart（圆形图），具体可以查看<a href="https://mermaid-js.github.io/mermaid/#/">mermaid</a>文档</p>
+<ul>
+<li><p>打开mermaid标签需要修改 <span style="color:red">主题配置文件</span></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">mermaid:</span>  </span><br><span class="line">	<span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>写法：</p>
+</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">内容</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Tabs"><a href="#Tabs" class="headerlink" title="Tabs"></a>Tabs</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% tabs Unique name, [index] %&#125; </span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- tab [Tab caption] [@icon] --&gt;</span></span> </span><br><span class="line">Any content (support inline tags too). </span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- endtab --&gt;</span></span> </span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Button"><a href="#Button" class="headerlink" title="Button"></a>Button</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% btn [url],[text],[icon],[color] [style] [layout] [position] [size] %&#125;</span><br><span class="line"></span><br><span class="line">[url] :链接</span><br><span class="line">[text] :按钮文字</span><br><span class="line">[icon] : [可选]图标</span><br><span class="line">[color] : [可选]按钮背景颜色(默认style时）</span><br><span class="line"><span class="code">                      按钮字体和边框颜色(outline时) </span></span><br><span class="line"><span class="code">                      default/blue/pink /red/purple/orange/green </span></span><br><span class="line"><span class="code">[style] : [可选]按钮样式默认实心</span></span><br><span class="line"><span class="code">                      outline/留空</span></span><br><span class="line"><span class="code">[layout] : [可选]按钮布局默认为line </span></span><br><span class="line"><span class="code">                      block/留空</span></span><br><span class="line"><span class="code">[position] : [可选]按钮位置前提是设置了layout为block默认为左边</span></span><br><span class="line"><span class="code">                      center/right/留空</span></span><br><span class="line"><span class="code">[size] : [可选]按钮大小</span></span><br><span class="line"><span class="code">                      larger/留空</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>Twikoo快速上手</title>
+    <url>/2020/11/21/createBlog/Twikoo%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h1><h2 id="环境初始化"><a href="#环境初始化" class="headerlink" title="#环境初始化"></a><a href="https://twikoo.js.org/quick-start.html#%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96">#</a>环境初始化</h2><p>Twikoo 使用云开发作为评论后台，每个云开发用户均长期享受1个免费的标准型基础版1资源套餐。如果您已经拥有了一个免费版云开发环境，在环境配置符合要求的情况下，Twikoo 理论可以与其他项目共用一个环境。</p>
+<ol>
+<li><a href="https://curl.qcloud.com/KnnJtUom">注册云开发CloudBase(opens new window)</a></li>
+<li>进入<a href="https://console.cloud.tencent.com/tcb/">云开发控制台 (opens new window)</a>，新建环境，请按个人需要配置环境</li>
+</ol>
+<p>提示</p>
+<ul>
+<li>推荐选择计费方式<code>包年包月</code>，套餐版本<code>基础班 1</code></li>
+<li>如果提示“选择部署应用”，请选择“不创建环境”</li>
+</ul>
+<ol>
+<li>进入<a href="https://console.cloud.tencent.com/tcb/env/login">环境-登录授权 (opens new window)</a>，启用“匿名登录”</li>
+<li>进入<a href="https://console.cloud.tencent.com/tcb/env/safety">环境-安全配置 (opens new window)</a>，将网站域名添加到“WEB安全域名”</li>
+<li>复制环境Id备用</li>
+</ol>
+<h2 id="环境部署"><a href="#环境部署" class="headerlink" title="#环境部署"></a><a href="https://twikoo.js.org/quick-start.html#%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2">#</a>环境部署</h2><p>注意</p>
+<ul>
+<li>请确保您已经安装了 <a href="https://nodejs.org/en/download/">Node.js(opens new window)</a></li>
+<li>请将命令、代码中“您的环境id”替换为您自己的环境id</li>
+<li>请不要使用 Windows 自带的记事本编辑 envId.txt，否则会部署失败，后续会修复该问题</li>
+</ul>
+<ol>
+<li>克隆本仓库</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/imaegoo/twikoo.git</span><br><span class="line"><span class="built_in">cd</span> twikoo</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果您没有安装 Git，也可以从 <a href="https://github.com/imaegoo/twikoo/releases">Release (opens new window)</a>页面下载最新的 Source code</p>
+</blockquote>
+<ol>
+<li>安装依赖项</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install <span class="comment"># 或 yarn install</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>设置环境id</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> 您的环境id &gt; envId.txt</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>授权云开发环境</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm run login <span class="comment"># 或 yarn run login</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>自动部署</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm run deploy <span class="comment"># 或 yarn deploy</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>更新 Twikoo 版本时，请再次执行此命令更新现有的云函数</p>
+</blockquote>
+<h2 id="使用"><a href="#使用" class="headerlink" title="#使用"></a><a href="https://twikoo.js.org/quick-start.html#%E4%BD%BF%E7%94%A8">#</a>使用</h2><h3 id="通过-CDN-引入"><a href="#通过-CDN-引入" class="headerlink" title="#通过 CDN 引入"></a><a href="https://twikoo.js.org/quick-start.html#%E9%80%9A%E8%BF%87-cdn-%E5%BC%95%E5%85%A5">#</a>通过 CDN 引入</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;twikoo&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/twikoo@0.1.15/dist/twikoo.all.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript">twikoo.init(&#123; <span class="attr">envId</span>: <span class="string">&#x27;您的环境id&#x27;</span> &#125;)</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="通过-NPM-引入"><a href="#通过-NPM-引入" class="headerlink" title="#通过 NPM 引入"></a><a href="https://twikoo.js.org/quick-start.html#%E9%80%9A%E8%BF%87-npm-%E5%BC%95%E5%85%A5">#</a>通过 NPM 引入</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install twikoo <span class="comment"># 或 yarn add twikoo</span></span><br><span class="line">&lt;div id=<span class="string">&quot;twikoo&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line">import twikoo from <span class="string">&#x27;twikoo&#x27;</span> // 或 const twikoo = require(<span class="string">&#x27;twikoo&#x27;</span>)</span><br><span class="line">twikoo.init(&#123; envId: <span class="string">&#x27;您的环境id&#x27;</span> &#125;)</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客创作</category>
+      </categories>
+      <tags>
+        <tag>博客评论系统</tag>
+        <tag>Twikoo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客美化</title>
     <url>/2020/11/20/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><h3 id="添加跳动的❤"><a href="#添加跳动的❤" class="headerlink" title="添加跳动的❤"></a>添加跳动的❤</h3><p>在对应页脚HTML代码中添加上一下代码即可</p>
@@ -47,7 +197,7 @@
   </entry>
   <entry>
     <title>Echart数据可视化项目</title>
-    <url>/2020/11/17/study/web/Echart%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E9%A1%B9%E7%9B%AE/</url>
+    <url>/2020/11/17/Echart%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E9%A1%B9%E7%9B%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="建立项目"><a href="#建立项目" class="headerlink" title="建立项目"></a>建立项目</h2><ul>
 <li><p>建立<code>css</code> <code>scripts</code> <code>index.css</code> <code>readme.md</code> <code>index.html</code>文件夹或文件。 </p>
 <div class="hide-block"><button type="button" class="hide-button button--animated" style="">查看建好的文件结构截图
@@ -63,7 +213,7 @@
 <h3 id="安装lessc以供全局使用"><a href="#安装lessc以供全局使用" class="headerlink" title="安装lessc以供全局使用"></a>安装lessc以供全局使用</h3><p>以下命令用于使用npm(node package manager)安装lessc，以使less在全局可用。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;npm install less -g</span><br></pre></td></tr></table></figure>
 
-<p>您还可以在包名称后面添加特定版本。 例如: <strong>npm install <a href="mailto:&#x6c;&#x65;&#115;&#115;&#64;&#49;&#x2e;&#54;&#x2e;&#x32;">&#x6c;&#x65;&#115;&#115;&#64;&#49;&#x2e;&#54;&#x2e;&#x32;</a> -g</strong></p>
+<p>您还可以在包名称后面添加特定版本。 例如: <strong>npm install <a href="mailto:&#x6c;&#101;&#115;&#x73;&#64;&#x31;&#46;&#x36;&#46;&#x32;">&#x6c;&#101;&#115;&#x73;&#64;&#x31;&#46;&#x36;&#46;&#x32;</a> -g</strong></p>
 <h3 id="安装Lessc用于节点开发"><a href="#安装Lessc用于节点开发" class="headerlink" title="安装Lessc用于节点开发"></a>安装Lessc用于节点开发</h3><p>以下命令用于在项目文件夹中安装 <em>lessc</em> 最新版本。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;npm i less -save-dev</span><br></pre></td></tr></table></figure>
 
@@ -98,55 +248,137 @@
 
 </li>
 </ul>
-<h2 id="界面设置"><a href="#界面设置" class="headerlink" title="界面设置"></a>界面设置</h2><blockquote>
-<p><code>index.html</code></p>
-<ol>
-<li>导入<code>main.css</code> ，在<code>index.html</code> 的<code>&lt;head&gt;</code>标签内添加 <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/main.css&quot;&gt;</code>  </li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;可视化界面&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;css&#x2F;main.css&quot;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;header&gt;</span><br><span class="line">        &lt;h1&gt;数据可视化&lt;&#x2F;h1&gt;</span><br><span class="line">    &lt;&#x2F;header&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li></li>
-</ol>
-</blockquote>
-<blockquote>
-<p><code>main.less  </code></p>
-<ol>
-<li><p>设置整体元素</p>
-<div class="note info modern"><blockquote>
-<p>   padding: <em>上</em> <em>右</em>  <em>下</em> <em>左</em> ; </p>
-<p>   属性用于设置填充区域的厚度值。如果左边被省略，它和右边是一样的。如果底部被省略，它和顶部是一样的，如果右边被省略，它和顶部是一样的。值不能为负。</p>
-</blockquote>
+<h2 id="界面设置"><a href="#界面设置" class="headerlink" title="界面设置"></a>界面设置</h2><p>导入<code>main.css</code> ，在<code>index.html</code> 的<code>&lt;head&gt;</code>标签内添加 <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/main.css&quot;&gt;</code>  ,并设置全局内外边距和背景。</p>
+<div class="tabs" id="t-"><ul class="nav-tabs"><li class="tab"><button type="button" data-href="#t--1"><i class="fas fa-angle-right"></i>index.html</button></li><li class="tab"><button type="button" data-href="#t--2"><i class="fas fa-angle-right"></i>main.less</button></li><li class="tab"><button type="button" data-href="#t--3"><i class="fas fa-angle-right"></i>main.css</button></li></ul><div class="tab-contents"><div class="tab-item-content" id="t--1"><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;可视化界面&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;.&#x2F;css&#x2F;main.css&quot;&gt;</span><br><span class="line">	  &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;frunoob&#x2F;Library@master&#x2F;echart&#x2F;echart&#x2F;css&#x2F;index.css&quot; &#x2F;&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;shortcut icon&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;frunoob&#x2F;images@latest&#x2F;blog&#x2F;favicon.png&quot; type&#x3D;&quot;image&#x2F;x-icon&quot;&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;icon&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;frunoob&#x2F;images@latest&#x2F;blog&#x2F;favicon.png&quot; type&#x3D;&quot;image&#x2F;x-icon&quot;&gt;</span><br><span class="line">  </span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="t--2"><div class="note info modern"><p>padding（内边距）: <em>上</em> <em>右</em>  <em>下</em> <em>左</em> ; </p>
+<p>属性用于设置填充区域的厚度值。如果左边被省略，它和右边是一样的。如果底部被省略，它和顶部是一样的，如果右边被省略，它和顶部是一样的。值不能为负。</p>
 </div>
 
-<div class="hide-block"><button type="button" class="hide-button button--animated" style="background-color: #ffc129;color: red">请看例子
-    </button><span class="hide-content"><blockquote>
-<p>   当padding的四个参数设置为如下值时,效果图请见下图：</p>
-<p>   <code>padding: 10px 50px 30px 0;</code></p>
-<p>   <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201119121840.png" alt="image-20201119121840417"></p>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="background-color: #ffc129;color: red">还是不懂？点我看例子
+    </button><span class="hide-content"><p>当padding的四个参数设置为如下值时,效果图请见下图（黄色边框即元素的边框（border））：</p>
+<p><code>padding: 10px 50px 30px 0;</code></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201119121840.png" alt="image-20201119121840417"></p>
+</span></div>
+
+<ul>
+<li>设置整体元素</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    font-size: 20px;</span><br><span class="line">    margin:0;</span><br><span class="line">    padding:0;</span><br><span class="line">    box-sizing:border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>设置背景</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">html&#123;</span><br><span class="line">    height: 100%;&#x2F;* 设置背景全屏必须设置此项为100% *&#x2F;</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">    &#x2F;* 设置页面背景 *&#x2F;</span><br><span class="line">    background: border-box url(https:&#x2F;&#x2F;gitee.com&#x2F;frunoob&#x2F;blog-image&#x2F;raw&#x2F;master&#x2F;image&#x2F;20201122101006.png) </span><br><span class="line">    no-repeat top center;&#x2F;* 图片不重复 顶部 居中放大100% *&#x2F;</span><br><span class="line">    height: 100%;&#x2F;* 设置背景全屏必须设置此项为100% *&#x2F;</span><br><span class="line">    background-size: 100% 100%;&#x2F;* 设置背景拉伸为全屏 *&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="t--3"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">  font-size: 40px;</span><br><span class="line">  margin: 0;</span><br><span class="line">  padding: 0;</span><br><span class="line">  box-sizing: border-box;</span><br><span class="line">&#125;</span><br><span class="line">html &#123;</span><br><span class="line">  height: 100%;</span><br><span class="line">  /* 设置背景全屏必须设置此项为100% */</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">  /* 设置页面背景 */</span><br><span class="line">  background: border-box url(https://img.zcool.cn/community/017d6a5c513b9ca801213f26c6f65d.png@1280w_1l_2o_100sh.png) no-repeat top center;</span><br><span class="line">  /* 图片不重复 顶部 居中放大100% */</span><br><span class="line">  height: 100%;</span><br><span class="line">  /* 设置背景全屏必须设置此项为100% */</span><br><span class="line">  background-size: 100% 100%;</span><br><span class="line">  /* 设置背景拉伸为全屏 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+
+
+
+
+
+
+<h3 id="设置页眉"><a href="#设置页眉" class="headerlink" title="设置页眉"></a>设置页眉</h3><div class="tabs" id="t"><ul class="nav-tabs"><li class="tab"><button type="button" data-href="#t-1"><i class="fas fa-angle-right"></i>main.less</button></li></ul><div class="tab-contents"><div class="tab-item-content" id="t-1"><div class="note orange icon modern"><i class="note-icon fas fa-egg"></i><p>设置页眉的背景颜色和字体居中</p>
+</div>
+
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 页眉 */</span></span><br><span class="line"><span class="selector-tag">header</span>&#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">1.25rem</span>;</span><br><span class="line">    <span class="comment">/* background: url(https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/triangles-1430105.svg) no-repeat; */</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">10</span>, <span class="number">14</span>, <span class="number">20</span>, <span class="number">0.4</span>);</span><br><span class="line">    <span class="comment">// background-size: 100% 100%;/* 背景尺寸设置为100% */</span></span><br><span class="line">    <span class="selector-tag">h1</span> &#123;</span><br><span class="line">        <span class="attribute">color</span>: <span class="number">#fff</span>;<span class="comment">/* 颜色设置为白色 */</span></span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">0.475rem</span>;</span><br><span class="line">        <span class="attribute">text-align</span>: center; <span class="comment">/* 居中类型 */</span></span><br><span class="line">        <span class="attribute">line-height</span>: <span class="number">1rem</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Echart</tag>
+        <tag>可视化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Echart数据可视化项目</title>
+    <url>/2020/11/17/study/web/Echart%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="建立项目"><a href="#建立项目" class="headerlink" title="建立项目"></a>建立项目</h2><ul>
+<li><p>建立<code>css</code> <code>scripts</code> <code>index.css</code> <code>readme.md</code> <code>index.html</code>文件夹或文件。 </p>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="">查看建好的文件结构截图
+    </button><span class="hide-content"><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/image-20201117195024479.png" alt="image-20201117195024479"></p>
+</span></div>
+
+</li>
+</ul>
+<h2 id="安装less"><a href="#安装less" class="headerlink" title="安装less"></a>安装less</h2><ul>
+<li><p>使用命令行，我们可以将 .less 文件编译为 .css </p>
+<div class="hide-toggle" style="border: 1px solid #ecf7fe"><div class="hide-button toggle-title" style="background-color: #ecf7fe;color: #010202"><i class="fas fa-caret-right fa-fw"></i><span>显示less安装步骤 </span></div>
+    <div class="hide-content"><blockquote>
+<h3 id="安装lessc以供全局使用"><a href="#安装lessc以供全局使用" class="headerlink" title="安装lessc以供全局使用"></a>安装lessc以供全局使用</h3><p>以下命令用于使用npm(node package manager)安装lessc，以使less在全局可用。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;npm install less -g</span><br></pre></td></tr></table></figure>
+
+<p>您还可以在包名称后面添加特定版本。 例如: <strong>npm install <a href="mailto:&#108;&#x65;&#x73;&#x73;&#x40;&#49;&#x2e;&#54;&#46;&#x32;">&#108;&#x65;&#x73;&#x73;&#x40;&#49;&#x2e;&#54;&#46;&#x32;</a> -g</strong></p>
+<h3 id="安装Lessc用于节点开发"><a href="#安装Lessc用于节点开发" class="headerlink" title="安装Lessc用于节点开发"></a>安装Lessc用于节点开发</h3><p>以下命令用于在项目文件夹中安装 <em>lessc</em> 最新版本。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;npm i less -save-dev</span><br></pre></td></tr></table></figure>
+
+<p>它也被添加到你的项目package.json中的devDependencies。</p>
+<ul>
+<li><p><strong>lessc的测试版</strong></p>
+<p>当lessc结构发布到npm时，它被标记为beta，其中定期开发新的功能。 <em>less -v</em> 用于获取当前版本。</p>
+</li>
+<li><p><strong>安装lessc</strong> 的未发布开发版本</p>
+<p>当我们希望安装一个未发布版本的lessc并遵循将git URL标识为依赖的指令时，commit-ish将被指定。 这将确保您正在使用正确的leesc您的项目。</p>
+</li>
+</ul>
+<h3 id="服务器端和命令行用法"><a href="#服务器端和命令行用法" class="headerlink" title="服务器端和命令行用法"></a>服务器端和命令行用法</h3><p><strong>bin / lessc</strong> 在存储库中包含二进制。 它的工作窗口，OS X和nodejs * nix。</p>
+<h3 id="命令行用法"><a href="#命令行用法" class="headerlink" title="命令行用法"></a>命令行用法</h3><p>当源设置为破折号或连字符( - )时，从标准输入读取输入。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;lessc [option option&#x3D;parameter ...]  [destination]</span><br></pre></td></tr></table></figure>
+
+<p>例如，我们可以使用下面的命令编译.less到.css</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;lessc stylesheet.less stylesheet.css</span><br></pre></td></tr></table></figure>
+
+<p>我们可以使用以下命令编译.less到.css by并将结果缩小。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;lessc -x stylesheet.less stylesheet.css</span><br></pre></td></tr></table></figure>
+
 </blockquote>
+</div></div>
+</li>
+<li><p>推荐使用vscode编辑器的插件，实现自动将less文件转化为css文件。（当你保存less文件时，会自动在less文件所在目录 下生成一个与之对应的css文件，非常方便。）</p>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="background-color: #fdf0dc;color: #077fcb">请看安装示例 
+    </button><span class="hide-content"><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/image-20201118145639290.png" alt="image-20201119002134743"></p>
 </span></div>
 
 
 
-
-
 </li>
-</ol>
-   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    font-size: 20px;</span><br><span class="line">    margin:0;</span><br><span class="line">    padding:0;</span><br><span class="line">    box-sizing:border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</ul>
+<h2 id="界面设置"><a href="#界面设置" class="headerlink" title="界面设置"></a>界面设置</h2><p>导入<code>main.css</code> ，在<code>index.html</code> 的<code>&lt;head&gt;</code>标签内添加 <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/main.css&quot;&gt;</code>  ,并设置全局内外边距和背景。</p>
+<div class="tabs" id="t-"><ul class="nav-tabs"><li class="tab"><button type="button" data-href="#t--1"><i class="fas fa-angle-right"></i>index.html</button></li><li class="tab"><button type="button" data-href="#t--2"><i class="fas fa-angle-right"></i>main.less</button></li><li class="tab"><button type="button" data-href="#t--3"><i class="fas fa-angle-right"></i>main.css</button></li></ul><div class="tab-contents"><div class="tab-item-content" id="t--1"><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;可视化界面&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;.&#x2F;css&#x2F;main.css&quot;&gt;</span><br><span class="line">	  &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;frunoob&#x2F;Library@master&#x2F;echart&#x2F;echart&#x2F;css&#x2F;index.css&quot; &#x2F;&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;shortcut icon&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;frunoob&#x2F;images@latest&#x2F;blog&#x2F;favicon.png&quot; type&#x3D;&quot;image&#x2F;x-icon&quot;&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;icon&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;frunoob&#x2F;images@latest&#x2F;blog&#x2F;favicon.png&quot; type&#x3D;&quot;image&#x2F;x-icon&quot;&gt;</span><br><span class="line">  </span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="t--2"><div class="note info modern"><p>padding（内边距）: <em>上</em> <em>右</em>  <em>下</em> <em>左</em> ; </p>
+<p>属性用于设置填充区域的厚度值。如果左边被省略，它和右边是一样的。如果底部被省略，它和顶部是一样的，如果右边被省略，它和顶部是一样的。值不能为负。</p>
+</div>
+
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="background-color: #ffc129;color: red">还是不懂？点我看例子
+    </button><span class="hide-content"><p>当padding的四个参数设置为如下值时,效果图请见下图（黄色边框即元素的边框（border））：</p>
+<p><code>padding: 10px 50px 30px 0;</code></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201119121840.png" alt="image-20201119121840417"></p>
+</span></div>
+
+<ul>
+<li>设置整体元素</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    font-size: 20px;</span><br><span class="line">    margin:0;</span><br><span class="line">    padding:0;</span><br><span class="line">    box-sizing:border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<ol start="2">
-<li><p>设置背景</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">html&#123;</span><br><span class="line">    height: 100%;&#x2F;* 设置背景全屏必须设置此项为100% *&#x2F;</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">    &#x2F;* 设置页面背景 *&#x2F;</span><br><span class="line">    background: border-box url(https:&#x2F;&#x2F;img.zcool.cn&#x2F;community&#x2F;017d6a5c513b9ca801213f26c6f65d.png@1280w_1l_2o_100sh.png) </span><br><span class="line">    no-repeat top center;&#x2F;* 图片不重复 顶部 居中放大100% *&#x2F;</span><br><span class="line">    height: 100%;&#x2F;* 设置背景全屏必须设置此项为100% *&#x2F;</span><br><span class="line">    background-size: 100% 100%;&#x2F;* 设置背景拉伸为全屏 *&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置文档的页眉（导航栏）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">header&#123;</span><br><span class="line">    height: 1.25rem;</span><br><span class="line">    &#x2F;* background: url(https:&#x2F;&#x2F;gitee.com&#x2F;frunoob&#x2F;blog-image&#x2F;raw&#x2F;master&#x2F;image&#x2F;2020-11-17&#x2F;15&#x2F;04&#x2F;triangles-1430105.svg) no-repeat; *&#x2F;</span><br><span class="line">    background: rgba(10, 14, 20, 0.4);</span><br><span class="line">    &#x2F;&#x2F; background-size: 100% 100%;&#x2F;* 背景尺寸设置为100% *&#x2F;</span><br><span class="line">    h1 &#123;</span><br><span class="line">        color: #fff;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li></li>
-</ol>
-</blockquote>
+<ul>
+<li>设置背景</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">html&#123;</span><br><span class="line">    height: 100%;&#x2F;* 设置背景全屏必须设置此项为100% *&#x2F;</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">    &#x2F;* 设置页面背景 *&#x2F;</span><br><span class="line">    background: border-box url(https:&#x2F;&#x2F;gitee.com&#x2F;frunoob&#x2F;blog-image&#x2F;raw&#x2F;master&#x2F;image&#x2F;20201122101006.png) </span><br><span class="line">    no-repeat top center;&#x2F;* 图片不重复 顶部 居中放大100% *&#x2F;</span><br><span class="line">    height: 100%;&#x2F;* 设置背景全屏必须设置此项为100% *&#x2F;</span><br><span class="line">    background-size: 100% 100%;&#x2F;* 设置背景拉伸为全屏 *&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="t--3"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">  font-size: 40px;</span><br><span class="line">  margin: 0;</span><br><span class="line">  padding: 0;</span><br><span class="line">  box-sizing: border-box;</span><br><span class="line">&#125;</span><br><span class="line">html &#123;</span><br><span class="line">  height: 100%;</span><br><span class="line">  /* 设置背景全屏必须设置此项为100% */</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">  /* 设置页面背景 */</span><br><span class="line">  background: border-box url(https://img.zcool.cn/community/017d6a5c513b9ca801213f26c6f65d.png@1280w_1l_2o_100sh.png) no-repeat top center;</span><br><span class="line">  /* 图片不重复 顶部 居中放大100% */</span><br><span class="line">  height: 100%;</span><br><span class="line">  /* 设置背景全屏必须设置此项为100% */</span><br><span class="line">  background-size: 100% 100%;</span><br><span class="line">  /* 设置背景拉伸为全屏 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+
+
+
+
+
+
+<h3 id="设置页眉"><a href="#设置页眉" class="headerlink" title="设置页眉"></a>设置页眉</h3><div class="tabs" id="t"><ul class="nav-tabs"><li class="tab"><button type="button" data-href="#t-1"><i class="fas fa-angle-right"></i>index.html</button></li><li class="tab"><button type="button" data-href="#t-2"><i class="fas fa-angle-right"></i>main.less</button></li><li class="tab"><button type="button" data-href="#t-3"><i class="fas fa-angle-right"></i>main.css</button></li></ul><div class="tab-contents"><div class="tab-item-content" id="t-1"><div class="note orange icon modern"><i class="note-icon fas fa-egg"></i><p>在<code>&lt;body&gt;</code>内添加<code>&lt;header&gt;</code></p>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 设置页眉 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">h1</span>&gt;</span>数据可视化-frunoob<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="t-2"><div class="note orange icon modern"><i class="note-icon fas fa-egg"></i><p>设置页眉的背景颜色和字体居中</p>
+</div>
+
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 页眉 */</span></span><br><span class="line"><span class="selector-tag">header</span>&#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">1.25rem</span>;</span><br><span class="line">    <span class="comment">/* background: url(https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/triangles-1430105.svg) no-repeat; */</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">10</span>, <span class="number">14</span>, <span class="number">20</span>, <span class="number">0.4</span>);</span><br><span class="line">    <span class="comment">// background-size: 100% 100%;/* 背景尺寸设置为100% */</span></span><br><span class="line">    <span class="selector-tag">h1</span> &#123;</span><br><span class="line">        <span class="attribute">color</span>: <span class="number">#fff</span>;<span class="comment">/* 颜色设置为白色 */</span></span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">0.475rem</span>;</span><br><span class="line">        <span class="attribute">text-align</span>: center; <span class="comment">/* 居中类型 */</span></span><br><span class="line">        <span class="attribute">line-height</span>: <span class="number">1rem</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="t-3"><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 页眉 */</span></span><br><span class="line"><span class="selector-tag">header</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">1.25rem</span>;</span><br><span class="line">  <span class="comment">/* background: url(https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/triangles-1430105.svg) no-repeat; */</span></span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">10</span>, <span class="number">14</span>, <span class="number">20</span>, <span class="number">0.4</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">header</span> <span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="comment">/* 颜色设置为白色 */</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">0.475rem</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="comment">/* 居中类型 */</span></span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1rem</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
 ]]></content>
       <categories>
         <category>前端</category>
