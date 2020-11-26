@@ -1,8 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>微信搞笑聊天记录</title>
+    <url>/2020/11/26/%E6%90%9E%E7%AC%91/%E5%BE%AE%E4%BF%A1%E6%90%9E%E7%AC%91%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="恶搞骗子"><a href="#恶搞骗子" class="headerlink" title="恶搞骗子"></a>恶搞骗子</h2><h3 id="外卖"><a href="#外卖" class="headerlink" title="外卖"></a>外卖</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/20201126225516.jpeg" alt="1229567507"></p>
+<h3 id="贪玩蓝月"><a href="#贪玩蓝月" class="headerlink" title="贪玩蓝月"></a>贪玩蓝月</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/20201126225556.jpeg" alt="1229567509"></p>
+]]></content>
+      <categories>
+        <category>搞笑</category>
+      </categories>
+      <tags>
+        <tag>微信搞笑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【软件测试】win7下QTP11的安装</title>
+    <url>/2020/11/26/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/%E3%80%90%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E3%80%91win7%E4%B8%8BQTP11%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="安装篇"><a href="#安装篇" class="headerlink" title="安装篇"></a>安装篇</h1><div class="note orange far icon modern"><i class="note-icon fa-bell"></i><p><a href="https://pan.baidu.com/s/13uXSGJ_DbUmjibNtHb1_MA">点此</a>下载QTP安装包（提取码：ip5q）</p>
+</div>
+
+<p><strong>注意</strong>：1、qtp安装包不要存放在在中文路径下。</p>
+<p>2、提前关掉杀毒类软件。</p>
+<p>1.以<strong>管理员身份运行</strong>setup.exe 安装启动文件。</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/clip_image006.jpg" alt="img"></p>
+<p>2.点击第一行安装程序选项。</p>
+<p>3.注意：如果你的电脑缺少一些QTP必须的组件的话，在QTP正式安装前会要求你安装以下必须的程序，按照程序提示依次安装即可（可能需要重启电脑），如下图：</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/clip_image006.jpg" alt="IMG_257"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/clip_image006.jpg" alt="IMG_258"></p>
+<p>（其中的一个组件 .net framework,必须的。需要联网下载。）</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/clip_image006.jpg" alt="img"></p>
+<p>4.弹出的安装对话框选择否。然后执行安装，默认都点击下一步就行了，基本没有需要选择的项了。</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/clip_image006.jpg" alt="img"></p>
+<p>安装会持续几分钟，耐心等待即可。</p>
+<p>5.安装完成后，会弹出：</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/clip_image006.jpg" alt="img"></p>
+<p>点击运行</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/clip_image002.jpg" alt="img"></p>
+<p>这个安装可以先放这别管了，直接点击取消即可。</p>
+<p>完成后桌面生成，建议以管理员身份运行</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/clip_image002.jpg" alt="img"></p>
+<p><strong>双击图标会看到有**</strong>30**<strong>天试用期</strong></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-26/clip_image002.jpg" alt="img"></p>
+<h2 id="录制好的脚本回放时，会提示缺少脚本调试工具"><a href="#录制好的脚本回放时，会提示缺少脚本调试工具" class="headerlink" title="录制好的脚本回放时，会提示缺少脚本调试工具"></a>录制好的脚本回放时，会提示缺少脚本调试工具</h2><p><strong>以管理员身份运行scd10en.exe**</strong>安装微软脚本调试工具**</p>
+<p><strong>无此工具，脚本调试功能会失效</strong></p>
+<h1 id="恢复30天试用期"><a href="#恢复30天试用期" class="headerlink" title="恢复30天试用期"></a>恢复30天试用期</h1><p>1.去C:\ProgramData\SafeNet Sentinel 将 Sentinel RMS Development Kit文件夹更名或者删除。</p>
+<p>2.然后找到QTP11安装目录下bin子目录，如D:\program files\HP\QuickTest Professional\bin，</p>
+<p>以管理员身份执行?instdemo.exe</p>
+<p>完成后启动可以恢复到30天的试用期限。</p>
+]]></content>
+      <categories>
+        <category>课程</category>
+        <category>软件测试技术</category>
+        <category>软件测试实践</category>
+      </categories>
+      <tags>
+        <tag>QTP安装</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【UML作业】类图与对象图习题</title>
-    <url>/2020/11/26/%E3%80%90UML%E4%BD%9C%E4%B8%9A%E3%80%91%E7%B1%BB%E5%9B%BE%E4%B8%8E%E5%AF%B9%E8%B1%A1%E5%9B%BE%E4%B9%A0%E9%A2%98/</url>
+    <url>/2020/11/26/study/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/%E3%80%90UML%E4%BD%9C%E4%B8%9A%E3%80%91%E7%B1%BB%E5%9B%BE%E4%B8%8E%E5%AF%B9%E8%B1%A1%E5%9B%BE%E4%B9%A0%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201126191728.png" alt="image-20201126191728361"></p>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="">不会？点我看答案
+    </button><span class="hide-content"><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201126191845.png" alt="第一题"></p>
+</span></div>
+
+
+
+<h2 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201126192013.png" alt="第二题"></p>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="">看答案
+    </button><span class="hide-content"><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201126192057.png" alt="image-20201126192057560"></p>
+</span></div>]]></content>
+      <categories>
+        <category>课程</category>
+        <category>统一建模语言</category>
+      </categories>
+      <tags>
+        <tag>UML作业</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【UML作业】类图与对象图习题</title>
+    <url>/2020/11/26/%E8%AF%BE%E7%A8%8B/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/%E3%80%90UML%E4%BD%9C%E4%B8%9A%E3%80%91%E7%B1%BB%E5%9B%BE%E4%B8%8E%E5%AF%B9%E8%B1%A1%E5%9B%BE%E4%B9%A0%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201126191728.png" alt="image-20201126191728361"></p>
 <div class="hide-block"><button type="button" class="hide-button button--animated" style="">不会？点我看答案
     </button><span class="hide-content"><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201126191845.png" alt="第一题"></p>
@@ -243,7 +322,7 @@
   </entry>
   <entry>
     <title>HTML中关于class属性空格隔开多类名</title>
-    <url>/2020/11/22/study/web/HTML%E4%B8%AD%E5%85%B3%E4%BA%8Eclass%E5%B1%9E%E6%80%A7%E7%A9%BA%E6%A0%BC%E9%9A%94%E5%BC%80%E5%A4%9A%E7%B1%BB%E5%90%8D/</url>
+    <url>/2020/11/22/%E8%AF%BE%E7%A8%8B/web/HTML%E4%B8%AD%E5%85%B3%E4%BA%8Eclass%E5%B1%9E%E6%80%A7%E7%A9%BA%E6%A0%BC%E9%9A%94%E5%BC%80%E5%A4%9A%E7%B1%BB%E5%90%8D/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="class-quot-panel-bar-quot-的含义"><a href="#class-quot-panel-bar-quot-的含义" class="headerlink" title="class = &quot;panel bar&quot;的含义"></a><code>class = &quot;panel bar&quot;</code>的含义</h3><ul>
 <li>代表的是两个类名，分别是panel和bar。</li>
 <li>意义：侧重于 <strong>css的模块化设计</strong> ，可以减少css的重复代码，提高类的复用性。</li>
@@ -451,7 +530,7 @@
   </entry>
   <entry>
     <title>博客美化</title>
-    <url>/2020/11/20/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</url>
+    <url>/2020/11/20/Web/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="页脚"><a href="#页脚" class="headerlink" title="页脚"></a>页脚</h2><h3 id="添加跳动的❤"><a href="#添加跳动的❤" class="headerlink" title="添加跳动的❤"></a>添加跳动的❤</h3><p>在对应页脚HTML代码中添加上一下代码即可</p>
 <p><code>&lt;i style=&quot;color:#FF6A6A;animation: announ_animation 0.8s linear infinite;&quot; class=&quot;fa fa-heartbeat&quot;&gt;&lt;/i&gt;</code></p>
 <h3 id="页脚全透明"><a href="#页脚全透明" class="headerlink" title="页脚全透明"></a>页脚全透明</h3><p>在js文件中添加一下代码即可</p>
@@ -459,7 +538,8 @@
 
 ]]></content>
       <categories>
-        <category>博客创作</category>
+        <category>Web</category>
+        <category>博客</category>
       </categories>
       <tags>
         <tag>博客主题魔改</tag>
@@ -499,7 +579,8 @@
   <entry>
     <title>Echart数据可视化项目</title>
     <url>/2020/11/17/Echart%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="建立项目"><a href="#建立项目" class="headerlink" title="建立项目"></a>建立项目</h2><ul>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="CODIV-2019"><a href="#CODIV-2019" class="headerlink" title="CODIV-2019"></a>CODIV-2019</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201126194655.gif" alt="DEMO1"></p>
+<h2 id="建立项目"><a href="#建立项目" class="headerlink" title="建立项目"></a>建立项目</h2><ul>
 <li><p>建立<code>css</code> <code>scripts</code> <code>index.css</code> <code>readme.md</code> <code>index.html</code>文件夹或文件。 </p>
 <div class="hide-block"><button type="button" class="hide-button button--animated" style="">查看建好的文件结构截图
     </button><span class="hide-content"><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/image-20201117195024479.png" alt="image-20201117195024479"></p>
@@ -514,7 +595,7 @@
 <h3 id="安装lessc以供全局使用"><a href="#安装lessc以供全局使用" class="headerlink" title="安装lessc以供全局使用"></a>安装lessc以供全局使用</h3><p>以下命令用于使用npm(node package manager)安装lessc，以使less在全局可用。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;npm install less -g</span><br></pre></td></tr></table></figure>
 
-<p>您还可以在包名称后面添加特定版本。 例如: <strong>npm install <a href="mailto:&#108;&#101;&#115;&#x73;&#64;&#49;&#x2e;&#54;&#46;&#x32;">&#108;&#101;&#115;&#x73;&#64;&#49;&#x2e;&#54;&#46;&#x32;</a> -g</strong></p>
+<p>您还可以在包名称后面添加特定版本。 例如: <strong>npm install <a href="mailto:&#108;&#x65;&#115;&#115;&#x40;&#x31;&#46;&#54;&#46;&#x32;">&#108;&#x65;&#115;&#115;&#x40;&#x31;&#46;&#54;&#46;&#x32;</a> -g</strong></p>
 <h3 id="安装Lessc用于节点开发"><a href="#安装Lessc用于节点开发" class="headerlink" title="安装Lessc用于节点开发"></a>安装Lessc用于节点开发</h3><p>以下命令用于在项目文件夹中安装 <em>lessc</em> 最新版本。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;npm i less -save-dev</span><br></pre></td></tr></table></figure>
 
@@ -719,7 +800,7 @@
   </entry>
   <entry>
     <title>QTP笔记02</title>
-    <url>/2020/11/16/study/%E4%B8%AD%E5%85%AC%E6%95%99%E8%82%B2/QTP%E7%AC%94%E8%AE%B002/</url>
+    <url>/2020/11/16/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/QTP%E7%AC%94%E8%AE%B002/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>一、**</strong>Qtp**<strong>对象仓库</strong></p>
 <p><strong>1.**</strong>定义：用来存储**<strong>qtp**</strong>测试过程中所识别的对象**</p>
 <p><strong>在**</strong>qtp**<strong>的对象仓库中的属性必须和被测程序中的属性一致，否则运行的测试结果就会失败</strong></p>
@@ -890,16 +971,17 @@
 <p>注意：删除数据行，行点击右键\Edit\Delete</p>
 ]]></content>
       <categories>
+        <category>课程</category>
+        <category>软件测试技术</category>
         <category>软件测试实践</category>
       </categories>
       <tags>
         <tag>QTP</tag>
-        <tag>软件测试</tag>
       </tags>
   </entry>
   <entry>
     <title>QTP笔记01</title>
-    <url>/2020/11/16/study/%E4%B8%AD%E5%85%AC%E6%95%99%E8%82%B2/QTP%E7%AC%94%E8%AE%B001/</url>
+    <url>/2020/11/16/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/QTP%E7%AC%94%E8%AE%B001/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>一.前言</p>
 <p><strong>1.**</strong>为什么功能测试要使用自动化测试工具**</p>
 <p>（1）存在大量回归测试</p>
@@ -1028,11 +1110,12 @@
 <p><strong>注意：录制**</strong>/<strong>**回放前打开被测系统</strong></p>
 ]]></content>
       <categories>
+        <category>课程</category>
+        <category>软件测试技术</category>
         <category>软件测试实践</category>
       </categories>
       <tags>
         <tag>QTP</tag>
-        <tag>软件测试</tag>
       </tags>
   </entry>
   <entry>
@@ -1053,7 +1136,7 @@
   </entry>
   <entry>
     <title>QTP使用</title>
-    <url>/2020/11/14/study/%E4%B8%AD%E5%85%AC%E6%95%99%E8%82%B2/QTP%E4%BD%BF%E7%94%A8/</url>
+    <url>/2020/11/14/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/QTP%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="QTP使用指南"><a href="#QTP使用指南" class="headerlink" title="QTP使用指南"></a>QTP使用指南</h1><p><a href="https://pan.baidu.com/s/13uXSGJ_DbUmjibNtHb1_MA">点此</a>下载QTP安装包（提取码：ip5q）</p>
 <blockquote>
 <p><strong>如果遇到问题：</strong></p>
@@ -1075,6 +1158,14 @@
 <p>3.退出加法器</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>课程</category>
+        <category>软件测试技术</category>
+        <category>软件测试实践</category>
+      </categories>
+      <tags>
+        <tag>QTP</tag>
+      </tags>
   </entry>
   <entry>
     <title>Pages+hexo制作的静态博客如何收录到百度搜索引擎</title>
@@ -1114,7 +1205,7 @@
   </entry>
   <entry>
     <title>数据可视化</title>
-    <url>/2020/11/07/study/web/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
+    <url>/2020/11/07/%E8%AF%BE%E7%A8%8B/web/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note warning modern"><p>来自<a href="https://gitee.com/xiaoqiang001/eckarts_open_class.git">pink老师</a></p>
 </div>
 
@@ -1609,7 +1700,7 @@
   </entry>
   <entry>
     <title>二叉树C语言</title>
-    <url>/2020/11/05/study/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BA%8C%E5%8F%89%E6%A0%91C%E8%AF%AD%E8%A8%80/</url>
+    <url>/2020/11/05/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BA%8C%E5%8F%89%E6%A0%91C%E8%AF%AD%E8%A8%80/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>1、树的相关定义<br>（1）树：包含n（n&gt;0）个节点的有穷集合，其中每个元素称为节点（node）；有一个特定的节点被称为根节点或树根（root）；除根节点之外的其余数据元素被分为m（m≥0）个互不相交的结合T1，T2，……Tm-1，而其中每一个集合Ti（1&lt;=i&lt;=m）本身也是一棵树，被称作原树的子树（subtree）。</p>
 <p>（2）节点的度：一个节点含有的子树的个数称为该节点的度；</p>
 <p>（3）树的度：一棵树中，最大的节点的度称为树的度；</p>
@@ -1921,7 +2012,7 @@
   </entry>
   <entry>
     <title>讨论一下大数据、云计算与hadoop之间的关系关联</title>
-    <url>/2020/10/28/study/hadoop/%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A4%A7%E6%95%B0%E6%8D%AE%E3%80%81%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8Ehadoop%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%85%B3%E8%81%94/</url>
+    <url>/2020/10/28/%E8%AF%BE%E7%A8%8B/hadoop/%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A4%A7%E6%95%B0%E6%8D%AE%E3%80%81%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8Ehadoop%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E5%85%B3%E8%81%94/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h1><ul>
 <li>大数据，指的是所涉及的资料量规模巨大到 无法通过目前主流的软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业经营决策更积极目的的咨询。  </li>
 <li>大数据的三个特点—— 3Vs：  <br>- <strong>Volume</strong> （大量）数据量大，从TB级别跃升到PB级别<br>- <strong>Variety</strong>（多样）数据类型繁多  <ul>
@@ -1955,7 +2046,7 @@
   </entry>
   <entry>
     <title>ubuntu下的eclipse安装hadoop插件</title>
-    <url>/2020/10/28/study/hadoop/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/</url>
+    <url>/2020/10/28/%E8%AF%BE%E7%A8%8B/hadoop/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前提"><a href="#前提" class="headerlink" title="前提  "></a>前提  </h2><h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境  "></a>系统环境  </h3><ul>
 <li>已经安装了JDK，并配置好了系统变量 </li>
 <li>安装了Eclipse</li>
@@ -1995,7 +2086,7 @@
   </entry>
   <entry>
     <title>在ubuntu下安装hadoop插件</title>
-    <url>/2020/10/26/study/hadoop/001/</url>
+    <url>/2020/10/26/%E8%AF%BE%E7%A8%8B/hadoop/001/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
   </entry>
   <entry>
