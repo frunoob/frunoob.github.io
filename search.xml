@@ -10437,22 +10437,6 @@ D.要更加担当有为，携手维护世界和平安宁
       </tags>
   </entry>
   <entry>
-    <title>ubuntu下的eclipse安装hadoop插件</title>
-    <url>/2020/10/28/%E8%AF%BE%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E4%B8%8EHadoop%E5%BC%80%E5%8F%91/ubuntu%E4%B8%8B%E7%9A%84eclipse%E5%AE%89%E8%A3%85hadoop%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前提"><a href="#前提" class="headerlink" title="前提  "></a>前提  </h2><h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境  "></a>系统环境  </h3><ul>
-<li>已经安装了JDK，并配置好了系统变量 </li>
-<li>安装了Eclipse</li>
-</ul>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>未完待续。。。。。</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>hadoop插件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HEXO-ADMIN安装使用</title>
     <url>/2020/10/28/Web/%E5%8D%9A%E5%AE%A2/HEXO-ADMIN%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装-HEXO-ADMIN"><a href="#安装-HEXO-ADMIN" class="headerlink" title="安装 HEXO-ADMIN"></a>安装 HEXO-ADMIN</h2><p>切换到hexo目录<br><code>npm install --save hexo-admin</code>  </p>
