@@ -32,17 +32,69 @@
 </li>
 </ul>
 <h3 id="云计算的概念、特征。"><a href="#云计算的概念、特征。" class="headerlink" title="云计算的概念、特征。"></a>云计算的概念、特征。</h3><ul>
-<li>定义：云计算是一种模型，它向用户提供了一种<a href="https://www.baidu.com/s?wd=%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1YzPh7Bm1n1njwWn1T3mHIW0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnWcsn1bsnjT4nH0znWm3PWDsr0">随时地</a>、便捷地、随需应变地从可配置计算资源共享池中获取所需资源（例如，网络、服务器、存储、应用、及服务）的方式，资源能够快速供应并释放，使管理资源的工作量和服务提供商的交互减小到最低限度。</li>
-<li>特征：</li>
+<li><p>定义：云计算是一种模型，它向用户提供了一种<a href="https://www.baidu.com/s?wd=%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1YzPh7Bm1n1njwWn1T3mHIW0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnWcsn1bsnjT4nH0znWm3PWDsr0">随时地</a>、便捷地、随需应变地从可配置计算资源共享池中获取所需资源（例如，网络、服务器、存储、应用、及服务）的方式，资源能够快速供应并释放，使管理资源的工作量和服务提供商的交互减小到最低限度。</p>
+</li>
+<li><p>特征：<br>(1)虚拟化。云计算支持用户在任意位置、使用各种终端获取应用服务。</p>
+<p>(2)规模化整合。云里的资源非常庞大，在一个企业云可以有几十万甚至上百万台服务器，在一个小型的私有云中也可拥有几百台甚至上千台服务器。</p>
+<p>(3)高可靠性。云计算使用了多副本容错技术、计算节点同构可互换等措施来保障服务的高可靠性，使用云计算比使用本地计算机可靠。</p>
+<p>(4)高可扩展性。</p>
+<p>(5)按需服务。云计算是一个庞大的资源池，使用者可以根据需要来进行购买。</p>
+<p>(6)成本低。</p>
+</li>
 </ul>
-<h3 id="Iaas、SaaS、Pass介绍"><a href="#Iaas、SaaS、Pass介绍" class="headerlink" title="Iaas、SaaS、Pass介绍"></a>Iaas、SaaS、Pass介绍</h3><h3 id="虚拟化技术的概念、特征。"><a href="#虚拟化技术的概念、特征。" class="headerlink" title="虚拟化技术的概念、特征。"></a>虚拟化技术的概念、特征。</h3><h3 id="Hadoop的基本特征及优缺点"><a href="#Hadoop的基本特征及优缺点" class="headerlink" title="Hadoop的基本特征及优缺点"></a>Hadoop的基本特征及优缺点</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204020852.png" alt="image-20201204020852876"></p>
+<h3 id="Iaas、SaaS、Pass介绍"><a href="#Iaas、SaaS、Pass介绍" class="headerlink" title="Iaas、SaaS、Pass介绍"></a>Iaas、SaaS、Pass介绍</h3><p><i class="fas fa-question"><span>  </span></i>按照云计算服务三大服务模式:</p>
+<ol>
+<li><p>IaaS为门户系统提供网络资源、计算资源和存储资源服务，属于桌面云层面。</p>
+</li>
+<li><p>PaaS为门户系统提供高可用数据库集群服务和应用程序运行及维护所需要的平台资源。</p>
+</li>
+<li><p>SaaS提供基于SharePoint门户平台的门户集成应用服务。云计算服务SaaS软件平台博云网表示,云计算管理平台对不同的计算资源和服务统一管理，根据门户系统业务需求和访问量的变化，自动地对计算资源进行分配和调度，实现高度“弹性”的缩放和优化使用。</p>
+</li>
+</ol>
+<h3 id="虚拟化技术的概念、特征。"><a href="#虚拟化技术的概念、特征。" class="headerlink" title="虚拟化技术的概念、特征。"></a>虚拟化技术的概念、特征。</h3><ol>
+<li><p>概念：虚拟化技术是建立云计算架构的基础技术，它使云计算中心的计算资源和存储资源在逻辑结构上相互独立。虚拟化技术使用软件的方法重新定义划分了实体资源，将服务器、网络、I/O设备、内存及存储等多种计算机实体资源予以抽象、转换，并以虚拟资源池的形式呈现出来，打破了实体资源结构间不可切割的障碍，消除了实体资源的架设方式、地域或物理组态的限制，实现了虚拟资源的动态分配、灵活调度、跨域共享，不仅提高了资源利用率，同时可服务于各行各业中灵活多变的应用需求。</p>
+</li>
+<li><p>特征：虚拟化技术的分类可从三个角度进行分析：</p>
+<p>(1) 基于应用可划分为：<strong>操作系统虚拟化、应用程序虚拟化、桌面虚拟化、存储虚拟化、I/O设备虚拟化、网络虚拟化以及网络功能虚拟化等</strong>。其中，网络虚拟化是通过在物理网络中建立多个逻辑网络从而扩充网络的吞吐量，网络功能虚拟化是真正意义上的软件虚拟化，它解耦了云计算中单个虚拟机的某些网络功能系统，将网络功能集中化到某一特定设备上，在通过虚拟化技术提供给各个虚拟机该功能系统的接口。</p>
+<p>(2) 基于应用模式可分为：一对多，将一个服务器划分成多个虚拟服务器；多对一，整合多个虚拟服务器，形成一个资源池；多对多，上述两种方式相结合。</p>
+<p>(3) 基于硬件资源调用模式可分为：全虚拟化，虚拟操作系统与底层硬件完全隔离，由中间的Hypervisor层转化虚拟客户操作系统对底层硬件的调用代码，全虚拟化无需更改客户端操作系统，具有很好的兼容性，典型代表为VMare WorkStation；半虚拟化，在虚拟客户操作系统中加入特定的虚拟化指令，通过这些指令可以直接通过Hypervisor层调用硬件资源，消除了Hypervisor层转换指令的性能开销，典型代表为Microsoft Hyper-V以及Vmware的vSphere；硬件辅助虚拟化，在CPU中加入了新的指令集和处理器运行模式，完成虚拟操作系统对硬件资源的直接调用，典型代表为Intel VT和AMD-V。</p>
+</li>
+</ol>
+<h3 id="Hadoop的基本特征及优缺点"><a href="#Hadoop的基本特征及优缺点" class="headerlink" title="Hadoop的基本特征及优缺点"></a>Hadoop的基本特征及优缺点</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204020852.png" alt="image-20201204020852876"></p>
 <p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204020800.png" alt="image-20201204020759796"></p>
 <p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204020927.png" alt="image-20201204020927315"></p>
 <h3 id="Hadoop的运行模式"><a href="#Hadoop的运行模式" class="headerlink" title="Hadoop的运行模式"></a>Hadoop的运行模式</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204132240.png" alt="image-20201204132240100"></p>
 <h3 id="HDFS的概念及特征"><a href="#HDFS的概念及特征" class="headerlink" title="HDFS的概念及特征"></a>HDFS的概念及特征</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204131239.png" alt="image-20201204131239885"></p>
 <p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204131319.png" alt="image-20201204131319000"></p>
-<h3 id="HDFS的处理流程"><a href="#HDFS的处理流程" class="headerlink" title="HDFS的处理流程"></a>HDFS的处理流程</h3><h3 id="JobTracker、TaskTracker节点的工作原理及特征"><a href="#JobTracker、TaskTracker节点的工作原理及特征" class="headerlink" title="JobTracker、TaskTracker节点的工作原理及特征"></a>JobTracker、TaskTracker节点的工作原理及特征</h3><h3 id="DataNode、NameNode节点的工作原理及特征"><a href="#DataNode、NameNode节点的工作原理及特征" class="headerlink" title="DataNode、NameNode节点的工作原理及特征"></a>DataNode、NameNode节点的工作原理及特征</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204131917.png" alt="image-20201204131917737"></p>
+<h3 id="HDFS的处理流程"><a href="#HDFS的处理流程" class="headerlink" title="HDFS的处理流程"></a>HDFS的处理流程</h3><h3 id="JobTracker、TaskTracker节点的工作原理及特征"><a href="#JobTracker、TaskTracker节点的工作原理及特征" class="headerlink" title="JobTracker、TaskTracker节点的工作原理及特征"></a>JobTracker、TaskTracker节点的工作原理及特征</h3><ol>
+<li><p>Jobtracker接收到作业后，将其放在一个内部作业队列里，由作业调度器对其进行调度和初始化，初始化包括创建一个表示正在运行作业的对象，用来封装任务和记录信息（用于跟踪任务的状态和进度）。</p>
+<p>作业调度器依据调度算法调度到该作业时，为作业创建任务运行列表。它首先从文件系统中获取已经计算好的输入分片信息，然后为每个分片创建一个Map任务，另外，创建的Reduce任务数量由mapred.reduce.task属性决定。</p>
+</li>
+<li></li>
+</ol>
+<h3 id="DataNode、NameNode节点的工作原理及特征"><a href="#DataNode、NameNode节点的工作原理及特征" class="headerlink" title="DataNode、NameNode节点的工作原理及特征"></a>DataNode、NameNode节点的工作原理及特征</h3><ol>
+<li><p>工作原理<br><strong>2</strong>）NameNode</p>
+<p>NameNode是一个在<a href="http://baike.baidu.com/view/3061630.htm">HDFS</a>实例中单独机器上运行的<a href="http://baike.baidu.com/view/37.htm">软件</a>。它负责管理文件系统<a href="http://baike.baidu.com/view/94227.htm">名称空间</a>和控制外部客户机的访问。NameNode决定是否将文件映射到DataNode上的复制块上。对于最常见的3个复制块，第一个复制块存储在同一机架的不同节点上，最后一个复制块存储在不同机架的某个节点上。</p>
+<p>实际的I/O<a href="http://baike.baidu.com/view/121511.htm">事务</a>并不经过 NameNode，只有表示DataNode和块的文件映射的元数据经过NameNode。当外部客户机发送请求要求创建文件时，NameNode 会以块标识和该块的第一个副本的DataNode IP地址作为响应。同时NameNode还会通知其他将要接收该块的副本的DataNode。</p>
+<p>NameNode在一个称为FsImage的文件中存储所有关于文件系统<a href="http://baike.baidu.com/view/94227.htm">名称空间</a>的信息。这个文件和一个包含所有事务的<a href="http://baike.baidu.com/view/4043677.htm">记录文件</a>将存储在NameNode的本地文件系统上。FsImage和EditLog文件同样复制副本，以防文件损坏或NameNode系统丢失。</p>
+<p><strong>3</strong> <strong>DataNode</strong></p>
+<p>DataNode也是一个在<a href="http://baike.baidu.com/view/3061630.htm">HDFS</a>实例中单独机器上运行的软件。Hadoop 集群包含一个NameNode和大量DataNode。DataNode通常以机架的形式组织，机架通过一个<a href="http://baike.baidu.com/view/1077.htm">交换机</a>将所有系统连接起来。Hadoop 的一个假设是：机架内部<a href="http://baike.baidu.com/view/47398.htm">节点</a>之间的传输速度快于机架间节点的传输速度。</p>
+<p>DataNode响应来自HDFS客户机的读写请求，同时也来自NameNode 的创建、删除和复制块的命令。NameNode依赖来自每个DataNode的定期心跳（heartbeat）消息。每条消息都包含一个块报告，NameNode可以根据此报告验证块映射和其他文件系统元数据。如果DataNode无法发送心跳消息，NameNode将采取修复措施，重新复制在该节点上丢失的块。</p>
+</li>
+<li><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204135630.png" alt="image-20201204135629946"></p>
+</li>
+<li><p>概念</p>
+<ol>
+<li><p>（1）NameNode（仅一个），它在HDFS内部提供元数据服务。存储在 HDFS 中的文件被分成块，然后将这些块复制到多个计算机中（DataNode），块的大小（通常为 64MB）和复制的块数量在创建文件时由客户机决定。</p>
+<p>（2）DataNode，它为 HDFS 提供存储块。NameNode可以控制所有文件操作。</p>
+</li>
+<li></li>
+</ol>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204131917.png" alt="image-20201204131917737"></p>
+</li>
+</ol>
 <p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204131926.png" alt="image-20201204131926261"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204135002.png" alt="image-20201204135002291"></p>
 <h3 id="Host、Slave节点特征"><a href="#Host、Slave节点特征" class="headerlink" title="Host、Slave节点特征"></a>Host、Slave节点特征</h3><h3 id="MapReduce的优点和特征"><a href="#MapReduce的优点和特征" class="headerlink" title="MapReduce的优点和特征"></a>MapReduce的优点和特征</h3><h4 id="1-优点"><a href="#1-优点" class="headerlink" title="1 优点"></a>1 优点</h4><p>（1）对硬件低要求，MapReduce模型是面向由数千台中低端计算机组成的大规模集群而设计的，基于此优点MapReduce模型可以在现有的异构集群中很好的运行。</p>
 <p>（2）接口化，MapReduce模型通过简单的接口实现了大规模分布式计算的自动并行化，它屏蔽了需要大量并行代码去实现的容错、负载均衡和数据分布等复杂细节，程序员只需关注实际操作数据的Map函数和Reduce函数即可。</p>
 <p>（3）编程语言多样化，MapReduce模型支持Java、C、C++、Python、Shell、PHP、Ruby等多种开发语言，程序员可以选择所熟悉的语言编写Map函数和Reduce函数。</p>
@@ -54,7 +106,12 @@
 <p>（4）I/O代价较高，MapReduce模型的输入数据并不能贯穿整个MapReduce流程，在Map阶段结束后由内存写入本地存储，Reduce阶段的输入数据需要从本地存储读取。MapReduce模型采取的这种基于扫描的处理模式和对中间结果步步处理的执行策略，导致了较高的I/O代价[3]。</p>
 <p>（5）处理流程单一，在很多场景中，用户需要对数据进行复杂的操作。这些操作需要对多个MapReduce作业进行级联来完成。但是在作业级联的过程中会产生不必要的分布式文件系统读写以及Map阶段。因为每一个作业在完成之后会将结果输出到分布式文件系统，下一个作业开始的时候又需要从分布式文件系统中读出这些数据，这就造成了极大的资源浪费。</p>
 <h3 id="MapReduce的处理流程"><a href="#MapReduce的处理流程" class="headerlink" title="MapReduce的处理流程"></a>MapReduce的处理流程</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204021825.png" alt="image-20201204021825165"></p>
-<h3 id="shuffle-amp-sort的过程"><a href="#shuffle-amp-sort的过程" class="headerlink" title="shuffle &amp; sort的过程"></a>shuffle &amp; sort的过程</h3><h3 id="“心跳”的概念"><a href="#“心跳”的概念" class="headerlink" title="“心跳”的概念"></a>“心跳”的概念</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204131657.png" alt="image-20201204131657862"></p>
+<h3 id="shuffle-amp-sort的过程"><a href="#shuffle-amp-sort的过程" class="headerlink" title="shuffle &amp; sort的过程"></a>shuffle &amp; sort的过程</h3><p><strong>Shuffle &amp; Sort</strong>过程是MapReduce的核心，它确保每个Reducer的输入都按键排序，<strong>Shuffle &amp; Sort描述着数据从Map任务输出到Reduce 任务输入的这段过程</strong>。在MapReduce作业执行过程中，大部分Map任务与Reduce任务的执行是在不同的节点上，很多情况下Reduce执行时需要跨节点去读取其他节点上的Map任务结果。因此Shuffle &amp; Sort过程至关重要，<strong>它需要保证数据完整地从Map端传输到Reduce端，并且在跨节点读取数据时，尽可能地减少对带宽的不必要消耗，同时还要减少磁盘I/O对任务执行的影响。</strong></p>
+<p><br/>MapReduce模型的Shuffle&amp;Sort原理如图<i class = "fas fa-hand-point-down fa-2x"></i></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204142542.png" alt="image-20201204142542492"></p>
+<p>首先，将写入本地存储器的&lt;Key; Value&gt;对（由map任务输出）分为R个区（R的大小由用户定义），并且每个分区对应一个Reduce任务。然后，将这些中间&lt;Key; Value&gt;对的位置通报给master，master负责将信息转发到Reduce worker，当master通知分配了正在运行reduce任务的worker所负责的分区位置（每个map任务产生的中间&lt;Key; Value&gt;对都可能映射到所有R个不同分区）时，Reduce worker先读取它负责的所有中间&lt;Key; Value&gt;对，在对它们进行排序，然后使得相同键的&lt;Key; Value&gt;对聚集在一起。</p>
+<h3 id="“心跳”的概念"><a href="#“心跳”的概念" class="headerlink" title="“心跳”的概念"></a>“心跳”的概念</h3><p>Tasktracker利用循环定期向jobtracker发送“<strong>心跳（heartbeat）</strong>”，“心跳”告知jobtracker它是否还在运行，同时“<strong>心跳</strong>”还携带很多的信息，例如当前Map任务完成的进度信息。另外，<strong>tasktracker作为“心跳”的一部分</strong>，会指明它是否已经准备好运行新的任务，如果是，jobtracker会为它分配一个新的任务，并使用“心跳”的返回值与tasktracker进行通信，“<strong>心跳</strong>”<strong>充当了两者之间的消息通信</strong>。</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204131657.png" alt="image-20201204131657862"></p>
 <h3 id="HBase的特征"><a href="#HBase的特征" class="headerlink" title="HBase的特征"></a>HBase的特征</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204021656.png" alt="image-20201204021655987"></p>
 ]]></content>
       <categories>
@@ -8776,7 +8833,7 @@ D.要更加担当有为，携手维护世界和平安宁
   <entry>
     <title>软件测试复习知识点</title>
     <url>/2020/12/03/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%A4%8D%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h2><h3 id="软件缺陷的定义"><a href="#软件缺陷的定义" class="headerlink" title="软件缺陷的定义"></a>软件缺陷的定义</h3><p>满足一下五条中的一条即为软件缺陷：</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h2><h3 id="软件缺陷的定义"><a href="#软件缺陷的定义" class="headerlink" title="软件缺陷的定义"></a>软件缺陷的定义</h3><p>满足一下五条中的一条即为软件 缺陷：</p>
 <ol>
 <li>软件未达到 软件规格说明书中规定的功能。</li>
 <li>软件超出了软件规格说明书中指出的范围。</li>
