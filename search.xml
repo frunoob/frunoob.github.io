@@ -8915,7 +8915,17 @@ D.要更加担当有为，携手维护世界和平安宁
 <li><p><strong>测试投资回报率</strong>可按下式计算：<br>投资回报率 =<br>利润 / 测试投资×100%</p>
 </li>
 </ol>
-<h3 id="2-白盒"><a href="#2-白盒" class="headerlink" title="2.白盒"></a>2.白盒</h3><h4 id="1-逻辑覆盖"><a href="#1-逻辑覆盖" class="headerlink" title="1.逻辑覆盖"></a>1.逻辑覆盖</h4><h4 id="2-基本路径"><a href="#2-基本路径" class="headerlink" title="2.基本路径"></a>2.基本路径</h4><h3 id="3-黑盒"><a href="#3-黑盒" class="headerlink" title="3.黑盒"></a>3.黑盒</h3><h4 id="1-等价划分法"><a href="#1-等价划分法" class="headerlink" title="1.等价划分法"></a>1.等价划分法</h4><h4 id="2-因果图法"><a href="#2-因果图法" class="headerlink" title="2.因果图法"></a>2.因果图法</h4>]]></content>
+<h3 id="2-白盒"><a href="#2-白盒" class="headerlink" title="2.白盒"></a>2.白盒</h3><h4 id="1-逻辑覆盖"><a href="#1-逻辑覆盖" class="headerlink" title="1.逻辑覆盖"></a>1.逻辑覆盖</h4><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201205000119.png" alt="image-20201205000119563"></p>
+<h4 id="2-基本路径"><a href="#2-基本路径" class="headerlink" title="2.基本路径"></a>2.基本路径</h4><ol>
+<li>以详细设计或源代码作为基础，导出程序控制流图<br><strong>控制流图：</strong>由<strong>结点</strong>和<strong>控制流线</strong>（<strong>弧</strong>）两种图形 符号组成。</li>
+<li>计算程序控制流图的环路复杂度<ol>
+<li>环路复杂度为控制流图中的区域数。</li>
+<li>设定E为控制流图的边数，N为图的结点数，定义环路复杂度为<span style="color:red;"><em>V(G)=E-N+2</em></span>。</li>
+<li>设P为控制流图中的判定结点数，则有<strong>V(G)=P+1</strong>。</li>
+</ol>
+</li>
+</ol>
+<h3 id="3-黑盒"><a href="#3-黑盒" class="headerlink" title="3.黑盒"></a>3.黑盒</h3><h4 id="1-等价划分法"><a href="#1-等价划分法" class="headerlink" title="1.等价划分法"></a>1.等价划分法</h4><h4 id="2-因果图法"><a href="#2-因果图法" class="headerlink" title="2.因果图法"></a>2.因果图法</h4>]]></content>
       <categories>
         <category>课程</category>
         <category>软件测试技术</category>
