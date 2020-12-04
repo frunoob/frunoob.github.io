@@ -8924,6 +8924,7 @@ D.要更加担当有为，携手维护世界和平安宁
 <li>设P为控制流图中的判定结点数，则有<strong>V(G)=P+1</strong>。</li>
 </ol>
 </li>
+<li>确定独立路径集合<br><strong>独立路径</strong>是指和其他路径相比，至少引进一个新的处理语句集合或一个新判断条件的程序通道，即独立路径必须至少包含一条在定义之前不曾使用的边。如果只是已有路径的简单合并，并未包含任何新边，则不是独立路径。<br>独立路径<strong>集合中的每一条路径都是唯一</strong>的，但是<strong>独立路径集合不是唯一</strong>的，可以有多组不同的独立路径集合</li>
 </ol>
 <h3 id="3-黑盒"><a href="#3-黑盒" class="headerlink" title="3.黑盒"></a>3.黑盒</h3><h4 id="1-等价划分法"><a href="#1-等价划分法" class="headerlink" title="1.等价划分法"></a>1.等价划分法</h4><h4 id="2-因果图法"><a href="#2-因果图法" class="headerlink" title="2.因果图法"></a>2.因果图法</h4>]]></content>
       <categories>
