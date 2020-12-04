@@ -8842,7 +8842,37 @@ D.要更加担当有为，携手维护世界和平安宁
 <li>软件测试人员认为软件难于理解，不宜使用，运行速度慢，或最终用户认为软件使用效果不好。</li>
 </ol>
 <h3 id="软件质量3个部分"><a href="#软件质量3个部分" class="headerlink" title="软件质量3个部分"></a>软件质量3个部分</h3><p>(内部，外部，使用)质量</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="大题"><a href="#大题" class="headerlink" title="大题"></a>大题</h2>]]></content>
+<h3 id="测试用例设计原则"><a href="#测试用例设计原则" class="headerlink" title="测试用例设计原则"></a>测试用例设计原则</h3><ol>
+<li>基于<strong>测试需求</strong>的原则</li>
+<li>用成熟的<strong>测试用例设计方法</strong>来指导设计</li>
+<li>兼顾测试<strong>充分性</strong>和<strong>效率</strong>的原则</li>
+<li>测试执行的<strong>可再现性</strong>原则</li>
+<li>足够<strong>详细</strong>、<strong>准确</strong>、<strong>清晰</strong>的步骤</li>
+</ol>
+<h3 id="静态白盒测试和动态白盒测试的区别和联系"><a href="#静态白盒测试和动态白盒测试的区别和联系" class="headerlink" title="静态白盒测试和动态白盒测试的区别和联系"></a>静态白盒测试和动态白盒测试的区别和联系</h3><ul>
+<li>区别：<ol>
+<li>静态测试又称<strong>结构分析</strong>，在不执行软件的条件下，有条理地仔细审查软件设计<strong>软件设计</strong>，<strong>体系结构</strong>和<strong>代码</strong>，从而找出软件缺陷的过程。</li>
+<li>动态测试又称<strong>结构化测试</strong>，是在使用或运行软件的条件下，软件测试员查看<strong>代码内部结构</strong>和<strong>实现方式</strong>来设计和执行测试。</li>
+</ol>
+</li>
+</ul>
+<h2 id="大题"><a href="#大题" class="headerlink" title="大题"></a>大题</h2><ol>
+<li><p><strong>质量成本要素</strong><br>质量成本要素主要包括一致性成本和非一致性成本。<strong>一致性成本</strong>是指用于保证软件质量的支出，包括预防成本和测试预算，如测试计划、测试开发、测试实施费用。<strong>非一致性成本</strong>是由出现的软件错误和测试过程故障（如延期、劣质的发布）引起的。这些问题会导致返工、补测、延迟。追加测试时间和资金就是一种由于内部故障引起的非一致性成本。非一致性成本还包括外部故障（软件遗留错误影响客户）引起部分。一般情况下，外部故障非一致性成本要大于一致性成本与内部故障非一致性成本之和。</p>
+</li>
+<li><p><strong>质量成本计算</strong><br>质量成本一般按下式计算：<br><strong>质量成本 = 一致性成本 + 非一致性成本</strong></p>
+</li>
+<li><p><strong>缺陷探测率</strong><br>缺陷探测率是另一个衡量测试工作效率的软件质量成本的指标。<br>缺陷探测率=测试发现的软件缺陷数/<br>(测试发现的软件缺陷数+客户发现并反馈技术支持人员进行修复的软件缺陷数)</p>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="">例子
+    </button><span class="hide-content"><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204205827.png" alt="image-20201204205644562"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204205949.png" alt="image-20201204205949650"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204213534.png" alt="image-20201204213534359"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204214450.png" alt="image-20201204214450132"></p>
+</span></div>
+</li>
+<li><p><strong>测试投资回报率</strong>可按下式计算：<br>投资回报率 =<br>利润 / 测试投资×100%</p>
+</li>
+</ol>
+]]></content>
       <categories>
         <category>课程</category>
         <category>软件测试技术</category>
@@ -9377,7 +9407,7 @@ D.要更加担当有为，携手维护世界和平安宁
 </tr>
 </tbody></table>
 <hr>
-<h2 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h2><p>所谓特殊字符，就是一些有特殊含义的字符，如上面说的 <strong>runoo*b</strong> 中的 <strong><strong>*，简单的说就是表示任何字符串的意思。如果要查找字符串中的 *</strong></strong> 符号，则需要对 <strong>*** 进行转义，即在其前加一个 <strong>\</strong>: *<em>runo\</em>ob</strong> 匹配 runo*ob。</p>
+<h2 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h2><p>所谓特殊字符，就是一些有特殊含义的字符，如上面说的 <code>runoo\*b</code> 中的 <code>*</code>，简单的说就是表示任何字符串的意思。如果要查找字符串中的 <code>*</code> 符号，则需要对 <code>*</code> 进行转义，即在其前加一个 <code>\</code>:  <code>runo\*ob</code> 匹配 <code>runo*ob</code>。</p>
 <p>许多元字符要求在试图匹配它们时特别对待。若要匹配这些特殊字符，必须首先使字符”转义”，即，将反斜杠字符<strong>\</strong> 放在它们前面。下表列出了正则表达式中的特殊字符：</p>
 <table>
 <thead>
@@ -9432,7 +9462,7 @@ D.要更加担当有为，携手维护世界和平安宁
 </tr>
 </tbody></table>
 <hr>
-<h2 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h2><p>限定符用来指定正则表达式的一个给定组件必须要出现多少次才能满足匹配。有 *<strong>** 或 **+</strong> 或 <strong>?</strong> 或 <strong>{n}</strong> 或 <strong>{n,}</strong> 或 <strong>{n,m}</strong> 共6种。</p>
+<h2 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h2><p>限定符用来指定正则表达式的一个给定组件必须要出现多少次才能满足匹配。有 *<em>/**</em> 或 <strong>+</strong> 或 <strong>?</strong> 或 <strong>{n}</strong> 或 <strong>{n,}</strong> 或 <strong>{n,m}</strong> 共6种。</p>
 <p>正则表达式的限定符有：</p>
 <table>
 <thead>
