@@ -8834,6 +8834,10 @@ D.要更加担当有为，携手维护世界和平安宁
     <title>软件测试复习知识点</title>
     <url>/2020/12/03/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%A4%8D%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="选择、填空"><a href="#选择、填空" class="headerlink" title="选择、填空"></a>选择、填空</h2><h3 id="1-软件测试的目的"><a href="#1-软件测试的目的" class="headerlink" title="1.软件测试的目的"></a>1.软件测试的目的</h3><p>软件测试的目的是为了发现程序中的<strong>错误</strong>而执行程序过程。</p>
+<ul>
+<li>从用户角度来看：软件测试是为了发现错误而执行程序的过程。</li>
+<li>从开发者角度来看：软件测试是表明软件产品中不存在错误的过程。</li>
+</ul>
 <h3 id="2-软件质量三个部分"><a href="#2-软件质量三个部分" class="headerlink" title="2.软件质量三个部分"></a>2.软件质量三个部分</h3><ul>
 <li>内部 质量</li>
 <li>外部质量</li>
