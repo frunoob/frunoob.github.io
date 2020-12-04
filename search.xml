@@ -8863,7 +8863,8 @@ D.要更加担当有为，携手维护世界和平安宁
 </ul>
 </li>
 </ol>
-<h2 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h2><h3 id="1-软件缺陷的定义"><a href="#1-软件缺陷的定义" class="headerlink" title="1.软件缺陷的定义"></a>1.软件缺陷的定义</h3><p>满足一下五条中的一条即为软件 缺陷：</p>
+<h2 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h2><h3 id="1-软件缺陷的定义"><a href="#1-软件缺陷的定义" class="headerlink" title="1.软件缺陷的定义"></a>1.软件缺陷的定义</h3><p><strong>标准定义：</strong>即从<strong>产品内部</strong>看缺陷是软件产品<strong>开发或维护</strong>过程中存在的错误、毛病等各种问题；从 <strong>产品外部</strong>看，缺陷是系统所需要实现的某种功能的失效或违背。</p>
+<p>满足一下五条中的一条即为软件 缺陷：</p>
 <ol>
 <li>软件未达到 软件规格说明书中规定的功能。</li>
 <li>软件超出了软件规格说明书中指出的范围。</li>
