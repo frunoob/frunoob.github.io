@@ -213,8 +213,8 @@ function loadGitalk () {
   function initGitalk () {
     var gitalk = new Gitalk({
       clientID: '179d452b40dddbbf3a11',
-      clientSecret: '9ed326133cd12bea3f8d3319437eec45d1eacf68',
-      repo: 'Comment',
+      clientSecret: '9727ccbb5b9d7af50ba917cf1edb02637c891ae3',
+      repo: 'frunoob/frunoob.github.io',
       owner: 'frunoob',
       admin: ['frunoob'],
       id: '66b00e008993651c8d31021a19c01fe3',
@@ -222,7 +222,7 @@ function loadGitalk () {
       perPage: 10,
       distractionFreeMode: false,
       pagerDirection: 'last',
-      createIssueManually: false,
+      createIssueManually: true,
       updateCountCallback: commentCount
     })
     gitalk.render('gitalk-container')
