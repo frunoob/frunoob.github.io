@@ -1284,8 +1284,8 @@ canvas:not(#ribbon-canvas),
 [data-theme='light'] {
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: rgba(128,128,128,0);
-  --hr-before-color: rgba(77,77,77,0);
+  --hr-border: rgba(156,195,245,0.949);
+  --hr-before-color: rgba(116,172,241,0.949);
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
@@ -1300,8 +1300,8 @@ canvas:not(#ribbon-canvas),
   --sidebar-bg: #f6f8fa;
   --btn-hover-color: #ff7242;
   --btn-color: #fff;
-  --btn-bg: rgba(0,0,0,0);
-  --text-bg-hover: rgba(0,0,0,0);
+  --btn-bg: rgba(57,136,235,0.949);
+  --text-bg-hover: rgba(57,136,235,0.949);
   --light-grey: #eee;
   --white: #fff;
   --text-highlight-color: #1f2d3d;
@@ -1422,7 +1422,7 @@ a {
   overflow-wrap: break-word;
 }
 a:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 .is-center {
   text-align: center;
@@ -1766,7 +1766,7 @@ blockquote footer cite:before {
   transition: color 0.2s;
 }
 #article-container .highlight-tools .copy-button:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 #article-container .gutter {
   -webkit-user-select: none;
@@ -1825,7 +1825,7 @@ blockquote footer cite:before {
 .article-sort {
   margin-left: 0.5rem;
   padding-left: 1rem;
-  border-left: 2px solid rgba(51,51,51,0);
+  border-left: 2px solid rgba(150,192,244,0.949);
 }
 .article-sort-title {
   position: relative;
@@ -1844,7 +1844,7 @@ blockquote footer cite:before {
   z-index: 1;
   width: 0.5rem;
   height: 0.5rem;
-  border: 0.25rem solid rgba(0,0,0,0);
+  border: 0.25rem solid rgba(57,136,235,0.949);
   border-radius: 0.5rem;
   background: var(--card-bg);
   content: '';
@@ -1862,7 +1862,7 @@ blockquote footer cite:before {
   z-index: 0;
   width: 0.1rem;
   height: 1.5em;
-  background: rgba(51,51,51,0);
+  background: rgba(150,192,244,0.949);
   content: '';
 }
 .article-sort-item {
@@ -1894,7 +1894,7 @@ blockquote footer cite:before {
   left: calc(-1rem - 17px);
   width: 0.3rem;
   height: 0.3rem;
-  border: 0.15rem solid rgba(0,0,0,0);
+  border: 0.15rem solid rgba(57,136,235,0.949);
   border-radius: 0.3rem;
   background: var(--card-bg);
   content: '';
@@ -1914,7 +1914,7 @@ blockquote footer cite:before {
   font-size: 1.43em;
 }
 .article-sort-item.year:hover:before {
-  border-color: rgba(0,0,0,0);
+  border-color: rgba(57,136,235,0.949);
 }
 .article-sort-item.year:before {
   border-color: #ff7242;
@@ -1938,7 +1938,7 @@ blockquote footer cite:before {
   -webkit-line-clamp: 2;
 }
 .article-sort-item-title:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
   -webkit-transform: translateX(10px);
   -moz-transform: translateX(10px);
   -o-transform: translateX(10px);
@@ -1997,7 +1997,7 @@ blockquote footer cite:before {
   color: var(--font-color);
 }
 #page .category-lists .category-list a:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 #page .category-lists .category-list .category-list-count {
   margin-left: 0.4rem;
@@ -2035,7 +2035,7 @@ blockquote footer cite:before {
   top: 0.7em;
   width: 0.43em;
   height: 0.43em;
-  border: 0.215em solid rgba(0,0,0,0);
+  border: 0.215em solid rgba(57,136,235,0.949);
   border-radius: 0.43em;
   background: transparent;
   content: '';
@@ -2323,7 +2323,7 @@ blockquote footer cite:before {
   -webkit-line-clamp: 2;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
   color: #858585;
@@ -2354,7 +2354,7 @@ blockquote footer cite:before {
   color: #858585;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
   text-decoration: underline;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .content {
@@ -2412,7 +2412,7 @@ blockquote footer cite:before {
   transition: all 0.3s;
 }
 .tag-cloud-list a:hover {
-  color: rgba(0,0,0,0) !important;
+  color: rgba(57,136,235,0.949) !important;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -2501,7 +2501,7 @@ blockquote footer cite:before {
   height: 100%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(57,136,235,0.949);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2706,7 +2706,7 @@ blockquote footer cite:before {
   padding: 0 0.1rem;
 }
 #aside_content .card-tag-cloud a:hover {
-  color: rgba(0,0,0,0) !important;
+  color: rgba(57,136,235,0.949) !important;
 }
 #aside_content .aside-list > span {
   display: block;
@@ -2788,7 +2788,7 @@ blockquote footer cite:before {
 }
 #aside_content .aside-list > .aside-list-item .content > .title:hover,
 #aside_content .aside-list > .aside-list-item .content > .comment:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 #aside_content .aside-list > .aside-list-item.no-cover {
   min-height: 4.4em;
@@ -3127,7 +3127,7 @@ blockquote footer cite:before {
   background: #f6f8fa;
 }
 #post-comment .comment-head #comment-switch .first-comment {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 #post-comment .comment-head #comment-switch .second-comment {
   color: #ff7242;
@@ -3139,7 +3139,7 @@ blockquote footer cite:before {
   width: 42px;
   height: 22px;
   border-radius: 34px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(57,136,235,0.949);
   vertical-align: middle;
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -3404,7 +3404,7 @@ blockquote footer cite:before {
   transition: all 0.3s ease-out;
 }
 #post-info #post-meta a:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
   text-decoration: underline;
 }
 #post > #post-info {
@@ -3517,7 +3517,7 @@ _:future,
 #nav.fixed a:hover,
 #nav.fixed #site-name:hover,
 #nav.fixed #toggle-menu:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 #nav.visible {
   -webkit-transition: all 0.5s;
@@ -3569,7 +3569,7 @@ _:future,
   z-index: -1;
   width: 0;
   height: 3px;
-  background-color: rgba(77,77,77,0);
+  background-color: rgba(116,172,241,0.949);
   content: '';
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -3744,7 +3744,7 @@ _:future,
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -3793,7 +3793,7 @@ _:future,
 #article-container h4:hover:before,
 #article-container h5:hover:before,
 #article-container h6:hover:before {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 #article-container h1 {
   padding-left: 1.4rem;
@@ -3922,7 +3922,7 @@ _:future,
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0);
+  background: rgba(57,136,235,0.949);
   color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
@@ -3955,7 +3955,7 @@ _:future,
   top: 0.78em;
   width: 0.42em;
   height: 0.42em;
-  border: 0.21em solid rgba(0,0,0,0);
+  border: 0.21em solid rgba(57,136,235,0.949);
   border-radius: 0.42em;
   background: transparent;
   content: '';
@@ -3972,9 +3972,9 @@ _:future,
   margin: 0.4rem 0.4rem 0.4rem 0;
   padding: 0 0.6rem;
   width: fit-content;
-  border: 1px solid rgba(0,0,0,0);
+  border: 1px solid rgba(57,136,235,0.949);
   border-radius: 0.6rem;
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
   font-size: 0.85em;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3983,7 +3983,7 @@ _:future,
   transition: all 0.2s ease-in-out;
 }
 #post .tag_share .post-meta__tags:hover {
-  background: rgba(0,0,0,0);
+  background: rgba(57,136,235,0.949);
   color: var(--white);
 }
 #post .tag_share .post_share {
@@ -4020,7 +4020,7 @@ _:future,
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 0.8rem;
-  background: rgba(0,0,0,0);
+  background: rgba(57,136,235,0.949);
   content: '';
 }
 #post .post-copyright:after {
@@ -4038,7 +4038,7 @@ _:future,
   box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
 }
 #post .post-copyright .post-copyright-meta {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
   font-weight: bold;
 }
 #post .post-copyright .post-copyright-info {
@@ -4381,7 +4381,7 @@ _:future,
   width: 75%;
 }
 #sidebar #sidebar-menus .menus_items .site-page span:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 #sidebar #sidebar-menus .menus_items .expand {
   position: absolute;
@@ -4809,7 +4809,7 @@ blockquote.pullquote.right {
 .hide-block > .hide-button {
   display: inline-block;
   padding: 0.3rem 1rem;
-  background: rgba(0,0,0,0);
+  background: rgba(57,136,235,0.949);
   color: var(--white);
 }
 .hide-inline > .hide-button.open,
@@ -5241,7 +5241,7 @@ blockquote.pullquote.right {
   width: 1.5em;
 }
 #article-container .tabs > .nav-tabs > .tab.active button {
-  border-top: 2px solid rgba(0,0,0,0);
+  border-top: 2px solid rgba(57,136,235,0.949);
   background: var(--tab-button-active-bg);
   cursor: default;
 }
@@ -5715,11 +5715,11 @@ blockquote.pullquote.right {
   transition: color 0.2s ease-in-out;
 }
 .search-dialog span.search-close-button:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 .search-dialog__title {
   padding: 0 0 0.7rem;
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
   font-size: 1.4em;
   line-height: 1;
 }
@@ -5749,7 +5749,7 @@ blockquote.pullquote.right {
   padding: 0.25rem 0.7rem;
   width: 100%;
   outline: none;
-  border: 2px solid rgba(0,0,0,0);
+  border: 2px solid rgba(57,136,235,0.949);
   border-radius: 2rem;
   background: var(--search-bg);
   color: var(--search-input-color);
@@ -5769,7 +5769,7 @@ blockquote.pullquote.right {
   left: 0;
   width: 0.5em;
   height: 0.5em;
-  border: 0.15rem solid rgba(0,0,0,0);
+  border: 0.15rem solid rgba(57,136,235,0.949);
   border-radius: 0.5em;
   background: transparent;
   content: '';
@@ -5787,7 +5787,7 @@ blockquote.pullquote.right {
   cursor: pointer;
 }
 #local-search .search-dialog .local-search__hit-item a:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(57,136,235,0.949);
 }
 #local-search .search-dialog .local-search__hit-item .search-result {
   margin: 0 0 0.4rem;
