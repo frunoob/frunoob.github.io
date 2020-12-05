@@ -8896,15 +8896,17 @@ D.要更加担当有为，携手维护世界和平安宁
   <entry>
     <title>软件测试复习知识点</title>
     <url>/2020/12/03/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%A4%8D%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="选择、填空"><a href="#选择、填空" class="headerlink" title="选择、填空"></a>选择、填空</h2><h3 id="1-软件测试的定义和目的"><a href="#1-软件测试的定义和目的" class="headerlink" title="1.软件测试的定义和目的"></a>1.软件测试的定义和目的</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">定义和目的
-    </button><span class="hide-content"><p>答：使用人工或自动手段来运行或测定某个系统的过程，其目的在于检验它是否满足规定的需求，或是弄清预期结果与实际结果之间的差别。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="选择、填空"><a href="#选择、填空" class="headerlink" title="选择、填空"></a>选择、填空</h2><h3 id="1-软件测试的定义和目标"><a href="#1-软件测试的定义和目标" class="headerlink" title="1.软件测试的定义和目标"></a>1.软件测试的定义和目标</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">定义和目标
+    </button><span class="hide-content"><p>答：使用人工或自动手段来运行或测定某个系统的过程，其目的在于检验它是否满足规定的需求，或是弄清预期结果与实际结果之间的差别。（课本P16）</p>
 </span></div>
 
-<div class="hide-block"><button type="button" class="hide-button button--animated" style="">非标准答案
-    </button><span class="hide-content"><p>软件测试的目的是为了发现程序中的<strong>错误</strong>而执行程序过程。</p>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="">软件测试的目的
+    </button><span class="hide-content"><p>软件测试的目的就是为了发现尽可能多的软件缺陷，并期望通过改错来清除缺陷 （课本P6）</p>
 <ul>
-<li>从用户角度来看：软件测试是为了发现错误而执行程序的过程。</li>
-<li>从开发者角度来看：软件测试是表明软件产品中不存在错误的过程。</li>
+<li><p>从用户角度来看：软件测试的目的是为了发现<strong>错误</strong>而执行程序的过程。（课本P18）</p>
+</li>
+<li><p>从开发者角度来看：软件测试是表明软件产品中不存在错误的过程。（课本P18）</p>
+</li>
 </ul>
 </span></div>
 
@@ -9019,7 +9021,16 @@ D.要更加担当有为，携手维护世界和平安宁
 </li>
 <li>确定独立路径集合<br><strong>独立路径</strong>是指和其他路径相比，至少引进一个新的处理语句集合或一个新判断条件的程序通道，即独立路径必须至少包含一条在定义之前不曾使用的边。如果只是已有路径的简单合并，并未包含任何新边，则不是独立路径。<br>独立路径<strong>集合中的每一条路径都是唯一</strong>的，但是<strong>独立路径集合不是唯一</strong>的，可以有多组不同的独立路径集合</li>
 </ol>
-<h3 id="3-黑盒"><a href="#3-黑盒" class="headerlink" title="3.黑盒"></a>3.黑盒</h3><h4 id="1-等价划分法"><a href="#1-等价划分法" class="headerlink" title="1.等价划分法"></a>1.等价划分法</h4><h4 id="2-因果图法"><a href="#2-因果图法" class="headerlink" title="2.因果图法"></a>2.因果图法</h4>]]></content>
+<h3 id="3-黑盒"><a href="#3-黑盒" class="headerlink" title="3.黑盒"></a>3.黑盒</h3><h4 id="1-等价划分法"><a href="#1-等价划分法" class="headerlink" title="1.等价划分法"></a>1.等价划分法</h4><h4 id="2-因果图法"><a href="#2-因果图法" class="headerlink" title="2.因果图法"></a>2.因果图法</h4><h2 id="习题练练手"><a href="#习题练练手" class="headerlink" title="习题练练手"></a>习题练练手</h2><ol>
+<li><p>在软件测试中，下面说法中错误的是（<span class="hide-inline"><button type="button" class="hide-button button--animated" style="background-color: #00000008;color: black">点我看答案
+  </button><span class="hide-content">B</span></span>）<br>A. 测试是为了发现程序中的错误而执行程序的过程。<br>B. 测试是为了证明程序是正确的。<br>C. 好的测试方案是极可能发现迄今为止尚未发现的错误的方案。<br>D. 成功的测试方案是发现了至今为止尚未发现的错误的测试。  </p>
+<span class="hide-inline"><button type="button" class="hide-button button--animated" style="">答案解析
+  </button><span class="hide-content">B.测试是为了证明程序有错而不是证明程序无错</span></span>
+</li>
+<li><p>黑盒测试</p>
+</li>
+</ol>
+]]></content>
       <categories>
         <category>课程</category>
         <category>软件测试技术</category>
