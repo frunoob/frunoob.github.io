@@ -1,0 +1,127 @@
+/* 鼠标图标 */
+body {
+    background: rgba(255, 255, 255, .5);
+    cursor: url(https://gitee.com/frunoob/blog-image/raw/master/image/20201121010542.png), auto;
+    margin: 0;
+}
+a:hover{
+    text-decoration: none;
+    cursor: url(https://gitee.com/frunoob/blog-image/raw/master/image/20201121010555.png), auto;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, 0.2);
+    border-radius: 2em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #49f557b9;
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.4) 75%,
+      transparent 75%,
+      transparent
+    );
+    border-radius: 2em;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  
+  ::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+  }
+
+  /* // 设置首页页码颜色 */
+
+a.page-number{
+    color: white;
+    background-color: rgba(24, 221, 41, 0.43);
+}
+a.extend.next{
+  color:white;
+}
+span.space{
+  color:crimson;
+  font-size: larger;
+
+}
+/* 主页 love fontaseme */
+i.fa-fw.fas.fa-heart.fa-lg{
+  color:#FF6A6A;animation: announ_animation 0.8s linear infinite;
+}
+
+
+[data-theme='light'] {
+  --search-bg: #ffffffa8;
+  --tab-border-color: #62626275;
+  --tab-botton-bg: #ffffff47;
+  --tab-botton-color: #000000;
+  --tab-button-hover-bg: #dcdcdcb0;
+  --tab-button-active-bg: #827f7f6e;
+  --card-bg: rgba(226, 226, 226, 0.9);
+  --btn-hover-color: #56f15591;
+  --btn-color: #000;
+  --btn-bg: #7b7b7cc7;
+  --text-bg-hover: #49f56ea1;
+}
+[data-theme='dark'] {
+  --global-bg: #0d0d0d;
+  --font-color: rgba(255,255,255,0.7);
+  --hr-border: rgba(255,255,255,0.4);
+  --hr-before-color: rgba(255,255,255,0.7);
+  --search-bg: #121212;
+  --search-input-color: rgba(255,255,255,0.7);
+  --search-result-title: rgba(255,255,255,0.9);
+  --preloader-bg: #0d0d0d;
+  --preloader-color: rgba(255,255,255,0.7);
+  --tab-border-color: #2c2c2c;
+  --tab-botton-bg: #2c2c2c;
+  --tab-botton-color: rgba(255,255,255,0.7);
+  --tab-button-hover-bg: #383838;
+  --tab-button-active-bg: #121212;
+  --card-bg: #1212127d;
+  --sidebar-bg: #121212;
+  --btn-hover-color: #4bb952a3;
+  --btn-color: rgb(172 229 251 / 98%);
+}
+#page-header.post-bg{
+  opacity: 0.75;
+}
+#page-header.not-index-bg{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* 声明字体*/
+@font-face {
+  font-family: MilkyNice;
+  src: url(https://cdn.jsdelivr.net/gh/frunoob/Library@master/font/MilkyNice.otf);
+}
+@font-face {
+  font-family: xiaokai;
+  src: url(https://cdn.jsdelivr.net/gh/frunoob/Library@master/font/xiaokai.ttf);
+}
+
+#yearsToNow{
+  font-family: xiaokai;
+}
+#daysToNow{
+  font-family: xiaokai;
+  font-size: larger;
+  /* background-color: rgba(0, 0, 0, 0.349);
+
+  font-size: 200%; */
+  /* letter-spacing: -5%; */
+}
