@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>统一建模语言UML复习知识点</title>
+    <url>/2020/12/05/%E8%AF%BE%E7%A8%8B/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML%E5%A4%8D%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="1-UML的两个主要组成部分："><a href="#1-UML的两个主要组成部分：" class="headerlink" title="1.UML的两个主要组成部分："></a>1.UML的两个主要组成部分：</h4><span class="hide-inline"><button type="button" class="hide-button button--animated" style="background-color:  black;color:  white">查看答案
+  </button><span class="hide-content">答案：语义和表示方法 </span></span>
+
+<h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4>]]></content>
+      <categories>
+        <category>课程</category>
+        <category>统一建模语言</category>
+      </categories>
+      <tags>
+        <tag>大三下复习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>云计算技术与Hadoop开发大纲</title>
     <url>/2020/12/03/%E8%AF%BE%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E4%B8%8EHadoop%E5%BC%80%E5%8F%91/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E4%B8%8EHadoop%E5%BC%80%E5%8F%91%E5%A4%A7%E7%BA%B2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="大数据的概念和特征"><a href="#大数据的概念和特征" class="headerlink" title="大数据的概念和特征"></a>大数据的概念和特征</h3><p>在早期，大数据被定义为大量的可视化科学数据[1]。然而，进入大数据时代之后其定义多种多样，[2]将大数据定义为数据量超出当前存储、管理和有效处理技术能力范围的数据；[3-4]定义大数据的特征为3V (Volume、Variety和Velocity)，且Gartner研究机构认为大数据是需要新处理模式才能具有更强的决策力、洞察发现力和流程优化能力的海量、高增长率和多样化的信息资产；[5]定义大数据是采用一种新形式集成一系列的方法和技术，然后挖掘多种多样的、复杂的、大规模的数据集所蕴含的潜在价值的过程。</p>

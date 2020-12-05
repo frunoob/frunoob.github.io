@@ -6,7 +6,7 @@
   <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
   <link href="https://frunoob.github.io/"/>
-  <updated>2020-12-04T07:02:08.553Z</updated>
+  <updated>2020-12-05T03:03:43.489Z</updated>
   <id>https://frunoob.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>统一建模语言UML复习知识点</title>
+    <link href="https://frunoob.github.io/2020/12/05/%E8%AF%BE%E7%A8%8B/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML%E5%A4%8D%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <id>https://frunoob.github.io/2020/12/05/%E8%AF%BE%E7%A8%8B/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML%E5%A4%8D%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%82%B9/</id>
+    <published>2020-12-05T02:30:56.000Z</published>
+    <updated>2020-12-05T03:03:43.489Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="1-UML的两个主要组成部分："><a href="#1-UML的两个主要组成部分：" class="headerlink" title="1.UML的两个主要组成部分："></a>1.UML的两个主要组成部分：</h4><span class="hide-inline"><button type="button" class="hide-button button--animated" style="background-color:  black;color:  white">查看答案  </button><span class="hide-content">答案：语义和表示方法 </span></span><h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="课程" scheme="https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="统一建模语言" scheme="https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="大三下复习" scheme="https://frunoob.github.io/tags/%E5%A4%A7%E4%B8%89%E4%B8%8B%E5%A4%8D%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>云计算技术与Hadoop开发大纲</title>
@@ -497,34 +523,6 @@
     
     
     <category term="tags外挂" scheme="https://frunoob.github.io/tags/tags%E5%A4%96%E6%8C%82/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Twikoo快速上手</title>
-    <link href="https://frunoob.github.io/2020/11/21/Web/%E5%8D%9A%E5%AE%A2/Twikoo%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/"/>
-    <id>https://frunoob.github.io/2020/11/21/Web/%E5%8D%9A%E5%AE%A2/Twikoo%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/</id>
-    <published>2020-11-21T07:04:29.000Z</published>
-    <updated>2020-11-22T14:07:59.206Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h1><h2 id="环境初始化"><a href="#环境初始化" class="headerlink" title="#环境初始化"></a><a href="https://twikoo.js.org/quick-start.html#%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96">#</a>环境初始化</h2><p>Twikoo 使用云开发作为评论后台，每个云开发用户均长期享受1个免费的标准型基础版1资源套餐。如果您已经拥有了一个免费版云开发环境，在环境配置符合要求的情况下，Twikoo 理论可以与其他项目共用一个环境。</p><ol><li><a href="https://curl.qcloud.com/KnnJtUom">注册云开发CloudBase(opens new window)</a></li><li>进入<a href="https://console.cloud.tencent.com/tcb/">云开发控制台 (opens new window)</a>，新建环境，请按个人需要配置环境</li></ol><p>提示</p><ul><li>推荐选择计费方式<code>包年包月</code>，套餐版本<code>基础班 1</code></li><li>如果提示“选择部署应用”，请选择“不创建环境”</li></ul><ol><li>进入<a href="https://console.cloud.tencent.com/tcb/env/login">环境-登录授权 (opens new window)</a>，启用“匿名登录”</li><li>进入<a href="https://console.cloud.tencent.com/tcb/env/safety">环境-安全配置 (opens new window)</a>，将网站域名添加到“WEB安全域名”</li><li>复制环境Id备用</li></ol><h2 id="环境部署"><a href="#环境部署" class="headerlink" title="#环境部署"></a><a href="https://twikoo.js.org/quick-start.html#%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2">#</a>环境部署</h2><p>注意</p><ul><li>请确保您已经安装了 <a href="https://nodejs.org/en/download/">Node.js(opens new window)</a></li><li>请将命令、代码中“您的环境id”替换为您自己的环境id</li><li>请不要使用 Windows 自带的记事本编辑 envId.txt，否则会部署失败，后续会修复该问题</li></ul><ol><li>克隆本仓库</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/imaegoo/twikoo.git</span><br><span class="line"><span class="built_in">cd</span> twikoo</span><br></pre></td></tr></table></figure><blockquote><p>如果您没有安装 Git，也可以从 <a href="https://github.com/imaegoo/twikoo/releases">Release (opens new window)</a>页面下载最新的 Source code</p></blockquote><ol><li>安装依赖项</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install <span class="comment"># 或 yarn install</span></span><br></pre></td></tr></table></figure><ol><li>设置环境id</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> 您的环境id &gt; envId.txt</span><br></pre></td></tr></table></figure><ol><li>授权云开发环境</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run login <span class="comment"># 或 yarn run login</span></span><br></pre></td></tr></table></figure><ol><li>自动部署</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run deploy <span class="comment"># 或 yarn deploy</span></span><br></pre></td></tr></table></figure><blockquote><p>更新 Twikoo 版本时，请再次执行此命令更新现有的云函数</p></blockquote><h2 id="使用"><a href="#使用" class="headerlink" title="#使用"></a><a href="https://twikoo.js.org/quick-start.html#%E4%BD%BF%E7%94%A8">#</a>使用</h2><h3 id="通过-CDN-引入"><a href="#通过-CDN-引入" class="headerlink" title="#通过 CDN 引入"></a><a href="https://twikoo.js.org/quick-start.html#%E9%80%9A%E8%BF%87-cdn-%E5%BC%95%E5%85%A5">#</a>通过 CDN 引入</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;twikoo&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/twikoo@0.1.15/dist/twikoo.all.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript">twikoo.init(&#123; <span class="attr">envId</span>: <span class="string">&#x27;您的环境id&#x27;</span> &#125;)</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="通过-NPM-引入"><a href="#通过-NPM-引入" class="headerlink" title="#通过 NPM 引入"></a><a href="https://twikoo.js.org/quick-start.html#%E9%80%9A%E8%BF%87-npm-%E5%BC%95%E5%85%A5">#</a>通过 NPM 引入</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install twikoo <span class="comment"># 或 yarn add twikoo</span></span><br><span class="line">&lt;div id=<span class="string">&quot;twikoo&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line">import twikoo from <span class="string">&#x27;twikoo&#x27;</span> // 或 const twikoo = require(<span class="string">&#x27;twikoo&#x27;</span>)</span><br><span class="line">twikoo.init(&#123; envId: <span class="string">&#x27;您的环境id&#x27;</span> &#125;)</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="Web" scheme="https://frunoob.github.io/categories/Web/"/>
-    
-    <category term="博客" scheme="https://frunoob.github.io/categories/Web/%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="评论系统" scheme="https://frunoob.github.io/categories/Web/%E5%8D%9A%E5%AE%A2/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-    <category term="Twikoo" scheme="https://frunoob.github.io/tags/Twikoo/"/>
     
   </entry>
   
