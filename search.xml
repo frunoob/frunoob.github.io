@@ -8901,11 +8901,11 @@ D.要更加担当有为，携手维护世界和平安宁
 </span></div>
 
 <div class="hide-block"><button type="button" class="hide-button button--animated" style="">软件测试的目的
-    </button><span class="hide-content"><p>软件测试的目的就是为了发现尽可能多的软件缺陷，并期望通过改错来清除缺陷 （课本P6）</p>
+    </button><span class="hide-content"><p>~软件测试的目的就是为了发现尽可能多的软件缺陷，并期望通过改错来清除缺陷 （课本P6）</p>
 <ul>
 <li><p>从用户角度来看：软件测试的目的是为了发现<strong>错误</strong>而执行程序的过程。（课本P18）</p>
 </li>
-<li><p>从开发者角度来看：软件测试是表明软件产品中不存在错误的过程。（课本P18）</p>
+<li><p>从开发者角度来看：软件测试是表明软件产品中不存在错误的过程。（课本P18）~</p>
 </li>
 </ul>
 </span></div>
