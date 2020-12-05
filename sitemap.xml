@@ -634,6 +634,13 @@
   </url>
   
   <url>
+    <loc>https://frunoob.github.io/tags/%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E6%94%B6%E5%BD%95%E5%88%B0%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</loc>
+    <lastmod>2020-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://frunoob.github.io/tags/Tap-Plugins/</loc>
     <lastmod>2020-12-05</lastmod>
     <changefreq>daily</changefreq>
@@ -642,13 +649,6 @@
   
   <url>
     <loc>https://frunoob.github.io/tags/Twikoo/</loc>
-    <lastmod>2020-12-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/tags/%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E6%94%B6%E5%BD%95%E5%88%B0%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</loc>
     <lastmod>2020-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -669,14 +669,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>https://frunoob.github.io/tags/hexo%E6%8C%87%E4%BB%A4/</loc>
     <lastmod>2020-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/hexo%E6%8C%87%E4%BB%A4/</loc>
+    <loc>https://frunoob.github.io/tags/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2020-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -923,7 +923,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/Web/github/</loc>
+    <loc>https://frunoob.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -937,7 +937,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://frunoob.github.io/categories/Web/github/</loc>
     <lastmod>2020-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
