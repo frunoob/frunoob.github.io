@@ -5342,7 +5342,7 @@ blockquote.pullquote.right {
   --font-color: rgba(255,255,255,0.7);
   --hr-border: rgba(255,255,255,0.4);
   --hr-before-color: rgba(255,255,255,0.7);
-  --search-bg: #121212;
+  --search-bg: rgba(255,255,255,0.25);
   --search-input-color: rgba(255,255,255,0.7);
   --search-result-title: rgba(255,255,255,0.9);
   --preloader-bg: #0d0d0d;
@@ -5366,13 +5366,19 @@ blockquote.pullquote.right {
   --reward-pop: #2c2c2c;
   --toc-link-color: rgba(255,255,255,0.6);
 }
+[data-theme='dark'] #footer:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0);
+  content: '';
+}
 [data-theme='dark'] #web_bg:before,
-[data-theme='dark'] #footer:before,
 [data-theme='dark'] #page-header:before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.65);
   content: '';
 }
 [data-theme='dark'] #article-container code {
@@ -5389,7 +5395,7 @@ blockquote.pullquote.right {
 }
 [data-theme='dark'] #page-header > #nav.fixed,
 [data-theme='dark'] #page-header.no-top-img #nav {
-  background: rgba(18,18,18,0.8);
+  background: rgba(18,18,18,0);
   -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0);
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0);
 }
