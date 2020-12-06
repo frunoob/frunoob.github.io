@@ -8896,11 +8896,7 @@ D.要更加担当有为，携手维护世界和平安宁
   <entry>
     <title>软件测试复习知识点</title>
     <url>/2020/12/03/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%A4%8D%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="选择、填空"><a href="#选择、填空" class="headerlink" title="选择、填空"></a>选择、填空</h2><h3 id="1-软件测试的定义和目标"><a href="#1-软件测试的定义和目标" class="headerlink" title="1.软件测试的定义和目标"></a>1.软件测试的定义和目标</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">定义和目标
-    </button><span class="hide-content"><p>答：使用人工或自动手段来运行或测定某个系统的过程，其目的在于检验它是否满足规定的需求，或是弄清预期结果与实际结果之间的差别。（课本P16）</p>
-</span></div>
-
-<div class="hide-block"><button type="button" class="hide-button button--animated" style="">废弃的答案
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="小题"><a href="#小题" class="headerlink" title="小题"></a>小题</h2><h3 id="1-软件测试的目的"><a href="#1-软件测试的目的" class="headerlink" title="1.软件测试的目的"></a>1.软件测试的目的</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">软件测试的目的
     </button><span class="hide-content"><p>软件测试的<strong>目的</strong>就是为了发现尽可能多的软件缺陷，并期望通过改错来清除缺陷 （课本P6）</p>
 <ul>
 <li><p>从用户角度来看：软件测试的目的是为了发现<strong>错误</strong>而执行程序的过程。（课本P18）</p>
@@ -8909,72 +8905,65 @@ D.要更加担当有为，携手维护世界和平安宁
 </li>
 </ul>
 </span></div>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="background-color: #00000018;color: black">定义（不考）
+    </button><span class="hide-content"><p>答：使用人工或自动手段来运行或测定某个系统的过程，其目的在于检验它是否满足规定的需求，或是弄清预期结果与实际结果之间的差别。（课本P16）</p>
+</span></div>
 
 <h3 id="2-软件质量三个部分"><a href="#2-软件质量三个部分" class="headerlink" title="2.软件质量三个部分"></a>2.软件质量三个部分</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">答案
     </button><span class="hide-content"><p>答：在新的ISO/IEC 9126《产品质量–质量模型》中定义的软件质量包括<strong>内部质量</strong>、<strong>外部质量</strong>和<strong>使用质量</strong>三部分。其中，<strong>内部质量</strong>是从内部观点出发的软件产品特性的总体，是针对内部质量需求被测量和评价的质量。<strong>外部质量</strong>是软件产品在规定条件下使用时满足需求的程度。<strong>使用质量</strong>是在规定的使用环境下，软件产品使特定用户在达到规定目标方面的能力。</p>
 </span></div>
-
-<h3 id="3-条件覆盖的目标"><a href="#3-条件覆盖的目标" class="headerlink" title="3.条件覆盖的目标"></a>3.条件覆盖的目标</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">答案
-    </button><span class="hide-content"><p>条件覆盖要求设计足够多的测试用例，运行被测程序，使得判定中的每个<strong>条件</strong>获得各种可能的结果，即每个<strong>条件</strong>至少有一次为真值，有一次为假值。</p>
+<h3 id="3-测试用例的基本概念"><a href="#3-测试用例的基本概念" class="headerlink" title="3. 测试用例的基本概念"></a>3. 测试用例的基本概念</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">基本概念
+    </button><span class="hide-content"><p>答：指对一项特定的软件产品进行测试任务的描述，体现测试方案、方法、技术和策略，内容包括测试目标、测试环境、输入数据、测试步骤、预期结果、测试脚本等，并形成文档。（P39）</p>
 </span></div>
 
-<h3 id="4-边界值分析法"><a href="#4-边界值分析法" class="headerlink" title="4.边界值分析法"></a>4.边界值分析法</h3><ol>
-<li>标准边界值测试<br>对于一个有n个变量的程序，保留其中一个变量，其取值为最小（Min）、最大（Max）、略高于最小值（Min+）、略低于最大值（Min-）、正常值（Normal），标准边界值测试会产生<span class="hide-inline"><button type="button" class="hide-button button--animated" style="">答案
-  </button><span class="hide-content"><span style=color:red><strong>4n+1</strong></span></span></span>个测试用例。</li>
-<li>健壮边界值测试<br>对于一个有n个变量的程序，保留其中一个变量，其取值为最小（Min）、最大（Max）、略高于最小值（Min+）、略高于最大值（Max+）、略低于最大值（Max-）、略低于最小值（Min-）、正常值（Normal），标准边界值测试会产生<span class="hide-inline"><button type="button" class="hide-button button--animated" style="">答案
-  </button><span class="hide-content"><span style=color:red><strong>6n+1</strong></span></span></span>个测试用例。</li>
-</ol>
-<h3 id="5-单元测试时，辅助测试模块有哪两种"><a href="#5-单元测试时，辅助测试模块有哪两种" class="headerlink" title="5.单元测试时，辅助测试模块有哪两种"></a>5.单元测试时，辅助测试模块有哪两种</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">答案
+<h3 id="4-条件覆盖的目的"><a href="#4-条件覆盖的目的" class="headerlink" title="4.条件覆盖的目的"></a>4.条件覆盖的目的</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">答案
+    </button><span class="hide-content"><p>条件覆盖要求设计足够多的测试用例，运行被测程序，使得判定中的每个<strong>条件</strong>获得各种可能的结果，即每个<strong>条件</strong>至少有一次为真值，有一次为假值。P88</p>
+</span></div>
+
+<h3 id="5-单元测试时两种辅助测试模块"><a href="#5-单元测试时两种辅助测试模块" class="headerlink" title="5.单元测试时两种辅助测试模块"></a>5.单元测试时两种辅助测试模块</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">答案
     </button><span class="hide-content"><ol>
 <li><p>驱动模块（Driver）</p>
 </li>
-<li><p>被调用模拟子模块（Sub）</p>
+<li><p>被调用模拟子模块（Sub）  <br>P108</p>
 </li>
 </ol>
 </span></div>
 
-<h3 id="6-增量式-集成测试"><a href="#6-增量式-集成测试" class="headerlink" title="6.增量式 集成测试"></a>6.增量式 集成测试</h3><p><span style="color:red;font-size:1.15em;">自己能写出测试的过程，如例题P117、P119</span></p>
+<h3 id="6-增量式集成测试策略"><a href="#6-增量式集成测试策略" class="headerlink" title="6.增量式集成测试策略"></a>6.增量式集成测试策略</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">两种策略
+    </button><span class="hide-content"><p><span style="color:red;font-size:1.15em;">P117</span></p>
 <ol>
 <li>自顶向下集成策略<ul>
 <li>深度优先</li>
 <li>广度优先</li>
 </ul>
 </li>
-<li>自底向上集成策略<ul>
-<li>深度优先</li>
-<li>广度优先<h3 id="7-决策表四个组成部分"><a href="#7-决策表四个组成部分" class="headerlink" title="7.决策表四个组成部分"></a>7.决策表四个组成部分</h3><table>
-<thead>
-<tr>
-<th align="center">动作桩</th>
-<th align="center">条件项</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">动作桩</td>
-<td align="center">动作项</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-</li>
+<li>自底向上集成策略
+  </li>
 </ol>
-<h2 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h2><h3 id="1-软件缺陷的定义"><a href="#1-软件缺陷的定义" class="headerlink" title="1.软件缺陷的定义"></a>1.软件缺陷的定义</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">答案
-    </button><span class="hide-content"><p><del><strong>标准定义：</strong>即从<strong>产品内部</strong>看缺陷是软件产品<strong>开发或维护</strong>过程中存在的错误、毛病等各种问题；从 <strong>产品外部</strong>看，缺陷是系统所需要实现的某种功能的失效或违背。</del></p>
-<p>满足一下五条中的一条即为软件 缺陷：</p>
+</span></div>
+
+<h3 id="7-边界值分析法（两种测试方法）"><a href="#7-边界值分析法（两种测试方法）" class="headerlink" title="7.边界值分析法（两种测试方法）"></a>7.边界值分析法（两种测试方法）</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">答案
+    </button><span class="hide-content"><ol>
+<li>标准边界值测试<br>对于一个有n个变量的程序，保留其中一个变量，其取值为最小（Min）、最大（Max）、略高于最小值（Min+）、略低于最大值（Min-）、正常值（Normal），标准边界值测试会产生<span class="hide-inline"><button type="button" class="hide-button button--animated" style="">答案<br></button><span class="hide-content"><span style=color:red><strong>4n+1</strong></span></span></span>个测试用例。</li>
+<li>健壮边界值测试<br>对于一个有n个变量的程序，保留其中一个变量，其取值为最小（Min）、最大（Max）、略高于最小值（Min+）、略高于最大值（Max+）、略低于最大值（Max-）、略低于最小值（Min-）、正常值（Normal），标准边界值测试会产生<span class="hide-inline"><button type="button" class="hide-button button--animated" style="">答案<br></button><span class="hide-content"><span style=color:red><strong>6n+1</strong></span></span></span>个测试用例。</li>
+</ol>
+</span></div>
+
+<h2 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h2><h3 id="1-软件缺陷的定义、特征"><a href="#1-软件缺陷的定义、特征" class="headerlink" title="1.软件缺陷的定义、特征"></a>1.软件缺陷的定义、特征</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">定义
+    </button><span class="hide-content"><p><strong>标准定义：</strong>即从<strong>产品内部</strong>看缺陷是软件产品<strong>开发或维护</strong>过程中存在的错误、毛病等各种问题；从 <strong>产品外部</strong>看，缺陷是系统所需要实现的某种功能的失效或违背。(P6)</p>
+</span></div>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="">特征
+    </button><span class="hide-content"><p>满足一下五条中的一条即为软件 缺陷：</p>
 <ol>
 <li>软件未达到 软件规格说明书中规定的功能。</li>
 <li>软件超出了软件规格说明书中指出的范围。</li>
 <li>软件未达到软件规格说明书中指出的应达到的目标。</li>
 <li>软件运行过程中出现了错误。</li>
-<li>软件测试人员认为软件难于理解，不宜使用，运行速度慢，或最终用户认为软件使用效果不好。</li>
+<li>软件测试人员认为软件难于理解，不宜使用，运行速度慢，或最终用户认为软件使用效果不好。(P7)</li>
 </ol>
 </span></div>
 
-<h3 id="2-测试用例的基本概念和设计原则"><a href="#2-测试用例的基本概念和设计原则" class="headerlink" title="2.测试用例的基本概念和设计原则"></a>2.测试用例的基本概念和设计原则</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">基本概念
-    </button><span class="hide-content"><p>答：指对一项特定的软件产品进行测试任务的描述，体现测试方案、方法、技术和策略，内容包括测试目标、测试环境、输入数据、测试步骤、预期结果、测试脚本等，并形成文档。（P39）</p>
-</span></div>
-
-<div class="hide-block"><button type="button" class="hide-button button--animated" style="">设计原则
+<h3 id="2-测试用例的基本概念和设计原则"><a href="#2-测试用例的基本概念和设计原则" class="headerlink" title="2.测试用例的基本概念和设计原则"></a>2.测试用例的基本概念和设计原则</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">设计原则
     </button><span class="hide-content"><ol>
 <li>基于<strong>测试需求</strong>的原则</li>
 <li>用成熟的<strong>测试用例设计方法</strong>来指导设计</li>
@@ -8986,8 +8975,7 @@ D.要更加担当有为，携手维护世界和平安宁
 
 <h3 id="3-静态白盒测试和动态白盒测试的区别和联系"><a href="#3-静态白盒测试和动态白盒测试的区别和联系" class="headerlink" title="3. 静态白盒测试和动态白盒测试的区别和联系"></a>3. 静态白盒测试和动态白盒测试的区别和联系</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">答案
     </button><span class="hide-content"><ul>
-<li>区别：<ol>
-<li>静态测试又称<strong>结构分析</strong>，在不执行软件的条件下，有条理地仔细审查软件设计<strong>软件设计</strong>，<strong>体系结构</strong>和<strong>代码</strong>，从而找出软件缺陷的过程。</li>
+<li>区别：<br> 1. 静态测试又称<strong>结构分析</strong>，是在不执行软件的条件下，有条理地仔细审查<strong>软件设计</strong>，<strong>体系结构</strong>和<strong>代码</strong>，从而找出软件缺陷的过程。<ol start="2">
 <li>动态测试又称<strong>结构化测试</strong>，是在使用或运行软件的条件下，软件测试员查看<strong>代码内部结构</strong>和<strong>实现方式</strong>来设计和执行测试。</li>
 </ol>
 </li>
@@ -8996,13 +8984,6 @@ D.要更加担当有为，携手维护世界和平安宁
 </span></div>
 
 <h3 id="4-面对对象软件测试分为几个层次"><a href="#4-面对对象软件测试分为几个层次" class="headerlink" title="4.面对对象软件测试分为几个层次"></a>4.面对对象软件测试分为几个层次</h3><div class="hide-block"><button type="button" class="hide-button button--animated" style="">答案
-    </button><span class="hide-content"><p>结合传统软件测试的方法和技术，并针对面向对象软件所具有的特征，将面向对象软件测试层次 划分为三层：</p>
-<p><strong>1.类测试</strong></p>
-<p><strong>2.类簇测试</strong></p>
-<p><strong>3.系统测试</strong></p>
-</span></div>
-
-<div class="hide-block"><button type="button" class="hide-button button--animated" style="">查看另一种答案
     </button><span class="hide-content"><p>面向对象的测试按照由低到高的顺序可以分成的四个层次，依次如下。<br>(1)测试与对象关联的单个操作，即<strong>算法层</strong>。<br>(2)测试单个对象类，即<strong>类层</strong>。<br>(3)测试对象类群，即<strong>模板层</strong>。<br>(4)测试面向对象系统，即<strong>系统层</strong>。</p>
 </span></div>
 
@@ -9022,8 +9003,12 @@ D.要更加担当有为，携手维护世界和平安宁
 <li><p><strong>测试投资回报率</strong>可按下式计算：<br>投资回报率 =<br>利润 / 测试投资×100%</p>
 </li>
 </ol>
-<h3 id="2-白盒"><a href="#2-白盒" class="headerlink" title="2.白盒"></a>2.白盒</h3><h4 id="1-逻辑覆盖"><a href="#1-逻辑覆盖" class="headerlink" title="1.逻辑覆盖"></a>1.逻辑覆盖</h4><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201205000119.png" alt="image-20201205000119563"></p>
-<h4 id="2-基本路径"><a href="#2-基本路径" class="headerlink" title="2.基本路径"></a>2.基本路径</h4><ol>
+<h3 id="2-白盒-二选一"><a href="#2-白盒-二选一" class="headerlink" title="2.白盒(二选一)"></a>2.白盒(二选一)</h3><div class="tabs" id="heihe"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#heihe-1"><i class="fas fa-angle-right"></i>逻辑覆盖</button></li><li class="tab"><button type="button" data-href="#heihe-2"><i class="fas fa-angle-right"></i>基本路径</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="heihe-1"><p><span style="color:red;font-size:1.5em">看书上例题P87 例4.1</span></p>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="">look look me
+    </button><span class="hide-content"><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201205000119.png" alt="image-20201205000119563"></p>
+</span></div><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="heihe-2"><p><span style="color:red;font-size:1.5em">看书上例题P91 例4.2</span></p>
+<div class="hide-block"><button type="button" class="hide-button button--animated" style="">look me
+    </button><span class="hide-content"><ol>
 <li>以详细设计或源代码作为基础，导出程序控制流图<br><strong>控制流图：</strong>由<strong>结点</strong>和<strong>控制流线</strong>（<strong>弧</strong>）两种图形 符号组成。</li>
 <li>计算程序控制流图的环路复杂度<ol>
 <li>环路复杂度为控制流图中的区域数。</li>
@@ -9033,7 +9018,17 @@ D.要更加担当有为，携手维护世界和平安宁
 </li>
 <li>确定独立路径集合<br><strong>独立路径</strong>是指和其他路径相比，至少引进一个新的处理语句集合或一个新判断条件的程序通道，即独立路径必须至少包含一条在定义之前不曾使用的边。如果只是已有路径的简单合并，并未包含任何新边，则不是独立路径。<br>独立路径<strong>集合中的每一条路径都是唯一</strong>的，但是<strong>独立路径集合不是唯一</strong>的，可以有多组不同的独立路径集合</li>
 </ol>
-<h3 id="3-黑盒"><a href="#3-黑盒" class="headerlink" title="3.黑盒"></a>3.黑盒</h3><h4 id="1-等价划分法"><a href="#1-等价划分法" class="headerlink" title="1.等价划分法"></a>1.等价划分法</h4><h4 id="2-因果图法"><a href="#2-因果图法" class="headerlink" title="2.因果图法"></a>2.因果图法</h4><h2 id="习题练练手"><a href="#习题练练手" class="headerlink" title="习题练练手"></a>习题练练手</h2><ol>
+</span></div><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+
+
+<h3 id="3-黑盒（二选一）"><a href="#3-黑盒（二选一）" class="headerlink" title="3.黑盒（二选一）"></a>3.黑盒（二选一）</h3><div class="tabs" id="heihe"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#heihe-1"><i class="fas fa-angle-right"></i>等价划分法</button></li><li class="tab"><button type="button" data-href="#heihe-2"><i class="fas fa-angle-right"></i>因果图法</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="heihe-1"><p><span style="color:#01AA66;font-size:1.8em">看书上的例3.5 P48</span></p><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="heihe-2"><p><span style="color:#01AA66;font-size:1.8em">例3.11 P62</span></p><button type="button" class="tab-to-top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+
+
+
+
+<h2 id="习题练练手"><a href="#习题练练手" class="headerlink" title="习题练练手"></a>习题练练手</h2><ol>
 <li><p>在软件测试中，下面说法中错误的是（<span class="hide-inline"><button type="button" class="hide-button button--animated" style="background-color: #00000008;color: black">点我看答案
   </button><span class="hide-content">B</span></span>）<br>A. 测试是为了发现程序中的错误而执行程序的过程。<br>B. 测试是为了证明程序是正确的。<br>C. 好的测试方案是极可能发现迄今为止尚未发现的错误的方案。<br>D. 成功的测试方案是发现了至今为止尚未发现的错误的测试。  </p>
 <span class="hide-inline"><button type="button" class="hide-button button--animated" style="">答案解析
@@ -10381,6 +10376,8 @@ D.要更加担当有为，携手维护世界和平安宁
 </li>
 </ul>
 <h2 id="Button"><a href="#Button" class="headerlink" title="Button"></a>Button</h2>   <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% btn [url],[text],[icon],[color] [style] [layout] [position] [size] %&#125;</span><br><span class="line"></span><br><span class="line">[url] :链接</span><br><span class="line">[text] :按钮文字</span><br><span class="line">[icon] : [可选]图标</span><br><span class="line">[color] : [可选]按钮背景颜色(默认style时）</span><br><span class="line"><span class="code">                      按钮字体和边框颜色(outline时) </span></span><br><span class="line"><span class="code">                      default/blue/pink /red/purple/orange/green </span></span><br><span class="line"><span class="code">[style] : [可选]按钮样式默认实心</span></span><br><span class="line"><span class="code">                      outline/留空</span></span><br><span class="line"><span class="code">[layout] : [可选]按钮布局默认为line </span></span><br><span class="line"><span class="code">                      block/留空</span></span><br><span class="line"><span class="code">[position] : [可选]按钮位置前提是设置了layout为block默认为左边</span></span><br><span class="line"><span class="code">                      center/right/留空</span></span><br><span class="line"><span class="code">[size] : [可选]按钮大小</span></span><br><span class="line"><span class="code">                      larger/留空</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="tabs"><a href="#tabs" class="headerlink" title="tabs"></a>tabs</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% tabs Unique name, [index] %&#125; </span><br><span class="line">&lt;!-- tab [Tab caption] [@icon] --&gt; </span><br><span class="line">Any content (support inline tags too). </span><br><span class="line">&lt;!-- endtab --&gt; </span><br><span class="line">&#123;% endtabs %&#125;</span><br><span class="line"></span><br><span class="line">Unique name : Unique name of tabs block tag without comma. </span><br><span class="line">                Will be used in #id&#39;s as prefix for each tab with their index numbers. </span><br><span class="line">                If there are whitespaces in name, for generate #id all whitespaces will replaced by dashes. </span><br><span class="line">                Only for current url of post&#x2F;page must be unique! </span><br><span class="line">[index] : Index number of active tab. </span><br><span class="line">                If not specified, first tab (1) will be selected. </span><br><span class="line">                If index is -1, no tab will be selected. It&#39;s will be something like spoiler. </span><br><span class="line">                Optional parameter. </span><br><span class="line">[Tab caption] : Caption of current tab. </span><br><span class="line">                If not caption specified, unique name with tab index suffix will be used as caption of tab.</span><br><span class="line">                If not caption specified, but specified icon, caption will empty. </span><br><span class="line">                Optional parameter. </span><br><span class="line">[@icon] : FontAwesome icon name (full-name, look like &#39;fas fa-font&#39;) </span><br><span class="line">                Can be specified with or without space; eg &#39;Tab caption @icon&#39; similar to &#39;Tab caption@icon&#39;. </span><br><span class="line">                Optional parameter.</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
