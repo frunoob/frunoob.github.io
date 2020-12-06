@@ -8942,7 +8942,19 @@ D.要更加担当有为，携手维护世界和平安宁
 </li>
 <li>自底向上集成策略<ul>
 <li>深度优先</li>
-<li>广度优先</li>
+<li>广度优先<h3 id="7-决策表四个组成部分"><a href="#7-决策表四个组成部分" class="headerlink" title="7.决策表四个组成部分"></a>7.决策表四个组成部分</h3><table>
+<thead>
+<tr>
+<th align="center">动作桩</th>
+<th align="center">条件项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">动作桩</td>
+<td align="center">动作项</td>
+</tr>
+</tbody></table>
+</li>
 </ul>
 </li>
 </ol>
@@ -9027,9 +9039,18 @@ D.要更加担当有为，携手维护世界和平安宁
 <span class="hide-inline"><button type="button" class="hide-button button--animated" style="">答案解析
   </button><span class="hide-content">B.测试是为了证明程序有错而不是证明程序无错</span></span>
 </li>
-<li><p>黑盒测试</p>
+<li><p>黑盒测试是通过软件的外部表现来发现软件的缺陷和错误的测试方法，具体地说，黑盒测试用例设计技术包括（<span class="hide-inline"><button type="button" class="hide-button button--animated" style=""> 点我查看答案
+  </button><span class="hide-content">等价类划分法、因果图法、边界值分析法、错误推测法、决策表分析法</span></span>）</p>
 </li>
+<li><p>用边界值分析法，假定1&lt;X&lt;100，那么X在测试中应取的边界值是（<span class="hide-inline"><button type="button" class="hide-button button--animated" style="">点我看答案
+  </button><span class="hide-content">X=0，X=1，X=100，X=101</span></span>）  </p>
+</li>
+<li><p>黑盒测试中，着重检查输入条件组合的方法是（<span class="hide-inline"><button type="button" class="hide-button button--animated" style="">点我查看答案
+  </button><span class="hide-content">D</span></span>）<br>A.等价类划分法<br>B.边界值分析法<br>C.错误推测法<br>D.决策表法</p>
+</li>
+<li></li>
 </ol>
+<p>$$<br>\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}<br>\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \<br>\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \<br>\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \<br>\end{vmatrix}<br>${$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}<br>$$</p>
 ]]></content>
       <categories>
         <category>课程</category>
