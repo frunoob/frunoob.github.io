@@ -6,7 +6,7 @@
   <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
   <link href="https://frunoob.github.io/"/>
-  <updated>2020-12-08T13:43:59.795Z</updated>
+  <updated>2020-12-08T13:47:03.920Z</updated>
   <id>https://frunoob.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据结构考试复习</title>
+    <link href="https://frunoob.github.io/2020/12/08/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0/"/>
+    <id>https://frunoob.github.io/2020/12/08/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0/</id>
+    <published>2020-12-08T13:46:00.000Z</published>
+    <updated>2020-12-08T13:47:03.920Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="课程" scheme="https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="数据结构与算法" scheme="https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="大三下复习" scheme="https://frunoob.github.io/tags/%E5%A4%A7%E4%B8%89%E4%B8%8B%E5%A4%8D%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>软件过程与管理答案</title>
@@ -495,32 +521,6 @@
     
     
     <category term="js函数重载" scheme="https://frunoob.github.io/tags/js%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML中关于class属性空格隔开多类名</title>
-    <link href="https://frunoob.github.io/2020/11/22/%E8%AF%BE%E7%A8%8B/web/HTML%E4%B8%AD%E5%85%B3%E4%BA%8Eclass%E5%B1%9E%E6%80%A7%E7%A9%BA%E6%A0%BC%E9%9A%94%E5%BC%80%E5%A4%9A%E7%B1%BB%E5%90%8D/"/>
-    <id>https://frunoob.github.io/2020/11/22/%E8%AF%BE%E7%A8%8B/web/HTML%E4%B8%AD%E5%85%B3%E4%BA%8Eclass%E5%B1%9E%E6%80%A7%E7%A9%BA%E6%A0%BC%E9%9A%94%E5%BC%80%E5%A4%9A%E7%B1%BB%E5%90%8D/</id>
-    <published>2020-11-22T07:36:26.000Z</published>
-    <updated>2020-11-22T07:48:16.406Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="class-quot-panel-bar-quot-的含义"><a href="#class-quot-panel-bar-quot-的含义" class="headerlink" title="class = &quot;panel bar&quot;的含义"></a><code>class = &quot;panel bar&quot;</code>的含义</h3><ul><li>代表的是两个类名，分别是panel和bar。</li><li>意义：侧重于 <strong>css的模块化设计</strong> ，可以减少css的重复代码，提高类的复用性。</li><li>这里可以用空格分隔不限个数类名。</li><li>同时写多个的话，优先级是后面的会覆盖前面的。</li><li>id可以这么写但是没有任何意义 <strong>一个页面上的id不允许重复</strong>。</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="web开发" scheme="https://frunoob.github.io/categories/web%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="前端" scheme="https://frunoob.github.io/categories/web%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="class命名" scheme="https://frunoob.github.io/tags/class%E5%91%BD%E5%90%8D/"/>
     
   </entry>
   
