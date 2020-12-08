@@ -101,6 +101,12 @@
 <p><strong>异步</strong> 意味着非阻塞，如果对象A向对象B发送一个消息，对象A不必等待对象B执行完这个消息，就可以继续执行自己的下一个行为，这样的消息称作 <strong>异步消息</strong>。</p>
 </span></div>
 
+<h3 id="类的识别"><a href="#类的识别" class="headerlink" title="类的识别"></a>类的识别</h3><ol>
+<li>名词识别法</li>
+<li>系统实体识别法</li>
+<li>从用例中识别类</li>
+<li>利用分解与抽象技术</li>
+</ol>
 <h3 id="UML图中各种线和箭头的含义及画法（必会）"><a href="#UML图中各种线和箭头的含义及画法（必会）" class="headerlink" title="UML图中各种线和箭头的含义及画法（必会）"></a>UML图中各种线和箭头的含义及画法（必会）</h3><style type="text/css">
 thead {color:green;}
 tfoot {color:red;}
@@ -125,16 +131,45 @@ tfoot {color:red;}
             <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201208011533.png" style="zoom:50%"/></td>
     </tr>
     <tr>
-        <td>包含</td>
+        <td>扩展关系</td>
+        <td>箭头指向基用例<br/>通过扩展用例向基用例中添加扩展功能
+        <br/>是两个用例之间的关系</td>
+        <td><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201208084713.png" style="zoom:50%"/></td>
+    </tr>
+    <tr>
+        <td>包含关系</td>
+        <td>是两个用例之间的关系<br/>指向被包含用例<br/></td>
+        <td><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201208085512.png" style="zoom:50%"/></td>
+    </tr>
+    <tr >
+        <td rowspan="1">对象图</td>
+        <td></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>扩展</td>
+        <td rowspan="4">顺序图</td>
+        <td>简单消息</td>
         <td></td>
+        <td><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201208090550.png"/></td>
+    </tr>
+    <tr>
+        <td>返回消息</td>
         <td></td>
+        <td><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201208090633.png"/></td>
+    </tr>
+    <tr>
+        <td>同步消息</td>
+        <td>等待接受者</td>
+        <td><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201208091020.png"/></td>
+    </tr>
+        <tr>
+        <td>异步消息</td>
+        <td>不管接收者如何</td>
+        <td><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201208091115.png"/></td>
     </tr>
 </table>
+
 
 
 
@@ -11069,8 +11104,8 @@ D.要更加担当有为，携手维护世界和平安宁
         <category>java</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>java编程题</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
