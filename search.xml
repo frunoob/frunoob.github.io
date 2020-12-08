@@ -99,7 +99,80 @@
     </button><span class="hide-content"><p><strong>简单消息</strong>只表示控制如何从一个对象发给另一个对象，并不包含控制的细节。</p>
 <p><strong>同步</strong>意味着阻塞和等待，如果对象A向对象B发送一个消息，对象A发送消息后必须等待消息返回，只有当对象B处理消息的操作执行完毕后，对象A才可继续执行自己的操作，这样的消息称作 <strong>同步消息</strong>。</p>
 <p><strong>异步</strong> 意味着非阻塞，如果对象A向对象B发送一个消息，对象A不必等待对象B执行完这个消息，就可以继续执行自己的下一个行为，这样的消息称作 <strong>异步消息</strong>。</p>
-</span></div>]]></content>
+</span></div>
+
+<h3 id="UML图中各种线和箭头的含义及画法（必会）"><a href="#UML图中各种线和箭头的含义及画法（必会）" class="headerlink" title="UML图中各种线和箭头的含义及画法（必会）"></a>UML图中各种线和箭头的含义及画法（必会）</h3><style type="text/css">
+thead {color:green;}
+tfoot {color:red;}
+</style>
+<table border="5">
+    <caption>各种关系线</caption>
+    <thead>
+        <tr>
+        <th>图</th>
+        <th>关系</th>
+        <th>解释</th>
+        <th>图例</th>
+    </tr>
+    </thead>
+    <tr>
+        <td rowspan="3">用例图</td>
+        <td>泛化关系</td>
+        <td>客户是电话客户的泛化，客户是父用例<br/>电话客户是子用例，箭头由电话客户指向客户
+        <br/>泛化是两个<b>用例</b>或两个<b>参与者</b>之间的关系
+        </td>
+        <td>
+            <img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201208011533.png" style="zoom:50%"/></td>
+    </tr>
+    <tr>
+        <td>包含</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>扩展</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
+
+<h3 id="识别UML图（必会）"><a href="#识别UML图（必会）" class="headerlink" title="识别UML图（必会）"></a>识别UML图（必会）</h3><table>
+<thead>
+<tr>
+<th>图例</th>
+<th>图名称</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201208004610.png" alt="image-20201208004524652" style="zoom:45%;" /></td>
+<td>用例图</td>
+<td>有一个参与者为图书管理员<br />有五个用例<br /></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
       <categories>
         <category>课程</category>
         <category>统一建模语言</category>
