@@ -11,7 +11,7 @@
 <p style="text-align:right">- Chaos Theory</p>
 </div>
 
-<p>第一次看，没看懂。<br>回头再看一下</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201210003717.webp" alt="蝴蝶效应"></p>
 ]]></content>
       <categories>
         <category>娱乐</category>
@@ -519,27 +519,28 @@ tfoot {color:red;}
 </li>
 <li><p>对大数据的 <strong>数据源</strong> 分类：网络（网站、媒体）、机器感知、传感设备、交易、科研等。</p>
 </li>
-<li><p>对大数据的 <strong>数据存储类型</strong> 分类： (1)行导向存储 (2)列导向存储 (3)行列混合导向存储</p>
-<p>(4)图存储 (5)Key-Value存储(6)内存存储</p>
+<li><p>对大数据的 <strong>数据存储类型</strong> 分类： (1)行导向存储 (2)列导向存储 (3)行列混合导向存储(4)图存储 (5)Key-Value存储(6)内存存储</p>
 </li>
 <li><p>对大数据的 <strong>数据处理类型</strong> 分类：(1)批处理 (2)流处理 (3)迭代处理</p>
 </li>
 </ol>
 <h3 id="云计算的概念、特征。"><a href="#云计算的概念、特征。" class="headerlink" title="云计算的概念、特征。"></a>云计算的概念、特征。</h3><p>​    <a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#3">定义参考课件二P6</a> </p>
 <ul>
-<li><p>定义：云计算是一种模型，它向用户提供了一种<a href="https://www.baidu.com/s?wd=%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1YzPh7Bm1n1njwWn1T3mHIW0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnWcsn1bsnjT4nH0znWm3PWDsr0">随时地</a>、便捷地、随需应变地从可配置计算资源共享池中获取所需资源（例如，网络、服务器、存储、应用、及服务）的方式，资源能够快速供应并释放，使管理资源的工作量和服务提供商的交互减小到最低限度。</p>
+<li><p>定义：云计算是一种模型，它向用户提供了一种<a href="https://www.baidu.com/s?wd=%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1YzPh7Bm1n1njwWn1T3mHIW0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnWcsn1bsnjT4nH0znWm3PWDsr0">随时地</a>、便捷地、随需应变地从可配置计算资源共享池中获取所需资源的方式，资源能够快速供应并释放，使管理资源的工作量和服务提供商的交互减小到最低限度。</p>
 <p><a href="https://wenku.baidu.com/view/e6d83bbd58eef8c75fbfc77da26925c52dc5910d.html">特征来源自网络</a></p>
 </li>
 <li><p>特征：1、虚拟化技术2、动态可扩展3、按需部署4、灵活性高5、可靠性高6、性价比高7、可扩展性</p>
 </li>
 </ul>
 <h3 id="Iaas、SaaS、Pass介绍"><a href="#Iaas、SaaS、Pass介绍" class="headerlink" title="Iaas、SaaS、Pass介绍"></a>Iaas、SaaS、Pass介绍</h3><p>[答案来源自网络]</p>
-<p>IaaS：基础架构即服务，Infrastructure-as-a-service</p>
-<p>IaaS 是云服务的最底层，主要提供一些基础资源。</p>
-<p>SaaS：软件即服务，Software-as-a-service</p>
-<p>SaaS 是软件的开发、管理、部署都交给第三方，不需要关心技术问题，可以拿来即用。</p>
-<p>PaaS：平台即服务，Platform-as-a-service</p>
-<p>PaaS 提供软件部署平台（runtime），抽象掉了硬件和操作系统细节，可以无缝地扩展（scaling）。开发者只需要关注自己的业务逻辑，不需要关注底层。</p>
+<ol>
+<li><p>IaaS：基础架构即服务，Infrastructure-as-a-service 。IaaS 是云服务的最底层，主要提供一些基础资源。</p>
+</li>
+<li><p>SaaS：软件即服务，Software-as-a-service。SaaS 是软件的开发、管理、部署都交给第三方，不需要关心技术问题，可以拿来即用。</p>
+</li>
+<li><p>PaaS：平台即服务，Platform-as-a-service。PaaS 提供软件部署平台（runtime），抽象掉了硬件和操作系统细节，可以无缝地扩展（scaling）。开发者只需要关注自己的业务逻辑，不需要关注底层。</p>
+</li>
+</ol>
 <h3 id="虚拟化技术的概念、特征。"><a href="#虚拟化技术的概念、特征。" class="headerlink" title="虚拟化技术的概念、特征。"></a>虚拟化技术的概念、特征。</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#4">参考自课件二P7</a></p>
 <ol>
 <li>概念：虚拟化技术是建立云计算架构的基础技术，它使云计算中心的计算资源和存储资源在逻辑结构上相互独立。</li>
@@ -571,8 +572,24 @@ tfoot {color:red;}
 </ol>
 </li>
 </ul>
-<h3 id="HDFS的处理流程"><a href="#HDFS的处理流程" class="headerlink" title="HDFS的处理流程"></a>HDFS的处理流程</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201209172128.png" alt="image-20201209172127904"></p>
-<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201209172136.png" alt="image-20201209172136418"></p>
+<h3 id="HDFS的处理流程"><a href="#HDFS的处理流程" class="headerlink" title="HDFS的处理流程"></a>HDFS的处理流程</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#7">参考课件一</a></p>
+<p>读文件操作：</p>
+<ol>
+<li>客户端向NameNode发出打开指定文件请求；</li>
+<li>NameNode在元数据中找到该文件与DataNode之间数据块的映射关系，并将此数据返回给客户端；</li>
+<li>客户端按照映射关系，向指定DataNode之间数据块的映射关系，并将此数据返回给客户端；</li>
+<li>如果第3步出现故障，客户端将根据映射从另外的NameNode 上获取同样的数据，这体现了HDFS的容错能力；</li>
+<li>客户端向NameNode发出关闭文件请求，以结束此次文件读操作。</li>
+</ol>
+<p>写文件操作：</p>
+<ol>
+<li>客户端向NameNode发送创建文件的请求，NameNode计算出该文件与DataNode之间数据块映射关系的元数据，并将此数据返回给客户端；</li>
+<li>客户端按照映射关系，向第一个DataNode发送写数据的请求，并进而写入数据；</li>
+<li>HDFS根据映射关系，将同样的数据块写入到另外两个DataNode主机上；</li>
+<li>DataNode写数据块成功后，向前一个DataNode返回应答结果；</li>
+<li>第一个DataNode将最终应答结果返回给客户端；</li>
+<li>客户端向NameNode发送关闭文件请求，以结束此次文件写操作。</li>
+</ol>
 <h3 id="JobTracker、TaskTracker节点的工作原理及特征"><a href="#JobTracker、TaskTracker节点的工作原理及特征" class="headerlink" title="JobTracker、TaskTracker节点的工作原理及特征"></a>JobTracker、TaskTracker节点的工作原理及特征</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#9">参考课件一</a></p>
 <ul>
 <li>JobTracker节点：<ol>
