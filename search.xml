@@ -777,12 +777,26 @@ tfoot {color:red;}
 </li>
 <li><p>优点（1）高可靠性。（2）高扩展性。（3）高效性。（4）高容错性。（5）低成本。</p>
 </li>
-<li><p>缺点：但是，Hadoop最大缺点是对小块数据处理的速度较慢，数据处理的过程中产生的中间文件比较大时会增加网络传输的开销，它的性能和稳定性有待提高。</p>
+<li><p>缺点：对小块数据处理的速度较慢，数据处理的过程中产生的中间文件比较大时会增加网络传输的开销，它的性能和稳定性有待提高。</p>
 </li>
 </ul>
-<h3 id="Hadoop的运行模式"><a href="#Hadoop的运行模式" class="headerlink" title="Hadoop的运行模式"></a>Hadoop的运行模式</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204132240.png" alt="image-20201204132240100"></p>
-<h3 id="HDFS的概念及特征"><a href="#HDFS的概念及特征" class="headerlink" title="HDFS的概念及特征"></a>HDFS的概念及特征</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204131239.png" alt="image-20201204131239885"></p>
-<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204131319.png" alt="image-20201204131319000"></p>
+<h3 id="Hadoop的运行模式"><a href="#Hadoop的运行模式" class="headerlink" title="Hadoop的运行模式"></a>Hadoop的运行模式</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#6">参考课件一</a></p>
+<ol>
+<li>单机模式</li>
+<li>伪分布式</li>
+<li>完全分布式</li>
+</ol>
+<h3 id="HDFS的概念及特征"><a href="#HDFS的概念及特征" class="headerlink" title="HDFS的概念及特征"></a>HDFS的概念及特征</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#7">参考课件一</a></p>
+<ul>
+<li>概念：Hadoop分布式文件系统，即HDFS，是一种适合运行在廉价硬件上的分布式文件系统。</li>
+<li>特征：<ol>
+<li>在HDFS文件系统中，一个文件将被分布在集群中的多台机器上存储。</li>
+<li>它是一个高度容错性的系统</li>
+<li>它能提供高吞吐量的数据访问</li>
+<li>它非常适合大规模数据集上的应用</li>
+</ol>
+</li>
+</ul>
 <h3 id="HDFS的处理流程"><a href="#HDFS的处理流程" class="headerlink" title="HDFS的处理流程"></a>HDFS的处理流程</h3><h3 id="JobTracker、TaskTracker节点的工作原理及特征"><a href="#JobTracker、TaskTracker节点的工作原理及特征" class="headerlink" title="JobTracker、TaskTracker节点的工作原理及特征"></a>JobTracker、TaskTracker节点的工作原理及特征</h3><ol>
 <li><p>Jobtracker接收到作业后，将其放在一个内部作业队列里，由作业调度器对其进行调度和初始化，初始化包括创建一个表示正在运行作业的对象，用来封装任务和记录信息（用于跟踪任务的状态和进度）。</p>
 <p>作业调度器依据调度算法调度到该作业时，为作业创建任务运行列表。它首先从文件系统中获取已经计算好的输入分片信息，然后为每个分片创建一个Map任务，另外，创建的Reduce任务数量由mapred.reduce.task属性决定。</p>
