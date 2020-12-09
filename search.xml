@@ -500,8 +500,9 @@ tfoot {color:red;}
 <p><a href="https://frunoob.lanzous.com/iyxknj6xgcb">课件三：MapReduce模型</a></p>
 </div>
 
-<h2 id="大纲答案"><a href="#大纲答案" class="headerlink" title="大纲答案"></a>大纲答案</h2><div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>Fqq精简的答案</span></div>
-    <div class="hide-content"><h2 id="单选题（15道）"><a href="#单选题（15道）" class="headerlink" title="单选题（15道）"></a>单选题（15道）</h2><h2 id="简答题（5道）"><a href="#简答题（5道）" class="headerlink" title="简答题（5道）"></a>简答题（5道）</h2><h3 id="大数据的概念和特征"><a href="#大数据的概念和特征" class="headerlink" title="大数据的概念和特征"></a>大数据的概念和特征</h3><p>​     <a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#1">参考课件一P13页</a> </p>
+
+
+<h2 id="单选题（15道）"><a href="#单选题（15道）" class="headerlink" title="单选题（15道）"></a>单选题（15道）</h2><h2 id="简答题（5道）"><a href="#简答题（5道）" class="headerlink" title="简答题（5道）"></a>简答题（5道）</h2><h3 id="大数据的概念和特征"><a href="#大数据的概念和特征" class="headerlink" title="大数据的概念和特征"></a>大数据的概念和特征</h3><p>​     <a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#1">参考课件一P13页</a> </p>
 <ul>
 <li><p>大数据，指的是所涉及的资料量规模巨大到无法通过目前主流软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业经营决策更积极目的的资讯。</p>
 </li>
@@ -603,9 +604,7 @@ tfoot {color:red;}
 <h3 id="“心跳”的概念"><a href="#“心跳”的概念" class="headerlink" title="“心跳”的概念"></a>“心跳”的概念</h3><p>Tasktracker利用循环定期向jobtracker发送“<strong>心跳（heartbeat）</strong>”，“心跳”告知jobtracker它是否还在运行，同时“<strong>心跳</strong>”还携带很多的信息，例如当前Map任务完成的进度信息。另外，<strong>tasktracker作为“心跳”的一部分</strong>，会指明它是否已经准备好运行新的任务，如果是，jobtracker会为它分配一个新的任务，并使用“心跳”的返回值与tasktracker进行通信，“<strong>心跳</strong>”<strong>充当了两者之间的消息通信</strong>。</p>
 <p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204131657.png" alt="image-20201204131657862"></p>
 <h3 id="HBase的特征"><a href="#HBase的特征" class="headerlink" title="HBase的特征"></a>HBase的特征</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204021656.png" alt="image-20201204021655987"></p>
-<h2 id="论述题（1道）"><a href="#论述题（1道）" class="headerlink" title="论述题（1道）"></a>论述题（1道）</h2></div></div>
-
-<div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>展开Wang Xing 的答案</span></div>
+<h2 id="论述题（1道）"><a href="#论述题（1道）" class="headerlink" title="论述题（1道）"></a>论述题（1道）</h2><div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>展开Wang Xing 的答案</span></div>
     <div class="hide-content"><p><strong>1</strong> <strong>、大数据的概念和特征</strong></p>
 <p>大数据，指的是所涉及的资料量规模巨大到无法通过目前主流软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业经营决策更积极目的的资讯。</p>
 <p>大数据的三个特点—3Vs:</p>
