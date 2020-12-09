@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://pic4.zhimg.com/v2-e522801945af3714797aa2c5bfb0db79_1440w.jpg?source=172ae18b">
 <meta property="article:published_time" content="2020-12-09T05:06:57.000Z">
-<meta property="article:modified_time" content="2020-12-09T08:28:55.033Z">
+<meta property="article:modified_time" content="2020-12-09T08:51:55.039Z">
 <meta property="article:author" content="Frunoob">
 <meta property="article:tag" content="计算机 音乐 电影">
 <meta name="twitter:card" content="summary">
@@ -86,7 +86,7 @@ var saveToLocal = {
   isHome: false,
   isHighlightShrink: true,
   isToc: false,
-  postUpdate: '2020-12-09 16:28:55'
+  postUpdate: '2020-12-09 16:51:55'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -185,6 +185,9 @@ var saveToLocal = {
 <h2 id="14"><a href="#14" class="headerlink" title="14"></a>14</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204021656.png" alt="image-20201204021655987"></p>
 <h2 id="15"><a href="#15" class="headerlink" title="15"></a>15</h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204021825.png" alt="image-20201204021825165"></p>
 <p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201209162836.png" alt="image-20201209162836177"></p>
+<h2 id="16"><a href="#16" class="headerlink" title="16"></a>16</h2><p><strong>Shuffle &amp; Sort</strong>过程是MapReduce的核心，它确保每个Reducer的输入都按键排序，<strong>Shuffle &amp; Sort描述着数据从Map任务输出到Reduce 任务输入的这段过程</strong>。在MapReduce作业执行过程中，大部分Map任务与Reduce任务的执行是在不同的节点上，很多情况下Reduce执行时需要跨节点去读取其他节点上的Map任务结果。因此Shuffle &amp; Sort过程至关重要，<strong>它需要保证数据完整地从Map端传输到Reduce端，并且在跨节点读取数据时，尽可能地减少对带宽的不必要消耗，同时还要减少磁盘I/O对任务执行的影响。</strong></p>
+<p><br/>MapReduce模型的Shuffle&amp;Sort原理如图<i class = "fas fa-hand-point-down fa-2x"></i></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204142542.png" alt="image-20201204142542492"></p>
 </div></div></main><footer id="footer"><div id="footer-wrap"><div class="footer_custom_text"><span>@</span><span id="yearsToNow">2000</span><span> </span><span id="daysToNow">by frunoob</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
  <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
   if (window.mermaidJsLoad) mermaid.init()

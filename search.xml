@@ -533,7 +533,7 @@ tfoot {color:red;}
 <li><p>特征：1、虚拟化技术2、动态可扩展3、按需部署4、灵活性高5、可靠性高6、性价比高7、可扩展性</p>
 </li>
 </ul>
-<h3 id="Iaas、SaaS、Pass介绍"><a href="#Iaas、SaaS、Pass介绍" class="headerlink" title="Iaas、SaaS、Pass介绍"></a>Iaas、SaaS、Pass介绍</h3><p><a href="">答案来源自网络</a></p>
+<h3 id="Iaas、SaaS、Pass介绍"><a href="#Iaas、SaaS、Pass介绍" class="headerlink" title="Iaas、SaaS、Pass介绍"></a>Iaas、SaaS、Pass介绍</h3><p>[答案来源自网络]</p>
 <p>IaaS：基础设施服务，Infrastructure-as-a-service</p>
 <p>IaaS 是云服务的最底层，主要提供一些基础资源。</p>
 <p>SaaS：软件服务，Software-as-a-service</p>
@@ -571,7 +571,9 @@ tfoot {color:red;}
 </ol>
 </li>
 </ul>
-<h3 id="HDFS的处理流程"><a href="#HDFS的处理流程" class="headerlink" title="HDFS的处理流程"></a>HDFS的处理流程</h3><h3 id="JobTracker、TaskTracker节点的工作原理及特征"><a href="#JobTracker、TaskTracker节点的工作原理及特征" class="headerlink" title="JobTracker、TaskTracker节点的工作原理及特征"></a>JobTracker、TaskTracker节点的工作原理及特征</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#9">参考课件一</a></p>
+<h3 id="HDFS的处理流程"><a href="#HDFS的处理流程" class="headerlink" title="HDFS的处理流程"></a>HDFS的处理流程</h3><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201209172128.png" alt="image-20201209172127904"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201209172136.png" alt="image-20201209172136418"></p>
+<h3 id="JobTracker、TaskTracker节点的工作原理及特征"><a href="#JobTracker、TaskTracker节点的工作原理及特征" class="headerlink" title="JobTracker、TaskTracker节点的工作原理及特征"></a>JobTracker、TaskTracker节点的工作原理及特征</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#9">参考课件一</a></p>
 <ul>
 <li>JobTracker节点：<ol>
 <li>一个集群中只有一个JobTracker进程，它运行在主节点上。该进程负责将应用程序与Hadoop系统对接。</li>
@@ -592,7 +594,7 @@ tfoot {color:red;}
 <p><strong>2</strong> <strong>DataNode</strong></p>
 <p>DataNode也是一个在<a href="http://baike.baidu.com/view/3061630.htm">HDFS</a>实例中单独机器上运行的软件。Hadoop 集群包含一个NameNode和大量DataNode。DataNode通常以机架的形式组织，机架通过一个<a href="http://baike.baidu.com/view/1077.htm">交换机</a>将所有系统连接起来。Hadoop 的一个假设是：机架内部<a href="http://baike.baidu.com/view/47398.htm">节点</a>之间的传输速度快于机架间节点的传输速度。</p>
 <p>DataNode响应来自HDFS客户机的读写请求，同时也来自NameNode 的创建、删除和复制块的命令。NameNode依赖来自每个DataNode的定期心跳（heartbeat）消息。每条消息都包含一个块报告，NameNode可以根据此报告验证块映射和其他文件系统元数据。如果DataNode无法发送心跳消息，NameNode将采取修复措施，重新复制在该节点上丢失的块。</p>
-<h3 id="Host、Slave节点特征"><a href="#Host、Slave节点特征" class="headerlink" title="Host、Slave节点特征"></a>Host、Slave节点特征</h3><p><a href="">参考自百度</a></p>
+<h3 id="Host、Slave节点特征"><a href="#Host、Slave节点特征" class="headerlink" title="Host、Slave节点特征"></a>Host、Slave节点特征</h3><p>[参考自百度]</p>
 <p>host选择的原则是优先让空闲资源处理本节点上的数据，如果节点上没有可处理的数据，则处理同一个机柜上的数据，最坏的情况是处理其他机柜上的数据（当然必须在同一数据中心）。</p>
 <h3 id="MapReduce的优点和特征"><a href="#MapReduce的优点和特征" class="headerlink" title="MapReduce的优点和特征"></a>MapReduce的优点和特征</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#11">参考课件三</a></p>
 <ul>
@@ -613,15 +615,10 @@ tfoot {color:red;}
 <li>分区划分结果为组</li>
 <li>Reducer任务整合为单一结果</li>
 </ol>
-<h3 id="shuffle-amp-sort的过程"><a href="#shuffle-amp-sort的过程" class="headerlink" title="shuffle &amp; sort的过程"></a>shuffle &amp; sort的过程</h3><p><a href="">参考课件二</a></p>
-<p><strong>Shuffle &amp; Sort</strong>过程是MapReduce的核心，它确保每个Reducer的输入都按键排序，<strong>Shuffle &amp; Sort描述着数据从Map任务输出到Reduce 任务输入的这段过程</strong>。在MapReduce作业执行过程中，大部分Map任务与Reduce任务的执行是在不同的节点上，很多情况下Reduce执行时需要跨节点去读取其他节点上的Map任务结果。因此Shuffle &amp; Sort过程至关重要，<strong>它需要保证数据完整地从Map端传输到Reduce端，并且在跨节点读取数据时，尽可能地减少对带宽的不必要消耗，同时还要减少磁盘I/O对任务执行的影响。</strong></p>
-<p><br/>MapReduce模型的Shuffle&amp;Sort原理如图<i class = "fas fa-hand-point-down fa-2x"></i></p>
-<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20201204142542.png" alt="image-20201204142542492"></p>
+<h3 id="shuffle-amp-sort的过程"><a href="#shuffle-amp-sort的过程" class="headerlink" title="shuffle &amp; sort的过程"></a>shuffle &amp; sort的过程</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#16">参考课件二</a></p>
 <p>首先，将写入本地存储器的&lt;Key; Value&gt;对（由map任务输出）分为R个区（R的大小由用户定义），并且每个分区对应一个Reduce任务。然后，将这些中间&lt;Key; Value&gt;对的位置通报给master，master负责将信息转发到Reduce worker，当master通知分配了正在运行reduce任务的worker所负责的分区位置（每个map任务产生的中间&lt;Key; Value&gt;对都可能映射到所有R个不同分区）时，Reduce worker先读取它负责的所有中间&lt;Key; Value&gt;对，在对它们进行排序，然后使得相同键的&lt;Key; Value&gt;对聚集在一起。</p>
 <h3 id="“心跳”的概念"><a href="#“心跳”的概念" class="headerlink" title="“心跳”的概念"></a>“心跳”的概念</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#12">参考课件一</a></p>
-<p>NameNode会周期性地接收集群中每个DataNode发送过来的心跳包和数据块报告，并根据这个报告验证数据块映射和其他文件系统元数据。</p>
-<p>如果NameNode能够定时收到DataNode的心跳包，则认为DataNode工作正常</p>
-<p>否则将标记那些没有心跳的DataNode为宕机，且不会再发给它们任何新的IO请求。</p>
+<p>NameNode会周期性地接收集群中每个DataNode发送过来的心跳包和数据块报告，并根据这个报告验证数据块映射和其他文件系统元数据。如果NameNode能够定时收到DataNode的心跳包，则认为DataNode工作正常。否则将标记那些没有心跳的DataNode为宕机，且不会再发给它们任何新的IO请求。</p>
 <p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#13">参考课件二</a></p>
 <p>NameNode依赖来自每个DataNode的定期心跳（heartbeat）消息。每条消息都包含一个块报告，NameNode可以根据此报告验证块映射和其他文件系统元数据。如果DataNode无法发送心跳消息，NameNode将采取修复措施，重新复制在该节点上丢失的块。</p>
 <p>Tasktracker利用循环定期向jobtracker发送“<strong>心跳（heartbeat）</strong>”，“心跳”告知jobtracker它是否还在运行，同时“<strong>心跳</strong>”还携带很多的信息，例如当前Map任务完成的进度信息。另外，<strong>tasktracker作为“心跳”的一部分</strong>，会指明它是否已经准备好运行新的任务，如果是，jobtracker会为它分配一个新的任务，并使用“心跳”的返回值与tasktracker进行通信，“<strong>心跳</strong>”<strong>充当了两者之间的消息通信</strong>。</p>
