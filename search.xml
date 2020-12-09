@@ -534,11 +534,11 @@ tfoot {color:red;}
 </li>
 </ul>
 <h3 id="Iaas、SaaS、Pass介绍"><a href="#Iaas、SaaS、Pass介绍" class="headerlink" title="Iaas、SaaS、Pass介绍"></a>Iaas、SaaS、Pass介绍</h3><p>[答案来源自网络]</p>
-<p>IaaS：基础设施服务，Infrastructure-as-a-service</p>
+<p>IaaS：基础架构即服务，Infrastructure-as-a-service</p>
 <p>IaaS 是云服务的最底层，主要提供一些基础资源。</p>
-<p>SaaS：软件服务，Software-as-a-service</p>
+<p>SaaS：软件即服务，Software-as-a-service</p>
 <p>SaaS 是软件的开发、管理、部署都交给第三方，不需要关心技术问题，可以拿来即用。</p>
-<p>PaaS：平台服务，Platform-as-a-service</p>
+<p>PaaS：平台即服务，Platform-as-a-service</p>
 <p>PaaS 提供软件部署平台（runtime），抽象掉了硬件和操作系统细节，可以无缝地扩展（scaling）。开发者只需要关注自己的业务逻辑，不需要关注底层。</p>
 <h3 id="虚拟化技术的概念、特征。"><a href="#虚拟化技术的概念、特征。" class="headerlink" title="虚拟化技术的概念、特征。"></a>虚拟化技术的概念、特征。</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#4">参考自课件二P7</a></p>
 <ol>
