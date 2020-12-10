@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>查看github仓库的已使用的空间大小</title>
+    <url>/2020/12/10/Web/github/%E6%9F%A5%E7%9C%8Bgithub%E4%BB%93%E5%BA%93%E7%9A%84%E5%B7%B2%E4%BD%BF%E7%94%A8%E7%9A%84%E7%A9%BA%E9%97%B4%E5%A4%A7%E5%B0%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201210160318.png" alt="image-20201210160318593"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201210160348.png" alt="image-20201210160348037"></p>
+]]></content>
+      <categories>
+        <category>Web</category>
+        <category>github</category>
+      </categories>
+  </entry>
+  <entry>
     <title>如何解决github大文件上传慢</title>
     <url>/2020/12/10/Web/github/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3github%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%85%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="打开DNS查询网站"><a href="#打开DNS查询网站" class="headerlink" title="打开DNS查询网站"></a>打开<a href="http://tool.chinaz.com/dns">DNS查询网站</a></h2><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201210144441.png" alt="image-20201210144440567"></p>
@@ -646,7 +657,12 @@ tfoot {color:red;}
 <p>DataNode也是一个在<a href="http://baike.baidu.com/view/3061630.htm">HDFS</a>实例中单独机器上运行的软件。Hadoop 集群包含一个NameNode和大量DataNode。DataNode通常以机架的形式组织，机架通过一个<a href="http://baike.baidu.com/view/1077.htm">交换机</a>将所有系统连接起来。Hadoop 的一个假设是：机架内部<a href="http://baike.baidu.com/view/47398.htm">节点</a>之间的传输速度快于机架间节点的传输速度。</p>
 <p>DataNode响应来自HDFS客户机的读写请求，同时也来自NameNode 的创建、删除和复制块的命令。NameNode依赖来自每个DataNode的定期心跳（heartbeat）消息。每条消息都包含一个块报告，NameNode可以根据此报告验证块映射和其他文件系统元数据。如果DataNode无法发送心跳消息，NameNode将采取修复措施，重新复制在该节点上丢失的块。</p>
 <h3 id="Host、Slave节点特征"><a href="#Host、Slave节点特征" class="headerlink" title="Host、Slave节点特征"></a>Host、Slave节点特征</h3><p>[参考自百度]</p>
-<p>host选择的原则是优先让空闲资源处理本节点上的数据，如果节点上没有可处理的数据，则处理同一个机柜上的数据，最坏的情况是处理其他机柜上的数据（当然必须在同一数据中心）。</p>
+<p>Host的节点主要是起一个对域名解析到那个虚拟主机进行配置，其name属性即为访问的域名。</p>
+<p>作为主节点(Master Node）的主机一个Hadoop集群中只能有一个主节点。</p>
+<p>主节点是集群的核心，负责协调和管理对所有从节点的数据访问和计算工作。</p>
+<p>作为从节点（Slave Node）的主机</p>
+<p>除主节点主机外的所有主机均作为从节点。数据分布在各从节点上，由HDSF进行统一管理。</p>
+<p>各从节点还担任着数据的计算工作。此工作由节点上的MapReduce子系统来完成。</p>
 <h3 id="MapReduce的优点和特征"><a href="#MapReduce的优点和特征" class="headerlink" title="MapReduce的优点和特征"></a>MapReduce的优点和特征</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#11">参考课件三</a></p>
 <ul>
 <li>优点：<ol>
