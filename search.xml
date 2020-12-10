@@ -626,7 +626,7 @@ tfoot {color:red;}
 </ol>
 </li>
 </ul>
-<h3 id="HDFS的处理流程"><a href="#HDFS的处理流程" class="headerlink" title="HDFS的处理流程"></a>HDFS的处理流程</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#7">参考课件一</a></p>
+<h3 id="HDFS的处理流程"><a href="#HDFS的处理流程" class="headerlink" title="HDFS的处理流程"></a>HDFS的处理流程</h3><p><a href="https://www.frunoob.xyz/%E5%A4%8D%E4%B9%A0/hadoop/#17">参考课件一</a></p>
 <p>读文件操作：</p>
 <ol>
 <li>客户端向NameNode发出打开指定文件请求；</li>
