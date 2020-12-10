@@ -1,6 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo-tag-dplayer</title>
+    <url>/2020/12/11/Web/%E5%8D%9A%E5%AE%A2/hexo-tag-dplayer/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装"><a href="#安装" class="headerlink" title="#安装"></a><a href="https://easyhexo.com/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/#%E5%AE%89%E8%A3%85">#</a>安装</h2><p>安装 hexo-tag-dplayer 插件十分简单，只需要在博客目录执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-dplayer -s</span><br></pre></td></tr></table></figure>
+
+<p>配置项需要一些 Yaml 语法的基础知识，可以参见 <a href="https://easyhexo.com/5-Add/5-2-yaml.html">YAML 语法简介</a></p>
+<p>修改 Hexo 的配置文件 <code>_config.yml</code> ，增加</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">hexo-tag-dplayer:</span></span><br><span class="line">  <span class="attr">cdn:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css</span></span><br><span class="line">  <span class="attr">default:</span> </span><br><span class="line">    <span class="attr">api:</span> <span class="string">https://api.prprpr.me/dplayer/</span></span><br><span class="line">    <span class="attr">loop:</span> <span class="literal">yes</span></span><br><span class="line">    <span class="attr">screenshot:</span> <span class="literal">yes</span></span><br><span class="line">    <span class="comment"># 后面还可以接着写其他默认配置</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="#使用"></a><a href="https://easyhexo.com/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/#%E4%BD%BF%E7%94%A8">#</a>使用</h2><p>使用 hexo-tag-dplayer 非常简单，只需要在 MarkDown 文件中插入正确的标记就可以了。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% dplayer &quot;url=https://dl.sm9.top/Video/2018/KeyCastOW.mp4&quot; %&#125; </span><br></pre></td></tr></table></figure>
+
+<p>如果还需要其他配置，尽管在上面写就好，详情可以看 [这里] (<a href="https://github.com/MoePlayer/hexo-tag-dplayer)%EF%BC%8C%E4%B8%8B%E9%9D%A2%E6%9C%89%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E7%A4%BA%E4%BE%8B%E5%8F%AF%E4%BB%A5%E7%9C%8B%E4%B8%80%E4%B8%8B%EF%BC%9A">https://github.com/MoePlayer/hexo-tag-dplayer)，下面有一个简单的示例可以看一下：</a></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% dplayer &quot;url=https://dl.sm9.top/Video/2018/%E6%8E%98%E5%9C%B0%E6%B1%82%E5%8D%87<span class="emphasis">_x264.mp4&quot; &quot; screenshot&quot; &quot;loop=yes&quot; &quot;id=46190A32F63DFF2CF0A3BB0F3293636C&quot; &quot;api=https://api.prprpr.me/dplayer/&quot; &quot;addition=https://api.prprpr.me/dplayer/v3/bilibili?aid=17150441 &quot; %&#125; </span></span><br></pre></td></tr></table></figure>
+
+<p>附 Dplayer 一些简单的参数列表，注意， Dplayer 的参数仅作为参考，具体请以 <a href="https://github.com/MoePlayer/hexo-tag-dplayer">hexo-tag-dplayer</a> 为准</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>container</td>
+<td>document.querySelector(‘.dplayer’)</td>
+<td>播放器容器元素</td>
+</tr>
+<tr>
+<td>live</td>
+<td>false</td>
+<td>开启直播模式，<a href="http://dplayer.js.org/#/home?id=live">详情</a></td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>false</td>
+<td>视频自动播放</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>‘#b7daff’</td>
+<td>主题色</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>false</td>
+<td>视频循环播放</td>
+</tr>
+<tr>
+<td>lang</td>
+<td>navigator.language.toLowerCase()</td>
+<td>可选值: ‘en’, ‘zh-cn’, ‘zh-tw’</td>
+</tr>
+<tr>
+<td>screenshot</td>
+<td>false</td>
+<td>开启截图，如果开启，视频和视频封面需要开启跨域</td>
+</tr>
+<tr>
+<td>hotkey</td>
+<td>true</td>
+<td>开启热键</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>‘auto’</td>
+<td>预加载，可选值: ‘none’, ‘metadata’, ‘auto’</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>0.7</td>
+<td>默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</td>
+</tr>
+<tr>
+<td>logo</td>
+<td>-</td>
+<td>在左上角展示一个 logo，你可以通过 CSS 调整它的大小和位置</td>
+</tr>
+<tr>
+<td>apiBackend</td>
+<td>-</td>
+<td>自定义获取和发送弹幕行为，<a href="http://dplayer.js.org/#/home?id=live">详情</a></td>
+</tr>
+<tr>
+<td>video</td>
+<td>-</td>
+<td>视频信息</td>
+</tr>
+<tr>
+<td>video.quality</td>
+<td>-</td>
+<td><a href="http://dplayer.js.org/#/home?id=quality-switching">详情</a></td>
+</tr>
+<tr>
+<td>video.defaultQuality</td>
+<td>-</td>
+<td><a href="http://dplayer.js.org/#/home?id=quality-switching">详情</a></td>
+</tr>
+<tr>
+<td>video.url</td>
+<td>-</td>
+<td>视频链接</td>
+</tr>
+<tr>
+<td>video.pic</td>
+<td>-</td>
+<td>视频封面</td>
+</tr>
+<tr>
+<td>video.thumbnails</td>
+<td>-</td>
+<td>视频缩略图，可以使用 <a href="https://github.com/MoePlayer/DPlayer-thumbnails">DPlayer-thumbnails</a> 生成</td>
+</tr>
+<tr>
+<td>video.type</td>
+<td>‘auto’</td>
+<td>可选值: ‘auto’, ‘hls’, ‘flv’, ‘dash’, ‘webtorrent’, ‘normal’ 或其他自定义类型，<a href="http://dplayer.js.org/#/home?id=mse-support">详情</a></td>
+</tr>
+<tr>
+<td>video.customType</td>
+<td>-</td>
+<td>自定义类型，<a href="http://dplayer.js.org/#/home?id=mse-support">详情</a></td>
+</tr>
+<tr>
+<td>subtitle</td>
+<td>-</td>
+<td>外挂字幕</td>
+</tr>
+<tr>
+<td>subtitle.url</td>
+<td><code>required</code></td>
+<td>字幕链接</td>
+</tr>
+<tr>
+<td>subtitle.type</td>
+<td>‘webvtt’</td>
+<td>字幕类型，可选值: ‘webvtt’, ‘ass’，目前只支持 webvtt</td>
+</tr>
+<tr>
+<td>subtitle.fontSize</td>
+<td>‘20px’</td>
+<td>字幕字号</td>
+</tr>
+<tr>
+<td>subtitle.bottom</td>
+<td>‘40px’</td>
+<td>字幕距离播放器底部的距离，取值形如: ‘10px’ ‘10%’</td>
+</tr>
+<tr>
+<td>subtitle.color</td>
+<td>‘#fff’</td>
+<td>字幕颜色</td>
+</tr>
+<tr>
+<td>danmaku</td>
+<td>-</td>
+<td>显示弹幕</td>
+</tr>
+<tr>
+<td>danmaku.id</td>
+<td><code>required</code></td>
+<td>弹幕池 id，必须唯一</td>
+</tr>
+<tr>
+<td>danmaku.api</td>
+<td><code>required</code></td>
+<td><a href="http://dplayer.js.org/#/home?id=danmaku-api">详情</a></td>
+</tr>
+<tr>
+<td>danmaku.token</td>
+<td>-</td>
+<td>弹幕后端验证 token</td>
+</tr>
+<tr>
+<td>danmaku.maximum</td>
+<td>-</td>
+<td>弹幕最大数量</td>
+</tr>
+<tr>
+<td>danmaku.addition</td>
+<td>-</td>
+<td>额外外挂弹幕，<a href="http://dplayer.js.org/#/home?id=bilibili-danmaku">详情</a></td>
+</tr>
+<tr>
+<td>danmaku.user</td>
+<td>‘DIYgod’</td>
+<td>弹幕用户名</td>
+</tr>
+<tr>
+<td>danmaku.bottom</td>
+<td>-</td>
+<td>弹幕距离播放器底部的距离，防止遮挡字幕，取值形如: ‘10px’ ‘10%’</td>
+</tr>
+<tr>
+<td>danmaku.unlimited</td>
+<td>false</td>
+<td>海量弹幕模式，即使重叠也展示全部弹幕，请注意播放器会记忆用户设置，用户手动设置后即失效</td>
+</tr>
+<tr>
+<td>contextmenu</td>
+<td>[]</td>
+<td>自定义右键菜单</td>
+</tr>
+<tr>
+<td>highlight</td>
+<td>[]</td>
+<td>自定义进度条提示点</td>
+</tr>
+<tr>
+<td>mutex</td>
+<td>true</td>
+<td>互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</td>
+</tr>
+</tbody></table>
+<h2 id="使用弹幕"><a href="#使用弹幕" class="headerlink" title="#使用弹幕"></a><a href="https://easyhexo.com/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/#%E4%BD%BF%E7%94%A8%E5%BC%B9%E5%B9%95">#</a>使用弹幕</h2><p>上面的示例中已经写了怎么使用弹幕了，使用弹幕首先需要有一个 ID ，建议使用视频的哈希值作为 ID，这样可以尽可能保证 ID 唯一，防止重复，接下来要配置弹幕接口，官方免费的弹幕接口能用，但是不稳定，如果有特殊需求，推荐个人自己搭建弹幕服务器。</p>
+<p>解析 BiliBiLi 弹幕，这个上面的示例也已经有了，同样，免费的服务不一定稳定，有特殊需求的请自己搭建弹幕服务器。</p>
+<p>增加外部弹幕列表，同解析 BiliBiLi 弹幕一样，只要将外部弹幕的地址写进 <code>addition</code> 就可以了。</p>
+<h2 id="使用字幕"><a href="#使用字幕" class="headerlink" title="#使用字幕"></a><a href="https://easyhexo.com/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/#%E4%BD%BF%E7%94%A8%E5%AD%97%E5%B9%95">#</a>使用字幕</h2><p>增加参数 <code>&quot;subtitle=字幕文件地址&quot;</code> 就可以了，如需修改字幕颜色或者字体大小，仿照其他参数写就可以了。</p>
+]]></content>
+      <categories>
+        <category>Web</category>
+        <category>博客</category>
+      </categories>
+  </entry>
+  <entry>
     <title>hexo-tag-meting</title>
     <url>/2020/12/11/Web/%E5%8D%9A%E5%AE%A2/hexo-tag-meting/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Requirement"><a href="#Requirement" class="headerlink" title="Requirement"></a>Requirement</h2><p><a href="https://github.com/MoePlayer/APlayer">https://github.com/MoePlayer/APlayer</a></p>
@@ -240,7 +466,7 @@
   <entry>
     <title>【github+jsdelivr+ffmpeg+DPlayer】实现github视频床</title>
     <url>/2020/12/10/%E3%80%90github-jsdelivr-ffmpeg-DPlayer%E3%80%91%E5%AE%9E%E7%8E%B0github%E8%A7%86%E9%A2%91%E5%BA%8A/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="转码"><a href="#转码" class="headerlink" title="转码"></a>转码</h2><h2 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h2><h2 id="播放"><a href="#播放" class="headerlink" title="播放"></a>播放</h2>]]></content>
       <categories>
         <category>Web</category>
         <category>github</category>
@@ -780,7 +1006,7 @@ tfoot {color:red;}
     <title>云计算技术与Hadoop开发大纲答案</title>
     <url>/2020/12/03/%E8%AF%BE%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E4%B8%8EHadoop%E5%BC%80%E5%8F%91/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E4%B8%8EHadoop%E5%BC%80%E5%8F%91%E5%A4%A7%E7%BA%B2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
-    <div id="aplayer-QsJYwinS" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-OObfGgfc" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="3778678" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="240px" data-preload="none" data-theme="#ad7a86"
     ></div>
 <div class="note info modern"><p>下载<a href="https://frunoob.lanzous.com/i1byOj6bkfg">Wang Xing 的答案</a></p>
