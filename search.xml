@@ -1006,7 +1006,7 @@ tfoot {color:red;}
     <title>云计算技术与Hadoop开发大纲答案</title>
     <url>/2020/12/03/%E8%AF%BE%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E4%B8%8EHadoop%E5%BC%80%E5%8F%91/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E4%B8%8EHadoop%E5%BC%80%E5%8F%91%E5%A4%A7%E7%BA%B2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><!--
-    <div id="aplayer-HLkWsZQc" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-WefLGqSE" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="3778678" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="240px" data-preload="none" data-theme="#ad7a86"
     ></div>-->
 <div class="note info modern"><p>下载<a href="https://frunoob.lanzous.com/i1byOj6bkfg">Wang Xing 的答案</a></p>
@@ -1099,7 +1099,7 @@ tfoot {color:red;}
 <li>客户端向NameNode发出打开指定文件请求；</li>
 <li>NameNode在元数据中找到该文件与DataNode之间数据块的映射关系，并将此数据返回给客户端；</li>
 <li>客户端按照映射关系，向指定DataNode发出读数据请求，并进而获取数据。</li>
-<li>如果第3步出现故障，客户端将根据映射从另外的NameNode 上获取同样的数据，这体现了HDFS的容错能力；</li>
+<li>如果第3步出现故障，客户端将根据映射从另外的DataNode 上获取同样的数据，这体现了HDFS的容错能力；</li>
 <li>客户端向NameNode发出关闭文件请求，以结束此次文件读操作。</li>
 </ol>
 <p>写文件操作：</p>
