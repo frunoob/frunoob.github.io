@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://frunoob.github.io/lover/index.html</loc>
+    
+    <lastmod>2020-12-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/videos/index.html</loc>
+    
+    <lastmod>2020-12-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://frunoob.github.io/2020/12/11/%E8%AF%BE%E7%A8%8B/%E8%8B%B1%E8%AF%AD/%E4%BD%9C%E6%96%87%E6%A8%A1%E6%9D%BF/</loc>
     
     <lastmod>2020-12-11</lastmod>
@@ -24,13 +38,6 @@
   
   <url>
     <loc>https://frunoob.github.io/private/index.html</loc>
-    
-    <lastmod>2020-12-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/videos/index.html</loc>
     
     <lastmod>2020-12-11</lastmod>
     
@@ -625,20 +632,6 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/love/index.html</loc>
-    
-    <lastmod>2020-11-05</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/love/tempCodeRunnerFile.html</loc>
-    
-    <lastmod>2020-11-05</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/archives/index.html</loc>
     
     <lastmod>2020-11-04</lastmod>
@@ -718,13 +711,6 @@
 
   
   <url>
-    <loc>https://frunoob.github.io/tags/%E7%BD%95%E8%A7%81%E8%93%9D%E6%9C%88%E4%BA%AE/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/tags/jsdelivr/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
@@ -795,13 +781,6 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/valine/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/tags/hexo-admin/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
@@ -851,14 +830,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/hugo/</loc>
+    <loc>https://frunoob.github.io/tags/hexo%E6%8C%87%E4%BB%A4/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/hexo%E6%8C%87%E4%BB%A4/</loc>
+    <loc>https://frunoob.github.io/tags/hugo/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -893,14 +872,21 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/%E5%BE%AE%E4%BF%A1%E6%90%9E%E7%AC%91/</loc>
+    <loc>https://frunoob.github.io/tags/tags%E5%A4%96%E6%8C%82/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/tags%E5%A4%96%E6%8C%82/</loc>
+    <loc>https://frunoob.github.io/tags/%E7%BD%95%E8%A7%81%E8%93%9D%E6%9C%88%E4%BA%AE/</loc>
+    <lastmod>2020-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/tags/%E5%BE%AE%E4%BF%A1%E6%90%9E%E7%AC%91/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -914,14 +900,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/C%E8%AF%AD%E8%A8%80/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/tags/js%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/</loc>
+    <loc>https://frunoob.github.io/tags/java/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -942,14 +921,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/java/</loc>
+    <loc>https://frunoob.github.io/tags/java%E9%80%89%E6%8B%A9%E9%A2%98/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/java%E9%80%89%E6%8B%A9%E9%A2%98/</loc>
+    <loc>https://frunoob.github.io/tags/C%E8%AF%AD%E8%A8%80/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -964,6 +943,13 @@
   
   <url>
     <loc>https://frunoob.github.io/tags/java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98/</loc>
+    <lastmod>2020-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/tags/js%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1012,14 +998,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/%E5%B7%A5%E7%A8%8B%E4%BC%A6%E7%90%86%E8%AE%BA%E6%96%87/</loc>
+    <loc>https://frunoob.github.io/tags/%E5%A4%A7%E4%B8%89%E4%B8%8B%E5%A4%8D%E4%B9%A0/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/%E5%A4%A7%E4%B8%89%E4%B8%8B%E5%A4%8D%E4%B9%A0/</loc>
+    <loc>https://frunoob.github.io/tags/%E5%B7%A5%E7%A8%8B%E4%BC%A6%E7%90%86%E8%AE%BA%E6%96%87/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1048,6 +1034,13 @@
   
   <url>
     <loc>https://frunoob.github.io/tags/QTP%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2020-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/tags/valine/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1098,21 +1091,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/categories/Web/echarts/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/categories/Web/github/</loc>
+    <lastmod>2020-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/categories/Web/CDN/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1126,7 +1112,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/Web/CDN/</loc>
+    <loc>https://frunoob.github.io/categories/Web/echarts/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1154,7 +1140,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</loc>
+    <loc>https://frunoob.github.io/categories/Web/%E5%8D%9A%E5%AE%A2/%E5%88%9B%E4%BD%9C/</loc>
+    <lastmod>2020-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1168,21 +1161,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/Web/%E5%8D%9A%E5%AE%A2/%E5%88%9B%E4%BD%9C/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/categories/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</loc>
+    <lastmod>2020-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1196,7 +1182,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B/</loc>
+    <loc>https://frunoob.github.io/categories/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1238,13 +1224,6 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JavaScript/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B/java/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
@@ -1253,6 +1232,13 @@
   
   <url>
     <loc>https://frunoob.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JAVA/</loc>
+    <lastmod>2020-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JavaScript/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1273,14 +1259,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E5%B7%A5%E7%A8%8B%E4%BC%A6%E7%90%86/</loc>
+    <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E5%B7%A5%E7%A8%8B%E4%BC%A6%E7%90%86/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1294,7 +1280,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E7%AE%A1%E7%90%86/</loc>
+    <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E8%8B%B1%E8%AF%AD/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1308,7 +1294,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E8%8B%B1%E8%AF%AD/</loc>
+    <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1316,6 +1302,13 @@
   
   <url>
     <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2020-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/categories/%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</loc>
     <lastmod>2020-12-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

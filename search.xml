@@ -3,66 +3,17 @@
   <entry>
     <title>作文模板</title>
     <url>/2020/12/11/%E8%AF%BE%E7%A8%8B/%E8%8B%B1%E8%AF%AD/%E4%BD%9C%E6%96%87%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="大学四六级作文万能模板"><a href="#大学四六级作文万能模板" class="headerlink" title="大学四六级作文万能模板"></a>大学四六级作文万能模板</h1><h2 id="英语四六级作文万能模板：利弊分析型"><a href="#英语四六级作文万能模板：利弊分析型" class="headerlink" title="英语四六级作文万能模板：利弊分析型"></a>英语四六级作文万能模板：利弊分析型</h2>
-第一段：Nowadays, there is a widespread concern over (the issue that)_____作文题目______. In fact, there are both advantages and disadvantages in _____题目议题_____. Generally speaking, it is widely believed there are several positive aspects as follows. Firstly, ___优点一______. And secondly ___优点二_____.
-  <br/><br/><br/>
-
-第二段： Just As a popular saying goes, "every coin has two sides", __讨论议题______ is no exception, and in another word, it still has negative aspects. To begin with, ___缺点一______. In addition, ____缺点二______.
-　　  <br/><br/><br/>
-
-第三段： To sum up, we should try to bring the advantages of __讨论议题____ into full play, and reduce the disadvantages to the minimum at the same time. In that case, we will definitely make a better use of the ____讨论议题___.　
-
-
-<h2 id="英语四六级作文万能模板：观点列举型"><a href="#英语四六级作文万能模板：观点列举型" class="headerlink" title="英语四六级作文万能模板：观点列举型"></a>英语四六级作文万能模板：观点列举型</h2><h3 id="不同观点列举型-选择型"><a href="#不同观点列举型-选择型" class="headerlink" title="不同观点列举型( 选择型 )"></a>不同观点列举型( 选择型 )</h3>
-第一段：There is a widespread concern over the issue that __作文题目_____. But it is well known that the opinion concerning this hot topic varies from person to person. A majority of people think that _ 观点一________. In their views there are 2 factors contributing to this attitude as follows: in the first place, ___原因一_______.Furthermore, in the second place, ___原因二_____. So it goes without saying that ___观点一_____.
-  <br/><br/><br/>
-
-
-第二段：People,　however,　differ　in　their　opinions　on　this　matter.　Some　people　hold the idea that ___观点二_______. In their point of view, on the one hand， ___原因一_______. On the other hand, ____原因二_____. Therefore, there　is no　doubt　that ___观点二______.
-  <br/><br/><br/>
-
-
-第三段：As far as I am concerned, I　firmly　support　the　view　that __观点一或二______.　It　is not only because ________, but also because _________. The more _______, the more ________.
-　　
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-<div style="width: 80%;margin: 0 auto">
-    <canvas id="chart535" style="height: 300px"></canvas>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-<script type="text/javascript">
-    var ctx = document.getElementById('chart535').getContext('2d');
-    var options = {
-
-
- type: "doughnut",
-    data: {
-    
-    labels:['听力','阅读','写作','翻译'],
-    datasets:[{
-    data:[248.5,248.5,106.5,106.5],
-    backgroundColor: ['red','blue','purple','green'],
-    hoverBorderColor:'black'
-    }]
-    
-    },
-    options:  {
-        responsive: true,
-        title: {
-            display: true,
-            text: '分值'
-        }
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><style>
+    .main{
+        color:red;
+        font-weight: bolder;
     }
+</style>
 
 
-};
-;
-    new Chart(ctx, options);
-</script>]]></content>
+
+<h1 id="大学四六级作文万能模板"><a href="#大学四六级作文万能模板" class="headerlink" title="大学四六级作文万能模板"></a>大学四六级作文万能模板</h1><p>With the rapid development of <span class="main">______( education, economy, society, health care, technology)</span> , <span  class="main">______(一句话：引出现象 )  </span> . <span class="main">______(好的现象)</span> is preached(提倡) by many, while is actually easier said that done.The following <span class="main">______(reasons,solution)</span> can account(解释) for this <span class="main">______(phenomenon(现象),problem)</span> . <br/><br>First and foremost, there is no doubt that <span class="main">______(原因1,解决方案1)</span> . Based on a recent survey, a majority(大部分) of <span class="main">______(international organizations and firms, family)</span> acknowledge(承认) that they perfer(喜欢) <span class="main">______(recruiting(招聘) people who can speak English well)</span>. <span class="main">______(补充原因一(例证，说明)) </span> . Furthermore,it’s obvious that <span class="main">______(理由二)</span> . For instance, <span class="main">______(为理由二举个例子)</span> . Last but not least, no one can deny that <span class="main">______(理由三)</span> . Although <span class="main">(尽管)______,(但是)______</span> . <br/><br>In a word, <span class="main">______(重申观点)</span> . I’m convinced that it is of great importance for us to <span class="main">______</span> . If we try our utmost to <span class="main">______ </span> , the future of our <span class="main">______</span> will be hopeful and promising.</p>
+]]></content>
       <categories>
         <category>课程</category>
         <category>英语</category>
