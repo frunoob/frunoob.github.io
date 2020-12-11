@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>作文模板</title>
+    <url>/2020/12/11/%E8%AF%BE%E7%A8%8B/%E8%8B%B1%E8%AF%AD/%E4%BD%9C%E6%96%87%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="大学四六级作文万能模板"><a href="#大学四六级作文万能模板" class="headerlink" title="大学四六级作文万能模板"></a>大学四六级作文万能模板</h1><h2 id="英语四六级作文万能模板：利弊分析型"><a href="#英语四六级作文万能模板：利弊分析型" class="headerlink" title="英语四六级作文万能模板：利弊分析型"></a>英语四六级作文万能模板：利弊分析型</h2>
+第一段：Nowadays, there is a widespread concern over (the issue that)_____作文题目______. In fact, there are both advantages and disadvantages in _____题目议题_____. Generally speaking, it is widely believed there are several positive aspects as follows. Firstly, ___优点一______. And secondly ___优点二_____.
+  <br/><br/><br/>
+
+第二段： Just As a popular saying goes, "every coin has two sides", __讨论议题______ is no exception, and in another word, it still has negative aspects. To begin with, ___缺点一______. In addition, ____缺点二______.
+　　  <br/><br/><br/>
+
+第三段： To sum up, we should try to bring the advantages of __讨论议题____ into full play, and reduce the disadvantages to the minimum at the same time. In that case, we will definitely make a better use of the ____讨论议题___.　
+
+
+<h2 id="英语四六级作文万能模板：观点列举型"><a href="#英语四六级作文万能模板：观点列举型" class="headerlink" title="英语四六级作文万能模板：观点列举型"></a>英语四六级作文万能模板：观点列举型</h2><h3 id="不同观点列举型-选择型"><a href="#不同观点列举型-选择型" class="headerlink" title="不同观点列举型( 选择型 )"></a>不同观点列举型( 选择型 )</h3>
+第一段：There is a widespread concern over the issue that __作文题目_____. But it is well known that the opinion concerning this hot topic varies from person to person. A majority of people think that _ 观点一________. In their views there are 2 factors contributing to this attitude as follows: in the first place, ___原因一_______.Furthermore, in the second place, ___原因二_____. So it goes without saying that ___观点一_____.
+  <br/><br/><br/>
+
+
+第二段：People,　however,　differ　in　their　opinions　on　this　matter.　Some　people　hold the idea that ___观点二_______. In their point of view, on the one hand， ___原因一_______. On the other hand, ____原因二_____. Therefore, there　is no　doubt　that ___观点二______.
+  <br/><br/><br/>
+
+
+第三段：As far as I am concerned, I　firmly　support　the　view　that __观点一或二______.　It　is not only because ________, but also because _________. The more _______, the more ________.
+　　
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<div style="width: 80%;margin: 0 auto">
+    <canvas id="chart4559" style="height: 300px"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script type="text/javascript">
+    var ctx = document.getElementById('chart4559').getContext('2d');
+    var options = {
+
+
+ type: "doughnut",
+    data: {
+    
+    labels:['听力','阅读','写作','翻译'],
+    datasets:[{
+    data:[248.5,248.5,106.5,106.5],
+    backgroundColor: ['red','blue','purple','green'],
+    hoverBorderColor:'black'
+    }]
+    
+    },
+    options:  {
+        responsive: true,
+        title: {
+            display: true,
+            text: '分值'
+        }
+    }
+
+
+};
+;
+    new Chart(ctx, options);
+</script>]]></content>
+      <categories>
+        <category>课程</category>
+        <category>英语</category>
+      </categories>
+  </entry>
+  <entry>
     <title>hexo-tag-dplayer</title>
     <url>/2020/12/11/Web/%E5%8D%9A%E5%AE%A2/hexo-tag-dplayer/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装"><a href="#安装" class="headerlink" title="#安装"></a><a href="https://easyhexo.com/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/#%E5%AE%89%E8%A3%85">#</a>安装</h2><p>安装 hexo-tag-dplayer 插件十分简单，只需要在博客目录执行</p>
@@ -1005,11 +1073,7 @@ tfoot {color:red;}
   <entry>
     <title>云计算技术与Hadoop开发大纲答案</title>
     <url>/2020/12/03/%E8%AF%BE%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E4%B8%8EHadoop%E5%BC%80%E5%8F%91/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%80%E6%9C%AF%E4%B8%8EHadoop%E5%BC%80%E5%8F%91%E5%A4%A7%E7%BA%B2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><!--
-    <div id="aplayer-WefLGqSE" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="3778678" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="240px" data-preload="none" data-theme="#ad7a86"
-    ></div>-->
-<div class="note info modern"><p>下载<a href="https://frunoob.lanzous.com/i1byOj6bkfg">Wang Xing 的答案</a></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info modern"><p>下载<a href="https://frunoob.lanzous.com/i1byOj6bkfg">Wang Xing 的答案</a></p>
 </div>
 
 <div class="note primary modern"><p>单选15道，简答5道，论述1道</p>
@@ -11618,7 +11682,7 @@ D.要更加担当有为，携手维护世界和平安宁
 </li>
 <li><p>写法：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">内容</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## Tabs</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​&#96;&#96;&#96;markdown</span><br><span class="line">&#123;% tabs Unique name, [index] %&#125; </span><br><span class="line">&lt;!-- tab [Tab caption] [@icon] --&gt; </span><br><span class="line">Any content (support inline tags too). </span><br><span class="line">&lt;!-- endtab --&gt; </span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">pie</span><br><span class="line"><span class="code">    title Key elements in Product X</span></span><br><span class="line"><span class="code">    &quot;Calcium&quot; : 42.96</span></span><br><span class="line"><span class="code">    &quot;Potassium&quot; : 50.05</span></span><br><span class="line"><span class="code">    &quot;Magnesium&quot; : 10.01</span></span><br><span class="line"><span class="code">    &quot;Iron&quot; :  5</span></span><br><span class="line"><span class="code">&#123;% endmermaid %&#125;</span></span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
