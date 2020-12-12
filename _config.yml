@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://frunoob.gitee.io
+url: https://frunoob.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -126,7 +126,8 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@github.com:frunoob/frunoob.github.io.git
+  repo: 
+  - git@github.com:frunoob/frunoob.github.io.git
   branch: master
   message: blog
 
