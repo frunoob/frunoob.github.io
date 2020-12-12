@@ -7,7 +7,7 @@ top_img: false
 date: 2020-12-05 23:28:55
 ---
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<script>if(prompt("输入密码：")=="1024"){}else{location.href="https://www.frunoob.xyz/"}</script>
+<script>if(prompt("输入密码：")=="1024"){}else{location.href="../"}</script>
 
 <div class = "videos"></div>
 
