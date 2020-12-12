@@ -1,7 +1,5 @@
-*.log
 node_modules/
 .deploy_git/
+.git/
 public/
-.deploy*/
-themes/butterfly/.git/
-themes/butterfly/.github/
+.github/
