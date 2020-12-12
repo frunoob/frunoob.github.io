@@ -1,4 +1,4 @@
 git add -A
 git commit  -m "by frunoob"
-git push gitee master
+git push -f gitee master
 pause
