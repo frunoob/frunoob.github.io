@@ -9,7 +9,7 @@ date: 2020-12-05 23:28:55
 
 ##  图片
 <script>
-    if(prompt("输入密码：")=="1024"){alert("欢迎！");}else{alert("bye.");location.href="https://www.frunoob.xyz/"}</script>
+    if(prompt("输入密码：")=="1024"){alert("欢迎！");}else{alert("bye.");location.href="../"}</script>
 <div class="gallery-group-main">
     {%  galleryGroup 美女  这是一个美女 '/private/mygirl/'  'https://gitee.com/frunoob/blog-image/raw/master/image/20201206002628.jpeg'  %}
 </div>
