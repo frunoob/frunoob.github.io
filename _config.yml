@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 自学成菜
+title: 自学成菜方法
 name: Frunoob
 subtitle: '才疏志大'
 description: '菜鸟要变强'
@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://frunoob.github.io
+url: 
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
