@@ -32,7 +32,7 @@
 <p>注册时，要注册的信息有：用户名、密码、确认密码、用户姓名、性别（单选按钮）、用户电话、收货地址，<br>然后一个提交按钮，确定是否提交《这是一个表》</p>
 </div></div>
 
-<h2 id="数据库表"><a href="#数据库表" class="headerlink" title="数据库表"></a>数据库表</h2><div class="note pink fas icon modern"><i class="note-icon fa-database"></i><p><a href="https://frunoob.lanzous.com/iTSVTjsam0j">数据库表结构文件<code>shoppingsystem.sql</code>下载</a></p>
+<h2 id="数据库表"><a href="#数据库表" class="headerlink" title="数据库表"></a>数据库表</h2><div class="note pink fas icon modern"><i class="note-icon fa-database"></i><p><a href="https://frunoob.lanzous.com/iwH9Tjsb17g">数据库表结构文件<code>shoppingsystem.sql</code>下载</a></p>
 </div>
 
 <h3 id="商品表"><a href="#商品表" class="headerlink" title="商品表"></a>商品表</h3><p class="title" style="text-align:center">goods</p>
@@ -76,6 +76,12 @@
 <td align="center">int</td>
 <td align="center">8</td>
 <td align="center">货余量</td>
+</tr>
+<tr>
+<td align="center">number</td>
+<td align="center">int</td>
+<td align="center">8</td>
+<td align="center">货总量</td>
 </tr>
 <tr>
 <td align="center">kind</td>
@@ -1674,7 +1680,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#x75;&#x65;&#45;&#99;&#108;&#105;&#x40;&#50;&#x2e;&#57;&#46;&#x36;">&#x76;&#x75;&#x65;&#45;&#99;&#108;&#105;&#x40;&#50;&#x2e;&#57;&#46;&#x36;</a><br>yarn global add <a href="mailto:&#118;&#117;&#101;&#x2d;&#99;&#108;&#x69;&#x40;&#x32;&#46;&#x39;&#46;&#x36;">&#118;&#117;&#101;&#x2d;&#99;&#108;&#x69;&#x40;&#x32;&#46;&#x39;&#46;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#x75;&#101;&#45;&#x63;&#x6c;&#x69;&#64;&#x32;&#46;&#57;&#x2e;&#x36;">&#x76;&#x75;&#101;&#45;&#x63;&#x6c;&#x69;&#64;&#x32;&#46;&#57;&#x2e;&#x36;</a><br>yarn global add <a href="mailto:&#118;&#117;&#x65;&#x2d;&#x63;&#x6c;&#105;&#x40;&#x32;&#46;&#57;&#46;&#x36;">&#118;&#117;&#x65;&#x2d;&#x63;&#x6c;&#105;&#x40;&#x32;&#46;&#57;&#46;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
