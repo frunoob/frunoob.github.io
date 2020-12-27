@@ -1680,7 +1680,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#117;&#101;&#x2d;&#99;&#x6c;&#x69;&#x40;&#x32;&#46;&#57;&#x2e;&#54;">&#118;&#117;&#101;&#x2d;&#99;&#x6c;&#x69;&#x40;&#x32;&#46;&#57;&#x2e;&#54;</a><br>yarn global add <a href="mailto:&#118;&#117;&#101;&#45;&#x63;&#x6c;&#x69;&#64;&#x32;&#x2e;&#x39;&#46;&#x36;">&#118;&#117;&#101;&#45;&#x63;&#x6c;&#x69;&#64;&#x32;&#x2e;&#x39;&#46;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#x75;&#x65;&#45;&#x63;&#x6c;&#x69;&#64;&#50;&#46;&#x39;&#x2e;&#54;">&#x76;&#x75;&#x65;&#45;&#x63;&#x6c;&#x69;&#64;&#50;&#46;&#x39;&#x2e;&#54;</a><br>yarn global add <a href="mailto:&#x76;&#x75;&#101;&#45;&#x63;&#108;&#105;&#x40;&#50;&#46;&#x39;&#x2e;&#54;">&#x76;&#x75;&#101;&#45;&#x63;&#108;&#105;&#x40;&#50;&#46;&#x39;&#x2e;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
@@ -2322,7 +2322,10 @@
 <p style="text-align:right">- Chaos Theory</p>
 </div>
 
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><p>no url specified, no dplayer _(:3」∠)_</p>]]></content>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"loop":"yes","screenshot":"yes","video":{"url":" https://cdn.jsdelivr.net/gh/frunoob/videos-1/ChaosTheory/playlist.m3u8"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
+]]></content>
       <categories>
         <category>娱乐</category>
         <category>电影</category>
