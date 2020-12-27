@@ -6,7 +6,7 @@
   <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
   <link href="https://frunoob.github.io/"/>
-  <updated>2020-12-27T03:47:16.983Z</updated>
+  <updated>2020-12-27T09:35:14.871Z</updated>
   <id>https://frunoob.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSM-VUE实训总结</title>
+    <link href="https://frunoob.github.io/2020/12/27/SSM-VUE%E5%AE%9E%E8%AE%AD%E6%80%BB%E7%BB%93/"/>
+    <id>https://frunoob.github.io/2020/12/27/SSM-VUE%E5%AE%9E%E8%AE%AD%E6%80%BB%E7%BB%93/</id>
+    <published>2020-12-27T08:58:22.000Z</published>
+    <updated>2020-12-27T09:35:14.871Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="实训总结："><a href="#实训总结：" class="headerlink" title="实训总结："></a>实训总结：</h2><p> 本次实训通过SSM+VUE实现前后端分离。SSM（Spring+SpringMVC+MyBatis）框架是由Spring、MyBatis两个开源框架整合而成(SpringMVC是Spring中的部分内容)。</p><h2 id="课堂笔记"><a href="#课堂笔记" class="headerlink" title="课堂笔记"></a>课堂笔记</h2><p>1.课程目标<br>    后端工程师：(服务器端工程师)</p><pre><code>      MySql,Oracle      Spring(AOP,IOC) ,SpringMVC, MyBatis, MyBatis-plus,SpringBoot,SpringCloud      分布式项目，微服务架构MQ中间件（RocketMQ, RabbitMQ）,ElasticSearch/Solr , Redis .... ....前端工程师：      Vue,Ractjs,AgularJS,Extjs，LayUI, easyUI,ElementUI,Verify。。。。。。  ssm+vue前后端分离</code></pre><p>2.maven目录结构规范：<br>     作用：管理jar包，项目构建  ；  pom.xml<br>     目录结构：<br>     main:<br>           java              源代码目录<br>           resources     项目的配置文件目录<br>           test               测试源码<br>           webapp        如果是web工程，有这个目录，放web页面、脚本、web.xml</p><ol start="3"><li>MVC设计模式<br>   GOF23<br>   M: model   模型层 ，向业务层提供数据 ；  实体类（和数据库表有对应关系）<br>   V：view      视图层，html,jsp,theamleaf。。。<br>   C：控制层</li></ol><p>4.跨域</p><p>  访问前端：  <a href="http://localhost:8081/">http://localhost:8081</a></p><p>  访问后端：  <a href="http://localhost:8080/">http://localhost:8080</a></p><p>  前端与后端交互：    Vue     $http  异步访问 url   <a href="http://localhost:8080/test">http://localhost:8080/test</a></p><p>  跨越：当域名或端口号发生变化时，就是跨越；</p><pre><code>        原生的javaScript  ajax不支持跨越；</code></pre><p>  项目：  前端请求后端添加一个”/api”    eg: <a href="http://localhost:8080/api/test">http://localhost:8080/api/test</a></p><ol start="5"><li>序列化</li></ol><p>6.mysql分页关键字</p><p>   limit a,b      eg:  limit 0,10</p><p>   a: 数据的起始位置<br>   b：从起始位置向后的偏移量</p><ol start="7"><li><p>json 数据格式</p><p> 前后端交互的常用数据格式</p></li></ol><p>8.Restful API设计规范</p><p>  http提交方法：</p><p>   GET:   查询单个或者集合    </p><pre><code>    eg:  /user/1    eg:  /user?uid=001&amp;uName=aaa</code></pre><p>   POST:  添加单个或者集合</p><pre><code>   eg:  /user</code></pre><p>   PUT:    修改</p><p>   DELETE:  删除</p><pre><code>    eg: /user/1</code></pre><p>   接口测试工具：Postman</p><p>9.proxyTable配置多个服务器</p><p>   svn,  git      手动合并后端代码；</p><p>   前端请求url:<br>        <a href="http://localhost:8081/api/addUser">http://localhost:8081/api/addUser</a></p><p>   后端：8080<br>        <a href="http://127.0.0.1:8080/addUser">http://127.0.0.1:8080/addUser</a></p><p>   解决方案：<br>        proxyTable: {<br>      ‘/api/a’: {<br>              target: ‘<a href="http://10.10.10.101:0801&#39;">http://10.10.10.101:0801&#39;</a>,<br>              changeOrigin: true,<br>              pathRewrite: {<br>                ‘^/api/a’: ‘/‘<br>              }<br>      },<br>       ‘/api/b’: {<br>              target: ‘<a href="http://10.10.10.102:0802&#39;">http://10.10.10.102:0802&#39;</a>,<br>              changeOrigin: true,<br>              pathRewrite: {<br>                ‘^/api/b’: ‘/‘<br>              }<br>      },<br>       ‘/api/c’: {<br>              target: ‘<a href="http://10.10.10.103:0802&#39;">http://10.10.10.103:0802&#39;</a>,<br>              changeOrigin: true,<br>              pathRewrite: {<br>                ‘^/api/c’: ‘/‘<br>              }<br>      }<br>    }</p><p>  参考：<a href="https://blog.csdn.net/cheng_chunxiao/article/details/102725287">https://blog.csdn.net/cheng_chunxiao/article/details/102725287</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="课程" scheme="https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="web" scheme="https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/web/"/>
+    
+    
+    <category term="默认标签" scheme="https://frunoob.github.io/tags/%E9%BB%98%E8%AE%A4%E6%A0%87%E7%AD%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>设置butterfly主题主页head和footer的背景颜色为透明</title>
@@ -204,7 +230,7 @@
     <published>2020-12-26T11:22:19.000Z</published>
     <updated>2020-12-26T15:43:41.073Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info modern"><p>在安装vue-cli时候，使用的命令是<code>npm install vue-cli -g</code>。</p><p>这是安装<code>2.X</code>版本的指令，而安装3.0版本及以上版本的指令是<code>npm install @vue/cli -g</code>。</p></div><ol><li><p>卸载3.0之前的版本.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g vue-cli</span><br><span class="line">yarn global remove vue-cli</span><br></pre></td></tr></table></figure></li><li><p>卸载3.0之后的版本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g @vue&#x2F;cli</span><br><span class="line">yarn global remove @vue&#x2F;cli</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>npm install @vue-cli -g</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#117;&#101;&#x2d;&#99;&#x6c;&#x69;&#64;&#x32;&#x2e;&#57;&#x2e;&#54;">&#118;&#117;&#101;&#x2d;&#99;&#x6c;&#x69;&#64;&#x32;&#x2e;&#57;&#x2e;&#54;</a><br>yarn global add <a href="mailto:&#x76;&#x75;&#x65;&#45;&#x63;&#x6c;&#105;&#64;&#50;&#x2e;&#57;&#46;&#54;">&#x76;&#x75;&#x65;&#45;&#x63;&#x6c;&#105;&#64;&#50;&#x2e;&#57;&#46;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info modern"><p>在安装vue-cli时候，使用的命令是<code>npm install vue-cli -g</code>。</p><p>这是安装<code>2.X</code>版本的指令，而安装3.0版本及以上版本的指令是<code>npm install @vue/cli -g</code>。</p></div><ol><li><p>卸载3.0之前的版本.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g vue-cli</span><br><span class="line">yarn global remove vue-cli</span><br></pre></td></tr></table></figure></li><li><p>卸载3.0之后的版本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g @vue&#x2F;cli</span><br><span class="line">yarn global remove @vue&#x2F;cli</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>npm install @vue-cli -g</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#x75;&#101;&#x2d;&#99;&#108;&#x69;&#64;&#x32;&#x2e;&#57;&#x2e;&#x36;">&#118;&#x75;&#101;&#x2d;&#99;&#108;&#x69;&#64;&#x32;&#x2e;&#57;&#x2e;&#x36;</a><br>yarn global add <a href="mailto:&#x76;&#x75;&#x65;&#45;&#x63;&#x6c;&#x69;&#64;&#x32;&#46;&#x39;&#x2e;&#x36;">&#x76;&#x75;&#x65;&#45;&#x63;&#x6c;&#x69;&#64;&#x32;&#46;&#x39;&#x2e;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li></ol>]]></content>
     
     
       
@@ -224,13 +250,13 @@
   </entry>
   
   <entry>
-    <title>web课程设计(vue+Java spring)前后端分离</title>
-    <link href="https://frunoob.github.io/2020/12/26/web%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1-vue-Java-spring-%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/"/>
-    <id>https://frunoob.github.io/2020/12/26/web%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1-vue-Java-spring-%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/</id>
+    <title>(Java spring+vue)购物商场项目</title>
+    <link href="https://frunoob.github.io/2020/12/26/(Java%20spring+vue)%E8%B4%AD%E7%89%A9%E5%95%86%E5%9C%BA%E9%A1%B9%E7%9B%AE/"/>
+    <id>https://frunoob.github.io/2020/12/26/(Java%20spring+vue)%E8%B4%AD%E7%89%A9%E5%95%86%E5%9C%BA%E9%A1%B9%E7%9B%AE/</id>
     <published>2020-12-26T10:58:26.000Z</published>
-    <updated>2020-12-27T03:07:21.355Z</updated>
+    <updated>2020-12-27T09:34:35.434Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info modern"></div><h1 id="购物商城项目"><a href="#购物商城项目" class="headerlink" title="购物商城项目"></a>购物商城项目</h1><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>首页：<br>要有一个搜索的功能，模糊搜索，输入商品标题里的某些词，出来一些商品（商品信息表）</p><p>商品分类：女装男装、鞋类箱包、母婴用品、护肤彩妆、汇吃美食、珠宝配饰、家装建材、家居家纺<br>、手机数码、家电办公《这是一个表》<br>每个商品的信息有：标题（别太长）、商品照片、单价然后一个购物车按钮、一个详细信息按钮，《这是一个表》<br>详细信息有：标题、商品图片、单价、货总量、货余量《这是一个表》</p><p>商品信息</p><p>还要展示用户信息：用户名、我的订单、修改密码、个人信息、退出登录<br>我的订单：订单号、付款时间、订单总金额、是否发货、发货时间（未发货则写未发货）、是否付款《这是一个表》<br>修改密码：新密码、确认密码然后两个按钮提交、重置，确认是否提交《这是一个表》<br>个人信息：用户名、用户姓名、性别（单选按钮）、用户电话、收货地址《这是一个表》</p><p>用户如果要下单，需要先将商品加入购物车，然后再进入购物车点击付款<br>购物车里有每个已加入购物车的商品的订单号、用户名、提交时间、订单总金额、是否付款（订单的状态）<br>付款（按钮，点击即可付款）、商品标题、商品数量《这是一个表》</p><p>登录注册页面：<br>用户一访问这个网址就可浏览这个界面，可以注册、登录，也可以挑选中某一商品，当要加入购物车时，<br>系统提醒用户没有登陆或者没有账号，用户再进行注册登录，登录时<br>要检测用户名是否存在，并限制用户名长度、密码必须为几位《这是一个表》</p><p>注册时，要注册的信息有：用户名、密码、确认密码、用户姓名、性别（单选按钮）、用户电话、收货地址，<br>然后一个提交按钮，确定是否提交《这是一个表》</p><h2 id="API文档"><a href="#API文档" class="headerlink" title="API文档"></a>API文档</h2><h3 id="用户API"><a href="#用户API" class="headerlink" title="用户API"></a>用户API</h3><h3 id="商品API"><a href="#商品API" class="headerlink" title="商品API"></a>商品API</h3>]]></content>
     
     
       
@@ -244,6 +270,8 @@
     
     <category term="Web" scheme="https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/Web/"/>
     
+    
+    <category term="Web课程设计" scheme="https://frunoob.github.io/tags/Web%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -461,32 +489,6 @@
     
     
     <category term="github上传慢" scheme="https://frunoob.github.io/tags/github%E4%B8%8A%E4%BC%A0%E6%85%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>蝴蝶效应</title>
-    <link href="https://frunoob.github.io/2020/12/08/%E5%A8%B1%E4%B9%90/%E7%94%B5%E5%BD%B1/%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94/"/>
-    <id>https://frunoob.github.io/2020/12/08/%E5%A8%B1%E4%B9%90/%E7%94%B5%E5%BD%B1/%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94/</id>
-    <published>2020-12-08T15:48:00.000Z</published>
-    <updated>2020-12-11T21:38:38.985Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note purple no-icon modern"><p>纵使细微如蝴蝶之鼓翼  也能造成千里外之飓风  </p><p style="text-align:right">- 混沌理论</p></div><div class="note purple no-icon modern"><p>It has been said that something as small as the flutter of a butterfly’s wing can ultimately cause a typhoon halfway around the world.</p><p style="text-align:right">- Chaos Theory</p></div><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><p>no url specified, no dplayer _(:3」∠)_</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="娱乐" scheme="https://frunoob.github.io/categories/%E5%A8%B1%E4%B9%90/"/>
-    
-    <category term="电影" scheme="https://frunoob.github.io/categories/%E5%A8%B1%E4%B9%90/%E7%94%B5%E5%BD%B1/"/>
-    
-    
-    <category term="科幻电影" scheme="https://frunoob.github.io/tags/%E7%A7%91%E5%B9%BB%E7%94%B5%E5%BD%B1/"/>
     
   </entry>
   
