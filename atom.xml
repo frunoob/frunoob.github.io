@@ -6,7 +6,7 @@
   <link href="https://frunoob.github.io/atom.xml" rel="self"/>
   
   <link href="https://frunoob.github.io/"/>
-  <updated>2020-12-27T02:57:52.955Z</updated>
+  <updated>2020-12-27T03:47:16.983Z</updated>
   <id>https://frunoob.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>设置butterfly主题主页head和footer的背景颜色为透明</title>
+    <link href="https://frunoob.github.io/2020/12/27/Web/%E5%8D%9A%E5%AE%A2/%E8%AE%BE%E7%BD%AEbutterfly%E4%B8%BB%E9%A2%98%E4%B8%BB%E9%A1%B5head%E5%92%8Cfooter%E7%9A%84%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2%E4%B8%BA%E9%80%8F%E6%98%8E/"/>
+    <id>https://frunoob.github.io/2020/12/27/Web/%E5%8D%9A%E5%AE%A2/%E8%AE%BE%E7%BD%AEbutterfly%E4%B8%BB%E9%A2%98%E4%B8%BB%E9%A1%B5head%E5%92%8Cfooter%E7%9A%84%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2%E4%B8%BA%E9%80%8F%E6%98%8E/</id>
+    <published>2020-12-27T03:44:19.000Z</published>
+    <updated>2020-12-27T03:47:16.983Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在<code>butterfly\source\css\_layout</code>文件夹下<br><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227114544.png" alt="image-20201227114542153"></p><p>设置这两个文件中的<code>background-color</code>即可<br><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227114643.png" alt="image-20201227114641923"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="Web" scheme="https://frunoob.github.io/categories/Web/"/>
+    
+    <category term="博客" scheme="https://frunoob.github.io/categories/Web/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>C语言单链表学生成绩管理系统</title>
@@ -180,7 +204,7 @@
     <published>2020-12-26T11:22:19.000Z</published>
     <updated>2020-12-26T15:43:41.073Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info modern"><p>在安装vue-cli时候，使用的命令是<code>npm install vue-cli -g</code>。</p><p>这是安装<code>2.X</code>版本的指令，而安装3.0版本及以上版本的指令是<code>npm install @vue/cli -g</code>。</p></div><ol><li><p>卸载3.0之前的版本.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g vue-cli</span><br><span class="line">yarn global remove vue-cli</span><br></pre></td></tr></table></figure></li><li><p>卸载3.0之后的版本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g @vue&#x2F;cli</span><br><span class="line">yarn global remove @vue&#x2F;cli</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>npm install @vue-cli -g</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#117;&#101;&#x2d;&#x63;&#x6c;&#x69;&#64;&#x32;&#x2e;&#x39;&#46;&#x36;">&#x76;&#117;&#101;&#x2d;&#x63;&#x6c;&#x69;&#64;&#x32;&#x2e;&#x39;&#46;&#x36;</a><br>yarn global add <a href="mailto:&#x76;&#117;&#x65;&#x2d;&#x63;&#108;&#x69;&#64;&#50;&#46;&#x39;&#x2e;&#x36;">&#x76;&#117;&#x65;&#x2d;&#x63;&#108;&#x69;&#64;&#50;&#46;&#x39;&#x2e;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info modern"><p>在安装vue-cli时候，使用的命令是<code>npm install vue-cli -g</code>。</p><p>这是安装<code>2.X</code>版本的指令，而安装3.0版本及以上版本的指令是<code>npm install @vue/cli -g</code>。</p></div><ol><li><p>卸载3.0之前的版本.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g vue-cli</span><br><span class="line">yarn global remove vue-cli</span><br></pre></td></tr></table></figure></li><li><p>卸载3.0之后的版本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g @vue&#x2F;cli</span><br><span class="line">yarn global remove @vue&#x2F;cli</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>npm install @vue-cli -g</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#117;&#x65;&#x2d;&#99;&#x6c;&#x69;&#x40;&#50;&#46;&#x39;&#46;&#54;">&#x76;&#117;&#x65;&#x2d;&#99;&#x6c;&#x69;&#x40;&#50;&#46;&#x39;&#46;&#54;</a><br>yarn global add <a href="mailto:&#118;&#117;&#101;&#45;&#x63;&#108;&#x69;&#64;&#x32;&#x2e;&#x39;&#46;&#x36;">&#118;&#117;&#101;&#45;&#x63;&#108;&#x69;&#64;&#x32;&#x2e;&#x39;&#46;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li></ol>]]></content>
     
     
       
@@ -463,30 +487,6 @@
     
     
     <category term="科幻电影" scheme="https://frunoob.github.io/tags/%E7%A7%91%E5%B9%BB%E7%94%B5%E5%BD%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>舔狗反击日记</title>
-    <link href="https://frunoob.github.io/2020/12/08/%E5%A8%B1%E4%B9%90/%E6%90%9E%E7%AC%91/%E8%88%94%E7%8B%97%E5%8F%8D%E5%87%BB%E6%97%A5%E8%AE%B0/"/>
-    <id>https://frunoob.github.io/2020/12/08/%E5%A8%B1%E4%B9%90/%E6%90%9E%E7%AC%91/%E8%88%94%E7%8B%97%E5%8F%8D%E5%87%BB%E6%97%A5%E8%AE%B0/</id>
-    <published>2020-12-08T14:13:00.000Z</published>
-    <updated>2020-12-08T14:17:12.320Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201208221629.jpeg" alt="1607436738903"></p><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201208221625.jpeg" alt="1607436737461"></p><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201208221622.jpeg" alt="1607436736251"></p><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201208221554.jpeg" alt="1607436735022"></p><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201208221550.jpeg" alt="1607436732967"></p><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201208221526.jpeg" alt="1607436729690"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201208221534.jpeg" alt="1607436731846"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201208221510.jpeg" alt="1607436726437"></p><p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201208221657.gif" alt="1366382794"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="娱乐" scheme="https://frunoob.github.io/categories/%E5%A8%B1%E4%B9%90/"/>
-    
-    <category term="搞笑" scheme="https://frunoob.github.io/categories/%E5%A8%B1%E4%B9%90/%E6%90%9E%E7%AC%91/"/>
-    
     
   </entry>
   
