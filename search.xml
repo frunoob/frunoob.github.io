@@ -65,10 +65,7 @@
 </ol>
 </li>
 </ul>
-<h2 id="数据库表"><a href="#数据库表" class="headerlink" title="数据库表"></a>数据库表</h2><div class="note pink fas icon modern"><i class="note-icon fa-database"></i><p><a href="https://frunoob.lanzous.com/iTl2rk31qch">数据库表结构文件<code>shoppingsystem.sql</code>下载</a></p>
-</div>
-
-<h3 id="商品表"><a href="#商品表" class="headerlink" title="商品表"></a>商品表</h3><p class="title1" style="text-align:center">goods</p>
+<h2 id="数据库表"><a href="#数据库表" class="headerlink" title="数据库表"></a>数据库表</h2><h3 id="商品表"><a href="#商品表" class="headerlink" title="商品表"></a>商品表</h3><p class="title1" style="text-align:center">goods</p>
 
 
 <table>
@@ -204,7 +201,7 @@
 <td align="center">paytime</td>
 <td align="center">datatime</td>
 <td align="center"></td>
-<td align="center">付款时间</td>
+<td align="center">下单时间</td>
 </tr>
 <tr>
 <td align="center">allpay</td>
@@ -228,7 +225,7 @@
 <td align="center">isdeliver</td>
 <td align="center">int</td>
 <td align="center">1</td>
-<td align="center">是否发货（未发货：0，已发货：1）</td>
+<td align="center">是否收货（未收货：0，已收货：1）</td>
 </tr>
 <tr>
 <td align="center">ispay</td>
@@ -274,9 +271,9 @@
 </tr>
 <tr>
 <td align="center">subtime</td>
-<td align="center">datatime</td>
+<td align="center">dat加入ime        提交到ime</td>
 <td align="center"></td>
-<td align="center">提交时间</td>
+<td align="center">加入到购物车时间</td>
 </tr>
 <tr>
 <td align="center">allmoney</td>
@@ -1905,7 +1902,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#117;&#101;&#x2d;&#99;&#108;&#105;&#64;&#50;&#46;&#57;&#46;&#54;">&#x76;&#117;&#101;&#x2d;&#99;&#108;&#105;&#64;&#50;&#46;&#57;&#46;&#54;</a><br>yarn global add <a href="mailto:&#118;&#x75;&#x65;&#x2d;&#x63;&#x6c;&#105;&#x40;&#x32;&#x2e;&#x39;&#x2e;&#x36;">&#118;&#x75;&#x65;&#x2d;&#x63;&#x6c;&#105;&#x40;&#x32;&#x2e;&#x39;&#x2e;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#x75;&#101;&#45;&#x63;&#108;&#x69;&#x40;&#x32;&#x2e;&#57;&#x2e;&#54;">&#x76;&#x75;&#101;&#45;&#x63;&#108;&#x69;&#x40;&#x32;&#x2e;&#57;&#x2e;&#54;</a><br>yarn global add <a href="mailto:&#118;&#x75;&#x65;&#45;&#x63;&#x6c;&#105;&#64;&#x32;&#46;&#x39;&#x2e;&#x36;">&#118;&#x75;&#x65;&#45;&#x63;&#x6c;&#105;&#64;&#x32;&#46;&#x39;&#x2e;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
