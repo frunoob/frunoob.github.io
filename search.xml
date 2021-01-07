@@ -143,7 +143,6 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">  save() &#123;</span><br><span class="line">    this.cart.subtime &#x3D; this.getTime();</span><br><span class="line">    this.cart.number &#x3D; 2;</span><br><span class="line">    this.cart.price &#x3D; 3;</span><br><span class="line">    this.cart.username &#x3D; &quot;1&quot;;</span><br><span class="line">    this.cart.title &#x3D; &quot;1&quot;;</span><br><span class="line">    this.cart.allmoney &#x3D; this.cart.price * this.cart.number;</span><br><span class="line">    this.$axios</span><br><span class="line">      .post(&quot;http:&#x2F;&#x2F;localhost:8888&#x2F;cart&#x2F;save&quot;,this.cart)</span><br><span class="line">      .then((res) &#x3D;&gt; &#123;</span><br><span class="line">        console.log(res.data);</span><br><span class="line">      &#125;);</span><br><span class="line">  &#125;,</span><br><span class="line">  getTime() &#123;</span><br><span class="line">    var data &#x3D; new Date();</span><br><span class="line">    var year &#x3D; data.getFullYear();</span><br><span class="line">    var seperator1 &#x3D; &quot;-&quot;;</span><br><span class="line">    var seperator2 &#x3D; &quot;:&quot;;</span><br><span class="line">    var seperator3 &#x3D; &quot; &quot;;</span><br><span class="line">    var month &#x3D; data.getMonth() + 1;</span><br><span class="line">    var day &#x3D; data.getDate();</span><br><span class="line">    var hour &#x3D; data.getHours();</span><br><span class="line">    var minutes &#x3D; data.getMinutes();</span><br><span class="line">    var second &#x3D; data.getSeconds();</span><br><span class="line">    if (month &gt;&#x3D; 1 &amp;&amp; month &lt;&#x3D; 9) &#123;</span><br><span class="line">      month &#x3D; &quot;0&quot; + month;</span><br><span class="line">    &#125;</span><br><span class="line">    if (day &gt;&#x3D; 0 &amp;&amp; day &lt;&#x3D; 9) &#123;</span><br><span class="line">      day &#x3D; &quot;0&quot; + day;</span><br><span class="line">    &#125;</span><br><span class="line">    var currentdata &#x3D;</span><br><span class="line">      year +</span><br><span class="line">      seperator1 +</span><br><span class="line">      month +</span><br><span class="line">      seperator1 +</span><br><span class="line">      day +</span><br><span class="line">      seperator3 +</span><br><span class="line">      hour +</span><br><span class="line">      seperator2 +</span><br><span class="line">      minutes +</span><br><span class="line">      seperator2 +</span><br><span class="line">      second;</span><br><span class="line">      console.log(currentdata);</span><br><span class="line">    return currentdata;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
 
-
 </li>
 </ol>
 </li>
@@ -2063,7 +2062,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#x75;&#x65;&#45;&#x63;&#x6c;&#105;&#64;&#50;&#46;&#57;&#x2e;&#x36;">&#x76;&#x75;&#x65;&#45;&#x63;&#x6c;&#105;&#64;&#50;&#46;&#57;&#x2e;&#x36;</a><br>yarn global add <a href="mailto:&#118;&#117;&#101;&#45;&#x63;&#x6c;&#105;&#x40;&#x32;&#46;&#57;&#46;&#54;">&#118;&#117;&#101;&#45;&#x63;&#x6c;&#105;&#x40;&#x32;&#46;&#57;&#46;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#117;&#101;&#x2d;&#99;&#x6c;&#x69;&#x40;&#50;&#46;&#x39;&#46;&#54;">&#118;&#117;&#101;&#x2d;&#99;&#x6c;&#x69;&#x40;&#50;&#46;&#x39;&#46;&#54;</a><br>yarn global add <a href="mailto:&#x76;&#x75;&#101;&#x2d;&#99;&#108;&#105;&#64;&#50;&#x2e;&#x39;&#46;&#x36;">&#x76;&#x75;&#101;&#x2d;&#99;&#108;&#105;&#64;&#50;&#x2e;&#x39;&#46;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
@@ -14304,8 +14303,8 @@ D.要更加担当有为，携手维护世界和平安宁
         <category>java</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>java编程题</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>

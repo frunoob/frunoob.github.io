@@ -865,7 +865,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/jsdelivr/</loc>
+    <loc>https://frunoob.github.io/tags/%E7%BD%95%E8%A7%81%E8%93%9D%E6%9C%88%E4%BA%AE/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -873,6 +873,13 @@
   
   <url>
     <loc>https://frunoob.github.io/tags/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2021-01-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/tags/jsdelivr/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1012,6 +1019,13 @@
   </url>
   
   <url>
+    <loc>https://frunoob.github.io/tags/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</loc>
+    <lastmod>2021-01-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://frunoob.github.io/tags/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
@@ -1026,21 +1040,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</loc>
-    <lastmod>2021-01-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/tags/tags%E5%A4%96%E6%8C%82/</loc>
-    <lastmod>2021-01-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/tags/%E7%BD%95%E8%A7%81%E8%93%9D%E6%9C%88%E4%BA%AE/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1082,13 +1082,6 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/java/</loc>
-    <lastmod>2021-01-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/tags/java%E9%80%89%E6%8B%A9%E9%A2%98/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
@@ -1097,6 +1090,13 @@
   
   <url>
     <loc>https://frunoob.github.io/tags/java%E7%BC%96%E7%A8%8B%E9%A2%98/</loc>
+    <lastmod>2021-01-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/tags/java/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1222,14 +1222,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    <loc>https://frunoob.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%97%E7%AC%A6%E5%AE%9A%E4%B9%89/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%97%E7%AC%A6%E5%AE%9A%E4%B9%89/</loc>
+    <loc>https://frunoob.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1266,6 +1266,13 @@
   </url>
   
   <url>
+    <loc>https://frunoob.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2021-01-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://frunoob.github.io/categories/Web/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
@@ -1280,7 +1287,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/Web/CDN/</loc>
+    <loc>https://frunoob.github.io/categories/Web/echarts/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1294,7 +1301,7 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/Web/echarts/</loc>
+    <loc>https://frunoob.github.io/categories/Web/CDN/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1323,13 +1330,6 @@
   
   <url>
     <loc>https://frunoob.github.io/categories/Web/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-01-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1378,14 +1378,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/Web/%E5%8D%9A%E5%AE%A2/%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/</loc>
+    <loc>https://frunoob.github.io/categories/Web/%E5%8D%9A%E5%AE%A2/%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2021-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
