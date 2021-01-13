@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>(Java spring+vue)购物商场项目</title>
-    <url>/2020/12/26/(Java%20spring+vue)%E8%B4%AD%E7%89%A9%E5%95%86%E5%9C%BA%E9%A1%B9%E7%9B%AE/</url>
+    <url>/2020/12/26/%E8%AF%BE%E7%A8%8B/web/(Java%20spring+vue)%E8%B4%AD%E7%89%A9%E5%95%86%E5%9C%BA%E9%A1%B9%E7%9B%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><style>
     .title1{
         color: #44d35ce8;
@@ -548,7 +548,7 @@
   </entry>
   <entry>
     <title>vue中如何使用less语法</title>
-    <url>/2021/01/04/vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8less%E8%AF%AD%E6%B3%95/</url>
+    <url>/2021/01/04/%E8%AF%BE%E7%A8%8B/web/vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8less%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
       <categories>
         <category>默认分类</category>
@@ -2041,7 +2041,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#117;&#101;&#x2d;&#99;&#x6c;&#105;&#x40;&#x32;&#46;&#x39;&#x2e;&#x36;">&#118;&#117;&#101;&#x2d;&#99;&#x6c;&#105;&#x40;&#x32;&#46;&#x39;&#x2e;&#x36;</a><br>yarn global add <a href="mailto:&#x76;&#x75;&#x65;&#x2d;&#99;&#x6c;&#105;&#64;&#50;&#x2e;&#x39;&#46;&#x36;">&#x76;&#x75;&#x65;&#x2d;&#99;&#x6c;&#105;&#64;&#50;&#x2e;&#x39;&#46;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#117;&#101;&#45;&#x63;&#x6c;&#105;&#64;&#x32;&#x2e;&#x39;&#46;&#54;">&#x76;&#117;&#101;&#45;&#x63;&#x6c;&#105;&#64;&#x32;&#x2e;&#x39;&#46;&#54;</a><br>yarn global add <a href="mailto:&#x76;&#117;&#101;&#x2d;&#99;&#x6c;&#x69;&#64;&#x32;&#x2e;&#57;&#x2e;&#54;">&#x76;&#117;&#101;&#x2d;&#99;&#x6c;&#x69;&#64;&#x32;&#x2e;&#57;&#x2e;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
