@@ -1,0 +1,445 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>北邮软件工程自命题科目 | 自学成菜</title><meta name="keywords" content="计算机,音乐,电影"><meta name="author" content="Frunoob"><meta name="copyright" content="Frunoob"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="807软件工程专业综合第一部分数据结构（ 90&#x2F;150 ）一、考试要求 要求考生比较系统地理解数据结构的基本概念和基本理论，掌握各种数据结构的特点和基本方法，着重考察考生综合运用所学知识分析问题和解决问题的能力。要求考生能够用C&#x2F;C++语言描述数据结构中的算法。 二、考试内容 （一）绪论 数据结构的基本概念，数据的逻辑结构、存储结构； 算法的定义和应具有的特性，算法设计的要求，算法的时间复杂度分析">
+<meta property="og:type" content="website">
+<meta property="og:title" content="北邮软件工程自命题科目">
+<meta property="og:url" content="https://frunoob.github.io/kaoyan/807/index.html">
+<meta property="og:site_name" content="自学成菜">
+<meta property="og:description" content="807软件工程专业综合第一部分数据结构（ 90&#x2F;150 ）一、考试要求 要求考生比较系统地理解数据结构的基本概念和基本理论，掌握各种数据结构的特点和基本方法，着重考察考生综合运用所学知识分析问题和解决问题的能力。要求考生能够用C&#x2F;C++语言描述数据结构中的算法。 二、考试内容 （一）绪论 数据结构的基本概念，数据的逻辑结构、存储结构； 算法的定义和应具有的特性，算法设计的要求，算法的时间复杂度分析">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-e522801945af3714797aa2c5bfb0db79_1440w.jpg?source=172ae18b">
+<meta property="article:published_time" content="2021-01-13T14:16:48.000Z">
+<meta property="article:modified_time" content="2021-01-16T05:36:09.441Z">
+<meta property="article:author" content="Frunoob">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="音乐">
+<meta property="article:tag" content="电影">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic4.zhimg.com/v2-e522801945af3714797aa2c5bfb0db79_1440w.jpg?source=172ae18b"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png"><link rel="canonical" href="https://frunoob.github.io/kaoyan/807/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5096b4561a970b09ada1287ef213db82";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":90,"position":"bottom","messagePrev":"这篇文章距离上次更新已经过去足足","messageNext":"天了，文章的内容可能已经过时了，仅供参考。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#47e3ee","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-01-16 13:36:09'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }})()</script><meta name="baidu-site-verification" content="code-qKvRSQMSdK" /><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="google-site-verification" content="F4CpoqZsBSEfKOG0MJecZeGtXVVtg2u3ZZt5Fyzig8k" /><link rel="stylesheet" href="/css/zidingyi.css"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="自学成菜" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/frunoob/images/blog/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">90</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">42</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-minus"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-feather"></i><span> 常用</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/%E5%A4%8D%E4%B9%A0/"><i class="fa-fw fas fa-list"></i><span> 知识总结</span></a></li><li><a class="site-page" href="/memorandum/"><i class="fa-fw fas fa-calendar-alt"></i><span> 备忘清单</span></a></li><li><a class="site-page" href="/tally/"><i class="fa-fw fas fa-list"></i><span> 日常记账</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/entertainment/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page" href="/entertainment/film/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/entertainment/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-flask"></i><span> 实验</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/web-homework/"><i class="fa-fw fa fa-desktop"></i><span> COVID-19数据可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tools"></i><span> 工具</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87"><i class="fa-fw fas fa-bookmark"></i><span> fa5图标备忘录</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://frunoob.avosapps.us/"><i class="fa-fw fas fa-cog"></i><span> 评论管理</span></a></li><li><a class="site-page" href="/markdown-it/"><i class="fa-fw fa fa-desktop"></i><span> markdown-it</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-biohazard"></i><span> 收藏</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/favorites/blogs/"><i class="fa-fw fas fa-eye"></i><span> 大佬博客</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/leave-your-message/"><i class="fa-fw fa fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fa fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/lover/"><i class="fa-fw fas fa-heart fa-lg"></i><span> love</span></a></div></div></div></div><div id="body-wrap"><header class="no-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">自学成菜</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-minus"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-feather"></i><span> 常用</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/%E5%A4%8D%E4%B9%A0/"><i class="fa-fw fas fa-list"></i><span> 知识总结</span></a></li><li><a class="site-page" href="/memorandum/"><i class="fa-fw fas fa-calendar-alt"></i><span> 备忘清单</span></a></li><li><a class="site-page" href="/tally/"><i class="fa-fw fas fa-list"></i><span> 日常记账</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/entertainment/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page" href="/entertainment/film/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/entertainment/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-flask"></i><span> 实验</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/web-homework/"><i class="fa-fw fa fa-desktop"></i><span> COVID-19数据可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tools"></i><span> 工具</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87"><i class="fa-fw fas fa-bookmark"></i><span> fa5图标备忘录</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://frunoob.avosapps.us/"><i class="fa-fw fas fa-cog"></i><span> 评论管理</span></a></li><li><a class="site-page" href="/markdown-it/"><i class="fa-fw fa fa-desktop"></i><span> markdown-it</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-biohazard"></i><span> 收藏</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/favorites/blogs/"><i class="fa-fw fas fa-eye"></i><span> 大佬博客</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/leave-your-message/"><i class="fa-fw fa fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fa fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/lover/"><i class="fa-fw fas fa-heart fa-lg"></i><span> love</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout hide-aside" id="content-inner"><div id="page"><div id="article-container"><h1 class="page-title">北邮软件工程自命题科目</h1><h3 id="807软件工程专业综合"><a href="#807软件工程专业综合" class="headerlink" title="807软件工程专业综合"></a>807软件工程专业综合</h3><h4 id="第一部分数据结构（-90-150-）"><a href="#第一部分数据结构（-90-150-）" class="headerlink" title="第一部分数据结构（ 90/150 ）"></a><strong>第一部分数据结构（</strong> <strong>90/150</strong> <strong>）</strong></h4><p><strong>一、考试要求</strong></p>
+<p>要求考生比较系统地理解数据结构的基本概念和基本理论，掌握各种数据结构的特点和基本方法，着重考察考生综合运用所学知识分析问题和解决问题的能力。要求考生能够用C/C++语言描述数据结构中的算法。</p>
+<p><strong>二、考试内容</strong></p>
+<p>（一）绪论</p>
+<p>数据结构的基本概念，数据的逻辑结构、存储结构；</p>
+<p>算法的定义和应具有的特性，算法设计的要求，算法的时间复杂度分析和算法的空间复杂度分析。</p>
+<p>（二）线性表</p>
+<p>线性结构的特点、线性表的定义，线性表的基本操作；</p>
+<p>线性表的顺序存储结构，对其进行检索、插入和删除等操作；</p>
+<p>线性表的链式存储结构，单链表、双向链表和循环链表这三种链表形式的存储结构和特点以及基本操作。</p>
+<p>（三）栈和队列，递归算法</p>
+<p>栈的定义、结构特点及其存储方式(顺序存储与链接存储)和基本操作的实现算法；</p>
+<p>队列的结构、特点及其存储方式(顺序存储与链接存储)和基本操作的实现算法。</p>
+<p>递归的基本概念和实现原理以及用递归的思想描述问题和书写算法的方法；</p>
+<p>用栈实现递归问题的非递归解法。</p>
+<p>（四）数组和串</p>
+<p>串的基本概念、串的存储结构和相关的操作算法；</p>
+<p>数组的存储结构，在顺序存储的情况下，数组元素与存储单元的对应关系；</p>
+<p>稀疏矩阵的存储结构和特点以及基本操作。</p>
+<p>字符串匹配算法(例如KMP算法)。</p>
+<p>（五）树和森林</p>
+<p>树的结构和主要概念，各种二叉树的结构及其特点；</p>
+<p>二叉树的三种遍历方法的实现原理和性质，能将二叉树的遍历方法应用于求解二叉树的叶子结点个数、二叉树计数等问题，遍历的非递归实现方法；</p>
+<p>线索化二叉树的结构和基本操作；</p>
+<p>森林的定义和存储结构，森林的遍历等方法的实现；</p>
+<p>基于霍夫曼树生成霍夫曼编码的方法；</p>
+<p>AVL树的定义和特点以及AVL树调整操作的实现原理；</p>
+<p>最优二叉树的构造原理和相关算法。</p>
+<p>（六）图</p>
+<p>图的各种基本概念和各种存储方式；</p>
+<p>图的两种搜索方法和图连的连通性；</p>
+<p>两种最小生成树的生成方法；</p>
+<p>各种求最短路径的方法；</p>
+<p>用顶点表示活动和用边表示活动的两种网络结构特点和相关操作的实现算法。</p>
+<p>（七）排序</p>
+<p>插入排序法(含折半插入排序法)、选择排序法、泡排序法、快速排序法、堆积排序法、归并排序、基数排序等排序方法排序的原理、规律和特点；</p>
+<p>各种排序算法的时空复杂度的简单分析。</p>
+<p>（八）索引结构与散列</p>
+<p>线性索引结构、倒排表、静态搜索树的结构和特点；</p>
+<p>B树的结构；</p>
+<p>散列的实现原理和各种操作的实现算法。</p>
+<p><strong>三、试卷结构</strong></p>
+<p>考试题型：填空题、选择题、简答题、编程题</p>
+<h4 id="第二部分操作系统（-60-150-）"><a href="#第二部分操作系统（-60-150-）" class="headerlink" title="第二部分操作系统（ 60/150 ）"></a><strong>第二部分操作系统（</strong> <strong>60/150</strong> <strong>）</strong></h4><p><strong>一、考试要求</strong></p>
+<p>要求考生比较系统地理解和掌握操作系统的基本概念、主要功能、主要组成部分、各个主要组成部分的不同实现方法；从资源管理和应用程序与硬件系统接口的观点掌握操作系统设计的基本思想，掌握现代计算机系统对其各种软硬资源的管理技术。要求考生具备综合运用所学知识分析问题和解决问题的能力。</p>
+<p><strong>二、考试内容</strong></p>
+<p>（一）基本概念</p>
+<p>计算机基本构成、处理器的内部结构、高速缓冲存储器CACHE；</p>
+<p>操作系统的概念、演变历程、特性、分类、运行环境、功能；</p>
+<p>存储器的层次结构。</p>
+<p>（二）进程</p>
+<p>进程的概念和特点；</p>
+<p>进程状态转换。</p>
+<p>（三）线程、对称多处理SMP和微内核</p>
+<p>线程的概念，定义线程的必要性和可能性；</p>
+<p>线程的功能特性与实现方式；</p>
+<p>对称多处理SMP体系结构；</p>
+<p>操作系统的体系结构（微内核与单内核）及其性能分析。</p>
+<p>（四）并发</p>
+<p>并发性问题及相关概念，如临界区、互斥、信号量和管程等；</p>
+<p>进程互斥、同步和通信的各种算法；</p>
+<p>死锁的概念、死锁的原因和条件；</p>
+<p>死锁的预防、避免和检测算法。</p>
+<p>（五）存储器管理</p>
+<p>分区存储管理、覆盖与交换；</p>
+<p>页式管理及段式管理；</p>
+<p>段、页式存储管理方法及实现技术；</p>
+<p>虚存的原理及相关的各种算法和数据结构。</p>
+<p>（六）单处理器调度</p>
+<p>处理器的三种调度类型；</p>
+<p>进程调度的各种算法及其特点。</p>
+<p>（七）多处理器调度和实时调度</p>
+<p>多处理器对进程调度的影响；</p>
+<p>多处理器环境下的进程和线程调度算法；</p>
+<p>实时进程的特点；</p>
+<p>限期调度和速率单调调度方法。</p>
+<p>（八）设备管理和磁盘调度</p>
+<p>操作系统中输入/输出功能的组织；</p>
+<p>中断处理；</p>
+<p>设备驱动程序、设备无关的软件接口和spooling技术；</p>
+<p>缓冲策略；</p>
+<p>磁盘调度算法；</p>
+<p>磁盘阵列。</p>
+<p>（九）文件系统</p>
+<p>文件系统特点与文件组织方式；</p>
+<p>文件系统的数据结构；</p>
+<p>目录的基本性质及其实现方法；</p>
+<p>磁盘空间的管理。</p>
+<p>（十）分布式系统</p>
+<p>分布式处理的特点、类型；</p>
+<p>多层体系结构、中间件技术；</p>
+<p>机群系统；</p>
+<p>分布式进程管理相关的操作系统设计问题。</p>
+<p><strong>三、试卷结构</strong></p>
+<p>考试题型：填空题、选择题、简答题、计算题</p>
+</div></div></main><footer id="footer"><div id="footer-wrap"><div class="footer_custom_text"><span>@</span><span id="yearsToNow">2000</span><span> </span><span id="daysToNow">by frunoob</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.17.0/js/md5.min.js"></script><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+    content = content.replace(/(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|jpeg|gif|png|webp)/g, '') // remove image link
+    content = content.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gi, '') // remove url
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getIcon = (icon, mail) => {
+    if (icon) return icon
+    
+    let defaultIcon = '?d=identicon'
+    let iconUrl = `https://gravatar.loli.net/avatar/${md5(mail.toLowerCase()) + defaultIcon}`
+    return iconUrl
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          let name = 'src'
+          if(true) {
+            name = 'data-lazy-src'
+          }
+          result += `<a href='${array[i].url}' class="thumbnail"><img ${name}='${getIcon(array[i].avatar, array[i].mail)}' alt='${array[i].nick}'></a>`
+        }
+
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}'>${array[i].content}</a>
+        <div class='name'><span>${array[i].nick}</span><time> / ${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const getComment = () => {
+      let serverURL = ''
+      if (false) {
+        serverURL = ''
+      } else {
+        serverURL = 'https://EMvWB4MF.api.lncldglobal.com'
+      }
+
+    var settings = {
+      "method": "GET",
+      "headers": {
+        "X-LC-Id": 'EMvWB4MFkVYX9zOu8mPrXden-MdYXbMMI',
+        "X-LC-Key": 'uYYPYEbPfEbUKUym6Bf3Qco4',
+        "Content-Type": "application/json"
+      },
+    }
+
+    fetch(`${serverURL}/1.1/classes/Comment?limit=6&order=-createdAt`,settings)
+      .then(response => response.json())
+      .then(data => {
+        const valineArray = data.results.map(function (e) {
+          return {
+            'avatar': e.QQAvatar,
+            'content': changeContent(e.comment),
+            'mail': e.mail,
+            'nick': e.nick,
+            'url': e.url,
+            'date': e.createdAt,
+          }
+        })
+        saveToLocal.set('leancloud-newest-comments', JSON.stringify(valineArray), 10/(60*24))
+        generateHtml(valineArray)
+      }).catch(e => {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      }) 
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('leancloud-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script src="https://cdn.jsdelivr.net/gh/frunoob/Library/blog/js/siteFooter.js"></script><script>setDay()</script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="I,Want,See,You,In,B,U,P,T" data-fontsize="13px" data-random="undefined" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config_change',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  if (typeof gtag === 'function') {
+    gtag('config', '', {'page_path': window.location.pathname});
+  }
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})</script></div></body></html>
