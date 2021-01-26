@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>在网页中播放hls视频</title>
+    <url>/2021/01/26/Web/%E5%8D%9A%E5%AE%A2/%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%E6%92%AD%E6%94%BEhls%E8%A7%86%E9%A2%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><figure class="highlight plain"><figcaption><span>HTML文件中加入此内容</span></figcaption><table><tr><td class="code"><pre><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;frunoob&#x2F;Library@master&#x2F;blog&#x2F;js&#x2F;hls.css&quot;&gt;</span><br><span class="line">  &lt;video id&#x3D;&quot;my_video_1&quot; class&#x3D;&quot;video-js vjs-default-skin&quot; controls preload&#x3D;&quot;auto&quot; width&#x3D;&quot;auto&quot; height&#x3D;&quot;auto&quot; </span><br><span class="line">  data-setup&#x3D;&#39;&#123;&#125;&#39;&gt;</span><br><span class="line">    &lt;source src&#x3D;&quot;请输入你的视频网址.m3u8&quot; type&#x3D;&quot;application&#x2F;x-mpegURL&quot;&gt;</span><br><span class="line">  &lt;&#x2F;video&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;frunoob&#x2F;Library@master&#x2F;blog&#x2F;js&#x2F;hls.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;frunoob&#x2F;Library@master&#x2F;blog&#x2F;js&#x2F;hls-videos.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Web</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>默认标签</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>vue中如何使用less语法</title>
     <url>/2021/01/04/%E8%AF%BE%E7%A8%8B/web/vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8less%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
@@ -64,7 +77,7 @@
   <entry>
     <title>肖申克的救赎</title>
     <url>/2020/12/28/%E5%A8%B1%E4%B9%90/%E7%94%B5%E5%BD%B1/%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note pink fas icon disabled"><i class="note-icon fa-film"></i><p><a href="#%E8%A7%82%E7%9C%8B%E5%BD%B1%E7%89%87">立即观看本影片</a></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note pink fas icon disabled"><i class="note-icon fa-film"></i><p><a href="/videos/film/xiaoShenKeDeJiuShu">立即观看本影片</a></p>
 </div>
 
 <h2 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h2><p>　　 故事发生在1947年，银行家安迪因为妻子有婚外情，用枪杀死了她和她的情人，因此他被指控枪杀了妻子及其情人，安迪被判无期徙刑，这意味着他将在肖恩克监狱中渡过余生。</p>
@@ -115,7 +128,7 @@
 <p>　　是的，是“希望”救赎了“自由”，这是重新构建的现代文明里的救赎，除了自己，我们没法依赖虚幻的救主。曼德拉说过：“心，是一个人最强壮的部分。”假若我们的心不停息，希望，就始终存在。</p>
 <p>　　最后，用安迪留给瑞德的那封信作结尾吧：</p>
 <p>　　……心怀希望是一件好事，也许是最好的事，心怀希望就永远有希望……既然你已经走到这儿了，就再走远一点吧</p>
-<h2 id="观看影片"><a href="#观看影片" class="headerlink" title="观看影片"></a>观看影片</h2><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"video":{"url":"https://cdn.jsdelivr.net/gh/frunoob/videos-2/TheShawshankRedemption/playlist.m3u8"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+]]></content>
       <categories>
         <category>娱乐</category>
         <category>电影</category>
@@ -1495,7 +1508,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#x75;&#x65;&#x2d;&#x63;&#108;&#105;&#64;&#50;&#46;&#57;&#46;&#x36;">&#x76;&#x75;&#x65;&#x2d;&#x63;&#108;&#105;&#64;&#50;&#46;&#57;&#46;&#x36;</a><br>yarn global add <a href="mailto:&#x76;&#x75;&#101;&#x2d;&#99;&#108;&#105;&#x40;&#50;&#46;&#57;&#x2e;&#54;">&#x76;&#x75;&#101;&#x2d;&#99;&#108;&#105;&#x40;&#50;&#46;&#57;&#x2e;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#117;&#101;&#45;&#99;&#x6c;&#x69;&#64;&#x32;&#x2e;&#57;&#x2e;&#54;">&#x76;&#117;&#101;&#45;&#99;&#x6c;&#x69;&#64;&#x32;&#x2e;&#57;&#x2e;&#54;</a><br>yarn global add <a href="mailto:&#118;&#117;&#x65;&#45;&#x63;&#108;&#105;&#x40;&#50;&#46;&#57;&#x2e;&#54;">&#118;&#117;&#x65;&#45;&#x63;&#108;&#105;&#x40;&#50;&#46;&#57;&#x2e;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
@@ -2683,11 +2696,7 @@
 <p style="text-align:right">- Chaos Theory</p>
 </div>
 
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":" https://cdn.jsdelivr.net/gh/frunoob/videos-1/ChaosTheory/playlist.m3u8"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-
-
-
+<p><a href="/videos/film/huDieXiaoYing">观看影片</a></p>
 ]]></content>
       <categories>
         <category>娱乐</category>
