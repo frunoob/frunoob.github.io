@@ -1521,7 +1521,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#x75;&#101;&#45;&#x63;&#x6c;&#x69;&#x40;&#x32;&#x2e;&#x39;&#46;&#x36;">&#x76;&#x75;&#101;&#45;&#x63;&#x6c;&#x69;&#x40;&#x32;&#x2e;&#x39;&#46;&#x36;</a><br>yarn global add <a href="mailto:&#x76;&#117;&#101;&#45;&#x63;&#x6c;&#105;&#64;&#50;&#46;&#57;&#46;&#54;">&#x76;&#117;&#101;&#45;&#x63;&#x6c;&#105;&#64;&#50;&#46;&#57;&#46;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#117;&#x65;&#x2d;&#99;&#x6c;&#105;&#x40;&#x32;&#46;&#x39;&#x2e;&#54;">&#118;&#117;&#x65;&#x2d;&#99;&#x6c;&#105;&#x40;&#x32;&#46;&#x39;&#x2e;&#54;</a><br>yarn global add <a href="mailto:&#x76;&#x75;&#x65;&#x2d;&#x63;&#108;&#105;&#64;&#x32;&#x2e;&#x39;&#x2e;&#54;">&#x76;&#x75;&#x65;&#x2d;&#x63;&#108;&#105;&#64;&#x32;&#x2e;&#x39;&#x2e;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
@@ -2701,7 +2701,9 @@
   <entry>
     <title>蝴蝶效应</title>
     <url>/2020/12/08/%E5%A8%B1%E4%B9%90/%E7%94%B5%E5%BD%B1/%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note purple no-icon modern"><p>纵使细微如蝴蝶之鼓翼  也能造成千里外之飓风  </p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note pink fas icon disabled"><i class="note-icon fa-film"></i><p><a href="/videos/film/huDieXiaoYing">立即观看本影片</a></p>
+</div>
+<div class="note purple no-icon modern"><p>纵使细微如蝴蝶之鼓翼  也能造成千里外之飓风  </p>
 <p style="text-align:right">- 混沌理论</p>
 </div>
 
@@ -2709,7 +2711,7 @@
 <p style="text-align:right">- Chaos Theory</p>
 </div>
 
-<p><a href="/videos/film/huDieXiaoYing">观看影片</a></p>
+<h2 id="剧情简介"><a href="#剧情简介" class="headerlink" title="剧情简介"></a>剧情简介</h2><p>伊万（艾什顿·库奇饰）这个有着不幸童年的大学生感觉有点迷失，在小时候经历了一系列糟糕的事情，损坏了他原本完美的人生。可怕的是，这些事情就像消失进了黑洞一样，伊万怎么也想不起来。<br>童时的那些可怕记忆残留在他的脑海里，缠绕着他生活，令他无法安心，他只依稀记得那时自己是和几个好朋友生活在一起：凯蕾（艾米·斯马特饰）、林尼（阿尔顿·汉森 饰）和托米（威廉姆·李·斯科特饰）。<br>在童年可怕记忆的折磨下，伊万请求心理医生的帮助，医生鼓励他用旅行来放松自己，此外，每天把发生的事情一件件详细记下来。如今，在旅行和写日记的帮助下，进入大学的伊万突然意识到，记录自己每天所做事情的笔记本，可以帮助自己找回孩童时候的记忆。<br>很快伊万通过记事本找回了记忆，这些记忆让他察觉到了自己的过错，并因此失去了几个好朋友。尤其是凯蕾，他童年时候暗恋的女孩。在童年记忆慢慢恢复下，伊万慢慢地想起了小时候的许多事情，这时他才惊讶地发现，自己当年做错了那么多的事。<br>找回了记忆的伊万并没感到快乐，相反内疚代替了黑洞开始折磨他，令他痛苦极了。在痛苦的边缘，伊万希望能够彻底摆脱童年的阴影，于是他幻想着用自己意识，潜入童年的身体，去重新挽回那些做错的事，并且珍惜与童年好友的友谊，好好地去爱每一个人。显然伊万希望能改变自己的过去。<br>但是伊万在过去改变的每一件事，当他回到现在时都发现它们带来了意想不到的结果，而且损害更加严重，事情变得越来越糟糕。为了弥补错误，伊万又再次返回过去试图消除痕迹，但事与愿违，他的所作所为只能再次导致现实世界的渐趋崩溃。于是反反复复，他奔波于日益混乱的过去与现实之间，直到不可挽回的结局。伊万试图改变过去，希望能与他暗恋的凯蕾一起幸福生活的梦想，也成为了泡影。。。。。。</p>
 ]]></content>
       <categories>
         <category>娱乐</category>
