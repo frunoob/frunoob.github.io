@@ -45,7 +45,7 @@ Valine Admin 项目是一个对 [Valine](https://valine.js.org/) 评论系统的
 
 {% note red fas fa-exclamation %}
 
-此方法已失效<span style="font-size:larger"> [前往解决此问题](https://www.frunoob.xyz/2020/10/25/LeanEngine/leanCloud-problem001/) <span>
+此方法已失效<span style="font-size:larger"> 前往解决此问题的方法 {% post_link Web/leancloud/leanCloud-problem001 %} <span>
 
 {% endnote %}
 
