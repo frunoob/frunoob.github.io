@@ -1,0 +1,824 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SSM-VUE讲义-1 | 自学成菜</title><meta name="keywords" content="计算机,音乐,电影"><meta name="author" content="Frunoob"><meta name="copyright" content="Frunoob"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Vue+SSM+Element-Ui 前后端分离练习 SSM: Spring 、SpringMVC、 MyBatis 整体规划：先搭建前端，接下来后端，最后整合。 一、创建vue项目1、安装nodejs傻瓜式安装即可 官网： http:&#x2F;&#x2F;nodejs.cn&#x2F;download&#x2F;    检查安装是否成功      IMG_256  有问题可看 https:&#x2F;&#x2F;www.runoob.com&#x2F;nodej">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSM-VUE讲义-1">
+<meta property="og:url" content="https://frunoob.github.io/2020/12/26/%E8%AF%BE%E7%A8%8B-web-SSM-VUE-%E8%AE%B2%E4%B9%89-1/">
+<meta property="og:site_name" content="自学成菜">
+<meta property="og:description" content="Vue+SSM+Element-Ui 前后端分离练习 SSM: Spring 、SpringMVC、 MyBatis 整体规划：先搭建前端，接下来后端，最后整合。 一、创建vue项目1、安装nodejs傻瓜式安装即可 官网： http:&#x2F;&#x2F;nodejs.cn&#x2F;download&#x2F;    检查安装是否成功      IMG_256  有问题可看 https:&#x2F;&#x2F;www.runoob.com&#x2F;nodej">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png">
+<meta property="article:published_time" content="2020-12-26T15:44:42.000Z">
+<meta property="article:modified_time" content="2020-12-26T16:13:40.909Z">
+<meta property="article:author" content="Frunoob">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="音乐">
+<meta property="article:tag" content="电影">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png"><link rel="canonical" href="https://frunoob.github.io/2020/12/26/%E8%AF%BE%E7%A8%8B-web-SSM-VUE-%E8%AE%B2%E4%B9%89-1/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5096b4561a970b09ada1287ef213db82";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":90,"position":"bottom","messagePrev":"这篇文章距离上次更新已经过去足足","messageNext":"天了，文章的内容可能已经过时了，仅供参考。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#47e3ee","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2020-12-27 00:13:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }})()</script><meta name="baidu-site-verification" content="code-qKvRSQMSdK" /><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="google-site-verification" content="F4CpoqZsBSEfKOG0MJecZeGtXVVtg2u3ZZt5Fyzig8k" /><link rel="stylesheet" href="/css/zidingyi.css"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="自学成菜" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/frunoob/images/blog/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">93</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">42</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-minus"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-feather"></i><span> 常用</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/%E5%A4%8D%E4%B9%A0/"><i class="fa-fw fas fa-list"></i><span> 知识总结</span></a></li><li><a class="site-page" href="/memorandum/"><i class="fa-fw fas fa-calendar-alt"></i><span> 备忘清单</span></a></li><li><a class="site-page" href="/tally/"><i class="fa-fw fas fa-list"></i><span> 日常记账</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/entertainment/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page" href="/entertainment/film/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/entertainment/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-flask"></i><span> 实验</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/web-homework/"><i class="fa-fw fa fa-desktop"></i><span> COVID-19数据可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tools"></i><span> 工具</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87"><i class="fa-fw fas fa-bookmark"></i><span> fa5图标备忘录</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://gotranscript.com/subtitle-converter"><span> 字幕转换</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://frunoob.avosapps.us/"><i class="fa-fw fas fa-cog"></i><span> 评论管理</span></a></li><li><a class="site-page" href="/markdown-it/"><i class="fa-fw fa fa-desktop"></i><span> markdown-it</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-biohazard"></i><span> 收藏</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/favorites/blogs/"><i class="fa-fw fas fa-eye"></i><span> 大佬博客</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/leave-your-message/"><i class="fa-fw fa fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fa fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/lover/"><i class="fa-fw fas fa-heart fa-lg"></i><span> love</span></a></div></div></div></div><div id="body-wrap"><header class="no-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">自学成菜</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-minus"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-feather"></i><span> 常用</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/%E5%A4%8D%E4%B9%A0/"><i class="fa-fw fas fa-list"></i><span> 知识总结</span></a></li><li><a class="site-page" href="/memorandum/"><i class="fa-fw fas fa-calendar-alt"></i><span> 备忘清单</span></a></li><li><a class="site-page" href="/tally/"><i class="fa-fw fas fa-list"></i><span> 日常记账</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/entertainment/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page" href="/entertainment/film/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/entertainment/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-flask"></i><span> 实验</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/web-homework/"><i class="fa-fw fa fa-desktop"></i><span> COVID-19数据可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tools"></i><span> 工具</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87"><i class="fa-fw fas fa-bookmark"></i><span> fa5图标备忘录</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://gotranscript.com/subtitle-converter"><span> 字幕转换</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://frunoob.avosapps.us/"><i class="fa-fw fas fa-cog"></i><span> 评论管理</span></a></li><li><a class="site-page" href="/markdown-it/"><i class="fa-fw fa fa-desktop"></i><span> markdown-it</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-biohazard"></i><span> 收藏</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/favorites/blogs/"><i class="fa-fw fas fa-eye"></i><span> 大佬博客</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/leave-your-message/"><i class="fa-fw fa fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fa fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/lover/"><i class="fa-fw fas fa-heart fa-lg"></i><span> love</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">SSM-VUE讲义-1</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-12-26T15:44:42.000Z" title="发表于 2020-12-26 23:44:42">2020-12-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-12-26T16:13:40.909Z" title="更新于 2020-12-27 00:13:40">2020-12-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/web/">web</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">11.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>63分钟</span></span></div></div></div><article class="post-content" id="article-container"><p>Vue+SSM+Element-Ui</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/supwang-learn-enjoy-success/p/11304006.html">前后端分离</a><strong>练习</strong></p>
+<p><strong>SSM: Spring 、SpringMVC、 MyBatis</strong></p>
+<p><strong>整体规划</strong>：先搭建前端，接下来后端，最后整合。</p>
+<h1 id="一、创建vue项目"><a href="#一、创建vue项目" class="headerlink" title="一、创建vue项目"></a>一、创建vue项目</h1><h2 id="1、安装nodejs"><a href="#1、安装nodejs" class="headerlink" title="1、安装nodejs"></a>1、安装nodejs</h2><p>傻瓜式安装即可 官网： <a target="_blank" rel="noopener" href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></p>
+<blockquote>
+<p>  检查安装是否成功</p>
+</blockquote>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000508.png"></p>
+<blockquote>
+<p>  IMG_256</p>
+</blockquote>
+<p>有问题可看 <a target="_blank" rel="noopener" href="https://www.runoob.com/nodejs/nodejs-npm.html">https://www.runoob.com/nodejs/nodejs-npm.html</a></p>
+<h2 id="安装淘宝镜像"><a href="#安装淘宝镜像" class="headerlink" title="安装淘宝镜像"></a>安装淘宝镜像</h2><blockquote>
+<p>  （由于npm在国外速度慢，直接用我们的）</p>
+</blockquote>
+<p>cmd里直接运行 npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000509.png"></p>
+<h2 id="3、使用cnpm安装vue"><a href="#3、使用cnpm安装vue" class="headerlink" title="3、使用cnpm安装vue"></a>3、使用cnpm安装vue</h2><p>cmd里直接运行 cnpm install vue</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000510.png"></p>
+<h2 id="4、全局安装vue脚手架工具"><a href="#4、全局安装vue脚手架工具" class="headerlink" title="4、全局安装vue脚手架工具"></a>4、全局安装vue脚手架工具</h2><p>cmd里直接运行 cnpm install –global vue-cli</p>
+<h2 id="5、创建vue项目"><a href="#5、创建vue项目" class="headerlink" title="5、创建vue项目"></a>5、创建vue项目</h2><p>cmd里直接运行 vue init webpack 项目</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000511.png"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000512.png"></p>
+<p>至此，vue项目创建完成。在你创建项目位置根目录运行：npm run dev</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000513.png"></p>
+<p>注意：如果在初始化创建项目时有错误,运行时 先 在你创建的 项目位置根目录 cnpm<br>install，再 npm run dev</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000514.png"></p>
+<p>浏览器访问</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000515.png"></p>
+<blockquote>
+<p>  运行成功!!!! 接下来就可以写页面啦(这里我们用Element UI)</p>
+</blockquote>
+<blockquote>
+<p>  Element UI教程：<a target="_blank" rel="noopener" href="https://element.eleme.cn//#/zh-CN/component/installation">https://element.eleme.cn/\#/zh-CN/component/installation</a></p>
+</blockquote>
+<h2 id="6、编写简单页面"><a href="#6、编写简单页面" class="headerlink" title="6、编写简单页面"></a>6、编写简单页面</h2><p>1、cmd进入你的项目，安装Element Ui cnpm install element-ui -S</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000516.png"></p>
+<p>安装完成后，在router/index.js或者main.js里引入</p>
+<p>import ElementUI from ‘element-ui’;</p>
+<p>import ‘element-ui/lib/theme-chalk/index.css’;</p>
+<p>Vue.use(ElementUI);</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000517.png"></p>
+<p>这时候就可以开心的使用Element Ui组件库了</p>
+<p>2、这里先模拟一个登陆功能（1.有表单校验，2、默认用户名wzz，密码521125，登陆成功跳到列表页,失败友情提示）<br>列表页旁边是代码结构图</p>
+<p>效果如图</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000518.png"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000519.png"></p>
+<p>项目目录</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000520.png"></p>
+<p>3、代码介绍：</p>
+<p>3.1、router/index.js （侧栏路由编码）</p>
+<table>
+<thead>
+<tr>
+<th>import Vue from ‘vue’ import Router from ‘vue-router’ import ElementUI from ‘element-ui’; import ‘element-ui/lib/theme-chalk/index.css’; Vue.use(ElementUI); Vue.use(Router) //json格式数据 let menu=[ { path:’/user’, name:’layoutYHGL’, component:()=&gt;import(‘@/views/layout/Layout’), meta:{ title:’用户管理’, icon:’el-icon-user’, menu:true, funcNode:’1’ }, children:[ { path:’/user/userList’, name:’UserList’, component:()=&gt;import(‘@/views/user/UserList’), meta:{ title:’用户列表’, icon:’el-icon-notebook-2’, menu:true, funcNode:’1-1’ } }, { path:’/user/addUser’, name:’UserAdd’, component:()=&gt;import(‘@/views/user/UserAdd’), meta:{ title:’用户添加’, icon:’el-icon-circle-plus-outline’, menu:true, funcNode:’1-2’ } } ] }, { path:’/role’, redirect:’user/userList’, meta:{ title:’角色管理’, icon:’el-icon-help’, menu:true } }, { path:’/sys’, name:’layoutXTGL’, component:()=&gt;import(‘@/views/layout/Layout’), meta:{ title:’系统管理’, icon:’el-icon-setting’, menu:true, funcNode:’2’ }, children:[ { path:’/sys/sysLogList’, name:’SysLogList’, component:()=&gt;import(‘@/views/sys/SysLogList’), meta:{ title:’系统访问日志’, icon:’el-icon-notebook-1’, menu:true, funcNode:’2-1’ } } ] }, { path:’’, redirect:’login’, meta:{ menu:false } }, { path:’/login’, name:’Login’, component:()=&gt;import(‘@/views/login/Login’), meta:{ menu:false } } ] export default new Router({ routes:menu, })</th>
+</tr>
+</thead>
+</table>
+<p>3.2、layout/Layout.vue (对侧栏信息的布局，使用了v-for，v-on ，v-if)</p>
+<table>
+<thead>
+<tr>
+<th>&lt;template&gt; &lt;el-container style=”height: 100%;”&gt; &lt;!– 头部 –&gt; &lt;el-header style=”text-align: right; font-size: 12px;background-color: whitesmoke;”&gt; &lt;el-dropdown&gt; &lt;i class=”el-icon-setting” style=”margin-right: 15px”&gt;&lt;/i&gt; &lt;el-dropdown-menu slot=”dropdown”&gt; &lt;el-dropdown-item&gt;查看&lt;/el-dropdown-item&gt; &lt;el-dropdown-item&gt;新增&lt;/el-dropdown-item&gt; &lt;el-dropdown-item&gt;删除&lt;/el-dropdown-item&gt; &lt;/el-dropdown-menu&gt; &lt;/el-dropdown&gt; &lt;span&gt;王小虎&lt;/span&gt; &lt;/el-header&gt; &lt;el-container&gt; &lt;!– 左侧栏 –&gt; &lt;el-aside width=”200px”&gt; &lt;el-menu&gt; &lt;!–如果菜单(menu)是true 循环侧栏路由列表 –&gt; &lt;template v-for=”item in menuData” v-if=”item.meta.menu”&gt; &lt;!– 这里必须设置index,相当唯一标识这个菜单标签，否则菜单列表点击后随意展开 –&gt; &lt;el-submenu :index=”item.meta.funcNode”&gt; &lt;template slot=”title”&gt;&lt;i :class=”item.meta.icon”&gt;&lt;/i&gt;&lt;/template&gt; &lt;!– 如果菜单有孩子菜单，则循环孩子菜单 –&gt; &lt;template v-for=”itemC in item.children” v-if=”item.children”&gt; &lt;el-menu-item :index=”itemC.meta.funcNode” @click=”clickMenu(itemC)”&gt;&lt;i :class=”itemC.meta.icon”&gt;&lt;/i&gt;&lt;/el-menu-item&gt; &lt;/template&gt; &lt;/el-submenu&gt; &lt;/template&gt; &lt;/el-menu&gt; &lt;/el-aside&gt; &lt;!– 内容渲染 –&gt; &lt;el-main style=”background-color: white;”&gt; &lt;router-view/&gt; &lt;/el-main&gt; &lt;/el-container&gt; &lt;/el-container&gt; &lt;/template&gt; &lt;script&gt; export default { data() { return { /* 获取挂载的routes （$router相当于一个全局的路由器对象，里面含有很多属性和子对象 ） （options是一个对象，有成员：1、data函数成员 2、methods对象成员 3、模板template 4、挂载元素el 5、生命周期钩子 6、props属性声明 7、computed计算成员 8、watch监视成员） */ menuData: this.$router.options.routes } }, methods: { clickMenu(item){ this.$router.push({path:item.path}) //跳转的路由对象 //this.$router.push({name:item.name}) 通过name跳转 } } } &lt;/script&gt; &lt;style&gt; .el-header { background-color: #B3C0D1; color: #333; line-height: 60px; } .el-aside, .el-menu, .el-submenu, .el-menu-item { background-color: rgb(238, 241, 246); } body { margin: 0px; } &lt;/style&gt;</th>
+</tr>
+</thead>
+</table>
+<p>3.3、App.vue</p>
+<table>
+<thead>
+<tr>
+<th>&lt;template&gt; &lt;div id=”app”&gt; &lt;router-view/&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default { name: ‘App’ } &lt;/script&gt; &lt;style&gt; #app{} &lt;/style&gt;</th>
+</tr>
+</thead>
+</table>
+<p>3.4、index.html<br>(主要是对html，body样式设置height:100%，为解决子模块设置height:100%无效)</p>
+<table>
+<thead>
+<tr>
+<th>&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=”utf-8”&gt; &lt;meta name=”viewport” content=”width=device-width,initial-scale=1.0”&gt; &lt;title&gt;myproject&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;div id=”app”&gt;&lt;/div&gt; &lt;!– built files will be auto injected –&gt; &lt;/body&gt; &lt;style&gt; html,body,#app{ height: 100%; } &lt;/style&gt; &lt;/html&gt;</th>
+</tr>
+</thead>
+</table>
+<p>3.5、login/Login.vue</p>
+<table>
+<thead>
+<tr>
+<th>&lt;template&gt; &lt;div class=”box”&gt; &lt;div id=”login” style=”width: 320px;height: 300px;text-align: center;”&gt; &lt;el-form :model=”loginForm” ref=”loginForm” :rules=”rules”&gt; &lt;el-form-item&gt; &lt;span style=”color: white;font-family: 楷体;font-size: 26px;”&gt;用&amp;nbsp;户&nbsp;登&nbsp;录&nbsp;&lt;/span&gt; &lt;/el-form-item&gt; &lt;el-form-item prop=”userName”&gt; &lt;el-input type=”text” v-model=”loginForm.userName” placeholder=”用户名”&gt; &lt;template slot=”prepend”&gt;&lt;i class=”el-icon-user” style=”font-size: 20px; color: white;”&gt;&lt;/i&gt;&lt;/template&gt; &lt;/el-input&gt; &lt;/el-form-item&gt; &lt;el-form-item prop=”password”&gt; &lt;el-input type=”text” v-model=”loginForm.password” placeholder=”密码” show-password&gt; &lt;template slot=”prepend”&gt;&lt;i class=”el-icon-lock” style=”font-size: 20px;color: white;”&gt;&lt;/i&gt;&lt;/template&gt; &lt;/el-input&gt; &lt;/el-form-item&gt; &lt;el-form-item&gt; &lt;el-button type=”primary” size=”medium” :loading=”loading” style=”font-size: 20px;font-family: 微软雅黑;width: 320px;” @click=”clickLogin”&gt;登&amp;nbsp;&nbsp;&nbsp;录&lt;/el-button&gt; &lt;/el-form-item&gt; &lt;/el-form&gt; &lt;/div&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default { data() { var validateUserName = (rule, value, callback) =&gt; { if (value.length === 0) { return callback(new Error(‘请输入用户名’)) } else { callback() } } var validatePassword = (rule, value, callback) =&gt; { if (value.length === 0) { callback(new Error(‘请输入密码’)) } else if (value.length &lt; 3) { callback(new Error(‘密码不能小于3位’)) } else { callback() } } return { loginForm: { userName: ‘’, password: ‘’ }, loading: false, //登陆加载效果 rules: { userName: [{ required: true, trigger: ‘blur’, validator: validateUserName }], password: [{ required: true, trigger: ‘blur’, validator: validatePassword }] } } }, methods: { clickLogin() { this.$refs.loginForm.validate(valid =&gt; { if (valid) { this.loading = true setTimeout(() =&gt; { if (this.loginForm.userName === ‘wzz’ &amp;&amp; this.loginForm.password === ‘521125’) { this.$router.push({ name: ‘layoutYHGL’ }); } else { this.$notify({ title: ‘登录提示’, message: ‘用户名或密码错误’, position: ‘bottom-right’, type: ‘error’ }); this.loading=false; } }, 3000); } else { return false; } }) } } } &lt;/script&gt; &lt;style scoped=”scoped”&gt; .box { display: flex; height: 100%; justify-content: center; align-items: center; } &lt;/style&gt; &lt;style&gt; .el-input-group__prepend { padding: 0px 15px; background-color: #CCCCCC; border: 1 solid #72767B; } body { background-color: #72767B; margin: 0px; } &lt;/style&gt;</th>
+</tr>
+</thead>
+</table>
+<p>3.6、sys/SysLogList.vue，user/UserAdd.vue，user/UserList.vue<br>(这几个就是加了一个各自的&lt;h3&gt;&lt;/h3&gt;标签) 如下</p>
+<table>
+<thead>
+<tr>
+<th>&lt;template&gt; &lt;div&gt;&lt;h3&gt;用户添加&lt;/h3&gt;&lt;/div&gt; &lt;/template&gt; &lt;script&gt; &lt;/script&gt; &lt;style&gt; &lt;/style&gt;</th>
+</tr>
+</thead>
+</table>
+<p>至此，前端暂时结束。</p>
+<h1 id="二、创建SSM项目"><a href="#二、创建SSM项目" class="headerlink" title="二、创建SSM项目"></a>二、创建SSM项目</h1><p><strong>前言</strong>：后台使用ssm搭建，对以前学习知识的一个回顾，与此同时来发现自己不足。这里主要采用配置文件方式进行，有部分注解。</p>
+<p>**目标：**搭建ssm框架，并测试成功；（其中也有aop切面的编写）</p>
+<p>一、开发工具</p>
+<p>IDEA2018.2.4_X64，MYSQL5.7，TOMCAT8.0.22，MAVEN3.5.3，JDK1.8.0_144</p>
+<p>二、ssm框架搭建</p>
+<p>项目结构图</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000521.png"></p>
+<h2 id="1、配置文件"><a href="#1、配置文件" class="headerlink" title="1、配置文件"></a>1、配置文件</h2><h3 id="1-1-pom-xml"><a href="#1-1-pom-xml" class="headerlink" title="1.1 pom.xml"></a>1.1 pom.xml</h3><table>
+<thead>
+<tr>
+<th>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt; &lt;project xmlns=”<a target="_blank" rel="noopener" href="http://maven.apache.org/POM/4.0.0&quot;">http://maven.apache.org/POM/4.0.0&quot;</a> xmlns:xsi=”<a target="_blank" rel="noopener" href="http://www.w3.org/2001/XMLSchema-instance&quot;">http://www.w3.org/2001/XMLSchema-instance&quot;</a> xsi:schemaLocation=”<a target="_blank" rel="noopener" href="http://maven.apache.org/POM/4.0.0">http://maven.apache.org/POM/4.0.0</a> <a target="_blank" rel="noopener" href="http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;/&gt;">http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;\&gt;</a> &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt; &lt;groupId&gt;com.wzz&lt;/groupId&gt; &lt;artifactId&gt;SSM&lt;/artifactId&gt; &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt; &lt;packaging&gt;war&lt;/packaging&gt; &lt;name&gt;SSM Maven Webapp&lt;/name&gt; &lt;!– FIXME change it to the project’s website –&gt; &lt;url&gt;<a target="_blank" rel="noopener" href="http://www.example.com/">http://www.example.com\</a>&lt;/url&gt; &lt;properties&gt; &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt; &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt; &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt; &lt;spring.version&gt;5.0.2.RELEASE&lt;/spring.version&gt; &lt;slf4j.version&gt;1.6.6&lt;/slf4j.version&gt; &lt;log4j.version&gt;1.2.12&lt;/log4j.version&gt; &lt;shiro.version&gt;1.2.3&lt;/shiro.version&gt; &lt;mysql.version&gt;8.0.11&lt;/mysql.version&gt; &lt;mybatis.version&gt;3.4.5&lt;/mybatis.version&gt; &lt;/properties&gt; &lt;dependencies&gt; &lt;!–Spring提供的对AspectJ框架的整合–&gt; &lt;dependency&gt; &lt;groupId&gt;org.aspectj&lt;/groupId&gt; &lt;artifactId&gt;aspectjweaver&lt;/artifactId&gt; &lt;version&gt;1.6.8&lt;/version&gt; &lt;/dependency&gt; &lt;!–Spring的面向切面编程，提供AOP（面向切面编程）的实现–&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-aop&lt;/artifactId&gt; &lt;version&gt;${spring.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–Spring IOC的基础实现，包含访问配置文件、创建和管理bean等–&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-beans&lt;/artifactId&gt; &lt;version&gt;${spring.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–在基础IOC功能上提供扩展服务，此外还提供许多企业级服务的支持， 有邮件服务、任务调度、JNDI定位，EJB集成、远程访问、缓存以及多种视图层框架的支持–&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-context&lt;/artifactId&gt; &lt;version&gt;${spring.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–Spring context的扩展支持，用于MVC方面–&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-context-support&lt;/artifactId&gt; &lt;version&gt;${spring.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–Spring的核心工具包–&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-core&lt;/artifactId&gt; &lt;version&gt;${spring.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–spring的jdbc包–&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-jdbc&lt;/artifactId&gt; &lt;version&gt;${spring.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–为JDBC、Hibernate、JDO、JPA等提供的一致的声明式和编程式事务管理–&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-tx&lt;/artifactId&gt; &lt;version&gt;${spring.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–包含Web应用开发时，用到Spring框架时所需的核心类， 包括自动载入WebApplicationContext特性的类、Struts与JSF集成类、文件上传的支持类、Filter类和大量工具辅助类–&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-web&lt;/artifactId&gt; &lt;version&gt;${spring.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–包含SpringMVC框架相关的所有类。 包含国际化、标签、Theme、视图展现的FreeMarker、JasperReports、Tiles、Velocity、XSLT相关类。 当然，如果你的应用使用了独立的MVC框架，则无需这个JAR文件里的任何类–&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt; &lt;version&gt;${spring.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–对JUNIT等测试框架的简单封装–&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-test&lt;/artifactId&gt; &lt;version&gt;${spring.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–servlet–&gt; &lt;dependency&gt; &lt;groupId&gt;javax.servlet&lt;/groupId&gt; &lt;artifactId&gt;servlet-api&lt;/artifactId&gt; &lt;version&gt;2.5&lt;/version&gt; &lt;scope&gt;provided&lt;/scope&gt; &lt;/dependency&gt; &lt;!–mysql驱动包–&gt; &lt;dependency&gt; &lt;groupId&gt;mysql&lt;/groupId&gt; &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt; &lt;version&gt;${mysql.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–mybatis–&gt; &lt;dependency&gt; &lt;groupId&gt;org.mybatis&lt;/groupId&gt; &lt;artifactId&gt;mybatis&lt;/artifactId&gt; &lt;version&gt;${mybatis.version}&lt;/version&gt; &lt;/dependency&gt; &lt;!–mybatis与spring整合需要的包 –&gt; &lt;dependency&gt; &lt;groupId&gt;org.mybatis&lt;/groupId&gt; &lt;artifactId&gt;mybatis-spring&lt;/artifactId&gt; &lt;version&gt;1.3.0&lt;/version&gt; &lt;/dependency&gt; &lt;!–mybatis分页插件–&gt; &lt;dependency&gt; &lt;groupId&gt;com.github.pagehelper&lt;/groupId&gt; &lt;artifactId&gt;pagehelper&lt;/artifactId&gt; &lt;version&gt;5.1.10&lt;/version&gt; &lt;/dependency&gt; &lt;!–c3p0–&gt; &lt;dependency&gt; &lt;groupId&gt;c3p0&lt;/groupId&gt; &lt;artifactId&gt;c3p0&lt;/artifactId&gt; &lt;version&gt;0.9.1.2&lt;/version&gt; &lt;type&gt;jar&lt;/type&gt; &lt;scope&gt;compile&lt;/scope&gt; &lt;/dependency&gt; &lt;!–spring推荐的json转化包–&gt; &lt;!–jackson–&gt; &lt;dependency&gt; &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt; &lt;artifactId&gt;jackson-databind&lt;/artifactId&gt; &lt;version&gt;2.9.0&lt;/version&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt; &lt;artifactId&gt;jackson-core&lt;/artifactId&gt; &lt;version&gt;2.9.0&lt;/version&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt; &lt;artifactId&gt;jackson-annotations&lt;/artifactId&gt; &lt;version&gt;2.9.0&lt;/version&gt; &lt;/dependency&gt; &lt;!–阿里巴巴的json转化包–&gt; &lt;!–fastjson–&gt; &lt;dependency&gt; &lt;groupId&gt;com.alibaba&lt;/groupId&gt; &lt;artifactId&gt;fastjson&lt;/artifactId&gt; &lt;version&gt;1.1.37&lt;/version&gt; &lt;/dependency&gt; &lt;!–浏览器工具类–&gt; &lt;dependency&gt; &lt;groupId&gt;eu.bitwalker&lt;/groupId&gt; &lt;artifactId&gt;UserAgentUtils&lt;/artifactId&gt; &lt;version&gt;1.20&lt;/version&gt; &lt;/dependency&gt; &lt;!– 日志相关包 –&gt; &lt;dependency&gt; &lt;groupId&gt;log4j&lt;/groupId&gt; &lt;artifactId&gt;log4j&lt;/artifactId&gt; &lt;version&gt;${log4j.version}&lt;/version&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;org.slf4j&lt;/groupId&gt; &lt;artifactId&gt;slf4j-api&lt;/artifactId&gt; &lt;version&gt;${slf4j.version}&lt;/version&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;org.slf4j&lt;/groupId&gt; &lt;artifactId&gt;slf4j-log4j12&lt;/artifactId&gt; &lt;version&gt;${slf4j.version}&lt;/version&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;junit&lt;/groupId&gt; &lt;artifactId&gt;junit&lt;/artifactId&gt; &lt;version&gt;4.11&lt;/version&gt; &lt;scope&gt;compile&lt;/scope&gt; &lt;/dependency&gt; &lt;/dependencies&gt; &lt;build&gt; &lt;finalName&gt;SSM&lt;/finalName&gt; &lt;!–编译时，使得java包下的.properties和.xml文件包含在类路径下，方便配置扫描mapper的xml文件–&gt; &lt;resources&gt; &lt;resource&gt; &lt;directory&gt;src/main/java&lt;/directory&gt; &lt;includes&gt; &lt;include&gt;**/*.properties&lt;/include&gt; &lt;include&gt;**/*.xml&lt;/include&gt; &lt;/includes&gt; &lt;filtering&gt;false&lt;/filtering&gt; &lt;/resource&gt; &lt;/resources&gt; &lt;pluginManagement&gt;&lt;!– lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) –&gt; &lt;plugins&gt; &lt;plugin&gt; &lt;artifactId&gt;maven-clean-plugin&lt;/artifactId&gt; &lt;version&gt;3.1.0&lt;/version&gt; &lt;/plugin&gt; &lt;!– see <a target="_blank" rel="noopener" href="http://maven.apache.org/ref/current/maven-core/default-bindings.html/#Plugin_bindings_for_war_packaging">http://maven.apache.org/ref/current/maven-core/default-bindings.html\#Plugin_bindings_for_war_packaging</a> –&gt; &lt;plugin&gt; &lt;artifactId&gt;maven-resources-plugin&lt;/artifactId&gt; &lt;version&gt;3.0.2&lt;/version&gt; &lt;/plugin&gt; &lt;plugin&gt; &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt; &lt;version&gt;3.8.0&lt;/version&gt; &lt;/plugin&gt; &lt;plugin&gt; &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt; &lt;version&gt;2.22.1&lt;/version&gt; &lt;/plugin&gt; &lt;plugin&gt; &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt; &lt;version&gt;3.2.2&lt;/version&gt; &lt;/plugin&gt; &lt;plugin&gt; &lt;artifactId&gt;maven-install-plugin&lt;/artifactId&gt; &lt;version&gt;2.5.2&lt;/version&gt; &lt;/plugin&gt; &lt;plugin&gt; &lt;artifactId&gt;maven-deploy-plugin&lt;/artifactId&gt; &lt;version&gt;2.8.2&lt;/version&gt; &lt;/plugin&gt; &lt;/plugins&gt; &lt;/pluginManagement&gt; &lt;/build&gt; &lt;/project&gt;</th>
+</tr>
+</thead>
+</table>
+<h3 id="1-2-applicationContext-xml"><a href="#1-2-applicationContext-xml" class="headerlink" title="1.2 applicationContext.xml"></a>1.2 applicationContext.xml</h3><table>
+<thead>
+<tr>
+<th>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt; &lt;beans xmlns=”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/beans&quot;">http://www.springframework.org/schema/beans&quot;</a> xmlns:xsi=”<a target="_blank" rel="noopener" href="http://www.w3.org/2001/XMLSchema-instance&quot;">http://www.w3.org/2001/XMLSchema-instance&quot;</a> xmlns:aop=”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/aop&quot;">http://www.springframework.org/schema/aop&quot;</a> xmlns:tx=”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/tx&quot;">http://www.springframework.org/schema/tx&quot;</a> xmlns:context=”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/context&quot;">http://www.springframework.org/schema/context&quot;</a> xsi:schemaLocation=”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/beans">http://www.springframework.org/schema/beans</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/beans/spring-beans.xsd">http://www.springframework.org/schema/beans/spring-beans.xsd</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/tx">http://www.springframework.org/schema/tx</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/tx/spring-tx.xsd">http://www.springframework.org/schema/tx/spring-tx.xsd</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/aop">http://www.springframework.org/schema/aop</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/aop/spring-aop.xsd">http://www.springframework.org/schema/aop/spring-aop.xsd</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/context">http://www.springframework.org/schema/context</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/context/spring-context.xsd&quot;/&gt;">http://www.springframework.org/schema/context/spring-context.xsd&quot;\&gt;</a> &lt;!–开启注解扫描，因为spring和springMVC是父子容器，但是它们有各自独立性，这里排除Controller层，如果不排除，都全部扫描，就可能会出现Controller的方法无法拦截、Bean被多次加载等问题；–&gt; &lt;context:component-scan base-package=”com.wzz”&gt; &lt;context:exclude-filter type=”annotation” expression=”org.springframework.stereotype.Controller”/&gt; &lt;context:exclude-filter type=”annotation” expression=”org.springframework.web.bind.annotation.RestController”/&gt; &lt;/context:component-scan&gt; &lt;!–spring整合mybatis–&gt; &lt;context:property-placeholder location=”classpath:db.properties”/&gt; &lt;!–配置连接池–&gt; &lt;bean id=”dataSource” class=”com.mchange.v2.c3p0.ComboPooledDataSource”&gt; &lt;property name=”driverClass” value=”${jdbc.driver}”/&gt; &lt;property name=”jdbcUrl” value=”${jdbc.url}”/&gt; &lt;property name=”user” value=”${jdbc.userName}”/&gt; &lt;property name=”password” value=”${jdbc.password}”/&gt; &lt;property name=”initialPoolSize” value=”${jdbc.c3p0.initialPoolSize}”/&gt; &lt;property name=”maxPoolSize” value=”${jdbc.c3p0.maxPoolSize}”/&gt; &lt;property name=”minPoolSize” value=”${jdbc.c3p0.minPoolSize}”/&gt; &lt;property name=”maxIdleTime” value=”${jdbc.c3p0.maxIdleTime}”/&gt; &lt;/bean&gt; &lt;!–配置SqlSessionFactory对象–&gt; &lt;bean id=”sqlSessionFactory” class=”org.mybatis.spring.SqlSessionFactoryBean”&gt; &lt;property name=”dataSource” ref=”dataSource”/&gt; &lt;property name=”configLocation” value=”classpath:sqlMapConfig.xml”/&gt; &lt;property name=”mapperLocations” value=”classpath:com/wzz/mapper/*.xml”/&gt; &lt;!–配置mybatis分页插件–&gt; &lt;property name=”plugins”&gt; &lt;array&gt; &lt;bean class=”com.github.pagehelper.PageInterceptor”&gt; &lt;property name=”properties”&gt; &lt;props&gt; &lt;prop key=”helperDialect”&gt;mysql&lt;/prop&gt; &lt;prop key=”reasonable”&gt;true&lt;/prop&gt; &lt;/props&gt; &lt;/property&gt; &lt;/bean&gt; &lt;/array&gt; &lt;/property&gt; &lt;/bean&gt; &lt;!–配置接口所在的包–&gt; &lt;bean id=”mapperScanner” class=”org.mybatis.spring.mapper.MapperScannerConfigurer”&gt; &lt;property name=”basePackage” value=”com.wzz.mapper”/&gt; &lt;/bean&gt; &lt;!–配置spring框架声明式事务管理–&gt; &lt;!–配置事务管理器–&gt; &lt;bean id=”transactionManager” class=”org.springframework.jdbc.datasource.DataSourceTransactionManager”&gt; &lt;property name=”dataSource” ref=”dataSource”/&gt; &lt;/bean&gt; &lt;!–配置事务通知–&gt; &lt;tx:advice id=”txAdvice” transaction-manager=”transactionManager”&gt; &lt;!–事务的属性–&gt; &lt;tx:attributes&gt; &lt;!–SUPPORTS代表支持当前事务，如果当前没有事务，就以非事务方式执行。–&gt; &lt;tx:method name=”query*“ propagation=”SUPPORTS” read-only=”true”/&gt; &lt;!–DEFAULT代表以数据库的隔离级别–&gt; &lt;tx:method name=”*“ isolation=”DEFAULT”/&gt; &lt;/tx:attributes&gt; &lt;/tx:advice&gt; &lt;!–配置Aop增强–&gt; &lt;aop:config&gt; &lt;!–配置切入点表达式–&gt; &lt;!–* *..*.*(..) 修饰符（可省略） 返回类型 包.包….包.类.方法.(参数)–&gt; &lt;aop:pointcut id=”pt” expression=”execution(* com.wzz.service.impl.*.*(..))”/&gt; &lt;!–建立事务与切入点之间的关系–&gt; &lt;aop:advisor advice-ref=”txAdvice” pointcut-ref=”pt”/&gt; &lt;/aop:config&gt; &lt;/beans&gt;</th>
+</tr>
+</thead>
+</table>
+<h3 id="1-3-springMVC-xml"><a href="#1-3-springMVC-xml" class="headerlink" title="1.3 springMVC.xml"></a>1.3 springMVC.xml</h3><table>
+<thead>
+<tr>
+<th>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt; &lt;beans xmlns=”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/beans&quot;">http://www.springframework.org/schema/beans&quot;</a> xmlns:xsi=”<a target="_blank" rel="noopener" href="http://www.w3.org/2001/XMLSchema-instance&quot;">http://www.w3.org/2001/XMLSchema-instance&quot;</a> xmlns:aop=”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/aop&quot;">http://www.springframework.org/schema/aop&quot;</a> xmlns:context=”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/context&quot;">http://www.springframework.org/schema/context&quot;</a> xmlns:mvc=”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/mvc&quot;">http://www.springframework.org/schema/mvc&quot;</a> xsi:schemaLocation=”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/beans">http://www.springframework.org/schema/beans</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/beans/spring-beans.xsd">http://www.springframework.org/schema/beans/spring-beans.xsd</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/mvc">http://www.springframework.org/schema/mvc</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/mvc/spring-mvc.xsd">http://www.springframework.org/schema/mvc/spring-mvc.xsd</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/aop">http://www.springframework.org/schema/aop</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/aop/spring-aop.xsd">http://www.springframework.org/schema/aop/spring-aop.xsd</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/context">http://www.springframework.org/schema/context</a> <a target="_blank" rel="noopener" href="http://www.springframework.org/schema/context/spring-context.xsd&quot;/&gt;">http://www.springframework.org/schema/context/spring-context.xsd&quot;\&gt;</a> &lt;!–springMVC值扫描controller–&gt; &lt;context:component-scan base-package=”com.wzz.controller”/&gt; &lt;!–配置日志切面–&gt; &lt;aop:config&gt; &lt;aop:pointcut id=”pt” expression=”execution(* com.wzz.controller.*.*(..))”/&gt; &lt;!–日志切面–&gt; &lt;aop:aspect id=”” ref=”sysAccessLogAspect”&gt; &lt;!–前置通知–&gt; &lt;aop:before method=”doBefore” pointcut-ref=”pt”&gt;&lt;/aop:before&gt; &lt;!–后置通知–&gt; &lt;aop:after-returning method=”doAfter” pointcut-ref=”pt”&gt;&lt;/aop:after-returning&gt; &lt;/aop:aspect&gt; &lt;/aop:config&gt; &lt;!–视图解析器 这里不需要视图解析器，因为不处理jsp，或者html,咱们是前后端分离，后端只负责返回数据即可–&gt; &lt;!–&lt;bean id=”internalResourceViewResolver” class=”org.springframework.web.servlet.view.InternalResourceViewResolver”&gt;–&gt; &lt;!–&lt;property name=”prefix” value=”/WEB-INF/pages/“/&gt;–&gt; &lt;!–&lt;property name=”suffix” value=”.jsp”/&gt;–&gt; &lt;!–&lt;/bean&gt;–&gt; &lt;!–&amp;lt;!&ndash;过滤静态资源&ndash;&gt;–&gt; &lt;!–&lt;mvc:resources mapping=”/css/**“ location=”/css/“/&gt;–&gt; &lt;!–&lt;mvc:resources mapping=”/images/**“ location=”/images/“/&gt;–&gt; &lt;!–&lt;mvc:resources mapping=”/js/**“ location=”/js/“/&gt;–&gt; &lt;!–springMVC框架流程 1、 用户发起请求到前端控制器（DispatcherServlet），前端控制器没有能力处理业务逻辑； 2、 通过HandlerMapping查找模型（Controller、Handler）； 3、 返回执行链，执行链包含了2部分内容，Handler对象以及拦截器（组）； 4、 通过HandlerAdapter执行模型（Handler） 5、 适配器调用Handler对象处理业务逻辑； 6、 模型处理完业务逻辑，返回ModelAndView对象，view不是真正的视图对象，而是视图名称； 7、 将ModelAndView对象返回给前端控制器； 8、 前端控制器通过视图名称经过视图解析器查找视图对象； 9、 返回视图对象； 10、前端控制器渲染视图； 11、返回给前端控制器； 12、前端控制器将视图（html、json、xml、Excel）返回给用户；–&gt; &lt;!–开启springMVC注解支持–&gt; &lt;mvc:annotation-driven/&gt; &lt;/beans&gt;</th>
+</tr>
+</thead>
+</table>
+<p>springMVC.xml为什么要配置注解驱动？<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42529699/article/details/88085405">https://blog.csdn.net/weixin_42529699/article/details/88085405</a></p>
+<h3 id="1-4-sqlMapConfig-xml"><a href="#1-4-sqlMapConfig-xml" class="headerlink" title="1.4 sqlMapConfig.xml"></a>1.4 sqlMapConfig.xml</h3><table>
+<thead>
+<tr>
+<th>&lt;?xml version=”1.0” encoding=”UTF-8” ?&gt; &lt;!DOCTYPE configuration PUBLIC “-//mybatis.org//DTD Config 3.0//EN” “<a target="_blank" rel="noopener" href="http://mybatis.org/dtd/mybatis-3-config.dtd&quot;/&gt;">http://mybatis.org/dtd/mybatis-3-config.dtd&quot;\&gt;</a> &lt;configuration&gt; &lt;!–别名配置 对model包下的所有起一个别名，默认是它的类名（不分大小写）–&gt; &lt;typeAliases&gt; &lt;package name=”com.wzz.model”/&gt; &lt;/typeAliases&gt; &lt;/configuration&gt;</th>
+</tr>
+</thead>
+</table>
+<h3 id="1-5-log4j-properties"><a href="#1-5-log4j-properties" class="headerlink" title="1.5 log4j.properties"></a>1.5 log4j.properties</h3><table>
+<thead>
+<tr>
+<th>log4j.rootLogger=DEBUG,Console,File log4j.appender.Console=org.apache.log4j.ConsoleAppender log4j.appender.Console.Target=System.out log4j.appender.Console.layout = org.apache.log4j.PatternLayout log4j.appender.Console.layout.ConversionPattern=[%c] - %m%n log4j.appender.File =org.apache.log4j.RollingFileAppender log4j.appender.File.File = logs/SSM.log log4j.appender.File.MaxFileSize = 10MB log4j.appender.File.Threshold = ALL log4j.appender.File.layout =org.apache.log4j.PatternLayout log4j.appender.File.layout.ConversionPattern =[%p] [%d{yyyy-MM-ddHH\\\:mm\\\:ss}][%c]%m%n log4j.logger.java.sql.ResultSet=DEBUG log4j.logger.java.sql.Connection=DEBUG log4j.logger.java.sql.PreparedStatement=DEBUG</th>
+</tr>
+</thead>
+</table>
+<h3 id="1-6-db-properties"><a href="#1-6-db-properties" class="headerlink" title="1.6 db.properties"></a>1.6 db.properties</h3><table>
+<thead>
+<tr>
+<th>jdbc.driver=com.mysql.cj.jdbc.Driver jdbc.url=jdbc:mysql://localhost:3306/ssm?serverTimezone=GMT%2B8&amp;useSSL=false jdbc.userName=wzz jdbc.password=521125 #——————————————————— # c3p0反空闲设置，防止8小时失效问题28800 #——————————————————— #idleConnectionTestPeriod要小于MySQL的wait_timeout #If true, an operation will be performed at every connection checkout to verify that the connection is valid. jdbc.c3p0.testConnectionOnCheckout=false #If true, an operation will be performed asynchronously at every connection checkin to verify that the connection is valid. jdbc.c3p0.testConnectionOnCheckin=true #If this is a number greater than 0, c3p0 will test all idle, pooled but unchecked-out connections, every this number of seconds. jdbc.c3p0.idleConnectionTestPeriod=3600 #——————————————————— # c3p0连接池配置 #——————————————————— #initialPoolSize, minPoolSize, maxPoolSize define the number of Connections that will be pooled. #Please ensure that minPoolSize &lt;= maxPoolSize. #Unreasonable values of initialPoolSize will be ignored, and minPoolSize will be used instead. jdbc.c3p0.initialPoolSize=10 jdbc.c3p0.minPoolSize=10 jdbc.c3p0.maxPoolSize=50 #maxIdleTime defines how many seconds a Connection should be permitted to go unused before being culled from the pool. jdbc.c3p0.maxIdleTime=3600</th>
+</tr>
+</thead>
+</table>
+<h3 id="1-7-web-xml"><a href="#1-7-web-xml" class="headerlink" title="1.7 web.xml"></a>1.7 web.xml</h3><table>
+<thead>
+<tr>
+<th>&lt;!DOCTYPE web-app PUBLIC “-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN” “<a target="_blank" rel="noopener" href="http://java.sun.com/dtd/web-app_2_3.dtd&quot;">http://java.sun.com/dtd/web-app_2_3.dtd&quot;</a> &gt; &lt;web-app&gt; &lt;display-name&gt;Archetype Created Web Application&lt;/display-name&gt; &lt;!–配置spring的监听器，默认加载WEB-INF目录下的applicationContext.xml配置文件–&gt; &lt;listener&gt; &lt;listener-class&gt;org.springframework.web.context.ContextLoaderListener&lt;/listener-class&gt; &lt;/listener&gt; &lt;!–设置配置文件的路径–&gt; &lt;context-param&gt; &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt; &lt;param-value&gt;classpath:applicationContext.xml&lt;/param-value&gt; &lt;/context-param&gt; &lt;!–配置前段控制器–&gt; &lt;servlet&gt; &lt;servlet-name&gt;dispatcherServlet&lt;/servlet-name&gt; &lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt; &lt;!–加载springMVC.xml配置文件–&gt; &lt;init-param&gt; &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt; &lt;param-value&gt;classpath:springMVC.xml&lt;/param-value&gt; &lt;/init-param&gt; &lt;!–contextLoaderListener监听器初始化完毕后，开始初始化web.xml中配置的Servlet，servlet可以配置多个，加载顺序按照load-on-startup的值，值越小，servlet的优先级越高，就越先被加载–&gt; &lt;load-on-startup&gt;1&lt;/load-on-startup&gt; &lt;/servlet&gt; &lt;servlet-mapping&gt; &lt;servlet-name&gt;dispatcherServlet&lt;/servlet-name&gt; &lt;url-pattern&gt;/&lt;/url-pattern&gt; &lt;/servlet-mapping&gt; &lt;!–解决中文乱码过滤器–&gt; &lt;filter&gt; &lt;filter-name&gt;characterEncodingFilter&lt;/filter-name&gt; &lt;filter-class&gt;org.springframework.web.filter.CharacterEncodingFilter&lt;/filter-class&gt; &lt;init-param&gt; &lt;param-name&gt;encoding&lt;/param-name&gt; &lt;param-value&gt;UTF-8&lt;/param-value&gt; &lt;/init-param&gt; &lt;/filter&gt; &lt;filter-mapping&gt; &lt;filter-name&gt;characterEncodingFilter&lt;/filter-name&gt; &lt;url-pattern&gt;/*&lt;/url-pattern&gt; &lt;/filter-mapping&gt; &lt;/web-app&gt;</th>
+</tr>
+</thead>
+</table>
+<h2 id="源码文件"><a href="#源码文件" class="headerlink" title="源码文件"></a>源码文件</h2><p>按结构图，从上往下出场</p>
+<h3 id="2-1-SysAccessLogAspect-java"><a href="#2-1-SysAccessLogAspect-java" class="headerlink" title="2.1 SysAccessLogAspect.java"></a>2.1 SysAccessLogAspect.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.aspect; import org.aspectj.lang.JoinPoint; import org.springframework.stereotype.Component; /** * @ClassName SysAccessLogAspect * @Description TODO 系统访问日志切面类 * @Author zhengsongbo * Version 1.0 **/ @Component public class SysAccessLogAspect { public void doBefore(JoinPoint jp){ System.out.println(“前置通知执行啦”); } public void doAfter(JoinPoint jp){ System.out.println(“后置通知执行啦”); } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="2-2-UserController-java"><a href="#2-2-UserController-java" class="headerlink" title="2.2 UserController.java"></a>2.2 UserController.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.controller; import com.wzz.service.IUserService; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.stereotype.Controller; import org.springframework.web.bind.annotation.RequestMapping; import org.springframework.web.bind.annotation.ResponseBody; import java.util.Map; /** * @ClassName UserController * @Description TODO 用户控制层 * @Author zhengsongbo * Version 1.0 **/ @Controller public class UserController { @Autowired private IUserService userService; @RequestMapping(“/test”) @ResponseBody public Map queryUserList(){ System.out.println(“controller层执行啦”); Map&lt;String, Object&gt; resultMap = userService.queryUserList(); return resultMap; } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="2-3-UserMapper-java"><a href="#2-3-UserMapper-java" class="headerlink" title="2.3 UserMapper.java"></a>2.3 UserMapper.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.mapper; import com.wzz.model.User; import java.util.List; /** * @ClassName UserMapper * @Description TODO 用户持久层接口 * @Author zhengsongbo * Version 1.0 **/ public interface UserMapper { List&lt;User&gt; queryUserList(); }</th>
+</tr>
+</thead>
+</table>
+<h3 id="2-4-UserMapper-xml"><a href="#2-4-UserMapper-xml" class="headerlink" title="2.4 UserMapper.xml"></a>2.4 UserMapper.xml</h3><table>
+<thead>
+<tr>
+<th>&lt;?xml version=”1.0” encoding=”UTF-8” ?&gt; &lt;!DOCTYPE mapper PUBLIC “-//mybatis.org//DTD Mapper 3.0//EN” “<a target="_blank" rel="noopener" href="http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;/&gt;">http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;\&gt;</a> &lt;mapper namespace=”com.wzz.mapper.UserMapper”&gt; &lt;!–因为在sqlMapConfig.xml中配置了别名，所以直接写user就可以–&gt; &lt;select id=”queryUserList” resultType=”user”&gt; select * from tbUser &lt;/select&gt; &lt;/mapper&gt;</th>
+</tr>
+</thead>
+</table>
+<h3 id="2-5-User-java"><a href="#2-5-User-java" class="headerlink" title="2.5 User.java"></a>2.5 User.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.model; import java.io.Serializable; /** * @ClassName User * @Description TODO 用户类 * @Author zhengsongbo * Version 1.0 **/ public class User implements Serializable { private Integer id; //用户标识 private String uid; //uid private String userName; //用户名 private String password; //密码 private String uName; //姓名 private Integer age; //年龄 private Integer sex; //性别 //setter and getter and toString }</th>
+</tr>
+</thead>
+</table>
+<h3 id="2-6-UserServiceImpl-java"><a href="#2-6-UserServiceImpl-java" class="headerlink" title="2.6 UserServiceImpl.java"></a>2.6 UserServiceImpl.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.service.impl; import com.wzz.mapper.UserMapper; import com.wzz.model.User; import com.wzz.service.IUserService; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.stereotype.Service; import java.util.HashMap; import java.util.List; import java.util.Map; /** * @ClassName UserServiceImpl * @Description TODO 用户业务层实现类 * @Author zhengsongbo * Version 1.0 **/ @Service public class UserServiceImpl implements IUserService { @Autowired private UserMapper userMapper; @Override public Map&lt;String,Object&gt; queryUserList() { System.out.println(“service执行啦”); List&lt;User&gt; userList = userMapper.queryUserList(); System.out.println(“调用了mapper层”); Map&lt;String,Object&gt; resultMap=new HashMap&lt;&gt;(); resultMap.put(“userList”,userList); return resultMap; } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="2-7-IUserService-java"><a href="#2-7-IUserService-java" class="headerlink" title="2.7 IUserService.java"></a>2.7 IUserService.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.service; import java.util.Map; /** * @ClassName IUserService * @Description TODO 用户业务层接口 * @Author zhengsongbo * Version 1.0 **/ public interface IUserService { Map&lt;String,Object&gt; queryUserList(); }</th>
+</tr>
+</thead>
+</table>
+<h2 id="SQL脚本"><a href="#SQL脚本" class="headerlink" title="SQL脚本"></a>SQL脚本</h2><p>sql脚本仅结构，没有数据，自行添加</p>
+<table>
+<thead>
+<tr>
+<th>/* Navicat Premium Data Transfer Source Server : ssm Source Server Type : MySQL Source Server Version : 80011 Source Host : localhost:3306 Source Schema : ssm Target Server Type : MySQL Target Server Version : 80011 File Encoding : 65001 Date: 02/08/2019 08:24:19 */ SET NAMES utf8mb4; SET FOREIGN_KEY_CHECKS = 0; – —————————- – Table structure for tbuser – —————————- DROP TABLE IF EXISTS `tbuser`; CREATE TABLE `tbuser` ( `id` int(11) NOT NULL AUTO_INCREMENT, `uId` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, `userName` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, `password` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, `uName` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, `age` int(11) NULL DEFAULT NULL, `sex` int(11) NULL DEFAULT NULL, PRIMARY KEY (`id`) USING BTREE ) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic; SET FOREIGN_KEY_CHECKS = 1;</th>
+</tr>
+</thead>
+</table>
+<p>三、测试</p>
+<p>1、Tomcat配置</p>
+<p>若没有此工具栏，直接点击视图（View）,勾选工具栏（Toolbar）即可</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000522.png"></p>
+<p>点击配置，添加本地Tomcat</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000523.png"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000524.png"></p>
+<p>点击Deployment，选择+ Artifact 选择war,或者 war exploded(热部署配置选择的，）</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000525.png"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000526.png"></p>
+<p>应用，确定即可</p>
+<p>至此，就可以进行测试了（成功返回了数据）</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000527.png"></p>
+<p>控制台情况，测试没问题</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000528.png"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000529.png"></p>
+<p>至此，完成了ssm搭建</p>
+<h1 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h1><p>**规划：**实现登录，用户列表查询，访问日志aop;</p>
+<p>开始先解决跨域：在目录config/index.js配置</p>
+<h2 id="3-1-config-index-js"><a href="#3-1-config-index-js" class="headerlink" title="3.1 config/index.js"></a>3.1 config/index.js</h2><table>
+<thead>
+<tr>
+<th>‘use strict’ // Template version: 1.3.1 // see <a target="_blank" rel="noopener" href="http://vuejs-templates.github.io/webpack">http://vuejs-templates.github.io/webpack</a> for documentation. const path = require(‘path’) module.exports = { dev: { // Paths assetsSubDirectory: ‘static’, assetsPublicPath: ‘/‘, /* ‘/api’ 为匹配项，target 为被请求的后台地址 changeOrigin设置为true,那么本地会虚拟一个服务端接收你的请求并代你发送该请求，这样就不会有跨域问题了，只适用于开发环境.如果上线的话，可以考虑nginx pathRewrite 是用来重写地址，将前缀 ‘/api’ 转为 ‘/‘，如果本身的接口地址就有 ‘/api’ 这种通用前缀，就可以把 pathRewrite 删掉，或者你可以自定义一个公共接口匹配地址 如：请求<a target="_blank" rel="noopener" href="http://127.0.0.1:8080/user/queryUserList,%E5%B0%B1%E5%8F%AF%E4%BB%A5%E5%86%99%E6%88%90%EF%BC%9A/api/user/queryUserList">http://127.0.0.1:8080/user/queryUserList,就可以写成：/api/user/queryUserList</a> */ proxyTable: { ‘/api’:{ target:’<a href="http://127.0.0.1:8080&#39;">http://127.0.0.1:8080&#39;</a>, changeOrigin:true, pathRewrite:{ ‘^/api’:’/‘ } } }, // Various Dev Server settings host: ‘localhost’, // can be overwritten by process.env.HOST port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined autoOpenBrowser: false, errorOverlay: true, notifyOnErrors: true, poll: false, // <a target="_blank" rel="noopener" href="https://webpack.js.org/configuration/dev-server//#devserver-watchoptions-">https://webpack.js.org/configuration/dev-server/\#devserver-watchoptions-</a> /** * Source Maps */ // <a target="_blank" rel="noopener" href="https://webpack.js.org/configuration/devtool//#development">https://webpack.js.org/configuration/devtool/\#development</a> devtool: ‘cheap-module-eval-source-map’, // If you have problems debugging vue-files in devtools, // set this to false - it *may* help // <a target="_blank" rel="noopener" href="https://vue-loader.vuejs.org/en/options.html/#cachebusting">https://vue-loader.vuejs.org/en/options.html\#cachebusting</a> cacheBusting: true, cssSourceMap: true }, build: { // Template for index.html index: path.resolve(__dirname, ‘../dist/index.html’), // Paths assetsRoot: path.resolve(__dirname, ‘../dist’), assetsSubDirectory: ‘static’, assetsPublicPath: ‘/‘, /** * Source Maps */ productionSourceMap: true, // <a target="_blank" rel="noopener" href="https://webpack.js.org/configuration/devtool//#production">https://webpack.js.org/configuration/devtool/\#production</a> devtool: ‘#source-map’, // Gzip off by default as many popular static hosts such as // Surge or Netlify already gzip all static assets for you. // Before setting to `true`, make sure to: // npm install –save-dev compression-webpack-plugin productionGzip: false, productionGzipExtensions: [‘js’, ‘css’], // Run the build command with an extra argument to // View the bundle analyzer report after build finishes: // `npm run build –report` // Set to `true` or `false` to always turn it on or off bundleAnalyzerReport: process.env.npm_config_report } }</th>
+</tr>
+</thead>
+</table>
+<h2 id="3-2-tbSysLog-sql"><a href="#3-2-tbSysLog-sql" class="headerlink" title="3.2 tbSysLog.sql"></a>3.2 tbSysLog.sql</h2><table>
+<thead>
+<tr>
+<th>/* Navicat Premium Data Transfer Source Server : ssm Source Server Type : MySQL Source Server Version : 80011 Source Host : localhost:3306 Source Schema : ssm Target Server Type : MySQL Target Server Version : 80011 File Encoding : 65001 Date: 05/08/2019 16:44:14 */ SET NAMES utf8mb4; SET FOREIGN_KEY_CHECKS = 0; – —————————- – Table structure for tbsyslog – —————————- DROP TABLE IF EXISTS `tbsyslog`; CREATE TABLE `tbsyslog` ( `id` int(11) NOT NULL AUTO_INCREMENT, `logId` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, `accessDate` datetime(0) NULL DEFAULT NULL, `requestType` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, `accessInterface` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, `interfaceParams` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL, `accessSource` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, `accessIp` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, `executeTime` int(11) NULL DEFAULT NULL, PRIMARY KEY (`id`) USING BTREE ) ENGINE = InnoDB AUTO_INCREMENT = 761 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic; SET FOREIGN_KEY_CHECKS = 1;</th>
+</tr>
+</thead>
+</table>
+<p>前端项目结构图 后端项目结构图</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000530.png"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000531.png"></p>
+<h2 id="3-4-前端"><a href="#3-4-前端" class="headerlink" title="3.4 前端"></a>3.4 前端</h2><h3 id="3-4-1安装axios"><a href="#3-4-1安装axios" class="headerlink" title="3.4.1安装axios"></a>3.4.1安装axios</h3><p>cnpm install axios -S</p>
+<h3 id="3-4-2-config-dev-env-js"><a href="#3-4-2-config-dev-env-js" class="headerlink" title="3.4.2 config/dev.env.js"></a>3.4.2 config/dev.env.js</h3><p>添加 BASE_URL:’”/api”‘ （因为这里在3里要引用，也可不配置，你在3里写死就行）</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000532.png"></p>
+<h3 id="3-4-3-封装axios"><a href="#3-4-3-封装axios" class="headerlink" title="3.4.3 封装axios"></a>3.4.3 封装axios</h3><p>utils/request.js</p>
+<table>
+<thead>
+<tr>
+<th>import axios from ‘axios’ //引入axios /* 创建axios实例 */ const service = axios.create({ //这个process.env.BASE_URL在config/dev.evn.js、prod.evn.js里面进行配置 baseURL: process.env.BASE_URL, // api的base_url timeout: 5000 // 请求超时时间 }); /*response拦截器，进行错误处理*/ service.interceptors.response.use(response =&gt; { return response; }, error =&gt; { // 失败处理 switch (error.response.status) { case 400: error.message = ‘错误请求’ break; case 401: error.message = ‘未授权，请重新登录’ break; case 403: error.message = ‘拒绝访问’ break; case 404: error.message = ‘请求错误,未找到该资源’ break; case 405: error.message = ‘请求方法未允许’ break; case 408: error.message = ‘请求超时’ break; case 500: error.message = ‘服务器端出错’ break; case 501: error.message = ‘网络未实现’ break; case 502: error.message = ‘网络错误’ break; case 503: error.message = ‘服务不可用’ break; case 504: error.message = ‘网络超时’ break; case 505: error.message = ‘http版本不支持该请求’ break; default: error.message = `连接错误${error.response.status}` } return Promise.reject(error); } ); /*reuqest拦截器*/ service.interceptors.request.use(config =&gt; { return config; }, error =&gt; { return Promise.reject(error); } ); export default service;</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-4-4封装一个公共的axios请求API"><a href="#3-4-4封装一个公共的axios请求API" class="headerlink" title="3.4.4封装一个公共的axios请求API"></a>3.4.4封装一个公共的axios请求API</h3><p>api/commonAPI.js</p>
+<table>
+<thead>
+<tr>
+<th>import request from ‘@/utils/request’ export function commonAPI(api,postData){ if(postData===’’){ return request({ url:’/‘+api, method:’post’ }) }else{ return request({ url:’/‘+api, method:’post’, data:postData }) } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-4-5封装一个日期格式转化的api"><a href="#3-4-5封装一个日期格式转化的api" class="headerlink" title="3.4.5封装一个日期格式转化的api"></a>3.4.5封装一个日期格式转化的api</h3><p>utils/index.js</p>
+<table>
+<thead>
+<tr>
+<th>/** * 格式为yyyy-MM-dd OR yyyy-MM-dd HH:mm:ss * @param {Object} date 日期对象 * @param {Object} hasTime 是否有时间 true有时间，false没有时间 */ export function formatDate(date,hasTime){ var hasTime = hasTime;//可传第二个参数false，返回yyyy-MM-dd var d = date; var year = d.getFullYear(); var month = (d.getMonth()+1)&lt;10 ? ‘0’+(d.getMonth()+1) : (d.getMonth()+1); var day = d.getDate()&lt;10 ? ‘0’+d.getDate() : d.getDate(); var hour = d.getHours()&lt;10 ? ‘0’+d.getHours() : d.getHours(); var minute = d.getMinutes()&lt;10 ? ‘0’+d.getMinutes() : d.getMinutes(); var second = d.getSeconds()&lt;10 ? ‘0’+d.getSeconds() : d.getSeconds(); if(hasTime){ return [year, month, day].join(‘-‘) + “ “ + [hour, minute, second].join(‘:’); }else{ return [year, month, day].join(‘-‘); } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-4-6-vue文件"><a href="#3-4-6-vue文件" class="headerlink" title="3.4.6 vue文件"></a>3.4.6 vue文件</h3><h4 id="1-login-Login-vue"><a href="#1-login-Login-vue" class="headerlink" title="1.login/Login.vue"></a>1.login/Login.vue</h4><table>
+<thead>
+<tr>
+<th>&lt;template&gt; &lt;div class=”box”&gt; &lt;div id=”login” style=”width: 320px;height: 300px;text-align: center;”&gt; &lt;el-form :model=”loginForm” ref=”loginForm” :rules=”rules”&gt; &lt;el-form-item&gt; &lt;span style=”color: white;font-family: 楷体;font-size: 26px;”&gt;用&amp;nbsp;户&nbsp;登&nbsp;录&nbsp;&lt;/span&gt; &lt;/el-form-item&gt; &lt;el-form-item prop=”userName”&gt; &lt;el-input type=”text” v-model=”loginForm.userName” placeholder=”用户名”&gt; &lt;template slot=”prepend”&gt;&lt;i class=”el-icon-user” style=”font-size: 20px; color: white;”&gt;&lt;/i&gt;&lt;/template&gt; &lt;/el-input&gt; &lt;/el-form-item&gt; &lt;el-form-item prop=”password”&gt; &lt;el-input type=”text” v-model=”loginForm.password” placeholder=”密码” show-password&gt; &lt;template slot=”prepend”&gt;&lt;i class=”el-icon-lock” style=”font-size: 20px;color: white;”&gt;&lt;/i&gt;&lt;/template&gt; &lt;/el-input&gt; &lt;/el-form-item&gt; &lt;el-form-item&gt; &lt;el-button type=”primary” size=”medium” :loading=”loading” style=”font-size: 20px;font-family: 微软雅黑;width: 320px;” @click=”clickLogin”&gt;登&amp;nbsp;&nbsp;&nbsp;录&lt;/el-button&gt; &lt;/el-form-item&gt; &lt;/el-form&gt; &lt;/div&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; import { commonAPI } from ‘@/api/commonAPI’; export default { data() { var validateUserName = (rule, value, callback) =&gt; { if (value.length === 0) { return callback(new Error(‘请输入用户名’)) } else { callback() } } var validatePassword = (rule, value, callback) =&gt; { if (value.length === 0) { callback(new Error(‘请输入密码’)) } else if (value.length &lt; 3) { callback(new Error(‘密码不能小于3位’)) } else { callback() } } return { loginForm: { userName: ‘’, password: ‘’ }, loading: false, //登陆加载效果 rules: { userName: [{ required: true, trigger: ‘blur’, validator: validateUserName }], password: [{ required: true, trigger: ‘blur’, validator: validatePassword }] } } }, methods: { clickLogin() { this.$refs.loginForm.validate(valid =&gt; { if (valid) {//校验成功 this.loading = true setTimeout(() =&gt; {//为了看到登录转圈圈的加载效果，这里来一个延迟2秒发送请求 //封装的公共请求API commonAPI(‘queryUser’, this.loginForm).then(res =&gt; { let data = res.data; if (data.info.code === ‘0’ &amp;&amp; data.data === ‘OK’) { this.$router.push({ name: ‘layoutYHGL’ }); } else { this.$notify({ title: ‘登录提示’, message: ‘用户名或密码错误’, position: ‘bottom-right’, type: ‘error’ }); this.loading = false; } }).catch(error=&gt;{ this.loading = false; this.$notify({//这里采用element ui的一个错误显示效果模板 title: ‘登录提示’, message: error.message, position: ‘bottom-right’, type: ‘error’ }); }) }, 2000); } else { return false; } }) } } } &lt;/script&gt; &lt;style scoped=”scoped”&gt; .box { display: flex; height: 100%; justify-content: center; align-items: center; } &lt;/style&gt; &lt;style&gt; .el-input-group__prepend { padding: 0px 15px; background-color: #CCCCCC; border: 1 solid #72767B; } body { background-color: #72767B; margin: 0px; } &lt;/style&gt;</th>
+</tr>
+</thead>
+</table>
+<h4 id="2-sys-SysLogList-vue"><a href="#2-sys-SysLogList-vue" class="headerlink" title="2.sys/SysLogList.vue"></a>2.sys/SysLogList.vue</h4><table>
+<thead>
+<tr>
+<th>&lt;template&gt; &lt;el-container&gt; &lt;el-header style=”background-color:white”&gt; &lt;el-form :inline=”true” :model=”formInline” class=”demo-form-inline” size=”mini”&gt; &lt;el-form-item label=”访问时间”&gt; &lt;el-date-picker class=”dateStyle” v-model=”formInline.beginTime” value-format=”yyyy-MM-dd HH:mm:ss” @change=”dataFormat” type=”datetime” placeholder=”选择日期时间”&gt;&lt;/el-date-picker&gt; 至&amp;nbsp;&lt;el-date-picker class=”dateStyle” v-model=”formInline.endTime” value-format=”yyyy-MM-dd HH:mm:ss” @change=”dataFormat” type=”datetime” placeholder=”选择日期时间”&gt;&lt;/el-date-picker&gt; &lt;/el-form-item&gt; &lt;el-form-item&gt; &lt;el-button type=”primary” class=”btn” @click=”onSubmit”&gt;&lt;i class=”el-icon-search”&gt;&lt;/i&gt;查询&lt;/el-button&gt; &lt;/el-form-item&gt; &lt;el-form-item&gt; &lt;el-button type=”danger” class=”btn” @click=”resetting”&gt;&lt;i class=”el-icon-refresh”&gt;&lt;/i&gt;重置&lt;/el-button&gt; &lt;/el-form-item&gt; &lt;/el-form&gt; &lt;/el-header&gt; &lt;el-main class=”elMain”&gt; &lt;el-table v-loading=”loading” :data=”tableData” height=”100%” stripe border size=”mini”&gt; &lt;el-table-column align=”center” label=”访问时间” prop=”accessDate” width=”140”&gt;&lt;/el-table-column&gt; &lt;el-table-column align=”center” label=”请求方式” prop=”requestType” width=”90”&gt;&lt;/el-table-column&gt; &lt;el-table-column align=”center” label=”请求接口” prop=”accessInterface” width=”280”&gt;&lt;/el-table-column&gt; &lt;el-table-column header-align=”center” align=”left” label=”接口参数” width=”90”&gt; &lt;template slot-scope=”scope” v-if=”scope.row.interfaceParams”&gt; &lt;el-popover v-if=”scope.row.interfaceParams.length&gt;10” placement=”left-end” width=”200” trigger=”hover” :content=”scope.row.interfaceParams”&gt; &lt;span slot=”reference” style=”text-overflow: ellipsis;white-space:nowrap;overflow: hidden;”&gt;&lt;/span&gt; &lt;/el-popover&gt; &lt;span v-else&gt;&lt;/span&gt; &lt;/template&gt; &lt;/el-table-column&gt; &lt;el-table-column align=”center” label=”访问来源” prop=”accessSource” width=”263”&gt;&lt;/el-table-column&gt; &lt;el-table-column align=”center” label=”访问IP” prop=”accessIp” width=”130”&gt;&lt;/el-table-column&gt; &lt;el-table-column align=”center” label=”执行时长” prop=”executeTime” width=”90”&gt;&lt;/el-table-column&gt; &lt;/el-table&gt; &lt;/el-main&gt; &lt;el-footer&gt; &lt;div style=”padding: 15px 0;text-align: right;”&gt; &lt;el-pagination background @size-change=”handleSizeChange” @current-change=”handleCurrentChange” :current-page=”formInline.pageNum” :page-sizes=”pageSizes” :page-size=”formInline.pageSize” layout=”total, sizes, prev, pager, next, jumper” :total=”pageTotal”&gt; &lt;/el-pagination&gt; &lt;/div&gt; &lt;/el-footer&gt; &lt;/el-container&gt; &lt;/template&gt; &lt;script&gt; import {formatDate} from ‘@/utils/index’; import {commonAPI} from ‘@/api/commonAPI’; export default { data() { return { tableData: [], loading: false, formInline: { pageNum: 1, pageSize: 10, beginTime: new Date(new Date().getTime()-3600*1000*24*7), endTime: new Date() }, pageSizes: [5, 10, 15, 20], pageTotal: 0 } }, created() { this.formInline.beginTime=formatDate(this.formInline.beginTime,true); this.formInline.endTime=formatDate(this.formInline.endTime,true); this.getData(); }, methods: { getData() { this.loading = true, commonAPI(‘sysLogList’,this.formInline) .then(res =&gt; { this.loading = false; this.tableData = res.data.data.rows; this.pageTotal = res.data.data.total; }) }, dataFormat(val){ console.log(val); }, onSubmit() {//查询 this.getData(); }, resetting() {//重置 this.formInline.beginTime=formatDate(new Date(new Date().getTime()-3600*1000*24*7),true); this.formInline.endTime=formatDate(new Date(),true); this.getData(); }, handleSizeChange(val) { //console.log(`每页 ${val} 条`); this.formInline.pageSize = val; this.formInline.pageNum = 1; this.getData(); }, handleCurrentChange(val) { //console.log(`当前页: ${val}`); this.formInline.pageNum = val; this.getData(); } } } &lt;/script&gt; &lt;style scoped&gt; .dateStyle,.btn { margin-top: 18px; } .elMain { height: 418px; } &lt;/style&gt; &lt;style&gt; .el-main { padding: 5px 10px; } .el-table th { height: 45px; font-size: 16px; font-family: 微软雅黑; font-weight: 500; color: darkblue; } body { margin: 0px; } &lt;/style&gt;</th>
+</tr>
+</thead>
+</table>
+<h4 id="3-user-UserList-vue"><a href="#3-user-UserList-vue" class="headerlink" title="3.user/UserList.vue"></a>3.user/UserList.vue</h4><table>
+<thead>
+<tr>
+<th>&lt;template&gt; &lt;el-container&gt; &lt;el-header style=”background-color:white”&gt; &lt;el-form :inline=”true” :model=”formInline” class=”demo-form-inline” size=”mini”&gt; &lt;el-form-item label=”用户名”&gt; &lt;el-input v-model=”formInline.userName” placeholder=”用户名” class=”elInput”&gt;&lt;/el-input&gt; &lt;/el-form-item&gt; &lt;el-form-item label=”性别”&gt; &lt;el-select v-model=”formInline.sex” class=”elInput”&gt; &lt;el-option label=”全部” value=””&gt;&lt;/el-option&gt; &lt;el-option label=”男” value=”0”&gt;&lt;/el-option&gt; &lt;el-option label=”女” value=”1”&gt;&lt;/el-option&gt; &lt;/el-select&gt; &lt;/el-form-item&gt; &lt;el-form-item&gt; &lt;el-button type=”primary” class=”btn” @click=”onSubmit”&gt;&lt;i class=”el-icon-search”&gt;&lt;/i&gt;查询&lt;/el-button&gt; &lt;/el-form-item&gt; &lt;el-form-item&gt; &lt;el-button type=”danger” class=”btn” @click=”resetting”&gt;&lt;i class=”el-icon-refresh”&gt;&lt;/i&gt;重置&lt;/el-button&gt; &lt;/el-form-item&gt; &lt;/el-form&gt; &lt;/el-header&gt; &lt;el-main class=”elMain”&gt; &lt;el-table v-loading=”loading” :data=”tableData” height=”100%” stripe border size=”mini”&gt; &lt;el-table-column align=”center” label=”编号” prop=”uid”&gt;&lt;/el-table-column&gt; &lt;el-table-column align=”center” label=”用户名” prop=”userName”&gt;&lt;/el-table-column&gt; &lt;el-table-column align=”center” label=”姓名” prop=”uName”&gt;&lt;/el-table-column&gt; &lt;el-table-column align=”center” label=”年龄” prop=”age”&gt;&lt;/el-table-column&gt; &lt;el-table-column align=”center” label=”性别”&gt; &lt;template slot-scope=”scope”&gt; &lt;span v-if=”scope.row.sex===0”&gt;男&lt;/span&gt; &lt;span v-if=”scope.row.sex===1”&gt;女&lt;/span&gt; &lt;/template&gt; &lt;/el-table-column&gt; &lt;/el-table&gt; &lt;/el-main&gt; &lt;el-footer&gt; &lt;div style=”padding: 15px 0;text-align: right;”&gt; &lt;el-pagination background @size-change=”handleSizeChange” @current-change=”handleCurrentChange” :current-page=”formInline.pageNum” :page-sizes=”pageSizes” :page-size=”formInline.pageSize” layout=”total, sizes, prev, pager, next, jumper” :total=”pageTotal”&gt; &lt;/el-pagination&gt; &lt;/div&gt; &lt;/el-footer&gt; &lt;/el-container&gt; &lt;/template&gt; &lt;script&gt; import {commonAPI} from ‘@/api/commonAPI’ export default { data() { return { tableData: [], loading: false, formInline: { userName: ‘’, sex: ‘’, pageNum:1, pageSize:10 }, pageSizes:[5, 10, 15, 20], pageTotal:0 } }, created() { this.getData(); }, methods: { getData() { this.loading = true, commonAPI(‘queryUserList’,this.formInline) .then(res =&gt; { this.loading = false; this.tableData = res.data.data.rows; this.pageTotal=res.data.data.total; }) }, onSubmit() { this.getData(); }, resetting() { this.formInline.userName = ‘’; this.formInline.sex = ‘’; this.getData(); }, handleSizeChange(val) { //console.log(`每页 ${val} 条`); this.formInline.pageSize=val; this.formInline.pageNum=1; this.getData(); }, handleCurrentChange(val) { //console.log(`当前页: ${val}`); this.formInline.pageNum=val; this.getData(); } } } &lt;/script&gt; &lt;style scoped&gt; .elInput, .btn { margin-top: 18px; } &lt;/style&gt; &lt;style&gt; .el-main { padding: 5px 10px; } .elMain{ height: 418px; } .el-table th { height: 45px; font-size: 16px; font-family: 微软雅黑; font-weight: 500; color: darkblue; } &lt;/style&gt;</th>
+</tr>
+</thead>
+</table>
+<h2 id="3-5后端"><a href="#3-5后端" class="headerlink" title="3.5后端"></a>3.5后端</h2><p>按上面结构图，从上往下</p>
+<h3 id="3-5-1-SysAccessLogAspect-java"><a href="#3-5-1-SysAccessLogAspect-java" class="headerlink" title="3.5.1 SysAccessLogAspect.java"></a>3.5.1 SysAccessLogAspect.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.aspect; import com.wzz.common.IDUtil; import com.wzz.common.StringUtil; import com.wzz.controller.SysAccessLogController; import com.wzz.service.ISysAccessLogService; import org.aspectj.lang.JoinPoint; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.stereotype.Component; import javax.servlet.http.HttpServletRequest; import java.util.Arrays; import java.util.Date; import java.util.HashMap; import java.util.Map; /** * @ClassName SysAccessLogAspect * @Description TODO 系统访问日志切面类 * @Author zhengsongbo * Version 1.0 **/ @Component public class SysAccessLogAspect { @Autowired private HttpServletRequest request; @Autowired private ISysAccessLogService sysAccessLogService; //访问时间 private Date accessDate; //日志信息Map private Map&lt;String,Object&gt; logMap=new HashMap&lt;&gt;(); private Class clazz; //访问类 public void doBefore(JoinPoint jp){ clazz = jp.getTarget().getClass(); if (clazz!= SysAccessLogController.class) { //日志ID logMap.put(“logId”, IDUtil.getUUID()); String url = request.getRequestURL().toString(); //请求url logMap.put(“accessInterface”, url); String ip = request.getRemoteAddr(); //请求Ip logMap.put(“accessIp”, ip); String requestType = request.getMethod(); //请求方式 logMap.put(“requestType”, requestType); accessDate = new Date(); //访问时间 logMap.put(“accessDate”, accessDate); String args = Arrays.toString(jp.getArgs()); //方法参数 logMap.put(“interfaceParams”, args); String browserSystemInfo = StringUtil.getBrowserSystemInfo(request); //访问浏览器系统信息 logMap.put(“accessSource”, browserSystemInfo); } } public void doAfter(JoinPoint jp){ if (clazz!=SysAccessLogController.class){ long executeTime = new Date().getTime() - accessDate.getTime(); //执行时长 logMap.put(“executeTime”,executeTime); //插入日志信息 sysAccessLogService.saveSysLog(logMap); } } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-2-AssembleResponseMsg-java"><a href="#3-5-2-AssembleResponseMsg-java" class="headerlink" title="3.5.2 AssembleResponseMsg.java"></a>3.5.2 AssembleResponseMsg.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.common; import com.wzz.model.InfoMsg; import com.wzz.model.ResponseBody; /** * @ClassName AssembleResponseMsg * @Description TODO 封装ResponseBody内容 * @Author zhengsongbo * Version 1.0 **/ public class AssembleResponseMsg { /** * 成功返回内容 * @Author zhengsongbo * @Param [data] * @return com.wzz.model.ResponseBody **/ public &lt;T&gt;ResponseBody success(T data){ ResponseBody&lt;T&gt; resp=new ResponseBody&lt;T&gt;(); resp.setData(data); InfoMsg info=new InfoMsg(); resp.setInfo(info); return resp; } /** * 失败/异常返回内容 * @Author zhengsongbo * @Param [status, errorCode, message] * @return com.wzz.model.ResponseBody **/ public &lt;T&gt;ResponseBody failure(int status,String errorCode,String message){ ResponseBody&lt;T&gt; resp=new ResponseBody&lt;T&gt;(); resp.setStatus(status); InfoMsg info=new InfoMsg(); info.setCode(errorCode); info.setMessage(message); resp.setInfo(info); return resp; } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-3-DateUtil-java"><a href="#3-5-3-DateUtil-java" class="headerlink" title="3.5.3 DateUtil.java"></a>3.5.3 DateUtil.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.common; import java.text.SimpleDateFormat; import java.util.Date; /** * @ClassName DateUtils * @Description TODO 日期工具类 * @Author zhengsongbo * Version 1.0 **/ public class DateUtil { /** * 返回字符串形式的当前日期 * @Author zhengsongbo * @Param [pattern] 模板参数 如：”yyyy-MM-dd” * @return java.lang.String **/ public static String getCurrentDateStr(String pattern){ SimpleDateFormat format=new SimpleDateFormat(pattern); String currentDateStr = format.format(new Date()); return currentDateStr; } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-4-IDUtil-java"><a href="#3-5-4-IDUtil-java" class="headerlink" title="3.5.4 IDUtil.java"></a>3.5.4 IDUtil.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.common; import java.util.UUID; /** * 各种ID工具类 * @ClassName IDUtil * @Description TODO * @Author zhengsongbo * Version 1.0 **/ public class IDUtil { /** * 获取uuid（以去掉’-‘字符） * @Author zhengsongbo * @Param [] * @return java.lang.String **/ public static String getUUID(){ return UUID.randomUUID().toString().replace(“-“, “”); } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-5-StringUtil-java"><a href="#3-5-5-StringUtil-java" class="headerlink" title="3.5.5 StringUtil.java"></a>3.5.5 StringUtil.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.common; import eu.bitwalker.useragentutils.UserAgent; import javax.servlet.http.HttpServletRequest; /** * 字符串工具类 * @ClassName StringUtil * @Description TODO * @Author zhengsongbo * Version 1.0 **/ public class StringUtil { /** * 浏览器和系统信息 * @Author zhengsongbo * @Param [request] * @return java.lang.String **/ public static String getBrowserSystemInfo(HttpServletRequest request){ UserAgent userAgent = UserAgent.parseUserAgentString(request.getHeader(“user-agent”)); String BSInfo = userAgent.getOperatingSystem() + “-“ + userAgent.getBrowser() + “(“ + userAgent.getBrowserVersion() + “)”; return BSInfo; } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-6-SysAccessLogController-java"><a href="#3-5-6-SysAccessLogController-java" class="headerlink" title="3.5.6 SysAccessLogController.java"></a>3.5.6 SysAccessLogController.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.controller; import com.wzz.common.AssembleResponseMsg; import com.wzz.model.ResponseBody; import com.wzz.service.ISysAccessLogService; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.web.bind.annotation.RequestBody; import org.springframework.web.bind.annotation.RequestMapping; import org.springframework.web.bind.annotation.RestController; import java.util.Map; /** * 系统访问日志Controller * @ClassName SysAccessLogController * @Description TODO * @Author zhengsongbo * Version 1.0 **/ @RestController public class SysAccessLogController { @Autowired private ISysAccessLogService sysAccessLogService; /** * 查询系统访问日志列表 * @Author zhengsongbo * @Param [map] * @return com.wzz.model.ResponseInfo **/ @RequestMapping(value = “/sysLogList”,produces = “application/json;charset=utf-8”) public ResponseBody querySysLogList(@RequestBody Map&lt;String,Object&gt; map){ Map&lt;String, Object&gt; resultMap = sysAccessLogService.querySysLogList(map); return new AssembleResponseMsg().success(resultMap); } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-7-UserController-java"><a href="#3-5-7-UserController-java" class="headerlink" title="3.5.7 UserController.java"></a>3.5.7 UserController.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.controller; import com.wzz.common.AssembleResponseMsg; import com.wzz.model.ResponseBody; import com.wzz.service.IUserService; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.web.bind.annotation.RequestBody; import org.springframework.web.bind.annotation.RequestMapping; import org.springframework.web.bind.annotation.RestController; import java.util.Map; /** * @ClassName UserController * @Description TODO 用户控制层 * @Author zhengsongbo * Version 1.0 **/ @RestController public class UserController { @Autowired private IUserService userService; @RequestMapping(value = “/queryUserList”,produces = “application/json;charset=utf-8”) public ResponseBody queryUserList(@RequestBody Map&lt;String,Object&gt; map){ Map&lt;String, Object&gt; resultMap = userService.queryUserList(map); return new AssembleResponseMsg().success(resultMap); } @RequestMapping(value = “/queryUser”,produces = “application/json;charset=utf-8”) public ResponseBody queryUser(@RequestBody Map&lt;String,Object&gt; map){ int flag = userService.queryUser(map); if (flag==1){ return new AssembleResponseMsg().success(“OK”); }{ return new AssembleResponseMsg().failure(200,”error”,”用户名或密码错误”); } } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-8-SysAccessLogMapper-java"><a href="#3-5-8-SysAccessLogMapper-java" class="headerlink" title="3.5.8 SysAccessLogMapper.java"></a>3.5.8 SysAccessLogMapper.java</h3><table>
+<thead>
+<tr>
+<th><strong>package</strong> com.wzz.mapper; <strong>import</strong> java.util.List; <strong>import</strong> java.util.Map; <em>/\</em>* ** <strong>@Autor</strong> <em>zhengsongbo *</em> <strong>@Date</strong> <em>2020/12/7 16:58 \</em>*/* <strong>public interface</strong> SysAccessLogMapper { List&lt;Map&lt;String, Object&gt;&gt; querySysLogList(Map&lt;String, Object&gt; map); <strong>int</strong> saveSysLog(Map&lt;String, Object&gt; map); }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-9-SysAccessLogMapper-xml"><a href="#3-5-9-SysAccessLogMapper-xml" class="headerlink" title="3.5.9 SysAccessLogMapper.xml"></a>3.5.9 SysAccessLogMapper.xml</h3><table>
+<thead>
+<tr>
+<th>&lt;?xml version=”1.0” encoding=”UTF-8” ?&gt; &lt;!DOCTYPE mapper PUBLIC “-//mybatis.org//DTD Mapper 3.0//EN” “<a target="_blank" rel="noopener" href="http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;/&gt;">http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;\&gt;</a> &lt;mapper namespace=”com.wzz.mapper.SysAccessLogMapper”&gt; &lt;select id=”querySysLogList” parameterType=”map” resultType=”hashMap”&gt; SELECT DATE_FORMAT(t.accessDate,’%Y-%m-%d %H:%i:%s’) accessDate,t.requestType,t.accessInterface,t.interfaceParams,t.accessSource,t.accessIp,t.executeTime FROM tbsyslog t where t.accessDate&amp;gt;=#{beginTime} and t.accessDate&amp;lt;=#{endTime} order by t.accessDate DESC &lt;/select&gt; &lt;insert id=”saveSysLog” parameterType=”map”&gt; insert into tbSysLog(logId,accessDate,requestType,accessInterface,interfaceParams,accessSource,accessIp,executeTime) values (#{logId},#{accessDate},#{requestType},#{accessInterface},#{interfaceParams},#{accessSource},#{accessIp},#{executeTime}) &lt;/insert&gt; &lt;/mapper&gt;</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-10-UserMapper-java"><a href="#3-5-10-UserMapper-java" class="headerlink" title="3.5.10 UserMapper.java"></a>3.5.10 UserMapper.java</h3><table>
+<thead>
+<tr>
+<th><strong>package</strong> com.wzz.mapper; <strong>import</strong> com.wzz.model.User; <strong>import</strong> java.util.List; <strong>import</strong> java.util.Map; <em>/\</em>* ** <strong>@Autor</strong> <em>zhengsongbo *</em> <strong>@Date</strong> <em>2020/12/7 15:36 \</em>*/* <strong>public interface</strong> UserMapper { List&lt;User&gt; queryUserList(Map&lt;String, Object&gt; map); <strong>//查询用户 int</strong> queryUser(Map&lt;String, Object&gt; map); }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-11-UserMapper-xml"><a href="#3-5-11-UserMapper-xml" class="headerlink" title="3.5.11 UserMapper.xml"></a>3.5.11 UserMapper.xml</h3><table>
+<thead>
+<tr>
+<th>*&lt;?***xml version=”1.0” encoding=”UTF-8”** *?&gt;* <strong>&lt;!DOCTYPE mapper PUBLIC “-//mybatis.org//DTD Mapper 3.0//EN” “<a target="_blank" rel="noopener" href="http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;/&gt;">http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;\&gt;</a></strong> &lt;**mapper namespace=”com.wzz.mapper.UserMapper”**&gt; <strong>&lt;!–因为在sqlMapConfig.xml中配置了别名，所以直接写user就可以–&gt;</strong> &lt;**select id=”queryUserList” parameterType=”map” resultType=”user”**&gt; select <em>*</em> from tbUser &lt;**where**&gt; &lt;**if test=”userName!=null and userName!=’’”**&gt; userName like CONCAT(‘%’,#{userName},’%’) &lt;/**if**&gt; &lt;**if test=”sex!=null and sex!=’’”**&gt; AND sex=#{sex} &lt;/**if**&gt; &lt;/**where**&gt; &lt;/**select**&gt; &lt;**select id=”queryUser” parameterType=”map” resultType=”int”**&gt; select <em>count</em>(1) from tbUser where userName=#{userName} and password=#{password} &lt;/**select**&gt; &lt;/**mapper**&gt;</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-12-InfoMsg-java"><a href="#3-5-12-InfoMsg-java" class="headerlink" title="3.5.12 InfoMsg.java"></a>3.5.12 InfoMsg.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.model; import java.io.Serializable; /** * @ClassName InfoMsg * @Description TODO 错误信息消息体 * @Author zhengsongbo * Version 1.0 **/ public class InfoMsg implements Serializable { //自定义错误码 默认0表示正常执行 private String code=”0”; //错误信息 private String message=”操作成功”; public String getCode() { return code; } public void setCode(String code) { this.code = code; } public String getMessage() { return message; } public void setMessage(String message) { this.message = message; } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-13-ResponseBody-java"><a href="#3-5-13-ResponseBody-java" class="headerlink" title="3.5.13 ResponseBody.java"></a>3.5.13 ResponseBody.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.model; import com.wzz.common.DateUtil; import java.io.Serializable; /** * @ClassName ResponseBody * @Description TODO 封装响应的数据结构 * @Author zhengsongbo * Version 1.0 **/ public class ResponseBody&lt;T&gt; implements Serializable { //时间 private String date= DateUtil.getCurrentDateStr(“yyyy-MM-dd HH:mm:ss”); //状态码 默认200响应成功 private int status=200; //接口返回的数据 private T data; public String getDate() { return date; } public void setDate(String date) { this.date = date; } public int getStatus() { return status; } public void setStatus(int status) { this.status = status; } public T getData() { return data; } public void setData(T data) { this.data = data; } public InfoMsg getInfo() { return info; } public void setInfo(InfoMsg info) { this.info = info; } //消息内容 private InfoMsg info; }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-14-User-java"><a href="#3-5-14-User-java" class="headerlink" title="3.5.14 User.java"></a>3.5.14 User.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.model; import java.io.Serializable; /** * @ClassName User * @Description TODO 用户类 * @Author zhengsongbo * Version 1.0 **/ public class User implements Serializable { Private Integer id; //用户标识 private String uid; //uid private String userName; //用户名 private String password; //密码 private String uName; //姓名 private Integer age; //年龄 private Integer sex; //性别 public String getUid() { return uid; } public void setUid(String uid) { this.uid = uid; } public String getUserName() { return userName; } public void setUserName(String userName) { this.userName = userName; } public String getPassword() { return password; } public void setPassword(String password) { this.password = password; } public String getuName() { return uName; } public void setuName(String uName) { this.uName = uName; } public Integer getAge() { return age; } public void setAge(Integer age) { this.age = age; } public Integer getSex() { return sex; } public void setSex(Integer sex) { this.sex = sex; } @Override public String toString() { return “User{“ + “uid=’” + uid + ‘\‘’ + “, userName=’” + userName + ‘\‘’ + “, password=’” + password + ‘\‘’ + “, uName=’” + uName + ‘\‘’ + “, age=” + age + “, sex=” + sex + ‘}’; } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-15-SysAccessLogServiceImpl-java"><a href="#3-5-15-SysAccessLogServiceImpl-java" class="headerlink" title="3.5.15 SysAccessLogServiceImpl.java"></a>3.5.15 SysAccessLogServiceImpl.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.service.impl; import com.github.pagehelper.PageHelper; import com.github.pagehelper.PageInfo; import com.wzz.mapper.SysAccessLogMapper; import com.wzz.service.ISysAccessLogService; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.stereotype.Service; import java.util.HashMap; import java.util.List; import java.util.Map; /** * 系统访问日志实现类 * @ClassName SysAccessLogServiceImpl * @Description TODO * @Author zhengsongbo * Version 1.0 **/ @Service public class SysAccessLogServiceImpl implements ISysAccessLogService { @Autowired private SysAccessLogMapper sysAccessLogMapper; @Override public Map&lt;String, Object&gt; querySysLogList(Map&lt;String, Object&gt; map) { int pageNum=Integer.parseInt(map.get(“pageNum”).toString()); //当前页 int pageSize=Integer.parseInt(map.get(“pageSize”).toString()); //每页几条 PageHelper.startPage(pageNum,pageSize); List&lt;Map&lt;String, Object&gt;&gt; resultList = sysAccessLogMapper.querySysLogList(map); PageInfo pageInfo=new PageInfo(resultList); long total = pageInfo.getTotal(); //总条数 Map&lt;String,Object&gt; resultMap=new HashMap&lt;&gt;(); resultMap.put(“total”,total); resultMap.put(“rows”,resultList); return resultMap; } @Override public int saveSysLog(Map&lt;String, Object&gt; map) { return sysAccessLogMapper.saveSysLog(map); } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-16-UserServiceImpl-java"><a href="#3-5-16-UserServiceImpl-java" class="headerlink" title="3.5.16 UserServiceImpl.java"></a>3.5.16 UserServiceImpl.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.service.impl; import com.github.pagehelper.PageHelper; import com.github.pagehelper.PageInfo; import com.wzz.mapper.UserMapper; import com.wzz.model.User; import com.wzz.service.IUserService; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.stereotype.Service; import java.util.HashMap; import java.util.List; import java.util.Map; /** * @ClassName UserServiceImpl * @Description TODO 用户业务层实现类 * @Author zhengsongbo * Version 1.0 **/ @Service public class UserServiceImpl implements IUserService { @Autowired private UserMapper userMapper; @Override public Map&lt;String,Object&gt; queryUserList(Map&lt;String, Object&gt; map) { int pageNum=Integer.parseInt(map.get(“pageNum”).toString()); //当前页 int pageSize=Integer.parseInt(map.get(“pageSize”).toString()); //每页几条 PageHelper.startPage(pageNum,pageSize); List&lt;User&gt; userList = userMapper.queryUserList(map); PageInfo pageInfo=new PageInfo(userList); long total = pageInfo.getTotal(); Map&lt;String,Object&gt; resultMap=new HashMap&lt;&gt;(); resultMap.put(“total”,total); resultMap.put(“rows”,userList); return resultMap; } @Override public int queryUser(Map&lt;String, Object&gt; map) { return userMapper.queryUser(map); } }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-17-ISysAccessLogService-java"><a href="#3-5-17-ISysAccessLogService-java" class="headerlink" title="3.5.17 ISysAccessLogService.java"></a>3.5.17 ISysAccessLogService.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.service; import java.util.Map; /** * @ClassName ISysAccessLogService * @Description TODO 系统访问日志接口 * @Autor zhengsongbo * @Date 2020/12/7 16:59 * @Version 1.0 **/ public interface ISysAccessLogService { /** * 查询系统日志列表 * @Author zhengsongbo * @Param [map] * @return java.util.Map&lt;java.lang.String,java.lang.Object&gt; **/ public Map&lt;String,Object&gt; querySysLogList(Map&lt;String, Object&gt; map); /** * 保存日志 * @Author zhengsongbo * @Param [map] * @return int **/ public int saveSysLog(Map&lt;String, Object&gt; map); }</th>
+</tr>
+</thead>
+</table>
+<h3 id="3-5-18-IUserService-java"><a href="#3-5-18-IUserService-java" class="headerlink" title="3.5.18 IUserService.java"></a>3.5.18 IUserService.java</h3><table>
+<thead>
+<tr>
+<th>package com.wzz.service; import java.util.Map; /** * @ClassName IUserService * @Description TODO 用户业务层接口 * @Author zhengsongbo * Version 1.0 **/ public interface IUserService { Map&lt;String,Object&gt; queryUserList(Map&lt;String, Object&gt; map); int queryUser(Map&lt;String, Object&gt; map); }</th>
+</tr>
+</thead>
+</table>
+<p>三、功能小演示</p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000533.png"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/20201227000534.png"></p>
+</article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://www.baidu.com/s?wd=%E5%BE%AE%E4%BF%A1%E5%A6%82%E4%BD%95%E6%89%AB%E7%A0%81" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/wechat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://www.baidu.com/s?wd=%E6%94%AF%E4%BB%98%E5%AE%9D%E5%A6%82%E4%BD%95%E6%89%AB%E7%A0%81" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/alipay.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/12/27/%E8%AF%BE%E7%A8%8B-web-SSM-VUE-%E8%AE%B2%E4%B9%89-2/"><img class="prev-cover" data-lazy-src="https://pic4.zhimg.com/v2-e522801945af3714797aa2c5bfb0db79_1440w.jpg?source=172ae18b" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/frunoob/images/blog/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">SSM-VUE-讲义-2</div></div></a></div><div class="next-post pull-right"><a href="/2020/12/26/%E8%AF%BE%E7%A8%8B-web-%E7%BD%91%E6%98%93%E4%BA%91%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/"><img class="next-cover" data-lazy-src="https://pic4.zhimg.com/v2-e522801945af3714797aa2c5bfb0db79_1440w.jpg?source=172ae18b" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/frunoob/images/blog/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">网易云项目搭建</div></div></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/frunoob/images/blog/friend_404.gif'" alt="avatar"/><div class="author-info__name">Frunoob</div><div class="author-info__description">记录点滴</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">93</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">42</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/frunoob"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/frunoob?tab=repositories" target="_blank" title="Github Repositories"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:fqq1305108661@gmail.com" target="_blank" title="Will open the email software on this computer"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://music.163.com/#/user/home?id=403723239" target="_blank" title="网易云音乐"><i class="fas fa-headphones-alt"></i></a></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="card-content"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%88%9B%E5%BB%BAvue%E9%A1%B9%E7%9B%AE"><span class="toc-text">一、创建vue项目</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%AE%89%E8%A3%85nodejs"><span class="toc-text">1、安装nodejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F"><span class="toc-text">安装淘宝镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E4%BD%BF%E7%94%A8cnpm%E5%AE%89%E8%A3%85vue"><span class="toc-text">3、使用cnpm安装vue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85vue%E8%84%9A%E6%89%8B%E6%9E%B6%E5%B7%A5%E5%85%B7"><span class="toc-text">4、全局安装vue脚手架工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E5%88%9B%E5%BB%BAvue%E9%A1%B9%E7%9B%AE"><span class="toc-text">5、创建vue项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E9%A1%B5%E9%9D%A2"><span class="toc-text">6、编写简单页面</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%88%9B%E5%BB%BASSM%E9%A1%B9%E7%9B%AE"><span class="toc-text">二、创建SSM项目</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">1、配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-pom-xml"><span class="toc-text">1.1 pom.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-applicationContext-xml"><span class="toc-text">1.2 applicationContext.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-springMVC-xml"><span class="toc-text">1.3 springMVC.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-sqlMapConfig-xml"><span class="toc-text">1.4 sqlMapConfig.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-log4j-properties"><span class="toc-text">1.5 log4j.properties</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-6-db-properties"><span class="toc-text">1.6 db.properties</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-7-web-xml"><span class="toc-text">1.7 web.xml</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BA%90%E7%A0%81%E6%96%87%E4%BB%B6"><span class="toc-text">源码文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-SysAccessLogAspect-java"><span class="toc-text">2.1 SysAccessLogAspect.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-UserController-java"><span class="toc-text">2.2 UserController.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-UserMapper-java"><span class="toc-text">2.3 UserMapper.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-UserMapper-xml"><span class="toc-text">2.4 UserMapper.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-User-java"><span class="toc-text">2.5 User.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-UserServiceImpl-java"><span class="toc-text">2.6 UserServiceImpl.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-IUserService-java"><span class="toc-text">2.7 IUserService.java</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E8%84%9A%E6%9C%AC"><span class="toc-text">SQL脚本</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E5%8A%9F%E8%83%BD"><span class="toc-text">实现功能</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-config-index-js"><span class="toc-text">3.1 config&#x2F;index.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-tbSysLog-sql"><span class="toc-text">3.2 tbSysLog.sql</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E5%89%8D%E7%AB%AF"><span class="toc-text">3.4 前端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-1%E5%AE%89%E8%A3%85axios"><span class="toc-text">3.4.1安装axios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-2-config-dev-env-js"><span class="toc-text">3.4.2 config&#x2F;dev.env.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-3-%E5%B0%81%E8%A3%85axios"><span class="toc-text">3.4.3 封装axios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-4%E5%B0%81%E8%A3%85%E4%B8%80%E4%B8%AA%E5%85%AC%E5%85%B1%E7%9A%84axios%E8%AF%B7%E6%B1%82API"><span class="toc-text">3.4.4封装一个公共的axios请求API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-5%E5%B0%81%E8%A3%85%E4%B8%80%E4%B8%AA%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F%E8%BD%AC%E5%8C%96%E7%9A%84api"><span class="toc-text">3.4.5封装一个日期格式转化的api</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-6-vue%E6%96%87%E4%BB%B6"><span class="toc-text">3.4.6 vue文件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-login-Login-vue"><span class="toc-text">1.login&#x2F;Login.vue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-sys-SysLogList-vue"><span class="toc-text">2.sys&#x2F;SysLogList.vue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-user-UserList-vue"><span class="toc-text">3.user&#x2F;UserList.vue</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5%E5%90%8E%E7%AB%AF"><span class="toc-text">3.5后端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-1-SysAccessLogAspect-java"><span class="toc-text">3.5.1 SysAccessLogAspect.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-2-AssembleResponseMsg-java"><span class="toc-text">3.5.2 AssembleResponseMsg.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-3-DateUtil-java"><span class="toc-text">3.5.3 DateUtil.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-4-IDUtil-java"><span class="toc-text">3.5.4 IDUtil.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-5-StringUtil-java"><span class="toc-text">3.5.5 StringUtil.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-6-SysAccessLogController-java"><span class="toc-text">3.5.6 SysAccessLogController.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-7-UserController-java"><span class="toc-text">3.5.7 UserController.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-8-SysAccessLogMapper-java"><span class="toc-text">3.5.8 SysAccessLogMapper.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-9-SysAccessLogMapper-xml"><span class="toc-text">3.5.9 SysAccessLogMapper.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-10-UserMapper-java"><span class="toc-text">3.5.10 UserMapper.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-11-UserMapper-xml"><span class="toc-text">3.5.11 UserMapper.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-12-InfoMsg-java"><span class="toc-text">3.5.12 InfoMsg.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-13-ResponseBody-java"><span class="toc-text">3.5.13 ResponseBody.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-14-User-java"><span class="toc-text">3.5.14 User.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-15-SysAccessLogServiceImpl-java"><span class="toc-text">3.5.15 SysAccessLogServiceImpl.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-16-UserServiceImpl-java"><span class="toc-text">3.5.16 UserServiceImpl.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-17-ISysAccessLogService-java"><span class="toc-text">3.5.17 ISysAccessLogService.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-18-IUserService-java"><span class="toc-text">3.5.18 IUserService.java</span></a></li></ol></li></ol></li></ol></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/02/08/hexo%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/" title="hexo本地文件恢复">hexo本地文件恢复</a><time datetime="2021-02-07T16:37:00.000Z" title="发表于 2021-02-08 00:37:00">2021-02-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/01/27/VHS%E4%BD%BF%E7%94%A8/" title="VHS使用">VHS使用</a><time datetime="2021-01-27T02:28:13.000Z" title="发表于 2021-01-27 10:28:13">2021-01-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/01/26/Web-%E5%8D%9A%E5%AE%A2-%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%E6%92%AD%E6%94%BEhls%E8%A7%86%E9%A2%91/" title="在网页中播放hls视频">在网页中播放hls视频</a><time datetime="2021-01-26T15:01:35.000Z" title="发表于 2021-01-26 23:01:35">2021-01-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/01/04/%E8%AF%BE%E7%A8%8B-web-vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8less%E8%AF%AD%E6%B3%95/" title="vue中如何使用less语法">vue中如何使用less语法</a><time datetime="2021-01-04T12:23:11.000Z" title="发表于 2021-01-04 20:23:11">2021-01-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/01/02/%E8%AF%BE%E7%A8%8B-web-springboot%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E8%A7%A3%E5%86%B3/" title="springboot跨域请求解决">springboot跨域请求解决</a><time datetime="2021-01-02T08:31:16.000Z" title="发表于 2021-01-02 16:31:16">2021-01-02</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="footer_custom_text"><span>@</span><span id="yearsToNow">2000</span><span> </span><span id="daysToNow">by frunoob</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        addClass: [200,() => {
+          document.querySelectorAll('mjx-container:not([display=\'true\']').forEach( node => {
+            const target = node.parentNode
+            if (!target.classList.contains('has-jax')) {
+              target.classList.add('mathjax-overflow')
+            }
+          })
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.17.0/js/md5.min.js"></script><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+    content = content.replace(/(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|jpeg|gif|png|webp)/g, '') // remove image link
+    content = content.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gi, '') // remove url
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getIcon = (icon, mail) => {
+    if (icon) return icon
+    
+    let defaultIcon = '?d=identicon'
+    let iconUrl = `https://gravatar.loli.net/avatar/${md5(mail.toLowerCase()) + defaultIcon}`
+    return iconUrl
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          let name = 'src'
+          if(true) {
+            name = 'data-lazy-src'
+          }
+          result += `<a href='${array[i].url}' class="thumbnail"><img ${name}='${getIcon(array[i].avatar, array[i].mail)}' alt='${array[i].nick}'></a>`
+        }
+
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}'>${array[i].content}</a>
+        <div class='name'><span>${array[i].nick}</span><time> / ${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const getComment = () => {
+      let serverURL = ''
+      if (false) {
+        serverURL = ''
+      } else {
+        serverURL = 'https://EMvWB4MF.api.lncldglobal.com'
+      }
+
+    var settings = {
+      "method": "GET",
+      "headers": {
+        "X-LC-Id": 'EMvWB4MFkVYX9zOu8mPrXden-MdYXbMMI',
+        "X-LC-Key": 'uYYPYEbPfEbUKUym6Bf3Qco4',
+        "Content-Type": "application/json"
+      },
+    }
+
+    fetch(`${serverURL}/1.1/classes/Comment?limit=6&order=-createdAt`,settings)
+      .then(response => response.json())
+      .then(data => {
+        const valineArray = data.results.map(function (e) {
+          return {
+            'avatar': e.QQAvatar,
+            'content': changeContent(e.comment),
+            'mail': e.mail,
+            'nick': e.nick,
+            'url': e.url,
+            'date': e.createdAt,
+          }
+        })
+        saveToLocal.set('leancloud-newest-comments', JSON.stringify(valineArray), 10/(60*24))
+        generateHtml(valineArray)
+      }).catch(e => {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      }) 
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('leancloud-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script src="https://cdn.jsdelivr.net/gh/frunoob/Library/blog/js/siteFooter.js"></script><script>setDay()</script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="I,Want,See,You,In,B,U,P,T" data-fontsize="13px" data-random="undefined" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config_change',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  if (typeof gtag === 'function') {
+    gtag('config', '', {'page_path': window.location.pathname});
+  }
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})</script></div></body></html>

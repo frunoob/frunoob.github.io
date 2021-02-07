@@ -1416,7 +1416,7 @@ blockquote footer cite:before {
   display: flex;
   margin: 0 auto;
   padding: 2rem 15px;
-  max-width: 1200px;
+  max-width: 95%;
 }
 @media screen and (max-width: 900px) {
   .layout {
@@ -1458,7 +1458,7 @@ blockquote footer cite:before {
   }
 }
 .layout.hide-aside {
-  max-width: 1000px;
+  max-width: 95%;
 }
 @media screen and (min-width: 2000px) {
   .layout.hide-aside {
