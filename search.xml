@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>voxel-3Dgame</title>
+    <url>/2021/02/08/voxel-3Dgame/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+      <categories>
+        <category>Web</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>voxel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo本地文件恢复</title>
-    <url>/2021/02/08/hexo%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/</url>
+    <url>/2021/02/08/Web-%E5%8D%9A%E5%AE%A2-hexo%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前提是你要在github上面备份了你的本地hexo文件，包括你的md文章文件。"><a href="#前提是你要在github上面备份了你的本地hexo文件，包括你的md文章文件。" class="headerlink" title="前提是你要在github上面备份了你的本地hexo文件，包括你的md文章文件。"></a>前提是你要在github上面备份了你的本地hexo文件，包括你的md文章文件。</h2><h2 id="开始前的准备工作"><a href="#开始前的准备工作" class="headerlink" title="开始前的准备工作"></a>开始前的准备工作</h2><ul>
 <li>安装<a href="https://git-scm.com/downloads">github</a>  </li>
 <li>安装<a href="http://nodejs.cn/download/">node.js</a>  </li>
@@ -26,7 +38,7 @@ echo ‘PATH=”$PATH:./node_modules/.bin”‘ &gt;&gt; ~/.profile<figure class
   </entry>
   <entry>
     <title>VHS使用</title>
-    <url>/2021/01/27/VHS%E4%BD%BF%E7%94%A8/</url>
+    <url>/2021/01/27/Web-%E5%8D%9A%E5%AE%A2-VHS%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Installation-安装"><a href="#Installation-安装" class="headerlink" title="Installation (安装)"></a>Installation (安装)</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save @videojs&#x2F;http-streaming</span><br></pre></td></tr></table></figure>
 <h1 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;video-js id&#x3D;vid1 width&#x3D;600 height&#x3D;300 class&#x3D;&quot;vjs-default-skin&quot; controls&gt;</span><br><span class="line">  &lt;source</span><br><span class="line">     src&#x3D;&quot;https:&#x2F;&#x2F;example.com&#x2F;index.m3u8&quot;</span><br><span class="line">     type&#x3D;&quot;application&#x2F;x-mpegURL&quot;&gt;</span><br><span class="line">&lt;&#x2F;video-js&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;video.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;videojs-http-streaming.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var player &#x3D; videojs(&#39;vid1&#39;);</span><br><span class="line">player.play();</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
@@ -1545,7 +1557,7 @@ echo ‘PATH=”$PATH:./node_modules/.bin”‘ &gt;&gt; ~/.profile<figure class
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#x75;&#x65;&#x2d;&#x63;&#108;&#105;&#64;&#x32;&#46;&#x39;&#x2e;&#x36;">&#118;&#x75;&#x65;&#x2d;&#x63;&#108;&#105;&#64;&#x32;&#46;&#x39;&#x2e;&#x36;</a><br>yarn global add <a href="mailto:&#x76;&#x75;&#101;&#45;&#99;&#108;&#105;&#64;&#x32;&#46;&#57;&#x2e;&#54;">&#x76;&#x75;&#101;&#45;&#99;&#108;&#105;&#64;&#x32;&#46;&#57;&#x2e;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#117;&#x65;&#45;&#99;&#108;&#x69;&#64;&#x32;&#x2e;&#57;&#46;&#54;">&#118;&#117;&#x65;&#45;&#99;&#108;&#x69;&#64;&#x32;&#x2e;&#57;&#46;&#54;</a><br>yarn global add <a href="mailto:&#x76;&#117;&#x65;&#45;&#x63;&#x6c;&#x69;&#64;&#50;&#x2e;&#57;&#x2e;&#x36;">&#x76;&#117;&#x65;&#45;&#x63;&#x6c;&#x69;&#64;&#50;&#x2e;&#57;&#x2e;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
@@ -13947,6 +13959,13 @@ D.要更加担当有为，携手维护世界和平安宁
 <li><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/image-20201117154327223.png" alt="image-20201117154327223"></li>
 <li>结束。</li>
 </ul>
+<div class="note blue modern"><p>gitee token: 399d160a241cb2ad99a580c312950afb<br>github token: 18b7abf0c33b9eaaa550c9d20b042066f7ae7e0e</p>
+</div>
+
+
+
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/blog/image-20210208135006499.png" alt="image-20210208135006499"></p>
+<p><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://gitee.com/frunoob/blog-image/raw/master/blog/image-20210208135018142.png" alt="image-20210208135018142"></p>
 ]]></content>
       <categories>
         <category>Web</category>
