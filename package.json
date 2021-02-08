@@ -45,7 +45,9 @@
     "patternomaly": "^1.3.2",
     "react": "^15.7.0",
     "react-dom": "^15.7.0",
-    "social-share.js": "^1.0.16"
+    "social-share.js": "^1.0.16",
+    "voxel-engine": "^0.20.2",
+    "voxel-hello-world": "0.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

@@ -27,6 +27,7 @@ description:
 
 ---
 
+
 ## 获取gitee token
 
 1.[打开gitee官网](https://gitee.com/)
@@ -70,3 +71,14 @@ description:
 * ![image-20201117154311539](https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/image-20201117154311539.png)
 * ![image-20201117154327223](https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/image-20201117154327223.png)
 * 结束。
+
+{% note blue %}
+gitee token: 399d160a241cb2ad99a580c312950afb
+github token: 18b7abf0c33b9eaaa550c9d20b042066f7ae7e0e
+{%endnote%}
+
+
+
+![image-20210208135006499](https://gitee.com/frunoob/blog-image/raw/master/blog/image-20210208135006499.png)
+
+![image-20210208135018142](https://gitee.com/frunoob/blog-image/raw/master/blog/image-20210208135018142.png)
