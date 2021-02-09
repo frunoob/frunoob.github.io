@@ -21,3 +21,11 @@ aplayer:
 highlight_shrink:
 aside:
 ---
+
+{% note warn%}
+
+[voxeljs](http://www.voxeljs.com/)已经停止维护。
+
+
+
+{%endnote%}
