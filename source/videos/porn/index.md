@@ -6,9 +6,32 @@ aside: false
 top_img: false
 date: 2020-12-05 23:28:55
 ---
- <script>if(prompt("输入密码：")=="1024"){alert("hi!")}else{alert("bye!");location.href="../../"}</script> 
+ <!-- <script>if(prompt("输入密码：")=="1024"){alert("hi!")}else{alert("bye!");location.href="../../"}</script>  -->
 
-#### <a href=".\porn-1">欧美-室内</a>
+<style>
+       img{
+           height: 200px
+       } 
+        table th,table td{
+            border: 0;
+            text-align: center;
+        }
+                }
+        table th,table td{
+            border: 0;
+            text-align: center;
+        }
+        .table-wrap{
 
-#### <a href="./tarzanTheApeMan">人猿泰山H</a>
+</style>
+<table>
+<tr>
+<td><a href=".\porn-1" target="_blank">欧美-室内</a></td>
+<td><a href="./tarzanTheApeMan" target="_blank">人猿泰山H</a></td>
+</tr>
+<tr><td><img src="https://gitee.com/frunoob/blog-image/raw/master/blog/20210213125442.png"></td>
+<td><img src="https://gitee.com/frunoob/blog-image/raw/master/blog/20210213125648.png"></td>
+</tr>
+</table>
+
 

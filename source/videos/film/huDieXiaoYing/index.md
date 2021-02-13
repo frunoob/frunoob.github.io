@@ -8,3 +8,8 @@ layout: false
   </video>
 <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/hls.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/hls-videos.js"></script>
+<script>
+var player = videojs('my_video_1');
+player.play();
+
+</script>
