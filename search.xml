@@ -229,7 +229,7 @@ echo ‘PATH=”$PATH:./node_modules/.bin”‘ &gt;&gt; ~/.profile<figure class
   <entry>
     <title>肖申克的救赎</title>
     <url>/2020/12/28/%E5%A8%B1%E4%B9%90-%E7%94%B5%E5%BD%B1-%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note pink fas icon disabled"><i class="note-icon fa-film"></i><p><a href="/videos/film/xiaoShenKeDeJiuShu">立即观看本影片</a></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note pink fas icon disabled"><i class="note-icon fa-film"></i><p><a href="/videos/film/xiaoShenKeDeJiuShu"  target="_blank">立即观看影片</a></p>
 </div>
 
 <h2 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h2><p>　　 故事发生在1947年，银行家安迪因为妻子有婚外情，用枪杀死了她和她的情人，因此他被指控枪杀了妻子及其情人，安迪被判无期徙刑，这意味着他将在肖恩克监狱中渡过余生。</p>
@@ -1660,7 +1660,7 @@ echo ‘PATH=”$PATH:./node_modules/.bin”‘ &gt;&gt; ~/.profile<figure class
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#x75;&#101;&#x2d;&#x63;&#108;&#x69;&#x40;&#50;&#46;&#x39;&#46;&#54;">&#118;&#x75;&#101;&#x2d;&#x63;&#108;&#x69;&#x40;&#50;&#46;&#x39;&#46;&#54;</a><br>yarn global add <a href="mailto:&#118;&#117;&#101;&#x2d;&#99;&#108;&#105;&#64;&#x32;&#x2e;&#57;&#46;&#54;">&#118;&#117;&#101;&#x2d;&#99;&#108;&#105;&#64;&#x32;&#x2e;&#57;&#46;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#x75;&#101;&#45;&#99;&#108;&#105;&#x40;&#x32;&#x2e;&#57;&#x2e;&#x36;">&#x76;&#x75;&#101;&#45;&#99;&#108;&#105;&#x40;&#x32;&#x2e;&#57;&#x2e;&#x36;</a><br>yarn global add <a href="mailto:&#x76;&#117;&#101;&#45;&#x63;&#x6c;&#105;&#64;&#x32;&#46;&#57;&#46;&#54;">&#x76;&#117;&#101;&#45;&#x63;&#x6c;&#105;&#64;&#x32;&#46;&#57;&#46;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
@@ -2840,7 +2840,7 @@ echo ‘PATH=”$PATH:./node_modules/.bin”‘ &gt;&gt; ~/.profile<figure class
   <entry>
     <title>蝴蝶效应</title>
     <url>/2020/12/08/%E5%A8%B1%E4%B9%90-%E7%94%B5%E5%BD%B1-%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note pink fas icon disabled"><i class="note-icon fa-film"></i><p><a href="/videos/film/huDieXiaoYing">立即观看本影片</a></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note pink fas icon disabled"><i class="note-icon fa-film"></i><p><a href="/videos/film/huDieXiaoYing"  target="_blank">立即观看影片</a></p>
 </div>
 <div class="note purple no-icon modern"><p>纵使细微如蝴蝶之鼓翼  也能造成千里外之飓风  </p>
 <p style="text-align:right">- 混沌理论</p>
@@ -14452,8 +14452,8 @@ D.要更加担当有为，携手维护世界和平安宁
         <category>java</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>java编程题</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
