@@ -28,38 +28,42 @@ aside:
 * 安装[github](https://git-scm.com/downloads)  
 * 安装[node.js](http://nodejs.cn/download/)  
 * 配置[SSH](https://docs.github.com/cn/github/authenticating-to-github/connecting-to-github-with-ssh)  
+  1. 在`C:\Users\<你的用户名>\`目录下新建一个文件夹`.ssh`
+     ![image-20210213232506729](https://cdn.jsdelivr.net/gh/frunoob/images/blog/image-20210213232506729.png)
+  2. 下载`.ssh.7z`压缩包并解压缩，将其中的文件放到新建的`.ssh`文件夹中
+     ![image-20210213232537063](https://cdn.jsdelivr.net/gh/frunoob/images/blog/image-20210213232537063.png)
+  3. 完成
 
 ## 开始恢复
 
 * 安装Hexo(全局安装)  
 ```  
 npm install -g hexo-cli
-```  
+```
 * 局部安装  
 ```   
 npm install hexo
-```  
+```
 安装以后，可以使用以下两种方式执行 Hexo：  
 ```
  npx hexo <command>  
 ```
  将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用 hexo <command>：  
- 
+
  ```
  echo 'PATH="$PATH:./node_modules/.bin"' >> ~/.profile
- ```  
+ ```
 * 选择一个文件夹，并在此文件夹下右击打开`gitbash`  
 * 克隆github文件到本地  
-``` gitbash  
-git clone git@github.com:frunoob/hexo-blog.git  ```  
+``` 
+git clone git@github.com:frunoob/hexo-blog.git  
+```
 * 在powershell中执行  
-```  
+```
 npm i
 ```
 * 安装成功后测试  
-```  
+```
 hexo g && hexo s  
 ```
 * 结束
-
- 
