@@ -30,7 +30,7 @@ aside:
 * 配置[SSH](https://docs.github.com/cn/github/authenticating-to-github/connecting-to-github-with-ssh)  
   1. 在`C:\Users\<你的用户名>\`目录下新建一个文件夹`.ssh`
      ![image-20210213232506729](https://cdn.jsdelivr.net/gh/frunoob/images/blog/image-20210213232506729.png)
-  2. 下载`.ssh.7z`压缩包并解压缩，将其中的文件放到新建的`.ssh`文件夹中
+  2. 下载[.ssh.7z](https://frunoob.lanzous.com/iVFRpln8g3g)压缩包并解压缩，将其中的文件放到新建的`.ssh`文件夹中
      ![image-20210213232537063](https://cdn.jsdelivr.net/gh/frunoob/images/blog/image-20210213232537063.png)
   3. 完成
 
