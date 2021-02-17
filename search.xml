@@ -122,8 +122,8 @@
 <h3 id="1-添加新的贴图"><a href="#1-添加新的贴图" class="headerlink" title="1. 添加新的贴图"></a>1. 添加新的贴图</h3><p>贴图由贴图管理器加载。</p>
 <p>添加新的图片到目录中<code>example/textures</code>,然后就可以通过添加他们的文件的名字（不包含后缀，例如<code>.png</code>）来加载调用，像下面这样：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">app.textureManager.load([&#39;grass&#39;,&#39;brick&#39;,&#39;dirt&#39;,&#39;anim&#39;,&#39;tnt&#39;,&#39;arrows&#39;])</span><br></pre></td></tr></table></figure>
-<h3 id="3-用代码创造一个自定义的世界"><a href="#3-用代码创造一个自定义的世界" class="headerlink" title="3. 用代码创造一个自定义的世界"></a>3. 用代码创造一个自定义的世界</h3><p>额，教程没看懂。。。 </p>
-]]></content>
+<h3 id="2-用代码创造一个自定义的世界"><a href="#2-用代码创造一个自定义的世界" class="headerlink" title="2. 用代码创造一个自定义的世界"></a>2. 用代码创造一个自定义的世界</h3><p>额，教程没看懂。。。 </p>
+<h3 id="3-还是跟着教程学习吧"><a href="#3-还是跟着教程学习吧" class="headerlink" title="3.还是跟着教程学习吧"></a>3.还是跟着教程学习吧</h3>]]></content>
       <categories>
         <category>Web</category>
         <category>博客</category>
@@ -1695,7 +1695,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#x75;&#101;&#x2d;&#99;&#x6c;&#105;&#x40;&#50;&#x2e;&#x39;&#46;&#54;">&#x76;&#x75;&#101;&#x2d;&#99;&#x6c;&#105;&#x40;&#50;&#x2e;&#x39;&#46;&#54;</a><br>yarn global add <a href="mailto:&#118;&#x75;&#101;&#45;&#x63;&#108;&#105;&#64;&#x32;&#x2e;&#x39;&#46;&#54;">&#118;&#x75;&#101;&#45;&#x63;&#108;&#105;&#64;&#x32;&#x2e;&#x39;&#46;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#117;&#x65;&#45;&#x63;&#x6c;&#105;&#64;&#x32;&#x2e;&#x39;&#x2e;&#x36;">&#x76;&#117;&#x65;&#45;&#x63;&#x6c;&#105;&#64;&#x32;&#x2e;&#x39;&#x2e;&#x36;</a><br>yarn global add <a href="mailto:&#118;&#117;&#101;&#x2d;&#99;&#108;&#x69;&#64;&#x32;&#46;&#57;&#46;&#x36;">&#118;&#117;&#101;&#x2d;&#99;&#108;&#x69;&#64;&#x32;&#46;&#57;&#46;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
