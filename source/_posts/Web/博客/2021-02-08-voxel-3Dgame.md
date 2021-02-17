@@ -70,6 +70,9 @@ VoxelJS是一个为了游戏设计的体素渲染引擎，类似于Minecraft(我
 app.textureManager.load(['grass','brick','dirt','anim','tnt','arrows'])
 ```
 
-### 3. 用代码创造一个自定义的世界
+### 2. 用代码创造一个自定义的世界
 
 额，教程没看懂。。。 
+
+### 3.还是跟着教程学习吧
+
