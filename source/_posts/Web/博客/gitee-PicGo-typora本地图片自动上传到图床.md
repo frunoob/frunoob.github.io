@@ -74,7 +74,7 @@ description:
 
 {% note blue %}
 gitee token: 399d160a241cb2ad99a580c312950afb
-github token: 18b7abf0c33b9eaaa550c9d20b042066f7ae7e0e
+github token: dc561fef0258d5775d57b5bd8ae00b0e74347d40
 {%endnote%}
 
 
