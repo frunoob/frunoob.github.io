@@ -1,6 +1,7 @@
 title: gitee+PicGo+typora本地图片自动上传到图床
 updated: ''
 tags: 
+
 - 图床
 categories: 
 - Web
@@ -53,7 +54,7 @@ description:
 
 ## 配置PicGo
 
-* 安装PicGo （自行百度下载）
+* 安装[PicGo](https://frunoob.lanzous.com/iTCnCma1ekh)
 
 * 在PicGo里面安装gitee插件
 
@@ -72,10 +73,15 @@ description:
 * ![image-20201117154327223](https://gitee.com/frunoob/blog-image/raw/master/image/2020-11-17/15/04/image-20201117154327223.png)
 * 结束。
 
-{% note blue %}
-gitee token: 399d160a241cb2ad99a580c312950afb
-github token: dc561fef0258d5775d57b5bd8ae00b0e74347d40
-{%endnote%}
+
+
+
+ee: 399d160a241cb2ad99a580c312950afbHub: 58c12e32d5dc9891ea00394192c3b9425ad1b23c
+
+
+
+
+
 
 
 
