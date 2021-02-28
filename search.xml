@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>改变npm全局安装路径</title>
+    <url>/2021/02/28/Web-npm-2021-02-28-%E6%94%B9%E5%8F%98npm%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85%E8%B7%AF%E5%BE%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><code>npm config set prefix  “路径”</code></p>
+<p>记得将这个新的路径加入到全局变量中</p>
+]]></content>
+      <categories>
+        <category>Web</category>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>默认标签</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>四史学习</title>
     <url>/2021/02/28/%E8%BD%AF%E4%BB%B6-2021-02-28-%E5%9B%9B%E5%8F%B2%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>软件来源<a href="https://github.com/deximy/FxxkSsxx">deximy</a></p>
@@ -1744,7 +1758,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#x75;&#x65;&#45;&#x63;&#x6c;&#105;&#x40;&#x32;&#46;&#x39;&#x2e;&#x36;">&#118;&#x75;&#x65;&#45;&#x63;&#x6c;&#105;&#x40;&#x32;&#46;&#x39;&#x2e;&#x36;</a><br>yarn global add <a href="mailto:&#x76;&#117;&#x65;&#45;&#99;&#x6c;&#x69;&#64;&#50;&#46;&#57;&#x2e;&#x36;">&#x76;&#117;&#x65;&#45;&#99;&#x6c;&#x69;&#64;&#50;&#46;&#57;&#x2e;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#117;&#101;&#45;&#x63;&#x6c;&#x69;&#x40;&#50;&#x2e;&#57;&#46;&#54;">&#x76;&#117;&#101;&#45;&#x63;&#x6c;&#x69;&#x40;&#50;&#x2e;&#57;&#46;&#54;</a><br>yarn global add <a href="mailto:&#118;&#x75;&#101;&#x2d;&#99;&#108;&#x69;&#64;&#x32;&#46;&#57;&#x2e;&#54;">&#118;&#x75;&#101;&#x2d;&#99;&#108;&#x69;&#64;&#x32;&#46;&#57;&#x2e;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
