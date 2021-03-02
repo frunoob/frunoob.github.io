@@ -1,6 +1,7 @@
 name: Build and Deploy
 on: [push]
-  build-and-deploy:
+jobs:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
