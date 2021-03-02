@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>可以录制各种直播的软件</title>
+    <url>/2021/03/02/%E8%BD%AF%E4%BB%B6-2021-03-02-%E5%8F%AF%E4%BB%A5%E5%BD%95%E5%88%B6%E5%90%84%E7%A7%8D%E7%9B%B4%E6%92%AD%E7%9A%84%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><a href="http://118.190.96.67:8080/setups/pc/bkliverec/inspacks/">博客录播助手</a></p>
+<h2 id="一键智能解析"><a href="#一键智能解析" class="headerlink" title="一键智能解析"></a>一键智能解析</h2><p>操作超简单，一键自动识别视频下载地址，能解析就能下载。</p>
+<h2 id="强大的任务列表管理"><a href="#强大的任务列表管理" class="headerlink" title="强大的任务列表管理"></a>强大的任务列表管理</h2><p>任务状态实时显示，添加、暂停、结束、预览播放等，更支持旗标标注，方便对任务进行管理。</p>
+<h2 id="主播收藏"><a href="#主播收藏" class="headerlink" title="主播收藏"></a>主播收藏</h2><p>一键收藏主播，在收藏列表中，可一键获取所有开播状态，快速创建下载任务或跳转到直播页。</p>
+<h2 id="开播检测智能录制"><a href="#开播检测智能录制" class="headerlink" title="开播检测智能录制"></a>开播检测智能录制</h2><p>自动检测已收藏的主播开播状态，开播自动创建下载任务，不在电脑前也不会错过精彩内容。</p>
+<h2 id="因为专注所以专业"><a href="#因为专注所以专业" class="headerlink" title="因为专注所以专业"></a>因为专注所以专业</h2><p>专注直播视频下载，我们会持续增加新平台支持，已支持的平台定期维护，确保可用。</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+      <tags>
+        <tag>默认标签</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>vuepress 搭建博客过程记录</title>
     <url>/2021/02/28/vuepress-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="VuePress介绍"><a href="#VuePress介绍" class="headerlink" title="VuePress介绍"></a>VuePress介绍</h2><p>VuePress由两个部分组成：第一个部分是 <strong>极简静态生成器</strong>，它包含由Vue驱动的主题系统和插件API，另一个部分是为书写技术文档而优化的默认主题，它诞生的初衷是为了支持Vue及其子项目的文档需求。</p>
@@ -11,27 +28,15 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure></li>
 <li><p>将VuePress安装为本地依赖</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -D vuepress </span><br><span class="line">cnpm install -D vuepress # npm太慢了的话用这个命令，cnpm 需要 自行安装</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<div class="note primary modern"><p>   <strong>npm install 命令的一些注意地方：</strong></p>
-<p>npm install -g 全局安装（全局命令行使用）<br>   npm install -S 本地安装 即  npm install module_name –save  写入dependencies（将安装包放在./node_modules/）</p>
-<p>   npm install -D 本地安装 即  npm install module_name –save-dev  写入devdependencies（将安装包放在./node_modules/）</p>
-<p>   <strong>dependencies与devDependencies有什么区别呢？</strong><br>   devDependencies 里面的插件只用于开发环境，不用于生产环境</p>
-<p>dependencies 是需要发布到生产环境的<br>   <strong>什么是开发环境什么是生产环境？</strong><br>   <strong>开发环境</strong>是开发项目时候要用到的程序，实际程序发布运行不一定需要。<br>   <strong>生产环境</strong>是程序运行过程中要运行的库。<br>   例如：gulp是用来压缩代码的工具，程序实际运行不需要用到，所以应该放在dev（开发环境）里。</p>
-</div>
-
-<ol start="4">
-<li><p>创建第一篇文档</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir docs &amp;&amp; echo &#39;# Hello VuePress&#39; &gt; docs\README.md</span><br></pre></td></tr></table></figure></li>
-<li><p>在<code>package.json</code>中添加一些scripts.</p>
-<figure class="highlight plain"><figcaption><span>package.json</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;docs:dev&quot;: &quot;vuepress dev docs&quot;,</span><br><span class="line">    &quot;docs:build&quot;: &quot;vuepress build docs&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line">&#123;%note primary%&#125;</span><br><span class="line">   **npm install 命令的一些注意地方：**</span><br><span class="line">   </span><br><span class="line">npm install -g 全局安装（全局命令行使用）</span><br><span class="line">   npm install -S 本地安装 即  npm install module_name --save  写入dependencies（将安装包放在.&#x2F;node_modules&#x2F;）</span><br><span class="line"></span><br><span class="line">   npm install -D 本地安装 即  npm install module_name --save-dev  写入devdependencies（将安装包放在.&#x2F;node_modules&#x2F;）</span><br><span class="line"></span><br><span class="line">   **dependencies与devDependencies有什么区别呢？**</span><br><span class="line">   devDependencies 里面的插件只用于开发环境，不用于生产环境</span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">dependencies 是需要发布到生产环境的</span><br><span class="line">   **什么是开发环境什么是生产环境？**</span><br><span class="line">   **开发环境**是开发项目时候要用到的程序，实际程序发布运行不一定需要。</span><br><span class="line">   **生产环境**是程序运行过程中要运行的库。</span><br><span class="line">   例如：gulp是用来压缩代码的工具，程序实际运行不需要用到，所以应该放在dev（开发环境）里。</span><br><span class="line"></span><br><span class="line">   &#123;%endnote%&#125;</span><br><span class="line"></span><br><span class="line">4. 创建第一篇文档</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>mkdir docs &amp;&amp; echo ‘# Hello VuePress’ &gt; docs\README.md</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">5. 在&#96;package.json&#96;中添加一些scripts.</span><br><span class="line"></span><br><span class="line">   &#96;&#96;&#96;[] package.json</span><br><span class="line">   &#123;</span><br><span class="line">     &quot;scripts&quot;: &#123;</span><br><span class="line">       &quot;docs:dev&quot;: &quot;vuepress dev docs&quot;,</span><br><span class="line">       &quot;docs:build&quot;: &quot;vuepress build docs&quot;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>本地启动服务器</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm run docs:dev</span><br></pre></td></tr></table></figure></li>
 <li><p>vuepress 简单的文档 基本搭建成功。</p>
 <h2 id="完善配置"><a href="#完善配置" class="headerlink" title="完善配置"></a>完善配置</h2></li>
 </ol>
-<p>麻烦，直接看<a href="https://www.vuepress.cn/guide/basic-config.html#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">官网</a>去吧。</p>
+<p>麻烦麻烦，直接看<a href="https://www.vuepress.cn/guide/basic-config.html#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">官网</a>去吧。</p>
 <h2 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h2>]]></content>
       <categories>
         <category>默认分类</category>
@@ -1798,7 +1803,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">3. 安装新版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>npm install @vue-cli -g</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">如果不想安装最新版的vue，可以安装指定版本的vue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#x76;&#x75;&#101;&#x2d;&#99;&#108;&#x69;&#64;&#50;&#x2e;&#57;&#x2e;&#x36;">&#x76;&#x75;&#101;&#x2d;&#99;&#108;&#x69;&#64;&#50;&#x2e;&#57;&#x2e;&#x36;</a><br>yarn global add <a href="mailto:&#118;&#117;&#101;&#45;&#x63;&#108;&#105;&#64;&#50;&#x2e;&#x39;&#46;&#x36;">&#118;&#117;&#101;&#45;&#x63;&#108;&#105;&#64;&#50;&#x2e;&#x39;&#46;&#x36;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
+<p>//安装2.9.6版本<br>npm install -g <a href="mailto:&#118;&#x75;&#101;&#x2d;&#x63;&#x6c;&#105;&#x40;&#x32;&#46;&#x39;&#x2e;&#x36;">&#118;&#x75;&#101;&#x2d;&#x63;&#x6c;&#105;&#x40;&#x32;&#46;&#x39;&#x2e;&#x36;</a><br>yarn global add <a href="mailto:&#x76;&#117;&#x65;&#x2d;&#x63;&#x6c;&#x69;&#64;&#x32;&#x2e;&#x39;&#x2e;&#54;">&#x76;&#117;&#x65;&#x2d;&#x63;&#x6c;&#x69;&#64;&#x32;&#x2e;&#x39;&#x2e;&#54;</a><br>//安装4.0.5版本<br>npm install -g @vue/cli@4.0.5<br>yarn global add @vue/cli@4.0.5</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
