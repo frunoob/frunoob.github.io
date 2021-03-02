@@ -6,6 +6,7 @@ aside: false
 top_img: false
 date: 2021-01-13 22:16:48
 ---
+## <a href="./videos">视频课程</a>
 
 ##  <a href="./zhuanyemulu"> 北邮硕士招生专业目录（软件工程方向）</a>
 
