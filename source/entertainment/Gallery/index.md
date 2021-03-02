@@ -13,4 +13,7 @@ date: 2020-11-19 13:01:07
 {%  galleryGroup '小猫咪' '可爱的小猫人人都爱' '/entertainment/Gallery/cat' 'https://gitee.com/frunoob/blog-image/raw/master/image/20201206001103.png' %}
 {% galleryGroup '荒野大镖客2' 'RED DEAD REDEMPTION II' '/entertainment/Gallery/DRD2' https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210228132423.jpg %}
 {% galleryGroup '有趣的图片' 'funny' '/entertainment/Gallery/funny' https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210228141210.jpg %}
+{% galleryGroup '鸟' 'birds' '/entertainment/Gallery/birds' 'https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210302131918.jpeg' %}
+
+{% galleryGroup '动漫' '漫画图片' '/entertainment/Gallery/comic' 'https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210302130143.jpeg' %}
 </div>

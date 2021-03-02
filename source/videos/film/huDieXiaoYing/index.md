@@ -2,6 +2,7 @@
 layout: false
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/video.css">
+
   <video id="my_video_1" class="video-js vjs-default-skin" controls preload ="auto"
   data-setup='{}'>
     <source src="https://cdn.jsdelivr.net/gh/frunoob/videos-1/ChaosTheory/playlist.m3u8" type="application/x-mpegURL">
@@ -11,5 +12,13 @@ layout: false
 <script>
 var player = videojs('my_video_1');
 player.play();
+var video1=document.getElementById("my_video_1");
 
+video1.onclick=function(){
+    if(video1.paused){
+        video1.play();
+    }else{
+        video1.pause();
+    }
+}
 </script>
