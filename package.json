@@ -38,6 +38,7 @@
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-chart": "^1.0.8",
     "hexo-tag-dplayer": "^0.3.3",
+    "hexo-theme-butterfly": "^3.6.2",
     "hexo-wordcount": "^6.0.1",
     "hls.js": "^0.14.17",
     "markdown-it": "^12.0.4",
