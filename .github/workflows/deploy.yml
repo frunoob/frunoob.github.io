@@ -24,4 +24,8 @@ jobs:
         with:
           ssh-key: ${{ secrets.HEXO_DEPLOY_PRI }}
           branch: master # The branch the action should deploy to.
+<<<<<<< HEAD
           folder: public # The folder the action should deploy.
+=======
+          folder: public # The folder the action should deploy.
+>>>>>>> 24b5660d72b027b24396f953e3791ec6c363ae42
