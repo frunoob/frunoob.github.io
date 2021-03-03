@@ -1,51 +1,27 @@
-name: Hexo Deploy
-
+name: Build and Deploy
 on:
   push:
     branches:
       - hexo
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
-
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
-          ref: hexo
+          persist-credentials: false
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
-
-      - name: Install Hexo
-        env:
-          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
-          mkdir -p ~/.ssh/
-          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 700 ~/.ssh
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "3024446880@qq.com"
-          git config --global user.name "frunoob"
-          npm install hexo-cli -g
           npm install
-      - name: Cache Modules # 缓存 Node 插件
-        uses: actions/cache@v1
-        id: cache-modules
+          npm run build
+        env:
+          CI: false
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-      - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件
-        if: steps.cache-modules.outputs.cache-hit != 'true'
-        run: | # **如果仓库里没有 package-lock.json，上传一下，npm ci 必须要有 package-lock.json**
-          npm ci
-      - name: Deploy
-        run: |
-          hexo clean
-          hexo g
-          hexo deploy
+          ssh-key: ${{ secrets.HEXO_DEPLOY_PRI }}
+          branch: master # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.
