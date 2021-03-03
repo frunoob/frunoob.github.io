@@ -1,3 +1,3 @@
 git add -A
 git commit -m "content: edit"
-git push
+git push github hexo
