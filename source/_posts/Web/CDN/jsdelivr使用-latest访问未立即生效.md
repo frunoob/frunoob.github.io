@@ -27,12 +27,7 @@ highlight_shrink:
 aside:
 ---
 
-{% note primary %}
-
-
-
-明明都已经在github上发布了最新版本，但是使用jsdelivr访问文件还不是最新版？！
-
+{% note primary %}明明都已经在github上发布了最新版本，但是使用jsdelivr访问文件还不是最新版？！
 {%  endnote %}
 
 
