@@ -1,15 +1,10 @@
-<<<<<<< HEAD
 name: CI
-=======
-name: Deploy
->>>>>>> 18d3c21efae0f69e9021a55a01697f5e5219daca
 
 on:
   push:
     branches:
       - hexo
 
-<<<<<<< HEAD
 env:
   GIT_USER: frunoob
   GIT_EMAIL: 3024446880@qq.com
@@ -18,13 +13,10 @@ env:
   DEPLOY_REPO: frunoob/frunoob.github.io
   DEPLOY_BRANCH: master
 
-=======
->>>>>>> 18d3c21efae0f69e9021a55a01697f5e5219daca
 jobs:
   build:
     name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
     runs-on: ubuntu-latest
-<<<<<<< HEAD
     strategy:
       matrix:
         os: [ubuntu-latest]
@@ -73,38 +65,3 @@ jobs:
       - name: Deploy hexo
         run: |
           npm run deploy
-=======
-    name: A job to deploy blog.
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-      with:
-        submodules: true # Checkout private submodules(themes or something else).
-    
-    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
-    - name: Cache node modules
-      uses: actions/cache@v1
-      id: cache
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - name: Install Dependencies
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: npm ci
-    
-    # Deploy hexo blog website.
-    - name: Deploy
-      id: deploy
-      uses: sma11black/hexo-action@v1.0.3
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: master # The branch the action should deploy to.
-        FOLDER: public # The folder the action should deploy.
-        commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
-    # Use the output from the `deploy` step(use for test action)
-    - name: Get the output
-      run: |
-        echo "${{ steps.deploy.outputs.notify }}"
->>>>>>> 18d3c21efae0f69e9021a55a01697f5e5219daca
