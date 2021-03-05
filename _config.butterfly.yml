@@ -17,7 +17,7 @@ menu:
   - 备忘清单 || /memorandum/ || fas fa-calendar-alt
   - 日常记账 || /tally/ || fas fa-list
   - github-private || https://github.com/frunoob/PRIVATE || fas  fa-hand-paper 
-  - Unified National Graduate Entrance Examination || /kaoyan/ || fas fa-pencil-alt
+  - Graduate|| /kaoyan/ || fas fa-pencil-alt
   娱乐||fas fa-list:
   - 图片 || /entertainment/Gallery/ || fas fa-images
   - 电影 || /entertainment/film/ || fas fa-film

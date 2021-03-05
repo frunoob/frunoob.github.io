@@ -6,7 +6,7 @@ aside: true
 top_img: false
 date: 2020-12-03 12:04:35
 ---
-
+[修改](https://github.com/frunoob/frunoob.github.io/edit/hexo/source/memorandum/index.md)此页面内容
 ## 目录
 
 <a href="./people">人名备忘</a>
