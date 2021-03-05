@@ -121,6 +121,10 @@ index_img:
 # If the banner of page not setting, it will show the top_img
 default_top_img: 
 
+disable_top_img: false
+
+change_font_size: true
+
 # The banner image of archive page
 archive_img:
 
@@ -704,7 +708,9 @@ preloader: false
 aside:
   enable: true
   mobile: true # display on mobile
-  position: right # left or right
+  hide: false
+  button: true
+  position: left # left or right
   card_author:
     enable: true
     description: 记录点滴
@@ -811,11 +817,11 @@ darkmode:
 
 # medium-zoom
 # https://github.com/francoischalifour/medium-zoom
-medium_zoom: false
+medium_zoom: true
 
 # fancybox
 # http://fancyapps.com/fancybox/3/
-fancybox: true
+fancybox: false
 
 # Tag Plugins settings (標籤外掛)
 # --------------------------------------
