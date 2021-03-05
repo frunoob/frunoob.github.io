@@ -12,6 +12,7 @@ menu:
   - 标签 || /tags/ || fas fa-tags
   - 分类 || /categories/ || fas fa-folder-open
   常用|| fas fa-feather: 
+  - 笔记 || /class-note/ || fas fa-pencil-alt
   - 知识总结 || /复习/ || fas fa-list
   - 备忘清单 || /memorandum/ || fas fa-calendar-alt
   - 日常记账 || /tally/ || fas fa-list
