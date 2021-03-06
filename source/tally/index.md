@@ -53,9 +53,11 @@ date: 2021-01-15 14:55:40
 
 | 微信（￥） | 支付宝 | 总计 |
 | ---------- | ------ | ---- |
-| 2383.16 | 3999.76 | 6382.92 |
+| <span id= "money1">2323.90 </span> | <span id= "money2">3992.99 </span> | <span id="all"></span><script> var money1 = document.getElementById("money1").textContent;var money2 = document.getElementById("money2").textContent;  document.getElementById("all").innerHTML= parseFloat(money1)+parseFloat(money2)</script> |
 
-
+| 日期  | 支出  | 用途 | 总计 |
+| ----------| ---------- | ------ | ---- |
+| 3.6 | 44、15.4、6.99 | 烤串、耙耙柑、我母鸡啊 | 59.4 |
 
 
 <!--  endtab -->
