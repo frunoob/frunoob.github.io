@@ -3,7 +3,7 @@
   <entry>
     <title>hls视频播放</title>
     <url>/2021/03/07/hls%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/video-dev/hls.js/blob/master/docs/API.md#getting-started">hls.js</a></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><a href="https://github.com/video-dev/hls.js/blob/master/docs/API.md#getting-started">hls.js</a></p>
 <h3 id="第一步：设置和支持"><a href="#第一步：设置和支持" class="headerlink" title="第一步：设置和支持"></a>第一步：设置和支持</h3><p>首先在您的网页中包括（或未为未明的）。<code>https://cdn.jsdelivr.net/npm/hls.js@latest``/hls.js</code></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;script src&#x3D;&quot;&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;hls.js@latest&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
 
