@@ -13,7 +13,7 @@ top_img: false
 
 ## 高等数学
 
-![image-20210302175128591](https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210302175129.png)
+![image-20210307133549914](https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210307133557.png)
 
 ## 英语
 
