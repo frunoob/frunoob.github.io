@@ -6,7 +6,7 @@ aside: false
 top_img: false
 date: 2020-12-05 23:28:55
 ---
- <!-- <script>if(prompt("输入密码：")=="1024"){alert("hi!")}else{alert("bye!");location.href="../../"}</script>  -->
+ <script>if(prompt("输入密码：")=="1024"){alert("hi!")}else{alert("bye!");location.href="../../"}</script> 
 
 <style>
        img{

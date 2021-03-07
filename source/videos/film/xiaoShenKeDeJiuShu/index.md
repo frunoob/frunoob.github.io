@@ -10,7 +10,7 @@ layout: false
            srclang="no"
            label="english and chinese"
            src="https://cdn.jsdelivr.net/gh/frunoob/videos-2/TheShawshankRedemption/XiaoShenKeDeJiuShu.vtt" />
-    <source src="https://cdn.jsdelivr.net/gh/frunoob/videos-2/TheShawshankRedemption/playlist.m3u8" type="application/x-mpegURL">
+    <source src="https://cdn.jsdelivr.net/gh/frunoob/videos-2@master/TheShawshankRedemption/playlist.m3u8" type="application/x-mpegURL">
   </video>
 <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/hls.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/hls-videos.js"></script>
