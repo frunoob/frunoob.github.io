@@ -21,6 +21,7 @@ menu:
   娱乐||fas fa-list:
   - 图片 || /entertainment/Gallery/ || fas fa-images
   - 电影 || /entertainment/film/ || fas fa-film
+  - 搞笑视频 || /videos/funny/ || fas fa-laugh
   - 音乐 || /entertainment/music/ || fas fa-music
   - 锻炼 || /entertainment/work-out/ || fas fa-running
   实验 || fa fa-flask:
