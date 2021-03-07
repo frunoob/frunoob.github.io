@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ffmpeg命令学习 | 自学成菜</title><meta name="keywords" content="视频音频处理程序"><meta name="author" content="Frunoob"><meta name="copyright" content="Frunoob"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1 概要ffmpeg是一个非常快的视频和音频转换器。 2 描述 将输出文件的视频位速率设置为 64 kbit&#x2F;s： 1ffmpeg -i input.avi -b:v 64k -bufsize 64k output.avi  将输出文件的帧速率强制为 24 fps： 1ffmpeg -i input.avi -r 24 output.avi  强制输入文件的帧速率（仅适用于原始格式）为 1 fps">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ffmpeg命令学习">
+<meta property="og:url" content="https://frunoob.github.io/2021/03/07/%E8%BD%AF%E4%BB%B6-2021-03-07-ffmpeg%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0/">
+<meta property="og:site_name" content="自学成菜">
+<meta property="og:description" content="1 概要ffmpeg是一个非常快的视频和音频转换器。 2 描述 将输出文件的视频位速率设置为 64 kbit&#x2F;s： 1ffmpeg -i input.avi -b:v 64k -bufsize 64k output.avi  将输出文件的帧速率强制为 24 fps： 1ffmpeg -i input.avi -r 24 output.avi  强制输入文件的帧速率（仅适用于原始格式）为 1 fps">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png">
+<meta property="article:published_time" content="2021-03-07T06:48:06.000Z">
+<meta property="article:modified_time" content="2021-03-07T07:29:50.406Z">
+<meta property="article:author" content="Frunoob">
+<meta property="article:tag" content="视频音频处理程序">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png"><link rel="canonical" href="https://frunoob.github.io/2021/03/07/%E8%BD%AF%E4%BB%B6-2021-03-07-ffmpeg%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5096b4561a970b09ada1287ef213db82";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":90,"position":"bottom","messagePrev":"这篇文章距离上次更新已经过去足足","messageNext":"天了，文章的内容可能已经过时了，仅供参考。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#47e3ee","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-03-07 15:29:50'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><meta name="baidu-site-verification" content="code-qKvRSQMSdK" /><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="google-site-verification" content="F4CpoqZsBSEfKOG0MJecZeGtXVVtg2u3ZZt5Fyzig8k" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frunoob/Library@v10.3/blog/css/zidingyi.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="自学成菜" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/frunoob/images/blog/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">106</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">64</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">44</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-minus"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-feather"></i><span> 常用</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/class-note/"><i class="fa-fw fas fa-pencil-alt"></i><span> 笔记</span></a></li><li><a class="site-page" href="/%E5%A4%8D%E4%B9%A0/"><i class="fa-fw fas fa-list"></i><span> 知识总结</span></a></li><li><a class="site-page" href="/memorandum/"><i class="fa-fw fas fa-calendar-alt"></i><span> 备忘清单</span></a></li><li><a class="site-page" href="/tally/"><i class="fa-fw fas fa-list"></i><span> 日常记账</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://github.com/frunoob/PRIVATE"><i class="fa-fw fas  fa-hand-paper"></i><span> github-private</span></a></li><li><a class="site-page" href="/kaoyan/"><i class="fa-fw fas fa-pencil-alt"></i><span> Graduate</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/entertainment/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page" href="/entertainment/film/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/entertainment/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/entertainment/work-out/"><i class="fa-fw fas fa-running"></i><span> 锻炼</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-flask"></i><span> 实验</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/web-homework/"><i class="fa-fw fa fa-desktop"></i><span> COVID-19数据可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tools"></i><span> 工具</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87"><i class="fa-fw fas fa-bookmark"></i><span> fa5图标备忘录</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://gotranscript.com/subtitle-converter"><span> 字幕转换</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://frunoob.avosapps.us/"><i class="fa-fw fas fa-cog"></i><span> 评论管理</span></a></li><li><a class="site-page" href="/markdown-it/"><i class="fa-fw fa fa-desktop"></i><span> markdown-it</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://tableconvert.com/"><i class="fa-fw fa fa-desktop"></i><span> tableCovert</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-biohazard"></i><span> 收藏</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/favorites/blogs/"><i class="fa-fw fas fa-eye"></i><span> 好看的网站</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/leave-your-message/"><i class="fa-fw fa fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fa fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/lover/"><i class="fa-fw fas fa-heart fa-lg"></i><span> love</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">自学成菜</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-minus"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-feather"></i><span> 常用</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/class-note/"><i class="fa-fw fas fa-pencil-alt"></i><span> 笔记</span></a></li><li><a class="site-page" href="/%E5%A4%8D%E4%B9%A0/"><i class="fa-fw fas fa-list"></i><span> 知识总结</span></a></li><li><a class="site-page" href="/memorandum/"><i class="fa-fw fas fa-calendar-alt"></i><span> 备忘清单</span></a></li><li><a class="site-page" href="/tally/"><i class="fa-fw fas fa-list"></i><span> 日常记账</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://github.com/frunoob/PRIVATE"><i class="fa-fw fas  fa-hand-paper"></i><span> github-private</span></a></li><li><a class="site-page" href="/kaoyan/"><i class="fa-fw fas fa-pencil-alt"></i><span> Graduate</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/entertainment/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page" href="/entertainment/film/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/entertainment/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/entertainment/work-out/"><i class="fa-fw fas fa-running"></i><span> 锻炼</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-flask"></i><span> 实验</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/web-homework/"><i class="fa-fw fa fa-desktop"></i><span> COVID-19数据可视化</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tools"></i><span> 工具</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87"><i class="fa-fw fas fa-bookmark"></i><span> fa5图标备忘录</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://gotranscript.com/subtitle-converter"><span> 字幕转换</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://frunoob.avosapps.us/"><i class="fa-fw fas fa-cog"></i><span> 评论管理</span></a></li><li><a class="site-page" href="/markdown-it/"><i class="fa-fw fa fa-desktop"></i><span> markdown-it</span></a></li><li><a class="site-page" target="_blank" rel="noopener" href="https://tableconvert.com/"><i class="fa-fw fa fa-desktop"></i><span> tableCovert</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-biohazard"></i><span> 收藏</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/favorites/blogs/"><i class="fa-fw fas fa-eye"></i><span> 好看的网站</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/leave-your-message/"><i class="fa-fw fa fa-comment"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fa fa-comments"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/lover/"><i class="fa-fw fas fa-heart fa-lg"></i><span> love</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">ffmpeg命令学习<a class="post-edit-link" href="https://github.com/frunoob/frunoob.github.io/edit/hexo/source/_posts/软件/2021-03-07-ffmpeg命令学习.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-07T06:48:06.000Z" title="发表于 2021-03-07 14:48:06">2021-03-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-07T07:29:50.406Z" title="更新于 2021-03-07 15:29:50">2021-03-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">630</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span></div></div></div><article class="post-content" id="article-container"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="1-概要"><a href="#1-概要" class="headerlink" title="1 概要"></a>1 概要</h1><p>ffmpeg是一个非常快的视频和音频转换器。</p>
+<h1 id="2-描述"><a href="#2-描述" class="headerlink" title="2 描述"></a>2 描述</h1><ul>
+<li><p>将输出文件的视频位速率设置为 64 kbit/s：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.avi -b:v 64k -bufsize 64k output.avi</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将输出文件的帧速率强制为 24 fps：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.avi -r 24 output.avi</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>强制输入文件的帧速率（仅适用于原始格式）为 1 fps，输出文件的帧速率为 24 fps：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -r 1 -i input.m2v -r 24 output.avi</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<h1 id="3-详细描述"><a href="#3-详细描述" class="headerlink" title="3 详细描述"></a>3 详细描述</h1><p>每个输出中的转码过程都可以通过以下图表进行描述： <code>ffmpeg</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> _______              ______________</span><br><span class="line">|       | 分离器     |  编码数据包   |</span><br><span class="line">| 输入  |  demuxer   | encoded data |   decoder（解码器）</span><br><span class="line">| 文件  | ---------&gt; | packets      | -----+</span><br><span class="line">|_______|            |______________|      |</span><br><span class="line">                                           v</span><br><span class="line">                                       _________</span><br><span class="line">                                      |  解码帧 |</span><br><span class="line">                                      | decoded |</span><br><span class="line">                                      | frames  |</span><br><span class="line">                                      |_________|</span><br><span class="line"> ________             ______________       |</span><br><span class="line">|输出文件|   合并器   |   编码数据包  |      |</span><br><span class="line">| output | &lt;-------- | encoded data | &lt;----+</span><br><span class="line">| file   |   muxer   | packets      |   encoder（编码器）</span><br><span class="line">|________|           |______________|</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><code>ffmpeg</code>调用libavformat库（包含演示者）来读取输入文件并从它们获取包含编码数据的包。当有多个输入文件时，尝试通过跟踪任何活动输入流上的最低时间戳来保持它们同步。</p>
+<p>然后，编码数据包被传递到解码器（除非为流选择流的流复制，请参阅进一步的描述）。解码器生成未压缩的帧（原始视频/PCM 音频/…），可以通过过滤进一步处理（见下一节）。过滤后，帧被传递到编码器，编码器对它们进行编码并输出编码的数据包。最后，这些被传递到muxer，它将编码的数据包写入输出文件。</p>
+<h2 id="3-1-过滤"><a href="#3-1-过滤" class="headerlink" title="3.1 过滤"></a>3.1 过滤</h2><h3 id="3-1-1-简单过滤器"><a href="#3-1-1-简单过滤器" class="headerlink" title="3.1.1 简单过滤器"></a>3.1.1 简单过滤器</h3><p>简单过滤器是那些完全有一个输入和输出，都是相同的类型。再上图中，只需要在解码和编码之间插入一个额外的步骤即可以表示他们：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> _________                        ______________</span><br><span class="line">|         |                      |              |</span><br><span class="line">| decoded |                      | encoded data |</span><br><span class="line">| frames  |\                   _ | packets      |</span><br><span class="line">|_________| \                  &#x2F;||______________|</span><br><span class="line">             \   __________   &#x2F;</span><br><span class="line">  simple     _\||          | &#x2F;  encoder</span><br><span class="line">  filtergraph   | filtered |&#x2F;</span><br><span class="line">                | frames   |</span><br><span class="line">                |__________|</span><br></pre></td></tr></table></figure>
+
+<p>过滤器只改变帧属性，不改变帧内容。</p>
+<h3 id="3-1-2-复杂过滤器"><a href="#3-1-2-复杂过滤器" class="headerlink" title="3.1.2 复杂过滤器"></a>3.1.2 复杂过滤器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"> _________</span><br><span class="line">|         |</span><br><span class="line">| input 0 |\                    __________</span><br><span class="line">|_________| \                  |          |</span><br><span class="line">             \   _________    &#x2F;| output 0 |</span><br><span class="line">              \ |         |  &#x2F; |__________|</span><br><span class="line"> _________     \| complex | &#x2F;</span><br><span class="line">|         |     |         |&#x2F;</span><br><span class="line">| input 1 |----&gt;| filter  |\</span><br><span class="line">|_________|     |         | \   __________</span><br><span class="line">               &#x2F;| graph   |  \ |          |</span><br><span class="line">              &#x2F; |         |   \| output 1 |</span><br><span class="line"> _________   &#x2F;  |_________|    |__________|</span><br><span class="line">|         | &#x2F;</span><br><span class="line">| input 2 |&#x2F;</span><br><span class="line">|_________|</span><br></pre></td></tr></table></figure>
+
+
+
+<p>当图形有多个输入的时候，或者输入和输出的类型不相同的时候，情况如上图所示。</p>
+<p>复杂的过滤的一个简单的例子就是滤镜，他有两个视频输入和一个视频输出，其中的一个视频覆盖在另一个视频之上。 <code>overlay</code> <code>amix</code> </p>
+<h2 id="3-2-流副本"><a href="#3-2-流副本" class="headerlink" title="3.2 流副本"></a>3.2 流副本</h2></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%A7%86%E9%A2%91%E9%9F%B3%E9%A2%91%E5%A4%84%E7%90%86%E7%A8%8B%E5%BA%8F/">视频音频处理程序</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://www.baidu.com/s?wd=%E5%BE%AE%E4%BF%A1%E5%A6%82%E4%BD%95%E6%89%AB%E7%A0%81" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/wechat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://www.baidu.com/s?wd=%E6%94%AF%E4%BB%98%E5%AE%9D%E5%A6%82%E4%BD%95%E6%89%AB%E7%A0%81" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/alipay.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/03/07/hls%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE/"><img class="prev-cover" data-lazy-src="https://pic4.zhimg.com/v2-e522801945af3714797aa2c5bfb0db79_1440w.jpg?source=172ae18b" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/frunoob/images/blog/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">hls视频播放</div></div></a></div><div class="next-post pull-right"><a href="/2021/03/05/default-2021-03-05-markdown-it-emoji/"><img class="next-cover" data-lazy-src="https://pic4.zhimg.com/v2-e522801945af3714797aa2c5bfb0db79_1440w.jpg?source=172ae18b" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/frunoob/images/blog/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">markdown-it-emoji</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/favicon.png" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/frunoob/images/blog/friend_404.gif'" alt="avatar"/><div class="author-info__name">Frunoob</div><div class="author-info__description">记录点滴</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">106</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">64</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">44</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/frunoob"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/frunoob?tab=repositories" target="_blank" title="Github Repositories"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:fqq1305108661@gmail.com" target="_blank" title="Will open the email software on this computer"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://music.163.com/#/user/home?id=403723239" target="_blank" title="网易云音乐"><i class="fas fa-headphones-alt"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E6%A6%82%E8%A6%81"><span class="toc-text">1 概要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E6%8F%8F%E8%BF%B0"><span class="toc-text">2 描述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0"><span class="toc-text">3 详细描述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E8%BF%87%E6%BB%A4"><span class="toc-text">3.1 过滤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-1-%E7%AE%80%E5%8D%95%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="toc-text">3.1.1 简单过滤器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-2-%E5%A4%8D%E6%9D%82%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="toc-text">3.1.2 复杂过滤器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E6%B5%81%E5%89%AF%E6%9C%AC"><span class="toc-text">3.2 流副本</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/03/07/hls%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE/" title="hls视频播放">hls视频播放</a><time datetime="2021-03-07T10:07:04.000Z" title="发表于 2021-03-07 18:07:04">2021-03-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/03/07/%E8%BD%AF%E4%BB%B6-2021-03-07-ffmpeg%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0/" title="ffmpeg命令学习">ffmpeg命令学习</a><time datetime="2021-03-07T06:48:06.000Z" title="发表于 2021-03-07 14:48:06">2021-03-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/03/05/default-2021-03-05-markdown-it-emoji/" title="markdown-it-emoji">markdown-it-emoji</a><time datetime="2021-03-05T12:25:42.000Z" title="发表于 2021-03-05 20:25:42">2021-03-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/03/02/%E8%BD%AF%E4%BB%B6-2021-03-02-%E5%8F%AF%E4%BB%A5%E5%BD%95%E5%88%B6%E5%90%84%E7%A7%8D%E7%9B%B4%E6%92%AD%E7%9A%84%E8%BD%AF%E4%BB%B6/" title="可以录制各种直播的软件">可以录制各种直播的软件</a><time datetime="2021-03-02T07:19:45.000Z" title="发表于 2021-03-02 15:19:45">2021-03-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/02/28/Web-%E5%8D%9A%E5%AE%A2-2021-02-28-vuepress-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" title="vuepress 搭建博客过程记录">vuepress 搭建博客过程记录</a><time datetime="2021-02-28T14:11:13.000Z" title="发表于 2021-02-28 22:11:13">2021-02-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="footer_custom_text"><span>@</span><span id="yearsToNow">2000</span><span> </span><span id="daysToNow">by frunoob</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/gh/frunoob/Library@v10.2/blog/js/siteFooter.js"></script><script>setDay()</script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="I,Want,See,You,In,B,U,P,T" data-fontsize="13px" data-random="false" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  if (typeof gtag === 'function') {
+    gtag('config', '', {'page_path': window.location.pathname});
+  }
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script></div></body></html>
