@@ -6,7 +6,21 @@ aside: false
 top_img: false
 date: 2020-11-19 13:01:07
 ---
-
+<style>
+img{
+    float:left;
+    height: 300px;
+}
+img{
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 200px;
+             -webkit-transition: width 1s , -webkit-transform 0.5s,border-radius 0.25s;
+        }
+        img:hover{
+            border-radius: 2%;
+        }
+</style>
 {% gallery %}
 
 ![花](https://gitee.com/frunoob/blog-image/raw/master/image/20201119131542.webp)
