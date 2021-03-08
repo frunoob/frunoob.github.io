@@ -251,7 +251,7 @@ noticeOutdate:
   enable: true
   style: flat # style: simple/flat
   limit_day: 90 # When will it be shown
-  position: bottom # position: top/bottom
+  position: top # position: top/bottom
   message_prev: 这篇文章距离上次更新已经过去足足
   message_next: 天了，文章的内容可能已经过时了，仅供参考。
 
