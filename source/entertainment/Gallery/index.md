@@ -6,7 +6,7 @@ aside: false
 top_img: false
 date: 2020-11-19 13:01:07
 ---
-<a href="https://github.com/frunoob/frunoob.github.io/tree/master/entertainment/Gallery">修改->>></a>
+<a href="https://github.com/frunoob/frunoob.github.io/tree/hexo/source/entertainment/Gallery/index.md">修改->>></a>
 <div class="gallery-group-main">
 {% galleryGroup '短视频和动图' 'funny' '/entertainment/Gallery/funny' https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210307222336.png %}
 {% galleryGroup '壁紙' '好看的图片怎能不收藏' '/entertainment/Gallery/wallpaper' https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210307224614.jpg %}
