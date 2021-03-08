@@ -27,10 +27,8 @@ date: 2020-12-05 23:28:55
 <table>
 <tr>
 <td><a href=".\porn-1" target="_blank">欧美-室内</a></td>
-<td><a href="./tarzanTheApeMan" target="_blank">人猿泰山H</a></td>
 </tr>
 <tr><td><img src="https://gitee.com/frunoob/blog-image/raw/master/blog/20210213125442.png"></td>
-<td><img src="https://gitee.com/frunoob/blog-image/raw/master/blog/20210213125648.png"></td>
 </tr>
 </table>
 

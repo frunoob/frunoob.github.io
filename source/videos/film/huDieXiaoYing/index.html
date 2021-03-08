@@ -1,0 +1,26 @@
+---
+title: 蝴蝶效应
+type: ''
+comments: false
+aside: false
+top_img: false
+---
+
+<style>
+    video{
+        height: 100%;
+        width: 100%;
+    }
+</style>
+ <video id="video" controls></video>
+ <script>
+   var video = document.getElementById('video');
+   var videoSrc = 'https://cdn.jsdelivr.net/gh/frunoob/videos-1@master/ChaosTheory/playlist.m3u8';
+   if (video.canPlayType('application/vnd.apple.mpegurl')) {
+     video.src = videoSrc;
+   } else if (Hls.isSupported()) {
+     var hls = new Hls();
+     hls.loadSource(videoSrc);
+     hls.attachMedia(video);
+   }
+ </script>

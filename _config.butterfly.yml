@@ -959,6 +959,7 @@ inject:
   head:
   - <meta name="baidu-site-verification" content="code-qKvRSQMSdK" />
   - <meta name="referrer" content="no-referrer-when-downgrade" />
+  -   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" ></script>
   - <meta name="google-site-verification" content="F4CpoqZsBSEfKOG0MJecZeGtXVVtg2u3ZZt5Fyzig8k" />
   # - <link rel="stylesheet" href="/css/zidingyi.css">
   # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/hls.css">
@@ -967,6 +968,7 @@ inject:
   # 自定义的js库
   bottom:
     - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@v10.2/blog/js/siteFooter.js"></script>
+    # <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     # - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/hls.js"></script>
     # - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/hls-videos.js"></script>
     # - <script src="/js/siteFooter.js" ></script> #本地测试用

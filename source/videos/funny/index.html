@@ -5,7 +5,58 @@ comments: false
 aside: false
 top_img: false
 ---
+<style>
+    video{
+        height: 300px;
+        margin: 10px;
+    }
+</style>
+ <a href="https://github.com/frunoob/frunoob.github.io/edit/hexo/source/videos/funny/index.md">修改此页面内容</a><br>
 
-<a href="https://github.com/frunoob/frunoob.github.io/edit/hexo/source/videos/funny/index.md">修改此页面内容</a>
+
+ <video id="video" controls></video>
+ <script>
+   {
+    let video = document.getElementById('video');
+   let videoSrc = 'https://cdn.jsdelivr.net/gh/frunoob/funny-videos@master/001/playlist.m3u8';
+   if (video.canPlayType('application/vnd.apple.mpegurl')) {
+     video.src = videoSrc;
+   } else if (Hls.isSupported()) {
+     var hls = new Hls();
+     hls.loadSource(videoSrc);
+     hls.attachMedia(video);
+   }
+   }
+ </script>
 
 
+  <video id="video2" controls></video>
+  <script>
+   {
+    let video = document.getElementById('video2');
+   let videoSrc = 'https://cdn.jsdelivr.net/gh/frunoob/funny-videos@master/002/playlist.m3u8';
+   if (video.canPlayType('application/vnd.apple.mpegurl')) {
+     video.src = videoSrc;
+   } else if (Hls.isSupported()) {
+     var hls = new Hls();
+     hls.loadSource(videoSrc);
+     hls.attachMedia(video);
+   }
+   }
+  </script>
+
+<video id="video3" controls></video>
+<script>
+ {
+  let video = document.getElementById('video3');
+ let videoSrc = 'https://cdn.jsdelivr.net/gh/frunoob/funny-videos@master/003/playlist.m3u8';
+ if (video.canPlayType('application/vnd.apple.mpegurl')) {
+   video.src = videoSrc;
+ } else if (Hls.isSupported()) {
+   var hls = new Hls();
+   hls.loadSource(videoSrc);
+   hls.attachMedia(video);
+ }
+ }
+</script>
+ 
