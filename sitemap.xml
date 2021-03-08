@@ -2,35 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://frunoob.github.io/tally/</loc>
-    
-    <lastmod>2021-03-08</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/web-homework/</loc>
-    
-    <lastmod>2021-03-08</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/skip/</loc>
-    
-    <lastmod>2021-03-08</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/memorandum/watch-where/</loc>
-    
-    <lastmod>2021-03-08</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://frunoob.github.io/private/reading-note/</loc>
     
     <lastmod>2021-03-08</lastmod>
     
@@ -58,13 +30,6 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/memorandum/people/name/</loc>
-    
-    <lastmod>2021-03-08</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/videos/funny/</loc>
     
     <lastmod>2021-03-08</lastmod>
@@ -79,7 +44,42 @@
   </url>
   
   <url>
+    <loc>https://frunoob.github.io/tally/</loc>
+    
+    <lastmod>2021-03-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/skip/</loc>
+    
+    <lastmod>2021-03-08</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://frunoob.github.io/markdown-it/</loc>
+    
+    <lastmod>2021-03-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/memorandum/watch-where/</loc>
+    
+    <lastmod>2021-03-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/private/reading-note/</loc>
+    
+    <lastmod>2021-03-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/memorandum/people/name/</loc>
     
     <lastmod>2021-03-08</lastmod>
     
