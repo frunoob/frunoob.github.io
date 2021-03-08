@@ -188,9 +188,9 @@
 <p>软件来源<a href="https://github.com/deximy/FxxkSsxx">deximy</a></p>
 <p>下载所需<a href="https://frunoob.lanzous.com/iQg6oma494j">软件</a></p>
 <p>将解压出来的<code>FxxkSsxx.exe</code>和<code>answer.txt</code>放在同一个文件夹下即可</p>
-<p>打开网页端：<a href="https://ssxx.univs.cn/client/detail/5f71e934bcdbf3a8c3ba5061">https://ssxx.univs.cn/client/detail/5f71e934bcdbf3a8c3ba5061</a><br>认证登录成功后在页面随便一个地方右键，点击Inspect/审查元素<br><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://i.loli.net/2020/12/14/vUCLgQKVTAabDhf.png"></p>
-<p>在新弹出的窗口点击Console/控制台，并在最下方输入<code>localStorage.token</code><br><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://i.loli.net/2020/12/14/5w3dIYbnulcmAgj.png"></p>
-<p>回车，将浏览器输出的内容中<strong>双引号之内</strong>的文本复制出来<br><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://i.loli.net/2021/02/05/dIN5hosr2OjJ8LR.png"></p>
+<p>打开网页端：<a href="https://ssxx.univs.cn/client/detail/5f71e934bcdbf3a8c3ba5061">https://ssxx.univs.cn/client/detail/5f71e934bcdbf3a8c3ba5061</a><br>认证登录成功后在页面随便一个地方右键，点击Inspect/审查元素<br><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210308185856.png"></p>
+<p>在新弹出的窗口点击Console/控制台，并在最下方输入<code>localStorage.token</code><br><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210308185919.png"></p>
+<p>回车，将浏览器输出的内容中<strong>双引号之内</strong>的文本复制出来<br><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210308185939.png"></p>
 <p>运行FxxkSsxx.exe，将刚刚拿到的token粘贴进控制台，回车，程序会自动开始答题，觉得分数差不多了<strong>直接停止程序运行</strong>即可</p>
 ]]></content>
       <categories>
