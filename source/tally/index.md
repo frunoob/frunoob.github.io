@@ -53,18 +53,29 @@ date: 2021-01-15 14:55:40
 
 | 微信（￥） | 支付宝 | 总计 |
 | ---------- | ------ | ---- |
-| <span id= "money1">2323.90 </span> | <span id= "money2">3992.99 </span> | <span id="all"></span><script> var money1 = document.getElementById("money1").textContent;var money2 = document.getElementById("money2").textContent;  document.getElementById("all").innerHTML= parseFloat(money1)+parseFloat(money2)</script> |
+| <span id= "money1">2323.90 </span> | <span id= "money2">3992.99 </span> | <span id="all"></span> |
 
 | 日期  | 支出  | 用途 | 总计 |
 | ----------| ---------- | ------ | ---- |
 | 3.6 | 44、15.4、6.99 | 烤串、耙耙柑、我母鸡啊 | 59.4 |
-
+| 3.7 | 34.8 | 魔芋爽 | 34.8 |
+<script>
+    let huaFei1 = parseFloat(0);
+    let huaFei2 = 34.8;
+    let money1 = 2323.90;
+    let money2 = 3992.99;
+    money1 -= huaFei1;
+    money2 -= huaFei2;
+    document.getElementById("money1").innerHTML = money1;
+    document.getElementById("money2").innerHTML = money2;
+document.getElementById("all").innerHTML= money1+money2
+</script>
+<script>
 
 <!--  endtab -->
 
 {%  endtabs %}
 
-<script>
 d1 = 1473.11;
 d2 = 322.79 ;
 d3 = 1760.84;
