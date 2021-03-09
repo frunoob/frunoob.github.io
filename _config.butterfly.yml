@@ -960,8 +960,11 @@ inject:
   - <meta name="baidu-site-verification" content="code-qKvRSQMSdK" />
   - <meta name="referrer" content="no-referrer-when-downgrade" />
   -   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" ></script>
+      - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/hls-player/video.js"></script>
+        - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/hls-player/videojs-hlsjs.js"></script>
   - <meta name="google-site-verification" content="F4CpoqZsBSEfKOG0MJecZeGtXVVtg2u3ZZt5Fyzig8k" />
   # - <link rel="stylesheet" href="/css/zidingyi.css">
+  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/hls-player/video-js.css">
   # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/hls.css">
   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frunoob/Library@v10.3/blog/css/zidingyi.css">
   # - <link rel="stylesheet" href="/xxx.css">

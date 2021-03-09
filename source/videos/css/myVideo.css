@@ -1,0 +1,13 @@
+.divVideo{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+  }
+  .myVideo{
+    position: absolute;
+    left: 1%;
+    top: 0;
+    width: 98%;
+    height: 514px;
+    object-fit: fill;
+  }

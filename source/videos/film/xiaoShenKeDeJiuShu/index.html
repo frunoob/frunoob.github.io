@@ -1,5 +1,5 @@
 ---
-title: 蝴蝶效应
+title: 肖申克的救赎
 type: ''
 comments: false
 aside: false
@@ -7,13 +7,45 @@ top_img: false
 ---
 
 <style>
-    video{
-        height: 100%;
-        width: 100%;
-    }
+  .divVideo{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+  }
+  .myVideo{
+    position: absolute;
+    left: 1%;
+    top: 0;
+    width: 98%;
+    height: 514px;
+    object-fit: fill;
+  }
 </style>
-<h2>无字幕</h2>
- <video id="video" controls>
+<div class="divVideo">
+  <video 
+       class="myVideo video-js vjs-default-skin" 
+       autoplay
+       controls>
+  <p>
+    Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the
+    example.
+  </p>
+  <track default
+  kind="captions"
+  srclang="no"
+  label="english and chinese"
+  src="https://cdn.jsdelivr.net/gh/frunoob/videos-2/TheShawshankRedemption/XiaoShenKeDeJiuShu.vtt" />
+<source src="https://cdn.jsdelivr.net/gh/frunoob/videos-2@master/TheShawshankRedemption/playlist.m3u8" type="application/x-mpegURL">
+</video>
+</div>
+
+<script>
+  // fire up the plugin
+  // videojs('video');
+  videojs(document.querySelector('video'));
+</script>
+
+ <!-- <video id="video" controls>
 
     <track default
     kind="captions"
@@ -34,7 +66,7 @@ top_img: false
      hls.loadSource(videoSrc);
      hls.attachMedia(video);
    }
- </script>
+ </script> -->
 
 <!-- ---
 layout: false
