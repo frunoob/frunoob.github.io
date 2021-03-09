@@ -164,3 +164,10 @@ hexo-tag-aplayer:
   style_cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
   meting: true       # MetingJS 支持
   meting_cdn: https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js # 引用 Meting.js 外部 CDN 地址 (默认不开启)
+
+markdown:
+  plugins:
+    - plugin:
+      name: '@neilsustc/markdown-it-katex'
+      options:
+        strict: false

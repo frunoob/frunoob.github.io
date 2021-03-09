@@ -27,8 +27,9 @@ menu:
   实验 || fa fa-flask:
   - COVID-19数据可视化 || /web-homework/ || fa fa-desktop
   工具 || fas fa-tools :
+  - 手写公式转换 || https://demo.wiris.com/mathtype/en/developers.php || fas fa-cog
   - fa5图标备忘录 || https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87 || fas fa-bookmark
-  - 字幕转换 || https://gotranscript.com/subtitle-converter
+  - 字幕转换 || https://gotranscript.com/subtitle-converter || fas fa-cog
   - 评论管理 || https://frunoob.avosapps.us/ || fas fa-cog
   - markdown-it || /markdown-it/ || fa fa-desktop
   - tableCovert || https://tableconvert.com/ || fa fa-desktop

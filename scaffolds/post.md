@@ -12,11 +12,6 @@ description:
 top_img: false
 cover: false
 comments: false
-toc: 
-toc_number: 
-mathjax: false
-katex: 
-aplayer: 
 highlight_shrink: 
 aside: 
 ---
