@@ -631,7 +631,8 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   <entry>
     <title>vue中如何使用less语法</title>
     <url>/2021/01/04/%E8%AF%BE%E7%A8%8B-web-vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8less%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最新版本的webpack可选择less语言，无需配置。</p>
+]]></content>
       <categories>
         <category>默认分类</category>
       </categories>
