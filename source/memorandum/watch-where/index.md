@@ -9,7 +9,7 @@ top_img: false
 
 ## 操作系统
 [继续观看](https://www.bilibili.com/video/BV1YE411D7nH)
-![image-20210302174741892](https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210302174742.png)
+![](https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210309171846.png)
 
 ## 数据结构
 [开始看](https://www.bilibili.com/video/BV1b7411N798)
