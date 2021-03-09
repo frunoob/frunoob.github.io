@@ -142,13 +142,6 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/2021/02/28/%E8%BD%AF%E4%BB%B6-2021-02-28-%E5%9B%9B%E5%8F%B2%E5%AD%A6%E4%B9%A0/</loc>
-    
-    <lastmod>2021-03-09</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://frunoob.github.io/entertainment/work-out/</loc>
     
     <lastmod>2021-03-09</lastmod>
@@ -240,6 +233,13 @@
   </url>
   
   <url>
+    <loc>https://frunoob.github.io/2021/02/28/%E8%BD%AF%E4%BB%B6-2021-02-28-%E5%9B%9B%E5%8F%B2%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2021-03-09</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://frunoob.github.io/2020/12/27/%E8%AF%BE%E7%A8%8B-web-SSM-VUE%E5%AE%9E%E8%AE%AD%E6%80%BB%E7%BB%93/</loc>
     
     <lastmod>2021-03-09</lastmod>
@@ -247,14 +247,14 @@
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/2021/03/09/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B8%B2%E6%9F%93/</loc>
+    <loc>https://frunoob.github.io/2021/02/28/Web-%E5%8D%9A%E5%AE%A2-2021-02-28-vuepress-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2021-03-09</lastmod>
     
   </url>
   
   <url>
-    <loc>https://frunoob.github.io/2021/02/28/Web-%E5%8D%9A%E5%AE%A2-2021-02-28-vuepress-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://frunoob.github.io/2021/03/09/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B8%B2%E6%9F%93/</loc>
     
     <lastmod>2021-03-09</lastmod>
     
@@ -1746,6 +1746,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://frunoob.github.io/tags/%E5%85%AC%E5%BC%8F%E6%B8%B2%E6%9F%93/</loc>
+    <lastmod>2021-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -2051,6 +2058,13 @@
   
   <url>
     <loc>https://frunoob.github.io/categories/%E8%AF%BE%E7%A8%8B/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2021-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://frunoob.github.io/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
