@@ -20,3 +20,4 @@ aplayer:
 highlight_shrink:
 aside:
 ---
+最新版本的webpack可选择less语言，无需配置。
