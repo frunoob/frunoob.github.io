@@ -16034,9 +16034,12 @@ D.要更加担当有为，携手维护世界和平安宁
   <entry>
     <title>Valine-Admin评论功能加强</title>
     <url>/2020/10/25/Web-leancloud-Valine/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Valine-Admin"><a href="#Valine-Admin" class="headerlink" title="Valine Admin"></a>Valine Admin</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Valine Admin 项目是一个对 <a href="https://valine.js.org/">Valine</a> 评论系统的拓展应用，可增强 Valine 的邮件通知功能。基于 Leancloud 的云引擎与云函数，主要实现评论邮件通知、评论管理、自定义邮件通知模板等功能，而且还可以提供邮件 <code>通知站长</code> 和 <code>@ 通知</code> 的功能。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1>Valine Admin</h1>
+<h2 id="简介">简介</h2>
+<p>Valine Admin 项目是一个对 <a href="https://valine.js.org/">Valine</a> 评论系统的拓展应用，可增强 Valine 的邮件通知功能。基于 Leancloud 的云引擎与云函数，主要实现评论邮件通知、评论管理、自定义邮件通知模板等功能，而且还可以提供邮件 <code>通知站长</code> 和 <code>@ 通知</code> 的功能。</p>
 <p><a href="https://github.com/hongweifuture/Valine-Admin/blob/master/%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE.md#%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5%E5%B1%95%E7%A4%BA">点击查看演示</a></p>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ol>
+<h2 id="部署">部署</h2>
+<ol>
 <li>需要确保 Valine 的基础功能是正常的，参考 <a href="https://valine.js.org/">Valine Docs</a>。</li>
 <li>进入 <a href="https://leancloud.cn/dashboard/applist.html#/apps">Leancloud</a> 对应的 Valine 应用中。</li>
 <li>点击 <code>云引擎 -&gt; 设置</code> 填写代码库：<code>https://github.com/hongweifuture/Valine-Admin</code>，保存 <a href="https://camo.githubusercontent.com/e3d6acd43e97d2e42453075aabcec0e3dba1e1f0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134323630382e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/e3d6acd43e97d2e42453075aabcec0e3dba1e1f0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134323630382e706e67" alt="代码库"></a></li>
@@ -16050,7 +16053,8 @@ D.要更加担当有为，携手维护世界和平安宁
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>SITE_NAME</td>
 <td>HONGWEI’S Blog</td>
 <td>[必填] 网站名称</td>
@@ -16095,20 +16099,22 @@ D.要更加担当有为，携手维护世界和平安宁
 <td>rainbow</td>
 <td>[可选] 通知邮件的模板（default和rainbow），参考高级功能</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <ol>
 <li>点击 <code>云引擎 -&gt; 部署</code>，选择<code>Git源码部署</code>，分支或版本号输入<code>master</code>，下载最新依赖（可选），部署 <a href="https://camo.githubusercontent.com/0a4a4b33c7d95f072e5d96130003ed4e7b6cfe7c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333033352e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/0a4a4b33c7d95f072e5d96130003ed4e7b6cfe7c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333033352e706e67" alt="Git"></a> <a href="https://camo.githubusercontent.com/cc8ec687bfce8f2c6d34fbfb8f0557261a9fe840/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333230352e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/cc8ec687bfce8f2c6d34fbfb8f0557261a9fe840/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333230352e706e67" alt="master"></a></li>
 </ol>
-<h2 id="后台管理"><a href="#后台管理" class="headerlink" title="后台管理"></a>后台管理</h2><ol>
+<h2 id="后台管理">后台管理</h2>
+<ol>
 <li>点击 <code>云引擎 -&gt; 设置</code>，在<code>Web主机域名</code>位置点击<code>申请</code>，获取二级域名，现在的二级域名不支持自定义，如果想好记请参考高级功能 <a href="https://camo.githubusercontent.com/3f495170e97459ae13172b0f09cf34c398b12737/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333331352e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/3f495170e97459ae13172b0f09cf34c398b12737/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373134333331352e706e67" alt="Web主机域名"></a></li>
 <li>设置后台管理登录信息，点击 <code>存储 -&gt; 结构化数据</code>，选择<code>_User -&gt; 添加行</code>，只需要填写<code>password</code>、<code>username</code>、<code>email</code>这三个字段即可, 使用 email 作为账号登陆、password 作为账号密码、username 任意即可。（为了安全考虑，此 email 必须为配置中的 SMTP_USER 或 TO_EMAIL， 否则不允许登录） <a href="https://camo.githubusercontent.com/cd459da8cf3386a974912a21087925b1961909dc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135313333392e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/cd459da8cf3386a974912a21087925b1961909dc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135313333392e706e67" alt="后台管理"></a></li>
 <li>此后，可以通过<code>https://二级域名.leanapp.cn/</code>管理评论</li>
 </ol>
-<h2 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a><del>定时任务</del></h2><div class="note red fas icon modern"><i class="note-icon fa-exclamation"></i><p>此方法已失效<span style="font-size:larger"> 前往解决此问题的方法 <a href="#">Post not found: Web/leancloud/leanCloud-problem001</a> <span></p>
+<h2 id="定时任务"><s>定时任务</s></h2>
+<div class="note red fas icon modern"><i class="note-icon fa-exclamation"></i><p>此方法已失效<span style="font-size:larger"> 前往解决此问题的方法 <a href="/2020/10/25/Web-leancloud-leanCloud-problem001/" title="LeanCloud流控问题">LeanCloud流控问题</a> <span></p>
 </div>
-
 <div class="hide-toggle" ><div class="hide-button toggle-title" style=""><i class="fas fa-caret-right fa-fw"></i><span>点击查看已失效的开启定时任务的方法</span></div>
-    <div class="hide-content"><p> 免费版的 LeanCloud 容器，是有强制性休眠策略的，不能 24 小时运行：</p>
+    <div class="hide-content"><p>免费版的 LeanCloud 容器，是有强制性休眠策略的，不能 24 小时运行：</p>
 <ul>
 <li>每天必须休眠 6 个小时</li>
 <li>30 分钟内没有外部请求，则休眠</li>
@@ -16125,12 +16131,15 @@ D.要更加担当有为，携手维护世界和平安宁
 <li>配置定时任务，击 <code>云引擎 -&gt; 定时任务</code></li>
 </ol>
 <ul>
-<li><p>配置自动唤醒（推荐），创建定时任务，名称任意，生产环境选择<code>self-wake</code>云函数，Cron表达式填入<code>0 */20 7-23 * * ?</code>，表示每天 7 - 23 点每 20 分钟访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</p>
+<li>
+<p>配置自动唤醒（推荐），创建定时任务，名称任意，生产环境选择<code>self-wake</code>云函数，Cron表达式填入<code>0 */20 7-23 * * ?</code>，表示每天 7 - 23 点每 20 分钟访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</p>
 </li>
-<li><p>配置定时检查，创建定时任务，名称任意，生产环境选择<code>resend-mails</code>云函数，Cron表达式填入<code>0 0 8 * * ?</code>，表示每天早8点检查过去24小时内漏发的通知邮件并补发 <a href="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67" alt="img"></a></p>
+<li>
+<p>配置定时检查，创建定时任务，名称任意，生产环境选择<code>resend-mails</code>云函数，Cron表达式填入<code>0 0 8 * * ?</code>，表示每天早8点检查过去24小时内漏发的通知邮件并补发 <a href="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67"><img src= "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2603589213,2523632131&fm=15&gp=0.jpg" data-lazy-src="https://camo.githubusercontent.com/7fc297acdf0ad75604ae6f8f9717decde55cd073/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f686f6e677765696675747572652f6a7344656c69767243444e2f696d672f32303230303230373135333833312e706e67" alt="img"></a></p>
 </li>
 </ul>
-</div></div>]]></content>
+</div></div>
+]]></content>
       <categories>
         <category>博客评论功能</category>
       </categories>
