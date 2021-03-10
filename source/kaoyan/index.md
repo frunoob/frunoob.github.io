@@ -6,6 +6,8 @@ aside: false
 top_img: false
 date: 2021-01-13 22:16:48
 ---
+[修改这个页面](https://github.com/frunoob/frunoob.github.io/edit/hexo/source/kaoyan/index.md)
+
 ## <a href="./schedule">考研时间安排表</a>
 
 ## <a href="./videos">视频课程</a>
