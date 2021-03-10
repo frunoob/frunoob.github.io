@@ -14394,59 +14394,69 @@ D.要更加担当有为，携手维护世界和平安宁
   <entry>
     <title>标签外挂</title>
     <url>/2020/11/22/Web-%E5%8D%9A%E5%AE%A2-%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Note-Bootstrap-Callout"><a href="#Note-Bootstrap-Callout" class="headerlink" title="Note (Bootstrap Callout)"></a>Note (Bootstrap Callout)</h2><div class="tabs" id="t1"><ul class="nav-tabs"><li class="tab"><button type="button" data-href="#t1-1"><i class="fas fa-angle-right"></i>用法1</button></li><li class="tab"><button type="button" data-href="#t1-2"><i class="fas fa-angle-right"></i>用法二</button></li></ul><div class="tab-contents"><div class="tab-item-content" id="t1-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] [style] %&#125; </span><br><span class="line">Any content (support inline tags too.io). </span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="Note-Bootstrap-Callout">Note (Bootstrap Callout)</h2>
+<div class="tabs" id="t1"><ul class="nav-tabs"><li class="tab"><button type="button" data-href="#t1-1"><i class="fas fa-angle-right"></i>用法1</button></li><li class="tab"><button type="button" data-href="#t1-2"><i class="fas fa-angle-right"></i>用法二</button></li></ul><div class="tab-contents"><div class="tab-item-content" id="t1-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] [style] %&#125; </span><br><span class="line">Any content (support inline tags too.io). </span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
-<th align="center">名称</th>
-<th align="center">用法</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">用法</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">class</td>
-<td align="center">【可选】标识，不同的标识有不同的配色<br />（default / primary / success / info / warning / danger）</td>
+<tbody>
+<tr>
+<td style="text-align:center">class</td>
+<td style="text-align:center">【可选】标识，不同的标识有不同的配色<br />（default / primary / success / info / warning / danger）</td>
 </tr>
 <tr>
-<td align="center">no-icon</td>
-<td align="center">【可选】不显示icon</td>
+<td style="text-align:center">no-icon</td>
+<td style="text-align:center">【可选】不显示icon</td>
 </tr>
 <tr>
-<td align="center">style</td>
-<td align="center">【可选】可覆盖配置中的style<br />（simple/modern/flat/disabled）</td>
+<td style="text-align:center">style</td>
+<td style="text-align:center">【可选】可覆盖配置中的style<br />（simple/modern/flat/disabled）</td>
 </tr>
-</tbody></table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="t1-2"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note [color] [icon] [style] %&#125; </span><br><span class="line">Any content (support inline tags too.io). </span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="center">名称</th>
-<th align="center">用法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">color</td>
-<td align="center">【可选】颜色<br />（default/blue/pink/red/purple/orange/green）</td>
-</tr>
-<tr>
-<td align="center">icon</td>
-<td align="center">【可选】可配置自定义icon（只支持fontawesome图标，也可配置no-icon）</td>
-</tr>
-<tr>
-<td align="center">style</td>
-<td align="center">【可选】可以覆盖配置中的style<br />（simple/modern/flat/disabled）</td>
-</tr>
-</tbody></table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-
-
-<h2 id="tag-hide"><a href="#tag-hide" class="headerlink" title="tag-hide"></a>tag-hide</h2><div class="tabs" id="tag-hide"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tag-hide-1"><i class="fas fa-angle-right"></i>inline</button></li><li class="tab"><button type="button" data-href="#tag-hide-2"><i class="fas fa-angle-right"></i>Block</button></li><li class="tab"><button type="button" data-href="#tag-hide-3"><i class="fas fa-angle-right"></i>Toggle</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tag-hide-1"><div class="note warning modern"><p><code>inline</code>在文本里面添加按钮隐藏内容，只限文字<br>( content不能包含英文逗号，可用<code>&amp;sbquo;</code>)</p>
+</tbody>
+</table>
+<p><code>default no-icon simple</code>:</p>
+<div class="note default no-icon simple"><p>Any content (support inline tags <a href="http://too.io">too.io</a>).</p>
 </div>
-
+`primary no-icon modern`:
+<div class="note primary no-icon modern"><p>Any content (support inline tags <a href="http://too.io">too.io</a>).</p>
+</div>
+`success no-icon flat`:
+<div class="note success no-icon flat"><p>Any content (support inline tags <a href="http://too.io">too.io</a>).</p>
+</div>
+`info no-icon disabled`:
+<div class="note info no-icon disabled"><p>Any content (support inline tags <a href="http://too.io">too.io</a>).</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="t1-2"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note [color] [icon] [style] %&#125; </span><br><span class="line">Any content (support inline tags too.io). </span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">color</td>
+<td style="text-align:center">【可选】颜色<br />（default/blue/pink/red/purple/orange/green）</td>
+</tr>
+<tr>
+<td style="text-align:center">icon</td>
+<td style="text-align:center">【可选】可配置自定义icon（只支持fontawesome图标，也可配置no-icon）</td>
+</tr>
+<tr>
+<td style="text-align:center">style</td>
+<td style="text-align:center">【可选】可以覆盖配置中的style<br />（simple/modern/flat/disabled）</td>
+</tr>
+</tbody>
+</table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+<h2 id="tag-hide">tag-hide</h2>
+<div class="tabs" id="tag-hide"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tag-hide-1"><i class="fas fa-angle-right"></i>inline</button></li><li class="tab"><button type="button" data-href="#tag-hide-2"><i class="fas fa-angle-right"></i>Block</button></li><li class="tab"><button type="button" data-href="#tag-hide-3"><i class="fas fa-angle-right"></i>Toggle</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tag-hide-1"><div class="note warning modern"><p><code>inline</code>在文本里面添加按钮隐藏内容，只限文字<br>
+( content不能包含英文逗号，可用<code>&amp;sbquo;</code>)</p>
+</div>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% hideInline content,display,bg,color %&#125;</span><br></pre></td></tr></table></figure>
-
-
-
 <ul>
 <li>content: 文本内容</li>
 <li>display: 按钮显示的文字(可选)</li>
@@ -14455,9 +14465,7 @@ D.要更加担当有为，携手维护世界和平安宁
 </ul><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tag-hide-2"><div class="note warning modern"><p><code>block</code>独立的block隐藏内容，可以隐藏很多内容，包括图片，代码块等等</p>
 <p>( display不能包含英文逗号，可用<code>&amp;sbquo;</code>)</p>
 </div>
-
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% hideBlock display,bg,color %&#125; </span><br><span class="line">content </span><br><span class="line">&#123;% endhideBlock %&#125;</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>content: 文本内容</li>
 <li>display: 按钮显示的文字(可选)</li>
@@ -14466,15 +14474,12 @@ D.要更加担当有为，携手维护世界和平安宁
 </ul><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tag-hide-3"><div class="note warning modern"><p>如果你需要展示的内容太多，可以把它隐藏在收缩框里，需要时再把它展开。</p>
 <p>( display不能包含英文逗号，可用<code>&amp;sbquo;</code>)</p>
 </div>
-
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% hideToggle display,bg,color %&#125; </span><br><span class="line">content </span><br><span class="line">&#123;% endhideToggle %&#125;</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
-
-
-
-<h2 id="Gallery相册图库"><a href="#Gallery相册图库" class="headerlink" title="Gallery相册图库"></a>Gallery相册图库</h2><ul>
-<li><p>相册集合</p>
+<h2 id="Gallery相册图库">Gallery相册图库</h2>
+<ul>
+<li>
+<p>相册集合</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;gallery-group-main&quot;&gt; </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125; </span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>name：图库名字</li>
 <li>description：图库描述</li>
@@ -14482,29 +14487,30 @@ D.要更加担当有为，携手维护世界和平安宁
 <li>img-url：图库封面的地址</li>
 </ul>
 </li>
-<li><p>Gallery相册 </p>
+<li>
+<p>Gallery相册</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% gallery %&#125; </span><br><span class="line">![](url)</span><br><span class="line">![](url)</span><br><span class="line">![](url)</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure>
-
 </li>
 </ul>
-<h2 id="mermaid"><a href="#mermaid" class="headerlink" title="mermaid"></a>mermaid</h2>  <div class="note red fas icon modern"><i class="note-icon fa-exclamation"></i><p>mermaid标签不允许嵌套于一些隐藏属性的标签外挂，例如: tag-hide内的标签外挂和tabs标签外挂，这会导致mermaid图示无法正常显示 </p>
+<h2 id="mermaid">mermaid</h2>
+  <div class="note red fas icon modern"><i class="note-icon fa-exclamation"></i><p>mermaid标签不允许嵌套于一些隐藏属性的标签外挂，例如: tag-hide内的标签外挂和tabs标签外挂，这会导致mermaid图示无法正常显示</p>
 </div>
-
-<p>  使用mermaid标签可以绘制Flowchart（流程图）、Sequence diagram（时序图）、Class Diagram（类别图）、State Diagram（状态图）、Gantt（甘特图）和Pie Chart（圆形图），具体可以查看<a href="https://mermaid-js.github.io/mermaid/#/">mermaid</a>文档</p>
+<p>使用mermaid标签可以绘制Flowchart（流程图）、Sequence diagram（时序图）、Class Diagram（类别图）、State Diagram（状态图）、Gantt（甘特图）和Pie Chart（圆形图），具体可以查看<a href="https://mermaid-js.github.io/mermaid/#/">mermaid</a>文档</p>
 <ul>
-<li><p>打开mermaid标签需要修改 <span style="color:red">主题配置文件</span></p>
+<li>
+<p>打开mermaid标签需要修改 <span style="color:red">主题配置文件</span></p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">mermaid:</span>  </span><br><span class="line">	<span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>写法：</p>
+<li>
+<p>写法：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">内容</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">pie</span><br><span class="line"><span class="code">    title Key elements in Product X</span></span><br><span class="line"><span class="code">    &quot;Calcium&quot; : 42.96</span></span><br><span class="line"><span class="code">    &quot;Potassium&quot; : 50.05</span></span><br><span class="line"><span class="code">    &quot;Magnesium&quot; : 10.01</span></span><br><span class="line"><span class="code">    &quot;Iron&quot; :  5</span></span><br><span class="line"><span class="code">&#123;% endmermaid %&#125;</span></span><br></pre></td></tr></table></figure>
-
 </li>
 </ul>
-<h2 id="Button"><a href="#Button" class="headerlink" title="Button"></a>Button</h2>   <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% btn [url],[text],[icon],[color] [style] [layout] [position] [size] %&#125;</span><br><span class="line"></span><br><span class="line">[url] :链接</span><br><span class="line">[text] :按钮文字</span><br><span class="line">[icon] : [可选]图标</span><br><span class="line">[color] : [可选]按钮背景颜色(默认style时）</span><br><span class="line"><span class="code">                      按钮字体和边框颜色(outline时) </span></span><br><span class="line"><span class="code">                      default/blue/pink /red/purple/orange/green </span></span><br><span class="line"><span class="code">[style] : [可选]按钮样式默认实心</span></span><br><span class="line"><span class="code">                      outline/留空</span></span><br><span class="line"><span class="code">[layout] : [可选]按钮布局默认为line </span></span><br><span class="line"><span class="code">                      block/留空</span></span><br><span class="line"><span class="code">[position] : [可选]按钮位置前提是设置了layout为block默认为左边</span></span><br><span class="line"><span class="code">                      center/right/留空</span></span><br><span class="line"><span class="code">[size] : [可选]按钮大小</span></span><br><span class="line"><span class="code">                      larger/留空</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="tabs"><a href="#tabs" class="headerlink" title="tabs"></a>tabs</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% tabs Unique name, [index] %&#125; </span><br><span class="line">&lt;!-- tab [Tab caption] [@icon] --&gt; </span><br><span class="line">Any content (support inline tags too). </span><br><span class="line">&lt;!-- endtab --&gt; </span><br><span class="line">&#123;% endtabs %&#125;</span><br><span class="line"></span><br><span class="line">Unique name : Unique name of tabs block tag without comma. </span><br><span class="line">                Will be used in #id&#39;s as prefix for each tab with their index numbers. </span><br><span class="line">                If there are whitespaces in name, for generate #id all whitespaces will replaced by dashes. </span><br><span class="line">                Only for current url of post&#x2F;page must be unique! </span><br><span class="line">[index] : Index number of active tab. </span><br><span class="line">                If not specified, first tab (1) will be selected. </span><br><span class="line">                If index is -1, no tab will be selected. It&#39;s will be something like spoiler. </span><br><span class="line">                Optional parameter. </span><br><span class="line">[Tab caption] : Caption of current tab. </span><br><span class="line">                If not caption specified, unique name with tab index suffix will be used as caption of tab.</span><br><span class="line">                If not caption specified, but specified icon, caption will empty. </span><br><span class="line">                Optional parameter. </span><br><span class="line">[@icon] : FontAwesome icon name (full-name, look like &#39;fas fa-font&#39;) </span><br><span class="line">                Can be specified with or without space; eg &#39;Tab caption @icon&#39; similar to &#39;Tab caption@icon&#39;. </span><br><span class="line">                Optional parameter.</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">pie</span><br><span class="line"><span class="code">    title Key elements in Product X</span></span><br><span class="line"><span class="code">    &quot;Calcium&quot; : 42.96</span></span><br><span class="line"><span class="code">    &quot;Potassium&quot; : 50.05</span></span><br><span class="line"><span class="code">    &quot;Magnesium&quot; : 10.01</span></span><br><span class="line"><span class="code">    &quot;Iron&quot; :  5</span></span><br><span class="line"><span class="code">&#123;% endmermaid %&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Button">Button</h2>
+   <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% btn [url],[text],[icon],[color] [style] [layout] [position] [size] %&#125;</span><br><span class="line"></span><br><span class="line">[url] :链接</span><br><span class="line">[text] :按钮文字</span><br><span class="line">[icon] : [可选]图标</span><br><span class="line">[color] : [可选]按钮背景颜色(默认style时）</span><br><span class="line"><span class="code">                      按钮字体和边框颜色(outline时) </span></span><br><span class="line"><span class="code">                      default/blue/pink /red/purple/orange/green </span></span><br><span class="line"><span class="code">[style] : [可选]按钮样式默认实心</span></span><br><span class="line"><span class="code">                      outline/留空</span></span><br><span class="line"><span class="code">[layout] : [可选]按钮布局默认为line </span></span><br><span class="line"><span class="code">                      block/留空</span></span><br><span class="line"><span class="code">[position] : [可选]按钮位置前提是设置了layout为block默认为左边</span></span><br><span class="line"><span class="code">                      center/right/留空</span></span><br><span class="line"><span class="code">[size] : [可选]按钮大小</span></span><br><span class="line"><span class="code">                      larger/留空</span></span><br></pre></td></tr></table></figure>
+<h2 id="tabs">tabs</h2>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% tabs Unique name, [index] %&#125; </span><br><span class="line">&lt;!-- tab [Tab caption] [@icon] --&gt; </span><br><span class="line">Any content (support inline tags too). </span><br><span class="line">&lt;!-- endtab --&gt; </span><br><span class="line">&#123;% endtabs %&#125;</span><br><span class="line"></span><br><span class="line">Unique name : Unique name of tabs block tag without comma. </span><br><span class="line">                Will be used in #id&#39;s as prefix for each tab with their index numbers. </span><br><span class="line">                If there are whitespaces in name, for generate #id all whitespaces will replaced by dashes. </span><br><span class="line">                Only for current url of post&#x2F;page must be unique! </span><br><span class="line">[index] : Index number of active tab. </span><br><span class="line">                If not specified, first tab (1) will be selected. </span><br><span class="line">                If index is -1, no tab will be selected. It&#39;s will be something like spoiler. </span><br><span class="line">                Optional parameter. </span><br><span class="line">[Tab caption] : Caption of current tab. </span><br><span class="line">                If not caption specified, unique name with tab index suffix will be used as caption of tab.</span><br><span class="line">                If not caption specified, but specified icon, caption will empty. </span><br><span class="line">                Optional parameter. </span><br><span class="line">[@icon] : FontAwesome icon name (full-name, look like &#39;fas fa-font&#39;) </span><br><span class="line">                Can be specified with or without space; eg &#39;Tab caption @icon&#39; similar to &#39;Tab caption@icon&#39;. </span><br><span class="line">                Optional parameter.</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Web</category>
