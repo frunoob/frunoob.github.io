@@ -2,7 +2,7 @@
 title: 毛概笔记
 type: ''
 comments: false
-aside: false
+aside: true
 top_img: false
 ---
 
