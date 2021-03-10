@@ -9,10 +9,11 @@ top_img: false
 
 ## 操作系统
 [继续观看](https://www.bilibili.com/video/BV1YE411D7nH)
-![](https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210309171846.png)
+![](https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210310205126.png)
 
 ## 数据结构
-[开始看](https://www.bilibili.com/video/BV1b7411N798)
+[继续看](https://www.bilibili.com/video/BV1b7411N798)
+![](https://cdn.jsdelivr.net/gh/frunoob/images/blog/20210310205142.png)
 
 
 ## 高等数学
