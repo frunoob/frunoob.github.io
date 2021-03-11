@@ -935,8 +935,8 @@ lazyload:
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
-# pwa:
-#   enable: true
+pwa:
+  enable: true
 #   manifest: /image/pwa/manifest.json
 #   apple_touch_icon: /image/pwa/apple-touch-icon.png
 #   favicon_32_32: /image/pwa/32.png
@@ -974,6 +974,7 @@ inject:
   # - <link rel="stylesheet" href="/xxx.css">
   # 自定义的js库
   bottom:
+    - <script src="https://frunoob.github.io/Library/blog/js/editPage.js" defer></script>
     - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@v10.2/blog/js/siteFooter.js"></script>
     # <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     # - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/hls.js"></script>
