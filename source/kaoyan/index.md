@@ -8,7 +8,7 @@ date: 2021-01-13 22:16:48
 ---
 <script hidden>
         console.log(localStorage.getItem("private"));
-        if(localStorage.getItem("private")!= "yes"){if(prompt("输入密码：")=="1305108661Qq"){localStorage.setItem("private","yes")}else{document.body.hidden=true;window.location.href="../"}}
+        if(localStorage.getItem("private")!= "yes"){if(prompt("输入密码：")=="1305108661Qq"){localStorage.setItem("private","yes")}else{document.body.hidden=true;window.location.href="/"}}
         else {};
 </script>
 [修改这个页面](https://github.com/frunoob/frunoob.github.io/edit/hexo/source/kaoyan/index.md)
