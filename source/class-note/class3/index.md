@@ -10,3 +10,7 @@ top_img: false
 
 
 ## 第一节课
+https://zhibo.chaoxing.com/9362904
+
+## 第二节课
+https://zhibo.chaoxing.com/9480747
