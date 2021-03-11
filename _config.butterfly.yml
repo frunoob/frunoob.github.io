@@ -962,6 +962,7 @@ post_edit:
 inject:
   head:
   - <meta name="baidu-site-verification" content="code-qKvRSQMSdK" />
+  - <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   - <meta name="referrer" content="no-referrer-when-downgrade" />
   - <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" ></script>
   - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/hls-player/video.js"></script>
