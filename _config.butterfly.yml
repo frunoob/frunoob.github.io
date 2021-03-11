@@ -27,6 +27,7 @@ menu:
   实验 || fa fa-flask:
   - COVID-19数据可视化 || /web-homework/ || fa fa-desktop
   工具 || fas fa-tools :
+  - 云引擎日志 || https://console.leancloud.app/apps/EMvWB4MFkVYX9zOu8mPrXden-MdYXbMMI/engine/groups/web/log || fas fa-cog
   - 手写公式转换 || https://demo.wiris.com/mathtype/en/developers.php || fas fa-cog
   - fa5图标备忘录 || https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87 || fas fa-bookmark
   - 字幕转换 || https://gotranscript.com/subtitle-converter || fas fa-cog
