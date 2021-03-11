@@ -2,7 +2,7 @@
 title: 计算机软件学科前沿
 type: ''
 comments: false
-aside: false
+aside: 
 top_img: false
 ---
 
