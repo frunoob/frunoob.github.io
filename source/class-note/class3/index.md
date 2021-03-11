@@ -11,11 +11,12 @@ top_img: false
 
 ## 第一节课
 {%note primary no-icon %}
-https://zhibo.chaoxing.com/9362904{%endnote%}
+[课程回播](https://zhibo.chaoxing.com/9362904){%endnote%}
 
 ## 第二节课
 {%note primary no-icon %}
-https://zhibo.chaoxing.com/9480747
+[课程回播](https://zhibo.chaoxing.com/9480747)
+
 {%endnote%}
 
 ### 学习资料
