@@ -6,7 +6,12 @@ aside: false
 top_img: false
 date: 2020-12-05 23:28:55
 ---
-<script>if(prompt("输入密码：")=="1024"){document.querySelector(".box").removeAttribute("class");}else{window.open("https://www.frunoob.xyz/","_self");}</script>
+        <script hidden>
+        console.log(localStorage.getItem("private"));
+        if(localStorage.getItem("private")!= "yes"){if(prompt("输入密码：")=="1305108661Qq"){localStorage.setItem("private","yes")}else{window.location.href="../"}}
+        else {};
+
+        </script>
 
 <div class="box">
 ##  图片
