@@ -9,7 +9,7 @@ date: 2020-12-05 23:28:55
         
 <script hidden>
  console.log(localStorage.getItem("private"));
-if(localStorage.getItem("private")!= "yes"){if(prompt("输入密码：")=="1305108661Qq"){localStorage.setItem("private","yes")}else{window.location.href="../"}}
+if(localStorage.getItem("private")!= "yes"){if(prompt("输入密码：")=="1305108661Qq"){localStorage.setItem("private","yes")}else{document.body.hidden=true;window.location.href="../"}}
 else {};</script>
 
 <div class="box">
