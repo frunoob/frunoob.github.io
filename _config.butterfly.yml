@@ -975,7 +975,7 @@ inject:
   # - <link rel="stylesheet" href="/xxx.css">
   # 自定义的js库
   bottom:
-    - <script src="https://frunoob.github.io/Library/blog/js/editPage.js" defer></script>
+    - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@v10.6/blog/js/editPage.js" ></script>
     - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@v10.2/blog/js/siteFooter.js"></script>
     # <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     # - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@master/blog/js/hls.js"></script>
