@@ -1,0 +1,26 @@
+---
+title: porn
+type: ''
+comments: false
+aside: false
+top_img: false
+---
+
+<style>
+    video{
+        height: 100%;
+        width: 100%;
+    }
+</style>
+ <video id="video" controls></video>
+ <script>
+   var video = document.getElementById('video');
+   var videoSrc = 'http://t2.cdn2020.com:12345/video/m3u8/2019/12/26/ad4a0648/index.m3u8';
+   if (video.canPlayType('application/vnd.apple.mpegurl')) {
+     video.src = videoSrc;
+   } else if (Hls.isSupported()) {
+     var hls = new Hls();
+     hls.loadSource(videoSrc);
+     hls.attachMedia(video);
+   }
+ </script>
