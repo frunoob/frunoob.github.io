@@ -166,7 +166,7 @@ top_img: false
 ## 扩展资料
 
 {%hideToggle 2018计算机图形学研究报告%}
-<img id="books" style="width: 100%;"
+<img id="books" style="width: 500px;"
         src="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/1.png"></img>
 <button style="background:blue;" id="button">下一页</button>
 <script>
@@ -185,7 +185,7 @@ document.getElementById("books").attributes[2].value = "https://s3.ananas.chaoxi
         button.addEventListener("click", changePage);
 </script>
 <br/>
-<img id="books2" style="width: 100%;" src="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/1.png"></img>
+<img id="books2" style="width: 500px;" src="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/1.png"></img>
 <button style="background:blue;" id="button2">下一页</button>
 <script>
         var pageNum2 = 1;
