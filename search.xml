@@ -346,7 +346,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   <entry>
     <title>vuepress 搭建博客过程记录</title>
     <url>/2021/02/28/Web-%E5%8D%9A%E5%AE%A2-2021-02-28-vuepress-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="VuePress介绍">VuePress介绍</h2>
+    <content><![CDATA[<h2 id="VuePress介绍">VuePress介绍</h2>
 <p>VuePress由两个部分组成：第一个部分是 <strong>极简静态生成器</strong>，它包含由Vue驱动的主题系统和插件API，另一个部分是为书写技术文档而优化的默认主题，它诞生的初衷是为了支持Vue及其子项目的文档需求。</p>
 <h2 id="废话不说，开始">废话不说，开始</h2>
 <ol>
@@ -403,7 +403,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   <entry>
     <title>四史学习</title>
     <url>/2021/02/28/%E8%BD%AF%E4%BB%B6-2021-02-28-%E5%9B%9B%E5%8F%B2%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="note primary modern"><p>刚开始答题错误率可能高一点，但是每次打错都会更新题库，随着时间推移，错误率会愈来愈小，无需担心，用就完事儿了。</p>
+    <content><![CDATA[<div class="note primary modern"><p>刚开始答题错误率可能高一点，但是每次打错都会更新题库，随着时间推移，错误率会愈来愈小，无需担心，用就完事儿了。</p>
 </div>
 <p>软件来源<a href="https://github.com/deximy/FxxkSsxx">deximy</a></p>
 <p>下载所需<a href="https://frunoob.lanzous.com/iQg6oma494j">软件</a></p>
@@ -663,7 +663,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   <entry>
     <title>vue中如何使用less语法</title>
     <url>/2021/01/04/%E8%AF%BE%E7%A8%8B-web-vue%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8less%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最新版本的webpack可选择less语言，无需配置。</p>
+    <content><![CDATA[<p>最新版本的webpack可选择less语言，无需配置。</p>
 ]]></content>
       <categories>
         <category>默认分类</category>
@@ -788,7 +788,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   <entry>
     <title>SSM-VUE实训总结</title>
     <url>/2020/12/27/%E8%AF%BE%E7%A8%8B-web-SSM-VUE%E5%AE%9E%E8%AE%AD%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="实训总结：">实训总结：</h2>
+    <content><![CDATA[<h2 id="实训总结：">实训总结：</h2>
 <p>本次实训通过SSM+VUE实现前后端分离。SSM（Spring+SpringMVC+MyBatis）框架是由Spring、MyBatis两个开源框架整合而成(SpringMVC是Spring中的部分内容)。首先感谢老师的细心讲解和耐心的指导。一个完整的项目包括了前端、后端、中间件。通过本次实训我了解了MVC设计模式，其中M指的是model，模型层，想业务层提供数据；要在这里创建实体类，实体类与数据库表有着对应关系。V指的是view，视图层，其中包括了html，jsp，theamleaf等等。C表示control，控制层。我还认识了跨域，当域名或端口号发生变化的时候就是跨域，原生的JavaScript和ajax是不支持跨域的。mysql的分页关键字是limit<br>
 a,b。其中a表示：数据的起始位置，b：表示从起始位置向后的偏移量。知道了json数据格式是前后端交互的常用的数据格式。本次实训主要是将前后端分离实现数据的增删查改，这次实训也纠正了我的错误的观念“jsp是前端技术”，JSP的全称是“Java<br>
 Server<br>
@@ -14224,7 +14224,7 @@ D.要更加担当有为，携手维护世界和平安宁
   <entry>
     <title>jsdelivr使用@latest访问未立即生效</title>
     <url>/2020/11/22/Web-CDN-github%E5%86%85%E5%AE%B9%E4%BF%AE%E6%94%B9jsdelivr%E6%9C%AA%E7%AB%8B%E5%8D%B3%E6%9B%B4%E6%96%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div class="note primary modern"><p>明明都已经在github上发布了最新版本，但是使用jsdelivr访问文件还不是最新版？！</p>
+    <content><![CDATA[<div class="note primary modern"><p>明明都已经在github上发布了最新版本，但是使用jsdelivr访问文件还不是最新版？！</p>
 </div>
 <h2 id="解决方法">解决方法</h2>
 <div class="tabs" id="jsdelivr"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#jsdelivr-1"><i class="fas fa-angle-right"></i>清除缓存</button></li><li class="tab"><button type="button" data-href="#jsdelivr-2"><i class="fas fa-angle-right"></i>版本号</button></li><li class="tab"><button type="button" data-href="#jsdelivr-3"><i class="fas fa-angle-right"></i>API</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="jsdelivr-1"><p>访问<code>https://purge.jsdelivr.net/gh/&lt;Owner&gt;/&lt;Repository name&gt;@latest/&lt;file path&gt;</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="jsdelivr-2"><p>访问<code>https://cdn.jsdelivr.net/gh/&lt;Owner&gt;/&lt;Repository name&gt;@&lt;Tag version&gt;/&lt;file path&gt;</code></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="jsdelivr-3"><p><a class="btn-beautify button--animated " href="https://github.com/jsdelivr/data.jsdelivr.com" 
@@ -14426,7 +14426,7 @@ D.要更加担当有为，携手维护世界和平安宁
   <entry>
     <title>标签外挂</title>
     <url>/2020/11/22/Web-%E5%8D%9A%E5%AE%A2-%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="Note-Bootstrap-Callout">Note (Bootstrap Callout)</h2>
+    <content><![CDATA[<h2 id="Note-Bootstrap-Callout">Note (Bootstrap Callout)</h2>
 <div class="tabs" id="t1"><ul class="nav-tabs"><li class="tab"><button type="button" data-href="#t1-1"><i class="fas fa-angle-right"></i>用法1</button></li><li class="tab"><button type="button" data-href="#t1-2"><i class="fas fa-angle-right"></i>用法二</button></li></ul><div class="tab-contents"><div class="tab-item-content" id="t1-1"><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] [style] %&#125; </span><br><span class="line">Any content (support inline tags too.io). </span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
@@ -16072,7 +16072,7 @@ D.要更加担当有为，携手维护世界和平安宁
   <entry>
     <title>Valine-Admin评论功能加强</title>
     <url>/2020/10/25/Web-leancloud-Valine/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1>Valine Admin</h1>
+    <content><![CDATA[<h1>Valine Admin</h1>
 <h2 id="简介">简介</h2>
 <p>Valine Admin 项目是一个对 <a href="https://valine.js.org/">Valine</a> 评论系统的拓展应用，可增强 Valine 的邮件通知功能。基于 Leancloud 的云引擎与云函数，主要实现评论邮件通知、评论管理、自定义邮件通知模板等功能，而且还可以提供邮件 <code>通知站长</code> 和 <code>@ 通知</code> 的功能。</p>
 <p><a href="https://github.com/hongweifuture/Valine-Admin/blob/master/%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE.md#%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5%E5%B1%95%E7%A4%BA">点击查看演示</a></p>
