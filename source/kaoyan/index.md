@@ -6,12 +6,6 @@ aside: false
 top_img: false
 date: 2021-01-13 22:16:48
 ---
-<script hidden>
-        console.log(localStorage.getItem("private"));
-        if(localStorage.getItem("private")!= "yes"){if(prompt("输入密码：")=="1305108661Qq"){localStorage.setItem("private","yes")}else{document.body.hidden=true;window.location.href="/"}}
-        else {};
-</script>
-
 
 
 ## <a href="./schedule">考研时间安排表</a>

@@ -15,9 +15,10 @@ menu:
   - 笔记 || /class-note/ || fas fa-pencil-alt
   - 知识总结 || /复习/ || fas fa-list
   - 备忘清单 || /memorandum/ || fas fa-calendar-alt
-  - 日常记账 || /tally/ || fas fa-list
-  - github-private || https://github.com/frunoob/PRIVATE || fas  fa-hand-paper 
+  - 日常记账 || /private/tally/ || fas fa-list
   - Graduate|| /kaoyan/ || fas fa-pencil-alt
+  - 日记 || /private/diary/ || fas fa-pencil-alt
+  - 读书笔记 || /private/reading-note/ || fas fa-list
   娱乐||fas fa-list:
   - 图片 || /entertainment/Gallery/ || fas fa-images
   - 电影 || /entertainment/film/ || fas fa-film
@@ -27,6 +28,7 @@ menu:
   实验 || fa fa-flask:
   - COVID-19数据可视化 || /web-homework/ || fa fa-desktop
   工具 || fas fa-tools :
+  - js混淆加密 || http://tool.chinaz.com/js.aspx || fas fa-cog
   - 云引擎日志 || https://console.leancloud.app/apps/EMvWB4MFkVYX9zOu8mPrXden-MdYXbMMI/engine/groups/web/log || fas fa-cog
   - 手写公式转换 || https://demo.wiris.com/mathtype/en/developers.php || fas fa-cog
   - fa5图标备忘录 || https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87 || fas fa-bookmark
@@ -216,7 +218,7 @@ index_post_content:
 toc:
   enable: true
   number: true
-  auto_open: true # auto open the sidebar
+  auto_open: false # auto open the sidebar
 
 post_copyright:
   enable: false
@@ -664,7 +666,7 @@ subtitle:
   # Typewriter Effect (打字效果)
   effect: true
   # loop (循環打字)
-  loop: false
+  loop: true
   # source調用第三方服務
   # source: false 關閉調用
   # source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
@@ -673,10 +675,7 @@ subtitle:
   # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
   # source: true 
-  # source: 2
-  # source: 2
-  # source: 3
-  # source: 4
+  source: 4
   # 如果有英文逗號' , ',請使用轉義字元 &#44;
   # 如果有英文雙引號' " ',請使用轉義字元 &quot;
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
@@ -702,8 +701,8 @@ subtitle:
   # - 我以我血荐轩辕
   # - 真正的强者，从不掩饰自己的错误
   # - 自然是平衡的，你也一样
-  - 言必行，行必果，谨言慎行
-  - 勿冲动，但有深思远虑且勿犹豫
+  - 言必行，行必果
+  # - 勿冲动，但有深思远虑且勿犹豫
 # Loading Animation (加載動畫)
 preloader: false
 
@@ -880,7 +879,13 @@ artitalk:
 pjax:
   enable: true
   exclude:
-    # - xxxx
+    - /lover/
+    - /videos/porn/
+    - /private/tally/
+    - /kaoyan/
+    - /private/diary/
+    - /private/reading-note/
+
     # - xxxx
 ##侧边栏歌单
 # aplayer:
@@ -974,7 +979,11 @@ inject:
   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frunoob/Library@v10.3/blog/css/zidingyi.css">
   # - <link rel="stylesheet" href="/xxx.css">
   # 自定义的js库
+  - <script src="/scripts/pass.js"></script>
+  # - <script>console.log("pass.js");var frunoobPass=[{'lover':"5201314",'porn':"1305108661",'private':"1305108661Qq",}];var passId="1305108661abcdefghijklmn123456789";for(let key in frunoobPass[0]){if(location.pathname.match(RegExp("^/"+key))){console.log(key+"匹配成功");if(localStorage.getItem(key)!=passId){if(prompt("输入密码：")==frunoobPass[0][key]){localStorage.setItem(key,passId)}else{document.body.hidden=true;window.location.href="/"}}else{}}}</script>
+  # - <script>eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('6 4=[{\'j\':"l",\'i\':"f",\'h\':"g",}];6 2="k";9(a 1 d 4[0]){3(7.e.b(c("^/"+1))){v.u(1+"t");3(5.y(1)!=2){3(x("w：")==4[0][1]){5.o(1,2)}8{n.m.r=q;p.7.s="/"}}8{}}}',35,35,'|key|passId|if|frunoobPass|localStorage|var|location|else|for|let|match|RegExp|in|pathname|1305108661|1305108661Qq|private|porn|lover|1305108661abcdefghijklmn123456789|5201314|body|document|setItem|window|true|hidden|href|匹配成功|log|console|输入密码|prompt|getItem'.split('|'),0,{}))</script>
   bottom:
+   
     - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@v10.6/blog/js/editPage.js" ></script>
     - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library@v10.2/blog/js/siteFooter.js"></script>
     # <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
@@ -988,7 +997,7 @@ inject:
     # - <script src="https://cdn.jsdelivr.net/gh/frunoob/Library/blog/footer.js"></script>
     # - <a href="https://github.com/frunoob/frunoob.github.io/edit/master<%=window.location.pathname%>" target="_blank">edit this page</a>
     - <script>setDay()</script>
-    
+    # - <div class="aplayer no-destroy" data-id="580511169" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" data-volume="0.4"   muted></div>    
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
