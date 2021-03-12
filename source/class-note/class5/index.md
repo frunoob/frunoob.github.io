@@ -168,14 +168,15 @@ top_img: false
 {%hideToggle 2018计算机图形学研究报告%}
 <img id="books" style="width: 100%;"
         src="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/1.png"></img>
-<button id="button">下一页</button>
+<button style="background:blue;" id="button">下一页</button>
 <script>
-        var pageNum = 1;
-        function changePage() {
-            pageNum++;
-            if (pageNum < 53) {
-                document.getElementById("books").attributes[2].value = "https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/" + pageNum + ".png";
-            } else {
+var pageNum = 1;
+function changePage() {
+if (pageNum < 53) {
+pageNum++;
+book1="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/" + pageNum + ".png";
+document.getElementById("books").attributes[2].value = "https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/" + pageNum + ".png";
+} else {
                 document.getElementById("books").hidden = true;
             }
             console.log(pageNum);
@@ -185,12 +186,13 @@ top_img: false
 </script>
 <br/>
 <img id="books2" style="width: 100%;" src="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/1.png"></img>
-<button id="button2">下一页</button>
+<button style="background:blue;" id="button2">下一页</button>
 <script>
         var pageNum2 = 1;
         function changePage2() {
+if (pageNum2 < 33) {
             pageNum2++;
-            if (pageNum2 < 33) {
+                  book2="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/" + pageNum2 + ".png";
                 document.getElementById("books2").attributes[2].value = "https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/" + pageNum2 + ".png";
             } else {
                 document.getElementById("books2").hidden = true;
