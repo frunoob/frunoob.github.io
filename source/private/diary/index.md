@@ -34,5 +34,16 @@ date: 2020-12-10 14:35:49
 过年啦，明天休一天，我要干点啥呢，先睡个懒觉吧，哈哈睡到自然醒，嘿嘿。
 {%endhideBlock%}
 {%endhideToggle%}
+
+{% hideToggle Month 3,#2a73b399,white%}
+{% hideBlock 3.12,#2a73b399,white%}
+## 3.12
+
+今天和德胜聊了会天，哈哈，都忘了他上学期学的是模电和电分，这学期他学的是数电，通信，信号，单片机。等等，他的专业好像是电子信息吧。
+哈哈，他周四周五没有课，以后这个时间找他聊吧。
+
+{%endhideBlock%}
+{%endhideToggle%}
+
 {%endhideToggle%}
 
