@@ -175,7 +175,7 @@ function changePage() {
 if (pageNum < 53) {
 pageNum++;
 book1="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/" + pageNum + ".png";
-document.getElementById("books").attributes[2].value = "https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/" + pageNum + ".png";
+document.getElementById("books").attributes[2].value = book1 ;
 } else {
                 document.getElementById("books").hidden = true;
             }
