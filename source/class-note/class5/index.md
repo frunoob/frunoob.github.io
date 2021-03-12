@@ -166,42 +166,11 @@ top_img: false
 ## 扩展资料
 
 {%hideToggle 2018计算机图形学研究报告%}
-<img id="books" style="width: 500px;"
-        src="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/1.png"></img>
-<button style="background:blue;" id="button">下一页</button>
-<script>
-var pageNum = 1;
-function changePage() {
-if (pageNum < 53) {
-pageNum++;
-book1="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/" + pageNum + ".png";
-document.getElementById("books").attributes[2].value = book1 ;
-} else {
-                document.getElementById("books").hidden = true;
-            }
-            console.log(pageNum);
-        }
-        button = document.getElementById("button");
-        button.addEventListener("click", changePage);
+<img src=""alt=""id="preload"hidden><img id="books"style="width: 800px;"src="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/1.png"></img><div style=" transform: translateX(261px);"><button style="background: blue; transform: translateX(261px); left: 50%;"id="button">下一页</button><input type="text" name="" id="inputNum"> <button style="background:blue;" onclick="gotoPage()">确定</button></div><script>var pageNum=1;document.getElementById("inputNum").addEventListener("click",function(){this.value=""})function gotoPage(){var inputNum=parseInt(document.getElementById("inputNum").value);if(inputNum>0&&inputNum<53){document.getElementById("inputNum").value="";pageNum=inputNum;document.getElementById("books").attributes[2].value="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/"+pageNum+".png";document.getElementById("preload").attributes[0].value="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/"+(pageNum+1)+".png"}else{document.getElementById("inputNum").value="最大值不要超过53"}}function changePage(){pageNum++;if(pageNum<53){document.getElementById("books").attributes[2].value="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/"+pageNum+".png";document.getElementById("preload").attributes[0].value="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/"+(pageNum+1)+".png"}else{document.getElementById("books").hidden=true}console.log(pageNum)}button=document.getElementById("button");button.addEventListener("click",changePage);
+
 </script>
 <br/>
-<img id="books2" style="width: 500px;" src="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/1.png"></img>
-<button style="background:blue;" id="button2">下一页</button>
-<script>
-        var pageNum2 = 1;
-        function changePage2() {
-if (pageNum2 < 33) {
-            pageNum2++;
-                  book2="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/" + pageNum2 + ".png";
-                document.getElementById("books2").attributes[2].value = "https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/" + pageNum2 + ".png";
-            } else {
-                document.getElementById("books2").hidden = true;
-            }
-            console.log(pageNum2);
-        }
-        button2 = document.getElementById("button2");
-        button2.addEventListener("click", changePage2);
-</script>
+<img src=""id="preload2"hidden><img id="books2"style="width: 800px;"src="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/1.png"></img><br><div style=" transform: translateX(261px);"><button style="background:blue;"id="button2">下一页</button><input type="text" name="" id="inputNum2"> <button style="background:blue;" onclick="gotoPage22()">确定</button></div><script>var pageNum2=1;document.getElementById("inputNum2").addEventListener("click",function(){this.value=""})function gotoPage22(){var inputNum2=parseInt(document.getElementById("inputNum2").value);if(inputNum2>0&&inputNum2<33){document.getElementById("inputNum2").value="";pageNum2=inputNum2;document.getElementById("books2").attributes[2].value="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/"+pageNum2+".png";document.getElementById("preload2").attributes[0].value="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/"+(pageNum2+1)+".png"}else{document.getElementById("inputNum2").value="最大值不要超过33"}}function changePage2(){if(pageNum2<33){pageNum2++;book2="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/"+pageNum2+".png";document.getElementById("books2").attributes[2].value="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/"+pageNum2+".png";document.getElementById("preload2").attributes[0].value="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/"+(pageNum2+1)+".png"}else{document.getElementById("books2").hidden=true}console.log(pageNum2)}button2=document.getElementById("button2");button2.addEventListener("click",changePage2);</script>
 {%endhideToggle%}
 
 **计算机图形学公开课：** 
