@@ -166,8 +166,40 @@ top_img: false
 ## 扩展资料
 
 {%hideToggle 2018计算机图形学研究报告%}
-
-
+<img id="books" style="width: 100%;"
+        src="https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/1.png"></img>
+<button id="button">下一页</button>
+<script>
+        var pageNum = 1;
+        function changePage() {
+            pageNum++;
+            if (pageNum < 53) {
+                document.getElementById("books").attributes[2].value = "https://s3.ananas.chaoxing.com/doc/c2/2c/23/0f43a109ec300c74ecb1a71cf1e03ee1/thumb/" + pageNum + ".png";
+            } else {
+                document.getElementById("books").hidden = true;
+            }
+            console.log(pageNum);
+        }
+        button = document.getElementById("button");
+        button.addEventListener("click", changePage);
+</script>
+<br/>
+<img id="books2" style="width: 100%;" src="https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/1.png"></img>
+<button id="button2">下一页</button>
+<script>
+        var pageNum2 = 1;
+        function changePage2() {
+            pageNum2++;
+            if (pageNum2 < 33) {
+                document.getElementById("books2").attributes[2].value = "https://s3.ananas.chaoxing.com/doc/65/e2/81/abfa44414a6f70fd458728295840e5f2/thumb/" + pageNum2 + ".png";
+            } else {
+                document.getElementById("books2").hidden = true;
+            }
+            console.log(pageNum2);
+        }
+        button2 = document.getElementById("button2");
+        button2.addEventListener("click", changePage2);
+</script>
 {%endhideToggle%}
 
 **计算机图形学公开课：** 
