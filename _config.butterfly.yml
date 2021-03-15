@@ -343,17 +343,17 @@ valine:
   avatar: mp # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
   placeholder:  
-  - 昵称处填入你的QQ号可同步你的QQ头像和名称哟<br>
+  - 昵称处填入你的QQ号可同步你的QQ头像和名称哟
   - 你的评论有违禁字将不会显示
    # valine comment input placeholder (like: Please leave your footprints)
-  guest_info: nick,mail # valine comment header info (nick/mail/link)
+  guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg:  # valine background
+  bg: https://p1.qhimg.com/bdr/__100/t011b3acc1b82349c3d.jpg  # valine background
   emojiCDN: 
  
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: mail # required fields (nick/mail)
+  requiredFields: nick # required fields (nick/mail)
   avatarForce: true  
 
 
