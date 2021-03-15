@@ -6,7 +6,7 @@ aside: false
 top_img: false
 date: 2021-01-15 14:55:40
 ---
-[修改](https://github.com/frunoob/frunoob.github.io/edit/hexo/source/tally/index.md)此页面内容
+
 # 2021年
 {% tabs 2021,1 %}
 
@@ -59,9 +59,10 @@ date: 2021-01-15 14:55:40
 | ----------| ---------- | ------ | ---- |
 | 3.6 | 44、15.4、6.99 | 烤串、耙耙柑、我母鸡啊 | 59.4 |
 | 3.7 | 34.8 | 魔芋爽 | 34.8 |
-|3.11  | 18.36 | 红包  |
+|3.11  | 18.36 | 红包  | 18.36|
+|3.15  | 15 ,+7| 改衣服,问卷红包  |  8|
 <script>
-    let huaFei1 = parseFloat(18.36);
+    let huaFei1 = parseFloat(18.36+15-7);
     let huaFei2 = 34.8;
     let money1 = 2323.90;
     let money2 = 3992.99;
