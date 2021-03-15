@@ -19,6 +19,7 @@ menu:
   - Graduate|| /kaoyan/ || fas fa-pencil-alt
   - 日记 || /private/diary/ || fas fa-pencil-alt
   - 读书笔记 || /private/reading-note/ || fas fa-list
+  - 添加新的文章 || https://github.com/frunoob/frunoob.github.io/tree/hexo/source || fas fa-pencil-alt
   娱乐||fas fa-list:
   - 图片 || /entertainment/Gallery/ || fas fa-images
   - 电影 || /entertainment/film/ || fas fa-film
