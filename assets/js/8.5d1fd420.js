@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{332:function(n,t,e){"use strict";e.r(t);var s=e(19),i=Object(s.a)({},(function(){var n=this.$createElement;return(this._self._c||n)("div",[this._v("\n    似乎来到了无人之地,这里空空如也。\n")])}),[],!1,null,null,null);t.default=i.exports}}]);
