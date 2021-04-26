@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'jihe';
-    src: url('/fonts/jihe.woff') format('woff');
-    src: url('/fonts/jihe.ttf');
+    src: url('https://cdn.jsdelivr.net/gh/frunoob/fqq@main/fonts/jihe.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/frunoob/fqq@main/fonts/jihe.ttf');
     font-weight: normal;
     font-style: normal;
 
