@@ -1,9 +1,7 @@
 @font-face {
     font-family: 'jihe';
-    src: url("/fonts/jihe.woff");
-    src: url("/fonts/zhulang.ttf");
-    /* src: url('/fonts/jihe.woff') format('woff');
-    src: url('/fonts/jihe.ttf'); */
+    src: url('/fonts/jihe.woff') format('woff');
+    src: url('/fonts/jihe.ttf');
     font-weight: normal;
     font-style: normal;
 
