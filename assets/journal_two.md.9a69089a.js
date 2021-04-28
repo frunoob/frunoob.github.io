@@ -1,1 +1,0 @@
-import{o as t,c as o,a as e}from"./app.89d0e456.js";const r='{"title":"two","description":"","frontmatter":{},"relativePath":"journal/two.md","lastUpdated":1619596385573}',a={},d=e("h1",{id:"two"},"two",-1);a.render=function(e,r,a,n,i,l){return t(),o("div",null,[d])};export default a;export{r as __pageData};

@@ -1,1 +1,0 @@
-import{o as t,c as e,a as o}from"./app.89d0e456.js";const r='{"title":"two - one","description":"","frontmatter":{},"relativePath":"twoBar/one.md","lastUpdated":1619596385573}',a={},n=o("h1",{id:"two-one"},"two - one",-1);a.render=function(o,r,a,d,i,p){return t(),e("div",null,[n])};export default a;export{r as __pageData};

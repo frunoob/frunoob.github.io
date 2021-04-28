@@ -1,1 +1,0 @@
-import{o as t,c as e,a as d}from"./app.89d0e456.js";const o='{"title":"two index","description":"","frontmatter":{},"relativePath":"twoBar/index.md","lastUpdated":1619596385573}',r={},a=d("h1",{id:"two-index"},"two index",-1);r.render=function(d,o,r,i,n,p){return t(),e("div",null,[a])};export default r;export{o as __pageData};
