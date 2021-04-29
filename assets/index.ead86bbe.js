@@ -1,1 +1,0 @@
-import{o as a,c as r,a as e,b as s}from"./client.5051c06b.js";const c={},n={id:"背单词"},o=e("a",{class:"header-anchor",href:"#背单词"},"#",-1),t=s(" 背单词");c.render=function(e,s){return a(),r("h1",n,[o,t])};export default c;

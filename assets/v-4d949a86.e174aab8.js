@@ -1,0 +1,1 @@
+const e={key:"v-4d949a86",path:"/notes/english/",title:"英语",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"背单词",slug:"背单词",children:[{level:3,title:"2021年4月",slug:"_2021年4月",children:[]}]}],filePathRelative:"notes/english/index.md",git:{updatedTime:1619664299e3,contributors:[]}};export{e as data};

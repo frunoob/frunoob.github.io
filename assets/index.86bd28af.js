@@ -1,0 +1,1 @@
+import{o as a,c as r,a as e,b as s}from"./client.46a9464f.js";const n={},o={id:"笔记"},t=e("a",{class:"header-anchor",href:"#笔记"},"#",-1),c=s(" 笔记");n.render=function(e,s){return a(),r("h1",o,[t,c])};export default n;
