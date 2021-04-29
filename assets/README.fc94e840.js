@@ -1,0 +1,1 @@
+import{o as e,c as a,a as o,b as r}from"./client.a45a2f9e.js";const l={},f={id:"hello-fqq"},s=o("a",{class:"header-anchor",href:"#hello-fqq"},"#",-1),n=r(" Hello fqq");l.render=function(o,r){return e(),a("h1",f,[s,n])};export default l;
