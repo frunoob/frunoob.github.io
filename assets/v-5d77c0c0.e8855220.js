@@ -1,1 +1,0 @@
-const e={key:"v-5d77c0c0",path:"/notes/math/",title:"数学",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"高数",slug:"高数",children:[]},{level:2,title:"线性代数",slug:"线性代数",children:[]},{level:2,title:"概率论",slug:"概率论",children:[]}],filePathRelative:"notes/math/index.md",git:{updatedTime:1619663907e3,contributors:[]}};export{e as data};

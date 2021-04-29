@@ -1,1 +1,0 @@
-import{o as e,c as a,a as o,b as r}from"./client.e4a0ad41.js";const l={},s={id:"hello-fqq"},f=o("a",{class:"header-anchor",href:"#hello-fqq"},"#",-1),n=r(" Hello fqq");l.render=function(o,r){return e(),a("h1",s,[f,n])};export default l;
