@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[28],{376:function(t,n,e){"use strict";e.r(n);var s=e(21),l=Object(s.a)({},(function(){var t=this.$createElement,n=this._self._c||t;return n("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[n("p",[this._v("单词背诵200个。\n看两集数学不定积分视频做笔记。\n做两篇阅读。")])])}),[],!1,null,null,null);n.default=l.exports}}]);
