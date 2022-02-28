@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[79],{285:function(t,e,n){"use strict";n.r(e);var s=n(4),l=Object(s.a)({},(function(){var t=this.$createElement,e=this._self._c||t;return e("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[e("p",[this._v("今天把网易云注销了，陪伴我5年的网易云，现在我希望它能带走我的回忆，让我勇往直前。加油！")])])}),[],!1,null,null,null);e.default=l.exports}}]);
