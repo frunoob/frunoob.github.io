@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "b0a3b1e6fcc16fb64735f7b5407db653"
+    "revision": "bf4755f7d860c49be8cb17e952fa6ce2"
   },
   {
     "url": "assets/css/0.styles.a54d33b6.css",
@@ -518,8 +518,8 @@ self.__precacheManifest = [
     "revision": "acf20bc860a7bc70a49adf3134462323"
   },
   {
-    "url": "assets/js/app.04711da7.js",
-    "revision": "b7c2b4ffe05cebb646d02d00c0738756"
+    "url": "assets/js/app.97db2d16.js",
+    "revision": "db9ebd476be8049245e1b06e7aa7b0d3"
   },
   {
     "url": "assets/js/streaming.js",
@@ -539,347 +539,347 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "8baae46b51b5fb890cb0056b8c3c3871"
+    "revision": "182ec7e9f9faf331f9657a2e41237cc1"
   },
   {
     "url": "list/20210301000000.html",
-    "revision": "4aa94353170c4c8b1dbfff60714c7ca0"
+    "revision": "1f3721e9ede95f262c9ae2c88875c20f"
   },
   {
     "url": "list/20210721161650.html",
-    "revision": "f4aad047e07973c2c0b422f4e2bec7d4"
+    "revision": "91e8b7b610acf08ad584d0a35e910d44"
   },
   {
     "url": "list/20210722122356.html",
-    "revision": "dee9ae3411298e88430dc7658450ddc9"
+    "revision": "e4d38b659c69397af28e4593692defd2"
   },
   {
     "url": "list/20210722124216.html",
-    "revision": "a5ee034729c04e22e049d2f57e27e84f"
+    "revision": "2f4e0b140fcf68e8236abfe934e8e994"
   },
   {
     "url": "list/20210723131524.html",
-    "revision": "ee4d787660c82c41c4bd239044ee8d99"
+    "revision": "51e630abff5dd432cb61440c6411d0a7"
   },
   {
     "url": "list/20210727182032.html",
-    "revision": "d8a99f67f1a0ba0f8e3ed9b0fbe1c263"
+    "revision": "bf29a42c619a0b1a216f50951f5241dd"
   },
   {
     "url": "list/20210805130603.html",
-    "revision": "cfd8c2d771ba68aa8d29884758f31183"
+    "revision": "61afa763704d3158005d3118b7e3dcc4"
   },
   {
     "url": "list/20210805163211.html",
-    "revision": "37dfe533b4c3500246632e208d1f6635"
+    "revision": "b945659a69af6b357fa04fa8eccb7ee0"
   },
   {
     "url": "list/20210805172839.html",
-    "revision": "b704907d517707b1df7d01e11f97ae08"
+    "revision": "f7e93d4709bb2c617b84cf39c4a5b756"
   },
   {
     "url": "list/20210805181213.html",
-    "revision": "706d12195b1cfb8bfefe86b875959121"
+    "revision": "7f43a2ffafdfa9a56127b7b59e94c883"
   },
   {
     "url": "list/20210807175337.html",
-    "revision": "660a121602f31041af11d11e9a9c7819"
+    "revision": "6697cad7b04d5010773fbd3e4b08d681"
   },
   {
     "url": "list/20210807215030.html",
-    "revision": "88b7761e250185566d3ab082ada6a0e6"
+    "revision": "45d11f01f30896340d72f9551db39f0c"
   },
   {
     "url": "list/20210807222026.html",
-    "revision": "2028f8af297dc5a4a9977abcdcee9151"
+    "revision": "0e0a87ffc9d667933fb0fb6f35d95d3b"
   },
   {
     "url": "list/20210808123419.html",
-    "revision": "11ac6b55c71c358297632a4d42782ef9"
+    "revision": "c6a5c1ec26b5b1623aa46695e555c0b8"
   },
   {
     "url": "list/20210811175819.html",
-    "revision": "efc632dff8237e28a33734d2a027aa9c"
+    "revision": "bc3de78fa81c12abc9fa4844ea11a854"
   },
   {
     "url": "list/20220218135219.md/20220218135219.html",
-    "revision": "6c8466c3433fc1271553f721bfe62194"
+    "revision": "df64b2f05dd5d101c0b00e376f333ea8"
   },
   {
     "url": "list/20220218143454.html",
-    "revision": "c4313dc0ed47cb48efbe51ea68713569"
+    "revision": "e11297ea3560b3aef2b0f37669c480a6"
   },
   {
     "url": "list/20220218144829.html",
-    "revision": "856e318c4f52ae5a50db79762d5435d7"
+    "revision": "2fe3e7df000c4ef676b7579b2c1fe035"
   },
   {
     "url": "list/20220218153217.html",
-    "revision": "ec3153936fc501134d03b969cd3491a9"
+    "revision": "92adde60e3f9c6491158b98aca0329be"
   },
   {
     "url": "list/20220218153334.html",
-    "revision": "64165f56e84b9ebb889f5f8f5a554a62"
+    "revision": "fa9cf42867a885359e2e5d80f02888f5"
   },
   {
     "url": "list/20220218221737.html",
-    "revision": "77d7ff9381a4f6608abd4b1ca1ca67d5"
+    "revision": "7879f3d71d8391aba766912db1b4de65"
   },
   {
     "url": "list/20220219115441.html",
-    "revision": "bce7309e6b40964cda0d4205a93bfa90"
+    "revision": "7b2e6c0c41bb63a545a83cc2b7cb7452"
   },
   {
     "url": "list/20220220150004.html",
-    "revision": "557ece5827914d88bf0ebff0fff31a91"
+    "revision": "540ba60d56b2b62a5f6720dd237aaad8"
   },
   {
     "url": "list/20220220235250.html",
-    "revision": "3f593e3711e16d243b75d5dd84746ee2"
+    "revision": "81bb9e217a395694ed8f92acda9af7c9"
   },
   {
     "url": "list/20220221000030.html",
-    "revision": "6c74964ce4aa370d23135b59ec2ae0f7"
+    "revision": "ed258866ed53ced8772c269d8f2f0bad"
   },
   {
     "url": "list/20220221110932.html",
-    "revision": "46e10a6ac5c4553e121392b3c6a3bc87"
+    "revision": "1ac90eae58b55c1abe366626dedb811b"
   },
   {
     "url": "list/20220222143459.html",
-    "revision": "bf6c4015d19f1449c7234f8f7d27cc87"
+    "revision": "6c0d1f4ea1cbcc026d81d72864ba4f72"
   },
   {
     "url": "list/20220223181058.html",
-    "revision": "11ed28d752b8f360dab4852efe6d45e2"
+    "revision": "499d866d5e0775d60f72bfa7da72caab"
   },
   {
     "url": "list/20220223195033.html",
-    "revision": "61938968a05c6b55f0a2116866eabadc"
+    "revision": "04e5d54b79ff8e2a1a58f19b713bd020"
   },
   {
     "url": "list/20220227191319.html",
-    "revision": "f58bac90151282b3f97b4c4b0b6e1710"
+    "revision": "226b4c0bdf1147faca8b7338f63bec60"
   },
   {
     "url": "list/20220227201810.html",
-    "revision": "9d50ef88d380f054f07fcf9f86ae142d"
+    "revision": "fbb95f4a88e350f76c279e7b5adf6865"
   },
   {
     "url": "list/20220228165307.html",
-    "revision": "c51cec8ce1aef3b7d3609ff89bb975d6"
+    "revision": "374c166f0d258e44e27123b0e8b0c926"
   },
   {
     "url": "list/20220305135058.html",
-    "revision": "9bc2ddedf6a7583726299bd113232398"
+    "revision": "bb320d1c81280c17287650c52b27c4cd"
   },
   {
     "url": "list/20220312145553.html",
-    "revision": "3ea54e16ba4851e72a3f55c911cafd78"
+    "revision": "8e191b7939d3bce7359921daff013d2d"
   },
   {
     "url": "post/plan.html",
-    "revision": "70b01978fab046880540b5ed7d916f73"
+    "revision": "aacd03f89dc6c35fee343ed9d63554b2"
   },
   {
     "url": "study/dilixinxi/xiti.html",
-    "revision": "4471095758c6e2f76fb001971ebafa1c"
+    "revision": "62176dff65be167f982d25a26ca74e46"
   },
   {
     "url": "study/english/words.html",
-    "revision": "1a6b44628ed5dba67a16a30c1bc0242d"
+    "revision": "71ad62a98f16efd6ea5f0026dbe2b206"
   },
   {
     "url": "study/jisuanjiqianyan/zuoye-01.html",
-    "revision": "b4ded18bf3f4910dc3762c7914d14221"
+    "revision": "4a4791bdfc0b6fd4ea0131eb2f2ecf10"
   },
   {
     "url": "study/math/cuoti.html",
-    "revision": "9775eddb52d54a9057f52b8d91f07988"
+    "revision": "3fde412329d0b058bf5e5e78b12d5bcc"
   },
   {
     "url": "study/math/gaoshu.html",
-    "revision": "643f09b1b7c110f9e7af8a460de3de71"
+    "revision": "b1f5bb0d80e3a30d0ee0450ebb6dde18"
   },
   {
     "url": "study/math/gongshi.html",
-    "revision": "a181c9a0b9c347974464fd1327e4f6fc"
+    "revision": "62cc5bf735b7dbb3e3e973d33f158697"
   },
   {
     "url": "study/shujvjiegou/zhishidian.html",
-    "revision": "21d272c878fb4b074186e66135a622cf"
+    "revision": "8207df01b7397498c29db2b7542c7421"
   },
   {
     "url": "task/2020-7-2021-3.html",
-    "revision": "719a316d9fc8b02706bb0746d9684b04"
+    "revision": "889cfcc6ff1c973a2a99d2cc0eb1cc55"
   },
   {
     "url": "task/2021-4-28.html",
-    "revision": "ba9dce820048694bae700b955883baf5"
+    "revision": "880df65c2f0cbd72fae5814e62f0f505"
   },
   {
     "url": "task/2021-4-29.html",
-    "revision": "39bc280d8926ec803ade30063b9c06a6"
+    "revision": "4a7ed33fc311c4656f7749d172d36176"
   },
   {
     "url": "task/2021-4-30.html",
-    "revision": "00e050f42b354e746b9888c148c49274"
+    "revision": "46b03fa837223906129bbb05f3575c25"
   },
   {
     "url": "task/2021-5-12.html",
-    "revision": "54fe856b50b9525f1258c216d4e4deda"
+    "revision": "d60d191f7b547dc13146d2fd91250c64"
   },
   {
     "url": "task/2021-5-13.html",
-    "revision": "83a836cb51308db02062442d665c621e"
+    "revision": "d46ad8e17960d022c1330b6e58319692"
   },
   {
     "url": "task/2021-5-3.html",
-    "revision": "c6ac5ea3ae3df56d6c0d1aa15e2adc57"
+    "revision": "76c3d1c7caf2e43b482598f14c341cd7"
   },
   {
     "url": "task/2021-5-6.html",
-    "revision": "f509312810dc190c6b72b7d1d6d7ea61"
+    "revision": "6bcd9dca34937241812e240029bca6bf"
   },
   {
     "url": "task/2021/04/21.html",
-    "revision": "21c4fcafefd279e0b45d27ad6e0bd49b"
+    "revision": "5bb422a5dab1a1ca9397eefff5225bf9"
   },
   {
     "url": "task/2021/04/22.html",
-    "revision": "ca0c248d09ff8595eae2dbbe31e27092"
+    "revision": "9d18b307212379341b66bbb1e035dca1"
   },
   {
     "url": "task/2021/04/23.html",
-    "revision": "7b7f01aa57e980f160c3a26883c2cc4f"
+    "revision": "62689c7fcf3c7b1da72f9eb5aa49a3f8"
   },
   {
     "url": "task/2021/04/24.html",
-    "revision": "804cb5b9d21349588b29ecfc4bb9ef97"
+    "revision": "3158cc98138fe0d3590d27e76c3568ff"
   },
   {
     "url": "task/2021/04/25.html",
-    "revision": "dd81768300d0ea3f24e45d42db9735bb"
+    "revision": "187f543907591b8c491d938f83ada94b"
   },
   {
     "url": "task/2021/04/27.html",
-    "revision": "d0d9fd99ef741d85245bea44c4f62297"
+    "revision": "206bb5dcda7f7cf9f5c0f4f9906a9847"
   },
   {
     "url": "task/2021511.html",
-    "revision": "017e846ac49c950766760c710c0975fb"
+    "revision": "e41e41f09aebca4e329c29f8084927d5"
   },
   {
     "url": "task/2021514.html",
-    "revision": "12994c9d633cd1d42dd3ec423d9f6e2a"
+    "revision": "570ca74a3961572225e1741d18503912"
   },
   {
     "url": "task/2021515.html",
-    "revision": "8e053fd4efc00b0a107ef9bcfa148939"
+    "revision": "1d52401721ef5282696c33b68205a097"
   },
   {
     "url": "task/2021518.html",
-    "revision": "6a307373d2ea7fe68a245a0ddcb99c62"
+    "revision": "36db348a583454640587143365712c2b"
   },
   {
     "url": "task/2021519.html",
-    "revision": "19e15cc94cc21e8dc7f08c585d5ce51a"
+    "revision": "770a14d5cad54673d5ea19f3f0d08ffe"
   },
   {
     "url": "task/2021520.html",
-    "revision": "efa03ea22664cbc90729dfab8c532b00"
+    "revision": "299d10c419ed2bf9adb3cbfa2034f6d9"
   },
   {
     "url": "task/2021521.html",
-    "revision": "52b59bba72f377615185fa6cfa1b4cea"
+    "revision": "b3ba800fac5162a1652d7b7e319306cd"
   },
   {
     "url": "task/2021523.md/2021523.html",
-    "revision": "2d0913ebdbaa72eb53d4c55cdae800e3"
+    "revision": "5fb05e624aa577c50c22c3876768d1ae"
   },
   {
     "url": "task/2021524.html",
-    "revision": "8c97078b0ce768bcb4812aed24ea5280"
+    "revision": "556cfe2ca07f410ebf529dc1fa32b73a"
   },
   {
     "url": "task/2021531.html",
-    "revision": "bce378c97e55bf2509e9618b325dacc7"
+    "revision": "e92c25c48eadadd6cec1d49d16c34a6b"
   },
   {
     "url": "task/2021628.html",
-    "revision": "55441aacb33075f07fed2b172f2fdbf3"
+    "revision": "d7c50898bed4b78cd29af059912a5255"
   },
   {
     "url": "task/202164.html",
-    "revision": "2f2c39a446734176cef0aeba289bdcd7"
+    "revision": "ca19beb9702013137358fb2719e60fbf"
   },
   {
     "url": "task/202169.html",
-    "revision": "3599d2a6b1d366e809f270606f886298"
+    "revision": "136272ecf7ee207b05e6e4bdfbf6b8ff"
   },
   {
     "url": "task/2021717.html",
-    "revision": "ca12ccfdbe626893c8f802df8f96c579"
+    "revision": "51014ab7231b77e31c0a462ecb06b60b"
   },
   {
     "url": "task/2021721.html",
-    "revision": "ca4bcc50f4bf2b6194aa4a4a7b31cf1e"
+    "revision": "ea44dfea84d56c4d73dd8c33f453c89d"
   },
   {
     "url": "task/2021722.html",
-    "revision": "ea5b56b5b7e2d2207ee32ec65fb401a7"
+    "revision": "193b27c16c84891bbe9870af60fcc5d5"
   },
   {
     "url": "task/2021724.html",
-    "revision": "a9eb82592d4e1bab3a419dd085644da9"
+    "revision": "12775cd44678e20511b6d04e151743db"
   },
   {
     "url": "task/2021725.html",
-    "revision": "13c3e5556afe064b6555d9374b26aff4"
+    "revision": "45910f4529aa92403e6d51acca1ca400"
   },
   {
     "url": "task/202181.html",
-    "revision": "44e65308a85e856b65bc295ed1e7a9ee"
+    "revision": "cdfb9a81efbb094a0efdcff8d56abd10"
   },
   {
     "url": "task/2021811.html",
-    "revision": "acef7c3a50e679febd064000fbfd648e"
+    "revision": "74a1e8589ca91271e547704903b685a4"
   },
   {
     "url": "task/2021812.html",
-    "revision": "6d8806d67ede937d382d874bd0f97fc6"
+    "revision": "c648b8e41fa7c7295fa71610b7c5ae69"
   },
   {
     "url": "task/202183.html",
-    "revision": "457c6aa8b4518079045e4089ad67c0b5"
+    "revision": "e2ad36017c140fa91b7c6a53a57239e4"
   },
   {
     "url": "task/202187.html",
-    "revision": "19f8e143efbad92c40a557376ed6b861"
+    "revision": "a130010d71afc3a0e8e1969a6eef37f4"
   },
   {
     "url": "task/2022218.html",
-    "revision": "53b0a4cb2395d4c50407aa029a9a0c98"
+    "revision": "3a3495e37cfbdb1bf665fe2ff916cc6c"
   },
   {
     "url": "task/2022219.html",
-    "revision": "02f5b90b177f10c6ecc586963524a805"
+    "revision": "78b0dfec8214790b5e2252aa039de6a2"
   },
   {
     "url": "task/2022222.html",
-    "revision": "cd8909f38682fa9999e4dfcf1bc2d475"
+    "revision": "093b9427a6f0e2a32cc97c918ae358f7"
   },
   {
     "url": "task/2022224.html",
-    "revision": "fbfae4f8cef98d8f4a0f7eb729c4d494"
+    "revision": "7890a3dd22953db0a6e6813eac146dac"
   },
   {
     "url": "task/2022225.html",
-    "revision": "c6ed9ebcf858219d05b9d227a35dd18d"
+    "revision": "bc7b2b6663529f646a121c4ff83c5d45"
   },
   {
     "url": "test.html",
-    "revision": "f2a104a33fbd71b2aaaaa417f4be63f1"
+    "revision": "3b537851dff1a1bf6c39515f86a9a926"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
