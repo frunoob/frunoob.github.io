@@ -1,6 +1,6 @@
-import { o as openBlock, a as createElementBlock, b as createBaseVNode } from "./app.c8f5cdad.js";
+import { o as openBlock, a as createElementBlock, b as createBaseVNode } from "./app.d48d6871.js";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.21dcd24c.js";
-var _404_vue_vue_type_style_index_0_lang = "";
+var _404_vue_vue_type_style_index_0_scope_true_lang = "";
 const _sfc_main = {};
 const _hoisted_1 = { class: "body" };
 const _hoisted_2 = /* @__PURE__ */ createBaseVNode("p", null, "404 not found", -1);

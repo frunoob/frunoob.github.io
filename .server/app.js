@@ -472,8 +472,8 @@ const data$1 = {
     }
   ],
   "git": {
-    "createdTime": 1647927361e3,
-    "updatedTime": 1647927361e3,
+    "createdTime": 1647927698e3,
+    "updatedTime": 1647927698e3,
     "contributors": [
       {
         "name": "frunoob",
@@ -560,7 +560,7 @@ var _404_html$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
   __proto__: null,
   "default": _404_html
 }, Symbol.toStringTag, { value: "Module" }));
-var _404_vue_vue_type_style_index_0_lang = "";
+var _404_vue_vue_type_style_index_0_scope_true_lang = "";
 const _sfc_main$3 = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "body" }, _attrs))}><p>404 not found</p><a href="/">HOME</a></div>`);
