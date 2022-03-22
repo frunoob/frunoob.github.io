@@ -1,4 +1,30 @@
-import { r as resolveComponent, o as openBlock, a as createElementBlock, b as createVNode, d as createTextVNode, t as toDisplayString } from "./app.ce13d100.js";
+import { o as openBlock, a as createElementBlock, b as createBaseVNode, r as resolveComponent, d as createVNode } from "./app.c8f5cdad.js";
+import { _ as _export_sfc } from "./plugin-vue_export-helper.21dcd24c.js";
+const _sfc_main$1 = {
+  data() {
+    return {};
+  },
+  methods: {
+    getDate(timestamp) {
+      var time = new Date(timestamp);
+      var year = time.getFullYear();
+      var month = time.getMonth();
+      var date = time.getDate();
+      var hours = time.getHours();
+      var minutes = time.getMinutes();
+      var seconds = time.getSeconds();
+      return date + "/" + month + "/" + year + "," + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
+    }
+  }
+};
+const _hoisted_1$1 = /* @__PURE__ */ createBaseVNode("hr", null, null, -1);
+const _hoisted_2 = [
+  _hoisted_1$1
+];
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", null, _hoisted_2);
+}
+var Git = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render]]);
 var axios$1 = { exports: {} };
 var bind$2 = function bind(fn, thisArg) {
   return function wrap() {
@@ -1045,13 +1071,15 @@ axios.isAxiosError = isAxiosError;
 axios$1.exports = axios;
 axios$1.exports.default = axios;
 var ChatRobot_vue_vue_type_style_index_0_scoped_true_lang = "";
+var Layout_vue_vue_type_style_index_0_lang = "";
+const _hoisted_1 = { class: "body" };
 const _sfc_main = {
   setup(__props) {
     return (_ctx, _cache) => {
       const _component_Content = resolveComponent("Content");
-      return openBlock(), createElementBlock("div", null, [
+      return openBlock(), createElementBlock("div", _hoisted_1, [
         createVNode(_component_Content),
-        createTextVNode(" " + toDisplayString(_ctx.$page), 1)
+        createVNode(Git)
       ]);
     };
   }

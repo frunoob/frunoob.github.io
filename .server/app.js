@@ -79,8 +79,92 @@ const siteData$1 = {
   "base": "/",
   "lang": "zh-CN",
   "title": "FRUNOOB",
-  "description": "",
-  "head": [],
+  "description": "living is to become stronger.",
+  "head": [
+    [
+      "link",
+      {
+        "rel": "apple-touch-icon",
+        "sizes": "180x180",
+        "href": "/assets/img/apple-touch-icon.png?v=1.0.0"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "icon",
+        "type": "image/png",
+        "sizes": "32x32",
+        "href": "/assets/img/favicon-32x32.png?v=1.0.0"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "icon",
+        "type": "image/png",
+        "sizes": "16x16",
+        "href": "/assets/img/favicon-16x16.png?v=1.0.0"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "manifest",
+        "href": "/assets/img/site.webmanifest?v=1.0.0"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "mask-icon",
+        "href": "/assets/img/safari-pinned-tab.svg?v=1.0.0",
+        "color": "#5bbad5"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "shortcut icon",
+        "href": "/assets/img/favicon.ico?v=1.0.0"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "theme-color",
+        "content": "#fffff8"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "apple-mobile-web-app-title",
+        "content": "F\u7684\u535A\u5BA2"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "application-name",
+        "content": "F\u7684\u535A\u5BA2"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "msapplication-TileColor",
+        "content": "#00aba9"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "msapplication-config",
+        "content": "/assets/img/browserconfig.xml?v=1.0.0"
+      }
+    ]
+  ],
   "locales": {}
 };
 const siteData = vue.ref(siteData$1);
@@ -363,14 +447,33 @@ const createVueApp = async () => {
 const data$1 = {
   "key": "v-8daa1a0e",
   "path": "/",
-  "title": "Hello Vuepress",
+  "title": "TypeScript",
   "lang": "zh-CN",
   "frontmatter": {},
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 2,
+      "title": '"??"',
+      "slug": "",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": '"||"',
+      "slug": "",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": '"&&"',
+      "slug": "",
+      "children": []
+    }
+  ],
   "git": {
-    "createdTime": 1647806665e3,
-    "updatedTime": 1647806665e3,
+    "createdTime": 1647927361e3,
+    "updatedTime": 1647927361e3,
     "contributors": [
       {
         "name": "frunoob",
@@ -407,55 +510,99 @@ var _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$4 = {};
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
-  _push(`<!--[--><h1 id="hello-vuepress" tabindex="-1"><a class="header-anchor" href="#hello-vuepress" aria-hidden="true">#</a> Hello Vuepress</h1><div class="language-java ext-java line-numbers-mode"><pre class="language-java"><code>public class Test{
-    public static void main(String []args){
-        System.out.println(&quot;Hello World!&quot;);
-    }
+const _sfc_main$5 = {};
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h1>TypeScript</h1><h2>&quot;??&quot;</h2><p>NaN, 0, void 0, undefined, &quot;&quot;, null, false . above all of them are considered to be falsy in javascript. &quot;??&quot; is to omit null and undefined, until apear other value. so &quot;??&quot; is just use to jump over null and undefined, when appear first value that not be the (null and undefined), it will return that value.</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code>console.log(false ?? null); // false
+console.log(null ?? false); // false
+console.log(undefined ?? null); // null
+console.log(undefined ?? NaN); // NaN
+console.log(undefined ?? null ?? void 0 ?? false); // false PS. void 0 actually means undefined
+</code></pre></div><h2>&quot;||&quot;</h2><p>&quot;||&quot; is use to discard values that are considered as falsy,return the true value.It will return the last one,if there is no true value.</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code>console.log(false || true); // true
+console.log(0 || 1); // 1
+console.log(NaN || &quot;A&quot;); // &quot;A&quot;
+console.log(void 0 || 0o12); // 10
+console.log(undefined || 0b11); //3
+console.log(null || &#39;a&#39;); // &#39;a&#39;
+console.log(false || 0 || NaN || void 0 || null || undefined || true); // true
+console.log(false || 0 || NaN || void 0 || null || undefined); // undefined
+</code></pre></div><h2>&quot;&amp;&amp;&quot;</h2><p>&quot;&amp;&amp;&quot; is use to discard values that are considered as true value, until apear false value .It will return the last one,if there is no false value.</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code>{
+console.log( void 0 &amp;&amp; undefined); //undefined
+console.log(null &amp;&amp; undefined); //null
+let str:string =&#39;2&#39;; 
+let int:Number = 1;
+console.log(str &amp;&amp; int) // 1
+console.log(100 &amp;&amp; true); //true
 }
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><!--]-->`);
+</code></pre></div><!--]-->`);
 }
-const _sfc_setup$4 = _sfc_main$4.setup;
-_sfc_main$4.setup = (props, ctx) => {
+const _sfc_setup$5 = _sfc_main$5.setup;
+_sfc_main$5.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/index.html.vue");
-  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
+  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-var index_html = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$2]]);
+var index_html = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$3]]);
 var index_html$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index_html
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$3 = {};
-function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+const _sfc_main$4 = {};
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
 }
-const _sfc_setup$3 = _sfc_main$3.setup;
-_sfc_main$3.setup = (props, ctx) => {
+const _sfc_setup$4 = _sfc_main$4.setup;
+_sfc_main$4.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../pages/404.html.vue");
-  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-var _404_html = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1]]);
+var _404_html = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$2]]);
 var _404_html$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _404_html
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$2 = {};
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.ssrRenderAttrs(_attrs)}>404 Not Found</div>`);
+var _404_vue_vue_type_style_index_0_lang = "";
+const _sfc_main$3 = {};
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "body" }, _attrs))}><p>404 not found</p><a href="/">HOME</a></div>`);
 }
-const _sfc_setup$2 = _sfc_main$2.setup;
-_sfc_main$2.setup = (props, ctx) => {
+const _sfc_setup$3 = _sfc_main$3.setup;
+_sfc_main$3.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../vuepress-theme-simplest/lib/layouts/404.vue");
-  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
+  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-var _404 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);
+var _404 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1]]);
 var _404$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _404
 }, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$2 = {
+  data() {
+    return {};
+  },
+  methods: {
+    getDate(timestamp) {
+      var time = new Date(timestamp);
+      var year = time.getFullYear();
+      var month = time.getMonth();
+      var date = time.getDate();
+      var hours = time.getHours();
+      var minutes = time.getMinutes();
+      var seconds = time.getSeconds();
+      return date + "/" + month + "/" + year + "," + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
+    }
+  }
+};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${serverRenderer.ssrRenderAttrs(_attrs)}><hr></div>`);
+}
+const _sfc_setup$2 = _sfc_main$2.setup;
+_sfc_main$2.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../vuepress-theme-simplest/lib/components/Git.vue");
+  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
+};
+var Git = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);
 var ChatRobot_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$1 = {
   data() {
@@ -560,14 +707,16 @@ _sfc_main$1.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../../vuepress-theme-simplest/lib/components/ChatRobot.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
+var Layout_vue_vue_type_style_index_0_lang = "";
 const _sfc_main = {
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_Content = vue.resolveComponent("Content");
-      _push(`<div${serverRenderer.ssrRenderAttrs(_attrs)}>`);
+      _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "body" }, _attrs))}>`);
       _push(serverRenderer.ssrRenderComponent(_component_Content, null, null, _parent));
-      _push(` ${serverRenderer.ssrInterpolate(_ctx.$page)}</div>`);
+      _push(serverRenderer.ssrRenderComponent(Git, null, null, _parent));
+      _push(`</div>`);
     };
   }
 };

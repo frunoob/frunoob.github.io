@@ -82,28 +82,6 @@ function normalizeClass(value) {
   }
   return res.trim();
 }
-const toDisplayString = (val) => {
-  return isString(val) ? val : val == null ? "" : isArray(val) || isObject(val) && (val.toString === objectToString || !isFunction(val.toString)) ? JSON.stringify(val, replacer, 2) : String(val);
-};
-const replacer = (_key, val) => {
-  if (val && val.__v_isRef) {
-    return replacer(_key, val.value);
-  } else if (isMap(val)) {
-    return {
-      [`Map(${val.size})`]: [...val.entries()].reduce((entries, [key, val2]) => {
-        entries[`${key} =>`] = val2;
-        return entries;
-      }, {})
-    };
-  } else if (isSet(val)) {
-    return {
-      [`Set(${val.size})`]: [...val.values()]
-    };
-  } else if (isObject(val) && !isArray(val) && !isPlainObject$1(val)) {
-    return String(val);
-  }
-  return val;
-};
 const EMPTY_OBJ = {};
 const EMPTY_ARR = [];
 const NOOP = () => {
@@ -6562,7 +6540,7 @@ const __vitePreload = function preload(baseModule, deps) {
 const pagesData$1 = {
   "v-8daa1a0e": () => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.89f3333d.js"
+    "./index.html.59ddb3fd.js"
   ), true ? [] : void 0).then(({ data }) => data),
   "v-3706649a": () => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
@@ -6612,8 +6590,92 @@ const siteData$1 = {
   "base": "/",
   "lang": "zh-CN",
   "title": "FRUNOOB",
-  "description": "",
-  "head": [],
+  "description": "living is to become stronger.",
+  "head": [
+    [
+      "link",
+      {
+        "rel": "apple-touch-icon",
+        "sizes": "180x180",
+        "href": "/assets/img/apple-touch-icon.png?v=1.0.0"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "icon",
+        "type": "image/png",
+        "sizes": "32x32",
+        "href": "/assets/img/favicon-32x32.png?v=1.0.0"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "icon",
+        "type": "image/png",
+        "sizes": "16x16",
+        "href": "/assets/img/favicon-16x16.png?v=1.0.0"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "manifest",
+        "href": "/assets/img/site.webmanifest?v=1.0.0"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "mask-icon",
+        "href": "/assets/img/safari-pinned-tab.svg?v=1.0.0",
+        "color": "#5bbad5"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "shortcut icon",
+        "href": "/assets/img/favicon.ico?v=1.0.0"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "theme-color",
+        "content": "#fffff8"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "apple-mobile-web-app-title",
+        "content": "F\u7684\u535A\u5BA2"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "application-name",
+        "content": "F\u7684\u535A\u5BA2"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "msapplication-TileColor",
+        "content": "#00aba9"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "msapplication-config",
+        "content": "/assets/img/browserconfig.xml?v=1.0.0"
+      }
+    ]
+  ],
   "locales": {}
 };
 const siteData = ref(siteData$1);
@@ -6628,8 +6690,8 @@ const updateHeadSymbol = Symbol("");
 const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-8daa1a0e" */
-    "./index.html.05d3461a.js"
-  ), true ? ["assets/index.html.05d3461a.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./index.html.04f564c5.js"
+  ), true ? ["assets/index.html.04f564c5.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "v-3706649a": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "v-3706649a" */
     "./404.html.581a579c.js"
@@ -6638,12 +6700,12 @@ const pagesComponents = {
 const layoutComponents = {
   "404": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-404" */
-    "./404.cc070ad1.js"
-  ), true ? ["assets/404.cc070ad1.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
+    "./404.dc33cbc3.js"
+  ), true ? ["assets/404.dc33cbc3.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0)),
   "Layout": defineAsyncComponent(() => __vitePreload(() => import(
     /* webpackChunkName: "layout-Layout" */
-    "./Layout.00d1062e.js"
-  ), true ? [] : void 0))
+    "./Layout.948cd744.js"
+  ), true ? ["assets/Layout.948cd744.js","assets/plugin-vue_export-helper.21dcd24c.js"] : void 0))
 };
 const resolveHeadIdentifier = ([tag, attrs, content]) => {
   if (tag === "meta" && attrs.name) {
@@ -6959,4 +7021,4 @@ const createVueApp = async () => {
     });
   });
 }
-export { createElementBlock as a, createVNode as b, createStaticVNode as c, createVueApp, createTextVNode as d, openBlock as o, resolveComponent as r, toDisplayString as t };
+export { createElementBlock as a, createBaseVNode as b, createStaticVNode as c, createVueApp, createVNode as d, openBlock as o, resolveComponent as r };

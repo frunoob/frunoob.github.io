@@ -4,36 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="generator" content="VuePress 2.0.0-beta.36">
-    <title>Hello Vuepress | FRUNOOB</title><meta name="description" content="">
-    <link rel="modulepreload" href="/assets/app.ce13d100.js"><link rel="modulepreload" href="/assets/index.html.89f3333d.js"><link rel="modulepreload" href="/assets/index.html.05d3461a.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper.21dcd24c.js">
-    <link rel="stylesheet" href="/assets/style.469bd22b.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png?v=1.0.0"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png?v=1.0.0"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png?v=1.0.0"><link rel="manifest" href="/assets/img/site.webmanifest?v=1.0.0"><link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg?v=1.0.0" color="#5bbad5"><link rel="shortcut icon" href="/assets/img/favicon.ico?v=1.0.0"><meta name="theme-color" content="#fffff8"><meta name="apple-mobile-web-app-title" content="F的博客"><meta name="application-name" content="F的博客"><meta name="msapplication-TileColor" content="#00aba9"><meta name="msapplication-config" content="/assets/img/browserconfig.xml?v=1.0.0"><title>TypeScript | FRUNOOB</title><meta name="description" content="living is to become stronger.">
+    <link rel="modulepreload" href="/assets/app.c8f5cdad.js"><link rel="modulepreload" href="/assets/index.html.59ddb3fd.js"><link rel="modulepreload" href="/assets/index.html.04f564c5.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper.21dcd24c.js">
+    <link rel="stylesheet" href="/assets/style.5fcac984.css">
   </head>
   <body>
-    <div id="app"><!--[--><div><!--[--><h1 id="hello-vuepress" tabindex="-1"><a class="header-anchor" href="#hello-vuepress" aria-hidden="true">#</a> Hello Vuepress</h1><div class="language-java ext-java line-numbers-mode"><pre class="language-java"><code>public class Test{
-    public static void main(String []args){
-        System.out.println(&quot;Hello World!&quot;);
-    }
+    <div id="app"><!--[--><div class="body"><!--[--><h1>TypeScript</h1><h2>&quot;??&quot;</h2><p>NaN, 0, void 0, undefined, &quot;&quot;, null, false . above all of them are considered to be falsy in javascript. &quot;??&quot; is to omit null and undefined, until apear other value. so &quot;??&quot; is just use to jump over null and undefined, when appear first value that not be the (null and undefined), it will return that value.</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code>console.log(false ?? null); // false
+console.log(null ?? false); // false
+console.log(undefined ?? null); // null
+console.log(undefined ?? NaN); // NaN
+console.log(undefined ?? null ?? void 0 ?? false); // false PS. void 0 actually means undefined
+</code></pre></div><h2>&quot;||&quot;</h2><p>&quot;||&quot; is use to discard values that are considered as falsy,return the true value.It will return the last one,if there is no true value.</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code>console.log(false || true); // true
+console.log(0 || 1); // 1
+console.log(NaN || &quot;A&quot;); // &quot;A&quot;
+console.log(void 0 || 0o12); // 10
+console.log(undefined || 0b11); //3
+console.log(null || &#39;a&#39;); // &#39;a&#39;
+console.log(false || 0 || NaN || void 0 || null || undefined || true); // true
+console.log(false || 0 || NaN || void 0 || null || undefined); // undefined
+</code></pre></div><h2>&quot;&amp;&amp;&quot;</h2><p>&quot;&amp;&amp;&quot; is use to discard values that are considered as true value, until apear false value .It will return the last one,if there is no false value.</p><div class="language-typescript ext-ts"><pre class="language-typescript"><code>{
+console.log( void 0 &amp;&amp; undefined); //undefined
+console.log(null &amp;&amp; undefined); //null
+let str:string =&#39;2&#39;; 
+let int:Number = 1;
+console.log(str &amp;&amp; int) // 1
+console.log(100 &amp;&amp; true); //true
 }
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><!--]--> {
-  &quot;key&quot;: &quot;v-8daa1a0e&quot;,
-  &quot;path&quot;: &quot;/&quot;,
-  &quot;title&quot;: &quot;Hello Vuepress&quot;,
-  &quot;lang&quot;: &quot;zh-CN&quot;,
-  &quot;frontmatter&quot;: {},
-  &quot;excerpt&quot;: &quot;&quot;,
-  &quot;headers&quot;: [],
-  &quot;git&quot;: {
-    &quot;createdTime&quot;: 1647806665000,
-    &quot;updatedTime&quot;: 1647806665000,
-    &quot;contributors&quot;: [
-      {
-        &quot;name&quot;: &quot;frunoob&quot;,
-        &quot;email&quot;: &quot;frunoob@163.com&quot;,
-        &quot;commits&quot;: 1
-      }
-    ]
-  }
-}</div><!--]--></div>
-    <script type="module" src="/assets/app.ce13d100.js" defer></script>
+</code></pre></div><!--]--><div><hr></div></div><!--]--></div>
+    <script type="module" src="/assets/app.c8f5cdad.js" defer></script>
   </body>
 </html>
